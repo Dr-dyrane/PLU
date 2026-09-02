@@ -1,0 +1,190 @@
+[
+  {
+    "category": "Asian Sauces",
+    "location": "Aisle 2"
+  },
+  {
+    "category": "Baby Needs",
+    "location": "Aisle 4"
+  },
+  {
+    "category": "Baking Needs",
+    "location": "Aisle 3"
+  },
+  {
+    "category": "Bathroom Tissue",
+    "location": "Aisle 4"
+  },
+  {
+    "category": "Candy",
+    "location": "Aisle 7"
+  },
+  {
+    "category": "Canned Meat & Fish",
+    "location": "Aisle 2"
+  },
+  {
+    "category": "Canned Milk",
+    "location": "Aisle 3"
+  },
+  {
+    "category": "Canned Pasta",
+    "location": "Aisle 2"
+  },
+  {
+    "category": "Canned Soup",
+    "location": "Aisle 3"
+  },
+  {
+    "category": "Canned Veg.",
+    "location": "Aisle 2"
+  },
+  {
+    "category": "Cereal",
+    "location": "Aisle 5"
+  },
+  {
+    "category": "Coffee & Tea",
+    "location": "Aisle 5"
+  },
+  {
+    "category": "Condiments",
+    "location": "Aisle 1"
+  },
+  {
+    "category": "Cookies",
+    "location": "Aisle 5"
+  },
+  {
+    "category": "Crackers",
+    "location": "Aisle 3"
+  },
+  {
+    "category": "Frozen Boxed Meats",
+    "location": "Aisle 1"
+  },
+  {
+    "category": "Frozen Desserts",
+    "location": "Aisle 7"
+  },
+  {
+    "category": "Frozen Fish",
+    "location": "Aisle 1"
+  },
+  {
+    "category": "Frozen Foods",
+    "location": "Back Wall"
+  },
+  {
+    "category": "Frozen Juice",
+    "location": "Aisle 7"
+  },
+  {
+    "category": "Frozen Organic Foods",
+    "location": "Back Wall"
+  },
+  {
+    "category": "Frozen Pizza",
+    "location": "Back Wall"
+  },
+  {
+    "category": "Frozen Veg.",
+    "location": "Back Wall"
+  },
+  {
+    "category": "Garbage Bags",
+    "location": "Aisle 4"
+  },
+  {
+    "category": "Granola",
+    "location": "Aisle 5"
+  },
+  {
+    "category": "Hot Chocolate",
+    "location": "Aisle 5"
+  },
+  {
+    "category": "Ice Cream",
+    "location": "Aisle 7"
+  },
+  {
+    "category": "Instant Noodles",
+    "location": "Aisle 3"
+  },
+  {
+    "category": "Juice & Drinks",
+    "location": "Aisle 6"
+  },
+  {
+    "category": "Laundry Needs",
+    "location": "Aisle 4"
+  },
+  {
+    "category": "Mexican Cuisine",
+    "location": "Aisle 1"
+  },
+  {
+    "category": "Milk",
+    "location": "Aisle 1"
+  },
+  {
+    "category": "Nuts",
+    "location": "Aisle 7"
+  },
+  {
+    "category": "Other Frozen Products",
+    "location": "Back Wall"
+  },
+  {
+    "category": "Pasta",
+    "location": "Aisle 2"
+  },
+  {
+    "category": "Personal Needs",
+    "location": "Aisle 4"
+  },
+  {
+    "category": "Pet Food",
+    "location": "Aisle 4"
+  },
+  {
+    "category": "Pickles & Olives",
+    "location": "Aisle 1"
+  },
+  {
+    "category": "Pop",
+    "location": "Aisle 6"
+  },
+  {
+    "category": "Popcorn",
+    "location": "Aisle 7"
+  },
+  {
+    "category": "Potato Chips",
+    "location": "Aisle 6"
+  },
+  {
+    "category": "Seaweed",
+    "location": "Aisle 6"
+  },
+  {
+    "category": "Side Dishes",
+    "location": "Aisle 2"
+  },
+  {
+    "category": "Snacks",
+    "location": "Aisle 6"
+  },
+  {
+    "category": "Spreads",
+    "location": "Aisle 5"
+  },
+  {
+    "category": "Sugar & Spices",
+    "location": "Aisle 3"
+  },
+  {
+    "category": "Water",
+    "location": "Aisle 6"
+  }
+]

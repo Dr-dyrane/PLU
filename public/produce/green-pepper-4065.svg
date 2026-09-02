@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1200" role="img" aria-labelledby="title desc">
+  <title id="title">Green bell peppers</title>
+  <desc id="desc">A dark still-life illustration of glossy green bell peppers with one pepper cut open.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#111916"/>
+      <stop offset=".55" stop-color="#07100d"/>
+      <stop offset="1" stop-color="#020504"/>
+    </linearGradient>
+    <radialGradient id="body" cx=".32" cy=".2" r=".9">
+      <stop offset="0" stop-color="#79df42"/>
+      <stop offset=".18" stop-color="#35a922"/>
+      <stop offset=".58" stop-color="#167316"/>
+      <stop offset="1" stop-color="#063b0d"/>
+    </radialGradient>
+    <radialGradient id="bodyDark" cx=".28" cy=".18" r=".95">
+      <stop offset="0" stop-color="#4fc838"/>
+      <stop offset=".5" stop-color="#126c18"/>
+      <stop offset="1" stop-color="#04300b"/>
+    </radialGradient>
+    <linearGradient id="stem" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#b0d96b"/>
+      <stop offset=".35" stop-color="#4b8a34"/>
+      <stop offset="1" stop-color="#193e21"/>
+    </linearGradient>
+    <radialGradient id="flesh" cx=".38" cy=".35" r=".75">
+      <stop offset="0" stop-color="#f8f6b9"/>
+      <stop offset=".48" stop-color="#d7e98b"/>
+      <stop offset="1" stop-color="#8bbb4f"/>
+    </radialGradient>
+    <radialGradient id="seed" cx=".35" cy=".25" r=".8">
+      <stop offset="0" stop-color="#fffbe5"/>
+      <stop offset="1" stop-color="#d8c98a"/>
+    </radialGradient>
+    <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#17211d"/>
+      <stop offset="1" stop-color="#030605"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="180%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="30"/>
+      <feOffset dy="34"/>
+      <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .72 0"/>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="12"/>
+    </filter>
+    <filter id="grain" x="-10%" y="-10%" width="120%" height="120%">
+      <feTurbulence type="fractalNoise" baseFrequency=".75" numOctaves="2" seed="8" result="n"/>
+      <feColorMatrix in="n" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 .055 0"/>
+      <feBlend in="SourceGraphic" mode="soft-light"/>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="1200" fill="url(#bg)"/>
+  <ellipse cx="420" cy="265" rx="520" ry="360" fill="#214f32" opacity=".16" filter="url(#soft)"/>
+  <ellipse cx="1280" cy="370" rx="420" ry="300" fill="#337c3f" opacity=".09" filter="url(#soft)"/>
+  <path d="M0 865 C390 810 1180 815 1600 870 V1200 H0Z" fill="url(#floor)"/>
+
+  <!-- Rear pepper -->
+  <g transform="translate(1030 255) rotate(9)" filter="url(#shadow)">
+    <path d="M218 90 C145 58 64 91 30 175 C-13 282 10 520 110 637 C151 685 207 694 255 659 C302 696 360 686 398 637 C489 520 514 281 470 175 C435 91 354 58 282 90 C263 60 237 60 218 90Z" fill="url(#bodyDark)"/>
+    <path d="M238 96 C239 42 260 8 307 -14 C323 -21 344 -12 348 5 C352 24 337 38 319 43 C292 51 280 69 279 101Z" fill="url(#stem)"/>
+    <path d="M75 186 C121 111 176 101 225 137 C161 230 145 420 170 577 C97 482 57 286 75 186Z" fill="#b1f36d" opacity=".16"/>
+    <ellipse cx="165" cy="183" rx="61" ry="138" fill="#e8ffd0" opacity=".18" transform="rotate(19 165 183)"/>
+  </g>
+
+  <!-- Left pepper -->
+  <g transform="translate(125 305) rotate(-10)" filter="url(#shadow)">
+    <path d="M218 90 C145 58 64 91 30 175 C-13 282 10 520 110 637 C151 685 207 694 255 659 C302 696 360 686 398 637 C489 520 514 281 470 175 C435 91 354 58 282 90 C263 60 237 60 218 90Z" fill="url(#bodyDark)"/>
+    <path d="M238 96 C239 42 260 8 307 -14 C323 -21 344 -12 348 5 C352 24 337 38 319 43 C292 51 280 69 279 101Z" fill="url(#stem)"/>
+    <path d="M76 183 C122 112 177 101 226 138 C160 245 148 424 169 579 C97 483 57 286 76 183Z" fill="#c5ff7f" opacity=".17"/>
+    <ellipse cx="170" cy="175" rx="55" ry="132" fill="#efffd8" opacity=".16" transform="rotate(17 170 175)"/>
+  </g>
+
+  <!-- Main pepper -->
+  <g transform="translate(505 190)" filter="url(#shadow)">
+    <path d="M270 115 C179 72 82 108 38 211 C-18 342 9 624 134 770 C183 828 251 838 309 794 C367 840 438 828 485 769 C600 624 630 340 573 210 C529 108 431 72 341 115 C320 78 291 78 270 115Z" fill="url(#body)"/>
+    <path d="M292 122 C290 55 319 14 377 -12 C400 -22 425 -9 430 13 C435 35 416 55 394 60 C356 70 340 90 340 126Z" fill="url(#stem)"/>
+    <path d="M91 224 C151 125 220 121 279 166 C203 286 182 531 214 715 C114 590 68 344 91 224Z" fill="#d4ff91" opacity=".18"/>
+    <path d="M305 151 C369 109 448 131 501 222 C532 276 545 382 531 476 C497 289 421 196 305 151Z" fill="#041e08" opacity=".22"/>
+    <ellipse cx="205" cy="207" rx="73" ry="172" fill="#f3ffdc" opacity=".23" transform="rotate(17 205 207)"/>
+    <ellipse cx="278" cy="289" rx="29" ry="121" fill="#f5ffe7" opacity=".16" transform="rotate(9 278 289)"/>
+    <path d="M159 727 C212 773 265 775 309 741 C355 777 409 774 461 728 C434 798 378 831 309 794 C242 832 185 801 159 727Z" fill="#031d07" opacity=".22"/>
+  </g>
+
+  <!-- Cut pepper foreground -->
+  <g transform="translate(245 750) rotate(-7)" filter="url(#shadow)">
+    <path d="M36 129 C72 35 187 -2 319 14 C457 31 555 101 560 195 C566 295 457 374 310 386 C168 398 43 341 14 244 C3 206 10 166 36 129Z" fill="url(#body)"/>
+    <path d="M76 145 C110 76 198 49 304 58 C408 67 484 116 493 185 C502 260 421 320 309 332 C199 344 105 306 75 238 C62 208 62 175 76 145Z" fill="url(#flesh)"/>
+    <path d="M259 88 C289 116 304 151 304 190 C304 231 288 267 257 299 C225 268 209 232 209 191 C209 151 226 116 259 88Z" fill="#f4f2c3"/>
+    <path d="M259 93 C271 137 274 179 268 219 C263 251 255 276 244 294 C223 266 213 232 214 191 C214 153 229 119 259 93Z" fill="#dce597"/>
+    <g fill="url(#seed)">
+      <ellipse cx="177" cy="154" rx="14" ry="9" transform="rotate(-19 177 154)"/>
+      <ellipse cx="157" cy="188" rx="15" ry="9" transform="rotate(17 157 188)"/>
+      <ellipse cx="180" cy="228" rx="14" ry="9" transform="rotate(31 180 228)"/>
+      <ellipse cx="350" cy="141" rx="14" ry="9" transform="rotate(18 350 141)"/>
+      <ellipse cx="379" cy="182" rx="15" ry="9" transform="rotate(-22 379 182)"/>
+      <ellipse cx="355" cy="229" rx="14" ry="9" transform="rotate(-31 355 229)"/>
+      <ellipse cx="314" cy="272" rx="13" ry="8" transform="rotate(12 314 272)"/>
+      <ellipse cx="215" cy="275" rx="13" ry="8" transform="rotate(-14 215 275)"/>
+    </g>
+    <path d="M86 137 C137 66 224 48 309 59 C187 73 116 121 86 207 C77 181 77 158 86 137Z" fill="#ffffff" opacity=".14"/>
+  </g>
+
+  <ellipse cx="800" cy="1080" rx="650" ry="55" fill="#000" opacity=".62" filter="url(#soft)"/>
+  <rect width="1600" height="1200" fill="transparent" filter="url(#grain)"/>
+</svg>

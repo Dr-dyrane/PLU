@@ -1,29 +1,41 @@
 # PLU Master
 
-An image-first learning system for produce lookup codes.
+An image-first PLU learning prototype built with Next.js, TypeScript, and a static catalog.
 
-The first vertical slice teaches **Green Pepper → 4065** with the reusable sequence:
+The first complete learning path teaches **Green Pepper → 4065** using:
 
 `See → Encode → Hide → Recall → Correct → Contrast → Schedule`
 
-## What is deterministic
+## The algorithm
 
-The product code comes from the checked-in catalog. It is never predicted from color, shape, or category.
+The application does not calculate or predict PLU codes from a product's appearance. The workbook/catalog is the source of truth.
 
-The memory compiler then creates the learnable relationship:
+For memorization, the code is compiled into stable number pegs:
 
 `4065 → 40 | 65 → Rick Ross | Julius Caesar`
 
-The product-specific visual scene binds those pegs back to the produce item.
+A product-centred visual story connects those pegs back to the item.
 
 ## Data
 
-- `source/PLU_Codes.xlsx` — auditable source workbook
-- `data/catalog.json` — 475 normalized catalog records
-- `data/peg-table.json` — complete 0–9 and 00–99 peg system
-- `data/lessons.ts` — curated teaching records layered on the catalog
+- `data/catalog/*.json` — all 475 source catalog rows, split into static chunks
+- `data/peg-table.json` — all 10 single-digit and 100 two-digit mnemonic pegs
+- `data/aisles.json` — the grocery aisle directory for a later quiz mode
+- `data/lessons.ts` — curated learning content layered on exact catalog records
 
-`npm run validate:data` verifies the catalog, complete peg table, and the first learning path before every production build.
+The first lesson reads `Peppers - Green → 4065` from the catalog; it is not generated from color, shape, or category.
+
+## Current prototype
+
+- Responsive desktop, tablet, and phone layouts
+- Product-image recognition
+- Correct even/odd code chunking
+- Touch keypad and physical keyboard input
+- Immediate correction and forced retry
+- Family contrast after successful recall
+- Optional mnemonic rescue
+- Local progress and review scheduling
+- Static export with no API, database, authentication, or environment variables
 
 ## Local development
 
@@ -32,31 +44,21 @@ npm install
 npm run dev
 ```
 
-Then open `http://localhost:3000`.
-
-## Production build
+## Validation and production build
 
 ```bash
+npm run validate:data
 npm run build
 ```
 
-The app uses Next.js static export and emits deployable HTML, CSS, JavaScript, and assets to `out/`.
+`next.config.ts` uses static export, so a production build emits portable HTML, CSS, JavaScript, and assets to `out/`.
 
-## Deploy with Vercel
+## Deploy on Vercel
 
-1. Import the GitHub repository `Dr-dyrane/PLU` into Vercel.
+1. Import `Dr-dyrane/PLU`.
 2. Keep the detected framework as **Next.js**.
-3. No environment variables are required.
-4. Deploy from `main`.
+3. Keep the repository root as the root directory.
+4. No environment variables are required.
+5. Deploy `main`.
 
-The Next.js project is at the repository root, so Vercel requires no root-directory override. After the Git integration is connected, future branch pushes can produce preview deployments and updates to `main` can produce production deployments.
-
-## Current scope
-
-- Responsive image-first lesson
-- Physical keyboard and touch keypad
-- Immediate correction and retry
-- Family contrast after successful recall
-- Optional mnemonic rescue
-- Local progress and review scheduling
-- Static, serverless-free deployment
+The included `vercel.json` runs the validated production build. Keep Vercel's output-directory setting on the framework default.

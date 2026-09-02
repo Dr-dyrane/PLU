@@ -1,0 +1,76 @@
+@media (max-width: 940px) {
+  .shell { width: min(720px, calc(100% - 28px)); padding-top: 20px; }
+  .topbar { grid-template-columns: 1fr auto; }
+  .top-progress { grid-row: 2; grid-column: 1 / -1; justify-content: center; }
+  .quiet-button { grid-column: 2; grid-row: 1; }
+  .lesson { grid-template-columns: 1fr; min-height: 0; }
+  .visual-column { padding-bottom: 8px; }
+  .visual-frame { min-height: 430px; height: 58vh; max-height: 590px; }
+  .interaction-column { min-height: 560px; padding: 38px 32px 28px; }
+  .memory-hook { margin-top: 36px; }
+}
+
+@media (max-width: 560px) {
+  .shell { width: min(100% - 18px, 480px); padding: 10px 0 18px; }
+  .topbar { margin: 0 5px 14px; gap: 12px; }
+  .brand-mark { width: 38px; height: 38px; border-radius: 13px; }
+  .brand small { display: none; }
+  .quiet-button { padding: 9px; width: 38px; height: 38px; justify-content: center; }
+  .quiet-button span, .quiet-button { font-size: 0; }
+  .quiet-button svg { width: 19px; }
+  .top-progress { width: 100%; gap: 9px; font-size: 11px; }
+  .progress-track { flex: 1; width: auto; }
+  .lesson { border-radius: 25px; }
+  .visual-column { padding: 10px; }
+  .visual-frame { min-height: 330px; height: 43vh; border-radius: 19px; }
+  .image-meta { top: 12px; left: 12px; right: 12px; }
+  .pill { padding: 8px 10px; font-size: 10px; }
+  .image-caption { left: 16px; bottom: 15px; }
+  .image-caption strong { font-size: 18px; }
+  .anchor-row { padding: 10px 2px 0; min-height: 42px; }
+  .anchor-chip { padding: 7px 9px; font-size: 10px; }
+  .interaction-column { min-height: 540px; padding: 31px 22px 24px; }
+  .eyebrow { margin-bottom: 15px; }
+  h1 { font-size: 46px; }
+  h2 { font-size: 38px; }
+  .lead { margin-top: 17px; font-size: 14px; }
+  .code-teach { margin-top: 31px; font-size: 75px; }
+  .chunk-caption { margin-bottom: 26px; }
+  .code-slots { margin-top: 27px; }
+  .code-slots span { height: 65px; border-radius: 16px; font-size: 29px; }
+  .keypad button { min-height: 49px; }
+  .recall-actions { grid-template-columns: 1fr; gap: 8px; }
+  .text-button { order: 2; }
+  .family-strip { grid-template-columns: repeat(2, 1fr); }
+  .rating-block > div:first-child { display: block; }
+  .rating-block span { display: block; margin-top: 3px; }
+  .rating-row { grid-template-columns: repeat(2, 1fr); }
+  .memory-hook summary { align-items: flex-start; }
+  .memory-hook summary small { max-width: 120px; text-align: right; }
+  .footer-note { display: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+}
+
+/* React version: each mnemonic chunk is wrapped so separators remain data-driven. */
+.code-teach > span {
+  display: inline-flex;
+  align-items: center;
+  gap: 18px;
+}
+.code-teach > span b {
+  color: inherit;
+  font: inherit;
+}
+.code-teach > span:first-child { color: #d8eee0; }
+.code-teach > span:last-child { color: var(--green); }
+.code-teach > span i {
+  order: -1;
+  width: 7px;
+  height: 7px;
+  margin-top: 20px;
+  border-radius: 50%;
+  background: var(--muted-2);
+}
