@@ -23,6 +23,24 @@ export type VariantScope =
   | "organic"
   | "store-specific";
 
+export type ProductPhotoRole = "hero" | "alternate" | "context" | "detail";
+
+export interface ProductPhotoSource {
+  label: string;
+  author: string;
+  license: string;
+  url: string;
+}
+
+export interface ProductPhoto {
+  id: string;
+  src: string;
+  alt: string;
+  role: ProductPhotoRole;
+  focus?: string;
+  source: ProductPhotoSource;
+}
+
 export interface ProductIdentity {
   family: string;
   form: string;
@@ -99,6 +117,7 @@ export interface ProductStory {
   priority: ProductPriority;
   image: string;
   alt: string;
+  photos: ProductPhoto[];
   identity: ProductIdentity;
   checkout: CheckoutIdentity;
   visualCues: string[];
