@@ -4,9 +4,9 @@ import type { ReactNode } from "react";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "PLU Visual Recall",
-  description: "An image-first PLU learning system.",
-  applicationName: "PLU Visual",
+  title: "PLU Trace",
+  description: "Learn produce identity and checkout codes through TRACE.",
+  applicationName: "PLU Trace",
 };
 
 export const viewport: Viewport = {
