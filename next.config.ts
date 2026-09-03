@@ -7,6 +7,18 @@ const nextConfig: NextConfig = {
   images: {
     // Static exports have no on-demand image server.
     unoptimized: true,
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "upload.wikimedia.org",
+        pathname: "/wikipedia/commons/**",
+      },
+      {
+        protocol: "https",
+        hostname: "thumb.wikimedia.org",
+        pathname: "/wikipedia/commons/**",
+      },
+    ],
   },
 };
 
