@@ -6,6 +6,7 @@ const source = JSON.parse(await readFile(sourceUrl, "utf8"));
 const reviewedQueries = new Map([
   ["carrots-jumbo", "Big Carrot-2356"],
   ["collard-greens", "Collard green bunches"],
+  ["dandelion", "Dandelion greens.jpg"],
 ]);
 
 let changes = 0;
