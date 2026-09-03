@@ -6,8 +6,49 @@
   "shortTitle": "Green",
   "family": "Peppers",
   "priority": "must-know",
-  "image": "/produce/green-pepper-4065.svg",
-  "alt": "Several glossy green bell peppers, including one cut open",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Green-Bell-Pepper.jpg/960px-Green-Bell-Pepper.jpg",
+  "alt": "A single whole green bell pepper photographed on a plain white background",
+  "photos": [
+    {
+      "id": "isolated-front",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Green-Bell-Pepper.jpg/960px-Green-Bell-Pepper.jpg",
+      "alt": "A single whole green bell pepper photographed on a plain white background",
+      "role": "hero",
+      "focus": "50% 50%",
+      "source": {
+        "label": "Wikimedia Commons",
+        "author": "Evan-Amos",
+        "license": "Public domain",
+        "url": "https://commons.wikimedia.org/wiki/File:Green-Bell-Pepper.jpg"
+      }
+    },
+    {
+      "id": "isolated-counter",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/Green_Bell_Pepper_%2853630132710%29.jpg/1280px-Green_Bell_Pepper_%2853630132710%29.jpg",
+      "alt": "A whole green bell pepper viewed at a slight angle on a light countertop",
+      "role": "alternate",
+      "focus": "35% 48%",
+      "source": {
+        "label": "Wikimedia Commons",
+        "author": "Alabama Extension / Janet Guynn",
+        "license": "CC0 1.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Green_Bell_Pepper_(53630132710).jpg"
+      }
+    },
+    {
+      "id": "market-context",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Yellow_and_green_Bell_peppers.JPG/960px-Yellow_and_green_Bell_peppers.JPG",
+      "alt": "Green and yellow bell peppers together in a produce-market display",
+      "role": "context",
+      "focus": "70% 50%",
+      "source": {
+        "label": "Wikimedia Commons",
+        "author": "Daderot",
+        "license": "Public domain",
+        "url": "https://commons.wikimedia.org/wiki/File:Yellow_and_green_Bell_peppers.JPG"
+      }
+    }
+  ],
   "identity": {
     "family": "Peppers",
     "form": "Bell",
