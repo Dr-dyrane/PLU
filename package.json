@@ -1,13 +1,13 @@
 {
   "name": "plu-trace",
-  "version": "0.6.0",
+  "version": "0.6.1",
   "private": true,
   "scripts": {
-    "prepare:data": "node scripts/resolve-batch03-media.mjs && node scripts/resolve-batch04-media.mjs",
+    "prepare:data": "node scripts/resolve-batch03-media.mjs && node scripts/resolve-batch04-media-v2.mjs",
     "dev": "npm run prepare:data && next dev",
     "audit:media": "node scripts/audit-remote-media.mjs --all --delay-ms=900 --retries=5",
     "audit:batch03-media": "node scripts/resolve-batch03-media.mjs && node scripts/audit-commons-metadata.mjs --batch=03 && node scripts/audit-remote-media.mjs --batch=03 --delay-ms=900 --retries=5",
-    "audit:batch04-media": "node scripts/resolve-batch04-media.mjs && node scripts/audit-commons-metadata.mjs --batch=04 && node scripts/audit-remote-media.mjs --batch=04 --delay-ms=900 --retries=5",
+    "audit:batch04-media": "node scripts/resolve-batch04-media-v2.mjs && node scripts/audit-commons-metadata.mjs --batch=04 && node scripts/audit-remote-media.mjs --batch=04 --delay-ms=900 --retries=5",
     "validate:data": "npm run prepare:data && node scripts/validate-data.mjs && node scripts/validate-media.mjs && node scripts/validate-batch.mjs && node scripts/audit-commons-metadata.mjs --batch=03 && node scripts/audit-commons-metadata.mjs --batch=04 && node scripts/audit-remote-media.mjs --batch=03 --delay-ms=900 --retries=5 && node scripts/audit-remote-media.mjs --batch=04 --delay-ms=900 --retries=5",
     "validate:ui": "node scripts/validate-ui.mjs && node scripts/validate-progressive-feed.mjs",
     "build": "npm run validate:data && npm run validate:ui && next build",
