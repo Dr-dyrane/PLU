@@ -4,14 +4,19 @@ import type { ReactNode } from "react";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "PLU Trace",
-  description: "Learn produce identity and checkout codes through TRACE.",
-  applicationName: "PLU Trace",
+  title: "PLU",
+  description: "See produce, identify the exact item, and recall its checkout code.",
+  applicationName: "PLU",
+  icons: {
+    icon: [{ url: "/favicon.ico", sizes: "any" }],
+    apple: [{ url: "/apple-icon.png", sizes: "180x180", type: "image/png" }],
+  },
 };
 
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
+  viewportFit: "cover",
   themeColor: "#07110f",
 };
 
