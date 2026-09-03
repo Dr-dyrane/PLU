@@ -8,8 +8,8 @@ export const metadata: Metadata = {
   description: "See produce, identify the exact item, and recall its checkout code.",
   applicationName: "PLU",
   icons: {
-    icon: [{ url: "/favicon.ico", sizes: "any" }],
-    apple: [{ url: "/apple-icon.png", sizes: "180x180", type: "image/png" }],
+    icon: [{ url: "/icon.svg", sizes: "any", type: "image/svg+xml" }],
+    shortcut: [{ url: "/icon.svg", type: "image/svg+xml" }],
   },
 };
 
