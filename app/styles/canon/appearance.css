@@ -1,0 +1,201 @@
+/* Semantic appearance layer. Light is the default; dark is user-selected. */
+:root,
+html[data-theme="light"] {
+  color-scheme: light;
+  --bg: #f2f2f7;
+  --surface: rgba(255, 255, 255, 0.92);
+  --surface-2: rgba(248, 248, 250, 0.96);
+  --surface-solid: #ffffff;
+  --soft: rgba(60, 60, 67, 0.08);
+  --soft-2: rgba(60, 60, 67, 0.13);
+  --text: #151517;
+  --muted: #636366;
+  --faint: #8e8e93;
+  --hairline: rgba(60, 60, 67, 0.17);
+  --glass: rgba(255, 255, 255, 0.74);
+  --field: rgba(118, 118, 128, 0.12);
+  --field-active: rgba(118, 118, 128, 0.17);
+  --sheet-surface: rgba(250, 250, 252, 0.985);
+  --lesson-surface: radial-gradient(circle at 76% 0%, rgba(var(--accent-rgb), 0.09), transparent 25rem), linear-gradient(155deg, rgba(255, 255, 255, 0.98), rgba(247, 247, 250, 0.97));
+  --action-dock: linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.96) 28%);
+  --page-background: radial-gradient(circle at 12% -10%, rgba(53, 199, 111, 0.12), transparent 35rem), radial-gradient(circle at 102% 105%, rgba(82, 110, 226, 0.09), transparent 36rem), linear-gradient(145deg, #f8f8fb 0%, #f2f2f7 58%, #ececf2 100%);
+  --shadow: 0 24px 70px rgba(31, 34, 33, 0.12);
+  --shadow-strong: 0 30px 90px rgba(31, 34, 33, 0.17);
+  --on-accent: #ffffff;
+  --on-photo-accent: #06130b;
+  --on-photo: #ffffff;
+  --photo-muted: rgba(255, 255, 255, 0.72);
+  --green: #167743;
+  --green-strong: #0e5e34;
+  --blue: #2c61a9;
+  --amber: #946000;
+  --red: #bf3f3a;
+  --success-fill: #34c759;
+  --success-soft: rgba(52, 199, 89, 0.14);
+  --warning-fill: #ffd60a;
+  --warning-soft: rgba(255, 214, 10, 0.16);
+  --danger-soft: rgba(255, 59, 48, 0.12);
+  --switch-off: rgba(120, 120, 128, 0.28);
+  --switch-on: #34c759;
+  --switch-thumb: #ffffff;
+  --switch-shadow: 0 2px 7px rgba(0, 0, 0, 0.24);
+  --home-accent: #176b3a;
+  --home-accent-strong: #0f552d;
+  --home-accent-rgb: 23, 107, 58;
+}
+
+html[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #020705;
+  --surface: rgba(16, 29, 25, 0.94);
+  --surface-2: rgba(22, 38, 33, 0.96);
+  --surface-solid: #0d1714;
+  --soft: rgba(255, 255, 255, 0.065);
+  --soft-2: rgba(255, 255, 255, 0.105);
+  --text: #f5f8f6;
+  --muted: #9dada7;
+  --faint: #6f817a;
+  --hairline: rgba(255, 255, 255, 0.11);
+  --glass: rgba(16, 29, 25, 0.72);
+  --field: rgba(255, 255, 255, 0.066);
+  --field-active: rgba(255, 255, 255, 0.09);
+  --sheet-surface: rgba(12, 24, 20, 0.985);
+  --lesson-surface: radial-gradient(circle at 76% 0%, rgba(var(--accent-rgb), 0.075), transparent 25rem), linear-gradient(155deg, rgba(19, 35, 30, 0.97), rgba(8, 17, 14, 0.95));
+  --action-dock: linear-gradient(180deg, rgba(10, 20, 17, 0), rgba(10, 20, 17, 0.96) 28%);
+  --page-background: radial-gradient(circle at 12% -10%, rgba(72, 216, 130, 0.18), transparent 35rem), radial-gradient(circle at 102% 105%, rgba(91, 111, 255, 0.13), transparent 36rem), linear-gradient(145deg, #07120f 0%, #020705 58%, #07100d 100%);
+  --shadow: 0 28px 88px rgba(0, 0, 0, 0.46);
+  --shadow-strong: 0 35px 100px rgba(0, 0, 0, 0.58);
+  --on-accent: #06130b;
+  --on-photo-accent: #06130b;
+  --on-photo: #ffffff;
+  --photo-muted: rgba(255, 255, 255, 0.72);
+  --green: #7ce7a0;
+  --green-strong: #43d27b;
+  --blue: #9ab9ff;
+  --amber: #f5c774;
+  --red: #ff918d;
+  --success-fill: #7ce7a0;
+  --success-soft: rgba(124, 231, 160, 0.14);
+  --warning-fill: #f5c774;
+  --warning-soft: rgba(245, 199, 116, 0.14);
+  --danger-soft: rgba(255, 115, 108, 0.14);
+  --switch-off: rgba(255, 255, 255, 0.22);
+  --switch-on: #34c759;
+  --switch-thumb: #ffffff;
+  --switch-shadow: 0 2px 8px rgba(0, 0, 0, 0.44);
+  --home-accent: #7ce7a0;
+  --home-accent-strong: #43d27b;
+  --home-accent-rgb: 124, 231, 160;
+}
+
+body { color: var(--text); background: var(--page-background); }
+
+.productTheme,
+.batchLessonCard {
+  --accent: var(--accent-light, #176b3a);
+  --accent-strong: var(--accent-light-strong, #0f552d);
+  --accent-rgb: var(--accent-light-rgb, 23, 107, 58);
+  --accent-on-photo: var(--accent-dark, #7ce7a0);
+  --accent-on-photo-rgb: var(--accent-dark-rgb, 124, 231, 160);
+}
+
+html[data-theme="dark"] .productTheme,
+html[data-theme="dark"] .batchLessonCard {
+  --accent: var(--accent-dark, #7ce7a0);
+  --accent-strong: var(--accent-dark-strong, #43d27b);
+  --accent-rgb: var(--accent-dark-rgb, 124, 231, 160);
+}
+
+.productTheme .app {
+  --accent: var(--accent-light, #176b3a);
+  --accent-strong: var(--accent-light-strong, #0f552d);
+  --accent-rgb: var(--accent-light-rgb, 23, 107, 58);
+  --accent-on-photo: var(--accent-dark, #7ce7a0);
+  --accent-on-photo-rgb: var(--accent-dark-rgb, 124, 231, 160);
+}
+
+html[data-theme="dark"] .productTheme .app {
+  --accent: var(--accent-dark, #7ce7a0);
+  --accent-strong: var(--accent-dark-strong, #43d27b);
+  --accent-rgb: var(--accent-dark-rgb, 124, 231, 160);
+}
+
+.batchPage,
+.homeFilterOverlay {
+  --accent: var(--home-accent);
+  --accent-strong: var(--home-accent-strong);
+  --accent-rgb: var(--home-accent-rgb);
+}
+
+.lessonCard { background: var(--lesson-surface); box-shadow: var(--shadow), inset 0 1px 0 var(--hairline); }
+.batchDiscovery { background: var(--glass); box-shadow: inset 0 1px 0 var(--hairline), 0 20px 60px rgba(31, 34, 33, 0.08); }
+html[data-theme="dark"] .batchDiscovery { box-shadow: inset 0 1px 0 var(--hairline), 0 20px 60px rgba(0, 0, 0, 0.16); }
+.batchSearch,
+.batchFilterButton,
+.batchSearch button { background: var(--field); box-shadow: inset 0 1px 0 var(--hairline); }
+.batchSearch:focus-within { background: var(--field-active); box-shadow: inset 0 0 0 1px rgba(var(--accent-rgb), 0.34), inset 0 1px 0 var(--hairline); }
+.batchCategoryRail button:hover,
+.batchQueueToggle,
+.batchQueueCard,
+.batchQueueMore,
+.batchEmpty,
+.homeFilterClose,
+.homeFilterOption,
+.homeFilterReset,
+.headerButton,
+.lessonBackButton,
+.closeButton,
+.visualCue,
+.choiceButton,
+.codeSlot,
+.key,
+.storyCard { background: var(--soft); }
+.batchCount { background: var(--soft); box-shadow: inset 0 1px 0 var(--hairline); }
+.homeFilterSheet,
+.sheet { color: var(--text); background: radial-gradient(circle at 60% 0%, rgba(var(--accent-rgb), 0.08), transparent 24rem), var(--sheet-surface); box-shadow: var(--shadow-strong), inset 0 1px 0 var(--hairline); }
+.sheetTabs,
+.pathPreview { background: var(--field); }
+.actionDock { background: var(--action-dock); }
+
+.batchStart,
+.batchFilterButton b,
+.batchCategoryRail button.active,
+.batchEmpty button,
+.homeFilterOption.active > i,
+.homeFilterDone,
+.primaryAction,
+.sheetTabs button.active { color: var(--on-accent); }
+
+.batchLessonCopy b,
+.batchLearnedBadge svg,
+.familyLabel,
+.badgeWeight,
+.factChip svg { color: var(--accent-on-photo, var(--accent)); }
+.batchLessonGo { color: var(--on-photo-accent); background: var(--accent-on-photo, var(--accent)); }
+.batchLessonOrder,
+.batchLearnedBadge,
+.photoCaption h1,
+.batchLessonCopy strong { color: var(--on-photo); }
+.batchLessonCopy small { color: var(--photo-muted); }
+
+.choiceButton.correct { background: var(--success-soft); }
+.choiceButton.wrong { background: var(--danger-soft); }
+.key.next,
+.key.accepted,
+.successMark,
+.reaction:not(.warn) { color: #06130b; background: var(--success-fill); }
+.successCode { color: var(--green); background: var(--success-soft); }
+.reaction.warn { color: #211506; background: var(--warning-fill); }
+.repairCue { background: var(--warning-soft); }
+
+body,
+.lessonCard,
+.batchDiscovery,
+.batchSearch,
+.batchFilterButton,
+.batchCount,
+.batchQueueCard,
+.batchQueueMore,
+.homeFilterSheet,
+.sheet,
+.appFooter { transition: color 0.22s var(--ease), background-color 0.22s var(--ease), box-shadow 0.22s var(--ease); }

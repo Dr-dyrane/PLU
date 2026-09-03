@@ -9,8 +9,8 @@ export default function manifest(): MetadataRoute.Manifest {
     description: "Learn produce identity and checkout codes.",
     start_url: "/",
     display: "standalone",
-    background_color: "#020705",
-    theme_color: "#07110f",
+    background_color: "#F2F2F7",
+    theme_color: "#F2F2F7",
     icons: [{ src: "/icon.svg", sizes: "any", type: "image/svg+xml" }],
   };
 }
