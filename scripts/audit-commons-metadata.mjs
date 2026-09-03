@@ -1,30 +1,40 @@
 import { readFile, readdir } from "node:fs/promises";
 
-const BATCH = "03";
 const API_URL = "https://commons.wikimedia.org/w/api.php";
 const CHUNK_SIZE = 40;
 const TIMEOUT_MS = 25_000;
+
+function parseBatch(argv) {
+  const argument = argv.find((value) => value.startsWith("--batch="));
+  const batch = argument?.slice("--batch=".length) ?? "03";
+  if (!/^\d{2}$/.test(batch)) throw new Error(`Invalid batch identifier: ${batch}`);
+  return batch;
+}
 
 async function readJson(url) {
   return JSON.parse(await readFile(url, "utf8"));
 }
 
-async function loadSeeds() {
+async function loadSeeds(batch) {
   const directory = new URL("../data/story-seeds/", import.meta.url);
   const files = (await readdir(directory))
-    .filter((name) => name.startsWith(`batch-${BATCH}-`) && name.endsWith(".json"))
+    .filter((name) => name.startsWith(`batch-${batch}-`) && name.endsWith(".json"))
     .sort();
   const records = [];
   for (const name of files) {
     const value = await readJson(new URL(name, directory));
-    for (const record of Array.isArray(value) ? value : [value]) records.push({ record, sourceFile: name });
+    for (const record of Array.isArray(value) ? value : [value]) {
+      records.push({ record, sourceFile: name });
+    }
   }
   return records;
 }
 
 function chunks(values, size) {
   const result = [];
-  for (let index = 0; index < values.length; index += size) result.push(values.slice(index, index + size));
+  for (let index = 0; index < values.length; index += size) {
+    result.push(values.slice(index, index + size));
+  }
   return result;
 }
 
@@ -34,18 +44,11 @@ function apiTitle(file) {
 
 async function queryCommons(files) {
   const controller = new AbortController();
-  const timeout = setTimeout(() => controller.abort(new Error(`Timed out after ${TIMEOUT_MS} ms`)), TIMEOUT_MS);
+  const timeout = setTimeout(
+    () => controller.abort(new Error(`Timed out after ${TIMEOUT_MS} ms`)),
+    TIMEOUT_MS,
+  );
   try {
-    const body = new URLSearchParams({
-      action: "query",
-      format: "json",
-      formatversion: "2",
-      prop: "imageinfo",
-      iiprop: "url|mime|size",
-      iiurlwidth: "1600",
-      redirects: "1",
-      titles: files.map(apiTitle).join("|"),
-    });
     const response = await fetch(API_URL, {
       method: "POST",
       signal: controller.signal,
@@ -54,9 +57,20 @@ async function queryCommons(files) {
         "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8",
         "User-Agent": "PLU-published-media-audit/1.0 (+https://plu-beta.vercel.app/)",
       },
-      body,
+      body: new URLSearchParams({
+        action: "query",
+        format: "json",
+        formatversion: "2",
+        prop: "imageinfo",
+        iiprop: "url|mime|size",
+        iiurlwidth: "1600",
+        redirects: "1",
+        titles: files.map(apiTitle).join("|"),
+      }),
     });
-    if (!response.ok) throw new Error(`Commons API returned HTTP ${response.status} ${response.statusText}`);
+    if (!response.ok) {
+      throw new Error(`Commons API returned HTTP ${response.status} ${response.statusText}`);
+    }
     return await response.json();
   } finally {
     clearTimeout(timeout);
@@ -73,7 +87,10 @@ function resolveTitle(title, aliases) {
   return current;
 }
 
-const seeds = await loadSeeds();
+const batch = parseBatch(process.argv.slice(2));
+const seeds = await loadSeeds(batch);
+if (!seeds.length) throw new Error(`No Batch ${batch} story seeds were found.`);
+
 const references = [];
 for (const { record, sourceFile } of seeds) {
   for (const photo of record.photos ?? []) {
@@ -106,7 +123,12 @@ for (const [index, group] of chunks(uniqueFiles, CHUNK_SIZE).entries()) {
     const page = pages.get(resolved);
     const image = page?.imageinfo?.[0];
     metadata.set(file, {
-      exists: Boolean(page && !page.missing && image?.url && image?.mime?.startsWith("image/")),
+      exists: Boolean(
+        page &&
+          !page.missing &&
+          image?.url &&
+          image?.mime?.startsWith("image/")
+      ),
       requested,
       resolved,
       page,
@@ -114,7 +136,9 @@ for (const [index, group] of chunks(uniqueFiles, CHUNK_SIZE).entries()) {
     });
   }
 
-  console.log(`Resolved Commons metadata ${Math.min((index + 1) * CHUNK_SIZE, uniqueFiles.length)}/${uniqueFiles.length}.`);
+  console.log(
+    `Resolved Batch ${batch} Commons metadata ${Math.min((index + 1) * CHUNK_SIZE, uniqueFiles.length)}/${uniqueFiles.length}.`,
+  );
 }
 
 const failures = [];
@@ -124,14 +148,20 @@ for (const reference of references) {
 }
 
 if (failures.length) {
-  console.error(`\n${failures.length} Batch 03 image reference${failures.length === 1 ? "" : "s"} do not resolve to a Commons image:\n`);
+  console.error(
+    `\n${failures.length} Batch ${batch} image reference${failures.length === 1 ? "" : "s"} do not resolve to a Commons image:\n`,
+  );
   for (const { reference, result } of failures) {
     console.error(`- ${reference.storyId} · ${reference.role} · ${reference.file}`);
     console.error(`  ${reference.sourceFile}`);
-    if (result?.resolved && result.resolved !== result.requested) console.error(`  resolved title: ${result.resolved}`);
+    if (result?.resolved && result.resolved !== result.requested) {
+      console.error(`  resolved title: ${result.resolved}`);
+    }
   }
   process.exitCode = 1;
-  throw new Error(`Commons metadata audit failed for ${failures.length} Batch 03 image reference${failures.length === 1 ? "" : "s"}.`);
+  throw new Error(
+    `Commons metadata audit failed for ${failures.length} Batch ${batch} image reference${failures.length === 1 ? "" : "s"}.`,
+  );
 }
 
 const mimeCounts = new Map();
@@ -141,6 +171,10 @@ for (const result of metadata.values()) {
 }
 
 console.log(
-  `Validated ${references.length} Batch 03 image references across ${seeds.length} stories through the Wikimedia Commons API.`,
+  `Validated ${references.length} Batch ${batch} image references across ${seeds.length} stories through the Wikimedia Commons API.`,
 );
-console.log(`Image formats: ${[...mimeCounts.entries()].map(([mime, count]) => `${mime} ${count}`).join(", ")}.`);
+console.log(
+  `Unique files: ${uniqueFiles.length}. Image formats: ${[...mimeCounts.entries()]
+    .map(([mime, count]) => `${mime} ${count}`)
+    .join(", ")}.`,
+);
