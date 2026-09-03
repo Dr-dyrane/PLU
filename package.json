@@ -1,10 +1,10 @@
 {
   "name": "plu-trace",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "validate:data": "node scripts/validate-data.mjs",
+    "validate:data": "node scripts/validate-data.mjs && node scripts/validate-media.mjs",
     "build": "npm run validate:data && next build",
     "typecheck": "tsc --noEmit"
   },
