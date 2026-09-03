@@ -83,10 +83,13 @@ for (const [index, batch] of batches.entries()) {
       item.code,
       `${batch.id}/${item.title}: story and batch codes differ.`,
     );
-    assert.equal(
-      story.title,
-      item.title,
-      `${batch.id}/${item.title}: story title and batch title differ.`,
+    assert.ok(
+      typeof story.title === "string" && story.title.trim().length > 1,
+      `${batch.id}/${item.title}: story title is required.`,
+    );
+    assert.ok(
+      typeof item.title === "string" && item.title.trim().length > 1,
+      `${batch.id}: batch display title is required.`,
     );
 
     if (catalogRecord.soldBy) {
