@@ -43,7 +43,9 @@ import batch03S07 from "@/data/story-seeds/batch-03-07.json";
 import batch03S08 from "@/data/story-seeds/batch-03-08.json";
 import batch03S09 from "@/data/story-seeds/batch-03-09.json";
 import batch03S10 from "@/data/story-seeds/batch-03-10.json";
+import batch04Generated from "@/data/story-seeds/batch-04-generated.json";
 import { compileStorySeeds } from "@/data/stories/compile-story-seed";
+import type { BatchStorySummary } from "@/types/batch";
 import type { ProductStory } from "@/types/trace";
 
 export const greenPepperStory: ProductStory = {
@@ -134,11 +136,30 @@ export const batch03Stories: ProductStory[] = [
   ...compileStorySeeds(batch03S10),
 ];
 
+export const batch04Stories: ProductStory[] = compileStorySeeds(batch04Generated);
+
 export const productStories: ProductStory[] = [
   ...core25Stories,
   ...batch02Stories,
   ...batch03Stories,
+  ...batch04Stories,
 ];
 
 export const productStoryById = new Map(productStories.map((story) => [story.id, story]));
 export const productStoryByCatalogId = new Map(productStories.map((story) => [story.catalogId, story]));
+
+export const homeStorySummaries: BatchStorySummary[] = productStories.map((story) => {
+  const hero = story.photos.find((photo) => photo.role === "hero") ?? story.photos[0];
+  if (!hero) throw new Error(`Story has no home-card photograph: ${story.id}`);
+
+  return {
+    id: story.id,
+    catalogId: story.catalogId,
+    title: story.title,
+    shortTitle: story.shortTitle,
+    family: story.family,
+    identity: story.identity,
+    checkout: story.checkout,
+    hero,
+  };
+});
