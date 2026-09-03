@@ -1,95 +1,57 @@
-# PLU Trace
+# PLU
 
-An image-first produce-identification and checkout-code learning system built with Next.js and TypeScript.
+An image-first produce-identification and checkout-code learning system built with Next.js, TypeScript, and Lucide React.
 
 `main` is the implementation branch and the Vercel production source.
 
-## TRACE
-
-PLU identifiers are exact catalog assignments, so the application never predicts a code from product appearance. It teaches the parts that can be reasoned about, then makes the unavoidable final association procedural.
+## Learning flow
 
 ```text
-Tell → Resolve → Attach → Challenge → Establish
+Look → Know → Code → Practice → Recall
 ```
 
-For Green Pepper:
+The app teaches the part that can be reasoned about—exact product recognition—before attaching the store's assigned code. Every lesson uses several realistic photographs so recognition transfers across angle, lighting, specimen, and market context.
 
-```text
-Peppers → bell form → green → loose/by weight → 4065
-```
+## Core 25
 
-The code is compiled into the actual checkout-keypad action:
+Batch 01 is defined in `data/batches/batch-01.json`.
 
-```text
-4065 → 40 | 65 → 4 → 0  |  6 → 5
-```
+- 25 exact catalog mappings are locked.
+- The first six lessons form the pepper family.
+- The remaining 19 products are queued in a deliberate order covering bananas, avocados, citrus, herbs, roots, alliums, potatoes, tomatoes, cucumbers, broccoli, and apples.
 
-The same code and keypad layout always produce the same visual path, rhythm, tones, and haptic sequence. Path points decode back to the original code.
+Ready lessons are available at `/learn/[story-id]/`; the set overview is available at `/batch-01/` and at the home page.
 
 ## Product stories
 
-The supplied workbook and reference sheets contain context beyond the number itself. `data/stories/green-pepper.json` demonstrates how progressive disclosure preserves it:
+Every ready lesson carries:
 
-- exact product identity;
-- visible discrimination cues;
-- sold by weight versus each;
-- loose, bag, bulk, and case records;
-- source-sheet provenance and confidence;
-- nearby code relationships and exceptions;
-- nearest visual confusion.
-
-The main lesson reveals one fact at a time. The complete product story is available through a mobile bottom sheet or desktop inspector sheet.
-
-## Recognition media
-
-Every canonical product story contains at least three distinct realistic photographs:
-
-1. **Hero** — a clean first-recognition view.
-2. **Alternate** — another angle or natural shape variation.
-3. **Context** — a realistic produce-bin or market view used during unsupported recall.
-
-TRACE changes the photograph as the learner progresses. The product identity stays constant while viewpoint, lighting, neighboring produce, and surface imperfections change. This trains category recognition rather than memorization of one picture.
-
-Each media record carries alt text, focus position, author, license, and source URL. `npm run validate:data` rejects stories that do not meet this media contract.
+- exact catalog ID and checkout code;
+- sold-by-weight or sold-each behavior;
+- three realistic photographs with provenance;
+- visual cues and classification decisions;
+- package, case, bulk, and related listings where present;
+- nearest visual confusions;
+- local code relationships presented as observations, never formulas.
 
 ## Data
 
 - `data/catalog/*.json` — 475 normalized source rows.
 - `data/aisles.json` — 47 grocery-aisle entries.
-- `data/stories/*.json` — curated, source-backed progressive product stories.
+- `data/batches/*.json` — ordered production batches.
+- `data/stories/*.json` — source-backed product stories.
 - `data/canonical.ts` — the single runtime entrypoint.
-- `data/pegs/*` — legacy workbook material retained for audit, not used by TRACE.
+- `data/pegs/*` — legacy workbook material retained for audit, not used by the current lesson.
 
-## Learning state
-
-The reducer records identity, path, support, and recall events. Event IDs make updates idempotent:
-
-```text
-reduce(reduce(state, event), event) === reduce(state, event)
-```
-
-The interface infers competence from behavior instead of asking the learner to choose `Again`, `Hard`, `Good`, or `Easy`.
-
-## Local development
-
-```bash
-npm install
-npm run dev
-```
-
-## Validation and build
+## Validation
 
 ```bash
 npm run validate:data
+npm run validate:ui
 npm run typecheck
 npm run build
 ```
 
-The validators check the 475-row catalog, product-story provenance, realistic-photo coverage, code chunking, keypad-path round trips, and idempotent event behavior.
+The production build verifies exact catalog mappings, media coverage, batch completeness, native interaction safeguards, safe areas, touch targets, clean learner copy, and static rendering.
 
-Node is pinned to `22.x`. No database, API, authentication, or environment variables are required.
-
-## Design documents
-
-- [`docs/TRACE_LEARNING_ENGINE.md`](docs/TRACE_LEARNING_ENGINE.md)
-- [`docs/PRODUCT_MEDIA_CANON.md`](docs/PRODUCT_MEDIA_CANON.md)
+Node is pinned to `22.x`. No database, authentication, API, or environment variable is required.
