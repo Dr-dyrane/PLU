@@ -2,6 +2,7 @@ import batch01Raw from "@/data/batches/batch-01.json";
 import batch02Raw from "@/data/batches/batch-02.json";
 import batch03Raw from "@/data/batches/batch-03.json";
 import batch04Raw from "@/data/batches/batch-04.json";
+import batch05Raw from "@/data/batches/batch-05.json";
 import { productStoryByCatalogId } from "@/data/stories";
 import type { ProductBatch, ReadyBatchItem } from "@/types/batch";
 
@@ -9,6 +10,7 @@ export const batch01 = batch01Raw as ProductBatch;
 export const batch02 = batch02Raw as ProductBatch;
 export const batch03 = batch03Raw as ProductBatch;
 export const batch04 = batch04Raw as ProductBatch;
+export const batch05 = batch05Raw as ProductBatch;
 
 function readyItems(batch: ProductBatch): ReadyBatchItem[] {
   return batch.items
@@ -34,7 +36,7 @@ function combineBatches(
   });
 
   return {
-    schemaVersion: "0.7.2",
+    schemaVersion: "0.8.0",
     id,
     title,
     size: items.length,
@@ -47,6 +49,7 @@ export const batch01ReadyItems = readyItems(batch01);
 export const batch02ReadyItems = readyItems(batch02);
 export const batch03ReadyItems = readyItems(batch03);
 export const batch04ReadyItems = readyItems(batch04);
+export const batch05ReadyItems = readyItems(batch05);
 
 export const mustKnow50 = combineBatches(
   "must-know-50",
@@ -69,6 +72,14 @@ export const mustKnow200 = combineBatches(
   [batch01, batch02, batch03, batch04],
 );
 
+export const mustKnow300 = combineBatches(
+  "must-know-300",
+  "Must Know 300",
+  "Five completed recognition-first batches with semantic image validation",
+  [batch01, batch02, batch03, batch04, batch05],
+);
+
 export const mustKnow50ReadyItems = readyItems(mustKnow50);
 export const mustKnow100ReadyItems = readyItems(mustKnow100);
 export const mustKnow200ReadyItems = readyItems(mustKnow200);
+export const mustKnow300ReadyItems = readyItems(mustKnow300);
