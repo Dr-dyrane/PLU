@@ -1,0 +1,75 @@
+.productTheme {
+  display: contents;
+}
+
+.app {
+  --accent: #7ce7a0;
+  --accent-strong: #43d27b;
+  --accent-rgb: 124, 231, 160;
+}
+
+button:focus-visible,
+[tabindex]:focus-visible {
+  outline-color: rgba(var(--accent-rgb), .42);
+}
+
+.progressDots i.active {
+  background: linear-gradient(90deg, var(--accent-strong), var(--accent));
+  box-shadow: 0 0 14px rgba(var(--accent-rgb), .24);
+}
+
+.headerButton svg,
+.badgeWeight,
+.familyLabel,
+.factChip svg,
+.kicker,
+.visualCueIcon,
+.miniDots i.active,
+.choiceVisual svg,
+.choiceArrow,
+.codeMeaning svg,
+.pathArrow,
+.codeSlot.cursor::after {
+  color: var(--accent);
+  stroke: currentColor;
+}
+
+.visualCueIcon {
+  background: rgba(var(--accent-rgb), .09);
+}
+
+.choiceButton:hover {
+  background: rgba(var(--accent-rgb), .10);
+}
+
+.codePair {
+  background: linear-gradient(145deg, rgba(var(--accent-rgb), .14), rgba(255,255,255,.045));
+}
+
+.codeDivider {
+  background: var(--accent);
+  box-shadow: 0 0 16px rgba(var(--accent-rgb), .4);
+}
+
+.codeSlot.filled {
+  background: rgba(var(--accent-rgb), .11);
+}
+
+.primaryAction {
+  color: #07110d;
+  background: linear-gradient(135deg, color-mix(in srgb, var(--accent) 82%, white), var(--accent-strong));
+  box-shadow: 0 16px 35px rgba(var(--accent-rgb), .18), inset 0 1px 0 rgba(255,255,255,.52);
+}
+
+/* Semantic feedback never follows the product hue. */
+.choiceButton.correct,
+.key.next,
+.key.accepted,
+.successMark,
+.successCode,
+.successTrail i,
+.reaction:not(.warn) {
+  --accent: #7ce7a0;
+  --accent-strong: #43d27b;
+  --accent-rgb: 124, 231, 160;
+}
