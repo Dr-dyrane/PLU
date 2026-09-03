@@ -21,6 +21,8 @@ type Accent = {
   dark: Tone;
 };
 
+type ProductThemeSource = Pick<ProductStory, "family" | "identity">;
+
 const byColor: Record<string, Accent> = {
   green: {
     light: { accent: "#176B3A", strong: "#0F552D", rgb: "23, 107, 58" },
@@ -83,8 +85,11 @@ function normalize(value: string) {
   return value.trim().toLowerCase();
 }
 
-export function productTheme(story: ProductStory): ThemeStyle {
-  const chosen = byColor[normalize(story.identity.color)] ?? byFamily[normalize(story.family)] ?? byColor.green;
+export function productTheme(story: ProductThemeSource): ThemeStyle {
+  const chosen =
+    byColor[normalize(story.identity.color)] ??
+    byFamily[normalize(story.family)] ??
+    byColor.green;
 
   return {
     "--accent-light": chosen.light.accent,
