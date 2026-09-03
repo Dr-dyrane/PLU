@@ -1,5 +1,5 @@
 import aisles from "@/data/aisles.json";
-import { batch01 } from "@/data/batches";
+import { batch01, batch02, mustKnow50 } from "@/data/batches";
 import { catalog } from "@/data/catalog";
 import { pegTable } from "@/data/pegs";
 import { productStories } from "@/data/stories";
@@ -10,10 +10,11 @@ import { productStories } from "@/data/stories";
  * structure over source rows without mutating them.
  */
 export const canonicalData = {
-  schemaVersion: "0.4.0",
+  schemaVersion: "0.5.0",
   catalog,
   aisles,
-  batches: [batch01],
+  batches: [batch01, batch02],
+  collections: [mustKnow50],
   stories: productStories,
   legacyMnemonicPegs: pegTable,
 } as const;

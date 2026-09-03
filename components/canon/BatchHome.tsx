@@ -35,7 +35,19 @@ const categories: Array<{ value: CategoryFilter; label: string }> = [
   { value: "herbs", label: "Herbs" },
 ];
 
-const fruitFamilies = new Set(["apples", "avocados", "bananas", "berries", "citrus", "melons", "pears"]);
+const fruitFamilies = new Set([
+  "apples",
+  "avocados",
+  "bananas",
+  "berries",
+  "citrus",
+  "mangoes",
+  "melons",
+  "pears",
+  "pineapples",
+  "tropical fruit",
+  "watermelons",
+]);
 
 function categoryFor(item: BatchItem): Exclude<CategoryFilter, "all"> {
   const family = item.family.trim().toLowerCase();
@@ -272,12 +284,19 @@ export function BatchHome({ batch, stories }: { batch: ProductBatch; stories: Pr
               <span>{ready.length} {ready.length === 1 ? "lesson" : "lessons"}</span>
             </div>
             <div className="batchReadyGrid">
-              {ready.map(({ item, story, learned }) => {
+              {ready.map(({ item, story, learned }, index) => {
                 if (!story) return null;
                 const hero = story.photos.find((photo) => photo.role === "hero") ?? story.photos[0];
                 return (
                   <Link className="batchLessonCard" style={productTheme(story)} href={`/learn/${story.id}/`} key={item.catalogId}>
-                    <img src={hero.src} alt="" aria-hidden="true" />
+                    <img
+                      src={hero.src}
+                      alt=""
+                      aria-hidden="true"
+                      loading={index < 8 ? "eager" : "lazy"}
+                      decoding="async"
+                      fetchPriority={index < 2 ? "high" : "auto"}
+                    />
                     <span className="batchLessonWash" aria-hidden="true" />
                     <span className="batchLessonOrder">{String(item.order).padStart(2, "0")}</span>
                     {learned && <span className="batchLearnedBadge"><CheckCircle2 aria-hidden="true" /> Learned</span>}
@@ -318,7 +337,7 @@ export function BatchHome({ batch, stories }: { batch: ProductBatch; stories: Pr
               ))}
               {hiddenQueued > 0 && (
                 <button className="batchQueueMore" type="button" onClick={() => setShowAllQueued(true)}>
-                  <span>+{hiddenQueued}</span><small>more in Core 25</small>
+                  <span>+{hiddenQueued}</span><small>more in {batch.title}</small>
                 </button>
               )}
             </div>

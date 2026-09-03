@@ -12,15 +12,16 @@ Look → Know → Code → Practice → Recall
 
 The app teaches the part that can be reasoned about—exact product recognition—before attaching the store's assigned code. Every lesson uses several realistic photographs so recognition transfers across angle, lighting, specimen, and market context.
 
-## Core 25
+## Must Know 50
 
-Batch 01 is complete and defined in `data/batches/batch-01.json`.
+The first two 25-product batches are complete:
 
-- All 25 exact catalog mappings are live.
-- The set spans peppers, bananas, avocados, citrus, herbs, roots, alliums, onions, potatoes, tomatoes, cucumbers, broccoli, and apples.
-- Every lesson retains the supplied sale method, product variants, source-sheet context, and closest visual confusions.
+- `data/batches/batch-01.json` — Core 25
+- `data/batches/batch-02.json` — Next 25
 
-Ready lessons are available at `/learn/[story-id]/`; the complete set is available at `/batch-01/` and on the home page.
+The home page combines them into one searchable **Must Know 50** collection. Batch-specific views remain available at `/batch-01/` and `/batch-02/`.
+
+The set spans peppers, bananas, avocados, apples, citrus, mangoes, melons, carrots, cabbage, lettuce, celery, beans, zucchini, roots, alliums, onions, potatoes, mushrooms, asparagus, corn, tomatoes, cucumbers, and broccoli.
 
 ## Product stories
 
@@ -32,7 +33,10 @@ Every lesson carries:
 - visual cues and classification decisions;
 - package, case, bulk, size, organic, and related listings where present;
 - nearest visual confusions;
-- local code relationships presented as observations, never formulas.
+- local code relationships presented as observations, never formulas;
+- source flags for handwritten or curated store details.
+
+Batch 01 retains individual story files in `data/stories/`. Batch 02 is split into validated story packets under `data/story-batches/`; both forms feed the same canonical runtime registry.
 
 ## Appearance
 
@@ -43,7 +47,8 @@ Light mode is the first-visit default. The home footer provides a persistent App
 - `data/catalog/*.json` — 475 normalized source rows.
 - `data/aisles.json` — 47 grocery-aisle entries.
 - `data/batches/*.json` — ordered production batches.
-- `data/stories/*.json` — source-backed product stories.
+- `data/stories/*.json` — individually curated product stories.
+- `data/story-batches/*.json` — validated batch story packets.
 - `data/canonical.ts` — the single runtime entrypoint.
 - `data/pegs/*` — legacy workbook material retained for audit, not used by the current lesson.
 
@@ -56,6 +61,6 @@ npm run typecheck
 npm run build
 ```
 
-The production build verifies all 25 exact mappings, media coverage, story uniqueness, multi-family interaction, semantic appearance, native interaction safeguards, safe areas, touch targets, clean learner copy, and static rendering.
+The production build verifies 50 exact mappings, media coverage, story uniqueness, visible classification labels, multi-family interaction, semantic appearance, native interaction safeguards, safe areas, touch targets, clean learner copy, and static rendering.
 
 Node is pinned to `22.x`. No database, authentication, API, or environment variable is required.

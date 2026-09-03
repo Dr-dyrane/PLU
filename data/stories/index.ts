@@ -23,6 +23,16 @@ import whitePotatoRaw from "@/data/stories/white-potato-4083.json";
 import yellowBananaRaw from "@/data/stories/yellow-banana-4011.json";
 import yellowBellPepperRaw from "@/data/stories/yellow-bell-pepper-4689.json";
 import yellowOnionRaw from "@/data/stories/yellow-onion-4658.json";
+import batch02P01 from "@/data/story-batches/batch-02-01.json";
+import batch02P02 from "@/data/story-batches/batch-02-02.json";
+import batch02P03 from "@/data/story-batches/batch-02-03.json";
+import batch02P04 from "@/data/story-batches/batch-02-04.json";
+import batch02P05 from "@/data/story-batches/batch-02-05.json";
+import batch02P06 from "@/data/story-batches/batch-02-06.json";
+import batch02P07 from "@/data/story-batches/batch-02-07.json";
+import batch02P08 from "@/data/story-batches/batch-02-08.json";
+import batch02P09 from "@/data/story-batches/batch-02-09.json";
+import batch02P10 from "@/data/story-batches/batch-02-10.json";
 import type { ProductStory } from "@/types/trace";
 
 export const greenPepperStory: ProductStory = {
@@ -58,8 +68,20 @@ export const whitePotatoStory = whitePotatoRaw as ProductStory;
 export const yellowBananaStory = yellowBananaRaw as ProductStory;
 export const yellowBellPepperStory = yellowBellPepperRaw as ProductStory;
 export const yellowOnionStory = yellowOnionRaw as ProductStory;
+export const batch02Stories: ProductStory[] = [
+  ...(batch02P01 as ProductStory[]),
+  ...(batch02P02 as ProductStory[]),
+  ...(batch02P03 as ProductStory[]),
+  ...(batch02P04 as ProductStory[]),
+  ...(batch02P05 as ProductStory[]),
+  ...(batch02P06 as ProductStory[]),
+  ...(batch02P07 as ProductStory[]),
+  ...(batch02P08 as ProductStory[]),
+  ...(batch02P09 as ProductStory[]),
+  ...(batch02P10 as ProductStory[]),
+];
 
-export const productStories: ProductStory[] = [
+export const core25Stories: ProductStory[] = [
   greenPepperStory,
   redBellPepperStory,
   yellowBellPepperStory,
@@ -86,6 +108,8 @@ export const productStories: ProductStory[] = [
   broccoliCrownStory,
   honeycrispAppleStory,
 ];
+
+export const productStories: ProductStory[] = [...core25Stories, ...batch02Stories];
 
 export const productStoryById = new Map(productStories.map((story) => [story.id, story]));
 export const productStoryByCatalogId = new Map(productStories.map((story) => [story.catalogId, story]));
