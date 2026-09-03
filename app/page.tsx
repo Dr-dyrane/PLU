@@ -1,12 +1,12 @@
 import { BatchHome } from "@/components/canon/BatchHome";
 import { HomeFooter } from "@/components/canon/HomeFooter";
-import { mustKnow100 } from "@/data/batches";
-import { productStories } from "@/data/stories";
+import { mustKnow200 } from "@/data/batches";
+import { homeStorySummaries } from "@/data/stories";
 
 export default function HomePage() {
   return (
     <>
-      <BatchHome batch={mustKnow100} stories={productStories} />
+      <BatchHome batch={mustKnow200} stories={homeStorySummaries} />
       <HomeFooter />
     </>
   );
