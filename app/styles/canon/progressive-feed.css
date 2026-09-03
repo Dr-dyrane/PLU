@@ -1,0 +1,104 @@
+.batchReadyGrid > .batchLessonCard {
+  content-visibility: auto;
+  contain-intrinsic-size: 235px;
+}
+
+.batchProgressiveLoader {
+  min-height: 112px;
+  padding: 22px 0 6px;
+  display: grid;
+  place-items: center;
+  color: var(--muted);
+}
+
+.batchProgressiveLoader button,
+.batchProgressiveLoader p {
+  min-height: 52px;
+  margin: 0;
+  border: 0;
+  border-radius: 999px;
+  padding: 0 18px;
+  display: inline-grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  justify-content: center;
+  column-gap: 9px;
+  color: var(--muted);
+  background: var(--soft);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.05);
+}
+
+.batchProgressiveLoader button {
+  cursor: pointer;
+}
+
+.batchProgressiveLoader button:hover {
+  color: var(--text);
+  background: rgba(var(--accent-rgb),.09);
+}
+
+.batchProgressiveLoader svg {
+  width: 17px;
+  height: 17px;
+  color: var(--accent);
+}
+
+.batchProgressiveLoader.active svg {
+  animation: batchLoaderSpin 1.2s linear infinite;
+}
+
+.batchProgressiveLoader span,
+.batchProgressiveLoader small {
+  display: block;
+  text-align: left;
+}
+
+.batchProgressiveLoader span {
+  font-size: 11px;
+  font-weight: 820;
+}
+
+.batchProgressiveLoader small {
+  grid-column: 2;
+  margin-top: 2px;
+  color: var(--faint);
+  font-size: 9px;
+}
+
+.batchProgressiveLoader.complete {
+  min-height: 82px;
+  padding-top: 14px;
+}
+
+.batchProgressiveLoader.complete p {
+  grid-template-columns: auto 1fr;
+  min-height: 42px;
+  padding-inline: 15px;
+  background: transparent;
+  box-shadow: none;
+}
+
+@keyframes batchLoaderSpin {
+  to { transform: rotate(360deg); }
+}
+
+@media (max-width: 560px) {
+  .batchReadyGrid > .batchLessonCard {
+    contain-intrinsic-size: 210px;
+  }
+
+  .batchProgressiveLoader {
+    min-height: 96px;
+    padding-top: 18px;
+  }
+
+  .batchProgressiveLoader button {
+    min-height: 48px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .batchProgressiveLoader.active svg {
+    animation: none;
+  }
+}
