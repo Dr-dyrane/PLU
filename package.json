@@ -5,7 +5,7 @@
   "scripts": {
     "prepare:data": "node scripts/verify-generated-data.mjs",
     "prepare:batch05": "node scripts/prepare-batch05-candidates.mjs",
-    "generate:batch04": "node scripts/resolve-batch04-media-v2.mjs",
+    "generate:batch04": "node scripts/patch-batch04-media-inputs.mjs && node scripts/resolve-batch04-media-v2.mjs",
     "generate:batch05": "npm run generate:batch04 && npm run prepare:batch05 && node scripts/resolve-batch05-media.mjs",
     "dev": "npm run prepare:data && next dev",
     "audit:media": "node scripts/audit-remote-media.mjs --all --delay-ms=900 --retries=5",
