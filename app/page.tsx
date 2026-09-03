@@ -1,5 +1,3 @@
-import "./styles/canon.css";
-
 import { PluLesson } from "@/components/canon/PluLesson";
 import { greenPepperStory } from "@/data/stories";
 
