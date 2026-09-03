@@ -12,16 +12,17 @@ Look → Know → Code → Practice → Recall
 
 The app teaches the part that can be reasoned about—exact product recognition—before attaching the store's assigned code. Every lesson uses several realistic photographs so recognition transfers across angle, lighting, specimen, and market context.
 
-## Must Know 50
+## Must Know 100
 
-The first two 25-product batches are complete:
+The first three production batches are complete:
 
 - `data/batches/batch-01.json` — Core 25
 - `data/batches/batch-02.json` — Next 25
+- `data/batches/batch-03.json` — Next 50
 
-The home page combines them into one searchable **Must Know 50** collection. Batch-specific views remain available at `/batch-01/` and `/batch-02/`.
+The home page combines them into one searchable **Must Know 100** collection. Batch-specific views remain available at `/batch-01/`, `/batch-02/`, and `/batch-03/`.
 
-The set spans peppers, bananas, avocados, apples, citrus, mangoes, melons, carrots, cabbage, lettuce, celery, beans, zucchini, roots, alliums, onions, potatoes, mushrooms, asparagus, corn, tomatoes, cucumbers, and broccoli.
+Batch 03 expands the curriculum with apple varieties, stone fruit, grapes, pears, tropical fruit, eggplants, okra, roots, leafy greens, and mushrooms.
 
 ## Product stories
 
@@ -29,14 +30,14 @@ Every lesson carries:
 
 - exact catalog ID and checkout code;
 - sold-by-weight or sold-each behavior;
-- three realistic photographs with provenance;
+- three recognition photographs with source-page provenance;
 - visual cues and classification decisions;
 - package, case, bulk, size, organic, and related listings where present;
 - nearest visual confusions;
 - local code relationships presented as observations, never formulas;
 - source flags for handwritten or curated store details.
 
-Batch 01 retains individual story files in `data/stories/`. Batch 02 is split into validated story packets under `data/story-batches/`; both forms feed the same canonical runtime registry.
+Batch 01 retains individual story files in `data/stories/`. Batch 02 uses full story packets under `data/story-batches/`. Batch 03 introduces compact source-backed seeds under `data/story-seeds/`, compiled into the same canonical `ProductStory` runtime shape.
 
 ## Appearance
 
@@ -48,7 +49,9 @@ Light mode is the first-visit default. The home footer provides a persistent App
 - `data/aisles.json` — 47 grocery-aisle entries.
 - `data/batches/*.json` — ordered production batches.
 - `data/stories/*.json` — individually curated product stories.
-- `data/story-batches/*.json` — validated batch story packets.
+- `data/story-batches/*.json` — full validated story packets.
+- `data/story-seeds/*.json` — compact story seeds for scalable batch production.
+- `data/stories/compile-story-seed.ts` — runtime seed compiler.
 - `data/canonical.ts` — the single runtime entrypoint.
 - `data/pegs/*` — legacy workbook material retained for audit, not used by the current lesson.
 
@@ -61,6 +64,6 @@ npm run typecheck
 npm run build
 ```
 
-The production build verifies 50 exact mappings, media coverage, story uniqueness, visible classification labels, multi-family interaction, semantic appearance, native interaction safeguards, safe areas, touch targets, clean learner copy, and static rendering.
+The production build verifies 100 exact mappings, media coverage, story uniqueness, visible classification labels, multi-family interaction, semantic appearance, native interaction safeguards, safe areas, touch targets, clean learner copy, and static rendering.
 
 Node is pinned to `22.x`. No database, authentication, API, or environment variable is required.

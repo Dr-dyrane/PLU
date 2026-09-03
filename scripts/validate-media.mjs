@@ -1,109 +1,164 @@
 import assert from "node:assert/strict";
 import { readFile, readdir } from "node:fs/promises";
 
-async function readStoryFile(url) {
-  const value = JSON.parse(await readFile(url, "utf8"));
-  return Array.isArray(value) ? value : [value];
+async function readJson(url) {
+  return JSON.parse(await readFile(url, "utf8"));
 }
 
-const individualDirectory = new URL("../data/stories/", import.meta.url);
-const batchDirectory = new URL("../data/story-batches/", import.meta.url);
+async function loadJsonRecords(directoryUrl) {
+  const files = (await readdir(directoryUrl).catch(() => []))
+    .filter((name) => name.endsWith(".json"))
+    .sort();
 
-const individualFiles = (await readdir(individualDirectory))
-  .filter((name) => name.endsWith(".json"))
-  .sort();
-const batchFiles = (await readdir(batchDirectory).catch(() => []))
-  .filter((name) => name.endsWith(".json"))
-  .sort();
+  return (
+    await Promise.all(
+      files.map(async (name) => {
+        const value = await readJson(new URL(name, directoryUrl));
+        return Array.isArray(value) ? value : [value];
+      }),
+    )
+  ).flat();
+}
 
-const stories = (
-  await Promise.all([
-    ...individualFiles.map((name) => readStoryFile(new URL(name, individualDirectory))),
-    ...batchFiles.map((name) => readStoryFile(new URL(name, batchDirectory))),
-  ])
-).flat();
+const fullStories = [
+  ...(await loadJsonRecords(new URL("../data/stories/", import.meta.url))),
+  ...(await loadJsonRecords(new URL("../data/story-batches/", import.meta.url))),
+];
+const seedStories = await loadJsonRecords(new URL("../data/story-seeds/", import.meta.url));
+const allStories = [...fullStories, ...seedStories];
 
-assert.ok(stories.length > 0, "Expected at least one product story.");
-assert.equal(new Set(stories.map((story) => story.id)).size, stories.length, "Story IDs must be unique.");
-assert.equal(new Set(stories.map((story) => story.catalogId)).size, stories.length, "Story catalog IDs must be unique.");
+assert.ok(allStories.length > 0, "Expected at least one product story.");
+assert.equal(
+  new Set(allStories.map((story) => story.id)).size,
+  allStories.length,
+  "Story IDs must be unique.",
+);
+assert.equal(
+  new Set(allStories.map((story) => story.catalogId)).size,
+  allStories.length,
+  "Story catalog IDs must be unique.",
+);
 
 let photoCount = 0;
 
-for (const story of stories) {
-  const label = story.id ?? "unnamed story";
+function validateCore(story, label) {
   assert.ok(story.title && story.catalogId, `${label}: title and catalog ID are required.`);
-  assert.ok(["Weight", "Each"].includes(story.checkout?.soldBy), `${label}: checkout method must be Weight or Each.`);
-  assert.ok(/^\d+$/.test(story.checkout?.code ?? ""), `${label}: checkout code must contain only digits.`);
-
+  assert.ok(
+    ["Weight", "Each"].includes(story.checkout?.soldBy),
+    `${label}: checkout method must be Weight or Each.`,
+  );
+  assert.ok(
+    /^\d+$/.test(story.checkout?.code ?? ""),
+    `${label}: checkout code must contain only digits.`,
+  );
   assert.ok(
     Array.isArray(story.photos) && story.photos.length >= 3,
-    `${label}: canonical stories require at least three recognition photographs.`,
+    `${label}: at least three recognition photographs are required.`,
   );
+  assert.ok(story.visualCues?.length >= 3, `${label}: at least three visual cues are required.`);
+  assert.ok(story.similarItems?.length >= 3, `${label}: at least three comparison items are required.`);
+}
 
+function validatePhotoSet(story, label, seeded) {
   const ids = new Set();
   const sources = new Set();
   const roles = new Set();
 
   for (const photo of story.photos) {
-    assert.ok(photo.id && typeof photo.id === "string", `${label}: photo id required.`);
-    assert.ok(!ids.has(photo.id), `${label}: duplicate photo id ${photo.id}.`);
-    ids.add(photo.id);
+    const sourceValue = seeded ? photo.file : photo.src;
+    const id = photo.id ?? sourceValue;
 
-    assert.ok(photo.src && typeof photo.src === "string", `${label}: photo src required.`);
-    assert.ok(!sources.has(photo.src), `${label}: duplicate photo source ${photo.src}.`);
-    sources.add(photo.src);
+    assert.ok(typeof id === "string" && id.length > 0, `${label}: photo id or file is required.`);
+    assert.ok(!ids.has(id), `${label}: duplicate photo identity ${id}.`);
+    ids.add(id);
 
     assert.ok(
-      photo.src.startsWith("/") || photo.src.startsWith("https://"),
-      `${label}: photo sources must be local or HTTPS.`,
+      typeof sourceValue === "string" && sourceValue.trim().length > 0,
+      `${label}: photo source is required.`,
     );
+    assert.ok(!sources.has(sourceValue), `${label}: duplicate photo source ${sourceValue}.`);
+    sources.add(sourceValue);
+
+    if (!seeded) {
+      assert.ok(
+        sourceValue.startsWith("/") || sourceValue.startsWith("https://"),
+        `${label}: full-story photo sources must be local or HTTPS.`,
+      );
+      assert.ok(photo.source?.label, `${label}: source label required for ${id}.`);
+      assert.ok(photo.source?.author, `${label}: author required for ${id}.`);
+      assert.ok(photo.source?.license, `${label}: license required for ${id}.`);
+      assert.ok(
+        typeof photo.source?.url === "string" && photo.source.url.startsWith("https://"),
+        `${label}: source URL required for ${id}.`,
+      );
+    }
+
     assert.ok(
       typeof photo.alt === "string" && photo.alt.trim().length >= 24,
-      `${label}: descriptive alt text required for ${photo.id}.`,
+      `${label}: descriptive alt text required for ${id}.`,
     );
     assert.ok(
       ["hero", "alternate", "context", "detail"].includes(photo.role),
       `${label}: unsupported photo role ${photo.role}.`,
     );
     roles.add(photo.role);
-
-    assert.ok(photo.source?.label, `${label}: source label required for ${photo.id}.`);
-    assert.ok(photo.source?.author, `${label}: author required for ${photo.id}.`);
-    assert.ok(photo.source?.license, `${label}: license required for ${photo.id}.`);
-    assert.ok(
-      typeof photo.source?.url === "string" && photo.source.url.startsWith("https://"),
-      `${label}: source URL required for ${photo.id}.`,
-    );
     photoCount += 1;
   }
 
   assert.ok(roles.has("hero"), `${label}: one hero photo is required.`);
-  assert.ok(roles.has("alternate"), `${label}: one alternate-angle photo is required.`);
-  assert.ok(roles.has("context"), `${label}: one real-world context photo is required.`);
+  assert.ok(roles.has("alternate"), `${label}: one alternate photo is required.`);
+  assert.ok(roles.has("context"), `${label}: one context photo is required.`);
+}
+
+function validateChoices(choices, answer, label) {
+  assert.ok(Array.isArray(choices) && choices.length >= 3, `${label}: three choices are required.`);
+  for (const choice of choices) {
+    assert.ok(choice?.id && choice?.label, `${label}: every choice needs an id and label.`);
+  }
+  assert.ok(choices.some((choice) => choice.id === answer), `${label}: answer must match a choice.`);
+}
+
+for (const story of fullStories) {
+  const label = story.id ?? "unnamed full story";
+  validateCore(story, label);
+  validatePhotoSet(story, label, false);
+
+  assert.ok(story.storyBeats?.length >= 4, `${label}: at least four story beats are required.`);
+  assert.ok(
+    story.classificationPrompts?.length >= 3,
+    `${label}: at least three identification decisions are required.`,
+  );
+  for (const prompt of story.classificationPrompts) {
+    validateChoices(prompt.choices, prompt.answer, `${label}/${prompt.id}`);
+  }
 
   const hero = story.photos.find((photo) => photo.role === "hero");
-  assert.equal(story.image, hero.src, `${label}: legacy image must point to the hero photo.`);
-  assert.equal(story.alt, hero.alt, `${label}: legacy alt must match the hero photo.`);
+  assert.equal(story.image, hero.src, `${label}: image alias must point to the hero photo.`);
+  assert.equal(story.alt, hero.alt, `${label}: alt alias must match the hero photo.`);
+}
 
-  assert.ok(story.visualCues?.length >= 3, `${label}: at least three visual cues are required.`);
-  assert.ok(story.storyBeats?.length >= 4, `${label}: at least four story beats are required.`);
-  assert.ok(story.classificationPrompts?.length >= 3, `${label}: at least three identification decisions are required.`);
-  assert.ok(story.similarItems?.length >= 3, `${label}: at least three nearby comparisons are required.`);
+for (const seed of seedStories) {
+  const label = seed.id ?? "unnamed story seed";
+  validateCore(seed, label);
+  validatePhotoSet(seed, label, true);
 
-  for (const prompt of story.classificationPrompts) {
-    assert.ok(prompt.id && prompt.question && prompt.answer, `${label}: classification prompt is incomplete.`);
-    assert.ok(Array.isArray(prompt.choices) && prompt.choices.length >= 3, `${label}: prompt ${prompt.id} needs three choices.`);
-    for (const choice of prompt.choices) {
-      assert.ok(
-        typeof choice.id === "string" && choice.id.length > 0 &&
-        typeof choice.label === "string" && choice.label.trim().length > 0,
-        `${label}: every classification choice needs an id and visible label.`,
-      );
-    }
-    assert.ok(prompt.choices.some((choice) => choice.id === prompt.answer), `${label}: prompt ${prompt.id} answer must be one of its choices.`);
-  }
+  assert.ok(seed.classification, `${label}: classification data is required.`);
+  validateChoices(
+    seed.classification.familyChoices,
+    seed.classification.familyAnswer,
+    `${label}/family`,
+  );
+  validateChoices(
+    seed.classification.formChoices,
+    seed.classification.formAnswer,
+    `${label}/form`,
+  );
+  assert.ok(
+    seed.source?.primaryPages?.length > 0,
+    `${label}: source-page provenance is required.`,
+  );
 }
 
 console.log(
-  `Validated ${stories.length} product stories and ${photoCount} recognition photographs across individual and batch story files.`,
+  `Validated ${fullStories.length} full stories, ${seedStories.length} compiled story seeds, and ${photoCount} recognition photographs.`,
 );

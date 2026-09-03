@@ -5,81 +5,115 @@ async function readJson(url) {
   return JSON.parse(await readFile(url, "utf8"));
 }
 
-const catalogDirectory = new URL("../data/catalog/", import.meta.url);
-const catalogFiles = (await readdir(catalogDirectory)).filter((name) => /^\d+\.json$/.test(name)).sort();
-const catalog = (await Promise.all(catalogFiles.map((name) => readJson(new URL(name, catalogDirectory))))).flat();
+async function loadJsonRecords(directoryUrl) {
+  const files = (await readdir(directoryUrl).catch(() => []))
+    .filter((name) => name.endsWith(".json"))
+    .sort();
 
+  return (
+    await Promise.all(
+      files.map(async (name) => {
+        const value = await readJson(new URL(name, directoryUrl));
+        return Array.isArray(value) ? value : [value];
+      }),
+    )
+  ).flat();
+}
+
+const catalog = await loadJsonRecords(new URL("../data/catalog/", import.meta.url));
 const batchDirectory = new URL("../data/batches/", import.meta.url);
-const batchFiles = (await readdir(batchDirectory)).filter((name) => /^batch-\d+\.json$/.test(name)).sort();
-const batches = await Promise.all(batchFiles.map((name) => readJson(new URL(name, batchDirectory))));
+const batchFiles = (await readdir(batchDirectory))
+  .filter((name) => /^batch-\d+\.json$/.test(name))
+  .sort();
+const batches = await Promise.all(
+  batchFiles.map((name) => readJson(new URL(name, batchDirectory))),
+);
+const stories = [
+  ...(await loadJsonRecords(new URL("../data/stories/", import.meta.url))),
+  ...(await loadJsonRecords(new URL("../data/story-batches/", import.meta.url))),
+  ...(await loadJsonRecords(new URL("../data/story-seeds/", import.meta.url))),
+];
 
-const storyDirectory = new URL("../data/stories/", import.meta.url);
-const storyBatchDirectory = new URL("../data/story-batches/", import.meta.url);
-const storyFiles = (await readdir(storyDirectory)).filter((name) => name.endsWith(".json")).sort();
-const storyBatchFiles = (await readdir(storyBatchDirectory).catch(() => [])).filter((name) => name.endsWith(".json")).sort();
-const stories = (
-  await Promise.all([
-    ...storyFiles.map(async (name) => {
-      const value = await readJson(new URL(name, storyDirectory));
-      return Array.isArray(value) ? value : [value];
-    }),
-    ...storyBatchFiles.map(async (name) => {
-      const value = await readJson(new URL(name, storyBatchDirectory));
-      return Array.isArray(value) ? value : [value];
-    }),
-  ])
-).flat();
+const expected = [
+  { id: "batch-01-core-25", size: 25 },
+  { id: "batch-02-must-know-25", size: 25 },
+  { id: "batch-03-next-50", size: 50 },
+];
 
-assert.ok(batches.length >= 2, "Expected at least two production batches.");
+assert.equal(batches.length, expected.length, "Expected three completed production batches.");
 
 const catalogById = new Map(catalog.map((record) => [record.id, record]));
 const storyByCatalogId = new Map(stories.map((story) => [story.catalogId, story]));
-const allBatchMappings = [];
-let expectedGlobalOrder = 1;
+const storyIds = new Set(stories.map((story) => story.id));
+const mappings = [];
 
-for (const [batchIndex, batch] of batches.entries()) {
-  assert.equal(batch.size, 25, `${batch.id} must contain 25 products.`);
-  assert.equal(batch.items.length, batch.size, `${batch.id}: size must match item count.`);
+assert.equal(storyIds.size, stories.length, "Story IDs must be unique.");
+assert.equal(storyByCatalogId.size, stories.length, "Story catalog IDs must be unique.");
+
+for (const [index, batch] of batches.entries()) {
+  const requirement = expected[index];
+  assert.equal(batch.id, requirement.id, `Unexpected batch at position ${index + 1}.`);
+  assert.equal(batch.size, requirement.size, `${batch.id}: incorrect declared size.`);
+  assert.equal(batch.items.length, requirement.size, `${batch.id}: item count must match size.`);
   assert.deepEqual(
     batch.items.map((item) => item.order),
-    Array.from({ length: batch.size }, (_, index) => index + 1),
-    `${batch.id}: item order must be continuous.`,
+    Array.from({ length: requirement.size }, (_, itemIndex) => itemIndex + 1),
+    `${batch.id}: order must be continuous.`,
   );
-  assert.equal(new Set(batch.items.map((item) => item.catalogId)).size, batch.size, `${batch.id}: catalog IDs must be unique.`);
-  assert.equal(new Set(batch.items.map((item) => `${item.catalogId}:${item.code}`)).size, batch.size, `${batch.id}: mappings must be unique.`);
+  assert.equal(
+    new Set(batch.items.map((item) => item.catalogId)).size,
+    requirement.size,
+    `${batch.id}: catalog IDs must be unique within the batch.`,
+  );
 
   for (const item of batch.items) {
-    const record = catalogById.get(item.catalogId);
-    assert.ok(record, `${batch.id}: missing catalog record ${item.catalogId}.`);
-    assert.ok(record.codes.includes(item.code), `${item.title} must retain exact code ${item.code}.`);
-    assert.equal(item.status, "ready", `${item.title} must be ready in a completed batch.`);
+    assert.equal(item.status, "ready", `${batch.id}/${item.title}: every published lesson must be ready.`);
+
+    const catalogRecord = catalogById.get(item.catalogId);
+    assert.ok(catalogRecord, `${batch.id}/${item.title}: catalog record is missing.`);
+    assert.ok(
+      catalogRecord.codes.includes(item.code),
+      `${batch.id}/${item.title}: ${item.code} is not in the source record.`,
+    );
 
     const story = storyByCatalogId.get(item.catalogId);
-    assert.ok(story, `${item.title} has no product story.`);
-    assert.equal(story.checkout.code, item.code, `${item.title}: story code must match batch.`);
-    assert.ok(story.title && story.title.length > 1, `${item.title}: story title is required.`);
+    assert.ok(story, `${batch.id}/${item.title}: product story is missing.`);
+    assert.equal(
+      story.checkout?.code,
+      item.code,
+      `${batch.id}/${item.title}: story and batch codes differ.`,
+    );
+    assert.equal(
+      story.title,
+      item.title,
+      `${batch.id}/${item.title}: story title and batch title differ.`,
+    );
 
-    if (record.soldBy) {
-      assert.equal(story.checkout.soldBy, record.soldBy, `${item.title}: checkout method must match catalog.`);
+    if (catalogRecord.soldBy) {
+      assert.equal(
+        story.checkout?.soldBy,
+        catalogRecord.soldBy,
+        `${batch.id}/${item.title}: checkout method differs from the catalog.`,
+      );
     } else {
       assert.ok(
         story.source?.flags?.includes("sold-by-curated"),
-        `${item.title}: a curated checkout method requires the sold-by-curated source flag.`,
+        `${batch.id}/${item.title}: a curated checkout method requires the sold-by-curated flag.`,
       );
     }
 
-    allBatchMappings.push(`${item.catalogId}:${item.code}`);
-    expectedGlobalOrder += 1;
+    mappings.push(`${item.catalogId}:${item.code}`);
   }
-
-  if (batchIndex === 0) assert.equal(batch.id, "batch-01-core-25");
-  if (batchIndex === 1) assert.equal(batch.id, "batch-02-must-know-25");
 }
 
-assert.equal(new Set(allBatchMappings).size, allBatchMappings.length, "Production batches may not duplicate product mappings.");
-assert.equal(stories.length, allBatchMappings.length, "Every ready product must have exactly one canonical story.");
-assert.equal(storyByCatalogId.size, allBatchMappings.length, "Story catalog IDs must be unique.");
+assert.equal(
+  new Set(mappings).size,
+  mappings.length,
+  "Published batches may not duplicate exact product mappings.",
+);
+assert.equal(mappings.length, 100, "The published Must Know collection must contain 100 lessons.");
+assert.equal(stories.length, 100, "Every published mapping must have exactly one story or story seed.");
 
 console.log(
-  `Validated ${batches.length} completed batches: ${allBatchMappings.length} exact mappings and ${stories.length} ready lessons.`,
+  `Validated ${batches.length} completed batches, ${mappings.length} exact mappings, and ${stories.length} learning stories.`,
 );
