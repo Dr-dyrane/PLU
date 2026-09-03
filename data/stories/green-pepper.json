@@ -1,0 +1,156 @@
+{
+  "schemaVersion": "0.2.0",
+  "id": "green-pepper-4065",
+  "catalogId": "peppers-green",
+  "title": "Green pepper",
+  "shortTitle": "Green",
+  "family": "Peppers",
+  "priority": "must-know",
+  "image": "/produce/green-pepper-4065.svg",
+  "alt": "Several glossy green bell peppers, including one cut open",
+  "identity": {
+    "family": "Peppers",
+    "form": "Bell",
+    "color": "Green",
+    "variant": "Loose green bell pepper"
+  },
+  "checkout": {
+    "code": "4065",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "codeScope": "primary-loose-produce",
+    "summary": "Use 4065 for the loose green pepper that is weighed at checkout."
+  },
+  "visualCues": [
+    "Broad, blocky bell form",
+    "Smooth glossy skin",
+    "Deep green color"
+  ],
+  "storyBeats": [
+    {
+      "id": "family",
+      "label": "Family",
+      "value": "Pepper",
+      "copy": "Start broad: place the item in the pepper family before thinking about a code.",
+      "basis": "workbook"
+    },
+    {
+      "id": "form",
+      "label": "Form",
+      "value": "Bell",
+      "copy": "Its broad, blocky body separates it from long or tapered peppers.",
+      "basis": "curated-visual"
+    },
+    {
+      "id": "variant",
+      "label": "Variant",
+      "value": "Green",
+      "copy": "Color resolves the exact bell-pepper branch.",
+      "basis": "workbook"
+    },
+    {
+      "id": "checkout",
+      "label": "Checkout",
+      "value": "Loose · by weight",
+      "copy": "The 4065 record is the loose item sold by weight, not a bag or case.",
+      "basis": "workbook"
+    }
+  ],
+  "classificationPrompts": [
+    {
+      "id": "family",
+      "question": "Start broad. What family is this?",
+      "support": "Resolve the product before retrieving its code.",
+      "answer": "peppers",
+      "choices": [
+        { "id": "peppers", "label": "Peppers" },
+        { "id": "tomatoes", "label": "Tomatoes" },
+        { "id": "apples", "label": "Apples" }
+      ]
+    },
+    {
+      "id": "form",
+      "question": "Which visual branch does it belong to?",
+      "support": "Shape is more stable than memorizing one photograph.",
+      "answer": "bell-green",
+      "choices": [
+        { "id": "bell-green", "label": "Green · bell-shaped" },
+        { "id": "long-green", "label": "Green · long or tapered" },
+        { "id": "bell-red", "label": "Red · bell-shaped" }
+      ]
+    },
+    {
+      "id": "sale-form",
+      "question": "How is this exact listing entered?",
+      "support": "The sale form is part of the product identity.",
+      "answer": "weight",
+      "choices": [
+        { "id": "weight", "label": "Loose · by weight" },
+        { "id": "each", "label": "Individually · each" },
+        { "id": "bag", "label": "Prepacked bag" }
+      ]
+    }
+  ],
+  "retailVariants": [
+    {
+      "id": "loose",
+      "name": "Loose green pepper",
+      "code": "4065",
+      "soldBy": "Weight",
+      "scope": "primary",
+      "note": "The lesson target.",
+      "sourcePages": [2]
+    },
+    {
+      "id": "four-count-bag",
+      "name": "Green pepper 4-count bag",
+      "code": "3014",
+      "soldBy": null,
+      "scope": "package",
+      "note": "A packaged listing with its own code.",
+      "sourcePages": [4]
+    },
+    {
+      "id": "case",
+      "name": "Green pepper case",
+      "code": "63866",
+      "soldBy": null,
+      "scope": "case",
+      "note": "A case record, not the loose checkout code.",
+      "sourcePages": [4]
+    },
+    {
+      "id": "hh-bulk",
+      "name": "Green HH bulk",
+      "code": "3120",
+      "soldBy": null,
+      "scope": "listed-bulk",
+      "note": "A separate bulk record in the source sheet.",
+      "sourcePages": [4]
+    }
+  ],
+  "codeRelations": [
+    {
+      "kind": "observed-cluster",
+      "title": "A nearby 468x pocket",
+      "copy": "Cubanelle 4687, red 4688, and yellow 4689 sit together numerically. This is a useful observed neighborhood, not a rule for generating pepper codes."
+    },
+    {
+      "kind": "exception",
+      "title": "Green is outside that pocket",
+      "copy": "Loose green pepper is 4065. Treat it as an anchor exception rather than trying to calculate it from color."
+    }
+  ],
+  "nearestConfusion": {
+    "name": "Red pepper",
+    "code": "4688",
+    "cue": "The bell form is similar; color resolves the exact product node."
+  },
+  "source": {
+    "primaryPages": [2],
+    "relatedPages": [4],
+    "checkedOnReference": true,
+    "flags": [],
+    "confidence": "verified-from-supplied-material"
+  }
+}
