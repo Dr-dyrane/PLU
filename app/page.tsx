@@ -1,6 +1,8 @@
-import { PluTrainer } from "@/components/PluTrainer";
-import { lessons } from "@/data/lessons";
+import "./styles/v02.css";
+
+import { TraceTrainer } from "@/components/v02/TraceTrainer";
+import { greenPepperStory } from "@/data/stories";
 
 export default function HomePage() {
-  return <PluTrainer lesson={lessons[0]} />;
+  return <TraceTrainer story={greenPepperStory} />;
 }
