@@ -1,0 +1,129 @@
+/* Document pages scroll normally; only the lesson shell is viewport-locked. */
+body {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.app {
+  overflow: hidden;
+}
+
+.lessonRouteShell {
+  position: relative;
+  min-height: 100dvh;
+}
+
+.lessonRouteShell .topbar > .brand {
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.lessonRouteNav {
+  position: absolute;
+  z-index: 8;
+  top: max(16px, env(safe-area-inset-top));
+  left: max(20px, calc((100vw - 1480px) / 2 + 20px), env(safe-area-inset-left));
+  height: 56px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.lessonBackButton {
+  width: 44px;
+  height: 44px;
+  border: 0;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  color: var(--muted);
+  background: var(--soft);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.06);
+  transition: transform .18s var(--ease), color .18s, background .18s;
+}
+
+.lessonBackButton:hover {
+  transform: translateX(-2px);
+  color: var(--text);
+  background: var(--soft-2);
+}
+
+.lessonBackButton svg {
+  width: 19px;
+  height: 19px;
+}
+
+.lessonRouteBrand {
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.lessonRouteBrand img {
+  width: 38px;
+  height: 38px;
+  border-radius: 13px;
+  box-shadow: 0 10px 28px rgba(42,204,105,.14), inset 0 1px 0 rgba(255,255,255,.15);
+}
+
+.lessonRouteBrand strong,
+.lessonRouteBrand small {
+  display: block;
+}
+
+.lessonRouteBrand strong {
+  font-size: 15px;
+  letter-spacing: -.025em;
+}
+
+.lessonRouteBrand small {
+  margin-top: 2px;
+  color: var(--muted);
+  font-size: 10px;
+}
+
+@media (max-width: 980px) {
+  .lessonRouteNav {
+    top: max(9px, env(safe-area-inset-top));
+    left: max(9px, env(safe-area-inset-left));
+    height: 48px;
+    gap: 6px;
+  }
+
+  .lessonBackButton {
+    width: 42px;
+    height: 42px;
+  }
+
+  .lessonRouteBrand img {
+    width: 35px;
+    height: 35px;
+    border-radius: 12px;
+  }
+
+  .lessonRouteBrand strong {
+    font-size: 14px;
+  }
+
+  .lessonRouteBrand small {
+    display: none;
+  }
+
+  .lessonRouteShell .topbar {
+    grid-template-columns: minmax(116px, 1fr) auto auto;
+  }
+}
+
+@media (max-width: 430px) {
+  .lessonRouteBrand img {
+    display: none;
+  }
+
+  .lessonRouteNav {
+    gap: 5px;
+  }
+}

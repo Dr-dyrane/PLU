@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 
 import { PluLesson } from "@/components/canon/PluLesson";
+import { LessonRouteShell } from "@/components/canon/LessonRouteShell";
 import { productStories, productStoryById } from "@/data/stories";
 import { productTheme } from "@/lib/ui/product-theme";
 
@@ -20,8 +21,10 @@ export default async function ProductLessonPage({
   if (!story) notFound();
 
   return (
-    <div className="productTheme" style={productTheme(story)}>
-      <PluLesson story={story} />
-    </div>
+    <LessonRouteShell>
+      <div className="productTheme" style={productTheme(story)}>
+        <PluLesson story={story} />
+      </div>
+    </LessonRouteShell>
   );
 }
