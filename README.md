@@ -1,11 +1,8 @@
 # PLU Trace
 
-An image-first produce identification and checkout-code learning system built with Next.js and TypeScript.
+An image-first produce-identification and checkout-code learning system built with Next.js and TypeScript.
 
-## Branches
-
-- `main` — deployed v0.1 reference prototype.
-- `v0.2-learning-engine` — experimental TRACE lesson. This branch must be judged before becoming canon.
+`main` is the implementation branch and the Vercel production source.
 
 ## TRACE
 
@@ -43,6 +40,18 @@ The supplied workbook and reference sheets contain context beyond the number its
 
 The main lesson reveals one fact at a time. The complete product story is available through a mobile bottom sheet or desktop inspector sheet.
 
+## Recognition media
+
+Every canonical product story contains at least three distinct realistic photographs:
+
+1. **Hero** — a clean first-recognition view.
+2. **Alternate** — another angle or natural shape variation.
+3. **Context** — a realistic produce-bin or market view used during unsupported recall.
+
+TRACE changes the photograph as the learner progresses. The product identity stays constant while viewpoint, lighting, neighboring produce, and surface imperfections change. This trains category recognition rather than memorization of one picture.
+
+Each media record carries alt text, focus position, author, license, and source URL. `npm run validate:data` rejects stories that do not meet this media contract.
+
 ## Data
 
 - `data/catalog/*.json` — 475 normalized source rows.
@@ -53,7 +62,7 @@ The main lesson reveals one fact at a time. The complete product story is availa
 
 ## Learning state
 
-The v0.2 reducer records identity, path, support, and recall events. Event IDs make updates idempotent:
+The reducer records identity, path, support, and recall events. Event IDs make updates idempotent:
 
 ```text
 reduce(reduce(state, event), event) === reduce(state, event)
@@ -76,10 +85,11 @@ npm run typecheck
 npm run build
 ```
 
-The validator checks the 475-row catalog, Green Pepper's loose/package/case records, story provenance, code chunking, keypad-path round trip, and idempotent event behavior.
+The validators check the 475-row catalog, product-story provenance, realistic-photo coverage, code chunking, keypad-path round trips, and idempotent event behavior.
 
 Node is pinned to `22.x`. No database, API, authentication, or environment variables are required.
 
-## Design plan
+## Design documents
 
-See [`docs/TRACE_LEARNING_ENGINE.md`](docs/TRACE_LEARNING_ENGINE.md) for the algorithm, story model, progressive-disclosure interaction, feedback semantics, gamification policy, and scale gate.
+- [`docs/TRACE_LEARNING_ENGINE.md`](docs/TRACE_LEARNING_ENGINE.md)
+- [`docs/PRODUCT_MEDIA_CANON.md`](docs/PRODUCT_MEDIA_CANON.md)
