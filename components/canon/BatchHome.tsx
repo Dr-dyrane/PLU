@@ -8,20 +8,14 @@ import {
   Clock3,
   Filter,
   Layers3,
+  LoaderCircle,
   Play,
   Search,
   SearchX,
   Sparkles,
   X,
 } from "lucide-react";
-import {
-  useCallback,
-  useEffect,
-  useMemo,
-  useRef,
-  useState,
-  type ChangeEvent,
-} from "react";
+import { useEffect, useMemo, useRef, useState, type ChangeEvent } from "react";
 
 import {
   HomeFilterSheet,
@@ -29,13 +23,17 @@ import {
   type SoldFilter,
 } from "@/components/canon/HomeFilterSheet";
 import { productTheme } from "@/lib/ui/product-theme";
-import type { BatchItem, ProductBatch } from "@/types/batch";
-import type { ProductStory } from "@/types/trace";
+import type { BatchItem, BatchStorySummary, ProductBatch } from "@/types/batch";
 
 type CategoryFilter = "all" | "peppers" | "fruit" | "vegetables" | "herbs";
 
-const INITIAL_READY_COUNT = 24;
-const READY_PAGE_SIZE = 24;
+type ProgressiveWindow = {
+  key: string;
+  count: number;
+};
+
+const INITIAL_VISIBLE_LESSONS = 18;
+const LESSON_LOAD_INCREMENT = 18;
 
 const categories: Array<{ value: CategoryFilter; label: string }> = [
   { value: "all", label: "All" },
@@ -73,7 +71,7 @@ function normalize(value: string) {
   return value.trim().toLowerCase();
 }
 
-function readCompleted(stories: ProductStory[]) {
+function readCompleted(stories: BatchStorySummary[]) {
   const completed = new Set<string>();
   for (const story of stories) {
     try {
@@ -85,7 +83,7 @@ function readCompleted(stories: ProductStory[]) {
   return completed;
 }
 
-export function BatchHome({ batch, stories }: { batch: ProductBatch; stories: ProductStory[] }) {
+export function BatchHome({ batch, stories }: { batch: ProductBatch; stories: BatchStorySummary[] }) {
   const [query, setQuery] = useState("");
   const [category, setCategory] = useState<CategoryFilter>("all");
   const [sold, setSold] = useState<SoldFilter>("all");
@@ -94,11 +92,13 @@ export function BatchHome({ batch, stories }: { batch: ProductBatch; stories: Pr
   const [showAllQueued, setShowAllQueued] = useState(false);
   const [completedIds, setCompletedIds] = useState<Set<string>>(new Set());
   const [urlReady, setUrlReady] = useState(false);
-  const [visibleReadyCount, setVisibleReadyCount] = useState(INITIAL_READY_COUNT);
+  const [progressiveWindow, setProgressiveWindow] = useState<ProgressiveWindow>({
+    key: "",
+    count: INITIAL_VISIBLE_LESSONS,
+  });
   const pageRef = useRef<HTMLElement | null>(null);
   const filterTriggerRef = useRef<HTMLButtonElement | null>(null);
-  const categoryButtonRefs = useRef<Map<CategoryFilter, HTMLButtonElement>>(new Map());
-  const loadMoreRef = useRef<HTMLDivElement | null>(null);
+  const loadSentinelRef = useRef<HTMLDivElement | null>(null);
 
   const byCatalogId = useMemo(
     () => new Map(stories.map((story) => [story.catalogId, story])),
@@ -150,29 +150,6 @@ export function BatchHome({ batch, stories }: { batch: ProductBatch; stories: Pr
     else page.removeAttribute("aria-hidden");
   }, [filterOpen]);
 
-  useEffect(() => {
-    setVisibleReadyCount(INITIAL_READY_COUNT);
-  }, [batch.id, category, learning, query, sold]);
-
-  const scrollSelectedCategoryIntoView = useCallback((value: CategoryFilter) => {
-    const button = categoryButtonRefs.current.get(value);
-    if (!button) return;
-    const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    button.scrollIntoView({
-      behavior: reduceMotion ? "auto" : "smooth",
-      block: "nearest",
-      inline: "center",
-    });
-  }, []);
-
-  useEffect(() => {
-    if (!urlReady) return;
-    const frame = window.requestAnimationFrame(() => {
-      scrollSelectedCategoryIntoView(category);
-    });
-    return () => window.cancelAnimationFrame(frame);
-  }, [category, scrollSelectedCategoryIntoView, urlReady]);
-
   const records = useMemo(
     () =>
       batch.items.map((item) => {
@@ -193,13 +170,7 @@ export function BatchHome({ batch, stories }: { batch: ProductBatch; stories: Pr
           ].join(" "),
         );
 
-        return {
-          item,
-          story,
-          learned,
-          category: categoryFor(item),
-          searchText,
-        };
+        return { item, story, learned, category: categoryFor(item), searchText };
       }),
     [batch.items, byCatalogId, completedIds],
   );
@@ -215,9 +186,7 @@ export function BatchHome({ batch, stories }: { batch: ProductBatch; stories: Pr
         if (normalize(record.story.checkout.soldBy) !== sold) return false;
       }
 
-      if (learning === "ready" && (record.item.status !== "ready" || record.learned)) {
-        return false;
-      }
+      if (learning === "ready" && (record.item.status !== "ready" || record.learned)) return false;
       if (learning === "learned" && !record.learned) return false;
       if (learning === "queued" && record.item.status !== "queued") return false;
 
@@ -225,24 +194,13 @@ export function BatchHome({ batch, stories }: { batch: ProductBatch; stories: Pr
     });
   }, [category, learning, query, records, sold]);
 
-  const ready = filtered.filter(
-    (record) => record.item.status === "ready" && record.story,
-  );
+  const ready = filtered.filter((record) => record.item.status === "ready" && record.story);
   const queued = filtered.filter((record) => record.item.status === "queued");
-  const allReady = records.filter(
-    (record) => record.item.status === "ready" && record.story,
-  );
+  const allReady = records.filter((record) => record.item.status === "ready" && record.story);
   const learnedCount = records.filter((record) => record.learned).length;
   const first = allReady.find((record) => !record.learned) ?? allReady[0];
-  const visibleReady = ready.slice(0, visibleReadyCount);
-  const hasMoreReady = visibleReady.length < ready.length;
-  const remainingReady = Math.max(0, ready.length - visibleReady.length);
   const visibleQueued =
-    showAllQueued ||
-    query.trim() ||
-    learning === "queued" ||
-    category !== "all" ||
-    sold !== "all"
+    showAllQueued || query.trim() || learning === "queued" || category !== "all" || sold !== "all"
       ? queued
       : queued.slice(0, 4);
   const hiddenQueued = Math.max(0, queued.length - visibleQueued.length);
@@ -250,29 +208,53 @@ export function BatchHome({ batch, stories }: { batch: ProductBatch; stories: Pr
   const hasDiscoveryState = Boolean(
     query.trim() || category !== "all" || sold !== "all" || learning !== "all",
   );
+  const visibilityKey = `${batch.id}|${normalize(query)}|${category}|${sold}|${learning}`;
+  const visibleReadyCount =
+    progressiveWindow.key === visibilityKey
+      ? progressiveWindow.count
+      : INITIAL_VISIBLE_LESSONS;
+  const visibleReady = ready.slice(0, visibleReadyCount);
+  const hasMoreReady = visibleReady.length < ready.length;
 
-  const loadMoreReady = useCallback(() => {
-    setVisibleReadyCount((current) => Math.min(current + READY_PAGE_SIZE, ready.length));
-  }, [ready.length]);
+  const loadMoreReady = () => {
+    setProgressiveWindow((current) => {
+      const currentCount =
+        current.key === visibilityKey ? current.count : INITIAL_VISIBLE_LESSONS;
+      return {
+        key: visibilityKey,
+        count: Math.min(currentCount + LESSON_LOAD_INCREMENT, ready.length),
+      };
+    });
+  };
 
   useEffect(() => {
-    const sentinel = loadMoreRef.current;
+    const sentinel = loadSentinelRef.current;
     if (!sentinel || !hasMoreReady || !("IntersectionObserver" in window)) return;
 
+    let advanced = false;
     const observer = new IntersectionObserver(
       (entries) => {
-        if (entries.some((entry) => entry.isIntersecting)) loadMoreReady();
+        if (advanced || !entries.some((entry) => entry.isIntersecting)) return;
+        advanced = true;
+        setProgressiveWindow((current) => {
+          const currentCount =
+            current.key === visibilityKey ? current.count : INITIAL_VISIBLE_LESSONS;
+          return {
+            key: visibilityKey,
+            count: Math.min(currentCount + LESSON_LOAD_INCREMENT, ready.length),
+          };
+        });
       },
       {
         root: null,
-        rootMargin: "900px 0px 900px",
+        rootMargin: "850px 0px",
         threshold: 0.01,
       },
     );
 
     observer.observe(sentinel);
     return () => observer.disconnect();
-  }, [hasMoreReady, loadMoreReady]);
+  }, [hasMoreReady, ready.length, visibilityKey, visibleReady.length]);
 
   const closeFilters = () => {
     setFilterOpen(false);
@@ -319,9 +301,7 @@ export function BatchHome({ batch, stories }: { batch: ProductBatch; stories: Pr
             <Link className="batchStart" href={`/learn/${first.story.id}/`}>
               <Play aria-hidden="true" />
               <span>
-                <small>
-                  {first.learned ? "Review" : learnedCount ? "Continue with" : "Begin with"}
-                </small>
+                <small>{first.learned ? "Review" : learnedCount ? "Continue with" : "Begin with"}</small>
                 <strong>{first.story.title}</strong>
               </span>
               <ArrowRight aria-hidden="true" />
@@ -353,11 +333,8 @@ export function BatchHome({ batch, stories }: { batch: ProductBatch; stories: Pr
               className={`batchFilterButton${activeFilterCount ? " active" : ""}`}
               type="button"
               aria-label={
-                activeFilterCount
-                  ? `Filters, ${activeFilterCount} active`
-                  : "Filter lessons"
+                activeFilterCount ? `Filters, ${activeFilterCount} active` : "Filter lessons"
               }
-              aria-pressed={activeFilterCount > 0}
               onClick={() => setFilterOpen(true)}
             >
               <Filter aria-hidden="true" />
@@ -366,17 +343,9 @@ export function BatchHome({ batch, stories }: { batch: ProductBatch; stories: Pr
             </button>
           </div>
 
-          <div
-            className="batchCategoryRail"
-            role="group"
-            aria-label="Product category"
-          >
+          <div className="batchCategoryRail" role="group" aria-label="Product category">
             {categories.map((item) => (
               <button
-                ref={(node) => {
-                  if (node) categoryButtonRefs.current.set(item.value, node);
-                  else categoryButtonRefs.current.delete(item.value);
-                }}
                 className={category === item.value ? "active" : ""}
                 type="button"
                 aria-pressed={category === item.value}
@@ -400,15 +369,11 @@ export function BatchHome({ batch, stories }: { batch: ProductBatch; stories: Pr
                 <Layers3 aria-hidden="true" />
                 <h2 id="readyHeading">Ready to learn</h2>
               </div>
-              <span>
-                {visibleReady.length} of {ready.length}
-              </span>
+              <span>{ready.length} {ready.length === 1 ? "lesson" : "lessons"}</span>
             </div>
-            <div className="batchReadyGrid" data-progressive-grid="true">
+            <div className="batchReadyGrid">
               {visibleReady.map(({ item, story, learned }, index) => {
                 if (!story) return null;
-                const hero =
-                  story.photos.find((photo) => photo.role === "hero") ?? story.photos[0];
                 return (
                   <Link
                     className="batchLessonCard"
@@ -417,26 +382,22 @@ export function BatchHome({ batch, stories }: { batch: ProductBatch; stories: Pr
                     key={item.catalogId}
                   >
                     <img
-                      src={hero.src}
+                      src={story.hero.src}
                       alt=""
                       aria-hidden="true"
-                      loading={index < 4 ? "eager" : "lazy"}
+                      loading={index < 6 ? "eager" : "lazy"}
                       decoding="async"
-                      fetchPriority={index < 2 ? "high" : "auto"}
+                      fetchPriority={index < 3 ? "high" : "auto"}
                     />
                     <span className="batchLessonWash" aria-hidden="true" />
-                    <span className="batchLessonOrder">
-                      {String(item.order).padStart(2, "0")}
-                    </span>
+                    <span className="batchLessonOrder">{String(item.order).padStart(3, "0")}</span>
                     {learned && (
                       <span className="batchLearnedBadge">
                         <CheckCircle2 aria-hidden="true" /> Learned
                       </span>
                     )}
                     <span className="batchLessonCopy">
-                      <small>
-                        {story.identity.form} · {story.checkout.soldBy}
-                      </small>
+                      <small>{story.identity.form} · {story.checkout.soldBy}</small>
                       <strong>{story.title}</strong>
                       <b>{story.checkout.code}</b>
                     </span>
@@ -448,21 +409,26 @@ export function BatchHome({ batch, stories }: { batch: ProductBatch; stories: Pr
               })}
             </div>
 
-            {hasMoreReady && (
-              <div
-                className="batchLoadMore"
-                ref={loadMoreRef}
-                aria-label={`${remainingReady} more lessons available`}
-              >
+            <div
+              className={`batchProgressiveLoader${hasMoreReady ? " active" : " complete"}`}
+              ref={loadSentinelRef}
+              aria-live="polite"
+            >
+              {hasMoreReady ? (
                 <button type="button" onClick={loadMoreReady}>
-                  <ChevronDown aria-hidden="true" />
-                  <span>
-                    <strong>Load more</strong>
-                    <small>{remainingReady} remaining</small>
-                  </span>
+                  <LoaderCircle aria-hidden="true" />
+                  <span>Keep scrolling</span>
+                  <small>
+                    {visibleReady.length} of {ready.length} loaded
+                  </small>
                 </button>
-              </div>
-            )}
+              ) : (
+                <p>
+                  <CheckCircle2 aria-hidden="true" />
+                  <span>All {ready.length} lessons loaded</span>
+                </p>
+              )}
+            </div>
           </section>
         )}
 
@@ -486,7 +452,7 @@ export function BatchHome({ batch, stories }: { batch: ProductBatch; stories: Pr
             <div className="batchQueueGrid">
               {visibleQueued.map(({ item }) => (
                 <article className="batchQueueCard" key={item.catalogId}>
-                  <span>{String(item.order).padStart(2, "0")}</span>
+                  <span>{String(item.order).padStart(3, "0")}</span>
                   <div>
                     <strong>{item.title}</strong>
                     <small>{item.family}</small>
