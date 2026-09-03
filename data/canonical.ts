@@ -1,20 +1,19 @@
-import { catalog } from "@/data/catalog";
 import aisles from "@/data/aisles.json";
+import { batch01 } from "@/data/batches";
+import { catalog } from "@/data/catalog";
 import { pegTable } from "@/data/pegs";
 import { productStories } from "@/data/stories";
 
 /**
  * Single normalized runtime surface for the learning system.
- *
- * PLU codes remain exact catalog lookups. Product stories add curated identity,
- * checkout, provenance, variant, and confusion metadata without mutating the
- * underlying source rows. The workbook's old peg table is retained only as
- * legacy source material; TRACE does not depend on it.
+ * Codes remain exact catalog lookups. Stories and batches layer teaching
+ * structure over source rows without mutating them.
  */
 export const canonicalData = {
-  schemaVersion: "0.2.0",
+  schemaVersion: "0.3.0",
   catalog,
   aisles,
+  batches: [batch01],
   stories: productStories,
   legacyMnemonicPegs: pegTable,
 } as const;
