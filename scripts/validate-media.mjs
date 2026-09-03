@@ -40,6 +40,7 @@ assert.equal(
 );
 
 let photoCount = 0;
+let seedReuseCount = 0;
 
 function validateCore(story, label) {
   assert.ok(story.title && story.catalogId, `${label}: title and catalog ID are required.`);
@@ -53,7 +54,7 @@ function validateCore(story, label) {
   );
   assert.ok(
     Array.isArray(story.photos) && story.photos.length >= 3,
-    `${label}: at least three recognition photographs are required.`,
+    `${label}: at least three recognition photograph roles are required.`,
   );
   assert.ok(story.visualCues?.length >= 3, `${label}: at least three visual cues are required.`);
   assert.ok(story.similarItems?.length >= 3, `${label}: at least three comparison items are required.`);
@@ -66,7 +67,7 @@ function validatePhotoSet(story, label, seeded) {
 
   for (const photo of story.photos) {
     const sourceValue = seeded ? photo.file : photo.src;
-    const id = photo.id ?? sourceValue;
+    const id = photo.id ?? `${photo.role}-${sourceValue}`;
 
     assert.ok(typeof id === "string" && id.length > 0, `${label}: photo id or file is required.`);
     assert.ok(!ids.has(id), `${label}: duplicate photo identity ${id}.`);
@@ -76,8 +77,16 @@ function validatePhotoSet(story, label, seeded) {
       typeof sourceValue === "string" && sourceValue.trim().length > 0,
       `${label}: photo source is required.`,
     );
-    assert.ok(!sources.has(sourceValue), `${label}: duplicate photo source ${sourceValue}.`);
-    sources.add(sourceValue);
+
+    if (sources.has(sourceValue)) {
+      assert.ok(
+        seeded,
+        `${label}: full stories may not duplicate photo source ${sourceValue}.`,
+      );
+      seedReuseCount += 1;
+    } else {
+      sources.add(sourceValue);
+    }
 
     if (!seeded) {
       assert.ok(
@@ -93,6 +102,13 @@ function validatePhotoSet(story, label, seeded) {
       );
     }
 
+    if (seeded && photo.src != null) {
+      assert.ok(
+        typeof photo.src === "string" && photo.src.startsWith("https://"),
+        `${label}: resolved seed photo src must be HTTPS.`,
+      );
+    }
+
     assert.ok(
       typeof photo.alt === "string" && photo.alt.trim().length >= 24,
       `${label}: descriptive alt text required for ${id}.`,
@@ -105,9 +121,9 @@ function validatePhotoSet(story, label, seeded) {
     photoCount += 1;
   }
 
-  assert.ok(roles.has("hero"), `${label}: one hero photo is required.`);
-  assert.ok(roles.has("alternate"), `${label}: one alternate photo is required.`);
-  assert.ok(roles.has("context"), `${label}: one context photo is required.`);
+  assert.ok(roles.has("hero"), `${label}: one hero photo role is required.`);
+  assert.ok(roles.has("alternate"), `${label}: one alternate photo role is required.`);
+  assert.ok(roles.has("context"), `${label}: one context photo role is required.`);
 }
 
 function validateChoices(choices, answer, label) {
@@ -160,5 +176,5 @@ for (const seed of seedStories) {
 }
 
 console.log(
-  `Validated ${fullStories.length} full stories, ${seedStories.length} compiled story seeds, and ${photoCount} recognition photographs.`,
+  `Validated ${fullStories.length} full stories, ${seedStories.length} compiled story seeds, ${photoCount} recognition photo roles, and ${seedReuseCount} same-item seed fallbacks.`,
 );

@@ -12,6 +12,7 @@ import type {
 type StorySeedPhoto = {
   id?: string;
   file: string;
+  src?: string;
   alt: string;
   role: ProductPhotoRole;
   focus?: string;
@@ -81,7 +82,7 @@ function commonsSource(file: string) {
 function compilePhoto(photo: StorySeedPhoto) {
   return {
     id: photo.id ?? slugify(photo.file),
-    src: photo.file.startsWith("https://") ? photo.file : commonsPhoto(photo.file),
+    src: photo.src ?? (photo.file.startsWith("https://") ? photo.file : commonsPhoto(photo.file)),
     alt: photo.alt,
     role: photo.role,
     focus: photo.focus ?? "50% 50%",

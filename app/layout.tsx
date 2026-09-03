@@ -20,6 +20,20 @@ const themeBootScript = `
   document.addEventListener("DOMContentLoaded", syncThemeColor, { once: true });
 })();`;
 
+const productImageFallbackScript = `
+(() => {
+  const selector = ".batchLessonCard > img, img.productPhoto";
+  const fallback = "/product-placeholder.svg";
+  window.addEventListener("error", (event) => {
+    const image = event.target;
+    if (!(image instanceof HTMLImageElement) || !image.matches(selector)) return;
+    if (image.dataset.pluFallbackApplied === "true") return;
+    image.dataset.pluFallbackApplied = "true";
+    image.removeAttribute("srcset");
+    image.src = fallback;
+  }, true);
+})();`;
+
 export const metadata: Metadata = {
   title: "PLU",
   description: "See produce, identify the exact item, and recall its checkout code.",
@@ -42,6 +56,10 @@ export default function RootLayout({ children }: { children: ReactNode }) {
     <html lang="en" data-theme="light" suppressHydrationWarning>
       <head>
         <script id="plu-theme-boot" dangerouslySetInnerHTML={{ __html: themeBootScript }} />
+        <script
+          id="plu-product-image-fallback"
+          dangerouslySetInnerHTML={{ __html: productImageFallbackScript }}
+        />
       </head>
       <body>{children}</body>
     </html>

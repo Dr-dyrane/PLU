@@ -1,0 +1,84 @@
+@media (max-width: 560px) {
+  .batchPage {
+    padding-right: max(12px, env(safe-area-inset-right));
+    padding-left: max(12px, env(safe-area-inset-left));
+  }
+
+  .batchReadyGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 9px;
+  }
+
+  .batchLessonCard {
+    min-height: 210px;
+    border-radius: 21px;
+  }
+
+  .batchLessonOrder {
+    top: 10px;
+    left: 10px;
+    min-width: 32px;
+    height: 26px;
+    padding-inline: 7px;
+    font-size: 9px;
+  }
+
+  .batchLearnedBadge {
+    top: 10px;
+    right: 10px;
+    min-height: 26px;
+    padding-inline: 8px;
+    gap: 4px;
+    font-size: 8px;
+  }
+
+  .batchLearnedBadge svg {
+    width: 12px;
+    height: 12px;
+  }
+
+  .batchLessonCopy {
+    left: 12px;
+    right: 12px;
+    bottom: 12px;
+  }
+
+  .batchLessonCopy small {
+    overflow: hidden;
+    font-size: 8px;
+    line-height: 1.25;
+    letter-spacing: .065em;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .batchLessonCopy strong {
+    display: -webkit-box;
+    overflow: hidden;
+    min-height: 2.08em;
+    margin-top: 5px;
+    font-size: 17px;
+    line-height: 1.04;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+  }
+
+  .batchLessonCopy b {
+    margin-top: 7px;
+    font-size: 13px;
+  }
+
+  .batchLessonGo {
+    display: none;
+  }
+}
+
+@media (max-width: 350px) {
+  .batchReadyGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .batchLessonCard {
+    min-height: 220px;
+  }
+}

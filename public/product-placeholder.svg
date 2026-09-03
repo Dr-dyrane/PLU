@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="title description">
+  <title id="title">Produce photo unavailable</title>
+  <desc id="description">A neutral produce placeholder shown only when the product photograph cannot load.</desc>
+  <defs>
+    <linearGradient id="surface" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#eef2ef"/>
+      <stop offset="1" stop-color="#dce5df"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="42%" r="55%">
+      <stop offset="0" stop-color="#ffffff" stop-opacity=".72"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="900" fill="url(#surface)"/>
+  <rect width="1200" height="900" fill="url(#glow)"/>
+  <g transform="translate(600 430)" fill="none" stroke="#688272" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M-12 155C-8 55 28-40 122-122" stroke-width="20"/>
+    <path d="M18 60C-128 68-198-12-198-130-68-143 17-77 18 60Z" fill="#b7c9bd" stroke-width="16"/>
+    <path d="M46 20c122 20 193-48 207-162-126-24-206 38-207 162Z" fill="#9eb5a6" stroke-width="16"/>
+    <path d="M-150-93C-82-62-31-17 4 49M218-112C143-85 91-41 52 16" stroke-width="12" opacity=".85"/>
+  </g>
+  <text x="600" y="720" text-anchor="middle" fill="#4f6557" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="34" font-weight="650" letter-spacing="1">PHOTO UNAVAILABLE</text>
+</svg>

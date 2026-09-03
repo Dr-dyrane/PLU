@@ -4,7 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "validate:data": "node scripts/validate-data.mjs && node scripts/validate-media.mjs && node scripts/validate-batch.mjs",
+    "audit:media": "node scripts/audit-remote-media.mjs --all --delay-ms=900 --retries=5",
+    "audit:batch03-media": "node scripts/resolve-batch03-media.mjs && node scripts/audit-commons-metadata.mjs && node scripts/audit-remote-media.mjs --batch=03 --delay-ms=900 --retries=5",
+    "resolve:batch03-media": "node scripts/resolve-batch03-media.mjs",
+    "validate:data": "node scripts/resolve-batch03-media.mjs && node scripts/validate-data.mjs && node scripts/validate-media.mjs && node scripts/validate-batch.mjs && node scripts/audit-commons-metadata.mjs && node scripts/audit-remote-media.mjs --batch=03 --delay-ms=900 --retries=5",
     "validate:ui": "node scripts/validate-ui.mjs",
     "build": "npm run validate:data && npm run validate:ui && next build",
     "typecheck": "tsc --noEmit"
