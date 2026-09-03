@@ -14,10 +14,10 @@ The app teaches the part that can be reasoned aboutâ€”exact product recognitionâ
 
 ## Core 25
 
-Batch 01 is defined in `data/batches/batch-01.json`.
+Batch 01 is active and defined in `data/batches/batch-01.json`.
 
 - 25 exact catalog mappings are locked.
-- The first six lessons form the pepper family.
+- Six complete pepper lessons are live.
 - The remaining 19 products are queued in a deliberate order covering bananas, avocados, citrus, herbs, roots, alliums, potatoes, tomatoes, cucumbers, broccoli, and apples.
 
 Ready lessons are available at `/learn/[story-id]/`; the set overview is available at `/batch-01/` and at the home page.
