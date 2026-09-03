@@ -2,10 +2,17 @@
 
 import { useEffect, useRef, useState } from "react";
 
-import { Icon } from "@/components/canon/Icon";
-import type { ProductStory } from "@/types/trace";
+import { Icon, ItemGlyph, itemIconName } from "@/components/canon/Icon";
+import type { ProductStory, RetailVariant } from "@/types/trace";
 
 type SheetTab = "spot" | "checkout" | "similar";
+
+function checkoutIcon(variant: RetailVariant) {
+  if (variant.scope === "package" || variant.scope === "case") return "bag" as const;
+  if (variant.soldBy === "Weight") return "scale" as const;
+  if (variant.soldBy === "Each") return "each" as const;
+  return "loose" as const;
+}
 
 export function ProductSheet({
   story,
@@ -36,8 +43,11 @@ export function ProductSheet({
         return;
       }
       if (event.key !== "Tab" || !sheetRef.current) return;
-      const focusable = [...sheetRef.current.querySelectorAll<HTMLElement>('button:not([disabled]), [href], [tabindex]:not([tabindex="-1"])')]
-        .filter((element) => element.offsetParent !== null);
+      const focusable = [
+        ...sheetRef.current.querySelectorAll<HTMLElement>(
+          'button:not([disabled]), [href], [tabindex]:not([tabindex="-1"])',
+        ),
+      ].filter((element) => element.offsetParent !== null);
       if (!focusable.length) return;
       const first = focusable[0];
       const last = focusable[focusable.length - 1];
@@ -56,12 +66,25 @@ export function ProductSheet({
 
   if (!open) return null;
 
-  const title = tab === "spot" ? "Know this item" : tab === "checkout" ? "Choose the right listing" : "Tell them apart";
-  const similar = story.similarItems?.length ? story.similarItems : [story.nearestConfusion];
+  const title =
+    tab === "spot"
+      ? "Know this item"
+      : tab === "checkout"
+        ? "Choose the right listing"
+        : "Tell them apart";
+  const similar = story.similarItems?.length
+    ? story.similarItems
+    : [story.nearestConfusion];
+  const saleIcon = story.checkout.soldBy === "Weight" ? "scale" : "each";
 
   return (
     <div className="sheetOverlay">
-      <button className="sheetBackdrop" type="button" aria-label="Close product story" onClick={onClose} />
+      <button
+        className="sheetBackdrop"
+        type="button"
+        aria-label="Close product story"
+        onClick={onClose}
+      />
       <section
         className="sheet"
         ref={sheetRef}
@@ -80,7 +103,9 @@ export function ProductSheet({
           }}
           onPointerMove={(event) => {
             if (dragStart.current === null) return;
-            setDragOffset(Math.min(180, Math.max(0, event.clientY - dragStart.current)));
+            setDragOffset(
+              Math.min(180, Math.max(0, event.clientY - dragStart.current)),
+            );
           }}
           onPointerUp={(event) => {
             if (dragStart.current === null) return;
@@ -91,8 +116,19 @@ export function ProductSheet({
           }}
         />
         <header className="sheetHeader">
-          <div><small>{story.title}</small><h2 id="sheetTitle">{title}</h2></div>
-          <button ref={closeRef} className="closeButton" type="button" aria-label="Close product story" onClick={onClose}><Icon name="close" /></button>
+          <div>
+            <small>{story.title}</small>
+            <h2 id="sheetTitle">{title}</h2>
+          </div>
+          <button
+            ref={closeRef}
+            className="closeButton"
+            type="button"
+            aria-label="Close product story"
+            onClick={onClose}
+          >
+            <Icon name="close" />
+          </button>
         </header>
         <nav className="sheetTabs" role="tablist" aria-label={`${story.title} details`}>
           {(["spot", "checkout", "similar"] as SheetTab[]).map((item) => (
@@ -104,24 +140,52 @@ export function ProductSheet({
               onClick={() => onTab(item)}
               key={item}
             >
-              {item === "spot" ? "Spot it" : item === "checkout" ? "At checkout" : "Similar"}
+              {item === "spot"
+                ? "Spot it"
+                : item === "checkout"
+                  ? "At checkout"
+                  : "Similar"}
             </button>
           ))}
         </nav>
         <div className="sheetBody">
           {tab === "spot" && (
             <div className="storyCards">
-              <article className="storyCard"><span className="storyIcon"><Icon name="bell" /></span><span><b>{story.identity.form}-shaped</b><small>{story.visualCues[0]}</small></span></article>
-              <article className="storyCard"><span className="storyIcon"><Icon name="color" /></span><span><b>{story.identity.color}</b><small>{story.visualCues[1]}</small></span></article>
-              <article className="storyCard"><span className="storyIcon"><Icon name="loose" /></span><span><b>{story.checkout.saleForm} produce</b><small>{story.checkout.soldBy === "Weight" ? "Place it on the scale" : "Count one item"}</small></span></article>
+              <article className="storyCard">
+                <span className="storyIcon"><Icon name={itemIconName(story.family)} /></span>
+                <span><b>{story.identity.form}</b><small>{story.visualCues[0]}</small></span>
+              </article>
+              <article className="storyCard">
+                <span className="storyIcon"><Icon name="color" /></span>
+                <span><b>{story.identity.color}</b><small>{story.visualCues[1]}</small></span>
+              </article>
+              <article className="storyCard">
+                <span className="storyIcon"><Icon name={saleIcon} /></span>
+                <span>
+                  <b>{story.checkout.saleForm}</b>
+                  <small>{story.checkout.soldBy === "Weight" ? "Place it on the scale" : "Count one item"}</small>
+                </span>
+              </article>
             </div>
           )}
           {tab === "checkout" && (
             <div className="storyCards">
               {story.retailVariants.map((variant) => (
-                <article className={`storyCard${variant.scope === "primary" ? " primary" : ""}`} key={variant.id}>
-                  <span className="storyIcon"><Icon name={variant.scope === "package" || variant.scope === "case" ? "bag" : variant.scope === "primary" ? "scale" : "loose"} /></span>
-                  <span><b>{variant.name}</b><small>{variant.scope === "primary" ? (variant.soldBy === "Weight" ? "Place it on the scale" : "Count one item") : variant.note}</small></span>
+                <article
+                  className={`storyCard${variant.scope === "primary" ? " primary" : ""}`}
+                  key={variant.id}
+                >
+                  <span className="storyIcon"><Icon name={checkoutIcon(variant)} /></span>
+                  <span>
+                    <b>{variant.name}</b>
+                    <small>
+                      {variant.scope === "primary"
+                        ? variant.soldBy === "Weight"
+                          ? "Place it on the scale"
+                          : "Count one item"
+                        : variant.note}
+                    </small>
+                  </span>
                   <strong className="storyCode">{variant.code}</strong>
                 </article>
               ))}
@@ -129,9 +193,9 @@ export function ProductSheet({
           )}
           {tab === "similar" && (
             <div className="storyCards">
-              {similar.map((item, index) => (
+              {similar.map((item) => (
                 <article className="storyCard" key={`${item.name}-${item.code}`}>
-                  <span className="storyIcon"><i className="pepperDot" style={{ background: item.color ?? ["#df4f4b", "#e2c83f", "#8bb64a"][index % 3] }} /></span>
+                  <span className="storyIcon"><ItemGlyph label={item.name} color={item.color} /></span>
                   <span><b>{item.name}</b><small>{item.cue}</small></span>
                   <strong className="storyCode">{item.code}</strong>
                 </article>

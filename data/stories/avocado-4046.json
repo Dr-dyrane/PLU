@@ -1,0 +1,260 @@
+{
+  "schemaVersion": "0.3.0",
+  "id": "avocado-4046",
+  "catalogId": "avocado",
+  "title": "Avocado",
+  "shortTitle": "Avocado",
+  "family": "Avocados",
+  "priority": "must-know",
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Avocado%20Hass%20-%20single%20and%20halved.jpg?width=1600",
+  "alt": "A whole Hass avocado beside a halved avocado showing green flesh and the seed",
+  "photos": [
+    {
+      "id": "hass-whole-and-half",
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Avocado%20Hass%20-%20single%20and%20halved.jpg?width=1600",
+      "alt": "A whole Hass avocado beside a halved avocado showing green flesh and the seed",
+      "role": "hero",
+      "focus": "50% 52%",
+      "source": {
+        "label": "Wikimedia Commons",
+        "author": "Ivar Leidus",
+        "license": "CC BY-SA 4.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Avocado_Hass_-_single_and_halved.jpg"
+      }
+    },
+    {
+      "id": "avocados-on-tree",
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Persea%20americana%20fruit%202.JPG?width=1600",
+      "alt": "Several green avocados hanging naturally from a tree",
+      "role": "alternate",
+      "focus": "50% 46%",
+      "source": {
+        "label": "Wikimedia Commons",
+        "author": "B.navez",
+        "license": "CC BY-SA 3.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Persea_americana_fruit_2.JPG"
+      }
+    },
+    {
+      "id": "port-harcourt-market",
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Avocado%20seller%20at%20the%20fruit%20market.jpg?width=1600",
+      "alt": "Avocados displayed for sale with other produce at a Port Harcourt fruit market",
+      "role": "context",
+      "focus": "50% 55%",
+      "source": {
+        "label": "Wikimedia Commons",
+        "author": "Dappasolomon001",
+        "license": "CC BY-SA 4.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Avocado_seller_at_the_fruit_market.jpg"
+      }
+    }
+  ],
+  "identity": {
+    "family": "Avocados",
+    "form": "Medium pear",
+    "color": "Green",
+    "variant": "Regular avocado"
+  },
+  "checkout": {
+    "code": "4046",
+    "soldBy": "Each",
+    "saleForm": "Single",
+    "codeScope": "primary-each-produce",
+    "summary": "Use 4046 for the regular avocado counted one at a time."
+  },
+  "visualCues": [
+    "Oval-to-pear body with one narrower end",
+    "Skin may be smooth green or dark and pebbled depending on variety",
+    "Use the regular listing unless the store marks it as large"
+  ],
+  "storyBeats": [
+    {
+      "id": "family",
+      "label": "Family",
+      "value": "Avocado",
+      "copy": "Recognize the avocado body and its broad seed-bearing center.",
+      "basis": "workbook"
+    },
+    {
+      "id": "form",
+      "label": "Size",
+      "value": "Regular",
+      "copy": "This is the standard-size listing rather than the visibly larger avocado.",
+      "basis": "reference-sheet"
+    },
+    {
+      "id": "variant",
+      "label": "Skin",
+      "value": "Green to dark",
+      "copy": "Variety changes the peel, so shape and store size label matter more than one color.",
+      "basis": "curated-visual"
+    },
+    {
+      "id": "checkout",
+      "label": "Sold",
+      "value": "Single · each",
+      "copy": "Count each regular avocado; it is not entered by weight.",
+      "basis": "reference-sheet"
+    }
+  ],
+  "classificationPrompts": [
+    {
+      "id": "family",
+      "question": "What kind of produce is this?",
+      "support": "Start with the broad family.",
+      "answer": "avocados",
+      "choices": [
+        {
+          "id": "avocados",
+          "label": "Avocados"
+        },
+        {
+          "id": "mangoes",
+          "label": "Mangoes"
+        },
+        {
+          "id": "pears",
+          "label": "Pears"
+        }
+      ]
+    },
+    {
+      "id": "form",
+      "question": "Which one matches?",
+      "support": "Use size and the avocado body together.",
+      "answer": "regular-avocado",
+      "choices": [
+        {
+          "id": "regular-avocado",
+          "label": "Regular · medium avocado"
+        },
+        {
+          "id": "large-avocado",
+          "label": "Large · visibly oversized"
+        },
+        {
+          "id": "mango-green",
+          "label": "Mango · tapered and asymmetric"
+        }
+      ]
+    },
+    {
+      "id": "sale-form",
+      "question": "How is this one sold?",
+      "support": "The checkout method is part of the listing.",
+      "answer": "each",
+      "choices": [
+        {
+          "id": "each",
+          "label": "One at a time"
+        },
+        {
+          "id": "weight",
+          "label": "Loose · by weight"
+        },
+        {
+          "id": "bag",
+          "label": "Prepacked bag"
+        }
+      ]
+    }
+  ],
+  "retailVariants": [
+    {
+      "id": "primary",
+      "name": "Regular avocado",
+      "code": "4046",
+      "soldBy": "Each",
+      "scope": "primary",
+      "note": "The lesson target.",
+      "sourcePages": [
+        1,
+        5
+      ]
+    },
+    {
+      "id": "large",
+      "name": "Large avocado",
+      "code": "4771",
+      "soldBy": "Each",
+      "scope": "store-specific",
+      "note": "A separate size listing.",
+      "sourcePages": [
+        1
+      ]
+    },
+    {
+      "id": "organic-three-count",
+      "name": "Organic avocado 3-count",
+      "code": "40719",
+      "soldBy": null,
+      "scope": "package",
+      "note": "A packaged organic listing.",
+      "sourcePages": [
+        5
+      ]
+    },
+    {
+      "id": "caribbean",
+      "name": "Caribbean avocado",
+      "code": "58559",
+      "soldBy": null,
+      "scope": "store-specific",
+      "note": "A separate named avocado listing.",
+      "sourcePages": [
+        5
+      ]
+    }
+  ],
+  "codeRelations": [
+    {
+      "kind": "exception",
+      "title": "Size changes the lookup",
+      "copy": "Regular avocado is 4046. The separate large listing is 4771."
+    },
+    {
+      "kind": "exception",
+      "title": "Packages use their own record",
+      "copy": "The organic 3-count pack is 40719 rather than the loose single-item code."
+    }
+  ],
+  "nearestConfusion": {
+    "name": "Large avocado",
+    "code": "4771",
+    "cue": "The fruit is still an avocado; the store's size distinction selects the code.",
+    "color": "#497f46"
+  },
+  "similarItems": [
+    {
+      "name": "Large avocado",
+      "code": "4771",
+      "cue": "Same family, but noticeably larger and listed separately.",
+      "color": "#497f46"
+    },
+    {
+      "name": "Caribbean avocado",
+      "code": "58559",
+      "cue": "Often larger and smoother; use the store's named listing.",
+      "color": "#77a454"
+    },
+    {
+      "name": "Organic avocado 3-count",
+      "code": "40719",
+      "cue": "A packaged three-count item rather than a single avocado.",
+      "color": "#3f8a4d"
+    }
+  ],
+  "source": {
+    "primaryPages": [
+      1,
+      5
+    ],
+    "relatedPages": [
+      1,
+      5
+    ],
+    "checkedOnReference": true,
+    "flags": [],
+    "confidence": "verified-from-supplied-material"
+  }
+}

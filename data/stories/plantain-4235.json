@@ -1,0 +1,226 @@
+{
+  "schemaVersion": "0.3.0",
+  "id": "plantain-4235",
+  "catalogId": "bananas-plantain",
+  "title": "Plantain",
+  "shortTitle": "Plantain",
+  "family": "Bananas",
+  "priority": "must-know",
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Plantain%20fruit.jpg?width=1600",
+  "alt": "A group of long green plantains showing firm angular ridges",
+  "photos": [
+    {
+      "id": "green-plantain",
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Plantain%20fruit.jpg?width=1600",
+      "alt": "A group of long green plantains showing firm angular ridges",
+      "role": "hero",
+      "focus": "50% 50%",
+      "source": {
+        "label": "Wikimedia Commons",
+        "author": "Ramjchandran",
+        "license": "CC BY-SA 4.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Plantain_fruit.jpg"
+      }
+    },
+    {
+      "id": "plantain-banana-compare",
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Plantain%20and%20banana.jpg?width=1600",
+      "alt": "A long plantain placed beside a shorter Cavendish banana for comparison",
+      "role": "alternate",
+      "focus": "50% 50%",
+      "source": {
+        "label": "Wikimedia Commons",
+        "author": "Rhododendrites",
+        "license": "CC BY-SA 4.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Plantain_and_banana.jpg"
+      }
+    },
+    {
+      "id": "plantain-market",
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Picture%20of%20plantain%20at%20fruit%20Garden%20market.jpg?width=1600",
+      "alt": "Plantains arranged for sale on a table at a fruit market",
+      "role": "context",
+      "focus": "50% 50%",
+      "source": {
+        "label": "Wikimedia Commons",
+        "author": "Nubelbariloe",
+        "license": "CC BY 4.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Picture_of_plantain_at_fruit_Garden_market.jpg"
+      }
+    }
+  ],
+  "identity": {
+    "family": "Bananas",
+    "form": "Long and angular",
+    "color": "Green",
+    "variant": "Loose plantain"
+  },
+  "checkout": {
+    "code": "4235",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "codeScope": "primary-loose-produce",
+    "summary": "Use 4235 for loose plantains that are weighed at checkout."
+  },
+  "visualCues": [
+    "Longer and thicker than a dessert banana",
+    "Firm body with straighter sides and stronger ridges",
+    "Peel may be green, yellow, or heavily darkened as it ripens"
+  ],
+  "storyBeats": [
+    {
+      "id": "family",
+      "label": "Family",
+      "value": "Banana",
+      "copy": "It belongs to the banana family, but its form resolves the exact item.",
+      "basis": "workbook"
+    },
+    {
+      "id": "form",
+      "label": "Shape",
+      "value": "Long and angular",
+      "copy": "Plantains are thicker, firmer, and less rounded than yellow bananas.",
+      "basis": "curated-visual"
+    },
+    {
+      "id": "variant",
+      "label": "Peel",
+      "value": "Green to dark",
+      "copy": "Ripeness changes the peel dramatically; the longer angular shape remains useful.",
+      "basis": "curated-visual"
+    },
+    {
+      "id": "checkout",
+      "label": "Sold",
+      "value": "Loose · by weight",
+      "copy": "Place the plantain on the scale rather than counting it as each.",
+      "basis": "reference-sheet"
+    }
+  ],
+  "classificationPrompts": [
+    {
+      "id": "family",
+      "question": "What kind of produce is this?",
+      "support": "Start with the broad family.",
+      "answer": "bananas",
+      "choices": [
+        {
+          "id": "bananas",
+          "label": "Bananas"
+        },
+        {
+          "id": "peppers",
+          "label": "Peppers"
+        },
+        {
+          "id": "avocados",
+          "label": "Avocados"
+        }
+      ]
+    },
+    {
+      "id": "form",
+      "question": "Which one matches?",
+      "support": "Use length, thickness, and ridges.",
+      "answer": "plantain-green",
+      "choices": [
+        {
+          "id": "plantain-green",
+          "label": "Plantain · long and angular"
+        },
+        {
+          "id": "yellow-banana",
+          "label": "Banana · shorter and rounder"
+        },
+        {
+          "id": "baby-banana",
+          "label": "Baby banana · compact and small"
+        }
+      ]
+    },
+    {
+      "id": "sale-form",
+      "question": "How is this one sold?",
+      "support": "The checkout method is part of the listing.",
+      "answer": "weight",
+      "choices": [
+        {
+          "id": "weight",
+          "label": "Loose · by weight"
+        },
+        {
+          "id": "each",
+          "label": "One at a time"
+        },
+        {
+          "id": "bag",
+          "label": "Prepacked bag"
+        }
+      ]
+    }
+  ],
+  "retailVariants": [
+    {
+      "id": "primary",
+      "name": "Loose plantain",
+      "code": "4235",
+      "soldBy": "Weight",
+      "scope": "primary",
+      "note": "The lesson target.",
+      "sourcePages": [
+        1,
+        5
+      ]
+    }
+  ],
+  "codeRelations": [
+    {
+      "kind": "observed-cluster",
+      "title": "4234 and 4235 sit together",
+      "copy": "Baby or red banana records appear at 4234 in the source; plantain follows at 4235."
+    },
+    {
+      "kind": "exception",
+      "title": "Family does not generate the code",
+      "copy": "Yellow banana is 4011, while plantain is 4235. Identify the exact product first."
+    }
+  ],
+  "nearestConfusion": {
+    "name": "Yellow banana",
+    "code": "4011",
+    "cue": "Yellow bananas are shorter, slimmer, softer, and more evenly curved.",
+    "color": "#d9af24"
+  },
+  "similarItems": [
+    {
+      "name": "Yellow banana",
+      "code": "4011",
+      "cue": "Shorter, slimmer, and more evenly curved.",
+      "color": "#d9af24"
+    },
+    {
+      "name": "Baby banana",
+      "code": "4234",
+      "cue": "Compact fingers that are much smaller than a plantain.",
+      "color": "#e3bd3c"
+    },
+    {
+      "name": "Organic banana",
+      "code": "94011",
+      "cue": "A yellow banana listing, not the long firm plantain.",
+      "color": "#4c934c"
+    }
+  ],
+  "source": {
+    "primaryPages": [
+      1,
+      5
+    ],
+    "relatedPages": [
+      5
+    ],
+    "checkedOnReference": true,
+    "flags": [],
+    "confidence": "verified-from-supplied-material"
+  }
+}

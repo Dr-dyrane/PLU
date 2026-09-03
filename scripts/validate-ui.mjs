@@ -2,6 +2,9 @@ import assert from "node:assert/strict";
 import { readFile, stat } from "node:fs/promises";
 
 const lesson = await readFile(new URL("../components/canon/PluLesson.tsx", import.meta.url), "utf8");
+const productSheet = await readFile(new URL("../components/canon/ProductSheet.tsx", import.meta.url), "utf8");
+const lessonPage = await readFile(new URL("../app/learn/[slug]/page.tsx", import.meta.url), "utf8");
+const iconSystem = await readFile(new URL("../components/canon/Icon.tsx", import.meta.url), "utf8");
 const home = await readFile(new URL("../components/canon/BatchHome.tsx", import.meta.url), "utf8");
 const homeFooter = await readFile(new URL("../components/canon/HomeFooter.tsx", import.meta.url), "utf8");
 const homeFilters = await readFile(new URL("../components/canon/HomeFilterSheet.tsx", import.meta.url), "utf8");
@@ -36,6 +39,19 @@ for (const phrase of forbiddenLearnerCopy) {
 
 for (const required of ["Practice {code}", "ProductSheet", "actionDock", "Open product story"]) {
   assert.ok(lesson.includes(required), `Canonical lesson is missing ${required}.`);
+}
+
+for (const required of ["ProductIconProvider", "story={story}"]) {
+  assert.ok(lessonPage.includes(required), `Lesson route scaling is missing ${required}.`);
+}
+
+assert.ok(!productSheet.includes("pepperDot"), "The shared product sheet must not use pepper-only visuals.");
+assert.ok(!productSheet.includes("-shaped</b>"), "Product form copy must remain grammatical across families.");
+for (const required of ["ItemGlyph", "checkoutIcon", "itemIconName(story.family)", 'variant.soldBy === "Each"']) {
+  assert.ok(productSheet.includes(required), `Product sheet scaling is missing ${required}.`);
+}
+for (const required of ["Banana", "Apple", "CircleDot", '"each"', "itemIconName", "ProductIconProvider", 'name === "scale"']) {
+  assert.ok(iconSystem.includes(required), `Generic icon system is missing ${required}.`);
 }
 
 for (const required of ["Search product or PLU", "batchCategoryRail", "HomeFilterSheet", "Coming next"]) {
@@ -92,5 +108,5 @@ const icon = await stat(new URL("../app/icon.svg", import.meta.url));
 assert.ok(icon.size > 0, "app/icon.svg must be non-empty.");
 
 console.log(
-  "Validated fixed lesson shell, scrolling home, back navigation, search, category chips, native filter sheet, one-row footer, default-light theme persistence, semantic light/dark colors, safe areas, 44px targets, reduced motion, clean learner copy, and favicon.",
+  "Validated generic multi-family lessons, fixed lesson shell, scrolling home, back navigation, search, category chips, native filter sheet, one-row footer, default-light theme persistence, semantic light/dark colors, safe areas, 44px targets, reduced motion, clean learner copy, and favicon.",
 );

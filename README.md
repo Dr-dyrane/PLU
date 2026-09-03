@@ -17,8 +17,8 @@ The app teaches the part that can be reasoned aboutâ€”exact product recognitionâ
 Batch 01 is active and defined in `data/batches/batch-01.json`.
 
 - 25 exact catalog mappings are locked.
-- Six complete pepper lessons are live.
-- The remaining 19 products are queued in a deliberate order covering bananas, avocados, citrus, herbs, roots, alliums, potatoes, tomatoes, cucumbers, broccoli, and apples.
+- Ten complete lessons are live across peppers, bananas, plantains, and avocados.
+- The remaining 15 products are queued in a deliberate order covering citrus, herbs, roots, alliums, potatoes, tomatoes, cucumbers, broccoli, and apples.
 
 Ready lessons are available at `/learn/[story-id]/`; the set overview is available at `/batch-01/` and at the home page.
 
@@ -30,9 +30,13 @@ Every ready lesson carries:
 - sold-by-weight or sold-each behavior;
 - three realistic photographs with provenance;
 - visual cues and classification decisions;
-- package, case, bulk, and related listings where present;
+- package, case, bulk, size, organic, and related listings where present;
 - nearest visual confusions;
 - local code relationships presented as observations, never formulas.
+
+## Appearance
+
+Light mode is the first-visit default. The home footer provides a persistent Apple-style light/dark switch. Product accents have separate light and dark values, while success, warning, and error colors remain semantic.
 
 ## Data
 
@@ -52,6 +56,6 @@ npm run typecheck
 npm run build
 ```
 
-The production build verifies exact catalog mappings, media coverage, batch completeness, native interaction safeguards, safe areas, touch targets, clean learner copy, and static rendering.
+The production build verifies exact catalog mappings, media coverage, batch completeness, native interaction safeguards, semantic appearance, safe areas, touch targets, clean learner copy, and static rendering.
 
 Node is pinned to `22.x`. No database, authentication, API, or environment variable is required.

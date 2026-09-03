@@ -25,9 +25,12 @@ assert.equal(batch.items.length, batch.size, "Batch size must match item count."
 assert.deepEqual(batch.items.map((item) => item.order), Array.from({ length: 25 }, (_, index) => index + 1));
 assert.equal(new Set(batch.items.map((item) => item.catalogId)).size, 25, "Catalog IDs must be unique.");
 assert.equal(new Set(batch.items.map((item) => `${item.catalogId}:${item.code}`)).size, 25, "Batch mappings must be unique.");
+assert.equal(new Set(stories.map((story) => story.id)).size, stories.length, "Story IDs must be unique.");
+assert.equal(new Set(stories.map((story) => story.catalogId)).size, stories.length, "Story catalog IDs must be unique.");
 
 const catalogById = new Map(catalog.map((record) => [record.id, record]));
 const storyByCatalogId = new Map(stories.map((story) => [story.catalogId, story]));
+const batchByCatalogId = new Map(batch.items.map((item) => [item.catalogId, item]));
 
 for (const item of batch.items) {
   const record = catalogById.get(item.catalogId);
@@ -44,8 +47,20 @@ for (const item of batch.items) {
   }
 }
 
-const readyItems = batch.items.filter((item) => item.status === "ready");
-assert.equal(readyItems.length, 6, "The first production slice should contain the six pepper lessons.");
-assert.equal(stories.length, 6, "Every current story should belong to the ready production slice.");
+for (const story of stories) {
+  const item = batchByCatalogId.get(story.catalogId);
+  assert.ok(item, `Story is not assigned to Batch 01: ${story.catalogId}`);
+  assert.equal(item.status, "ready", `Story must be marked ready in the batch: ${story.catalogId}`);
+  assert.equal(story.checkout.code, item.code, `Story code must match batch: ${story.catalogId}`);
+}
 
-console.log(`Validated Batch 01: ${batch.size} locked products, ${readyItems.length} ready lessons, ${batch.size - readyItems.length} queued.`);
+const readyItems = batch.items.filter((item) => item.status === "ready");
+assert.equal(
+  readyItems.length,
+  stories.length,
+  "Every ready batch item must have exactly one story and every story must be ready.",
+);
+
+console.log(
+  `Validated Batch 01: ${batch.size} locked products, ${readyItems.length} ready lessons, ${batch.size - readyItems.length} queued.`,
+);

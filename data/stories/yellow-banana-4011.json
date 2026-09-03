@@ -1,0 +1,249 @@
+{
+  "schemaVersion": "0.3.0",
+  "id": "yellow-banana-4011",
+  "catalogId": "bananas-yellow",
+  "title": "Yellow banana",
+  "shortTitle": "Banana",
+  "family": "Bananas",
+  "priority": "must-know",
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Typical%20Cavendish%20bananas%20in%20Tanzania.jpg?width=1600",
+  "alt": "A ripe bunch of yellow Cavendish bananas photographed in Tanzania",
+  "photos": [
+    {
+      "id": "cavendish-ripe",
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Typical%20Cavendish%20bananas%20in%20Tanzania.jpg?width=1600",
+      "alt": "A ripe bunch of yellow Cavendish bananas photographed in Tanzania",
+      "role": "hero",
+      "focus": "50% 48%",
+      "source": {
+        "label": "Wikimedia Commons",
+        "author": "Erasmus Kamugisha",
+        "license": "CC BY-SA 4.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Typical_Cavendish_bananas_in_Tanzania.jpg"
+      }
+    },
+    {
+      "id": "banana-bunch",
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Banana%20bunch.jpeg?width=1600",
+      "alt": "Several yellow bananas joined together in a natural bunch",
+      "role": "alternate",
+      "focus": "50% 52%",
+      "source": {
+        "label": "Wikimedia Commons",
+        "author": "NW Indian Language Institute",
+        "license": "CC BY 3.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Banana_bunch.jpeg"
+      }
+    },
+    {
+      "id": "kigali-market",
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Bananas%20in%20typical%20market%20in%20Kigali.jpg?width=1600",
+      "alt": "Yellow and green banana bunches displayed together in a Kigali market",
+      "role": "context",
+      "focus": "50% 52%",
+      "source": {
+        "label": "Wikimedia Commons",
+        "author": "Jenny Paul",
+        "license": "CC BY-SA 4.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Bananas_in_typical_market_in_Kigali.jpg"
+      }
+    }
+  ],
+  "identity": {
+    "family": "Bananas",
+    "form": "Curved",
+    "color": "Yellow",
+    "variant": "Loose yellow banana"
+  },
+  "checkout": {
+    "code": "4011",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "codeScope": "primary-loose-produce",
+    "summary": "Use 4011 for loose yellow bananas that are weighed at checkout."
+  },
+  "visualCues": [
+    "Slender curved fingers joined at one crown",
+    "Bright yellow peel, sometimes with small brown speckles",
+    "Shorter and slimmer than a plantain"
+  ],
+  "storyBeats": [
+    {
+      "id": "family",
+      "label": "Family",
+      "value": "Banana",
+      "copy": "Recognize the banana family before deciding which kind it is.",
+      "basis": "workbook"
+    },
+    {
+      "id": "form",
+      "label": "Shape",
+      "value": "Short and curved",
+      "copy": "The fingers are slimmer and more rounded than plantains.",
+      "basis": "curated-visual"
+    },
+    {
+      "id": "variant",
+      "label": "Color",
+      "value": "Yellow",
+      "copy": "The standard checkout listing is the familiar yellow dessert banana.",
+      "basis": "workbook"
+    },
+    {
+      "id": "checkout",
+      "label": "Sold",
+      "value": "Loose · by weight",
+      "copy": "Place the bunch on the scale; do not count each banana separately.",
+      "basis": "reference-sheet"
+    }
+  ],
+  "classificationPrompts": [
+    {
+      "id": "family",
+      "question": "What kind of produce is this?",
+      "support": "Start with the broad family.",
+      "answer": "bananas",
+      "choices": [
+        {
+          "id": "bananas",
+          "label": "Bananas"
+        },
+        {
+          "id": "avocados",
+          "label": "Avocados"
+        },
+        {
+          "id": "mangoes",
+          "label": "Mangoes"
+        }
+      ]
+    },
+    {
+      "id": "form",
+      "question": "Which one matches?",
+      "support": "Use length, curve, and peel color together.",
+      "answer": "yellow-banana",
+      "choices": [
+        {
+          "id": "yellow-banana",
+          "label": "Yellow · short and curved"
+        },
+        {
+          "id": "plantain-green",
+          "label": "Plantain · long and angular"
+        },
+        {
+          "id": "baby-banana",
+          "label": "Baby banana · much smaller"
+        }
+      ]
+    },
+    {
+      "id": "sale-form",
+      "question": "How is this one sold?",
+      "support": "The checkout method is part of the listing.",
+      "answer": "weight",
+      "choices": [
+        {
+          "id": "weight",
+          "label": "Loose · by weight"
+        },
+        {
+          "id": "each",
+          "label": "One at a time"
+        },
+        {
+          "id": "bag",
+          "label": "Prepacked bag"
+        }
+      ]
+    }
+  ],
+  "retailVariants": [
+    {
+      "id": "primary",
+      "name": "Loose yellow banana",
+      "code": "4011",
+      "soldBy": "Weight",
+      "scope": "primary",
+      "note": "The lesson target.",
+      "sourcePages": [
+        1,
+        5
+      ]
+    },
+    {
+      "id": "organic",
+      "name": "Organic banana",
+      "code": "94011",
+      "soldBy": "Weight",
+      "scope": "organic",
+      "note": "The organic listing keeps 4011 after a leading 9.",
+      "sourcePages": [
+        1,
+        5
+      ]
+    },
+    {
+      "id": "case",
+      "name": "Banana case",
+      "code": "6794",
+      "soldBy": null,
+      "scope": "case",
+      "note": "A case record, not the loose scale code.",
+      "sourcePages": [
+        5
+      ]
+    }
+  ],
+  "codeRelations": [
+    {
+      "kind": "shared-suffix",
+      "title": "Organic keeps the same four digits",
+      "copy": "Loose yellow banana is 4011. The organic listing shown in the source is 94011."
+    },
+    {
+      "kind": "exception",
+      "title": "Plantain is a different lookup",
+      "copy": "Plantain belongs to the same broad family but uses 4235."
+    }
+  ],
+  "nearestConfusion": {
+    "name": "Plantain",
+    "code": "4235",
+    "cue": "Plantains are usually longer, thicker, firmer, and more angular.",
+    "color": "#76943d"
+  },
+  "similarItems": [
+    {
+      "name": "Plantain",
+      "code": "4235",
+      "cue": "Longer, thicker, and more angular than a yellow banana.",
+      "color": "#76943d"
+    },
+    {
+      "name": "Baby banana",
+      "code": "4234",
+      "cue": "Much smaller fingers, even when fully ripe.",
+      "color": "#d9af24"
+    },
+    {
+      "name": "Organic banana",
+      "code": "94011",
+      "cue": "The produce looks similar; the organic listing carries the leading 9.",
+      "color": "#4c934c"
+    }
+  ],
+  "source": {
+    "primaryPages": [
+      1,
+      5
+    ],
+    "relatedPages": [
+      5
+    ],
+    "checkedOnReference": true,
+    "flags": [],
+    "confidence": "verified-from-supplied-material"
+  }
+}

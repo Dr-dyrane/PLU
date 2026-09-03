@@ -1,0 +1,149 @@
+{
+  "schemaVersion": "0.3.0",
+  "id": "large-avocado-4771",
+  "catalogId": "avocado-large",
+  "title": "Large avocado",
+  "shortTitle": "Large avocado",
+  "family": "Avocados",
+  "priority": "must-know",
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Aguacate%20gigante%20comparado%20con%20aguacate%20normal%20%28tipo%20Hass%29%20%E2%80%93%20Giant%20avocado%20compared%20to%20normal%20avocado%20%28Hass%20type%29.jpg?width=1600",
+  "alt": "A giant green avocado placed beside a normal Hass avocado for direct size comparison",
+  "photos": [
+    {
+      "id": "giant-size-comparison",
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Aguacate%20gigante%20comparado%20con%20aguacate%20normal%20%28tipo%20Hass%29%20%E2%80%93%20Giant%20avocado%20compared%20to%20normal%20avocado%20%28Hass%20type%29.jpg?width=1600",
+      "alt": "A giant green avocado placed beside a normal Hass avocado for direct size comparison",
+      "role": "hero",
+      "focus": "50% 50%",
+      "source": {
+        "label": "Wikimedia Commons",
+        "author": "El Mono EspaÃ±ol",
+        "license": "CC BY-SA 4.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Aguacate_gigante_comparado_con_aguacate_normal_(tipo_Hass)_%E2%80%93_Giant_avocado_compared_to_normal_avocado_(Hass_type).jpg"
+      }
+    },
+    {
+      "id": "big-fruits-on-tree",
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Persea%20americana%20fruits%2002.JPG?width=1600",
+      "alt": "Large green avocados growing on a tree beside younger fruit",
+      "role": "alternate",
+      "focus": "50% 48%",
+      "source": {
+        "label": "Wikimedia Commons",
+        "author": "B.navez",
+        "license": "CC BY-SA 3.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Persea_americana_fruits_02.JPG"
+      }
+    },
+    {
+      "id": "avocados-for-sale",
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Persea%20americana%20dsc07271.jpg?width=1600",
+      "alt": "Green avocados of an unknown variety displayed for sale on RÃ©union Island",
+      "role": "context",
+      "focus": "50% 52%",
+      "source": {
+        "label": "Wikimedia Commons",
+        "author": "David Monniaux",
+        "license": "CC BY-SA 3.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Persea_americana_dsc07271.jpg"
+      }
+    }
+  ],
+  "identity": {
+    "family": "Avocados",
+    "form": "Large pear",
+    "color": "Green",
+    "variant": "Large avocado"
+  },
+  "checkout": {
+    "code": "4771",
+    "soldBy": "Each",
+    "saleForm": "Single",
+    "codeScope": "size-specific-each-produce",
+    "summary": "Use 4771 for the avocado listed by the store as large."
+  },
+  "visualCues": [
+    "Noticeably larger than the regular avocado listing",
+    "Broad pear or oval body, often with smoother green skin",
+    "Sold each; size is the deciding checkout detail"
+  ],
+  "storyBeats": [
+    {
+      "id": "family",
+      "label": "Family",
+      "value": "Avocado",
+      "copy": "First identify the avocado family; then resolve the store's size listing.",
+      "basis": "workbook"
+    },
+    {
+      "id": "form",
+      "label": "Size",
+      "value": "Large",
+      "copy": "The fruit is visibly larger than the regular avocado used for 4046.",
+      "basis": "reference-sheet"
+    },
+    {
+      "id": "variant",
+      "label": "Shape",
+      "value": "Broad pear",
+      "copy": "Large avocados can vary in peel and variety, so size and store label carry the decision.",
+      "basis": "curated-visual"
+    },
+    {
+      "id": "checkout",
+      "label": "Sold",
+      "value": "Single Â· each",
+      "copy": "Count each large avocado one at a time.",
+      "basis": "reference-sheet"
+    }
+  ],
+  "classificationPrompts": [
+    {
+      "id": "family",
+      "question": "What kind of produce is this?",
+      "support": "Start with the broad family.",
+      "answer": "avocados",
+      "choices": [
+        {
+          "id": "avocados",
+          "label": "Avocados"
+        },
+        {
+          "id": "mangoes",
+          "label": "Mangoes"
+        },
+        {
+          "id": "pears",
+          "label": "Pears"
+        }
+      ]
+    },
+    {
+      "id": "form",
+      "question": "Which one matches?",
+      "support": "Use the size distinction shown by the store.",
+      "answer": "large-avocado",
+      "choices": [
+        {
+          "id": "large-avocado",
+          "label": "Large Â· oversized avocado"
+        },
+        {
+          "id": "regular-avocado",
+          "label": "Regular Â· medium avocado"
+        },
+        {
+          "id": "mango-green",
+          "label": "Mango Â· tapered and asymmetric"
+        }
+      ]
+    },
+    {
+      "id": "sale-form",
+      "question": "How is this one sold?",
+      "support": "The checkout method is part of the listing.",
+      "answer": "each",
+      "choices": [
+        {
+          "id": "eachˆ°(€€€€€€€€€€‰±…‰•°ˆè€‰=¹”…Ğ„Ñ¥µ”ˆ(€€€€€€€ô°(€€€€€€€ì(€€€€€€€€€€‰¥ˆè€‰İ•¥¡Ğˆ°(€€€€€€€€€€‰±…‰•°ˆè€‰1½½Í”ƒ
+Ü‰äİ•¥¡Ğˆ(€€€€€€€ô°(€€€€€€€ì(€€€€€€€€€€‰¥ˆè€‰‰…œˆ°(€€€€€€€€€€‰±…‰•°ˆè€‰AÉ•Á…­•‰…œˆ(€€€€€€€ô(€€€€€t(€€€ô(€t°(€€‰É•Ñ…¥±Y…É¥…¹ÑÌˆèl(€€€ì(€€€€€€‰¥ˆè€‰ÁÉ¥µ…Éäˆ°(€€€€€€‰¹…µ”ˆè€‰1…É”…Ù½…‘¼ˆ°(€€€€€€‰½‘”ˆè€ˆĞÜÜÄˆ°(€€€€€€‰Í½±‘	äˆè€‰… ˆ°(€€€€€€‰Í½Á”ˆè€‰ÁÉ¥µ…Éäˆ°(€€€€€€‰¹½Ñ”ˆè€‰Q¡”±•ÍÍ½¸Ñ…É•Ğ¸ˆ°(€€€€€€‰Í½ÕÉ•A…•Ìˆèl(€€€€€€€€Ä(€€€€€t(€€€ô°(€€€ì(€€€€€€‰¥ˆè€‰É•Õ±…Èˆ°(€€€€€€‰¹…µ”ˆè€‰I•Õ±…È…Ù½…‘¼ˆ°(€€€€€€‰½‘”ˆè€ˆĞÀĞØˆ°(€€€€€€‰Í½±‘	äˆè€‰… ˆ°(€€€€€€‰Í½Á”ˆè€‰ÍÑ½É”µÍÁ•¥™¥Œˆ°(€€€€€€‰¹½Ñ”ˆè€‰Q¡”É•Õ±…ÈµÍ¥é”±¥ÍÑ¥¹œ¸ˆ°(€€€€€€‰Í½ÕÉ•A…•Ìˆèl(€€€€€€€€Ä°(€€€€€€€€Ô(€€€€€t(€€€ô°(€€€ì(€€€€€€‰¥ˆè€‰…É¥‰‰•…¸ˆ°(€€€€€€‰¹…µ”ˆè€‰…É¥‰‰•…¸…Ù½…‘¼ˆ°(€€€€€€‰½‘”ˆè€ˆÔàÔÔäˆ°(€€€€€€‰Í½±‘	äˆè¹Õ±°°(€€€€€€‰Í½Á”ˆè€‰ÍÑ½É”µÍÁ•¥™¥Œˆ°(€€€€€€‰¹½Ñ”ˆè€‰Í•Á…É…Ñ”¹…µ•±¥ÍÑ¥¹œÑ¡…Ğµ…ä…±Í¼…ÁÁ•…È±…É”¸ˆ°(€€€€€€‰Í½ÕÉ•A…•Ìˆèl(€€€€€€€€Ô(€€€€€t(€€€ô(€t°(€€‰½‘•I•±…Ñ¥½¹Ìˆèl(€€€ì(€€€€€€‰­¥¹ˆè€‰•á•ÁÑ¥½¸ˆ°(€€€€€€‰Ñ¥Ñ±”ˆè€‰1…É”¥Ì¹½Ğ„ÁÉ•™¥à½ÈÍÕ™™¥àˆ°(€€€€€€‰½Áäˆè€‰Q¡”Í¥é”¡…¹”µ½Ù•Ì™É½´É•Õ±…È€ĞÀĞØÑ¼±…É”€ĞÜÜÄìÑ¡”¹Õµ‰•È¥ÑÍ•±˜‘½•Ì¹½Ğ•¹½‘”Í¥é”¸ˆ(€€€ô°(€€€ì(€€€€€€‰­¥¹ˆè€‰•á•ÁÑ¥½¸ˆ°(€€€€€€‰Ñ¥Ñ±”ˆè€‰UÍ”Ñ¡”ÍÑ½É”Ì±…‰•°ˆ°(€€€€€€‰½Áäˆè€‰Y…É¥•Ñä…¹Á••°…¸Ù…Éä¸Q¡”±…É”µÙ•ÉÍÕÌµÉ•Õ±…È±¥ÍÑ¥¹œ¥ÌÑ¡”É•±¥…‰±”¡•­½ÕĞ‘¥ÍÑ¥¹Ñ¥½¸¸ˆ(€€€ô(€t°(€€‰¹•…É•ÍÑ½¹™ÕÍ¥½¸ˆèì(€€€€‰¹…µ”ˆè€‰Ù½…‘¼ˆ°(€€€€‰½‘”ˆè€ˆĞÀĞØˆ°(€€€€‰Õ”ˆè€‰Q¡”É•Õ±…È±¥ÍÑ¥¹œ¥ÌÍµ…±±•Èì‰½Ñ …É”½Õ¹Ñ••… ¸ˆ°(€€€€‰½±½Èˆè€ˆŒÌÄÕ˜ÌØˆ(€ô°(€€‰Í¥µ¥±…É%Ñ•µÌˆèl(€€€ì(€€€€€€‰¹…µ”ˆè€‰Ù½…‘¼ˆ°(€€€€€€‰½‘”ˆè€ˆĞÀĞØˆ°(€€€€€€‰Õ”ˆè€‰Q¡”É•Õ±…ÈµÍ¥é”±¥ÍÑ¥¹œ¥ÌÍµ…±±•È¸ˆ°(€€€€€€‰½±½Èˆè€ˆŒÌÄÕ˜ÌØˆ(€€€ô°(€€€ì(€€€€€€‰¹…µ”ˆè€‰…É¥‰‰•…¸…Ù½…‘¼ˆ°(€€€€€€‰½‘”ˆè€ˆÔàÔÔäˆ°(€€€€€€‰Õ”ˆè€‰5…ä…±Í¼‰”±…É”…¹Íµ½½Ñ ìÕÍ”Ñ¡”¹…µ•ÍÑ½É”±¥ÍÑ¥¹œ¸ˆ°(€€€€€€‰½±½Èˆè€ˆŒÜİ„ĞÔĞˆ(€€€ô°(€€€ì(€€€€€€‰¹…µ”ˆè€‰=É…¹¥Œ…Ù½…‘¼€Ìµ½Õ¹Ğˆ°(€€€€€€‰½‘”ˆè€ˆĞÀÜÄäˆ°(€€€€€€‰Õ”ˆè€‰Á…­…•Ñ¡É•”µ½Õ¹Ğ¥Ñ•´°¹½Ğ„Í¥¹±”±…É”…Ù½…‘¼¸ˆ°(€€€€€€‰½±½Èˆè€ˆŒÍ˜á„Ñˆ(€€€ô(€t°(€€‰Í½ÕÉ”ˆèì(€€€€‰ÁÉ¥µ…ÉåA…•Ìˆèl(€€€€€€Ä(€€€t°(€€€€‰É•±…Ñ•‘A…•Ìˆèl(€€€€€€Ä°(€€€€€€Ô(€€€t°(€€€€‰¡•­•‘=¹I•™•É•¹”ˆèÑÉÕ”°(€€€€‰™±…Ìˆèmt°(€€€€‰½¹™¥‘•¹”ˆè€‰Ù•É¥™¥•µ™É½´µÍÕÁÁ±¥•µµ…Ñ•É¥…°ˆ(€ô)ô(
