@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "validate:data": "node scripts/validate-data.mjs && node scripts/validate-media.mjs",
-    "build": "npm run validate:data && next build",
+    "validate:ui": "node scripts/validate-ui.mjs",
+    "build": "npm run validate:data && npm run validate:ui && next build",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
