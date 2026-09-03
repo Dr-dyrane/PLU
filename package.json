@@ -1,6 +1,6 @@
 {
-  "name": "plu-master",
-  "version": "0.1.0",
+  "name": "plu-trace",
+  "version": "0.2.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -20,6 +20,6 @@
     "typescript": "^5.9.0"
   },
   "engines": {
-    "node": ">=20.9.0"
+    "node": "22.x"
   }
 }
