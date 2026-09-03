@@ -97,6 +97,7 @@ export interface NearestConfusion {
   name: string;
   code: string;
   cue: string;
+  color?: string;
 }
 
 export interface ProductStorySource {
@@ -126,6 +127,7 @@ export interface ProductStory {
   retailVariants: RetailVariant[];
   codeRelations: CodeRelation[];
   nearestConfusion: NearestConfusion;
+  similarItems?: NearestConfusion[];
   source: ProductStorySource;
 }
 
