@@ -1,5 +1,5 @@
 {
-  "schemaVersion": "0.2.0",
+  "schemaVersion": "0.3.0",
   "id": "green-pepper-4065",
   "catalogId": "peppers-green",
   "title": "Green pepper",
@@ -183,10 +183,31 @@
     }
   ],
   "nearestConfusion": {
-    "name": "Red pepper",
+    "name": "Red bell pepper",
     "code": "4688",
-    "cue": "The bell form is similar; color resolves the exact product node."
+    "cue": "The bell form is similar; color resolves the exact product.",
+    "color": "#df4f4b"
   },
+  "similarItems": [
+    {
+      "name": "Red bell pepper",
+      "code": "4688",
+      "cue": "Same bell shape; look for fully red skin.",
+      "color": "#df4f4b"
+    },
+    {
+      "name": "Yellow bell pepper",
+      "code": "4689",
+      "cue": "Same bell shape; look for bright yellow skin.",
+      "color": "#e2c83f"
+    },
+    {
+      "name": "Cubanelle",
+      "code": "4687",
+      "cue": "Longer, lighter, and tapered rather than blocky.",
+      "color": "#8bb64a"
+    }
+  ],
   "source": {
     "primaryPages": [2],
     "relatedPages": [4],
