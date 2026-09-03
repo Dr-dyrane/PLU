@@ -14,17 +14,17 @@ The app teaches the part that can be reasoned aboutâ€”exact product recognitionâ
 
 ## Core 25
 
-Batch 01 is active and defined in `data/batches/batch-01.json`.
+Batch 01 is complete and defined in `data/batches/batch-01.json`.
 
-- 25 exact catalog mappings are locked.
-- Ten complete lessons are live across peppers, bananas, plantains, and avocados.
-- The remaining 15 products are queued in a deliberate order covering citrus, herbs, roots, alliums, potatoes, tomatoes, cucumbers, broccoli, and apples.
+- All 25 exact catalog mappings are live.
+- The set spans peppers, bananas, avocados, citrus, herbs, roots, alliums, onions, potatoes, tomatoes, cucumbers, broccoli, and apples.
+- Every lesson retains the supplied sale method, product variants, source-sheet context, and closest visual confusions.
 
-Ready lessons are available at `/learn/[story-id]/`; the set overview is available at `/batch-01/` and at the home page.
+Ready lessons are available at `/learn/[story-id]/`; the complete set is available at `/batch-01/` and on the home page.
 
 ## Product stories
 
-Every ready lesson carries:
+Every lesson carries:
 
 - exact catalog ID and checkout code;
 - sold-by-weight or sold-each behavior;
@@ -56,6 +56,6 @@ npm run typecheck
 npm run build
 ```
 
-The production build verifies exact catalog mappings, media coverage, batch completeness, native interaction safeguards, semantic appearance, safe areas, touch targets, clean learner copy, and static rendering.
+The production build verifies all 25 exact mappings, media coverage, story uniqueness, multi-family interaction, semantic appearance, native interaction safeguards, safe areas, touch targets, clean learner copy, and static rendering.
 
 Node is pinned to `22.x`. No database, authentication, API, or environment variable is required.

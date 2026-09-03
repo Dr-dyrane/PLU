@@ -10,7 +10,7 @@ import { productStories } from "@/data/stories";
  * structure over source rows without mutating them.
  */
 export const canonicalData = {
-  schemaVersion: "0.3.0",
+  schemaVersion: "0.4.0",
   catalog,
   aisles,
   batches: [batch01],
