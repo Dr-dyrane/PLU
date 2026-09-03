@@ -1,0 +1,23 @@
+.headerButton svg,
+.badge svg,
+.factChip svg,
+.visualCueIcon svg,
+.choiceVisual svg,
+.codeMeaning svg,
+.storyIcon svg,
+.closeButton svg {
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.headerButton svg,
+.badge svg,
+.factChip svg,
+.visualCueIcon svg,
+.choiceVisual svg,
+.codeMeaning svg,
+.storyIcon svg {
+  vector-effect: non-scaling-stroke;
+}
