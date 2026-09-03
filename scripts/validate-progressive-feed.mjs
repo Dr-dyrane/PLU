@@ -8,6 +8,7 @@ async function read(relativePath) {
 const home = await read("../components/canon/BatchHome.tsx");
 const mobile = await read("../app/styles/canon/mobile-grid.css");
 const progressive = await read("../app/styles/canon/progressive-feed.css");
+const controls = await read("../app/styles/canon/catalog-controls.css");
 const globalStyles = await read("../app/styles/canon.css");
 const homePage = await read("../app/page.tsx");
 
@@ -40,9 +41,24 @@ for (const required of [
   assert.ok(progressive.includes(required), `Progressive feed CSS contract missing: ${required}`);
 }
 
+for (const required of [
+  "scroll-snap-type: x proximity",
+  ".batchCategoryRail button.active:hover",
+  ".batchFilterButton.active:hover",
+  ".homeFilterOption.active:hover",
+  "color: var(--on-accent)",
+  "color: var(--text)",
+]) {
+  assert.ok(controls.includes(required), `Catalog-control contract missing: ${required}`);
+}
+
 assert.ok(
   globalStyles.includes('@import "./canon/progressive-feed.css"'),
   "Progressive feed CSS must be included globally.",
+);
+assert.ok(
+  globalStyles.includes('@import "./canon/catalog-controls.css"'),
+  "Catalog-control CSS must load after the appearance layer.",
 );
 assert.ok(homePage.includes("mustKnow200"), "The home page must expose all 200 lessons.");
 assert.ok(
@@ -50,4 +66,6 @@ assert.ok(
   "The home page must use lightweight story summaries rather than full lessons.",
 );
 
-console.log("Validated 18-at-a-time loading, image laziness, mobile scan grid, and 200-product home feed.");
+console.log(
+  "Validated 18-at-a-time loading, image laziness, mobile scan grid, horizontal category scrolling, theme-safe selected controls, and the 200-product home feed.",
+);
