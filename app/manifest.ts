@@ -4,19 +4,16 @@ export const dynamic = "force-static";
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: "PLU Visual Recall",
-    short_name: "PLU Visual",
-    description: "Learn produce PLU codes by image and active recall.",
+    name: "PLU",
+    short_name: "PLU",
+    description: "Learn produce identity and checkout codes.",
     start_url: "/",
     display: "standalone",
-    background_color: "#030807",
+    background_color: "#020705",
     theme_color: "#07110f",
     icons: [
-      {
-        src: "/icon.svg",
-        sizes: "any",
-        type: "image/svg+xml",
-      },
+      { src: "/apple-icon.png", sizes: "180x180", type: "image/png" },
+      { src: "/icon.svg", sizes: "any", type: "image/svg+xml" },
     ],
   };
 }
