@@ -42,6 +42,12 @@ export const queryAliasesByCatalogId = {
   "eddoes-taro-root-small": ["eddoe taro corm", "taro corms"],
   "gai-lan-chinese-broccoli": ["gai lan", "Chinese broccoli vegetable"],
   "kale-black": ["lacinato kale", "Tuscan kale"],
+  "lettuce-escarole": [
+    "broad-leaved endive",
+    "broad leaf endive vegetable",
+    "Cichorium endivia latifolium",
+    "escarole endive",
+  ],
   "mushrooms-oyster-bulk-handwritten": ["oyster mushrooms", "Pleurotus ostreatus"],
 };
 
