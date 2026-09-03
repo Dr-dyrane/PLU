@@ -1,23 +1,22 @@
 import { catalog } from "@/data/catalog";
 import aisles from "@/data/aisles.json";
 import { pegTable } from "@/data/pegs";
+import { productStories } from "@/data/stories";
 
 /**
- * Canonical normalized data surface for the learning engine.
+ * Single normalized runtime surface for the learning system.
  *
- * Important:
- * - PLU codes are exact source lookups and are never inferred from appearance.
- * - `catalog` contains the 475 normalized source rows.
- * - legacy memory hooks from the workbook are not teaching canon; the v0.2
- *   learning engine will generate its own reversible encoding from the code.
- * - source flags such as handwritten / obscured / unverified remain available
- *   on catalog records so uncertain entries can be excluded from learner decks.
+ * PLU codes remain exact catalog lookups. Product stories add curated identity,
+ * checkout, provenance, variant, and confusion metadata without mutating the
+ * underlying source rows. The workbook's old peg table is retained only as
+ * legacy source material; TRACE does not depend on it.
  */
 export const canonicalData = {
   schemaVersion: "0.2.0",
   catalog,
   aisles,
-  mnemonicPegs: pegTable,
+  stories: productStories,
+  legacyMnemonicPegs: pegTable,
 } as const;
 
 export type CanonicalData = typeof canonicalData;
