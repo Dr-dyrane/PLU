@@ -1,0 +1,187 @@
+/* Progressive catalog loading and theme-safe selected controls. */
+
+.batchCategoryRail {
+  scroll-snap-type: x proximity;
+  scroll-padding-inline: 12px;
+  overscroll-behavior-inline: contain;
+  touch-action: pan-x;
+  -webkit-overflow-scrolling: touch;
+}
+
+.batchCategoryRail button {
+  scroll-snap-align: center;
+  color: var(--muted);
+}
+
+.batchCategoryRail button:hover,
+.batchCategoryRail button:focus-visible {
+  color: var(--text);
+  background: var(--soft);
+}
+
+.batchCategoryRail button.active,
+.batchCategoryRail button.active:hover,
+.batchCategoryRail button.active:focus-visible {
+  color: var(--on-accent);
+  background: var(--accent);
+  box-shadow:
+    0 8px 22px rgba(var(--accent-rgb), 0.18),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+.batchFilterButton,
+.batchFilterButton:hover,
+.batchFilterButton:focus-visible {
+  color: var(--text);
+}
+
+.batchFilterButton.active,
+.batchFilterButton.active:hover,
+.batchFilterButton.active:focus-visible {
+  color: var(--text);
+  background: rgba(var(--accent-rgb), 0.14);
+  box-shadow:
+    inset 0 0 0 1px rgba(var(--accent-rgb), 0.22),
+    inset 0 1px 0 var(--hairline);
+}
+
+.batchFilterButton b,
+.batchFilterButton.active b,
+.batchFilterButton.active:hover b {
+  color: var(--on-accent);
+  background: var(--accent);
+}
+
+.homeFilterOption,
+.homeFilterOption:hover,
+.homeFilterOption:focus-visible {
+  color: var(--text);
+}
+
+.homeFilterOption:hover,
+.homeFilterOption:focus-visible {
+  background: var(--soft-2);
+}
+
+.homeFilterOption.active,
+.homeFilterOption.active:hover,
+.homeFilterOption.active:focus-visible {
+  color: var(--text);
+  background: rgba(var(--accent-rgb), 0.13);
+  box-shadow:
+    inset 0 0 0 1px rgba(var(--accent-rgb), 0.24),
+    inset 0 1px 0 var(--hairline);
+}
+
+.homeFilterOption.active > i,
+.homeFilterOption.active:hover > i,
+.homeFilterOption.active:focus-visible > i,
+.sheetTabs button.active,
+.sheetTabs button.active:hover,
+.sheetTabs button.active:focus-visible {
+  color: var(--on-accent);
+  background: var(--accent);
+}
+
+.batchLoadMore {
+  min-height: 118px;
+  display: grid;
+  place-items: center;
+}
+
+.batchLoadMore button {
+  min-width: 168px;
+  min-height: 52px;
+  border: 0;
+  border-radius: 18px;
+  padding: 8px 16px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+  color: var(--text);
+  background: var(--soft);
+  box-shadow: inset 0 1px 0 var(--hairline);
+  transition:
+    color 0.18s var(--ease),
+    background 0.18s var(--ease),
+    transform 0.18s var(--ease);
+}
+
+.batchLoadMore button:hover,
+.batchLoadMore button:focus-visible {
+  color: var(--text);
+  background: var(--soft-2);
+  transform: translateY(-1px);
+}
+
+.batchLoadMore button > svg {
+  width: 18px;
+  height: 18px;
+  color: var(--accent);
+}
+
+.batchLoadMore button span,
+.batchLoadMore button strong,
+.batchLoadMore button small {
+  display: block;
+}
+
+.batchLoadMore button span {
+  text-align: left;
+}
+
+.batchLoadMore button strong {
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.batchLoadMore button small {
+  margin-top: 2px;
+  color: var(--muted);
+  font-size: 9px;
+  font-weight: 650;
+}
+
+.batchLessonCard {
+  content-visibility: auto;
+  contain-intrinsic-size: 235px;
+}
+
+@media (max-width: 560px) {
+  .batchCategoryRail {
+    margin-right: -12px;
+    margin-left: -12px;
+    padding-right: 12px;
+    padding-left: 12px;
+  }
+
+  .batchCategoryRail button {
+    min-height: 42px;
+  }
+
+  .batchLoadMore {
+    min-height: 96px;
+  }
+
+  .batchLoadMore button {
+    min-height: 48px;
+    border-radius: 16px;
+  }
+
+  .batchLessonCard {
+    contain-intrinsic-size: 210px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .batchCategoryRail {
+    scroll-behavior: auto;
+  }
+
+  .batchLoadMore button:hover,
+  .batchLoadMore button:focus-visible {
+    transform: none;
+  }
+}

@@ -14,7 +14,14 @@ import {
   Sparkles,
   X,
 } from "lucide-react";
-import { useEffect, useMemo, useRef, useState, type ChangeEvent } from "react";
+import {
+  useCallback,
+  useEffect,
+  useMemo,
+  useRef,
+  useState,
+  type ChangeEvent,
+} from "react";
 
 import {
   HomeFilterSheet,
@@ -26,6 +33,9 @@ import type { BatchItem, ProductBatch } from "@/types/batch";
 import type { ProductStory } from "@/types/trace";
 
 type CategoryFilter = "all" | "peppers" | "fruit" | "vegetables" | "herbs";
+
+const INITIAL_READY_COUNT = 24;
+const READY_PAGE_SIZE = 24;
 
 const categories: Array<{ value: CategoryFilter; label: string }> = [
   { value: "all", label: "All" },
@@ -41,10 +51,12 @@ const fruitFamilies = new Set([
   "bananas",
   "berries",
   "citrus",
+  "grapes",
   "mangoes",
   "melons",
   "pears",
   "pineapples",
+  "stone fruit",
   "tropical fruit",
   "watermelons",
 ]);
@@ -82,8 +94,11 @@ export function BatchHome({ batch, stories }: { batch: ProductBatch; stories: Pr
   const [showAllQueued, setShowAllQueued] = useState(false);
   const [completedIds, setCompletedIds] = useState<Set<string>>(new Set());
   const [urlReady, setUrlReady] = useState(false);
+  const [visibleReadyCount, setVisibleReadyCount] = useState(INITIAL_READY_COUNT);
   const pageRef = useRef<HTMLElement | null>(null);
   const filterTriggerRef = useRef<HTMLButtonElement | null>(null);
+  const categoryButtonRefs = useRef<Map<CategoryFilter, HTMLButtonElement>>(new Map());
+  const loadMoreRef = useRef<HTMLDivElement | null>(null);
 
   const byCatalogId = useMemo(
     () => new Map(stories.map((story) => [story.catalogId, story])),
@@ -99,7 +114,9 @@ export function BatchHome({ batch, stories }: { batch: ProductBatch; stories: Pr
     setQuery(params.get("q") ?? "");
     if (categories.some((item) => item.value === nextCategory)) setCategory(nextCategory!);
     if (["all", "weight", "each"].includes(nextSold ?? "")) setSold(nextSold!);
-    if (["all", "ready", "learned", "queued"].includes(nextLearning ?? "")) setLearning(nextLearning!);
+    if (["all", "ready", "learned", "queued"].includes(nextLearning ?? "")) {
+      setLearning(nextLearning!);
+    }
     setCompletedIds(readCompleted(stories));
     setUrlReady(true);
 
@@ -119,7 +136,9 @@ export function BatchHome({ batch, stories }: { batch: ProductBatch; stories: Pr
     if (category !== "all") params.set("category", category);
     if (sold !== "all") params.set("sold", sold);
     if (learning !== "all") params.set("learning", learning);
-    const next = params.size ? `${window.location.pathname}?${params.toString()}` : window.location.pathname;
+    const next = params.size
+      ? `${window.location.pathname}?${params.toString()}`
+      : window.location.pathname;
     window.history.replaceState(window.history.state, "", next);
   }, [category, learning, query, sold, urlReady]);
 
@@ -131,24 +150,59 @@ export function BatchHome({ batch, stories }: { batch: ProductBatch; stories: Pr
     else page.removeAttribute("aria-hidden");
   }, [filterOpen]);
 
-  const records = useMemo(() => batch.items.map((item) => {
-    const story = byCatalogId.get(item.catalogId);
-    const learned = Boolean(story && completedIds.has(story.id));
-    const searchText = normalize([
-      item.title,
-      item.code,
-      item.family,
-      story?.title ?? "",
-      story?.shortTitle ?? "",
-      story?.identity.form ?? "",
-      story?.identity.color ?? "",
-      story?.identity.variant ?? "",
-      story?.checkout.saleForm ?? "",
-      story?.checkout.soldBy ?? "",
-    ].join(" "));
+  useEffect(() => {
+    setVisibleReadyCount(INITIAL_READY_COUNT);
+  }, [batch.id, category, learning, query, sold]);
 
-    return { item, story, learned, category: categoryFor(item), searchText };
-  }), [batch.items, byCatalogId, completedIds]);
+  const scrollSelectedCategoryIntoView = useCallback((value: CategoryFilter) => {
+    const button = categoryButtonRefs.current.get(value);
+    if (!button) return;
+    const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    button.scrollIntoView({
+      behavior: reduceMotion ? "auto" : "smooth",
+      block: "nearest",
+      inline: "center",
+    });
+  }, []);
+
+  useEffect(() => {
+    if (!urlReady) return;
+    const frame = window.requestAnimationFrame(() => {
+      scrollSelectedCategoryIntoView(category);
+    });
+    return () => window.cancelAnimationFrame(frame);
+  }, [category, scrollSelectedCategoryIntoView, urlReady]);
+
+  const records = useMemo(
+    () =>
+      batch.items.map((item) => {
+        const story = byCatalogId.get(item.catalogId);
+        const learned = Boolean(story && completedIds.has(story.id));
+        const searchText = normalize(
+          [
+            item.title,
+            item.code,
+            item.family,
+            story?.title ?? "",
+            story?.shortTitle ?? "",
+            story?.identity.form ?? "",
+            story?.identity.color ?? "",
+            story?.identity.variant ?? "",
+            story?.checkout.saleForm ?? "",
+            story?.checkout.soldBy ?? "",
+          ].join(" "),
+        );
+
+        return {
+          item,
+          story,
+          learned,
+          category: categoryFor(item),
+          searchText,
+        };
+      }),
+    [batch.items, byCatalogId, completedIds],
+  );
 
   const filtered = useMemo(() => {
     const needle = normalize(query);
@@ -161,7 +215,9 @@ export function BatchHome({ batch, stories }: { batch: ProductBatch; stories: Pr
         if (normalize(record.story.checkout.soldBy) !== sold) return false;
       }
 
-      if (learning === "ready" && (record.item.status !== "ready" || record.learned)) return false;
+      if (learning === "ready" && (record.item.status !== "ready" || record.learned)) {
+        return false;
+      }
       if (learning === "learned" && !record.learned) return false;
       if (learning === "queued" && record.item.status !== "queued") return false;
 
@@ -169,17 +225,54 @@ export function BatchHome({ batch, stories }: { batch: ProductBatch; stories: Pr
     });
   }, [category, learning, query, records, sold]);
 
-  const ready = filtered.filter((record) => record.item.status === "ready" && record.story);
+  const ready = filtered.filter(
+    (record) => record.item.status === "ready" && record.story,
+  );
   const queued = filtered.filter((record) => record.item.status === "queued");
-  const allReady = records.filter((record) => record.item.status === "ready" && record.story);
+  const allReady = records.filter(
+    (record) => record.item.status === "ready" && record.story,
+  );
   const learnedCount = records.filter((record) => record.learned).length;
   const first = allReady.find((record) => !record.learned) ?? allReady[0];
-  const visibleQueued = showAllQueued || query.trim() || learning === "queued" || category !== "all" || sold !== "all"
-    ? queued
-    : queued.slice(0, 4);
+  const visibleReady = ready.slice(0, visibleReadyCount);
+  const hasMoreReady = visibleReady.length < ready.length;
+  const remainingReady = Math.max(0, ready.length - visibleReady.length);
+  const visibleQueued =
+    showAllQueued ||
+    query.trim() ||
+    learning === "queued" ||
+    category !== "all" ||
+    sold !== "all"
+      ? queued
+      : queued.slice(0, 4);
   const hiddenQueued = Math.max(0, queued.length - visibleQueued.length);
   const activeFilterCount = Number(sold !== "all") + Number(learning !== "all");
-  const hasDiscoveryState = Boolean(query.trim() || category !== "all" || sold !== "all" || learning !== "all");
+  const hasDiscoveryState = Boolean(
+    query.trim() || category !== "all" || sold !== "all" || learning !== "all",
+  );
+
+  const loadMoreReady = useCallback(() => {
+    setVisibleReadyCount((current) => Math.min(current + READY_PAGE_SIZE, ready.length));
+  }, [ready.length]);
+
+  useEffect(() => {
+    const sentinel = loadMoreRef.current;
+    if (!sentinel || !hasMoreReady || !("IntersectionObserver" in window)) return;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries.some((entry) => entry.isIntersecting)) loadMoreReady();
+      },
+      {
+        root: null,
+        rootMargin: "900px 0px 900px",
+        threshold: 0.01,
+      },
+    );
+
+    observer.observe(sentinel);
+    return () => observer.disconnect();
+  }, [hasMoreReady, loadMoreReady]);
 
   const closeFilters = () => {
     setFilterOpen(false);
@@ -200,9 +293,15 @@ export function BatchHome({ batch, stories }: { batch: ProductBatch; stories: Pr
         <header className="batchTopbar">
           <Link className="batchBrand" href="/" aria-label="PLU home">
             <img src="/icon.svg" alt="" aria-hidden="true" />
-            <span><strong>PLU</strong><small>See it. Know it. Ring it.</small></span>
+            <span>
+              <strong>PLU</strong>
+              <small>See it. Know it. Ring it.</small>
+            </span>
           </Link>
-          <div className="batchCount" aria-label={`${learnedCount} learned, ${allReady.length} ready, ${batch.size} total`}>
+          <div
+            className="batchCount"
+            aria-label={`${learnedCount} learned, ${allReady.length} ready, ${batch.size} total`}
+          >
             <span>{learnedCount}</span>
             <small>learned · {allReady.length} ready</small>
           </div>
@@ -210,7 +309,9 @@ export function BatchHome({ batch, stories }: { batch: ProductBatch; stories: Pr
 
         <section className="batchHero">
           <div>
-            <p className="batchEyebrow"><Sparkles aria-hidden="true" /> {batch.title}</p>
+            <p className="batchEyebrow">
+              <Sparkles aria-hidden="true" /> {batch.title}
+            </p>
             <h1>Know it at a glance.</h1>
             <p>Learn the visual difference first. Then make the checkout code automatic.</p>
           </div>
@@ -218,7 +319,9 @@ export function BatchHome({ batch, stories }: { batch: ProductBatch; stories: Pr
             <Link className="batchStart" href={`/learn/${first.story.id}/`}>
               <Play aria-hidden="true" />
               <span>
-                <small>{first.learned ? "Review" : learnedCount ? "Continue with" : "Begin with"}</small>
+                <small>
+                  {first.learned ? "Review" : learnedCount ? "Continue with" : "Begin with"}
+                </small>
                 <strong>{first.story.title}</strong>
               </span>
               <ArrowRight aria-hidden="true" />
@@ -249,7 +352,12 @@ export function BatchHome({ batch, stories }: { batch: ProductBatch; stories: Pr
               ref={filterTriggerRef}
               className={`batchFilterButton${activeFilterCount ? " active" : ""}`}
               type="button"
-              aria-label={activeFilterCount ? `Filters, ${activeFilterCount} active` : "Filter lessons"}
+              aria-label={
+                activeFilterCount
+                  ? `Filters, ${activeFilterCount} active`
+                  : "Filter lessons"
+              }
+              aria-pressed={activeFilterCount > 0}
               onClick={() => setFilterOpen(true)}
             >
               <Filter aria-hidden="true" />
@@ -258,9 +366,17 @@ export function BatchHome({ batch, stories }: { batch: ProductBatch; stories: Pr
             </button>
           </div>
 
-          <div className="batchCategoryRail" role="group" aria-label="Product category">
+          <div
+            className="batchCategoryRail"
+            role="group"
+            aria-label="Product category"
+          >
             {categories.map((item) => (
               <button
+                ref={(node) => {
+                  if (node) categoryButtonRefs.current.set(item.value, node);
+                  else categoryButtonRefs.current.delete(item.value);
+                }}
                 className={category === item.value ? "active" : ""}
                 type="button"
                 aria-pressed={category === item.value}
@@ -280,43 +396,83 @@ export function BatchHome({ batch, stories }: { batch: ProductBatch; stories: Pr
         {ready.length > 0 && (
           <section className="batchSection" aria-labelledby="readyHeading">
             <div className="batchSectionHeading">
-              <div><Layers3 aria-hidden="true" /><h2 id="readyHeading">Ready to learn</h2></div>
-              <span>{ready.length} {ready.length === 1 ? "lesson" : "lessons"}</span>
+              <div>
+                <Layers3 aria-hidden="true" />
+                <h2 id="readyHeading">Ready to learn</h2>
+              </div>
+              <span>
+                {visibleReady.length} of {ready.length}
+              </span>
             </div>
-            <div className="batchReadyGrid">
-              {ready.map(({ item, story, learned }, index) => {
+            <div className="batchReadyGrid" data-progressive-grid="true">
+              {visibleReady.map(({ item, story, learned }, index) => {
                 if (!story) return null;
-                const hero = story.photos.find((photo) => photo.role === "hero") ?? story.photos[0];
+                const hero =
+                  story.photos.find((photo) => photo.role === "hero") ?? story.photos[0];
                 return (
-                  <Link className="batchLessonCard" style={productTheme(story)} href={`/learn/${story.id}/`} key={item.catalogId}>
+                  <Link
+                    className="batchLessonCard"
+                    style={productTheme(story)}
+                    href={`/learn/${story.id}/`}
+                    key={item.catalogId}
+                  >
                     <img
                       src={hero.src}
                       alt=""
                       aria-hidden="true"
-                      loading={index < 8 ? "eager" : "lazy"}
+                      loading={index < 4 ? "eager" : "lazy"}
                       decoding="async"
                       fetchPriority={index < 2 ? "high" : "auto"}
                     />
                     <span className="batchLessonWash" aria-hidden="true" />
-                    <span className="batchLessonOrder">{String(item.order).padStart(2, "0")}</span>
-                    {learned && <span className="batchLearnedBadge"><CheckCircle2 aria-hidden="true" /> Learned</span>}
+                    <span className="batchLessonOrder">
+                      {String(item.order).padStart(2, "0")}
+                    </span>
+                    {learned && (
+                      <span className="batchLearnedBadge">
+                        <CheckCircle2 aria-hidden="true" /> Learned
+                      </span>
+                    )}
                     <span className="batchLessonCopy">
-                      <small>{story.identity.form} · {story.checkout.soldBy}</small>
+                      <small>
+                        {story.identity.form} · {story.checkout.soldBy}
+                      </small>
                       <strong>{story.title}</strong>
                       <b>{story.checkout.code}</b>
                     </span>
-                    <span className="batchLessonGo" aria-hidden="true"><ArrowRight /></span>
+                    <span className="batchLessonGo" aria-hidden="true">
+                      <ArrowRight />
+                    </span>
                   </Link>
                 );
               })}
             </div>
+
+            {hasMoreReady && (
+              <div
+                className="batchLoadMore"
+                ref={loadMoreRef}
+                aria-label={`${remainingReady} more lessons available`}
+              >
+                <button type="button" onClick={loadMoreReady}>
+                  <ChevronDown aria-hidden="true" />
+                  <span>
+                    <strong>Load more</strong>
+                    <small>{remainingReady} remaining</small>
+                  </span>
+                </button>
+              </div>
+            )}
           </section>
         )}
 
         {queued.length > 0 && (
           <section className="batchSection batchQueue" aria-labelledby="queueHeading">
             <div className="batchSectionHeading">
-              <div><Clock3 aria-hidden="true" /><h2 id="queueHeading">Coming next</h2></div>
+              <div>
+                <Clock3 aria-hidden="true" />
+                <h2 id="queueHeading">Coming next</h2>
+              </div>
               <button
                 className="batchQueueToggle"
                 type="button"
@@ -331,13 +487,21 @@ export function BatchHome({ batch, stories }: { batch: ProductBatch; stories: Pr
               {visibleQueued.map(({ item }) => (
                 <article className="batchQueueCard" key={item.catalogId}>
                   <span>{String(item.order).padStart(2, "0")}</span>
-                  <div><strong>{item.title}</strong><small>{item.family}</small></div>
+                  <div>
+                    <strong>{item.title}</strong>
+                    <small>{item.family}</small>
+                  </div>
                   <Clock3 aria-hidden="true" />
                 </article>
               ))}
               {hiddenQueued > 0 && (
-                <button className="batchQueueMore" type="button" onClick={() => setShowAllQueued(true)}>
-                  <span>+{hiddenQueued}</span><small>more in {batch.title}</small>
+                <button
+                  className="batchQueueMore"
+                  type="button"
+                  onClick={() => setShowAllQueued(true)}
+                >
+                  <span>+{hiddenQueued}</span>
+                  <small>more in {batch.title}</small>
                 </button>
               )}
             </div>
@@ -349,7 +513,11 @@ export function BatchHome({ batch, stories }: { batch: ProductBatch; stories: Pr
             <SearchX aria-hidden="true" />
             <h2>No match yet.</h2>
             <p>Try a product name, family, or PLU code.</p>
-            {hasDiscoveryState && <button type="button" onClick={clearDiscovery}>Clear search and filters</button>}
+            {hasDiscoveryState && (
+              <button type="button" onClick={clearDiscovery}>
+                Clear search and filters
+              </button>
+            )}
           </section>
         )}
       </main>

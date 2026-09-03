@@ -18,6 +18,7 @@ const batchCss = await readFile(new URL("../app/styles/canon/batch.css", import.
 const navigationCss = await readFile(new URL("../app/styles/canon/navigation.css", import.meta.url), "utf8");
 const appearanceCss = await readFile(new URL("../app/styles/canon/appearance.css", import.meta.url), "utf8");
 const footerCss = await readFile(new URL("../app/styles/canon/footer.css", import.meta.url), "utf8");
+const catalogControlsCss = await readFile(new URL("../app/styles/canon/catalog-controls.css", import.meta.url), "utf8");
 const layout = await readFile(new URL("../app/layout.tsx", import.meta.url), "utf8");
 const manifest = await readFile(new URL("../app/manifest.ts", import.meta.url), "utf8");
 const homePage = await readFile(new URL("../app/page.tsx", import.meta.url), "utf8");
@@ -54,8 +55,18 @@ for (const required of ["Banana", "Apple", "CircleDot", '"each"', "itemIconName"
   assert.ok(iconSystem.includes(required), `Generic icon system is missing ${required}.`);
 }
 
-for (const required of ["Search product or PLU", "batchCategoryRail", "HomeFilterSheet", "Coming next"]) {
-  assert.ok(home.includes(required), `Home discovery is missing ${required}.`);
+for (const required of [
+  "Search product or PLU",
+  "batchCategoryRail",
+  "HomeFilterSheet",
+  "Coming next",
+  "INITIAL_READY_COUNT = 24",
+  "IntersectionObserver",
+  "batchLoadMore",
+  "scrollIntoView",
+  'loading={index < 4 ? "eager" : "lazy"}',
+]) {
+  assert.ok(home.includes(required), `Home discovery or progressive loading is missing ${required}.`);
 }
 
 for (const required of ["appFooter", "ThemeToggle", "Progress stays on this device"]) {
@@ -99,6 +110,19 @@ assert.ok(appearanceCss.includes("--on-accent") && appearanceCss.includes("--acc
 assert.ok(appearanceCss.includes("--success-fill") && appearanceCss.includes("--warning-fill"), "Feedback colors must remain semantic.");
 assert.ok(footerCss.includes(".appFooter") && footerCss.includes("flex-wrap: nowrap"), "The home footer must remain one row.");
 assert.ok(footerCss.includes(".themeToggleTrack") && footerCss.includes("51px") && footerCss.includes("31px"), "Apple-style switch geometry missing.");
+
+for (const required of [
+  "scroll-snap-type: x proximity",
+  ".batchCategoryRail button.active:hover",
+  "color: var(--on-accent)",
+  ".batchFilterButton.active:hover",
+  "color: var(--text)",
+  ".batchLoadMore",
+  "content-visibility: auto",
+]) {
+  assert.ok(catalogControlsCss.includes(required), `Catalog interaction CSS is missing ${required}.`);
+}
+
 assert.ok(layout.includes("/icon.svg"), "Layout must expose the SVG favicon.");
 assert.ok(layout.includes('data-theme="light"') && layout.includes("plu-theme-boot"), "Light must be the no-flash default theme.");
 assert.ok(layout.includes('themeColor: "#F2F2F7"'), "Default browser chrome must match light mode.");
@@ -108,5 +132,5 @@ const icon = await stat(new URL("../app/icon.svg", import.meta.url));
 assert.ok(icon.size > 0, "app/icon.svg must be non-empty.");
 
 console.log(
-  "Validated generic multi-family lessons, fixed lesson shell, scrolling home, back navigation, search, category chips, native filter sheet, one-row footer, default-light theme persistence, semantic light/dark colors, safe areas, 44px targets, reduced motion, clean learner copy, and favicon.",
+  "Validated generic multi-family lessons, fixed lesson shell, progressively loaded catalog, horizontal category scrolling, semantic selected states, back navigation, search, native filter sheet, one-row footer, default-light theme persistence, semantic light/dark colors, safe areas, 44px targets, reduced motion, clean learner copy, and favicon.",
 );
