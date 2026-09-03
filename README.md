@@ -1,41 +1,65 @@
-# PLU Master
+# PLU Trace
 
-An image-first PLU learning prototype built with Next.js, TypeScript, and a static catalog.
+An image-first produce identification and checkout-code learning system built with Next.js and TypeScript.
 
-The first complete learning path teaches **Green Pepper → 4065** using:
+## Branches
 
-`See → Encode → Hide → Recall → Correct → Contrast → Schedule`
+- `main` — deployed v0.1 reference prototype.
+- `v0.2-learning-engine` — experimental TRACE lesson. This branch must be judged before becoming canon.
 
-## The algorithm
+## TRACE
 
-The application does not calculate or predict PLU codes from a product's appearance. The workbook/catalog is the source of truth.
+PLU identifiers are exact catalog assignments, so the application never predicts a code from product appearance. It teaches the parts that can be reasoned about, then makes the unavoidable final association procedural.
 
-For memorization, the code is compiled into stable number pegs:
+```text
+Tell → Resolve → Attach → Challenge → Establish
+```
 
-`4065 → 40 | 65 → Rick Ross | Julius Caesar`
+For Green Pepper:
 
-A product-centred visual story connects those pegs back to the item.
+```text
+Peppers → bell form → green → loose/by weight → 4065
+```
+
+The code is compiled into the actual checkout-keypad action:
+
+```text
+4065 → 40 | 65 → 4 → 0  |  6 → 5
+```
+
+The same code and keypad layout always produce the same visual path, rhythm, tones, and haptic sequence. Path points decode back to the original code.
+
+## Product stories
+
+The supplied workbook and reference sheets contain context beyond the number itself. `data/stories/green-pepper.json` demonstrates how progressive disclosure preserves it:
+
+- exact product identity;
+- visible discrimination cues;
+- sold by weight versus each;
+- loose, bag, bulk, and case records;
+- source-sheet provenance and confidence;
+- nearby code relationships and exceptions;
+- nearest visual confusion.
+
+The main lesson reveals one fact at a time. The complete product story is available through a mobile bottom sheet or desktop inspector sheet.
 
 ## Data
 
-- `data/catalog/*.json` — all 475 source catalog rows, split into static chunks
-- `data/peg-table.json` — all 10 single-digit and 100 two-digit mnemonic pegs
-- `data/aisles.json` — the grocery aisle directory for a later quiz mode
-- `data/lessons.ts` — curated learning content layered on exact catalog records
+- `data/catalog/*.json` — 475 normalized source rows.
+- `data/aisles.json` — 47 grocery-aisle entries.
+- `data/stories/*.json` — curated, source-backed progressive product stories.
+- `data/canonical.ts` — the single runtime entrypoint.
+- `data/pegs/*` — legacy workbook material retained for audit, not used by TRACE.
 
-The first lesson reads `Peppers - Green → 4065` from the catalog; it is not generated from color, shape, or category.
+## Learning state
 
-## Current prototype
+The v0.2 reducer records identity, path, support, and recall events. Event IDs make updates idempotent:
 
-- Responsive desktop, tablet, and phone layouts
-- Product-image recognition
-- Correct even/odd code chunking
-- Touch keypad and physical keyboard input
-- Immediate correction and forced retry
-- Family contrast after successful recall
-- Optional mnemonic rescue
-- Local progress and review scheduling
-- Static export with no API, database, authentication, or environment variables
+```text
+reduce(reduce(state, event), event) === reduce(state, event)
+```
+
+The interface infers competence from behavior instead of asking the learner to choose `Again`, `Hard`, `Good`, or `Easy`.
 
 ## Local development
 
@@ -44,21 +68,18 @@ npm install
 npm run dev
 ```
 
-## Validation and production build
+## Validation and build
 
 ```bash
 npm run validate:data
+npm run typecheck
 npm run build
 ```
 
-`next.config.ts` uses static export, so a production build emits portable HTML, CSS, JavaScript, and assets to `out/`.
+The validator checks the 475-row catalog, Green Pepper's loose/package/case records, story provenance, code chunking, keypad-path round trip, and idempotent event behavior.
 
-## Deploy on Vercel
+Node is pinned to `22.x`. No database, API, authentication, or environment variables are required.
 
-1. Import `Dr-dyrane/PLU`.
-2. Keep the detected framework as **Next.js**.
-3. Keep the repository root as the root directory.
-4. No environment variables are required.
-5. Deploy `main`.
+## Design plan
 
-The included `vercel.json` runs the validated production build. Keep Vercel's output-directory setting on the framework default.
+See [`docs/TRACE_LEARNING_ENGINE.md`](docs/TRACE_LEARNING_ENGINE.md) for the algorithm, story model, progressive-disclosure interaction, feedback semantics, gamification policy, and scale gate.
