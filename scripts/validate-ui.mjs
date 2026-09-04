@@ -21,6 +21,7 @@ const footerCss = await readFile(new URL("../app/styles/canon/footer.css", impor
 const layout = await readFile(new URL("../app/layout.tsx", import.meta.url), "utf8");
 const manifest = await readFile(new URL("../app/manifest.ts", import.meta.url), "utf8");
 const homePage = await readFile(new URL("../app/page.tsx", import.meta.url), "utf8");
+const seedCompiler = await readFile(new URL("../data/stories/compile-story-seed.ts", import.meta.url), "utf8");
 
 const forbiddenLearnerCopy = [
   "Read the product before the number",
@@ -70,6 +71,15 @@ for (const required of ["appFooter", "ThemeToggle", "Progress stays on this devi
 
 assert.ok(homePage.includes("HomeFooter"), "The home route must render the settings footer.");
 assert.ok(homePage.includes("catalog475"), "The home route must render the complete Catalog 475 collection.");
+
+for (const required of [
+  'seed.checkout.codeScope === "catalog-listed-retail-unit"',
+  'id: "listing"',
+  "Which store listing is this lesson for?",
+  'answer: "exact-listing"',
+]) {
+  assert.ok(seedCompiler.includes(required), `Label-assisted lesson compilation is missing ${required}.`);
+}
 
 for (const required of ["role=\"switch\"", "aria-checked", "plu:theme", "Use dark appearance", "Use light appearance"]) {
   assert.ok(themeToggle.includes(required), `Theme control is missing ${required}.`);

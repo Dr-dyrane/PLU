@@ -1,5 +1,6 @@
 import type {
   ClassificationChoice,
+  ClassificationPrompt,
   CodeRelation,
   NearestConfusion,
   ProductPhotoRole,
@@ -126,6 +127,32 @@ export function compileStorySeed(seed: StorySeed): ProductStory {
   const nearestConfusion = seed.similarItems[0];
   if (!nearestConfusion) throw new Error(`Story seed has no comparison items: ${seed.id}`);
   const saleAnswer = seed.checkout.soldBy.toLowerCase();
+  const labelBoundListing = seed.checkout.codeScope === "catalog-listed-retail-unit";
+  const checkoutPrompt: ClassificationPrompt = labelBoundListing
+    ? {
+        id: "listing",
+        question: "Which store listing is this lesson for?",
+        support: "Use the workbook label for package and store-only details.",
+        answer: "exact-listing",
+        choices: [
+          { id: "exact-listing", label: seed.title },
+          ...seed.similarItems.slice(0, 2).map((item, index) => ({
+            id: `nearby-listing-${index + 1}`,
+            label: item.name,
+          })),
+        ],
+      }
+    : {
+        id: "sale-form",
+        question: "How is this one sold?",
+        support: "The checkout method is part of the listing.",
+        answer: saleAnswer,
+        choices: [
+          { id: "weight", label: "Loose · by weight" },
+          { id: "each", label: "One at a time" },
+          { id: "bag", label: "Prepacked bag" },
+        ],
+      };
   const primary: RetailVariant = {
     id: "primary",
     name: seed.identity.variant,
@@ -151,7 +178,9 @@ export function compileStorySeed(seed: StorySeed): ProductStory {
     checkout: {
       ...seed.checkout,
       summary:
-        seed.checkout.soldBy === "Weight"
+        labelBoundListing
+          ? `Use ${seed.checkout.code} only when the store label matches ${seed.title}.`
+          : seed.checkout.soldBy === "Weight"
           ? `Use ${seed.checkout.code} for ${seed.title.toLowerCase()} when it is sold by weight.`
           : `Use ${seed.checkout.code} for ${seed.title.toLowerCase()} when it is sold one at a time.`,
     },
@@ -180,13 +209,17 @@ export function compileStorySeed(seed: StorySeed): ProductStory {
       },
       {
         id: "checkout",
-        label: "Sold",
-        value: `${seed.checkout.saleForm} · ${seed.checkout.soldBy.toLowerCase()}`,
+        label: labelBoundListing ? "Listing" : "Sold",
+        value: labelBoundListing
+          ? seed.title
+          : `${seed.checkout.saleForm} · ${seed.checkout.soldBy.toLowerCase()}`,
         copy:
-          seed.checkout.soldBy === "Weight"
+          labelBoundListing
+            ? "The package and store-only details come from the workbook label, not the photograph."
+            : seed.checkout.soldBy === "Weight"
             ? "This lesson is for the listing placed on the scale."
             : "This lesson is for the listing counted one at a time.",
-        basis: "reference-sheet",
+        basis: labelBoundListing ? "workbook" : "reference-sheet",
       },
     ],
     classificationPrompts: [
@@ -204,17 +237,7 @@ export function compileStorySeed(seed: StorySeed): ProductStory {
         answer: seed.classification.formAnswer,
         choices: seed.classification.formChoices,
       },
-      {
-        id: "sale-form",
-        question: "How is this one sold?",
-        support: "The checkout method is part of the listing.",
-        answer: saleAnswer,
-        choices: [
-          { id: "weight", label: "Loose · by weight" },
-          { id: "each", label: "One at a time" },
-          { id: "bag", label: "Prepacked bag" },
-        ],
-      },
+      checkoutPrompt,
     ],
     retailVariants: [primary, ...(seed.variants ?? [])],
     codeRelations: seed.relations ?? defaultRelations(seed),
