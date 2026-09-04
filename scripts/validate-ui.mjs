@@ -54,7 +54,13 @@ for (const required of ["Banana", "Apple", "CircleDot", '"each"', "itemIconName"
   assert.ok(iconSystem.includes(required), `Generic icon system is missing ${required}.`);
 }
 
-for (const required of ["Search product or PLU", "batchCategoryRail", "HomeFilterSheet", "Coming next"]) {
+for (const required of [
+  "Search product or PLU",
+  "batchCategoryRail",
+  "HomeFilterSheet",
+  "Needs source review",
+  "item.queueReason",
+]) {
   assert.ok(home.includes(required), `Home discovery is missing ${required}.`);
 }
 
@@ -63,6 +69,7 @@ for (const required of ["appFooter", "ThemeToggle", "Progress stays on this devi
 }
 
 assert.ok(homePage.includes("HomeFooter"), "The home route must render the settings footer.");
+assert.ok(homePage.includes("catalog475"), "The home route must render the complete Catalog 475 collection.");
 
 for (const required of ["role=\"switch\"", "aria-checked", "plu:theme", "Use dark appearance", "Use light appearance"]) {
   assert.ok(themeToggle.includes(required), `Theme control is missing ${required}.`);
@@ -108,5 +115,5 @@ const icon = await stat(new URL("../app/icon.svg", import.meta.url));
 assert.ok(icon.size > 0, "app/icon.svg must be non-empty.");
 
 console.log(
-  "Validated generic multi-family lessons, fixed lesson shell, scrolling home, back navigation, search, category chips, native filter sheet, one-row footer, default-light theme persistence, semantic light/dark colors, safe areas, 44px targets, reduced motion, clean learner copy, and favicon.",
+  "Validated generic multi-family lessons, the Catalog 475 home, fixed lesson shell, scrolling, back navigation, search, category chips, native filter sheet, one-row footer, default-light theme persistence, semantic light/dark colors, safe areas, 44px targets, reduced motion, clean learner copy, and favicon.",
 );

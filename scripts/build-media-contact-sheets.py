@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Download, decode, and render every Batch 04–05 image into review sheets."""
+"""Download, decode, and render every ready Batch 04–06 image into review sheets."""
 
 from __future__ import annotations
 
@@ -17,10 +17,23 @@ from PIL import Image, ImageDraw, ImageFont, ImageOps
 ROOT = Path(__file__).resolve().parents[1]
 OUTPUT = ROOT / "artifacts" / "media-review"
 PUBLIC_AUDIT = ROOT / "public" / "media-render-audit.json"
+LOCKED_MEDIA_COUNTS = {"04": 100, "05": 100}
 
 
 def read_json(path: Path) -> Any:
     return json.loads(path.read_text(encoding="utf-8"))
+
+
+def expected_media_count(batch: str) -> int:
+    locked = LOCKED_MEDIA_COUNTS.get(batch)
+    if locked is not None:
+        return locked
+
+    manifest = read_json(ROOT / "data" / "batches" / f"batch-{batch}.json")
+    items = manifest.get("items") or []
+    if batch == "06" and len(items) != 175:
+        raise RuntimeError(f"Batch 06 expected 175 manifest rows; found {len(items)}")
+    return sum(item.get("status") == "ready" for item in items)
 
 
 def font(size: int, bold: bool = False) -> ImageFont.ImageFont:
@@ -88,8 +101,11 @@ def draw_cell(canvas: Image.Image, item: dict[str, Any], image: Image.Image, box
 def build_batch(batch: str) -> dict[str, Any]:
     report = read_json(ROOT / "public" / f"media-resolution-batch{batch}.json")
     media = report.get("media") or []
-    if len(media) != 100:
-        raise RuntimeError(f"Batch {batch} expected 100 media records; found {len(media)}")
+    expected = expected_media_count(batch)
+    if len(media) != expected:
+        raise RuntimeError(
+            f"Batch {batch} expected {expected} ready media records; found {len(media)}"
+        )
 
     decoded: list[tuple[dict[str, Any], Image.Image]] = []
     failures: list[dict[str, str]] = []
@@ -109,7 +125,7 @@ def build_batch(batch: str) -> dict[str, Any]:
         except RuntimeError as error:
             failures.append({"title": str(item.get("title")), "src": str(item.get("src")), "error": str(error)})
         if int(item["order"]) % 10 == 0:
-            print(f"Decoded Batch {batch} images {item['order']}/100")
+            print(f"Decoded Batch {batch} images {item['order']}/{len(media)}")
 
     if failures:
         raise RuntimeError(f"Batch {batch} has {len(failures)} image download/decode failures: {failures[:3]}")
@@ -141,7 +157,7 @@ def build_batch(batch: str) -> dict[str, Any]:
 
 def main() -> None:
     OUTPUT.mkdir(parents=True, exist_ok=True)
-    summary = {"batches": [build_batch("04"), build_batch("05")]}
+    summary = {"batches": [build_batch("04"), build_batch("05"), build_batch("06")]}
     (OUTPUT / "summary.json").write_text(json.dumps(summary, indent=2) + "\n", encoding="utf-8")
     PUBLIC_AUDIT.write_text(json.dumps(summary, indent=2) + "\n", encoding="utf-8")
     print(json.dumps(summary, indent=2))

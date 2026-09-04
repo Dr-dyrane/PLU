@@ -39,7 +39,11 @@ const existingStories = [
   ...(await loadJsonRecords(new URL("../data/story-batches/", import.meta.url))),
   ...(await loadJsonRecords(
     new URL("../data/story-seeds/", import.meta.url),
-    (name) => name !== "batch-04-generated.json",
+    (name) => ![
+      "batch-04-generated.json",
+      "batch-05-generated.json",
+      "batch-06-generated.json",
+    ].includes(name),
   )),
 ];
 const existingCatalogIds = new Set(existingStories.map((story) => story.catalogId));

@@ -14,6 +14,9 @@ export interface BatchItem {
   code: string;
   family: string;
   status: BatchItemStatus;
+  queueReason?: string;
+  queueReasonCodes?: string[];
+  mediaReason?: string;
 }
 
 export interface ProductBatch {

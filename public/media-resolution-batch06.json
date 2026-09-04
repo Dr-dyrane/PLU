@@ -1,0 +1,2416 @@
+{
+  "generatedAt": "2026-09-04T20:35:41.755Z",
+  "batch": "06",
+  "strategy": "Resolve every remaining strict loose-produce candidate and retain all other catalog rows as evidence-gated source review records.",
+  "candidateCount": 21,
+  "sourceCount": 2,
+  "media": [
+    {
+      "order": 1,
+      "candidateOrder": 3,
+      "storyId": "aloe-3798",
+      "catalogId": "aloe",
+      "title": "Aloe",
+      "query": "Aloe raw produce",
+      "selection": {
+        "rawScore": 105,
+        "score": 100,
+        "band": "Essential",
+        "priority": "must-know"
+      },
+      "file": "Aloe vera for sale.jpg",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/Aloe_vera_for_sale.jpg/1920px-Aloe_vera_for_sale.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "mime": "image/jpeg",
+      "width": 2048,
+      "height": 1536,
+      "thumbWidth": 1600,
+      "thumbHeight": 1200,
+      "score": 43,
+      "sharedAcrossProducts": false,
+      "match": "reviewed-override",
+      "matchedTargets": [
+        "aloe"
+      ],
+      "matchedModifiers": [],
+      "identityEvidence": [
+        "aloe"
+      ],
+      "sourceEvidence": {
+        "title": "Aloe vera for sale.jpg",
+        "objectName": "Aloe vera for sale",
+        "description": "Aloe vera for sale, London",
+        "categories": "CC-Zero|Self-published work|Files with coordinates missing SDC location of creation (51° N, 1° W)|Aloe vera-based products"
+      },
+      "alternatives": []
+    },
+    {
+      "order": 2,
+      "candidateOrder": 8,
+      "storyId": "hh-red-tomato-4798",
+      "catalogId": "tomato-hh-red-bulk",
+      "title": "HH Red tomato",
+      "query": "HH Red tomato raw produce",
+      "selection": {
+        "rawScore": 90,
+        "score": 90,
+        "band": "Essential",
+        "priority": "must-know"
+      },
+      "file": "Healthy Red Tomatoes with Water Drops.jpg",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/Healthy_Red_Tomatoes_with_Water_Drops.jpg/1920px-Healthy_Red_Tomatoes_with_Water_Drops.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "mime": "image/jpeg",
+      "width": 4000,
+      "height": 3000,
+      "thumbWidth": 1600,
+      "thumbHeight": 1200,
+      "score": 76,
+      "sharedAcrossProducts": false,
+      "match": "reviewed-override",
+      "matchedTargets": [
+        "red"
+      ],
+      "matchedModifiers": [
+        "red"
+      ],
+      "identityEvidence": [
+        "tomatoes"
+      ],
+      "sourceEvidence": {
+        "title": "Healthy Red Tomatoes with Water Drops.jpg",
+        "objectName": "Healthy Red Tomatoes with Water Drops",
+        "description": "Beautiful macro picture of 6 red tomatoes which landed in my tasty salad with other fresh vegetables from the greenhouse garden. This kind of salad is healthy for the long winter as it is for the juicy summer.\n<p>This picture was created by my healthy eating friend epSos.de and can be used for free, if you link epSos.de as the original author of the image.\n</p><p>This organic fruits were arranged in a diagonal line on a wooden table of the kitchen.\n</p><p>Those tomatos are ripe and wet, because the water drops are still on this edible food harvest from the green gardening veggies.\n</p>\nThank you for sharing this picture with your friends !",
+        "categories": "Tomatoes|Taken with Canon PowerShot A650 IS|Flickr images verified by UploadWizard|Files with coordinates missing SDC location of creation"
+      },
+      "alternatives": []
+    }
+  ],
+  "rejected": [
+    {
+      "candidateOrder": 1,
+      "catalogId": "tangerines-fall-glo",
+      "title": "Fall Glo tangerine",
+      "reason": "reviewed-source-evidence-required"
+    },
+    {
+      "candidateOrder": 2,
+      "catalogId": "papayas-meridol",
+      "title": "Meridol papaya",
+      "reason": "reviewed-source-evidence-required"
+    },
+    {
+      "candidateOrder": 4,
+      "catalogId": "watermelons-mickey-lee",
+      "title": "Mickey Lee watermelon",
+      "reason": "reviewed-source-evidence-required"
+    },
+    {
+      "candidateOrder": 5,
+      "catalogId": "tomatoes-on-the-vine-hh-organic",
+      "title": "Organic On The Vine HH tomato",
+      "reason": "reviewed-source-evidence-required"
+    },
+    {
+      "candidateOrder": 6,
+      "catalogId": "pears-taylor-gold",
+      "title": "Taylor Gold pear",
+      "reason": "reviewed-source-evidence-required"
+    },
+    {
+      "candidateOrder": 7,
+      "catalogId": "peppers-green-hh-bulk",
+      "title": "Green HH pepper",
+      "reason": "reviewed-source-evidence-required"
+    },
+    {
+      "candidateOrder": 9,
+      "catalogId": "melons-goldendew",
+      "title": "Goldendew melon",
+      "reason": "reviewed-source-evidence-required"
+    },
+    {
+      "candidateOrder": 10,
+      "catalogId": "melons-honeykiss",
+      "title": "Honeykiss melon",
+      "reason": "reviewed-source-evidence-required"
+    },
+    {
+      "candidateOrder": 11,
+      "catalogId": "celery-hearts",
+      "title": "Hearts celery",
+      "reason": "reviewed-source-evidence-required"
+    },
+    {
+      "candidateOrder": 12,
+      "catalogId": "tomato-fm-on-the-vine-bulk",
+      "title": "FM On The Vine tomato",
+      "reason": "reviewed-source-evidence-required"
+    },
+    {
+      "candidateOrder": 13,
+      "catalogId": "yu-choy-jr",
+      "title": "Jr Yu choy",
+      "reason": "reviewed-source-evidence-required"
+    },
+    {
+      "candidateOrder": 14,
+      "catalogId": "bok-choy-shanghai-jr",
+      "title": "Shanghai Jr bok choy",
+      "reason": "reviewed-source-evidence-required"
+    },
+    {
+      "candidateOrder": 15,
+      "catalogId": "sher-li-hon",
+      "title": "Sher-Li-Hon",
+      "reason": "reviewed-source-evidence-required"
+    },
+    {
+      "candidateOrder": 16,
+      "catalogId": "uchoy-sum",
+      "title": "Uchoy Sum",
+      "reason": "reviewed-source-evidence-required"
+    },
+    {
+      "candidateOrder": 17,
+      "catalogId": "persimmons-vanilla",
+      "title": "Vanilla persimmon",
+      "reason": "reviewed-source-evidence-required"
+    },
+    {
+      "candidateOrder": 18,
+      "catalogId": "tomato-hh-organic",
+      "title": "Organic HH tomato",
+      "reason": "reviewed-source-evidence-required"
+    },
+    {
+      "candidateOrder": 19,
+      "catalogId": "melons-cantaloupe-organic",
+      "title": "Organic Cantaloupe melon",
+      "reason": "reviewed-source-evidence-required"
+    },
+    {
+      "candidateOrder": 20,
+      "catalogId": "cherries-rwb-organic",
+      "title": "Organic RWB cherries",
+      "reason": "reviewed-source-evidence-required"
+    },
+    {
+      "candidateOrder": 21,
+      "catalogId": "lettuce-iceberg-organic",
+      "title": "Organic Iceberg lettuce",
+      "reason": "reviewed-source-evidence-required"
+    }
+  ],
+  "queued": [
+    {
+      "order": 3,
+      "catalogId": "tangerines-fall-glo",
+      "title": "Fall Glo tangerine",
+      "code": "3144",
+      "family": "Citrus",
+      "status": "queued",
+      "queueReason": "Exact recognition photograph needs source review.",
+      "queueReasonCodes": [
+        "media-evidence-required"
+      ],
+      "mediaReason": "reviewed-source-evidence-required"
+    },
+    {
+      "order": 4,
+      "catalogId": "papayas-meridol",
+      "title": "Meridol papaya",
+      "code": "3112",
+      "family": "Papayas",
+      "status": "queued",
+      "queueReason": "Exact recognition photograph needs source review.",
+      "queueReasonCodes": [
+        "media-evidence-required"
+      ],
+      "mediaReason": "reviewed-source-evidence-required"
+    },
+    {
+      "order": 5,
+      "catalogId": "watermelons-mickey-lee",
+      "title": "Mickey Lee watermelon",
+      "code": "4331",
+      "family": "Watermelons",
+      "status": "queued",
+      "queueReason": "Exact recognition photograph needs source review.",
+      "queueReasonCodes": [
+        "media-evidence-required"
+      ],
+      "mediaReason": "reviewed-source-evidence-required"
+    },
+    {
+      "order": 6,
+      "catalogId": "tomatoes-on-the-vine-hh-organic",
+      "title": "Organic On The Vine HH tomato",
+      "code": "94664",
+      "family": "Tomatoes",
+      "status": "queued",
+      "queueReason": "Exact recognition photograph needs source review.",
+      "queueReasonCodes": [
+        "media-evidence-required"
+      ],
+      "mediaReason": "reviewed-source-evidence-required"
+    },
+    {
+      "order": 7,
+      "catalogId": "pears-taylor-gold",
+      "title": "Taylor Gold pear",
+      "code": "4553",
+      "family": "Pears",
+      "status": "queued",
+      "queueReason": "Exact recognition photograph needs source review.",
+      "queueReasonCodes": [
+        "media-evidence-required"
+      ],
+      "mediaReason": "reviewed-source-evidence-required"
+    },
+    {
+      "order": 8,
+      "catalogId": "peppers-green-hh-bulk",
+      "title": "Green HH pepper",
+      "code": "3120",
+      "family": "Peppers",
+      "status": "queued",
+      "queueReason": "Exact recognition photograph needs source review.",
+      "queueReasonCodes": [
+        "media-evidence-required"
+      ],
+      "mediaReason": "reviewed-source-evidence-required"
+    },
+    {
+      "order": 9,
+      "catalogId": "melons-goldendew",
+      "title": "Goldendew melon",
+      "code": "3100",
+      "family": "Melons",
+      "status": "queued",
+      "queueReason": "Exact recognition photograph needs source review.",
+      "queueReasonCodes": [
+        "media-evidence-required"
+      ],
+      "mediaReason": "reviewed-source-evidence-required"
+    },
+    {
+      "order": 10,
+      "catalogId": "melons-honeykiss",
+      "title": "Honeykiss melon",
+      "code": "4375",
+      "family": "Melons",
+      "status": "queued",
+      "queueReason": "Exact recognition photograph needs source review.",
+      "queueReasonCodes": [
+        "media-evidence-required"
+      ],
+      "mediaReason": "reviewed-source-evidence-required"
+    },
+    {
+      "order": 11,
+      "catalogId": "celery-hearts",
+      "title": "Hearts celery",
+      "code": "4575",
+      "family": "Stalk Vegetables",
+      "status": "queued",
+      "queueReason": "Exact recognition photograph needs source review.",
+      "queueReasonCodes": [
+        "media-evidence-required"
+      ],
+      "mediaReason": "reviewed-source-evidence-required"
+    },
+    {
+      "order": 12,
+      "catalogId": "tomato-fm-on-the-vine-bulk",
+      "title": "FM On The Vine tomato",
+      "code": "64664",
+      "family": "Tomatoes",
+      "status": "queued",
+      "queueReason": "Exact recognition photograph needs source review.",
+      "queueReasonCodes": [
+        "media-evidence-required"
+      ],
+      "mediaReason": "reviewed-source-evidence-required"
+    },
+    {
+      "order": 13,
+      "catalogId": "yu-choy-jr",
+      "title": "Jr Yu choy",
+      "code": "10260",
+      "family": "Leafy Greens",
+      "status": "queued",
+      "queueReason": "Exact recognition photograph needs source review.",
+      "queueReasonCodes": [
+        "media-evidence-required"
+      ],
+      "mediaReason": "reviewed-source-evidence-required"
+    },
+    {
+      "order": 14,
+      "catalogId": "bok-choy-shanghai-jr",
+      "title": "Shanghai Jr bok choy",
+      "code": "64388",
+      "family": "Leafy Greens",
+      "status": "queued",
+      "queueReason": "Exact recognition photograph needs source review.",
+      "queueReasonCodes": [
+        "media-evidence-required"
+      ],
+      "mediaReason": "reviewed-source-evidence-required"
+    },
+    {
+      "order": 15,
+      "catalogId": "sher-li-hon",
+      "title": "Sher-Li-Hon",
+      "code": "69624",
+      "family": "Leafy Greens",
+      "status": "queued",
+      "queueReason": "Exact recognition photograph needs source review.",
+      "queueReasonCodes": [
+        "media-evidence-required"
+      ],
+      "mediaReason": "reviewed-source-evidence-required"
+    },
+    {
+      "order": 16,
+      "catalogId": "uchoy-sum",
+      "title": "Uchoy Sum",
+      "code": "64387",
+      "family": "Leafy Greens",
+      "status": "queued",
+      "queueReason": "Exact recognition photograph needs source review.",
+      "queueReasonCodes": [
+        "media-evidence-required"
+      ],
+      "mediaReason": "reviewed-source-evidence-required"
+    },
+    {
+      "order": 17,
+      "catalogId": "persimmons-vanilla",
+      "title": "Vanilla persimmon",
+      "code": "69220",
+      "family": "Persimmons",
+      "status": "queued",
+      "queueReason": "Exact recognition photograph needs source review.",
+      "queueReasonCodes": [
+        "media-evidence-required"
+      ],
+      "mediaReason": "reviewed-source-evidence-required"
+    },
+    {
+      "order": 18,
+      "catalogId": "tomato-hh-organic",
+      "title": "Organic HH tomato",
+      "code": "94798",
+      "family": "Tomatoes",
+      "status": "queued",
+      "queueReason": "Exact recognition photograph needs source review.",
+      "queueReasonCodes": [
+        "media-evidence-required"
+      ],
+      "mediaReason": "reviewed-source-evidence-required"
+    },
+    {
+      "order": 19,
+      "catalogId": "melons-cantaloupe-organic",
+      "title": "Organic Cantaloupe melon",
+      "code": "94050",
+      "family": "Melons",
+      "status": "queued",
+      "queueReason": "Exact recognition photograph needs source review.",
+      "queueReasonCodes": [
+        "media-evidence-required"
+      ],
+      "mediaReason": "reviewed-source-evidence-required"
+    },
+    {
+      "order": 20,
+      "catalogId": "cherries-rwb-organic",
+      "title": "Organic RWB cherries",
+      "code": "94045",
+      "family": "Cherries",
+      "status": "queued",
+      "queueReason": "Exact recognition photograph needs source review.",
+      "queueReasonCodes": [
+        "media-evidence-required"
+      ],
+      "mediaReason": "reviewed-source-evidence-required"
+    },
+    {
+      "order": 21,
+      "catalogId": "lettuce-iceberg-organic",
+      "title": "Organic Iceberg lettuce",
+      "code": "94061",
+      "family": "Lettuce",
+      "status": "queued",
+      "queueReason": "Exact recognition photograph needs source review.",
+      "queueReasonCodes": [
+        "media-evidence-required"
+      ],
+      "mediaReason": "reviewed-source-evidence-required"
+    },
+    {
+      "order": 22,
+      "catalogId": "aloe-vera-handwritten",
+      "title": "Aloe Vera (handwritten)",
+      "code": "Code needed",
+      "family": "Stalk Vegetables",
+      "status": "queued",
+      "queueReason": "Missing verified checkout code",
+      "queueReasonCodes": [
+        "missing-code",
+        "uncertain-source"
+      ]
+    },
+    {
+      "order": 23,
+      "catalogId": "apples-ambrosia-bin",
+      "title": "Apples - Ambrosia (Bin)",
+      "code": "25040",
+      "family": "Apples",
+      "status": "queued",
+      "queueReason": "Package or case evidence is required",
+      "queueReasonCodes": [
+        "package-evidence-required",
+        "duplicate-lesson-title"
+      ]
+    },
+    {
+      "order": 24,
+      "catalogId": "apples-ambrosia-pc",
+      "title": "Apples - Ambrosia PC",
+      "code": "64749",
+      "family": "Apples",
+      "status": "queued",
+      "queueReason": "Package or case evidence is required",
+      "queueReasonCodes": [
+        "package-evidence-required"
+      ]
+    },
+    {
+      "order": 25,
+      "catalogId": "apples-gala",
+      "title": "Apples - Gala",
+      "code": "4132 / 4133 / 4135",
+      "family": "Apples",
+      "status": "queued",
+      "queueReason": "Multiple source codes need one primary mapping",
+      "queueReasonCodes": [
+        "multiple-codes",
+        "duplicate-label-codes",
+        "conflicting-code"
+      ]
+    },
+    {
+      "order": 26,
+      "catalogId": "apples-gala-orchard-run",
+      "title": "Apples - Gala (Orchard Run)",
+      "code": "62021",
+      "family": "Apples",
+      "status": "queued",
+      "queueReason": "Package or case evidence is required",
+      "queueReasonCodes": [
+        "package-evidence-required"
+      ]
+    },
+    {
+      "order": 27,
+      "catalogId": "apples-ginger-gold-orchard-run",
+      "title": "Apples - Ginger Gold (Orchard Run)",
+      "code": "3000",
+      "family": "Apples",
+      "status": "queued",
+      "queueReason": "Package or case evidence is required",
+      "queueReasonCodes": [
+        "package-evidence-required"
+      ]
+    },
+    {
+      "order": 28,
+      "catalogId": "apples-golden-delicious-pc",
+      "title": "Apples - Golden Delicious PC",
+      "code": "3005",
+      "family": "Apples",
+      "status": "queued",
+      "queueReason": "Package or case evidence is required",
+      "queueReasonCodes": [
+        "package-evidence-required"
+      ]
+    },
+    {
+      "order": 29,
+      "catalogId": "apples-honeycrisp-orchard-run",
+      "title": "Apples - Honeycrisp (Orchard Run)",
+      "code": "59986",
+      "family": "Apples",
+      "status": "queued",
+      "queueReason": "Package or case evidence is required",
+      "queueReasonCodes": [
+        "package-evidence-required",
+        "duplicate-lesson-title"
+      ]
+    },
+    {
+      "order": 30,
+      "catalogId": "apples-lady-alice-pc",
+      "title": "Apples - Lady Alice PC",
+      "code": "3106",
+      "family": "Apples",
+      "status": "queued",
+      "queueReason": "Package or case evidence is required",
+      "queueReasonCodes": [
+        "package-evidence-required"
+      ]
+    },
+    {
+      "order": 31,
+      "catalogId": "apples-large-extra-fancy-first-word-obscured",
+      "title": "Apples - Large Extra Fancy (first word obscured)",
+      "code": "4129",
+      "family": "Apples",
+      "status": "queued",
+      "queueReason": "Source identity or code is marked uncertain",
+      "queueReasonCodes": [
+        "uncertain-source",
+        "conflicting-code"
+      ]
+    },
+    {
+      "order": 32,
+      "catalogId": "apples-mcintosh-orchard-bin",
+      "title": "Apples - McIntosh (Orchard Bin)",
+      "code": "62010",
+      "family": "Apples",
+      "status": "queued",
+      "queueReason": "Package or case evidence is required",
+      "queueReasonCodes": [
+        "package-evidence-required",
+        "duplicate-lesson-title"
+      ]
+    },
+    {
+      "order": 33,
+      "catalogId": "apples-mcintosh-extra-fancy",
+      "title": "Apples - McIntosh Extra Fancy",
+      "code": "4019",
+      "family": "Apples",
+      "status": "queued",
+      "queueReason": "The code is attached to another source identity",
+      "queueReasonCodes": [
+        "conflicting-code"
+      ]
+    },
+    {
+      "order": 34,
+      "catalogId": "apples-red-delicious-2",
+      "title": "Apples - Red Delicious",
+      "code": "3284",
+      "family": "Apples",
+      "status": "queued",
+      "queueReason": "The same source label has competing codes",
+      "queueReasonCodes": [
+        "duplicate-label-codes",
+        "duplicate-lesson-title"
+      ]
+    },
+    {
+      "order": 35,
+      "catalogId": "apples-royal-gala-2",
+      "title": "Apples - Royal Gala",
+      "code": "4132",
+      "family": "Apples",
+      "status": "queued",
+      "queueReason": "The same source label has competing codes",
+      "queueReasonCodes": [
+        "duplicate-label-codes",
+        "conflicting-code",
+        "duplicate-lesson-title"
+      ]
+    },
+    {
+      "order": 36,
+      "catalogId": "apples-spartan-orchard-run-bin",
+      "title": "Apples - Spartan (Orchard Run Bin)",
+      "code": "62013",
+      "family": "Apples",
+      "status": "queued",
+      "queueReason": "Package or case evidence is required",
+      "queueReasonCodes": [
+        "package-evidence-required",
+        "duplicate-lesson-title"
+      ]
+    },
+    {
+      "order": 37,
+      "catalogId": "apples-sunrise-orchard-run",
+      "title": "Apples - Sunrise (Orchard Run)",
+      "code": "62023",
+      "family": "Apples",
+      "status": "queued",
+      "queueReason": "Package or case evidence is required",
+      "queueReasonCodes": [
+        "package-evidence-required"
+      ]
+    },
+    {
+      "order": 38,
+      "catalogId": "apricots-2",
+      "title": "Apricots",
+      "code": "3302",
+      "family": "Apricots",
+      "status": "queued",
+      "queueReason": "The same source label has competing codes",
+      "queueReasonCodes": [
+        "duplicate-label-codes"
+      ]
+    },
+    {
+      "order": 39,
+      "catalogId": "artichokes-small-handwritten",
+      "title": "Artichokes - Small (handwritten)",
+      "code": "4516",
+      "family": "Source review",
+      "status": "queued",
+      "queueReason": "Source identity or code is marked uncertain",
+      "queueReasonCodes": [
+        "uncertain-source",
+        "conflicting-code",
+        "unclassified-product"
+      ]
+    },
+    {
+      "order": 40,
+      "catalogId": "asparagus-organic",
+      "title": "Asparagus - Organic",
+      "code": "94080",
+      "family": "Asparagus",
+      "status": "queued",
+      "queueReason": "Source identity needs manual adjudication",
+      "queueReasonCodes": [
+        "source-identity-review"
+      ]
+    },
+    {
+      "order": 41,
+      "catalogId": "avocado-5ct-bag-handwritten",
+      "title": "Avocado - 5ct (Bag) (handwritten)",
+      "code": "9523",
+      "family": "Avocados",
+      "status": "queued",
+      "queueReason": "Source identity or code is marked uncertain",
+      "queueReasonCodes": [
+        "uncertain-source",
+        "package-evidence-required",
+        "duplicate-lesson-title"
+      ]
+    },
+    {
+      "order": 42,
+      "catalogId": "avocado-caribbean",
+      "title": "Avocado - Caribbean",
+      "code": "58559",
+      "family": "Avocados",
+      "status": "queued",
+      "queueReason": "Source identity needs manual adjudication",
+      "queueReasonCodes": [
+        "source-identity-review"
+      ]
+    },
+    {
+      "order": 43,
+      "catalogId": "avocado-organic-3ct",
+      "title": "Avocado - Organic 3ct",
+      "code": "40719",
+      "family": "Avocados",
+      "status": "queued",
+      "queueReason": "Package or case evidence is required",
+      "queueReasonCodes": [
+        "package-evidence-required"
+      ]
+    },
+    {
+      "order": 44,
+      "catalogId": "bananas-case",
+      "title": "Bananas (Case)",
+      "code": "6794",
+      "family": "Bananas",
+      "status": "queued",
+      "queueReason": "Package or case evidence is required",
+      "queueReasonCodes": [
+        "package-evidence-required"
+      ]
+    },
+    {
+      "order": 45,
+      "catalogId": "bananas-baby-bananas-mini-4186",
+      "title": "Bananas - Baby Bananas Mini 4186",
+      "code": "4234",
+      "family": "Bananas",
+      "status": "queued",
+      "queueReason": "The code is attached to another source identity",
+      "queueReasonCodes": [
+        "conflicting-code",
+        "competing-label-number"
+      ]
+    },
+    {
+      "order": 46,
+      "catalogId": "bananas-red",
+      "title": "Bananas - Red",
+      "code": "4234",
+      "family": "Bananas",
+      "status": "queued",
+      "queueReason": "The code is attached to another source identity",
+      "queueReasonCodes": [
+        "conflicting-code"
+      ]
+    },
+    {
+      "order": 47,
+      "catalogId": "bartlett-orchard-run-first-word-obscured",
+      "title": "Bartlett - Orchard Run (first word obscured)",
+      "code": "64037",
+      "family": "Source review",
+      "status": "queued",
+      "queueReason": "Source identity or code is marked uncertain",
+      "queueReasonCodes": [
+        "uncertain-source",
+        "package-evidence-required",
+        "unclassified-product"
+      ]
+    },
+    {
+      "order": 48,
+      "catalogId": "bean-sprouts-case",
+      "title": "Bean Sprouts (Case)",
+      "code": "63604",
+      "family": "Sprouts",
+      "status": "queued",
+      "queueReason": "Package or case evidence is required",
+      "queueReasonCodes": [
+        "package-evidence-required",
+        "duplicate-lesson-title"
+      ]
+    },
+    {
+      "order": 49,
+      "catalogId": "beans-green-case",
+      "title": "Beans - Green (Case)",
+      "code": "6820",
+      "family": "Beans",
+      "status": "queued",
+      "queueReason": "Package or case evidence is required",
+      "queueReasonCodes": [
+        "package-evidence-required",
+        "duplicate-lesson-title"
+      ]
+    },
+    {
+      "order": 50,
+      "catalogId": "beets-10lb",
+      "title": "Beets - 10lb",
+      "code": "6996",
+      "family": "Roots",
+      "status": "queued",
+      "queueReason": "Package or case evidence is required",
+      "queueReasonCodes": [
+        "package-evidence-required"
+      ]
+    },
+    {
+      "order": 51,
+      "catalogId": "blackberries-pint-12oz",
+      "title": "Blackberries - Pint / 12oz",
+      "code": "522",
+      "family": "Berries",
+      "status": "queued",
+      "queueReason": "Package or case evidence is required",
+      "queueReasonCodes": [
+        "package-evidence-required"
+      ]
+    },
+    {
+      "order": 52,
+      "catalogId": "blueberries-2lb",
+      "title": "Blueberries - 2lb",
+      "code": "39583",
+      "family": "Berries",
+      "status": "queued",
+      "queueReason": "Package or case evidence is required",
+      "queueReasonCodes": [
+        "package-evidence-required"
+      ]
+    },
+    {
+      "order": 53,
+      "catalogId": "blueberries-full-pint-12oz",
+      "title": "Blueberries - Full Pint / 12oz",
+      "code": "424",
+      "family": "Berries",
+      "status": "queued",
+      "queueReason": "Package or case evidence is required",
+      "queueReasonCodes": [
+        "package-evidence-required"
+      ]
+    },
+    {
+      "order": 54,
+      "catalogId": "blueberries-half-pint-6oz",
+      "title": "Blueberries - Half Pint / 6oz",
+      "code": "71305",
+      "family": "Berries",
+      "status": "queued",
+      "queueReason": "Package or case evidence is required",
+      "queueReasonCodes": [
+        "package-evidence-required"
+      ]
+    },
+    {
+      "order": 55,
+      "catalogId": "cabbage-sour",
+      "title": "Cabbage - Sour",
+      "code": "62380",
+      "family": "Cabbages",
+      "status": "queued",
+      "queueReason": "Source identity needs manual adjudication",
+      "queueReasonCodes": [
+        "source-identity-review"
+      ]
+    },
+    {
+      "order": 56,
+      "catalogId": "carrots-chinese-jumbo",
+      "title": "Carrots - Chinese Jumbo",
+      "code": "10387",
+      "family": "Carrots",
+      "status": "queued",
+      "queueReason": "The code is attached to another source identity",
+      "queueReasonCodes": [
+        "conflicting-code"
+      ]
+    },
+    {
+      "order": 57,
+      "catalogId": "carrots-jumbo-case",
+      "title": "Carrots - Jumbo (Case)",
+      "code": "63559",
+      "family": "Carrots",
+      "status": "queued",
+      "queueReason": "Package or case evidence is required",
+      "queueReasonCodes": [
+        "package-evidence-required"
+      ]
+    },
+    {
+      "order": 58,
+      "catalogId": "cherimoya",
+      "title": "Cherimoya",
+      "code": "4257",
+      "family": "Tropical Fruit",
+      "status": "queued",
+      "queueReason": "The same source label has competing codes",
+      "queueReasonCodes": [
+        "duplicate-label-codes"
+      ]
+    },
+    {
+      "order": 59,
+      "catalogId": "cherimoya-2",
+      "title": "Cherimoya",
+      "code": "13276",
+      "family": "Tropical Fruit",
+      "status": "queued",
+      "queueReason": "The same source label has competing codes",
+      "queueReasonCodes": [
+        "duplicate-label-codes"
+      ]
+    },
+    {
+      "order": 60,
+      "catalogId": "cherries-white-ranier-264497",
+      "title": "Cherries - White Ranier (264497)",
+      "code": "4260",
+      "family": "Cherries",
+      "status": "queued",
+      "queueReason": "The source label contains a competing number",
+      "queueReasonCodes": [
+        "competing-label-number"
+      ]
+    },
+    {
+      "order": 61,
+      "catalogId": "citrus-bulk-unlabelled-row-1st",
+      "title": "Citrus - Bulk (unlabelled row, 1st)",
+      "code": "0240",
+      "family": "Citrus",
+      "status": "queued",
+      "queueReason": "Source identity or code is marked uncertain",
+      "queueReasonCodes": [
+        "uncertain-source"
+      ]
+    },
+    {
+      "order": 62,
+      "catalogId": "citrus-bulk-unlabelled-row-2nd",
+      "title": "Citrus - Bulk (unlabelled row, 2nd)",
+      "code": "3029",
+      "family": "Citrus",
+      "status": "queued",
+      "queueReason": "Source identity or code is marked uncertain",
+      "queueReasonCodes": [
+        "uncertain-source"
+      ]
+    },
+    {
+      "order": 63,
+      "catalogId": "clementines-3lb",
+      "title": "Clementines - 3lb",
+      "code": "1835",
+      "family": "Citrus",
+      "status": "queued",
+      "queueReason": "Package or case evidence is required",
+      "queueReasonCodes": [
+        "package-evidence-required"
+      ]
+    },
+    {
+      "order": 64,
+      "catalogId": "corn-tray-of-5",
+      "title": "Corn - Tray of 5",
+      "code": "5438",
+      "family": "Corn",
+      "status": "queued",
+      "queueReason": "Package or case evidence is required",
+      "queueReasonCodes": [
+        "package-evidence-required"
+      ]
+    },
+    {
+      "order": 65,
+      "catalogId": "croissants-baked-goods",
+      "title": "Croissants - Baked Goods",
+      "code": "24306",
+      "family": "Source review",
+      "status": "queued",
+      "queueReason": "Outside the produce-learning scope",
+      "queueReasonCodes": [
+        "outside-produce-scope",
+        "unclassified-product"
+      ]
+    },
+    {
+      "order": 66,
+      "catalogId": "cucumbers-dill-case",
+      "title": "Cucumbers - Dill (Case)",
+      "code": "38595",
+      "family": "Cucumbers",
+      "status": "queued",
+      "queueReason": "Package or case evidence is required",
+      "queueReasonCodes": [
+        "package-evidence-required",
+        "duplicate-lesson-title"
+      ]
+    },
+    {
+      "order": 67,
+      "catalogId": "dill-weed-pickling-herbs",
+      "title": "Dill Weed (Pickling) - Herbs",
+      "code": "4893",
+      "family": "Herbs",
+      "status": "queued",
+      "queueReason": "Source identity needs manual adjudication",
+      "queueReasonCodes": [
+        "source-identity-review"
+      ]
+    },
+    {
+      "order": 68,
+      "catalogId": "donuts-baked-goods",
+      "title": "Donuts - Baked Goods",
+      "code": "24146",
+      "family": "Source review",
+      "status": "queued",
+      "queueReason": "Outside the produce-learning scope",
+      "queueReasonCodes": [
+        "outside-produce-scope",
+        "unclassified-product"
+      ]
+    },
+    {
+      "order": 69,
+      "catalogId": "duck-eggs-preserved",
+      "title": "Duck Eggs - Preserved",
+      "code": "64395",
+      "family": "Source review",
+      "status": "queued",
+      "queueReason": "Outside the produce-learning scope",
+      "queueReasonCodes": [
+        "outside-produce-scope",
+        "unclassified-product"
+      ]
+    },
+    {
+      "order": 70,
+      "catalogId": "duck-eggs-salted",
+      "title": "Duck Eggs - Salted",
+      "code": "3485",
+      "family": "Source review",
+      "status": "queued",
+      "queueReason": "Outside the produce-learning scope",
+      "queueReasonCodes": [
+        "outside-produce-scope",
+        "unclassified-product"
+      ]
+    },
+    {
+      "order": 71,
+      "catalogId": "durian-frozen",
+      "title": "Durian (Frozen)",
+      "code": "Code needed",
+      "family": "Source review",
+      "status": "queued",
+      "queueReason": "Missing verified checkout code",
+      "queueReasonCodes": [
+        "missing-code",
+        "uncertain-source",
+        "unclassified-product"
+      ]
+    },
+    {
+      "order": 72,
+      "catalogId": "eddoes-handwritten",
+      "title": "Eddoes (handwritten)",
+      "code": "Code needed",
+      "family": "Source review",
+      "status": "queued",
+      "queueReason": "Missing verified checkout code",
+      "queueReasonCodes": [
+        "missing-code",
+        "uncertain-source",
+        "unclassified-product"
+      ]
+    },
+    {
+      "order": 73,
+      "catalogId": "eggplant-purple-case",
+      "title": "Eggplant - Purple (Case)",
+      "code": "63582",
+      "family": "Eggplants",
+      "status": "queued",
+      "queueReason": "Package or case evidence is required",
+      "queueReasonCodes": [
+        "package-evidence-required"
+      ]
+    },
+    {
+      "order": 74,
+      "catalogId": "fennel-anise",
+      "title": "Fennel / Anise",
+      "code": "4516",
+      "family": "Stalk Vegetables",
+      "status": "queued",
+      "queueReason": "The code is attached to another source identity",
+      "queueReasonCodes": [
+        "conflicting-code"
+      ]
+    },
+    {
+      "order": 75,
+      "catalogId": "figgs-black-case",
+      "title": "Figgs - Black (Case)",
+      "code": "2110",
+      "family": "Figs",
+      "status": "queued",
+      "queueReason": "Package or case evidence is required",
+      "queueReasonCodes": [
+        "package-evidence-required",
+        "duplicate-lesson-title"
+      ]
+    },
+    {
+      "order": 76,
+      "catalogId": "figgs-green-case",
+      "title": "Figgs - Green (Case)",
+      "code": "6799",
+      "family": "Figs",
+      "status": "queued",
+      "queueReason": "Package or case evidence is required",
+      "queueReasonCodes": [
+        "package-evidence-required"
+      ]
+    },
+    {
+      "order": 77,
+      "catalogId": "figs-black-case",
+      "title": "Figs - Black (Case)",
+      "code": "13491",
+      "family": "Figs",
+      "status": "queued",
+      "queueReason": "Package or case evidence is required",
+      "queueReasonCodes": [
+        "package-evidence-required",
+        "duplicate-lesson-title"
+      ]
+    },
+    {
+      "order": 78,
+      "catalogId": "figs-black-227g-pint",
+      "title": "Figs - Black 227g (Pint)",
+      "code": "58206",
+      "family": "Figs",
+      "status": "queued",
+      "queueReason": "Package or case evidence is required",
+      "queueReasonCodes": [
+        "package-evidence-required"
+      ]
+    },
+    {
+      "order": 79,
+      "catalogId": "figs-green-case",
+      "title": "Figs - Green (Case)",
+      "code": "3536",
+      "family": "Figs",
+      "status": "queued",
+      "queueReason": "Package or case evidence is required",
+      "queueReasonCodes": [
+        "package-evidence-required"
+      ]
+    },
+    {
+      "order": 80,
+      "catalogId": "garlic-loose-bulk",
+      "title": "Garlic - Loose (Bulk)",
+      "code": "4610",
+      "family": "Alliums",
+      "status": "queued",
+      "queueReason": "Source identity needs manual adjudication",
+      "queueReasonCodes": [
+        "source-identity-review"
+      ]
+    },
+    {
+      "order": 81,
+      "catalogId": "garlic-peeled-5lb",
+      "title": "Garlic - Peeled 5lb",
+      "code": "63608",
+      "family": "Alliums",
+      "status": "queued",
+      "queueReason": "Package or case evidence is required",
+      "queueReasonCodes": [
+        "package-evidence-required"
+      ]
+    },
+    {
+      "order": 82,
+      "catalogId": "garlic-1kg-bagged",
+      "title": "Garlic 1kg (bagged)",
+      "code": "9578",
+      "family": "Alliums",
+      "status": "queued",
+      "queueReason": "Package or case evidence is required",
+      "queueReasonCodes": [
+        "package-evidence-required"
+      ]
+    },
+    {
+      "order": 83,
+      "catalogId": "gourds-ornamental",
+      "title": "Gourds - Ornamental",
+      "code": "Code needed",
+      "family": "Source review",
+      "status": "queued",
+      "queueReason": "Missing verified checkout code",
+      "queueReasonCodes": [
+        "missing-code",
+        "uncertain-source",
+        "unclassified-product"
+      ]
+    },
+    {
+      "order": 84,
+      "catalogId": "grapefruit-bin",
+      "title": "Grapefruit (Bin)",
+      "code": "4027",
+      "family": "Citrus",
+      "status": "queued",
+      "queueReason": "Package or case evidence is required",
+      "queueReasonCodes": [
+        "package-evidence-required",
+        "conflicting-code",
+        "already-taught-code"
+      ]
+    },
+    {
+      "order": 85,
+      "catalogId": "grapes-green-seedless-2lb",
+      "title": "Grapes - Green (Seedless) 2lb",
+      "code": "84022",
+      "family": "Grapes",
+      "status": "queued",
+      "queueReason": "Package or case evidence is required",
+      "queueReasonCodes": [
+        "package-evidence-required"
+      ]
+    },
+    {
+      "order": 86,
+      "catalogId": "grapes-red-seedless-2lb",
+      "title": "Grapes - Red (Seedless) 2lb",
+      "code": "84636",
+      "family": "Grapes",
+      "status": "queued",
+      "queueReason": "Package or case evidence is required",
+      "queueReasonCodes": [
+        "package-evidence-required"
+      ]
+    },
+    {
+      "order": 87,
+      "catalogId": "ice",
+      "title": "Ice",
+      "code": "944",
+      "family": "Source review",
+      "status": "queued",
+      "queueReason": "Outside the produce-learning scope",
+      "queueReasonCodes": [
+        "outside-produce-scope",
+        "unclassified-product"
+      ]
+    },
+    {
+      "order": 88,
+      "catalogId": "jackfruit-cut-handwritten",
+      "title": "Jackfruit - Cut (handwritten)",
+      "code": "Code needed",
+      "family": "Source review",
+      "status": "queued",
+      "queueReason": "Missing verified checkout code",
+      "queueReasonCodes": [
+        "missing-code",
+        "uncertain-source",
+        "unclassified-product"
+      ]
+    },
+    {
+      "order": 89,
+      "catalogId": "jicama-roots",
+      "title": "Jicama (Roots)",
+      "code": "Code needed",
+      "family": "Roots",
+      "status": "queued",
+      "queueReason": "Missing verified checkout code",
+      "queueReasonCodes": [
+        "missing-code",
+        "uncertain-source",
+        "duplicate-lesson-title"
+      ]
+    },
+    {
+      "order": 90,
+      "catalogId": "kiwi-1kg",
+      "title": "Kiwi - 1kg",
+      "code": "1465",
+      "family": "Kiwi",
+      "status": "queued",
+      "queueReason": "Package or case evidence is required",
+      "queueReasonCodes": [
+        "package-evidence-required",
+        "duplicate-lesson-title"
+      ]
+    },
+    {
+      "order": 91,
+      "catalogId": "kohlrabi-note-on-sheet-kohlrabi-1692-handwritten",
+      "title": "Kohlrabi (note on sheet: 'Kohlrabi = 1692') (handwritten)",
+      "code": "1692",
+      "family": "Roots",
+      "status": "queued",
+      "queueReason": "Source identity or code is marked uncertain",
+      "queueReasonCodes": [
+        "uncertain-source",
+        "source-identity-review"
+      ]
+    },
+    {
+      "order": 92,
+      "catalogId": "lettuce-boston-dome",
+      "title": "Lettuce - Boston (Dome)",
+      "code": "3557",
+      "family": "Lettuce",
+      "status": "queued",
+      "queueReason": "Package or case evidence is required",
+      "queueReasonCodes": [
+        "package-evidence-required"
+      ]
+    },
+    {
+      "order": 93,
+      "catalogId": "limes-key-1lb",
+      "title": "Limes - Key 1lb",
+      "code": "3653",
+      "family": "Citrus",
+      "status": "queued",
+      "queueReason": "Package or case evidence is required",
+      "queueReasonCodes": [
+        "package-evidence-required"
+      ]
+    },
+    {
+      "order": 94,
+      "catalogId": "mangoes",
+      "title": "Mangoes",
+      "code": "4051",
+      "family": "Mangoes",
+      "status": "queued",
+      "queueReason": "The code is attached to another source identity",
+      "queueReasonCodes": [
+        "conflicting-code",
+        "already-taught-code"
+      ]
+    },
+    {
+      "order": 95,
+      "catalogId": "mangoes-ataulfo-case-handwritten",
+      "title": "Mangoes - Ataulfo (Case) (handwritten)",
+      "code": "2145",
+      "family": "Mangoes",
+      "status": "queued",
+      "queueReason": "Source identity or code is marked uncertain",
+      "queueReasonCodes": [
+        "uncertain-source",
+        "package-evidence-required",
+        "duplicate-lesson-title"
+      ]
+    },
+    {
+      "order": 96,
+      "catalogId": "mangoes-case-10lb",
+      "title": "Mangoes - Case 10lb",
+      "code": "62464",
+      "family": "Mangoes",
+      "status": "queued",
+      "queueReason": "Package or case evidence is required",
+      "queueReasonCodes": [
+        "package-evidence-required"
+      ]
+    },
+    {
+      "order": 97,
+      "catalogId": "mangoes-red-case-handwritten",
+      "title": "Mangoes - Red (Case) (handwritten)",
+      "code": "2146",
+      "family": "Mangoes",
+      "status": "queued",
+      "queueReason": "Source identity or code is marked uncertain",
+      "queueReasonCodes": [
+        "uncertain-source",
+        "package-evidence-required",
+        "conflicting-code",
+        "duplicate-lesson-title"
+      ]
+    },
+    {
+      "order": 98,
+      "catalogId": "mangos-ataulfo-case",
+      "title": "Mangos - Ataulfo (Case)",
+      "code": "1043",
+      "family": "Mangoes",
+      "status": "queued",
+      "queueReason": "Package or case evidence is required",
+      "queueReasonCodes": [
+        "package-evidence-required",
+        "duplicate-lesson-title"
+      ]
+    },
+    {
+      "order": 99,
+      "catalogId": "mangos-east-indian-case",
+      "title": "Mangos - East Indian (Case)",
+      "code": "12966",
+      "family": "Mangoes",
+      "status": "queued",
+      "queueReason": "Package or case evidence is required",
+      "queueReasonCodes": [
+        "package-evidence-required"
+      ]
+    },
+    {
+      "order": 100,
+      "catalogId": "mangos-red-case",
+      "title": "Mangos - Red (Case)",
+      "code": "2146 / 13493",
+      "family": "Mangoes",
+      "status": "queued",
+      "queueReason": "Multiple source codes need one primary mapping",
+      "queueReasonCodes": [
+        "multiple-codes",
+        "package-evidence-required",
+        "duplicate-label-codes",
+        "conflicting-code",
+        "duplicate-lesson-title"
+      ]
+    },
+    {
+      "order": 101,
+      "catalogId": "mangos-spice",
+      "title": "Mangos - Spice",
+      "code": "58654",
+      "family": "Mangoes",
+      "status": "queued",
+      "queueReason": "Source identity needs manual adjudication",
+      "queueReasonCodes": [
+        "source-identity-review"
+      ]
+    },
+    {
+      "order": 102,
+      "catalogId": "melons-bitter-fu-qua",
+      "title": "Melons - Bitter (Fu Qua)",
+      "code": "4783",
+      "family": "Squash",
+      "status": "queued",
+      "queueReason": "The learner title already exists",
+      "queueReasonCodes": [
+        "duplicate-lesson-title"
+      ]
+    },
+    {
+      "order": 103,
+      "catalogId": "methileaf-herbs",
+      "title": "Methileaf - Herbs",
+      "code": "59994",
+      "family": "Leafy Greens",
+      "status": "queued",
+      "queueReason": "Source identity needs manual adjudication",
+      "queueReasonCodes": [
+        "source-identity-review"
+      ]
+    },
+    {
+      "order": 104,
+      "catalogId": "mushrooms-white-bulk-rcwc",
+      "title": "Mushrooms - White (Bulk, RCWC)",
+      "code": "1102",
+      "family": "Mushrooms",
+      "status": "queued",
+      "queueReason": "Source identity needs manual adjudication",
+      "queueReasonCodes": [
+        "source-identity-review"
+      ]
+    },
+    {
+      "order": 105,
+      "catalogId": "nappa-baby-4540-bag",
+      "title": "Nappa - Baby 4540 (Bag)",
+      "code": "62527",
+      "family": "Cabbages",
+      "status": "queued",
+      "queueReason": "Package or case evidence is required",
+      "queueReasonCodes": [
+        "package-evidence-required",
+        "competing-label-number"
+      ]
+    },
+    {
+      "order": 106,
+      "catalogId": "nofrills-reusable-bag-black",
+      "title": "NoFrills Reusable Bag - Black",
+      "code": "18951",
+      "family": "Source review",
+      "status": "queued",
+      "queueReason": "Outside the produce-learning scope",
+      "queueReasonCodes": [
+        "outside-produce-scope",
+        "package-evidence-required",
+        "unclassified-product"
+      ]
+    },
+    {
+      "order": 107,
+      "catalogId": "nofrills-reusable-bag-yellow",
+      "title": "NoFrills Reusable Bag - Yellow",
+      "code": "18902",
+      "family": "Source review",
+      "status": "queued",
+      "queueReason": "Outside the produce-learning scope",
+      "queueReasonCodes": [
+        "outside-produce-scope",
+        "package-evidence-required",
+        "unclassified-product"
+      ]
+    },
+    {
+      "order": 108,
+      "catalogId": "pc-bag-points-mc",
+      "title": "PC Bag Points (MC)",
+      "code": "53398 / 53399",
+      "family": "Source review",
+      "status": "queued",
+      "queueReason": "Multiple source codes need one primary mapping",
+      "queueReasonCodes": [
+        "multiple-codes",
+        "outside-produce-scope",
+        "package-evidence-required",
+        "duplicate-label-codes",
+        "unclassified-product"
+      ]
+    },
+    {
+      "order": 109,
+      "catalogId": "olives-green-case",
+      "title": "Olives - Green (Case)",
+      "code": "54050",
+      "family": "Source review",
+      "status": "queued",
+      "queueReason": "Package or case evidence is required",
+      "queueReasonCodes": [
+        "package-evidence-required",
+        "unclassified-product"
+      ]
+    },
+    {
+      "order": 110,
+      "catalogId": "onions-1381-label-as-printed",
+      "title": "Onions - 1381 (label as printed)",
+      "code": "2525",
+      "family": "Alliums",
+      "status": "queued",
+      "queueReason": "Source identity or code is marked uncertain",
+      "queueReasonCodes": [
+        "uncertain-source",
+        "competing-label-number"
+      ]
+    },
+    {
+      "order": 111,
+      "catalogId": "onions-medium-50lb-724-58312",
+      "title": "Onions - Medium 50lb 724 / 58312",
+      "code": "63430",
+      "family": "Alliums",
+      "status": "queued",
+      "queueReason": "Package or case evidence is required",
+      "queueReasonCodes": [
+        "package-evidence-required",
+        "competing-label-number"
+      ]
+    },
+    {
+      "order": 112,
+      "catalogId": "onions-red-10lb",
+      "title": "Onions - Red 10lb",
+      "code": "3506",
+      "family": "Alliums",
+      "status": "queued",
+      "queueReason": "Package or case evidence is required",
+      "queueReasonCodes": [
+        "package-evidence-required",
+        "duplicate-lesson-title"
+      ]
+    },
+    {
+      "order": 113,
+      "catalogId": "onions-sweet-4166-59914",
+      "title": "Onions - Sweet 4166 / 59914",
+      "code": "4159",
+      "family": "Alliums",
+      "status": "queued",
+      "queueReason": "The code is attached to another source identity",
+      "queueReasonCodes": [
+        "conflicting-code",
+        "already-taught-code",
+        "competing-label-number",
+        "duplicate-lesson-title"
+      ]
+    },
+    {
+      "order": 114,
+      "catalogId": "onions-yellow-25lb-334",
+      "title": "Onions - Yellow 25lb 334",
+      "code": "62782",
+      "family": "Alliums",
+      "status": "queued",
+      "queueReason": "Package or case evidence is required",
+      "queueReasonCodes": [
+        "package-evidence-required",
+        "competing-label-number",
+        "duplicate-lesson-title"
+      ]
+    },
+    {
+      "order": 115,
+      "catalogId": "onions-yellow-3lb-bag",
+      "title": "Onions - Yellow 3lb (Bag)",
+      "code": "59662",
+      "family": "Alliums",
+      "status": "queued",
+      "queueReason": "Package or case evidence is required",
+      "queueReasonCodes": [
+        "package-evidence-required",
+        "duplicate-lesson-title"
+      ]
+    },
+    {
+      "order": 116,
+      "catalogId": "onions-yellow-jumbo-2-case",
+      "title": "Onions - Yellow Jumbo #2 (Case)",
+      "code": "63555",
+      "family": "Alliums",
+      "status": "queued",
+      "queueReason": "Package or case evidence is required",
+      "queueReasonCodes": [
+        "package-evidence-required"
+      ]
+    },
+    {
+      "order": 117,
+      "catalogId": "onions-yellow-organic-2lb",
+      "title": "Onions - Yellow Organic 2lb",
+      "code": "62810",
+      "family": "Alliums",
+      "status": "queued",
+      "queueReason": "Package or case evidence is required",
+      "queueReasonCodes": [
+        "package-evidence-required"
+      ]
+    },
+    {
+      "order": 118,
+      "catalogId": "oranges-navel-large",
+      "title": "Oranges - Navel Large",
+      "code": "4012",
+      "family": "Citrus",
+      "status": "queued",
+      "queueReason": "The code is attached to another source identity",
+      "queueReasonCodes": [
+        "conflicting-code",
+        "already-taught-code"
+      ]
+    },
+    {
+      "order": 119,
+      "catalogId": "oranges-navel-medium",
+      "title": "Oranges - Navel Medium",
+      "code": "3107",
+      "family": "Citrus",
+      "status": "queued",
+      "queueReason": "The code is attached to another source identity",
+      "queueReasonCodes": [
+        "conflicting-code"
+      ]
+    },
+    {
+      "order": 120,
+      "catalogId": "parsley-curley-herbs",
+      "title": "Parsley (Curley) - Herbs",
+      "code": "4899",
+      "family": "Herbs",
+      "status": "queued",
+      "queueReason": "The code is attached to another source identity",
+      "queueReasonCodes": [
+        "conflicting-code",
+        "already-taught-code"
+      ]
+    },
+    {
+      "order": 121,
+      "catalogId": "parsnips-2lb",
+      "title": "Parsnips - 2lb",
+      "code": "Code needed",
+      "family": "Roots",
+      "status": "queued",
+      "queueReason": "Missing verified checkout code",
+      "queueReasonCodes": [
+        "missing-code",
+        "uncertain-source",
+        "package-evidence-required",
+        "duplicate-lesson-title"
+      ]
+    },
+    {
+      "order": 122,
+      "catalogId": "parsnips-bulk-4672",
+      "title": "Parsnips - Bulk 4672",
+      "code": "Code needed",
+      "family": "Roots",
+      "status": "queued",
+      "queueReason": "Missing verified checkout code",
+      "queueReasonCodes": [
+        "missing-code",
+        "uncertain-source",
+        "competing-label-number",
+        "duplicate-lesson-title"
+      ]
+    },
+    {
+      "order": 123,
+      "catalogId": "pastries-general-baked-goods",
+      "title": "Pastries (General) - Baked Goods",
+      "code": "24145",
+      "family": "Source review",
+      "status": "queued",
+      "queueReason": "Outside the produce-learning scope",
+      "queueReasonCodes": [
+        "outside-produce-scope",
+        "unclassified-product"
+      ]
+    },
+    {
+      "order": 124,
+      "catalogId": "peaches-case",
+      "title": "Peaches (Case)",
+      "code": "68599",
+      "family": "Peaches",
+      "status": "queued",
+      "queueReason": "Package or case evidence is required",
+      "queueReasonCodes": [
+        "package-evidence-required"
+      ]
+    },
+    {
+      "order": 125,
+      "catalogId": "peaches-3l",
+      "title": "Peaches - 3L",
+      "code": "6992",
+      "family": "Peaches",
+      "status": "queued",
+      "queueReason": "Package or case evidence is required",
+      "queueReasonCodes": [
+        "package-evidence-required"
+      ]
+    },
+    {
+      "order": 126,
+      "catalogId": "peaches-freestone-case",
+      "title": "Peaches - Freestone (Case)",
+      "code": "13241",
+      "family": "Peaches",
+      "status": "queued",
+      "queueReason": "Package or case evidence is required",
+      "queueReasonCodes": [
+        "package-evidence-required"
+      ]
+    },
+    {
+      "order": 127,
+      "catalogId": "peaches-tree-ripe-case",
+      "title": "Peaches - Tree Ripe (Case)",
+      "code": "6808",
+      "family": "Peaches",
+      "status": "queued",
+      "queueReason": "Package or case evidence is required",
+      "queueReasonCodes": [
+        "package-evidence-required"
+      ]
+    },
+    {
+      "order": 128,
+      "catalogId": "pears-asian-yellow-2",
+      "title": "Pears - Asian Yellow",
+      "code": "4406",
+      "family": "Pears",
+      "status": "queued",
+      "queueReason": "The same source label has competing codes",
+      "queueReasonCodes": [
+        "duplicate-label-codes",
+        "duplicate-lesson-title"
+      ]
+    },
+    {
+      "order": 129,
+      "catalogId": "pears-bartlett-3lb-organic",
+      "title": "Pears - Bartlett 3lb (Organic)",
+      "code": "63486",
+      "family": "Pears",
+      "status": "queued",
+      "queueReason": "Package or case evidence is required",
+      "queueReasonCodes": [
+        "package-evidence-required",
+        "duplicate-lesson-title"
+      ]
+    },
+    {
+      "order": 130,
+      "catalogId": "pears-bartlett-5lb-bag",
+      "title": "Pears - Bartlett 5lb (Bag)",
+      "code": "63487",
+      "family": "Pears",
+      "status": "queued",
+      "queueReason": "Package or case evidence is required",
+      "queueReasonCodes": [
+        "package-evidence-required",
+        "duplicate-lesson-title"
+      ]
+    },
+    {
+      "order": 131,
+      "catalogId": "pears-bosc-large",
+      "title": "Pears - Bosc Large",
+      "code": "4026",
+      "family": "Pears",
+      "status": "queued",
+      "queueReason": "The code is attached to another source identity",
+      "queueReasonCodes": [
+        "conflicting-code",
+        "already-taught-code"
+      ]
+    },
+    {
+      "order": 132,
+      "catalogId": "pears-forelle-2",
+      "title": "Pears - Forelle",
+      "code": "3019",
+      "family": "Pears",
+      "status": "queued",
+      "queueReason": "The same source label has competing codes",
+      "queueReasonCodes": [
+        "duplicate-label-codes",
+        "duplicate-lesson-title"
+      ]
+    },
+    {
+      "order": 133,
+      "catalogId": "pears-red-4415",
+      "title": "Pears - Red 4415",
+      "code": "3118",
+      "family": "Pears",
+      "status": "queued",
+      "queueReason": "The source label contains a competing number",
+      "queueReasonCodes": [
+        "competing-label-number",
+        "duplicate-lesson-title"
+      ]
+    },
+    {
+      "order": 134,
+      "catalogId": "peppers-assorted-bin",
+      "title": "Peppers - Assorted (Bin)",
+      "code": "8170",
+      "family": "Peppers",
+      "status": "queued",
+      "queueReason": "Package or case evidence is required",
+      "queueReasonCodes": [
+        "package-evidence-required"
+      ]
+    },
+    {
+      "order": 135,
+      "catalogId": "peppers-green-case",
+      "title": "Peppers - Green (Case)",
+      "code": "63866",
+      "family": "Peppers",
+      "status": "queued",
+      "queueReason": "Package or case evidence is required",
+      "queueReasonCodes": [
+        "package-evidence-required",
+        "duplicate-lesson-title"
+      ]
+    },
+    {
+      "order": 136,
+      "catalogId": "peppers-green-4ct-bag",
+      "title": "Peppers - Green 4ct (Bag)",
+      "code": "3014",
+      "family": "Peppers",
+      "status": "queued",
+      "queueReason": "Package or case evidence is required",
+      "queueReasonCodes": [
+        "package-evidence-required",
+        "duplicate-lesson-title"
+      ]
+    },
+    {
+      "order": 137,
+      "catalogId": "peppers-red-4ct-bag",
+      "title": "Peppers - Red 4ct (Bag)",
+      "code": "64116",
+      "family": "Peppers",
+      "status": "queued",
+      "queueReason": "Package or case evidence is required",
+      "queueReasonCodes": [
+        "package-evidence-required"
+      ]
+    },
+    {
+      "order": 138,
+      "catalogId": "peppers-red-long-handwritten",
+      "title": "Peppers - Red Long (handwritten)",
+      "code": "4711",
+      "family": "Peppers",
+      "status": "queued",
+      "queueReason": "Source identity or code is marked uncertain",
+      "queueReasonCodes": [
+        "uncertain-source",
+        "conflicting-code",
+        "already-taught-code",
+        "duplicate-lesson-title"
+      ]
+    },
+    {
+      "order": 139,
+      "catalogId": "persimmons-hachiya-case",
+      "title": "Persimmons - Hachiya (Case)",
+      "code": "36308",
+      "family": "Persimmons",
+      "status": "queued",
+      "queueReason": "Package or case evidence is required",
+      "queueReasonCodes": [
+        "package-evidence-required",
+        "duplicate-lesson-title"
+      ]
+    },
+    {
+      "order": 140,
+      "catalogId": "persimmons-vanilla-case",
+      "title": "Persimmons - Vanilla (Case)",
+      "code": "71207",
+      "family": "Persimmons",
+      "status": "queued",
+      "queueReason": "Package or case evidence is required",
+      "queueReasonCodes": [
+        "package-evidence-required"
+      ]
+    },
+    {
+      "order": 141,
+      "catalogId": "pistachios-bulk-nuts",
+      "title": "Pistachios (Bulk) - Nuts",
+      "code": "1400",
+      "family": "Source review",
+      "status": "queued",
+      "queueReason": "The product family is not yet verified",
+      "queueReasonCodes": [
+        "unclassified-product"
+      ]
+    },
+    {
+      "order": 142,
+      "catalogId": "plumcots-handwritten",
+      "title": "Plumcots (handwritten)",
+      "code": "5127",
+      "family": "Plums",
+      "status": "queued",
+      "queueReason": "Source identity or code is marked uncertain",
+      "queueReasonCodes": [
+        "uncertain-source",
+        "source-identity-review"
+      ]
+    },
+    {
+      "order": 143,
+      "catalogId": "plums-blue-1-5l",
+      "title": "Plums - Blue 1.5L",
+      "code": "6706",
+      "family": "Plums",
+      "status": "queued",
+      "queueReason": "Package or case evidence is required",
+      "queueReasonCodes": [
+        "package-evidence-required"
+      ]
+    },
+    {
+      "order": 144,
+      "catalogId": "plums-yellow-1-5l",
+      "title": "Plums - Yellow 1.5L",
+      "code": "1383",
+      "family": "Plums",
+      "status": "queued",
+      "queueReason": "Package or case evidence is required",
+      "queueReasonCodes": [
+        "package-evidence-required"
+      ]
+    },
+    {
+      "order": 145,
+      "catalogId": "potato-red-10lb",
+      "title": "Potato - Red 10lb",
+      "code": "2674",
+      "family": "Potatoes",
+      "status": "queued",
+      "queueReason": "Package or case evidence is required",
+      "queueReasonCodes": [
+        "package-evidence-required",
+        "duplicate-lesson-title"
+      ]
+    },
+    {
+      "order": 146,
+      "catalogId": "potato-red-20lb",
+      "title": "Potato - Red 20lb",
+      "code": "2116",
+      "family": "Potatoes",
+      "status": "queued",
+      "queueReason": "Package or case evidence is required",
+      "queueReasonCodes": [
+        "package-evidence-required",
+        "duplicate-lesson-title"
+      ]
+    },
+    {
+      "order": 147,
+      "catalogId": "potato-russet-white-20lb",
+      "title": "Potato - Russet / White 20lb",
+      "code": "62006",
+      "family": "Potatoes",
+      "status": "queued",
+      "queueReason": "Package or case evidence is required",
+      "queueReasonCodes": [
+        "package-evidence-required"
+      ]
+    },
+    {
+      "order": 148,
+      "catalogId": "potato-russet-10lb",
+      "title": "Potato - Russet 10lb",
+      "code": "171",
+      "family": "Potatoes",
+      "status": "queued",
+      "queueReason": "Package or case evidence is required",
+      "queueReasonCodes": [
+        "package-evidence-required",
+        "duplicate-lesson-title"
+      ]
+    },
+    {
+      "order": 149,
+      "catalogId": "potato-sweet-jamaican-handwritten",
+      "title": "Potato - Sweet Jamaican (handwritten)",
+      "code": "Code needed",
+      "family": "Potatoes",
+      "status": "queued",
+      "queueReason": "Missing verified checkout code",
+      "queueReasonCodes": [
+        "missing-code",
+        "uncertain-source"
+      ]
+    },
+    {
+      "order": 150,
+      "catalogId": "potato-white-10lb",
+      "title": "Potato - White 10lb",
+      "code": "41",
+      "family": "Potatoes",
+      "status": "queued",
+      "queueReason": "Package or case evidence is required",
+      "queueReasonCodes": [
+        "package-evidence-required",
+        "duplicate-lesson-title"
+      ]
+    },
+    {
+      "order": 151,
+      "catalogId": "potato-yellow-10lb",
+      "title": "Potato - Yellow 10lb",
+      "code": "1093",
+      "family": "Potatoes",
+      "status": "queued",
+      "queueReason": "Package or case evidence is required",
+      "queueReasonCodes": [
+        "package-evidence-required"
+      ]
+    },
+    {
+      "order": 152,
+      "catalogId": "prickly-pears-tray-case",
+      "title": "Prickly Pears (Tray / Case)",
+      "code": "6798",
+      "family": "Tropical Fruit",
+      "status": "queued",
+      "queueReason": "Package or case evidence is required",
+      "queueReasonCodes": [
+        "package-evidence-required"
+      ]
+    },
+    {
+      "order": 153,
+      "catalogId": "pumpkins-jamaican",
+      "title": "Pumpkins - Jamaican",
+      "code": "434",
+      "family": "Squash",
+      "status": "queued",
+      "queueReason": "Source identity needs manual adjudication",
+      "queueReasonCodes": [
+        "source-identity-review"
+      ]
+    },
+    {
+      "order": 154,
+      "catalogId": "pumpkins-large",
+      "title": "Pumpkins - Large",
+      "code": "3130",
+      "family": "Squash",
+      "status": "queued",
+      "queueReason": "The same source label has competing codes",
+      "queueReasonCodes": [
+        "duplicate-label-codes"
+      ]
+    },
+    {
+      "order": 155,
+      "catalogId": "pumpkins-large-2",
+      "title": "Pumpkins - Large",
+      "code": "4736",
+      "family": "Squash",
+      "status": "queued",
+      "queueReason": "The same source label has competing codes",
+      "queueReasonCodes": [
+        "duplicate-label-codes"
+      ]
+    },
+    {
+      "order": 156,
+      "catalogId": "pumpkins-small-pie-4737",
+      "title": "Pumpkins - Small Pie 4737",
+      "code": "Code needed",
+      "family": "Squash",
+      "status": "queued",
+      "queueReason": "Missing verified checkout code",
+      "queueReasonCodes": [
+        "missing-code",
+        "uncertain-source",
+        "competing-label-number"
+      ]
+    },
+    {
+      "order": 157,
+      "catalogId": "pumpkins-white",
+      "title": "Pumpkins - White",
+      "code": "Code needed",
+      "family": "Squash",
+      "status": "queued",
+      "queueReason": "Missing verified checkout code",
+      "queueReasonCodes": [
+        "missing-code",
+        "uncertain-source"
+      ]
+    },
+    {
+      "order": 158,
+      "catalogId": "radish-bunch",
+      "title": "Radish - Bunch",
+      "code": "4019",
+      "family": "Roots",
+      "status": "queued",
+      "queueReason": "The code is attached to another source identity",
+      "queueReasonCodes": [
+        "conflicting-code"
+      ]
+    },
+    {
+      "order": 159,
+      "catalogId": "raspberries-red-half-pint-6oz",
+      "title": "Raspberries - Red Half Pint / 6oz",
+      "code": "7298",
+      "family": "Berries",
+      "status": "queued",
+      "queueReason": "Package or case evidence is required",
+      "queueReasonCodes": [
+        "package-evidence-required"
+      ]
+    },
+    {
+      "order": 160,
+      "catalogId": "raspberries-red-pint-12oz",
+      "title": "Raspberries - Red Pint / 12oz",
+      "code": "4054",
+      "family": "Berries",
+      "status": "queued",
+      "queueReason": "Package or case evidence is required",
+      "queueReasonCodes": [
+        "package-evidence-required"
+      ]
+    },
+    {
+      "order": 161,
+      "catalogId": "rutabagas",
+      "title": "Rutabagas",
+      "code": "Code needed",
+      "family": "Roots",
+      "status": "queued",
+      "queueReason": "Missing verified checkout code",
+      "queueReasonCodes": [
+        "missing-code",
+        "uncertain-source"
+      ]
+    },
+    {
+      "order": 162,
+      "catalogId": "safety-salt-snow",
+      "title": "Safety Salt (Snow)",
+      "code": "958",
+      "family": "Source review",
+      "status": "queued",
+      "queueReason": "Outside the produce-learning scope",
+      "queueReasonCodes": [
+        "outside-produce-scope",
+        "unclassified-product"
+      ]
+    },
+    {
+      "order": 163,
+      "catalogId": "squash-buttercup",
+      "title": "Squash - Buttercup",
+      "code": "4758",
+      "family": "Squash",
+      "status": "queued",
+      "queueReason": "The code is attached to another source identity",
+      "queueReasonCodes": [
+        "conflicting-code"
+      ]
+    },
+    {
+      "order": 164,
+      "catalogId": "strawberries-1lb",
+      "title": "Strawberries - 1lb",
+      "code": "42468",
+      "family": "Berries",
+      "status": "queued",
+      "queueReason": "Package or case evidence is required",
+      "queueReasonCodes": [
+        "package-evidence-required"
+      ]
+    },
+    {
+      "order": 165,
+      "catalogId": "strawberries-2lb",
+      "title": "Strawberries - 2lb",
+      "code": "36983",
+      "family": "Berries",
+      "status": "queued",
+      "queueReason": "Package or case evidence is required",
+      "queueReasonCodes": [
+        "package-evidence-required"
+      ]
+    },
+    {
+      "order": 166,
+      "catalogId": "sweet-potatoes-white",
+      "title": "Sweet Potatoes - White",
+      "code": "9925",
+      "family": "Potatoes",
+      "status": "queued",
+      "queueReason": "Source identity needs manual adjudication",
+      "queueReasonCodes": [
+        "source-identity-review"
+      ]
+    },
+    {
+      "order": 167,
+      "catalogId": "sweet-sop",
+      "title": "Sweet Sop",
+      "code": "2569710",
+      "family": "Source review",
+      "status": "queued",
+      "queueReason": "Store barcode needs separate handling",
+      "queueReasonCodes": [
+        "store-barcode-not-plu",
+        "unclassified-product"
+      ]
+    },
+    {
+      "order": 168,
+      "catalogId": "tomato-heirloom-handwritten",
+      "title": "Tomato - Heirloom (handwritten)",
+      "code": "Code needed",
+      "family": "Tomatoes",
+      "status": "queued",
+      "queueReason": "Missing verified checkout code",
+      "queueReasonCodes": [
+        "missing-code",
+        "uncertain-source",
+        "duplicate-lesson-title"
+      ]
+    },
+    {
+      "order": 169,
+      "catalogId": "tomatoes-roma-plum-box-half-bushel",
+      "title": "Tomatoes - Roma / Plum (Box, Half Bushel)",
+      "code": "70755",
+      "family": "Tomatoes",
+      "status": "queued",
+      "queueReason": "Package or case evidence is required",
+      "queueReasonCodes": [
+        "package-evidence-required"
+      ]
+    },
+    {
+      "order": 170,
+      "catalogId": "tomatoes-vine-ripe-field-bulk",
+      "title": "Tomatoes - Vine Ripe / Field (Bulk)",
+      "code": "3061",
+      "family": "Tomatoes",
+      "status": "queued",
+      "queueReason": "Source identity needs manual adjudication",
+      "queueReasonCodes": [
+        "source-identity-review"
+      ]
+    },
+    {
+      "order": 171,
+      "catalogId": "turnip-purple-top-white",
+      "title": "Turnip - Purple Top (White)",
+      "code": "Code needed",
+      "family": "Roots",
+      "status": "queued",
+      "queueReason": "Missing verified checkout code",
+      "queueReasonCodes": [
+        "missing-code",
+        "uncertain-source"
+      ]
+    },
+    {
+      "order": 172,
+      "catalogId": "walnuts-bulk-nuts-handwritten",
+      "title": "Walnuts (Bulk) - Nuts (handwritten)",
+      "code": "4943",
+      "family": "Source review",
+      "status": "queued",
+      "queueReason": "Source identity or code is marked uncertain",
+      "queueReasonCodes": [
+        "uncertain-source",
+        "unclassified-product"
+      ]
+    },
+    {
+      "order": 173,
+      "catalogId": "water-bottle-case-18-pc",
+      "title": "Water Bottle Case 18 (PC)",
+      "code": "06038378106",
+      "family": "Source review",
+      "status": "queued",
+      "queueReason": "Outside the produce-learning scope",
+      "queueReasonCodes": [
+        "outside-produce-scope",
+        "store-barcode-not-plu",
+        "package-evidence-required",
+        "unclassified-product"
+      ]
+    },
+    {
+      "order": 174,
+      "catalogId": "water-bottle-case-24-pc",
+      "title": "Water Bottle Case 24 (PC)",
+      "code": "06038375938",
+      "family": "Source review",
+      "status": "queued",
+      "queueReason": "Outside the produce-learning scope",
+      "queueReasonCodes": [
+        "outside-produce-scope",
+        "store-barcode-not-plu",
+        "package-evidence-required",
+        "unclassified-product"
+      ]
+    },
+    {
+      "order": 175,
+      "catalogId": "yams-white",
+      "title": "Yams - White",
+      "code": "807",
+      "family": "Yams",
+      "status": "queued",
+      "queueReason": "The code is attached to another source identity",
+      "queueReasonCodes": [
+        "conflicting-code",
+        "duplicate-lesson-title"
+      ]
+    }
+  ]
+}

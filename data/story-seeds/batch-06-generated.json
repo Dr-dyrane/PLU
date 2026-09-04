@@ -1,0 +1,263 @@
+[
+  {
+    "schemaVersion": "0.9.0",
+    "id": "aloe-3798",
+    "catalogId": "aloe",
+    "title": "Aloe",
+    "shortTitle": "Aloe",
+    "family": "Stalk Vegetables",
+    "priority": "must-know",
+    "selection": {
+      "rawScore": 105,
+      "score": 100,
+      "band": "Essential",
+      "priority": "must-know"
+    },
+    "identity": {
+      "family": "Stalk Vegetables",
+      "form": "Thick tapered succulent leaves",
+      "color": "Green",
+      "variant": "Aloe"
+    },
+    "checkout": {
+      "code": "3798",
+      "soldBy": "Weight",
+      "saleForm": "Loose",
+      "codeScope": "primary-loose-produce"
+    },
+    "photos": [
+      {
+        "id": "aloe-3798-hero",
+        "file": "Aloe vera for sale.jpg",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/Aloe_vera_for_sale.jpg/1920px-Aloe_vera_for_sale.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Aloe reference photograph showing aloe is identified by its green appearance and thick tapered succulent leaves.",
+        "role": "hero",
+        "focus": "50% 50%"
+      },
+      {
+        "id": "aloe-3798-alternate",
+        "file": "Aloe vera for sale.jpg",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/Aloe_vera_for_sale.jpg/1920px-Aloe_vera_for_sale.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Alternate crop of Aloe highlighting its thick tapered succulent leaves",
+        "role": "alternate",
+        "focus": "38% 50%",
+        "reuseOf": "Aloe vera for sale.jpg",
+        "fallbackReason": "One verified exact-item photograph is reused with a different crop so no unverified image can publish."
+      },
+      {
+        "id": "aloe-3798-context",
+        "file": "Aloe vera for sale.jpg",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/Aloe_vera_for_sale.jpg/1920px-Aloe_vera_for_sale.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Aloe produce reference emphasizing its green appearance",
+        "role": "context",
+        "focus": "62% 50%",
+        "reuseOf": "Aloe vera for sale.jpg",
+        "fallbackReason": "One verified exact-item photograph is reused with a different crop so no unverified image can publish."
+      }
+    ],
+    "visualCues": [
+      "Aloe is identified by its green appearance and thick tapered succulent leaves.",
+      "Look for the green color together with the thick tapered succulent leaves.",
+      "Keep it separate from nearby stalk vegetables by checking shape, color, and sale form."
+    ],
+    "classification": {
+      "familyAnswer": "stalk-vegetables",
+      "familyChoices": [
+        {
+          "id": "stalk-vegetables",
+          "label": "Stalk Vegetables"
+        },
+        {
+          "id": "citrus",
+          "label": "Citrus"
+        },
+        {
+          "id": "papayas",
+          "label": "Papayas"
+        }
+      ],
+      "formAnswer": "thick-tapered-succulent-leaves",
+      "formChoices": [
+        {
+          "id": "thick-tapered-succulent-leaves",
+          "label": "Green · Thick tapered succulent leaves"
+        },
+        {
+          "id": "confusion-celery-hearts",
+          "label": "Hearts celery"
+        },
+        {
+          "id": "confusion-rhubarb",
+          "label": "Rhubarb"
+        }
+      ]
+    },
+    "variants": [],
+    "similarItems": [
+      {
+        "name": "Hearts celery",
+        "code": "4575",
+        "cue": "Hearts celery is identified by its green appearance and crisp ribbed stalks.",
+        "color": "#4F8B58"
+      },
+      {
+        "name": "Rhubarb",
+        "code": "4745",
+        "cue": "Long firm stalks range from green to vivid pink-red, with broad leaves removed.",
+        "color": "#C25D52"
+      },
+      {
+        "name": "Sugar Cane",
+        "code": "4790",
+        "cue": "Sugar Cane is identified by its green-purple appearance and long jointed cane stalk.",
+        "color": "#D1A23B"
+      }
+    ],
+    "source": {
+      "primaryPages": [
+        1
+      ],
+      "relatedPages": [
+        1
+      ],
+      "checkedOnReference": true,
+      "flags": [
+        "batch-06",
+        "catalog-remainder-essential",
+        "media-reviewed-override"
+      ],
+      "confidence": "verified-from-supplied-material"
+    }
+  },
+  {
+    "schemaVersion": "0.9.0",
+    "id": "hh-red-tomato-4798",
+    "catalogId": "tomato-hh-red-bulk",
+    "title": "HH Red tomato",
+    "shortTitle": "HH Red tomato",
+    "family": "Tomatoes",
+    "priority": "must-know",
+    "selection": {
+      "rawScore": 90,
+      "score": 90,
+      "band": "Essential",
+      "priority": "must-know"
+    },
+    "identity": {
+      "family": "Tomatoes",
+      "form": "Smooth round or oblong fruit",
+      "color": "Red",
+      "variant": "HH Red tomato"
+    },
+    "checkout": {
+      "code": "4798",
+      "soldBy": "Weight",
+      "saleForm": "Loose",
+      "codeScope": "primary-loose-produce"
+    },
+    "photos": [
+      {
+        "id": "hh-red-tomato-4798-hero",
+        "file": "Healthy Red Tomatoes with Water Drops.jpg",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/Healthy_Red_Tomatoes_with_Water_Drops.jpg/1920px-Healthy_Red_Tomatoes_with_Water_Drops.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "HH Red tomato reference photograph showing hh red tomato is identified by its red appearance and smooth round or oblong fruit.",
+        "role": "hero",
+        "focus": "50% 50%"
+      },
+      {
+        "id": "hh-red-tomato-4798-alternate",
+        "file": "Healthy Red Tomatoes with Water Drops.jpg",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/Healthy_Red_Tomatoes_with_Water_Drops.jpg/1920px-Healthy_Red_Tomatoes_with_Water_Drops.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Alternate crop of HH Red tomato highlighting its smooth round or oblong fruit",
+        "role": "alternate",
+        "focus": "38% 50%",
+        "reuseOf": "Healthy Red Tomatoes with Water Drops.jpg",
+        "fallbackReason": "One verified exact-item photograph is reused with a different crop so no unverified image can publish."
+      },
+      {
+        "id": "hh-red-tomato-4798-context",
+        "file": "Healthy Red Tomatoes with Water Drops.jpg",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/Healthy_Red_Tomatoes_with_Water_Drops.jpg/1920px-Healthy_Red_Tomatoes_with_Water_Drops.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "HH Red tomato produce reference emphasizing its red appearance",
+        "role": "context",
+        "focus": "62% 50%",
+        "reuseOf": "Healthy Red Tomatoes with Water Drops.jpg",
+        "fallbackReason": "One verified exact-item photograph is reused with a different crop so no unverified image can publish."
+      }
+    ],
+    "visualCues": [
+      "HH Red tomato is identified by its red appearance and smooth round or oblong fruit.",
+      "Look for the red color together with the smooth round or oblong fruit.",
+      "Keep it separate from nearby tomatoes by checking shape, color, and sale form."
+    ],
+    "classification": {
+      "familyAnswer": "tomatoes",
+      "familyChoices": [
+        {
+          "id": "tomatoes",
+          "label": "Tomatoes"
+        },
+        {
+          "id": "citrus",
+          "label": "Citrus"
+        },
+        {
+          "id": "papayas",
+          "label": "Papayas"
+        }
+      ],
+      "formAnswer": "smooth-round-or-oblong-fruit",
+      "formChoices": [
+        {
+          "id": "smooth-round-or-oblong-fruit",
+          "label": "Red · Smooth round or oblong fruit"
+        },
+        {
+          "id": "confusion-tomatoes-on-the-vine-hh-organic",
+          "label": "Organic On The Vine HH tomato"
+        },
+        {
+          "id": "confusion-tomato-fm-on-the-vine-bulk",
+          "label": "FM On The Vine tomato"
+        }
+      ]
+    },
+    "variants": [],
+    "similarItems": [
+      {
+        "name": "Organic On The Vine HH tomato",
+        "code": "94664",
+        "cue": "Organic On The Vine HH tomato is identified by its red appearance and smooth round or oblong fruit.",
+        "color": "#4F8B58"
+      },
+      {
+        "name": "FM On The Vine tomato",
+        "code": "64664",
+        "cue": "FM On The Vine tomato is identified by its red appearance and smooth round or oblong fruit.",
+        "color": "#C25D52"
+      },
+      {
+        "name": "Organic HH tomato",
+        "code": "94798",
+        "cue": "Organic HH tomato is identified by its red appearance and smooth round or oblong fruit.",
+        "color": "#D1A23B"
+      }
+    ],
+    "source": {
+      "primaryPages": [
+        4
+      ],
+      "relatedPages": [
+        4
+      ],
+      "checkedOnReference": true,
+      "flags": [
+        "sold-by-curated",
+        "batch-06",
+        "catalog-remainder-essential",
+        "media-reviewed-override"
+      ],
+      "confidence": "verified-from-supplied-material"
+    }
+  }
+]

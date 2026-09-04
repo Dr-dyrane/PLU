@@ -1,0 +1,41 @@
+[
+  {
+    "catalogId": "aloe",
+    "title": "Aloe",
+    "code": "3798",
+    "family": "Stalk Vegetables",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Thick tapered succulent leaves",
+    "color": "Green",
+    "imageQuery": "Aloe raw produce",
+    "cue": "Aloe is identified by its green appearance and thick tapered succulent leaves.",
+    "group": "stalk-vegetables",
+    "sourcePages": [
+      1
+    ],
+    "candidateScore": 124,
+    "sourceItem": "Aloe"
+  },
+  {
+    "catalogId": "tomato-hh-red-bulk",
+    "title": "HH Red tomato",
+    "code": "4798",
+    "family": "Tomatoes",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Smooth round or oblong fruit",
+    "color": "Red",
+    "imageQuery": "HH Red tomato raw produce",
+    "cue": "HH Red tomato is identified by its red appearance and smooth round or oblong fruit.",
+    "group": "tomatoes",
+    "sourcePages": [
+      4
+    ],
+    "flags": [
+      "sold-by-curated"
+    ],
+    "candidateScore": 94,
+    "sourceItem": "Tomato - HH Red (Bulk)"
+  }
+]

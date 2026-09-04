@@ -25,7 +25,7 @@ import {
 import { productTheme } from "@/lib/ui/product-theme";
 import type { BatchItem, BatchStorySummary, ProductBatch } from "@/types/batch";
 
-type CategoryFilter = "all" | "peppers" | "fruit" | "vegetables" | "herbs";
+type CategoryFilter = "all" | "peppers" | "fruit" | "vegetables" | "herbs" | "other";
 
 type ProgressiveWindow = {
   key: string;
@@ -41,6 +41,7 @@ const categories: Array<{ value: CategoryFilter; label: string }> = [
   { value: "fruit", label: "Fruit" },
   { value: "vegetables", label: "Vegetables" },
   { value: "herbs", label: "Herbs" },
+  { value: "other", label: "Other" },
 ];
 
 const fruitFamilies = new Set([
@@ -63,6 +64,7 @@ function categoryFor(item: BatchItem): Exclude<CategoryFilter, "all"> {
   const family = item.family.trim().toLowerCase();
   if (family === "peppers") return "peppers";
   if (family === "herbs") return "herbs";
+  if (family === "source review") return "other";
   if (fruitFamilies.has(family)) return "fruit";
   return "vegetables";
 }
@@ -160,6 +162,8 @@ export function BatchHome({ batch, stories }: { batch: ProductBatch; stories: Ba
             item.title,
             item.code,
             item.family,
+            item.queueReason ?? "",
+            ...(item.queueReasonCodes ?? []),
             story?.title ?? "",
             story?.shortTitle ?? "",
             story?.identity.form ?? "",
@@ -437,7 +441,7 @@ export function BatchHome({ batch, stories }: { batch: ProductBatch; stories: Ba
             <div className="batchSectionHeading">
               <div>
                 <Clock3 aria-hidden="true" />
-                <h2 id="queueHeading">Coming next</h2>
+                <h2 id="queueHeading">Needs source review</h2>
               </div>
               <button
                 className="batchQueueToggle"
@@ -455,7 +459,7 @@ export function BatchHome({ batch, stories }: { batch: ProductBatch; stories: Ba
                   <span>{String(item.order).padStart(3, "0")}</span>
                   <div>
                     <strong>{item.title}</strong>
-                    <small>{item.family}</small>
+                    <small>{item.queueReason ?? item.family}</small>
                   </div>
                   <Clock3 aria-hidden="true" />
                 </article>

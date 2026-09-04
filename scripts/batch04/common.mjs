@@ -316,7 +316,9 @@ export const mediaOverridesByCatalogId = {
   "pears-yali-ya": "Ya pears 20250509 182727.jpg",
   "grapes-crimson": "Crimson Seedless Grapes.jpg",
   "parsley-root-herbs": "Petersilienwurzel (fcm).jpg",
-  "beans-yellow-wax": "Yellow capitano bush bean.jpg"
+  "beans-yellow-wax": "Yellow capitano bush bean.jpg",
+  "aloe": "Aloe vera for sale.jpg",
+  "tomato-hh-red-bulk": "Healthy Red Tomatoes with Water Drops.jpg"
 };
 
 export const knownBadMediaFiles = new Set([
@@ -348,6 +350,7 @@ export const knownBadMediaFiles = new Set([
   "4- (Cru) Live Scallop, Celery Root, Yali Pear.jpg",
   "HK WTSD Wong Tai Sin District 牛池灣 Ngau Chi Wan 彩虹站 MTR Choi Hung Station concourse shop 美心西餅 Maxim's Cakes Bakery August 2022 Px3 yellow mango fruit cakes tarts.jpg",
   "Bolgiano's \"glory\" tomato - out yields and out sells any tomato on the market by far the best tomato ever grown (1917) (20202596108).jpg",
+  "Organically grown iceberg lettuce from Gurgaon, Haryana, India.jpg",
 ]);
 
 export function sleep(ms) {

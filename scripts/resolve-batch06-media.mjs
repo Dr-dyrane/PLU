@@ -17,19 +17,24 @@ import {
   slugify,
 } from "./batch04/story.mjs";
 
-const EXPECTED_SIZE = 100;
-const CANDIDATES_URL = new URL("../data/batch-05-candidates.json", import.meta.url);
-const SOURCE_URL = new URL("../data/batch-05-source.json", import.meta.url);
-const BATCH_URL = new URL("../data/batches/batch-05.json", import.meta.url);
-const SEED_URL = new URL("../data/story-seeds/batch-05-generated.json", import.meta.url);
+const EXPECTED_CANDIDATES = 21;
+const EXPECTED_REMAINDER = 175;
+const CANDIDATES_URL = new URL("../data/batch-06-candidates.json", import.meta.url);
+const DISPOSITIONS_URL = new URL("../data/batch-06-dispositions.json", import.meta.url);
+const SOURCE_URL = new URL("../data/batch-06-source.json", import.meta.url);
+const BATCH_URL = new URL("../data/batches/batch-06.json", import.meta.url);
+const SEED_URL = new URL("../data/story-seeds/batch-06-generated.json", import.meta.url);
 const PUBLIC_URL = new URL("../public/", import.meta.url);
-const REPORT_URL = new URL("media-resolution-batch05.json", PUBLIC_URL);
+const REPORT_URL = new URL("media-resolution-batch06.json", PUBLIC_URL);
+const REVIEWED_READY_IDS = new Set(["aloe", "tomato-hh-red-bulk"]);
 
 const candidates = await readJson(CANDIDATES_URL);
-if (!Array.isArray(candidates) || candidates.length < EXPECTED_SIZE) {
-  throw new Error(
-    `Batch 05 candidate pool must contain at least ${EXPECTED_SIZE} records; received ${candidates?.length ?? "invalid"}.`,
-  );
+const dispositions = await readJson(DISPOSITIONS_URL);
+if (!Array.isArray(candidates) || candidates.length !== EXPECTED_CANDIDATES) {
+  throw new Error(`Batch 06 requires exactly ${EXPECTED_CANDIDATES} strict candidates.`);
+}
+if (!Array.isArray(dispositions) || dispositions.length !== EXPECTED_REMAINDER) {
+  throw new Error(`Batch 06 requires dispositions for all ${EXPECTED_REMAINDER} remaining rows.`);
 }
 
 const catalog = await loadJsonRecords(new URL("../data/catalog/", import.meta.url));
@@ -39,7 +44,7 @@ const existingStories = [
   ...(await loadJsonRecords(new URL("../data/story-batches/", import.meta.url))),
   ...(await loadJsonRecords(
     new URL("../data/story-seeds/", import.meta.url),
-    (name) => !["batch-05-generated.json", "batch-06-generated.json"].includes(name),
+    (name) => name !== "batch-06-generated.json",
   )),
 ];
 const existingCatalogIds = new Set(existingStories.map((story) => story.catalogId));
@@ -54,18 +59,18 @@ const candidateIds = new Set();
 const sourcePool = [];
 for (const item of candidates) {
   if (!item.catalogId || !item.title || !item.code || !item.family || !item.imageQuery) {
-    throw new Error(`Batch 05 candidate is incomplete: ${JSON.stringify(item)}`);
+    throw new Error(`Batch 06 candidate is incomplete: ${JSON.stringify(item)}`);
   }
   if (candidateIds.has(item.catalogId)) {
-    throw new Error(`Duplicate Batch 05 candidate catalog ID: ${item.catalogId}`);
+    throw new Error(`Duplicate Batch 06 candidate catalog ID: ${item.catalogId}`);
   }
   candidateIds.add(item.catalogId);
   if (existingCatalogIds.has(item.catalogId)) {
-    throw new Error(`Batch 05 repeats a published catalog ID: ${item.catalogId}`);
+    throw new Error(`Batch 06 repeats a published catalog ID: ${item.catalogId}`);
   }
 
   const record = catalogById.get(item.catalogId);
-  if (!record) throw new Error(`Batch 05 catalog record is missing: ${item.catalogId}`);
+  if (!record) throw new Error(`Batch 06 catalog record is missing: ${item.catalogId}`);
   if (!record.codes.includes(item.code)) {
     throw new Error(`${item.catalogId}: ${item.code} is not present in its source catalog row.`);
   }
@@ -82,6 +87,17 @@ for (const item of candidates) {
   });
 }
 
+const dispositionIds = new Set(dispositions.map((item) => item.catalogId));
+if (dispositionIds.size !== EXPECTED_REMAINDER) {
+  throw new Error("Batch 06 dispositions contain duplicate catalog IDs.");
+}
+for (const catalogId of candidateIds) {
+  const disposition = dispositions.find((item) => item.catalogId === catalogId);
+  if (disposition?.decision !== "candidate") {
+    throw new Error(`${catalogId}: candidate is not admitted by the disposition ledger.`);
+  }
+}
+
 const basePool = existingStories.map(peerSummary).filter((record) => record.code);
 const allPeerPool = [
   ...new Map([...sourcePool, ...basePool].map((record) => [record.catalogId, record])).values(),
@@ -92,23 +108,22 @@ for (const item of candidates) {
 }
 
 const acceptedSource = [];
-const batchItems = [];
+const readyItems = [];
 const seeds = [];
 const acceptedMappings = new Set();
 const report = {
   generatedAt: new Date().toISOString(),
-  batch: "05",
+  batch: "06",
   strategy:
-    "Select the first 100 ranked unused catalog rows that resolve to semantically safe, product-anchored Wikimedia Commons photography.",
+    "Resolve every remaining strict loose-produce candidate and retain all other catalog rows as evidence-gated source review records.",
   candidateCount: candidates.length,
   sourceCount: 0,
   media: [],
   rejected: [],
+  queued: [],
 };
 
 for (const [candidateIndex, item] of candidates.entries()) {
-  if (batchItems.length === EXPECTED_SIZE) break;
-
   const mapping = `${item.catalogId}:${item.code}`;
   if (acceptedMappings.has(mapping)) {
     report.rejected.push({
@@ -116,6 +131,16 @@ for (const [candidateIndex, item] of candidates.entries()) {
       catalogId: item.catalogId,
       title: item.title,
       reason: "duplicate-exact-mapping",
+    });
+    continue;
+  }
+
+  if (!REVIEWED_READY_IDS.has(item.catalogId)) {
+    report.rejected.push({
+      candidateOrder: candidateIndex + 1,
+      catalogId: item.catalogId,
+      title: item.title,
+      reason: "reviewed-source-evidence-required",
     });
     continue;
   }
@@ -130,7 +155,7 @@ for (const [candidateIndex, item] of candidates.entries()) {
       title: item.title,
       reason: error instanceof Error ? error.message : String(error),
     });
-    console.warn(`Skipped Batch 05 candidate ${candidateIndex + 1}: ${item.title}.`);
+    console.warn(`Unresolved Batch 06 candidate ${candidateIndex + 1}: ${item.title}.`);
     await sleep(120);
     continue;
   }
@@ -146,10 +171,7 @@ for (const [candidateIndex, item] of candidates.entries()) {
     continue;
   }
 
-  const peerTarget = {
-    ...peerSummary(item),
-    category: categoryForFamily(item.family),
-  };
+  const peerTarget = { ...peerSummary(item), category: categoryForFamily(item.family) };
   const peers = choosePeers(peerTarget, sourcePool, basePool);
   if (peers.length < 3) {
     report.rejected.push({
@@ -167,8 +189,8 @@ for (const [candidateIndex, item] of candidates.entries()) {
   const flags = [
     ...new Set([
       ...(item.flags ?? []),
-      "batch-05",
-      `must-know-${selection.band.toLowerCase()}`,
+      "batch-06",
+      `catalog-remainder-${selection.band.toLowerCase()}`,
       `media-${media.match}`,
       ...(media.sharedAcrossProducts ? ["media-shared-reviewed"] : []),
     ]),
@@ -178,7 +200,7 @@ for (const [candidateIndex, item] of candidates.entries()) {
   );
 
   seeds.push({
-    schemaVersion: "0.8.0",
+    schemaVersion: "0.9.0",
     id: storyId,
     catalogId: item.catalogId,
     title: item.title,
@@ -235,8 +257,8 @@ for (const [candidateIndex, item] of candidates.entries()) {
     },
   });
 
-  const order = batchItems.length + 1;
-  batchItems.push({
+  const order = readyItems.length + 1;
+  readyItems.push({
     order,
     catalogId: item.catalogId,
     title: item.title,
@@ -244,23 +266,7 @@ for (const [candidateIndex, item] of candidates.entries()) {
     family: item.family,
     status: "ready",
   });
-  acceptedSource.push({
-    catalogId: item.catalogId,
-    title: item.title,
-    code: item.code,
-    family: item.family,
-    soldBy: item.soldBy,
-    saleForm: item.saleForm,
-    form: item.form,
-    color: item.color,
-    imageQuery: item.imageQuery,
-    cue: item.cue,
-    group: item.group,
-    sourcePages: item.sourcePages,
-    ...(item.flags?.length ? { flags: item.flags } : {}),
-    candidateScore: item.candidateScore,
-    sourceItem: item.sourceItem,
-  });
+  acceptedSource.push({ ...item });
   acceptedMappings.add(mapping);
   report.media.push({
     order,
@@ -273,32 +279,73 @@ for (const [candidateIndex, item] of candidates.entries()) {
     ...media,
   });
 
-  console.log(`Accepted Batch 05 lesson ${order}/${EXPECTED_SIZE}: ${item.title}.`);
+  console.log(`Accepted Batch 06 lesson ${order}/${EXPECTED_CANDIDATES}: ${item.title}.`);
   await sleep(120);
 }
 
-if (batchItems.length !== EXPECTED_SIZE) {
+const acceptedCatalogIds = new Set(readyItems.map((item) => item.catalogId));
+const expectedReadyIds = [...REVIEWED_READY_IDS].sort();
+const resolvedReadyIds = [...acceptedCatalogIds].sort();
+if (JSON.stringify(resolvedReadyIds) !== JSON.stringify(expectedReadyIds)) {
   throw new Error(
-    `Batch 05 resolved only ${batchItems.length}/${EXPECTED_SIZE} safe lessons from ${candidates.length} candidates.`,
+    `Batch 06 must resolve the exact reviewed ready set (${expectedReadyIds.join(", ")}); resolved ${resolvedReadyIds.join(", ") || "none"}.`,
   );
 }
+const mediaQueued = candidates
+  .filter((item) => !acceptedCatalogIds.has(item.catalogId))
+  .map((item) => {
+    const rejected = [...report.rejected]
+      .reverse()
+      .find((record) => record.catalogId === item.catalogId);
+    return {
+      catalogId: item.catalogId,
+      title: item.title,
+      code: item.code,
+      family: item.family,
+      status: "queued",
+      queueReason: "Exact recognition photograph needs source review.",
+      queueReasonCodes: ["media-evidence-required"],
+      mediaReason: rejected?.reason ?? "media-not-accepted",
+    };
+  });
+const sourceQueued = dispositions
+  .filter((item) => item.decision === "queued")
+  .map((item) => ({
+    catalogId: item.catalogId,
+    title: item.title,
+    code: item.code,
+    family: item.family,
+    status: "queued",
+    queueReason: item.reason,
+    queueReasonCodes: item.reasonCodes,
+  }));
+const queuedItems = [...mediaQueued, ...sourceQueued].map((item, index) => ({
+  ...item,
+  order: readyItems.length + index + 1,
+}));
+const items = [...readyItems, ...queuedItems];
+if (items.length !== EXPECTED_REMAINDER) {
+  throw new Error(`Batch 06 manifest contains ${items.length}/${EXPECTED_REMAINDER} rows.`);
+}
 
-report.sourceCount = acceptedSource.length;
 const batch = {
-  schemaVersion: "0.8.0",
-  id: "batch-05-next-100",
-  title: "Next 100",
-  size: batchItems.length,
-  strategy: "Ranked unused catalog rows with strict semantic image validation",
-  items: batchItems,
+  schemaVersion: "0.9.0",
+  id: "batch-06-catalog-remainder-175",
+  title: "Catalog remainder 175",
+  size: items.length,
+  strategy: "Strict ready lessons plus an explicit evidence-gated disposition for every remaining source row",
+  items,
 };
 
 await mkdir(PUBLIC_URL, { recursive: true });
+report.sourceCount = acceptedSource.length;
+report.queued = queuedItems.map(({ order, ...item }) => ({ order, ...item }));
+await writeFile(REPORT_URL, `${JSON.stringify(report, null, 2)}\n`, "utf8");
+
 await writeFile(SOURCE_URL, `${JSON.stringify(acceptedSource, null, 2)}\n`, "utf8");
 await writeFile(BATCH_URL, `${JSON.stringify(batch, null, 2)}\n`, "utf8");
 await writeFile(SEED_URL, `${JSON.stringify(seeds, null, 2)}\n`, "utf8");
-await writeFile(REPORT_URL, `${JSON.stringify(report, null, 2)}\n`, "utf8");
 
 console.log(
-  `Generated ${batchItems.length} Batch 05 lessons after rejecting ${report.rejected.length} unsafe or unresolved candidates.`,
+  `Generated Batch 06 with ${readyItems.length} ready lessons and ${queuedItems.length} evidence-gated rows.`,
 );

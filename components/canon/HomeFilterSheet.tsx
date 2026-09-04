@@ -32,10 +32,15 @@ const learningOptions: Array<{
   detail: string;
   icon: typeof Sparkles;
 }> = [
-  { value: "all", label: "All lessons", detail: "Ready and coming next", icon: Layers3 },
+  { value: "all", label: "All lessons", detail: "Ready and source review", icon: Layers3 },
   { value: "ready", label: "Ready to learn", detail: "Available, not completed", icon: Sparkles },
   { value: "learned", label: "Learned", detail: "Completed on this device", icon: Check },
-  { value: "queued", label: "Coming next", detail: "Locked into Core 25", icon: Clock3 },
+  {
+    value: "queued",
+    label: "Needs source review",
+    detail: "Held until evidence is verified",
+    icon: Clock3,
+  },
 ];
 
 export function HomeFilterSheet({

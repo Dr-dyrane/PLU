@@ -1,4 +1,6 @@
 import { writeFile } from "node:fs/promises";
+import { resolve } from "node:path";
+import { fileURLToPath } from "node:url";
 
 import { loadJsonRecords, normalize, slugify } from "./batch04/common.mjs";
 
@@ -94,16 +96,16 @@ const familyRules = [
   { test: /\btomato/i, family: "Tomatoes", singular: "tomato", form: "Smooth round or oblong fruit", color: "Red" },
 ];
 
-const nonProduce = /\b(baked goods|bag points|flower bouquet|gift|pastr(?:y|ies)|reusable bag)\b/i;
-const packageOrInventory = /\b(\d+(?:\.\d+)?\s*(?:ct|lb|lbs|kg|g|l|oz)|bag|bin|bottle|box|bushel|case|carton|clamshell|crate|dome|mesh|orchard run|pack|package|pallet|pc|pint|tray|wire)\b/i;
-const uncertain = /\b(first word obscured|label as printed|obscured|unknown|unlabelled|unverified)\b/i;
+export const nonProduce = /\b(baked goods|bag points|flower bouquet|gift|pastr(?:y|ies)|reusable bag)\b/i;
+export const packageOrInventory = /\b(\d+(?:\.\d+)?\s*(?:ct|lb|lbs|kg|g|l|oz)|bag|bin|bottle|box|bushel|case|carton|clamshell|crate|dome|mesh|orchard run|pack|package|pallet|pc|pint|tray|wire)\b/i;
+export const uncertain = /\b(first word obscured|label as printed|obscured|unknown|unlabelled|unverified)\b/i;
 const commonFamilyBonus = new Map([
   ["Apples", 18], ["Citrus", 18], ["Berries", 17], ["Pears", 16],
   ["Peaches", 16], ["Plums", 16], ["Grapes", 16], ["Tomatoes", 16],
   ["Peppers", 16], ["Mushrooms", 15], ["Leafy Greens", 15], ["Roots", 14],
   ["Squash", 14], ["Herbs", 14], ["Alliums", 14], ["Melons", 13],
 ]);
-const excludedCatalogIds = new Set([
+export const excludedCatalogIds = new Set([
   "asparagus-organic",
   "avocado-caribbean",
   "cabbage-sour",
@@ -119,7 +121,7 @@ const excludedCatalogIds = new Set([
   "tomatoes-vine-ripe-field-bulk",
 ]);
 
-function familyRuleFor(item) {
+export function familyRuleFor(item) {
   const specific = familyRules
     .slice(0, SPECIFIC_FAMILY_RULE_COUNT)
     .find((entry) => entry.test.test(item));
@@ -183,7 +185,7 @@ function cleanDescriptor(value) {
     .trim();
 }
 
-function titleFor(record, rule) {
+export function titleFor(record, rule) {
   const exactTitle = titleOverridesByCatalogId.get(record.id);
   if (exactTitle) return exactTitle;
 
@@ -217,14 +219,14 @@ function titleFor(record, rule) {
   return `${descriptor} ${singular}`;
 }
 
-function preserveSourceQualifiers(sourceItem, title) {
+export function preserveSourceQualifiers(sourceItem, title) {
   if (/\borganic\b/i.test(sourceItem) && !/\borganic\b/i.test(title)) {
     return `Organic ${title}`;
   }
   return title;
 }
 
-function inferredColor(title, fallback) {
+export function inferredColor(title, fallback) {
   const colors = [
     "black", "blue", "brown", "gold", "golden", "green", "orange", "pink",
     "purple", "red", "white", "yellow",
@@ -234,7 +236,7 @@ function inferredColor(title, fallback) {
     : fallback;
 }
 
-function saleFormFor(item, soldBy, family) {
+export function saleFormFor(item, soldBy, family) {
   if (/\bcuts?\b/i.test(item)) return "Cut";
   if (/\bbunch\b/i.test(item)) return "Bunch";
   if (/\bhead\b/i.test(item) && ["Broccoli", "Brassicas", "Cabbages", "Cauliflower", "Lettuce"].includes(family)) return "Head";
@@ -243,13 +245,13 @@ function saleFormFor(item, soldBy, family) {
   return soldBy === "Each" ? "Single" : "Loose";
 }
 
-function inferredSoldBy(record, saleForm) {
+export function inferredSoldBy(record, saleForm) {
   if (record.soldBy === "Weight" || record.soldBy === "Each") return record.soldBy;
   if (["Bunch", "Head", "Single", "Stalk"].includes(saleForm)) return "Each";
   return "Weight";
 }
 
-function candidateScore(record, rule, title) {
+export function candidateScore(record, rule, title) {
   let score = 0;
   const flags = record.flags ?? [];
   const numericCodes = (record.codes ?? []).filter((code) => /^\d+$/.test(String(code)));
@@ -269,10 +271,11 @@ function candidateScore(record, rule, title) {
   return score;
 }
 
-const catalog = await loadJsonRecords(new URL("../data/catalog/", import.meta.url));
-const catalogLabelsByCode = new Map();
-const catalogCodesByLabel = new Map();
-for (const record of catalog) {
+export async function prepareBatch05Candidates() {
+  const catalog = await loadJsonRecords(new URL("../data/catalog/", import.meta.url));
+  const catalogLabelsByCode = new Map();
+  const catalogCodesByLabel = new Map();
+  for (const record of catalog) {
   const label = normalize(record.item);
   const labelCodes = catalogCodesByLabel.get(label) ?? new Set();
   for (const rawCode of record.codes ?? []) {
@@ -284,32 +287,32 @@ for (const record of catalog) {
     catalogLabelsByCode.set(code, labels);
   }
   catalogCodesByLabel.set(label, labelCodes);
-}
-const ambiguousCatalogCodes = new Set(
+  }
+  const ambiguousCatalogCodes = new Set(
   [...catalogLabelsByCode].filter(([, labels]) => labels.size > 1).map(([code]) => code),
 );
-const ambiguousCatalogLabels = new Set(
+  const ambiguousCatalogLabels = new Set(
   [...catalogCodesByLabel].filter(([, codes]) => codes.size > 1).map(([label]) => label),
 );
-const publishedStories = [
+  const publishedStories = [
   ...(await loadJsonRecords(new URL("../data/stories/", import.meta.url))),
   ...(await loadJsonRecords(new URL("../data/story-batches/", import.meta.url))),
   ...(await loadJsonRecords(
     new URL("../data/story-seeds/", import.meta.url),
-    (name) => name !== "batch-05-generated.json",
+    (name) => !["batch-05-generated.json", "batch-06-generated.json"].includes(name),
   )),
 ];
-const publishedIds = new Set(publishedStories.map((story) => story.catalogId));
-const publishedMappings = new Set(
+  const publishedIds = new Set(publishedStories.map((story) => story.catalogId));
+  const publishedMappings = new Set(
   publishedStories.map((story) => `${story.catalogId}:${story.checkout?.code}`),
 );
-const publishedCodes = new Set(
+  const publishedCodes = new Set(
   publishedStories.map((story) => String(story.checkout?.code ?? "")).filter(Boolean),
 );
-const publishedTitles = new Set(publishedStories.map((story) => normalize(story.title)));
+  const publishedTitles = new Set(publishedStories.map((story) => normalize(story.title)));
 
-const candidates = [];
-for (const record of catalog) {
+  const candidates = [];
+  for (const record of catalog) {
   if (publishedIds.has(record.id)) continue;
   if (excludedCatalogIds.has(record.id)) continue;
   if (nonProduce.test(record.item)) continue;
@@ -358,18 +361,18 @@ for (const record of catalog) {
     candidateScore: candidateScore(record, rule, title),
     sourceItem: record.item,
   });
-}
+  }
 
-candidates.sort((left, right) =>
+  candidates.sort((left, right) =>
   right.candidateScore - left.candidateScore ||
   left.family.localeCompare(right.family) ||
   left.title.localeCompare(right.title),
 );
 
-const selected = [];
-const familyCounts = new Map();
-const titleKeys = new Set();
-for (const candidate of candidates) {
+  const selected = [];
+  const familyCounts = new Map();
+  const titleKeys = new Set();
+  for (const candidate of candidates) {
   const titleKey = normalize(candidate.title);
   if (titleKeys.has(titleKey)) continue;
   const count = familyCounts.get(candidate.family) ?? 0;
@@ -378,13 +381,19 @@ for (const candidate of candidates) {
   titleKeys.add(titleKey);
   familyCounts.set(candidate.family, count + 1);
   if (selected.length === TARGET_POOL_SIZE) break;
+  }
+
+  if (selected.length < 120) {
+    throw new Error(`Only ${selected.length} usable Batch 05 candidates remain after filtering.`);
+  }
+
+  await writeFile(OUTPUT_URL, `${JSON.stringify(selected, null, 2)}\n`, "utf8");
+  console.log(
+    `Prepared ${selected.length} ranked Batch 05 candidates from ${catalog.length} catalog rows across ${familyCounts.size} families.`,
+  );
+  return selected;
 }
 
-if (selected.length < 120) {
-  throw new Error(`Only ${selected.length} usable Batch 05 candidates remain after filtering.`);
+if (process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
+  await prepareBatch05Candidates();
 }
-
-await writeFile(OUTPUT_URL, `${JSON.stringify(selected, null, 2)}\n`, "utf8");
-console.log(
-  `Prepared ${selected.length} ranked Batch 05 candidates from ${catalog.length} catalog rows across ${familyCounts.size} families.`,
-);

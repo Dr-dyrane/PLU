@@ -45,6 +45,7 @@ import batch03S09 from "@/data/story-seeds/batch-03-09.json";
 import batch03S10 from "@/data/story-seeds/batch-03-10.json";
 import batch04Generated from "@/data/story-seeds/batch-04-generated.json";
 import batch05Generated from "@/data/story-seeds/batch-05-generated.json";
+import batch06Generated from "@/data/story-seeds/batch-06-generated.json";
 import { compileStorySeeds } from "@/data/stories/compile-story-seed";
 import type { BatchStorySummary } from "@/types/batch";
 import type { ProductStory } from "@/types/trace";
@@ -139,6 +140,7 @@ export const batch03Stories: ProductStory[] = [
 
 export const batch04Stories: ProductStory[] = compileStorySeeds(batch04Generated);
 export const batch05Stories: ProductStory[] = compileStorySeeds(batch05Generated);
+export const batch06Stories: ProductStory[] = compileStorySeeds(batch06Generated);
 
 export const productStories: ProductStory[] = [
   ...core25Stories,
@@ -146,6 +148,7 @@ export const productStories: ProductStory[] = [
   ...batch03Stories,
   ...batch04Stories,
   ...batch05Stories,
+  ...batch06Stories,
 ];
 
 export const productStoryById = new Map(productStories.map((story) => [story.id, story]));

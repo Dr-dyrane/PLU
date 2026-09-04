@@ -38,8 +38,7 @@ const rawSubjectTokens = new Set([
 const metadataHardBlockExceptions = new Set([
   "bird", "garden", "label", "orchard", "plant", "price", "seed", "seeds", "tree",
 ]);
-
-function validateMediaItem(item, label) {
+function validateMediaItem(item, label, { requireExactIdentity = false } = {}) {
   assert.ok(item.catalogId && item.title && item.file, `${label}: identity fields are required.`);
   assert.ok(!knownBadMediaFiles.has(item.file), `${label}: known incorrect image is still selected: ${item.file}`);
   assert.ok(allowedMime.has(item.mime), `${label}: unsupported image type ${item.mime}.`);
@@ -89,6 +88,13 @@ function validateMediaItem(item, label) {
     ["strict-identity-match", "clean-family-fallback", "reviewed-override"].includes(item.match),
     `${label}: unreviewed media match mode ${item.match}.`,
   );
+  if (requireExactIdentity) {
+    assert.notEqual(
+      item.match,
+      "clean-family-fallback",
+      `${label}: Batch 06 may only publish exact or explicitly reviewed identity evidence.`,
+    );
+  }
 
   if (mediaOverridesByCatalogId[item.catalogId]) {
     assert.equal(item.match, "reviewed-override", `${label}: configured reviewed override was not used.`);
@@ -115,18 +121,40 @@ function validateMediaItem(item, label) {
   assert.ok(!/\b(18\d{2}|19[0-5]\d)\b/.test(normalize(item.file)), `${label}: historical scan selected.`);
 }
 
+const batch06 = await readJson("../data/batches/batch-06.json");
+const ready06 = batch06.items.filter((item) => item.status === "ready");
 const reports = [
-  ["Batch 04", await readJson("../public/media-resolution-batch04.json")],
-  ["Batch 05", await readJson("../public/media-resolution-batch05.json")],
+  {
+    label: "Batch 04",
+    report: await readJson("../public/media-resolution-batch04.json"),
+    expectedCount: 100,
+    requireExactIdentity: false,
+  },
+  {
+    label: "Batch 05",
+    report: await readJson("../public/media-resolution-batch05.json"),
+    expectedCount: 100,
+    requireExactIdentity: false,
+  },
+  {
+    label: "Batch 06",
+    report: await readJson("../public/media-resolution-batch06.json"),
+    expectedCount: ready06.length,
+    requireExactIdentity: true,
+  },
 ];
 
 const exactMappings = new Set();
 let validated = 0;
-for (const [batchLabel, report] of reports) {
-  assert.equal(report.media?.length, 100, `${batchLabel}: expected 100 generated media selections.`);
+for (const { label: batchLabel, report, expectedCount, requireExactIdentity } of reports) {
+  assert.equal(
+    report.media?.length,
+    expectedCount,
+    `${batchLabel}: media selections must equal the ready lesson count.`,
+  );
   for (const item of report.media) {
     const label = `${batchLabel}/${item.order}/${item.title}`;
-    validateMediaItem(item, label);
+    validateMediaItem(item, label, { requireExactIdentity });
     const mapping = `${item.catalogId}:${item.storyId}`;
     assert.ok(!exactMappings.has(mapping), `${label}: duplicate image audit mapping.`);
     exactMappings.add(mapping);
@@ -134,6 +162,12 @@ for (const [batchLabel, report] of reports) {
   }
 }
 
+assert.deepEqual(
+  reports.at(-1).report.media.map((item) => item.catalogId).sort(),
+  ready06.map((item) => item.catalogId).sort(),
+  "Batch 06 media must map exactly to its ready manifest items.",
+);
+
 console.log(
-  `Validated ${validated} Batch 04–05 media selections for product-head identity, safe subject matter, dimensions, source host, and reviewed overrides.`,
+  `Validated ${validated} Batch 04–06 ready media selections for product-head identity, safe subject matter, dimensions, source host, and reviewed overrides.`,
 );
