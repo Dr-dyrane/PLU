@@ -39,9 +39,10 @@ const expected = [
   { id: "batch-02-must-know-25", size: 25 },
   { id: "batch-03-next-50", size: 50 },
   { id: "batch-04-next-100", size: 100 },
+  { id: "batch-05-next-100", size: 100 },
 ];
 
-assert.equal(batches.length, expected.length, "Expected four completed production batches.");
+assert.equal(batches.length, expected.length, "Expected five completed production batches.");
 
 const catalogById = new Map(catalog.map((record) => [record.id, record]));
 const storyByCatalogId = new Map(stories.map((story) => [story.catalogId, story]));
@@ -115,8 +116,8 @@ assert.equal(
   mappings.length,
   "Published batches may not duplicate exact product mappings.",
 );
-assert.equal(mappings.length, 200, "The published Must Know collection must contain 200 lessons.");
-assert.equal(stories.length, 200, "Every published mapping must have exactly one story or story seed.");
+assert.equal(mappings.length, 300, "The published Must Know collection must contain 300 lessons.");
+assert.equal(stories.length, 300, "Every published mapping must have exactly one story or story seed.");
 
 console.log(
   `Validated ${batches.length} completed batches, ${mappings.length} exact mappings, and ${stories.length} learning stories.`,
