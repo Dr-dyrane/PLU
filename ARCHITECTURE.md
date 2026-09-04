@@ -10,6 +10,17 @@ The application performs an exact catalog lookup:
 
 It never derives an assigned code from color, shape, category, or numerical proximity.
 
+## Catalog disposition model
+
+Every normalized source row has one explicit runtime disposition:
+
+- `ready`: one exact catalog code and reviewed recognition evidence produce a recall lesson;
+- `mapped`: the catalog relationship is exact, but ambiguity or missing recognition evidence prevents a one-answer lesson;
+- `queued`: identity or code evidence still needs source review;
+- `excluded`: the source row is retained for completeness but is outside produce learning.
+
+Only `ready` rows compile to `ProductStory` and `/learn/` routes. Mapped, queued, and excluded rows remain searchable reference records and cannot affect learned progress.
+
 ## Mnemonic compiler
 
 The deterministic rule is:

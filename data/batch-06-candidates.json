@@ -40,6 +40,28 @@
     "sourceOrder": 3
   },
   {
+    "catalogId": "apples-ambrosia-pc",
+    "title": "Apples - Ambrosia PC",
+    "code": "64749",
+    "family": "Apples",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Round apple",
+    "color": "Mixed red and yellow",
+    "imageQuery": "Ambrosia apple raw produce",
+    "cue": "Round apples with a mixed red-yellow blush anchor the Ambrosia identity.",
+    "group": "apples",
+    "sourcePages": [
+      5
+    ],
+    "flags": [
+      "sold-by-curated",
+      "retail-form-specific"
+    ],
+    "sourceItem": "Apples - Ambrosia PC",
+    "sourceOrder": 4
+  },
+  {
     "catalogId": "apples-gala-orchard-run",
     "title": "Apples - Gala (Orchard Run)",
     "code": "62021",
@@ -82,6 +104,28 @@
     ],
     "sourceItem": "Apples - Ginger Gold (Orchard Run)",
     "sourceOrder": 7
+  },
+  {
+    "catalogId": "apples-golden-delicious-pc",
+    "title": "Apples - Golden Delicious PC",
+    "code": "3005",
+    "family": "Apples",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Round golden apple",
+    "color": "Yellow",
+    "imageQuery": "Golden Delicious apple raw produce",
+    "cue": "A round yellow-gold apple anchors Golden Delicious.",
+    "group": "apples",
+    "sourcePages": [
+      5
+    ],
+    "flags": [
+      "sold-by-curated",
+      "retail-form-specific"
+    ],
+    "sourceItem": "Apples - Golden Delicious PC",
+    "sourceOrder": 8
   },
   {
     "catalogId": "apples-honeycrisp-orchard-run",
@@ -238,6 +282,50 @@
     "sourceOrder": 28
   },
   {
+    "catalogId": "beans-green-case",
+    "title": "Beans - Green (Case)",
+    "code": "6820",
+    "family": "Beans",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Long slender pods",
+    "color": "Green",
+    "imageQuery": "Green beans raw produce",
+    "cue": "Long slender green pods with pointed ends identify green beans.",
+    "group": "beans",
+    "sourcePages": [
+      4
+    ],
+    "flags": [
+      "sold-by-curated",
+      "retail-form-specific"
+    ],
+    "sourceItem": "Beans - Green (Case)",
+    "sourceOrder": 29
+  },
+  {
+    "catalogId": "beets-10lb",
+    "title": "Beets - 10lb",
+    "code": "6996",
+    "family": "Roots",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Round tapered root",
+    "color": "Red-purple",
+    "imageQuery": "Beets raw produce",
+    "cue": "Round red-purple beet roots provide the visible identity.",
+    "group": "roots",
+    "sourcePages": [
+      4
+    ],
+    "flags": [
+      "sold-by-curated",
+      "retail-form-specific"
+    ],
+    "sourceItem": "Beets - 10lb",
+    "sourceOrder": 30
+  },
+  {
     "catalogId": "blueberries-2lb",
     "title": "Blueberries - 2lb",
     "code": "39583",
@@ -260,6 +348,50 @@
     "sourceOrder": 32
   },
   {
+    "catalogId": "blueberries-full-pint-12oz",
+    "title": "Blueberries - Full Pint / 12oz",
+    "code": "424",
+    "family": "Berries",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Small soft berries",
+    "color": "Blue-purple",
+    "imageQuery": "Blueberries raw produce",
+    "cue": "Small round blue-purple berries with pale bloom identify blueberries.",
+    "group": "berries",
+    "sourcePages": [
+      5
+    ],
+    "flags": [
+      "sold-by-curated",
+      "retail-form-specific"
+    ],
+    "sourceItem": "Blueberries - Full Pint / 12oz",
+    "sourceOrder": 33
+  },
+  {
+    "catalogId": "blueberries-half-pint-6oz",
+    "title": "Blueberries - Half Pint / 6oz",
+    "code": "71305",
+    "family": "Berries",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Small soft berries",
+    "color": "Blue-purple",
+    "imageQuery": "Blueberries raw produce",
+    "cue": "Small round blue-purple berries with pale bloom identify blueberries.",
+    "group": "berries",
+    "sourcePages": [
+      5
+    ],
+    "flags": [
+      "sold-by-curated",
+      "retail-form-specific"
+    ],
+    "sourceItem": "Blueberries - Half Pint / 6oz",
+    "sourceOrder": 34
+  },
+  {
     "catalogId": "bok-choy-shanghai-jr",
     "title": "Bok Choy - Shanghai Jr",
     "code": "64388",
@@ -279,6 +411,28 @@
     ],
     "sourceItem": "Bok Choy - Shanghai Jr",
     "sourceOrder": 35
+  },
+  {
+    "catalogId": "carrots-jumbo-case",
+    "title": "Carrots - Jumbo (Case)",
+    "code": "63559",
+    "family": "Carrots",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Large tapered root",
+    "color": "Orange",
+    "imageQuery": "Jumbo carrot raw produce",
+    "cue": "A large orange tapered root anchors the jumbo-carrot identity.",
+    "group": "carrots",
+    "sourcePages": [
+      4
+    ],
+    "flags": [
+      "sold-by-curated",
+      "retail-form-specific"
+    ],
+    "sourceItem": "Carrots - Jumbo (Case)",
+    "sourceOrder": 38
   },
   {
     "catalogId": "cherries-rwb-organic",
@@ -366,6 +520,28 @@
     "sourceOrder": 46
   },
   {
+    "catalogId": "corn-tray-of-5",
+    "title": "Corn - Tray of 5",
+    "code": "5438",
+    "family": "Corn",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Long husked ear",
+    "color": "Yellow-green",
+    "imageQuery": "Corn raw produce",
+    "cue": "A fresh long ear with green husk and yellow kernels identifies corn.",
+    "group": "corn",
+    "sourcePages": [
+      4
+    ],
+    "flags": [
+      "sold-by-curated",
+      "retail-form-specific"
+    ],
+    "sourceItem": "Corn - Tray of 5",
+    "sourceOrder": 47
+  },
+  {
     "catalogId": "eggplant-purple-case",
     "title": "Eggplant - Purple (Case)",
     "code": "63582",
@@ -388,6 +564,27 @@
     "sourceOrder": 56
   },
   {
+    "catalogId": "figgs-black-case",
+    "title": "Figgs - Black (Case)",
+    "code": "2110",
+    "family": "Figs",
+    "soldBy": "Each",
+    "saleForm": "Single",
+    "form": "Soft teardrop fruit",
+    "color": "Black-purple",
+    "imageQuery": "Black fig raw produce",
+    "cue": "Soft dark teardrop fruit identifies a black fig.",
+    "group": "figs",
+    "sourcePages": [
+      1
+    ],
+    "flags": [
+      "retail-form-specific"
+    ],
+    "sourceItem": "Figgs - Black (Case)",
+    "sourceOrder": 58
+  },
+  {
     "catalogId": "figgs-green-case",
     "title": "Figgs - Green (Case)",
     "code": "6799",
@@ -407,6 +604,72 @@
     ],
     "sourceItem": "Figgs - Green (Case)",
     "sourceOrder": 59
+  },
+  {
+    "catalogId": "figs-black-case",
+    "title": "Figs - Black (Case)",
+    "code": "13491",
+    "family": "Figs",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Soft teardrop fruit",
+    "color": "Black-purple",
+    "imageQuery": "Black fig raw produce",
+    "cue": "Soft dark teardrop fruit identifies a black fig.",
+    "group": "figs",
+    "sourcePages": [
+      5
+    ],
+    "flags": [
+      "sold-by-curated",
+      "retail-form-specific"
+    ],
+    "sourceItem": "Figs - Black (Case)",
+    "sourceOrder": 60
+  },
+  {
+    "catalogId": "figs-black-227g-pint",
+    "title": "Figs - Black 227g (Pint)",
+    "code": "58206",
+    "family": "Figs",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Soft teardrop fruit",
+    "color": "Black-purple",
+    "imageQuery": "Black fig raw produce",
+    "cue": "Soft dark teardrop fruit identifies a black fig.",
+    "group": "figs",
+    "sourcePages": [
+      5
+    ],
+    "flags": [
+      "sold-by-curated",
+      "retail-form-specific"
+    ],
+    "sourceItem": "Figs - Black 227g (Pint)",
+    "sourceOrder": 61
+  },
+  {
+    "catalogId": "figs-green-case",
+    "title": "Figs - Green (Case)",
+    "code": "3536",
+    "family": "Figs",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Soft teardrop fruit",
+    "color": "Green",
+    "imageQuery": "Green fig raw produce",
+    "cue": "Several green teardrop-shaped figs provide the visible identity.",
+    "group": "figs",
+    "sourcePages": [
+      5
+    ],
+    "flags": [
+      "sold-by-curated",
+      "retail-form-specific"
+    ],
+    "sourceItem": "Figs - Green (Case)",
+    "sourceOrder": 62
   },
   {
     "catalogId": "garlic-1kg-bagged",
@@ -584,6 +847,27 @@
     "sourceOrder": 80
   },
   {
+    "catalogId": "mangos-ataulfo-case",
+    "title": "Mangos - Ataulfo (Case)",
+    "code": "1043",
+    "family": "Mangoes",
+    "soldBy": "Each",
+    "saleForm": "Single",
+    "form": "Small curved mango",
+    "color": "Yellow",
+    "imageQuery": "Ataulfo mango raw produce",
+    "cue": "Small curved yellow mangoes identify Ataulfo.",
+    "group": "mangoes",
+    "sourcePages": [
+      2
+    ],
+    "flags": [
+      "retail-form-specific"
+    ],
+    "sourceItem": "Mangos - Ataulfo (Case)",
+    "sourceOrder": 82
+  },
+  {
     "catalogId": "mangos-east-indian-case",
     "title": "Mangos - East Indian (Case)",
     "code": "12966",
@@ -603,6 +887,25 @@
     ],
     "sourceItem": "Mangos - East Indian (Case)",
     "sourceOrder": 83
+  },
+  {
+    "catalogId": "melons-bitter-fu-qua",
+    "title": "Melons - Bitter (Fu Qua)",
+    "code": "4783",
+    "family": "Squash",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Ridged oblong gourd",
+    "color": "Green",
+    "imageQuery": "Bitter melon raw produce",
+    "cue": "A deeply ridged oblong green gourd identifies bitter melon, also called Fu Qua.",
+    "group": "squash",
+    "sourcePages": [
+      2,
+      4
+    ],
+    "sourceItem": "Melons - Bitter (Fu Qua)",
+    "sourceOrder": 86
   },
   {
     "catalogId": "melons-cantaloupe-organic",
@@ -668,6 +971,28 @@
     ],
     "sourceItem": "Onions - Yellow 3lb (Bag)",
     "sourceOrder": 102
+  },
+  {
+    "catalogId": "onions-yellow-jumbo-2-case",
+    "title": "Onions - Yellow Jumbo #2 (Case)",
+    "code": "63555",
+    "family": "Alliums",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Round layered bulb",
+    "color": "Yellow",
+    "imageQuery": "Yellow onion raw produce",
+    "cue": "Round yellow-brown papery layered bulbs identify yellow onions.",
+    "group": "alliums",
+    "sourcePages": [
+      4
+    ],
+    "flags": [
+      "sold-by-curated",
+      "retail-form-specific"
+    ],
+    "sourceItem": "Onions - Yellow Jumbo #2 (Case)",
+    "sourceOrder": 103
   },
   {
     "catalogId": "onions-yellow-organic-2lb",
@@ -736,6 +1061,28 @@
     "sourceOrder": 113
   },
   {
+    "catalogId": "peaches-freestone-case",
+    "title": "Peaches - Freestone (Case)",
+    "code": "13241",
+    "family": "Peaches",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Fuzzy round stone fruit",
+    "color": "Yellow-red",
+    "imageQuery": "Peaches raw produce",
+    "cue": "Whole fuzzy round yellow-red fruit anchors peach identity.",
+    "group": "peaches",
+    "sourcePages": [
+      5
+    ],
+    "flags": [
+      "sold-by-curated",
+      "retail-form-specific"
+    ],
+    "sourceItem": "Peaches - Freestone (Case)",
+    "sourceOrder": 114
+  },
+  {
     "catalogId": "peaches-tree-ripe-case",
     "title": "Peaches - Tree Ripe (Case)",
     "code": "6808",
@@ -778,6 +1125,28 @@
     ],
     "sourceItem": "Pears - Bartlett 3lb (Organic)",
     "sourceOrder": 117
+  },
+  {
+    "catalogId": "pears-bartlett-5lb-bag",
+    "title": "Pears - Bartlett 5lb (Bag)",
+    "code": "63487",
+    "family": "Pears",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Classic bell-shaped pear",
+    "color": "Yellow",
+    "imageQuery": "Bartlett pear raw produce",
+    "cue": "The classic bell-shaped yellow pear anchors Bartlett identity.",
+    "group": "pears",
+    "sourcePages": [
+      5
+    ],
+    "flags": [
+      "sold-by-curated",
+      "retail-form-specific"
+    ],
+    "sourceItem": "Pears - Bartlett 5lb (Bag)",
+    "sourceOrder": 118
   },
   {
     "catalogId": "peppers-assorted-bin",
@@ -955,6 +1324,50 @@
     "sourceOrder": 135
   },
   {
+    "catalogId": "potato-red-10lb",
+    "title": "Potato - Red 10lb",
+    "code": "2674",
+    "family": "Potatoes",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Round waxy tuber",
+    "color": "Red",
+    "imageQuery": "Red potato raw produce",
+    "cue": "A compact round tuber with smooth red skin identifies a red potato.",
+    "group": "potatoes",
+    "sourcePages": [
+      4
+    ],
+    "flags": [
+      "sold-by-curated",
+      "retail-form-specific"
+    ],
+    "sourceItem": "Potato - Red 10lb",
+    "sourceOrder": 136
+  },
+  {
+    "catalogId": "potato-red-20lb",
+    "title": "Potato - Red 20lb",
+    "code": "2116",
+    "family": "Potatoes",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Round waxy tuber",
+    "color": "Red",
+    "imageQuery": "Red potato raw produce",
+    "cue": "A compact round tuber with smooth red skin identifies a red potato.",
+    "group": "potatoes",
+    "sourcePages": [
+      4
+    ],
+    "flags": [
+      "sold-by-curated",
+      "retail-form-specific"
+    ],
+    "sourceItem": "Potato - Red 20lb",
+    "sourceOrder": 137
+  },
+  {
     "catalogId": "potato-russet-white-20lb",
     "title": "Potato - Russet / White 20lb",
     "code": "62006",
@@ -997,6 +1410,72 @@
     ],
     "sourceItem": "Potato - Russet 10lb",
     "sourceOrder": 139
+  },
+  {
+    "catalogId": "potato-white-10lb",
+    "title": "Potato - White 10lb",
+    "code": "41",
+    "family": "Potatoes",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Round smooth tuber",
+    "color": "White",
+    "imageQuery": "White potato raw produce",
+    "cue": "A round smooth cream-white tuber identifies a white potato.",
+    "group": "potatoes",
+    "sourcePages": [
+      4
+    ],
+    "flags": [
+      "sold-by-curated",
+      "retail-form-specific"
+    ],
+    "sourceItem": "Potato - White 10lb",
+    "sourceOrder": 141
+  },
+  {
+    "catalogId": "potato-yellow-10lb",
+    "title": "Potato - Yellow 10lb",
+    "code": "1093",
+    "family": "Potatoes",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Round smooth potato",
+    "color": "Yellow-tan",
+    "imageQuery": "Yellow potato raw produce",
+    "cue": "Round smooth yellow-tan potatoes provide the yellow-potato visual anchor.",
+    "group": "potatoes",
+    "sourcePages": [
+      4
+    ],
+    "flags": [
+      "sold-by-curated",
+      "retail-form-specific"
+    ],
+    "sourceItem": "Potato - Yellow 10lb",
+    "sourceOrder": 142
+  },
+  {
+    "catalogId": "prickly-pears-tray-case",
+    "title": "Prickly Pears (Tray / Case)",
+    "code": "6798",
+    "family": "Tropical Fruit",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Oval cactus fruit",
+    "color": "Red-green",
+    "imageQuery": "Prickly pear raw produce",
+    "cue": "Oval red-green cactus fruit with small areoles identifies prickly pear.",
+    "group": "tropical-fruit",
+    "sourcePages": [
+      2,
+      5
+    ],
+    "flags": [
+      "retail-form-specific"
+    ],
+    "sourceItem": "Prickly Pears (Tray / Case)",
+    "sourceOrder": 143
   },
   {
     "catalogId": "tomato-fm-on-the-vine-bulk",

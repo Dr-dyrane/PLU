@@ -15,6 +15,7 @@ const responsiveCss = await readFile(new URL("../app/styles/canon/responsive.css
 const lessonCss = await readFile(new URL("../app/styles/canon/lesson.css", import.meta.url), "utf8");
 const sheetCss = await readFile(new URL("../app/styles/canon/sheet.css", import.meta.url), "utf8");
 const batchCss = await readFile(new URL("../app/styles/canon/batch.css", import.meta.url), "utf8");
+const batchDispositionCss = await readFile(new URL("../app/styles/canon/batch-dispositions.css", import.meta.url), "utf8");
 const navigationCss = await readFile(new URL("../app/styles/canon/navigation.css", import.meta.url), "utf8");
 const appearanceCss = await readFile(new URL("../app/styles/canon/appearance.css", import.meta.url), "utf8");
 const footerCss = await readFile(new URL("../app/styles/canon/footer.css", import.meta.url), "utf8");
@@ -60,6 +61,10 @@ for (const required of [
   "batchCategoryRail",
   "HomeFilterSheet",
   "Needs source review",
+  "Mapped, not quizzed",
+  "Catalog only",
+  'learning === "mapped"',
+  'learning === "excluded"',
   "item.queueReason",
 ]) {
   assert.ok(home.includes(required), `Home discovery is missing ${required}.`);
@@ -93,7 +98,7 @@ for (const required of ["Back to products", "router.back()", 'href="/"']) {
   assert.ok(routeShell.includes(required), `Lesson navigation is missing ${required}.`);
 }
 
-for (const required of ["aria-modal", "Escape", "How it is sold", "Learning"]) {
+for (const required of ["aria-modal", "Escape", "How it is sold", "Learning", "Mapped reference", "Catalog only"]) {
   assert.ok(homeFilters.includes(required), `Filter sheet is missing ${required}.`);
 }
 
@@ -111,6 +116,10 @@ assert.ok(navigationCss.includes("body") && navigationCss.includes("overflow-y: 
 assert.ok(navigationCss.includes(".app") && navigationCss.includes("overflow: hidden"), "Lesson containment must remain local to the app shell.");
 assert.ok(navigationCss.includes(".lessonBackButton"), "Back-to-products control styles missing.");
 assert.ok(batchCss.includes(".batchSearch") && batchCss.includes(".homeFilterSheet"), "Search and filter styles missing.");
+assert.ok(
+  batchDispositionCss.includes(".batchMappedCard") && batchDispositionCss.includes(".batchExcludedCard"),
+  "Mapped and catalog-only disposition styles are missing.",
+);
 assert.ok(appearanceCss.includes('html[data-theme="light"]') && appearanceCss.includes('html[data-theme="dark"]'), "Both appearance modes are required.");
 assert.ok(appearanceCss.includes("--on-accent") && appearanceCss.includes("--accent-on-photo"), "Semantic foreground tokens are required.");
 assert.ok(appearanceCss.includes("--success-fill") && appearanceCss.includes("--warning-fill"), "Feedback colors must remain semantic.");

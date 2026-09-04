@@ -40,24 +40,25 @@
     "media": {
       "not-applicable": 12,
       "reviewed-candidate": 32,
-      "reviewed-source": 53,
-      "source-required": 78
+      "reviewed-reuse-candidate": 22,
+      "reviewed-source": 75,
+      "source-required": 34
     },
     "publishability": {
-      "blocked": 110,
-      "out-of-scope": 12,
-      "ready": 53
+      "blocked": 49,
+      "excluded": 12,
+      "mapped": 39,
+      "ready": 75
     },
     "nextActions": {
       "adjudicate-source-identity": 26,
       "capture-checkout-code-evidence": 9,
-      "decide-lesson-deduplication": 1,
       "keep-out-of-produce-lessons": 12,
-      "none": 53,
+      "none": 75,
       "reconcile-code-mapping": 32,
       "separate-store-barcode-from-plu": 1,
       "source-and-review-recognition-media": 10,
-      "verify-retail-unit-and-code": 31
+      "verify-retail-unit-and-code": 10
     }
   },
   "items": [
@@ -191,6 +192,7 @@
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": null,
       "publishability": {
         "status": "ready",
         "blockers": [],
@@ -302,7 +304,7 @@
         "packageSignals": []
       },
       "mediaPlan": {
-        "status": "source-required",
+        "status": "reviewed-reuse-candidate",
         "query": "Aloe Vera Thick tapered succulent leaves",
         "target": {
           "identity": "Aloe Vera",
@@ -310,13 +312,31 @@
           "color": "Green",
           "retailForm": "Loose"
         },
-        "source": null,
+        "source": {
+          "provenance": "data/batch-06-media-reuse.json",
+          "file": "Aloe vera for sale.jpg",
+          "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Aloe_vera_for_sale.jpg?width=1600",
+          "match": "reviewed-reuse-candidate",
+          "recognitionMode": "label-assisted",
+          "reviewReason": "The already-reviewed retail photograph clearly shows Aloe vera leaves; handwriting status is source provenance, not a pixel claim.",
+          "labelClaims": [
+            {
+              "value": "(handwritten)",
+              "basis": "workbook-label",
+              "sourceField": "catalog.item",
+              "sourcePages": [
+                5
+              ]
+            }
+          ]
+        },
         "acceptance": [
           "Metadata must identify the exact product or a reviewed synonym.",
           "Visible form and identity-bearing modifiers must match the learner title.",
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": null,
       "publishability": {
         "status": "blocked",
         "blockers": [
@@ -329,11 +349,6 @@
             "domain": "code",
             "code": "missing-checkout-code",
             "detail": "The immutable catalog contains no numeric code for this row."
-          },
-          {
-            "domain": "media",
-            "code": "media-evidence-required",
-            "detail": "No human-reviewed recognition source is attached to this exact row."
           }
         ],
         "nextAction": {
@@ -484,6 +499,7 @@
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": null,
       "publishability": {
         "status": "ready",
         "blockers": [],
@@ -524,7 +540,7 @@
       "identityEvidence": {
         "status": "interpreted",
         "title": {
-          "value": "Ambrosia PC apple",
+          "value": "Apples - Ambrosia PC",
           "basis": "taxonomy-helper",
           "sourceFields": [
             "catalog.item"
@@ -604,38 +620,48 @@
         ]
       },
       "mediaPlan": {
-        "status": "source-required",
-        "query": "Ambrosia PC apple Round apple",
+        "status": "reviewed-source",
+        "query": "Apples - Ambrosia PC Round apple",
         "target": {
-          "identity": "Ambrosia PC apple",
+          "identity": "Apples - Ambrosia PC",
           "visibleForm": "Round apple",
           "color": "Mixed",
           "retailForm": "Loose"
         },
-        "source": null,
+        "source": {
+          "provenance": "public/media-resolution-batch06.json",
+          "file": "Ambrosia apples 2017 A2.jpg",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/Ambrosia_apples_2017_A2.jpg/1920px-Ambrosia_apples_2017_A2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "match": "reviewed-override",
+          "recognitionMode": "label-assisted",
+          "labelClaims": [
+            {
+              "value": "PC",
+              "basis": "workbook-label",
+              "sourceField": "catalog.item",
+              "sourcePages": [
+                5
+              ]
+            }
+          ]
+        },
         "acceptance": [
           "Metadata must identify the exact product or a reviewed synonym.",
           "Visible form and identity-bearing modifiers must match the learner title.",
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": {
+        "status": "mapped",
+        "relationKind": "single",
+        "reviewBasis": "The catalog records one checkout code for an interpreted in-scope produce identity."
+      },
       "publishability": {
-        "status": "blocked",
-        "blockers": [
-          {
-            "domain": "retail",
-            "code": "retail-package-evidence-required",
-            "detail": "The named package, case, bin, quantity, or processed form needs exact retail evidence."
-          },
-          {
-            "domain": "media",
-            "code": "media-evidence-required",
-            "detail": "No human-reviewed recognition source is attached to this exact row."
-          }
-        ],
+        "status": "ready",
+        "blockers": [],
         "nextAction": {
-          "type": "verify-retail-unit-and-code",
-          "description": "Capture the exact package, case, bin, or quantity and verify that its code belongs to that retail unit."
+          "type": "none",
+          "description": "All current identity, code, retail, and media gates are satisfied."
         }
       }
     },
@@ -791,8 +817,13 @@
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": {
+        "status": "mapped",
+        "relationKind": "same-label-different-codes",
+        "reviewBasis": "The exact catalog label carries multiple recorded checkout codes; preserve the complete mapping without selecting a synthetic primary code."
+      },
       "publishability": {
-        "status": "blocked",
+        "status": "mapped",
         "blockers": [
           {
             "domain": "code",
@@ -955,6 +986,7 @@
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": null,
       "publishability": {
         "status": "ready",
         "blockers": [],
@@ -1106,6 +1138,7 @@
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": null,
       "publishability": {
         "status": "ready",
         "blockers": [],
@@ -1146,7 +1179,7 @@
       "identityEvidence": {
         "status": "interpreted",
         "title": {
-          "value": "Golden Delicious PC apple",
+          "value": "Apples - Golden Delicious PC",
           "basis": "taxonomy-helper",
           "sourceFields": [
             "catalog.item"
@@ -1226,38 +1259,48 @@
         ]
       },
       "mediaPlan": {
-        "status": "source-required",
-        "query": "Golden Delicious PC apple Round apple",
+        "status": "reviewed-source",
+        "query": "Apples - Golden Delicious PC Round apple",
         "target": {
-          "identity": "Golden Delicious PC apple",
+          "identity": "Apples - Golden Delicious PC",
           "visibleForm": "Round apple",
           "color": "Golden",
           "retailForm": "Loose"
         },
-        "source": null,
+        "source": {
+          "provenance": "public/media-resolution-batch06.json",
+          "file": "Golden delicious apple.jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/3/35/Golden_delicious_apple.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "match": "reviewed-override",
+          "recognitionMode": "label-assisted",
+          "labelClaims": [
+            {
+              "value": "PC",
+              "basis": "workbook-label",
+              "sourceField": "catalog.item",
+              "sourcePages": [
+                5
+              ]
+            }
+          ]
+        },
         "acceptance": [
           "Metadata must identify the exact product or a reviewed synonym.",
           "Visible form and identity-bearing modifiers must match the learner title.",
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": {
+        "status": "mapped",
+        "relationKind": "single",
+        "reviewBasis": "The catalog records one checkout code for an interpreted in-scope produce identity."
+      },
       "publishability": {
-        "status": "blocked",
-        "blockers": [
-          {
-            "domain": "retail",
-            "code": "retail-package-evidence-required",
-            "detail": "The named package, case, bin, quantity, or processed form needs exact retail evidence."
-          },
-          {
-            "domain": "media",
-            "code": "media-evidence-required",
-            "detail": "No human-reviewed recognition source is attached to this exact row."
-          }
-        ],
+        "status": "ready",
+        "blockers": [],
         "nextAction": {
-          "type": "verify-retail-unit-and-code",
-          "description": "Capture the exact package, case, bin, or quantity and verify that its code belongs to that retail unit."
+          "type": "none",
+          "description": "All current identity, code, retail, and media gates are satisfied."
         }
       }
     },
@@ -1403,6 +1446,7 @@
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": null,
       "publishability": {
         "status": "ready",
         "blockers": [],
@@ -1538,8 +1582,13 @@
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": {
+        "status": "mapped",
+        "relationKind": "single",
+        "reviewBasis": "The catalog records one checkout code for an interpreted in-scope produce identity."
+      },
       "publishability": {
-        "status": "blocked",
+        "status": "mapped",
         "blockers": [
           {
             "domain": "retail",
@@ -1686,6 +1735,7 @@
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": null,
       "publishability": {
         "status": "blocked",
         "blockers": [
@@ -1853,6 +1903,7 @@
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": null,
       "publishability": {
         "status": "ready",
         "blockers": [],
@@ -1973,7 +2024,7 @@
         "packageSignals": []
       },
       "mediaPlan": {
-        "status": "source-required",
+        "status": "reviewed-reuse-candidate",
         "query": "McIntosh Extra Fancy apple Round apple",
         "target": {
           "identity": "McIntosh Extra Fancy apple",
@@ -1981,13 +2032,31 @@
           "color": "Mixed",
           "retailForm": "Loose"
         },
-        "source": null,
+        "source": {
+          "provenance": "data/batch-06-media-reuse.json",
+          "file": "McIntosh Apples.jpg",
+          "url": "https://commons.wikimedia.org/wiki/Special:FilePath/McIntosh_Apples.jpg?width=1600",
+          "match": "reviewed-reuse-candidate",
+          "recognitionMode": "label-assisted",
+          "reviewReason": "The reviewed McIntosh image supports product identity; Extra Fancy is a workbook grade and is not assigned from appearance.",
+          "labelClaims": [
+            {
+              "value": "Extra Fancy",
+              "basis": "workbook-label",
+              "sourceField": "catalog.item",
+              "sourcePages": [
+                5
+              ]
+            }
+          ]
+        },
         "acceptance": [
           "Metadata must identify the exact product or a reviewed synonym.",
           "Visible form and identity-bearing modifiers must match the learner title.",
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": null,
       "publishability": {
         "status": "blocked",
         "blockers": [
@@ -1995,11 +2064,6 @@
             "domain": "code",
             "code": "conflicting-code-mapping",
             "detail": "The same code is attached to another catalog identity or published lesson."
-          },
-          {
-            "domain": "media",
-            "code": "media-evidence-required",
-            "detail": "No human-reviewed recognition source is attached to this exact row."
           }
         ],
         "nextAction": {
@@ -2138,8 +2202,13 @@
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": {
+        "status": "mapped",
+        "relationKind": "same-label-different-codes",
+        "reviewBasis": "The exact catalog label appears with another recorded checkout code; preserve both source mappings instead of treating one as a replacement."
+      },
       "publishability": {
-        "status": "blocked",
+        "status": "mapped",
         "blockers": [
           {
             "domain": "code",
@@ -2290,8 +2359,13 @@
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": {
+        "status": "mapped",
+        "relationKind": "same-label-different-codes",
+        "reviewBasis": "The exact catalog label appears with another recorded checkout code; preserve both source mappings instead of treating one as a replacement."
+      },
       "publishability": {
-        "status": "blocked",
+        "status": "mapped",
         "blockers": [
           {
             "domain": "code",
@@ -2466,6 +2540,7 @@
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": null,
       "publishability": {
         "status": "ready",
         "blockers": [],
@@ -2617,6 +2692,7 @@
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": null,
       "publishability": {
         "status": "ready",
         "blockers": [],
@@ -2756,8 +2832,13 @@
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": {
+        "status": "mapped",
+        "relationKind": "same-label-different-codes",
+        "reviewBasis": "The exact catalog label appears with another recorded checkout code; preserve both source mappings instead of treating one as a replacement."
+      },
       "publishability": {
-        "status": "blocked",
+        "status": "mapped",
         "blockers": [
           {
             "domain": "code",
@@ -2885,7 +2966,7 @@
         "packageSignals": []
       },
       "mediaPlan": {
-        "status": "source-required",
+        "status": "reviewed-reuse-candidate",
         "query": "Small artichoke Compact layered flower bud",
         "target": {
           "identity": "Small artichoke",
@@ -2893,13 +2974,41 @@
           "color": "Green",
           "retailForm": "Single"
         },
-        "source": null,
+        "source": {
+          "provenance": "data/batch-06-media-reuse.json",
+          "file": "Artichoke stack.JPG",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/Artichoke_stack.JPG/1920px-Artichoke_stack.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "match": "reviewed-reuse-candidate",
+          "recognitionMode": "label-assisted",
+          "reviewReason": "The photograph clearly anchors artichoke identity; Small and the handwritten source status stay label-assisted because the crop has no reliable scale.",
+          "labelClaims": [
+            {
+              "value": "Small",
+              "basis": "workbook-label",
+              "sourceField": "catalog.item",
+              "sourcePages": [
+                1,
+                4
+              ]
+            },
+            {
+              "value": "(handwritten)",
+              "basis": "workbook-label",
+              "sourceField": "catalog.item",
+              "sourcePages": [
+                1,
+                4
+              ]
+            }
+          ]
+        },
         "acceptance": [
           "Metadata must identify the exact product or a reviewed synonym.",
           "Visible form and identity-bearing modifiers must match the learner title.",
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": null,
       "publishability": {
         "status": "blocked",
         "blockers": [
@@ -2912,11 +3021,6 @@
             "domain": "code",
             "code": "conflicting-code-mapping",
             "detail": "The same code is attached to another catalog identity or published lesson."
-          },
-          {
-            "domain": "media",
-            "code": "media-evidence-required",
-            "detail": "No human-reviewed recognition source is attached to this exact row."
           }
         ],
         "nextAction": {
@@ -3055,6 +3159,7 @@
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": null,
       "publishability": {
         "status": "blocked",
         "blockers": [
@@ -3210,6 +3315,7 @@
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": null,
       "publishability": {
         "status": "blocked",
         "blockers": [
@@ -3359,6 +3465,7 @@
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": null,
       "publishability": {
         "status": "blocked",
         "blockers": [
@@ -3534,6 +3641,7 @@
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": null,
       "publishability": {
         "status": "ready",
         "blockers": [],
@@ -3685,6 +3793,7 @@
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": null,
       "publishability": {
         "status": "ready",
         "blockers": [],
@@ -3822,6 +3931,7 @@
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": null,
       "publishability": {
         "status": "blocked",
         "blockers": [
@@ -3979,6 +4089,7 @@
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": null,
       "publishability": {
         "status": "blocked",
         "blockers": [
@@ -4107,7 +4218,7 @@
         ]
       },
       "mediaPlan": {
-        "status": "source-required",
+        "status": "reviewed-reuse-candidate",
         "query": "Bartlett pear — orchard run Mixed-size bell-shaped pears",
         "target": {
           "identity": "Bartlett pear — orchard run",
@@ -4115,13 +4226,39 @@
           "color": "Green and Yellow",
           "retailForm": "Orchard bin"
         },
-        "source": null,
+        "source": {
+          "provenance": "data/batch-06-media-reuse.json",
+          "file": "Bartlett pear.jpg",
+          "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Bartlett_pear.jpg?width=1600",
+          "match": "reviewed-reuse-candidate",
+          "recognitionMode": "label-assisted",
+          "reviewReason": "The existing Bartlett image anchors the pear identity; orchard-run grade and the obscured-word note remain exact workbook claims.",
+          "labelClaims": [
+            {
+              "value": "Orchard Run",
+              "basis": "workbook-label",
+              "sourceField": "catalog.item",
+              "sourcePages": [
+                5
+              ]
+            },
+            {
+              "value": "(first word obscured)",
+              "basis": "workbook-label",
+              "sourceField": "catalog.item",
+              "sourcePages": [
+                5
+              ]
+            }
+          ]
+        },
         "acceptance": [
           "Metadata must identify the exact product or a reviewed synonym.",
           "Visible form and identity-bearing modifiers must match the learner title.",
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": null,
       "publishability": {
         "status": "blocked",
         "blockers": [
@@ -4129,16 +4266,6 @@
             "domain": "identity",
             "code": "identity-source-review",
             "detail": "Handwritten, obscured, or separately excluded source wording needs adjudication."
-          },
-          {
-            "domain": "retail",
-            "code": "retail-package-evidence-required",
-            "detail": "The named package, case, bin, quantity, or processed form needs exact retail evidence."
-          },
-          {
-            "domain": "media",
-            "code": "media-evidence-required",
-            "detail": "No human-reviewed recognition source is attached to this exact row."
           }
         ],
         "nextAction": {
@@ -4289,6 +4416,7 @@
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": null,
       "publishability": {
         "status": "ready",
         "blockers": [],
@@ -4329,7 +4457,7 @@
       "identityEvidence": {
         "status": "interpreted",
         "title": {
-          "value": "Green beans",
+          "value": "Beans - Green (Case)",
           "basis": "taxonomy-helper",
           "sourceFields": [
             "catalog.item"
@@ -4409,43 +4537,49 @@
         ]
       },
       "mediaPlan": {
-        "status": "source-required",
-        "query": "Green beans Slender pods",
+        "status": "reviewed-source",
+        "query": "Beans - Green (Case) Slender pods",
         "target": {
-          "identity": "Green beans",
+          "identity": "Beans - Green (Case)",
           "visibleForm": "Slender pods",
           "color": "Green",
           "retailForm": "Loose"
         },
-        "source": null,
+        "source": {
+          "provenance": "public/media-resolution-batch06.json",
+          "file": "Green-beans.jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Green-beans.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "match": "reviewed-override",
+          "recognitionMode": "label-assisted",
+          "labelClaims": [
+            {
+              "value": "Case",
+              "basis": "workbook-label",
+              "sourceField": "catalog.item",
+              "sourcePages": [
+                4
+              ]
+            }
+          ]
+        },
         "acceptance": [
           "Metadata must identify the exact product or a reviewed synonym.",
           "Visible form and identity-bearing modifiers must match the learner title.",
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": {
+        "status": "mapped",
+        "relationKind": "single",
+        "reviewBasis": "The catalog records one checkout code; the exact catalog label preserves the case distinction from the existing lesson title.",
+        "lessonTitle": "Beans - Green (Case)"
+      },
       "publishability": {
-        "status": "blocked",
-        "blockers": [
-          {
-            "domain": "retail",
-            "code": "retail-package-evidence-required",
-            "detail": "The named package, case, bin, quantity, or processed form needs exact retail evidence."
-          },
-          {
-            "domain": "publishability",
-            "code": "duplicate-lesson-title",
-            "detail": "A published lesson already uses this normalized title."
-          },
-          {
-            "domain": "media",
-            "code": "media-evidence-required",
-            "detail": "No human-reviewed recognition source is attached to this exact row."
-          }
-        ],
+        "status": "ready",
+        "blockers": [],
         "nextAction": {
-          "type": "verify-retail-unit-and-code",
-          "description": "Capture the exact package, case, bin, or quantity and verify that its code belongs to that retail unit."
+          "type": "none",
+          "description": "All current identity, code, retail, and media gates are satisfied."
         }
       }
     },
@@ -4480,7 +4614,7 @@
       "identityEvidence": {
         "status": "interpreted",
         "title": {
-          "value": "Beets",
+          "value": "Beets - 10lb",
           "basis": "taxonomy-helper",
           "sourceFields": [
             "catalog.item"
@@ -4560,38 +4694,48 @@
         ]
       },
       "mediaPlan": {
-        "status": "source-required",
-        "query": "Beets Round root",
+        "status": "reviewed-source",
+        "query": "Beets - 10lb Round root",
         "target": {
-          "identity": "Beets",
+          "identity": "Beets - 10lb",
           "visibleForm": "Round root",
           "color": "Red-purple",
           "retailForm": "Loose"
         },
-        "source": null,
+        "source": {
+          "provenance": "public/media-resolution-batch06.json",
+          "file": "Beets-Bundle.jpg",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Beets-Bundle.jpg/1920px-Beets-Bundle.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "match": "reviewed-override",
+          "recognitionMode": "label-assisted",
+          "labelClaims": [
+            {
+              "value": "10lb",
+              "basis": "workbook-label",
+              "sourceField": "catalog.item",
+              "sourcePages": [
+                4
+              ]
+            }
+          ]
+        },
         "acceptance": [
           "Metadata must identify the exact product or a reviewed synonym.",
           "Visible form and identity-bearing modifiers must match the learner title.",
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": {
+        "status": "mapped",
+        "relationKind": "single",
+        "reviewBasis": "The catalog records one checkout code for an interpreted in-scope produce identity."
+      },
       "publishability": {
-        "status": "blocked",
-        "blockers": [
-          {
-            "domain": "retail",
-            "code": "retail-package-evidence-required",
-            "detail": "The named package, case, bin, quantity, or processed form needs exact retail evidence."
-          },
-          {
-            "domain": "media",
-            "code": "media-evidence-required",
-            "detail": "No human-reviewed recognition source is attached to this exact row."
-          }
-        ],
+        "status": "ready",
+        "blockers": [],
         "nextAction": {
-          "type": "verify-retail-unit-and-code",
-          "description": "Capture the exact package, case, bin, or quantity and verify that its code belongs to that retail unit."
+          "type": "none",
+          "description": "All current identity, code, retail, and media gates are satisfied."
         }
       }
     },
@@ -4722,8 +4866,13 @@
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": {
+        "status": "mapped",
+        "relationKind": "single",
+        "reviewBasis": "The catalog records one checkout code for an interpreted in-scope produce identity."
+      },
       "publishability": {
-        "status": "blocked",
+        "status": "mapped",
         "blockers": [
           {
             "domain": "retail",
@@ -4884,6 +5033,7 @@
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": null,
       "publishability": {
         "status": "ready",
         "blockers": [],
@@ -4924,7 +5074,7 @@
       "identityEvidence": {
         "status": "interpreted",
         "title": {
-          "value": "Full Pint / 12oz berries",
+          "value": "Blueberries - Full Pint / 12oz",
           "basis": "taxonomy-helper",
           "sourceFields": [
             "catalog.item"
@@ -5005,38 +5155,56 @@
         ]
       },
       "mediaPlan": {
-        "status": "source-required",
-        "query": "Full Pint / 12oz berries Small soft berries",
+        "status": "reviewed-source",
+        "query": "Blueberries - Full Pint / 12oz Small soft berries",
         "target": {
-          "identity": "Full Pint / 12oz berries",
+          "identity": "Blueberries - Full Pint / 12oz",
           "visibleForm": "Small soft berries",
           "color": "Mixed",
           "retailForm": "Loose"
         },
-        "source": null,
+        "source": {
+          "provenance": "public/media-resolution-batch06.json",
+          "file": "A generous handful of blueberries depicts the rich abundance of berries that may be found in Alaskan areas. (d84880d1-1dd8-b71b-0b3d-6380eca4c663).jpg",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/A_generous_handful_of_blueberries_depicts_the_rich_abundance_of_berries_that_may_be_found_in_Alaskan_areas._%28d84880d1-1dd8-b71b-0b3d-6380eca4c663%29.jpg/1920px-A_generous_handful_of_blueberries_depicts_the_rich_abundance_of_berries_that_may_be_found_in_Alaskan_areas._%28d84880d1-1dd8-b71b-0b3d-6380eca4c663%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "match": "reviewed-override",
+          "recognitionMode": "label-assisted",
+          "labelClaims": [
+            {
+              "value": "Full Pint",
+              "basis": "workbook-label",
+              "sourceField": "catalog.item",
+              "sourcePages": [
+                5
+              ]
+            },
+            {
+              "value": "12oz",
+              "basis": "workbook-label",
+              "sourceField": "catalog.item",
+              "sourcePages": [
+                5
+              ]
+            }
+          ]
+        },
         "acceptance": [
           "Metadata must identify the exact product or a reviewed synonym.",
           "Visible form and identity-bearing modifiers must match the learner title.",
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": {
+        "status": "mapped",
+        "relationKind": "single",
+        "reviewBasis": "The catalog records one checkout code for an interpreted in-scope produce identity."
+      },
       "publishability": {
-        "status": "blocked",
-        "blockers": [
-          {
-            "domain": "retail",
-            "code": "retail-package-evidence-required",
-            "detail": "The named package, case, bin, quantity, or processed form needs exact retail evidence."
-          },
-          {
-            "domain": "media",
-            "code": "media-evidence-required",
-            "detail": "No human-reviewed recognition source is attached to this exact row."
-          }
-        ],
+        "status": "ready",
+        "blockers": [],
         "nextAction": {
-          "type": "verify-retail-unit-and-code",
-          "description": "Capture the exact package, case, bin, or quantity and verify that its code belongs to that retail unit."
+          "type": "none",
+          "description": "All current identity, code, retail, and media gates are satisfied."
         }
       }
     },
@@ -5071,7 +5239,7 @@
       "identityEvidence": {
         "status": "interpreted",
         "title": {
-          "value": "Half Pint / 6oz berries",
+          "value": "Blueberries - Half Pint / 6oz",
           "basis": "taxonomy-helper",
           "sourceFields": [
             "catalog.item"
@@ -5152,38 +5320,56 @@
         ]
       },
       "mediaPlan": {
-        "status": "source-required",
-        "query": "Half Pint / 6oz berries Small soft berries",
+        "status": "reviewed-source",
+        "query": "Blueberries - Half Pint / 6oz Small soft berries",
         "target": {
-          "identity": "Half Pint / 6oz berries",
+          "identity": "Blueberries - Half Pint / 6oz",
           "visibleForm": "Small soft berries",
           "color": "Mixed",
           "retailForm": "Loose"
         },
-        "source": null,
+        "source": {
+          "provenance": "public/media-resolution-batch06.json",
+          "file": "A generous handful of blueberries depicts the rich abundance of berries that may be found in Alaskan areas. (d84880d1-1dd8-b71b-0b3d-6380eca4c663).jpg",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/A_generous_handful_of_blueberries_depicts_the_rich_abundance_of_berries_that_may_be_found_in_Alaskan_areas._%28d84880d1-1dd8-b71b-0b3d-6380eca4c663%29.jpg/1920px-A_generous_handful_of_blueberries_depicts_the_rich_abundance_of_berries_that_may_be_found_in_Alaskan_areas._%28d84880d1-1dd8-b71b-0b3d-6380eca4c663%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "match": "reviewed-override",
+          "recognitionMode": "label-assisted",
+          "labelClaims": [
+            {
+              "value": "Half Pint",
+              "basis": "workbook-label",
+              "sourceField": "catalog.item",
+              "sourcePages": [
+                5
+              ]
+            },
+            {
+              "value": "6oz",
+              "basis": "workbook-label",
+              "sourceField": "catalog.item",
+              "sourcePages": [
+                5
+              ]
+            }
+          ]
+        },
         "acceptance": [
           "Metadata must identify the exact product or a reviewed synonym.",
           "Visible form and identity-bearing modifiers must match the learner title.",
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": {
+        "status": "mapped",
+        "relationKind": "single",
+        "reviewBasis": "The catalog records one checkout code for an interpreted in-scope produce identity."
+      },
       "publishability": {
-        "status": "blocked",
-        "blockers": [
-          {
-            "domain": "retail",
-            "code": "retail-package-evidence-required",
-            "detail": "The named package, case, bin, quantity, or processed form needs exact retail evidence."
-          },
-          {
-            "domain": "media",
-            "code": "media-evidence-required",
-            "detail": "No human-reviewed recognition source is attached to this exact row."
-          }
-        ],
+        "status": "ready",
+        "blockers": [],
         "nextAction": {
-          "type": "verify-retail-unit-and-code",
-          "description": "Capture the exact package, case, bin, or quantity and verify that its code belongs to that retail unit."
+          "type": "none",
+          "description": "All current identity, code, retail, and media gates are satisfied."
         }
       }
     },
@@ -5327,6 +5513,7 @@
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": null,
       "publishability": {
         "status": "ready",
         "blockers": [],
@@ -5460,6 +5647,7 @@
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": null,
       "publishability": {
         "status": "blocked",
         "blockers": [
@@ -5596,7 +5784,7 @@
         "packageSignals": []
       },
       "mediaPlan": {
-        "status": "source-required",
+        "status": "reviewed-reuse-candidate",
         "query": "Chinese Jumbo carrot Tapered root",
         "target": {
           "identity": "Chinese Jumbo carrot",
@@ -5604,25 +5792,42 @@
           "color": "Orange",
           "retailForm": "Loose"
         },
-        "source": null,
+        "source": {
+          "provenance": "data/batch-06-media-reuse.json",
+          "file": "Big Carrot-2356.jpg",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/Big_Carrot-2356.jpg/1920px-Big_Carrot-2356.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "match": "reviewed-reuse-candidate",
+          "recognitionMode": "label-assisted",
+          "reviewReason": "The reviewed image truthfully shows a jumbo carrot; Chinese is preserved as an exact catalog modifier rather than inferred visually.",
+          "labelClaims": [
+            {
+              "value": "Chinese",
+              "basis": "workbook-label",
+              "sourceField": "catalog.item",
+              "sourcePages": [
+                4
+              ]
+            }
+          ]
+        },
         "acceptance": [
           "Metadata must identify the exact product or a reviewed synonym.",
           "Visible form and identity-bearing modifiers must match the learner title.",
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": {
+        "status": "mapped",
+        "relationKind": "shared-code",
+        "reviewBasis": "The catalog-supported code is also recorded for a compatible carrot identity; preserve the exact label and declare the reuse."
+      },
       "publishability": {
-        "status": "blocked",
+        "status": "mapped",
         "blockers": [
           {
             "domain": "code",
             "code": "conflicting-code-mapping",
             "detail": "The same code is attached to another catalog identity or published lesson."
-          },
-          {
-            "domain": "media",
-            "code": "media-evidence-required",
-            "detail": "No human-reviewed recognition source is attached to this exact row."
           }
         ],
         "nextAction": {
@@ -5662,7 +5867,7 @@
       "identityEvidence": {
         "status": "interpreted",
         "title": {
-          "value": "Jumbo carrot",
+          "value": "Carrots - Jumbo (Case)",
           "basis": "taxonomy-helper",
           "sourceFields": [
             "catalog.item"
@@ -5742,38 +5947,48 @@
         ]
       },
       "mediaPlan": {
-        "status": "source-required",
-        "query": "Jumbo carrot Tapered root",
+        "status": "reviewed-source",
+        "query": "Carrots - Jumbo (Case) Tapered root",
         "target": {
-          "identity": "Jumbo carrot",
+          "identity": "Carrots - Jumbo (Case)",
           "visibleForm": "Tapered root",
           "color": "Orange",
           "retailForm": "Loose"
         },
-        "source": null,
+        "source": {
+          "provenance": "public/media-resolution-batch06.json",
+          "file": "Big Carrot-2356.jpg",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/Big_Carrot-2356.jpg/1920px-Big_Carrot-2356.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "match": "reviewed-override",
+          "recognitionMode": "label-assisted",
+          "labelClaims": [
+            {
+              "value": "Case",
+              "basis": "workbook-label",
+              "sourceField": "catalog.item",
+              "sourcePages": [
+                4
+              ]
+            }
+          ]
+        },
         "acceptance": [
           "Metadata must identify the exact product or a reviewed synonym.",
           "Visible form and identity-bearing modifiers must match the learner title.",
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": {
+        "status": "mapped",
+        "relationKind": "single",
+        "reviewBasis": "The catalog records one checkout code for an interpreted in-scope produce identity."
+      },
       "publishability": {
-        "status": "blocked",
-        "blockers": [
-          {
-            "domain": "retail",
-            "code": "retail-package-evidence-required",
-            "detail": "The named package, case, bin, quantity, or processed form needs exact retail evidence."
-          },
-          {
-            "domain": "media",
-            "code": "media-evidence-required",
-            "detail": "No human-reviewed recognition source is attached to this exact row."
-          }
-        ],
+        "status": "ready",
+        "blockers": [],
         "nextAction": {
-          "type": "verify-retail-unit-and-code",
-          "description": "Capture the exact package, case, bin, or quantity and verify that its code belongs to that retail unit."
+          "type": "none",
+          "description": "All current identity, code, retail, and media gates are satisfied."
         }
       }
     },
@@ -5901,8 +6116,13 @@
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": {
+        "status": "mapped",
+        "relationKind": "single",
+        "reviewBasis": "The catalog records one checkout code for an interpreted in-scope produce identity."
+      },
       "publishability": {
-        "status": "blocked",
+        "status": "mapped",
         "blockers": [
           {
             "domain": "media",
@@ -6046,8 +6266,13 @@
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": {
+        "status": "mapped",
+        "relationKind": "same-label-different-codes",
+        "reviewBasis": "The exact catalog label appears with multiple recorded checkout codes across source rows; preserve every source mapping."
+      },
       "publishability": {
-        "status": "blocked",
+        "status": "mapped",
         "blockers": [
           {
             "domain": "code",
@@ -6191,8 +6416,13 @@
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": {
+        "status": "mapped",
+        "relationKind": "same-label-different-codes",
+        "reviewBasis": "The exact catalog label appears with multiple recorded checkout codes across source rows; preserve every source mapping."
+      },
       "publishability": {
-        "status": "blocked",
+        "status": "mapped",
         "blockers": [
           {
             "domain": "code",
@@ -6354,6 +6584,7 @@
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": null,
       "publishability": {
         "status": "ready",
         "blockers": [],
@@ -6489,6 +6720,7 @@
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": null,
       "publishability": {
         "status": "blocked",
         "blockers": [
@@ -6657,6 +6889,7 @@
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": null,
       "publishability": {
         "status": "ready",
         "blockers": [],
@@ -6814,6 +7047,7 @@
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": null,
       "publishability": {
         "status": "ready",
         "blockers": [],
@@ -6965,6 +7199,7 @@
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": null,
       "publishability": {
         "status": "ready",
         "blockers": [],
@@ -7005,7 +7240,7 @@
       "identityEvidence": {
         "status": "interpreted",
         "title": {
-          "value": "Tray of 5 corn",
+          "value": "Corn - Tray of 5",
           "basis": "taxonomy-helper",
           "sourceFields": [
             "catalog.item"
@@ -7085,38 +7320,48 @@
         ]
       },
       "mediaPlan": {
-        "status": "source-required",
-        "query": "Tray of 5 corn Long husked ear",
+        "status": "reviewed-source",
+        "query": "Corn - Tray of 5 Long husked ear",
         "target": {
-          "identity": "Tray of 5 corn",
+          "identity": "Corn - Tray of 5",
           "visibleForm": "Long husked ear",
           "color": "Yellow-green",
           "retailForm": "Loose"
         },
-        "source": null,
+        "source": {
+          "provenance": "public/media-resolution-batch06.json",
+          "file": "Liat Portal for Foodie Disorder - Fresh Corn on the Cob.jpg",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/Liat_Portal_for_Foodie_Disorder_-_Fresh_Corn_on_the_Cob.jpg/1920px-Liat_Portal_for_Foodie_Disorder_-_Fresh_Corn_on_the_Cob.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "match": "reviewed-override",
+          "recognitionMode": "label-assisted",
+          "labelClaims": [
+            {
+              "value": "Tray of 5",
+              "basis": "workbook-label",
+              "sourceField": "catalog.item",
+              "sourcePages": [
+                4
+              ]
+            }
+          ]
+        },
         "acceptance": [
           "Metadata must identify the exact product or a reviewed synonym.",
           "Visible form and identity-bearing modifiers must match the learner title.",
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": {
+        "status": "mapped",
+        "relationKind": "single",
+        "reviewBasis": "The catalog records one checkout code for an interpreted in-scope produce identity."
+      },
       "publishability": {
-        "status": "blocked",
-        "blockers": [
-          {
-            "domain": "retail",
-            "code": "retail-package-evidence-required",
-            "detail": "The named package, case, bin, quantity, or processed form needs exact retail evidence."
-          },
-          {
-            "domain": "media",
-            "code": "media-evidence-required",
-            "detail": "No human-reviewed recognition source is attached to this exact row."
-          }
-        ],
+        "status": "ready",
+        "blockers": [],
         "nextAction": {
-          "type": "verify-retail-unit-and-code",
-          "description": "Capture the exact package, case, bin, or quantity and verify that its code belongs to that retail unit."
+          "type": "none",
+          "description": "All current identity, code, retail, and media gates are satisfied."
         }
       }
     },
@@ -7218,8 +7463,9 @@
         "source": null,
         "acceptance": []
       },
+      "mappingDecision": null,
       "publishability": {
-        "status": "out-of-scope",
+        "status": "excluded",
         "blockers": [
           {
             "domain": "scope",
@@ -7264,7 +7510,7 @@
       "identityEvidence": {
         "status": "interpreted",
         "title": {
-          "value": "Dill cucumber",
+          "value": "Cucumbers - Dill (Case)",
           "basis": "taxonomy-helper",
           "sourceFields": [
             "catalog.item"
@@ -7345,9 +7591,9 @@
       },
       "mediaPlan": {
         "status": "source-required",
-        "query": "Dill cucumber Long cylindrical fruit",
+        "query": "Cucumbers - Dill (Case) Long cylindrical fruit",
         "target": {
-          "identity": "Dill cucumber",
+          "identity": "Cucumbers - Dill (Case)",
           "visibleForm": "Long cylindrical fruit",
           "color": "Green",
           "retailForm": "Loose"
@@ -7359,18 +7605,19 @@
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": {
+        "status": "mapped",
+        "relationKind": "single",
+        "reviewBasis": "The catalog records one checkout code; the exact catalog label preserves the case distinction from the existing lesson title.",
+        "lessonTitle": "Cucumbers - Dill (Case)"
+      },
       "publishability": {
-        "status": "blocked",
+        "status": "mapped",
         "blockers": [
           {
             "domain": "retail",
             "code": "retail-package-evidence-required",
             "detail": "The named package, case, bin, quantity, or processed form needs exact retail evidence."
-          },
-          {
-            "domain": "publishability",
-            "code": "duplicate-lesson-title",
-            "detail": "A published lesson already uses this normalized title."
           },
           {
             "domain": "media",
@@ -7514,6 +7761,7 @@
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": null,
       "publishability": {
         "status": "blocked",
         "blockers": [
@@ -7632,8 +7880,9 @@
         "source": null,
         "acceptance": []
       },
+      "mappingDecision": null,
       "publishability": {
-        "status": "out-of-scope",
+        "status": "excluded",
         "blockers": [
           {
             "domain": "scope",
@@ -7745,8 +7994,9 @@
         "source": null,
         "acceptance": []
       },
+      "mappingDecision": null,
       "publishability": {
-        "status": "out-of-scope",
+        "status": "excluded",
         "blockers": [
           {
             "domain": "scope",
@@ -7858,8 +8108,9 @@
         "source": null,
         "acceptance": []
       },
+      "mappingDecision": null,
       "publishability": {
-        "status": "out-of-scope",
+        "status": "excluded",
         "blockers": [
           {
             "domain": "scope",
@@ -7989,6 +8240,7 @@
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": null,
       "publishability": {
         "status": "blocked",
         "blockers": [
@@ -8137,6 +8389,7 @@
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": null,
       "publishability": {
         "status": "blocked",
         "blockers": [
@@ -8299,6 +8552,7 @@
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": null,
       "publishability": {
         "status": "ready",
         "blockers": [],
@@ -8419,7 +8673,7 @@
         "packageSignals": []
       },
       "mediaPlan": {
-        "status": "source-required",
+        "status": "reviewed-reuse-candidate",
         "query": "Fennel / Anise Layered bulb with feathery fronds",
         "target": {
           "identity": "Fennel / Anise",
@@ -8427,13 +8681,21 @@
           "color": "White-green",
           "retailForm": "Loose"
         },
-        "source": null,
+        "source": {
+          "provenance": "data/batch-06-media-reuse.json",
+          "file": "Finocchio 2.jpg",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Finocchio_2.jpg/1920px-Finocchio_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "match": "reviewed-reuse-candidate",
+          "recognitionMode": "product-and-loose-form",
+          "reviewReason": "The existing fennel photograph and source lesson already anchor the same reviewed produce synonym and loose form."
+        },
         "acceptance": [
           "Metadata must identify the exact product or a reviewed synonym.",
           "Visible form and identity-bearing modifiers must match the learner title.",
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": null,
       "publishability": {
         "status": "blocked",
         "blockers": [
@@ -8441,11 +8703,6 @@
             "domain": "code",
             "code": "conflicting-code-mapping",
             "detail": "The same code is attached to another catalog identity or published lesson."
-          },
-          {
-            "domain": "media",
-            "code": "media-evidence-required",
-            "detail": "No human-reviewed recognition source is attached to this exact row."
           }
         ],
         "nextAction": {
@@ -8485,7 +8742,7 @@
       "identityEvidence": {
         "status": "interpreted",
         "title": {
-          "value": "Black fig",
+          "value": "Figgs - Black (Case)",
           "basis": "taxonomy-helper",
           "sourceFields": [
             "catalog.item"
@@ -8565,43 +8822,49 @@
         ]
       },
       "mediaPlan": {
-        "status": "source-required",
-        "query": "Black fig Soft teardrop fruit",
+        "status": "reviewed-source",
+        "query": "Figgs - Black (Case) Soft teardrop fruit",
         "target": {
-          "identity": "Black fig",
+          "identity": "Figgs - Black (Case)",
           "visibleForm": "Soft teardrop fruit",
           "color": "Black",
           "retailForm": "Single"
         },
-        "source": null,
+        "source": {
+          "provenance": "public/media-resolution-batch06.json",
+          "file": "Stellar Black Mission Figs (22856783955).jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Stellar_Black_Mission_Figs_%2822856783955%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "match": "reviewed-override",
+          "recognitionMode": "label-assisted",
+          "labelClaims": [
+            {
+              "value": "Case",
+              "basis": "workbook-label",
+              "sourceField": "catalog.item",
+              "sourcePages": [
+                1
+              ]
+            }
+          ]
+        },
         "acceptance": [
           "Metadata must identify the exact product or a reviewed synonym.",
           "Visible form and identity-bearing modifiers must match the learner title.",
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": {
+        "status": "mapped",
+        "relationKind": "single",
+        "reviewBasis": "The catalog records one checkout code; the exact catalog label preserves its spelling and case distinction from the existing lesson title.",
+        "lessonTitle": "Figgs - Black (Case)"
+      },
       "publishability": {
-        "status": "blocked",
-        "blockers": [
-          {
-            "domain": "retail",
-            "code": "retail-package-evidence-required",
-            "detail": "The named package, case, bin, quantity, or processed form needs exact retail evidence."
-          },
-          {
-            "domain": "publishability",
-            "code": "duplicate-lesson-title",
-            "detail": "A published lesson already uses this normalized title."
-          },
-          {
-            "domain": "media",
-            "code": "media-evidence-required",
-            "detail": "No human-reviewed recognition source is attached to this exact row."
-          }
-        ],
+        "status": "ready",
+        "blockers": [],
         "nextAction": {
-          "type": "verify-retail-unit-and-code",
-          "description": "Capture the exact package, case, bin, or quantity and verify that its code belongs to that retail unit."
+          "type": "none",
+          "description": "All current identity, code, retail, and media gates are satisfied."
         }
       }
     },
@@ -8747,6 +9010,7 @@
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": null,
       "publishability": {
         "status": "ready",
         "blockers": [],
@@ -8787,7 +9051,7 @@
       "identityEvidence": {
         "status": "interpreted",
         "title": {
-          "value": "Black fig",
+          "value": "Figs - Black (Case)",
           "basis": "taxonomy-helper",
           "sourceFields": [
             "catalog.item"
@@ -8867,43 +9131,49 @@
         ]
       },
       "mediaPlan": {
-        "status": "source-required",
-        "query": "Black fig Soft teardrop fruit",
+        "status": "reviewed-source",
+        "query": "Figs - Black (Case) Soft teardrop fruit",
         "target": {
-          "identity": "Black fig",
+          "identity": "Figs - Black (Case)",
           "visibleForm": "Soft teardrop fruit",
           "color": "Black",
           "retailForm": "Loose"
         },
-        "source": null,
+        "source": {
+          "provenance": "public/media-resolution-batch06.json",
+          "file": "Stellar Black Mission Figs (22856783955).jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Stellar_Black_Mission_Figs_%2822856783955%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "match": "reviewed-override",
+          "recognitionMode": "label-assisted",
+          "labelClaims": [
+            {
+              "value": "Case",
+              "basis": "workbook-label",
+              "sourceField": "catalog.item",
+              "sourcePages": [
+                5
+              ]
+            }
+          ]
+        },
         "acceptance": [
           "Metadata must identify the exact product or a reviewed synonym.",
           "Visible form and identity-bearing modifiers must match the learner title.",
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": {
+        "status": "mapped",
+        "relationKind": "single",
+        "reviewBasis": "The catalog records one checkout code; the exact catalog label preserves the case distinction from the existing lesson title.",
+        "lessonTitle": "Figs - Black (Case)"
+      },
       "publishability": {
-        "status": "blocked",
-        "blockers": [
-          {
-            "domain": "retail",
-            "code": "retail-package-evidence-required",
-            "detail": "The named package, case, bin, quantity, or processed form needs exact retail evidence."
-          },
-          {
-            "domain": "publishability",
-            "code": "duplicate-lesson-title",
-            "detail": "A published lesson already uses this normalized title."
-          },
-          {
-            "domain": "media",
-            "code": "media-evidence-required",
-            "detail": "No human-reviewed recognition source is attached to this exact row."
-          }
-        ],
+        "status": "ready",
+        "blockers": [],
         "nextAction": {
-          "type": "verify-retail-unit-and-code",
-          "description": "Capture the exact package, case, bin, or quantity and verify that its code belongs to that retail unit."
+          "type": "none",
+          "description": "All current identity, code, retail, and media gates are satisfied."
         }
       }
     },
@@ -8938,7 +9208,7 @@
       "identityEvidence": {
         "status": "interpreted",
         "title": {
-          "value": "Black 227g fig",
+          "value": "Figs - Black 227g (Pint)",
           "basis": "taxonomy-helper",
           "sourceFields": [
             "catalog.item"
@@ -9019,38 +9289,48 @@
         ]
       },
       "mediaPlan": {
-        "status": "source-required",
-        "query": "Black 227g fig Soft teardrop fruit",
+        "status": "reviewed-source",
+        "query": "Figs - Black 227g (Pint) Soft teardrop fruit",
         "target": {
-          "identity": "Black 227g fig",
+          "identity": "Figs - Black 227g (Pint)",
           "visibleForm": "Soft teardrop fruit",
           "color": "Black",
           "retailForm": "Loose"
         },
-        "source": null,
+        "source": {
+          "provenance": "public/media-resolution-batch06.json",
+          "file": "Stellar Black Mission Figs (22856783955).jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Stellar_Black_Mission_Figs_%2822856783955%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "match": "reviewed-override",
+          "recognitionMode": "label-assisted",
+          "labelClaims": [
+            {
+              "value": "227g (Pint)",
+              "basis": "workbook-label",
+              "sourceField": "catalog.item",
+              "sourcePages": [
+                5
+              ]
+            }
+          ]
+        },
         "acceptance": [
           "Metadata must identify the exact product or a reviewed synonym.",
           "Visible form and identity-bearing modifiers must match the learner title.",
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": {
+        "status": "mapped",
+        "relationKind": "single",
+        "reviewBasis": "The catalog records one checkout code for an interpreted in-scope produce identity."
+      },
       "publishability": {
-        "status": "blocked",
-        "blockers": [
-          {
-            "domain": "retail",
-            "code": "retail-package-evidence-required",
-            "detail": "The named package, case, bin, quantity, or processed form needs exact retail evidence."
-          },
-          {
-            "domain": "media",
-            "code": "media-evidence-required",
-            "detail": "No human-reviewed recognition source is attached to this exact row."
-          }
-        ],
+        "status": "ready",
+        "blockers": [],
         "nextAction": {
-          "type": "verify-retail-unit-and-code",
-          "description": "Capture the exact package, case, bin, or quantity and verify that its code belongs to that retail unit."
+          "type": "none",
+          "description": "All current identity, code, retail, and media gates are satisfied."
         }
       }
     },
@@ -9085,7 +9365,7 @@
       "identityEvidence": {
         "status": "interpreted",
         "title": {
-          "value": "Green fig",
+          "value": "Figs - Green (Case)",
           "basis": "taxonomy-helper",
           "sourceFields": [
             "catalog.item"
@@ -9165,38 +9445,48 @@
         ]
       },
       "mediaPlan": {
-        "status": "source-required",
-        "query": "Green fig Soft teardrop fruit",
+        "status": "reviewed-source",
+        "query": "Figs - Green (Case) Soft teardrop fruit",
         "target": {
-          "identity": "Green fig",
+          "identity": "Figs - Green (Case)",
           "visibleForm": "Soft teardrop fruit",
           "color": "Green",
           "retailForm": "Loose"
         },
-        "source": null,
+        "source": {
+          "provenance": "public/media-resolution-batch06.json",
+          "file": "Common fig - leaves and green figs.jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/0/03/Common_fig_-_leaves_and_green_figs.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "match": "reviewed-override",
+          "recognitionMode": "label-assisted",
+          "labelClaims": [
+            {
+              "value": "Case",
+              "basis": "workbook-label",
+              "sourceField": "catalog.item",
+              "sourcePages": [
+                5
+              ]
+            }
+          ]
+        },
         "acceptance": [
           "Metadata must identify the exact product or a reviewed synonym.",
           "Visible form and identity-bearing modifiers must match the learner title.",
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": {
+        "status": "mapped",
+        "relationKind": "single",
+        "reviewBasis": "The catalog records one checkout code for an interpreted in-scope produce identity."
+      },
       "publishability": {
-        "status": "blocked",
-        "blockers": [
-          {
-            "domain": "retail",
-            "code": "retail-package-evidence-required",
-            "detail": "The named package, case, bin, quantity, or processed form needs exact retail evidence."
-          },
-          {
-            "domain": "media",
-            "code": "media-evidence-required",
-            "detail": "No human-reviewed recognition source is attached to this exact row."
-          }
-        ],
+        "status": "ready",
+        "blockers": [],
         "nextAction": {
-          "type": "verify-retail-unit-and-code",
-          "description": "Capture the exact package, case, bin, or quantity and verify that its code belongs to that retail unit."
+          "type": "none",
+          "description": "All current identity, code, retail, and media gates are satisfied."
         }
       }
     },
@@ -9309,7 +9599,7 @@
         "packageSignals": []
       },
       "mediaPlan": {
-        "status": "source-required",
+        "status": "reviewed-reuse-candidate",
         "query": "Bulk loose garlic Segmented bulb",
         "target": {
           "identity": "Bulk loose garlic",
@@ -9317,13 +9607,31 @@
           "color": "White",
           "retailForm": "Loose"
         },
-        "source": null,
+        "source": {
+          "provenance": "data/batch-06-media-reuse.json",
+          "file": "Garlic.jpg",
+          "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Garlic.jpg?width=1600",
+          "match": "reviewed-reuse-candidate",
+          "recognitionMode": "label-assisted",
+          "reviewReason": "The published loose-garlic photograph is an exact visible match; Bulk describes the catalog sale presentation.",
+          "labelClaims": [
+            {
+              "value": "Bulk",
+              "basis": "workbook-label",
+              "sourceField": "catalog.item",
+              "sourcePages": [
+                4
+              ]
+            }
+          ]
+        },
         "acceptance": [
           "Metadata must identify the exact product or a reviewed synonym.",
           "Visible form and identity-bearing modifiers must match the learner title.",
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": null,
       "publishability": {
         "status": "blocked",
         "blockers": [
@@ -9336,11 +9644,6 @@
             "domain": "identity",
             "code": "identity-adjudication-required",
             "detail": "This catalog identity is on the explicit source-review list."
-          },
-          {
-            "domain": "media",
-            "code": "media-evidence-required",
-            "detail": "No human-reviewed recognition source is attached to this exact row."
           }
         ],
         "nextAction": {
@@ -9475,8 +9778,13 @@
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": {
+        "status": "mapped",
+        "relationKind": "single",
+        "reviewBasis": "The catalog records one checkout code for an interpreted in-scope produce identity."
+      },
       "publishability": {
-        "status": "blocked",
+        "status": "mapped",
         "blockers": [
           {
             "domain": "retail",
@@ -9646,6 +9954,7 @@
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": null,
       "publishability": {
         "status": "ready",
         "blockers": [],
@@ -9756,7 +10065,7 @@
         "packageSignals": []
       },
       "mediaPlan": {
-        "status": "source-required",
+        "status": "reviewed-reuse-candidate",
         "query": "Ornamental gourds Small hard-shelled decorative gourds",
         "target": {
           "identity": "Ornamental gourds",
@@ -9764,13 +10073,21 @@
           "color": "Mixed",
           "retailForm": "Single"
         },
-        "source": null,
+        "source": {
+          "provenance": "data/batch-06-media-reuse.json",
+          "file": "Cucurbita pepo ornamental gourds - 14.Autumn.WholeFoods.1440P.NW.WDC.14October2014.jpg",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/Cucurbita_pepo_ornamental_gourds_-_14.Autumn.WholeFoods.1440P.NW.WDC.14October2014.jpg/1920px-Cucurbita_pepo_ornamental_gourds_-_14.Autumn.WholeFoods.1440P.NW.WDC.14October2014.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "match": "reviewed-reuse-candidate",
+          "recognitionMode": "product-and-loose-form",
+          "reviewReason": "The existing Commons photograph is specifically identified as ornamental gourds and shows the expected mixed forms and colors."
+        },
         "acceptance": [
           "Metadata must identify the exact product or a reviewed synonym.",
           "Visible form and identity-bearing modifiers must match the learner title.",
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": null,
       "publishability": {
         "status": "blocked",
         "blockers": [
@@ -9778,11 +10095,6 @@
             "domain": "code",
             "code": "missing-checkout-code",
             "detail": "The immutable catalog contains no numeric code for this row."
-          },
-          {
-            "domain": "media",
-            "code": "media-evidence-required",
-            "detail": "No human-reviewed recognition source is attached to this exact row."
           }
         ],
         "nextAction": {
@@ -9927,8 +10239,13 @@
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": {
+        "status": "mapped",
+        "relationKind": "shared-code",
+        "reviewBasis": "The catalog-supported code is also recorded for a compatible grapefruit identity; preserve the exact label and declare the reuse."
+      },
       "publishability": {
-        "status": "blocked",
+        "status": "mapped",
         "blockers": [
           {
             "domain": "code",
@@ -10089,6 +10406,7 @@
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": null,
       "publishability": {
         "status": "ready",
         "blockers": [],
@@ -10240,6 +10558,7 @@
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": null,
       "publishability": {
         "status": "ready",
         "blockers": [],
@@ -10347,8 +10666,9 @@
         "source": null,
         "acceptance": []
       },
+      "mappingDecision": null,
       "publishability": {
-        "status": "out-of-scope",
+        "status": "excluded",
         "blockers": [
           {
             "domain": "scope",
@@ -10479,6 +10799,7 @@
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": null,
       "publishability": {
         "status": "blocked",
         "blockers": [
@@ -10626,6 +10947,7 @@
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": null,
       "publishability": {
         "status": "blocked",
         "blockers": [
@@ -10788,6 +11110,7 @@
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": null,
       "publishability": {
         "status": "ready",
         "blockers": [],
@@ -10909,7 +11232,7 @@
         "packageSignals": []
       },
       "mediaPlan": {
-        "status": "source-required",
+        "status": "reviewed-reuse-candidate",
         "query": "Kohlrabi Round swollen stem with shoots",
         "target": {
           "identity": "Kohlrabi",
@@ -10917,13 +11240,41 @@
           "color": "Green-purple",
           "retailForm": "Loose"
         },
-        "source": null,
+        "source": {
+          "provenance": "data/batch-06-media-reuse.json",
+          "file": "GreenKohlrabi.jpg",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/GreenKohlrabi.jpg/1920px-GreenKohlrabi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "match": "reviewed-reuse-candidate",
+          "recognitionMode": "label-assisted",
+          "reviewReason": "The reviewed green-kohlrabi photograph anchors only product identity; the handwritten note is preserved verbatim without resolving its code claim.",
+          "labelClaims": [
+            {
+              "value": "note on sheet: 'Kohlrabi = 1692'",
+              "basis": "workbook-label",
+              "sourceField": "catalog.item",
+              "sourcePages": [
+                2,
+                4
+              ]
+            },
+            {
+              "value": "(handwritten)",
+              "basis": "workbook-label",
+              "sourceField": "catalog.item",
+              "sourcePages": [
+                2,
+                4
+              ]
+            }
+          ]
+        },
         "acceptance": [
           "Metadata must identify the exact product or a reviewed synonym.",
           "Visible form and identity-bearing modifiers must match the learner title.",
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": null,
       "publishability": {
         "status": "blocked",
         "blockers": [
@@ -10936,11 +11287,6 @@
             "domain": "identity",
             "code": "identity-adjudication-required",
             "detail": "This catalog identity is on the explicit source-review list."
-          },
-          {
-            "domain": "media",
-            "code": "media-evidence-required",
-            "detail": "No human-reviewed recognition source is attached to this exact row."
           }
         ],
         "nextAction": {
@@ -11091,6 +11437,7 @@
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": null,
       "publishability": {
         "status": "ready",
         "blockers": [],
@@ -11240,6 +11587,7 @@
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": null,
       "publishability": {
         "status": "ready",
         "blockers": [],
@@ -11391,6 +11739,7 @@
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": null,
       "publishability": {
         "status": "ready",
         "blockers": [],
@@ -11513,7 +11862,7 @@
         "packageSignals": []
       },
       "mediaPlan": {
-        "status": "source-required",
+        "status": "reviewed-reuse-candidate",
         "query": "Mangoes Oval tapered fruit",
         "target": {
           "identity": "Mangoes",
@@ -11521,25 +11870,32 @@
           "color": "Yellow-red",
           "retailForm": "Loose"
         },
-        "source": null,
+        "source": {
+          "provenance": "data/batch-06-media-reuse.json",
+          "file": "Alphonso mango.jpg",
+          "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Alphonso_mango.jpg?width=1600",
+          "match": "reviewed-reuse-candidate",
+          "recognitionMode": "product-and-loose-form",
+          "reviewReason": "The reviewed whole-mango photograph safely supports the broader Mangoes catalog label without importing its source lesson's case quantity."
+        },
         "acceptance": [
           "Metadata must identify the exact product or a reviewed synonym.",
           "Visible form and identity-bearing modifiers must match the learner title.",
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": {
+        "status": "mapped",
+        "relationKind": "shared-code",
+        "reviewBasis": "The catalog-supported code is also recorded for a compatible mango identity; preserve the exact label and declare the reuse."
+      },
       "publishability": {
-        "status": "blocked",
+        "status": "mapped",
         "blockers": [
           {
             "domain": "code",
             "code": "conflicting-code-mapping",
             "detail": "The same code is attached to another catalog identity or published lesson."
-          },
-          {
-            "domain": "media",
-            "code": "media-evidence-required",
-            "detail": "No human-reviewed recognition source is attached to this exact row."
           }
         ],
         "nextAction": {
@@ -11581,7 +11937,7 @@
       "identityEvidence": {
         "status": "source-review-required",
         "title": {
-          "value": "Ataulfo mango",
+          "value": "Mangoes - Ataulfo (Case) (handwritten)",
           "basis": "taxonomy-helper",
           "sourceFields": [
             "catalog.item"
@@ -11661,21 +12017,47 @@
         ]
       },
       "mediaPlan": {
-        "status": "source-required",
-        "query": "Ataulfo mango Oval tapered fruit",
+        "status": "reviewed-reuse-candidate",
+        "query": "Mangoes - Ataulfo (Case) (handwritten) Oval tapered fruit",
         "target": {
-          "identity": "Ataulfo mango",
+          "identity": "Mangoes - Ataulfo (Case) (handwritten)",
           "visibleForm": "Oval tapered fruit",
           "color": "Yellow-red",
           "retailForm": "Loose"
         },
-        "source": null,
+        "source": {
+          "provenance": "data/batch-06-media-reuse.json",
+          "file": "Mango Ataulfo.jpg",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/Mango_Ataulfo.jpg/1920px-Mango_Ataulfo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "match": "reviewed-reuse-candidate",
+          "recognitionMode": "label-assisted",
+          "reviewReason": "The existing Ataulfo photograph is an exact product match; Case and handwritten status remain catalog claims.",
+          "labelClaims": [
+            {
+              "value": "Case",
+              "basis": "workbook-label",
+              "sourceField": "catalog.item",
+              "sourcePages": [
+                5
+              ]
+            },
+            {
+              "value": "(handwritten)",
+              "basis": "workbook-label",
+              "sourceField": "catalog.item",
+              "sourcePages": [
+                5
+              ]
+            }
+          ]
+        },
         "acceptance": [
           "Metadata must identify the exact product or a reviewed synonym.",
           "Visible form and identity-bearing modifiers must match the learner title.",
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": null,
       "publishability": {
         "status": "blocked",
         "blockers": [
@@ -11683,21 +12065,6 @@
             "domain": "identity",
             "code": "identity-source-review",
             "detail": "Handwritten, obscured, or separately excluded source wording needs adjudication."
-          },
-          {
-            "domain": "retail",
-            "code": "retail-package-evidence-required",
-            "detail": "The named package, case, bin, quantity, or processed form needs exact retail evidence."
-          },
-          {
-            "domain": "publishability",
-            "code": "duplicate-lesson-title",
-            "detail": "A published lesson already uses this normalized title."
-          },
-          {
-            "domain": "media",
-            "code": "media-evidence-required",
-            "detail": "No human-reviewed recognition source is attached to this exact row."
           }
         ],
         "nextAction": {
@@ -11857,6 +12224,7 @@
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": null,
       "publishability": {
         "status": "ready",
         "blockers": [],
@@ -12002,6 +12370,7 @@
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": null,
       "publishability": {
         "status": "blocked",
         "blockers": [
@@ -12063,7 +12432,7 @@
       "identityEvidence": {
         "status": "interpreted",
         "title": {
-          "value": "Ataulfo mango",
+          "value": "Mangos - Ataulfo (Case)",
           "basis": "taxonomy-helper",
           "sourceFields": [
             "catalog.item"
@@ -12143,43 +12512,49 @@
         ]
       },
       "mediaPlan": {
-        "status": "source-required",
-        "query": "Ataulfo mango Oval tapered fruit",
+        "status": "reviewed-source",
+        "query": "Mangos - Ataulfo (Case) Oval tapered fruit",
         "target": {
-          "identity": "Ataulfo mango",
+          "identity": "Mangos - Ataulfo (Case)",
           "visibleForm": "Oval tapered fruit",
           "color": "Yellow-red",
           "retailForm": "Single"
         },
-        "source": null,
+        "source": {
+          "provenance": "public/media-resolution-batch06.json",
+          "file": "Mango Ataulfo.jpg",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/Mango_Ataulfo.jpg/1920px-Mango_Ataulfo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "match": "reviewed-override",
+          "recognitionMode": "label-assisted",
+          "labelClaims": [
+            {
+              "value": "Case",
+              "basis": "workbook-label",
+              "sourceField": "catalog.item",
+              "sourcePages": [
+                2
+              ]
+            }
+          ]
+        },
         "acceptance": [
           "Metadata must identify the exact product or a reviewed synonym.",
           "Visible form and identity-bearing modifiers must match the learner title.",
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": {
+        "status": "mapped",
+        "relationKind": "single",
+        "reviewBasis": "The catalog records one checkout code; the exact catalog label preserves the case distinction from the existing lesson title.",
+        "lessonTitle": "Mangos - Ataulfo (Case)"
+      },
       "publishability": {
-        "status": "blocked",
-        "blockers": [
-          {
-            "domain": "retail",
-            "code": "retail-package-evidence-required",
-            "detail": "The named package, case, bin, quantity, or processed form needs exact retail evidence."
-          },
-          {
-            "domain": "publishability",
-            "code": "duplicate-lesson-title",
-            "detail": "A published lesson already uses this normalized title."
-          },
-          {
-            "domain": "media",
-            "code": "media-evidence-required",
-            "detail": "No human-reviewed recognition source is attached to this exact row."
-          }
-        ],
+        "status": "ready",
+        "blockers": [],
         "nextAction": {
-          "type": "verify-retail-unit-and-code",
-          "description": "Capture the exact package, case, bin, or quantity and verify that its code belongs to that retail unit."
+          "type": "none",
+          "description": "All current identity, code, retail, and media gates are satisfied."
         }
       }
     },
@@ -12325,6 +12700,7 @@
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": null,
       "publishability": {
         "status": "ready",
         "blockers": [],
@@ -12478,8 +12854,13 @@
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": {
+        "status": "mapped",
+        "relationKind": "same-label-different-codes",
+        "reviewBasis": "The exact catalog label carries multiple recorded checkout codes; preserve the complete mapping without selecting a synthetic primary code."
+      },
       "publishability": {
-        "status": "blocked",
+        "status": "mapped",
         "blockers": [
           {
             "domain": "code",
@@ -12632,6 +13013,7 @@
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": null,
       "publishability": {
         "status": "blocked",
         "blockers": [
@@ -12689,7 +13071,7 @@
       "identityEvidence": {
         "status": "interpreted",
         "title": {
-          "value": "Bitter melon",
+          "value": "Melons - Bitter (Fu Qua)",
           "basis": "taxonomy-helper",
           "sourceFields": [
             "catalog.item"
@@ -12767,38 +13149,39 @@
         "packageSignals": []
       },
       "mediaPlan": {
-        "status": "source-required",
-        "query": "Bitter melon Firm gourd or squash",
+        "status": "reviewed-source",
+        "query": "Melons - Bitter (Fu Qua) Firm gourd or squash",
         "target": {
-          "identity": "Bitter melon",
+          "identity": "Melons - Bitter (Fu Qua)",
           "visibleForm": "Firm gourd or squash",
           "color": "Green-orange",
           "retailForm": "Loose"
         },
-        "source": null,
+        "source": {
+          "provenance": "public/media-resolution-batch06.json",
+          "file": "Bitter melon 01.jpg",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/Bitter_melon_01.jpg/1920px-Bitter_melon_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "match": "reviewed-override",
+          "recognitionMode": "product-and-loose-form"
+        },
         "acceptance": [
           "Metadata must identify the exact product or a reviewed synonym.",
           "Visible form and identity-bearing modifiers must match the learner title.",
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": {
+        "status": "mapped",
+        "relationKind": "single",
+        "reviewBasis": "The catalog records one checkout code; the exact catalog label preserves the named retail identity rather than collapsing it into an existing title.",
+        "lessonTitle": "Melons - Bitter (Fu Qua)"
+      },
       "publishability": {
-        "status": "blocked",
-        "blockers": [
-          {
-            "domain": "publishability",
-            "code": "duplicate-lesson-title",
-            "detail": "A published lesson already uses this normalized title."
-          },
-          {
-            "domain": "media",
-            "code": "media-evidence-required",
-            "detail": "No human-reviewed recognition source is attached to this exact row."
-          }
-        ],
+        "status": "ready",
+        "blockers": [],
         "nextAction": {
-          "type": "decide-lesson-deduplication",
-          "description": "Determine whether this is a distinct retail lesson or another code/form of an existing lesson."
+          "type": "none",
+          "description": "All current identity, code, retail, and media gates are satisfied."
         }
       }
     },
@@ -12942,6 +13325,7 @@
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": null,
       "publishability": {
         "status": "ready",
         "blockers": [],
@@ -13075,8 +13459,13 @@
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": {
+        "status": "mapped",
+        "relationKind": "single",
+        "reviewBasis": "The catalog records one checkout code for an interpreted in-scope produce identity."
+      },
       "publishability": {
-        "status": "blocked",
+        "status": "mapped",
         "blockers": [
           {
             "domain": "media",
@@ -13214,8 +13603,13 @@
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": {
+        "status": "mapped",
+        "relationKind": "single",
+        "reviewBasis": "The catalog records one checkout code for an interpreted in-scope produce identity."
+      },
       "publishability": {
-        "status": "blocked",
+        "status": "mapped",
         "blockers": [
           {
             "domain": "media",
@@ -13338,7 +13732,7 @@
         "packageSignals": []
       },
       "mediaPlan": {
-        "status": "source-required",
+        "status": "reviewed-reuse-candidate",
         "query": "Methileaf Broad leafy stems",
         "target": {
           "identity": "Methileaf",
@@ -13346,13 +13740,21 @@
           "color": "Green",
           "retailForm": "Single"
         },
-        "source": null,
+        "source": {
+          "provenance": "data/batch-06-media-reuse.json",
+          "file": "Methi leaves.jpg",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/Methi_leaves.jpg/1920px-Methi_leaves.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "match": "reviewed-reuse-candidate",
+          "recognitionMode": "product-and-loose-form",
+          "reviewReason": "The published Methi Leaf (Fenugreek) photograph provides a direct synonym and loose-herb identity match for Methileaf."
+        },
         "acceptance": [
           "Metadata must identify the exact product or a reviewed synonym.",
           "Visible form and identity-bearing modifiers must match the learner title.",
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": null,
       "publishability": {
         "status": "blocked",
         "blockers": [
@@ -13365,11 +13767,6 @@
             "domain": "identity",
             "code": "identity-adjudication-required",
             "detail": "This catalog identity is on the explicit source-review list."
-          },
-          {
-            "domain": "media",
-            "code": "media-evidence-required",
-            "detail": "No human-reviewed recognition source is attached to this exact row."
           }
         ],
         "nextAction": {
@@ -13487,7 +13884,7 @@
         "packageSignals": []
       },
       "mediaPlan": {
-        "status": "source-required",
+        "status": "reviewed-reuse-candidate",
         "query": "Bulk white mushrooms Stemmed caps",
         "target": {
           "identity": "Bulk white mushrooms",
@@ -13495,13 +13892,31 @@
           "color": "White",
           "retailForm": "Loose"
         },
-        "source": null,
+        "source": {
+          "provenance": "data/batch-06-media-reuse.json",
+          "file": "1 - button mushrooms.jpg",
+          "url": "https://commons.wikimedia.org/wiki/Special:FilePath/1%20-%20button%20mushrooms.jpg?width=1600",
+          "match": "reviewed-reuse-candidate",
+          "recognitionMode": "label-assisted",
+          "reviewReason": "The existing white-button-mushroom image anchors product identity; Bulk and RCWC are preserved only as workbook wording.",
+          "labelClaims": [
+            {
+              "value": "Bulk, RCWC",
+              "basis": "workbook-label",
+              "sourceField": "catalog.item",
+              "sourcePages": [
+                4
+              ]
+            }
+          ]
+        },
         "acceptance": [
           "Metadata must identify the exact product or a reviewed synonym.",
           "Visible form and identity-bearing modifiers must match the learner title.",
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": null,
       "publishability": {
         "status": "blocked",
         "blockers": [
@@ -13514,11 +13929,6 @@
             "domain": "identity",
             "code": "identity-adjudication-required",
             "detail": "This catalog identity is on the explicit source-review list."
-          },
-          {
-            "domain": "media",
-            "code": "media-evidence-required",
-            "detail": "No human-reviewed recognition source is attached to this exact row."
           }
         ],
         "nextAction": {
@@ -13661,6 +14071,7 @@
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": null,
       "publishability": {
         "status": "blocked",
         "blockers": [
@@ -13781,8 +14192,9 @@
         "source": null,
         "acceptance": []
       },
+      "mappingDecision": null,
       "publishability": {
-        "status": "out-of-scope",
+        "status": "excluded",
         "blockers": [
           {
             "domain": "scope",
@@ -13896,8 +14308,9 @@
         "source": null,
         "acceptance": []
       },
+      "mappingDecision": null,
       "publishability": {
-        "status": "out-of-scope",
+        "status": "excluded",
         "blockers": [
           {
             "domain": "scope",
@@ -14022,8 +14435,9 @@
         "source": null,
         "acceptance": []
       },
+      "mappingDecision": null,
       "publishability": {
-        "status": "out-of-scope",
+        "status": "excluded",
         "blockers": [
           {
             "domain": "scope",
@@ -14163,8 +14577,13 @@
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": {
+        "status": "mapped",
+        "relationKind": "single",
+        "reviewBasis": "The catalog records one checkout code for an interpreted in-scope produce identity."
+      },
       "publishability": {
-        "status": "blocked",
+        "status": "mapped",
         "blockers": [
           {
             "domain": "retail",
@@ -14315,6 +14734,7 @@
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": null,
       "publishability": {
         "status": "blocked",
         "blockers": [
@@ -14459,6 +14879,7 @@
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": null,
       "publishability": {
         "status": "blocked",
         "blockers": [
@@ -14626,6 +15047,7 @@
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": null,
       "publishability": {
         "status": "ready",
         "blockers": [],
@@ -14772,6 +15194,7 @@
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": null,
       "publishability": {
         "status": "blocked",
         "blockers": [
@@ -14931,6 +15354,7 @@
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": null,
       "publishability": {
         "status": "blocked",
         "blockers": [
@@ -15110,6 +15534,7 @@
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": null,
       "publishability": {
         "status": "ready",
         "blockers": [],
@@ -15150,7 +15575,7 @@
       "identityEvidence": {
         "status": "interpreted",
         "title": {
-          "value": "Yellow Jumbo #2 onion",
+          "value": "Onions - Yellow Jumbo #2 (Case)",
           "basis": "taxonomy-helper",
           "sourceFields": [
             "catalog.item"
@@ -15230,38 +15655,56 @@
         ]
       },
       "mediaPlan": {
-        "status": "source-required",
-        "query": "Yellow Jumbo #2 onion Layered bulb or stalk",
+        "status": "reviewed-source",
+        "query": "Onions - Yellow Jumbo #2 (Case) Layered bulb or stalk",
         "target": {
-          "identity": "Yellow Jumbo #2 onion",
+          "identity": "Onions - Yellow Jumbo #2 (Case)",
           "visibleForm": "Layered bulb or stalk",
           "color": "Yellow",
           "retailForm": "Loose"
         },
-        "source": null,
+        "source": {
+          "provenance": "public/media-resolution-batch06.json",
+          "file": "Yellow onions vegetables.jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/a/a1/Yellow_onions_vegetables.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "match": "reviewed-override",
+          "recognitionMode": "label-assisted",
+          "labelClaims": [
+            {
+              "value": "Jumbo #2",
+              "basis": "workbook-label",
+              "sourceField": "catalog.item",
+              "sourcePages": [
+                4
+              ]
+            },
+            {
+              "value": "Case",
+              "basis": "workbook-label",
+              "sourceField": "catalog.item",
+              "sourcePages": [
+                4
+              ]
+            }
+          ]
+        },
         "acceptance": [
           "Metadata must identify the exact product or a reviewed synonym.",
           "Visible form and identity-bearing modifiers must match the learner title.",
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": {
+        "status": "mapped",
+        "relationKind": "single",
+        "reviewBasis": "The catalog records one checkout code for an interpreted in-scope produce identity."
+      },
       "publishability": {
-        "status": "blocked",
-        "blockers": [
-          {
-            "domain": "retail",
-            "code": "retail-package-evidence-required",
-            "detail": "The named package, case, bin, quantity, or processed form needs exact retail evidence."
-          },
-          {
-            "domain": "media",
-            "code": "media-evidence-required",
-            "detail": "No human-reviewed recognition source is attached to this exact row."
-          }
-        ],
+        "status": "ready",
+        "blockers": [],
         "nextAction": {
-          "type": "verify-retail-unit-and-code",
-          "description": "Capture the exact package, case, bin, or quantity and verify that its code belongs to that retail unit."
+          "type": "none",
+          "description": "All current identity, code, retail, and media gates are satisfied."
         }
       }
     },
@@ -15415,6 +15858,7 @@
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": null,
       "publishability": {
         "status": "ready",
         "blockers": [],
@@ -15537,7 +15981,7 @@
         "packageSignals": []
       },
       "mediaPlan": {
-        "status": "source-required",
+        "status": "reviewed-reuse-candidate",
         "query": "Navel Large orange Round citrus fruit",
         "target": {
           "identity": "Navel Large orange",
@@ -15545,25 +15989,42 @@
           "color": "Orange",
           "retailForm": "Loose"
         },
-        "source": null,
+        "source": {
+          "provenance": "data/batch-06-media-reuse.json",
+          "file": "Navel orange.jpg",
+          "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Navel%20orange.jpg?width=1600",
+          "match": "reviewed-reuse-candidate",
+          "recognitionMode": "label-assisted",
+          "reviewReason": "The published navel-orange photograph anchors the exact citrus identity; Large stays a catalog size claim.",
+          "labelClaims": [
+            {
+              "value": "Large",
+              "basis": "workbook-label",
+              "sourceField": "catalog.item",
+              "sourcePages": [
+                5
+              ]
+            }
+          ]
+        },
         "acceptance": [
           "Metadata must identify the exact product or a reviewed synonym.",
           "Visible form and identity-bearing modifiers must match the learner title.",
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": {
+        "status": "mapped",
+        "relationKind": "shared-code",
+        "reviewBasis": "The catalog-supported code is also recorded for a compatible navel orange identity; preserve the exact size label and declare the reuse."
+      },
       "publishability": {
-        "status": "blocked",
+        "status": "mapped",
         "blockers": [
           {
             "domain": "code",
             "code": "conflicting-code-mapping",
             "detail": "The same code is attached to another catalog identity or published lesson."
-          },
-          {
-            "domain": "media",
-            "code": "media-evidence-required",
-            "detail": "No human-reviewed recognition source is attached to this exact row."
           }
         ],
         "nextAction": {
@@ -15704,8 +16165,13 @@
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": {
+        "status": "mapped",
+        "relationKind": "shared-code",
+        "reviewBasis": "The catalog-supported code is also recorded for a compatible navel orange identity; preserve the exact size label and declare the reuse."
+      },
       "publishability": {
-        "status": "blocked",
+        "status": "mapped",
         "blockers": [
           {
             "domain": "code",
@@ -15843,8 +16309,13 @@
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": {
+        "status": "mapped",
+        "relationKind": "single",
+        "reviewBasis": "The catalog records one checkout code for an interpreted in-scope produce identity."
+      },
       "publishability": {
-        "status": "blocked",
+        "status": "mapped",
         "blockers": [
           {
             "domain": "media",
@@ -15971,7 +16442,7 @@
         "packageSignals": []
       },
       "mediaPlan": {
-        "status": "source-required",
+        "status": "reviewed-reuse-candidate",
         "query": "Parsley Leafy herb stems",
         "target": {
           "identity": "Parsley",
@@ -15979,25 +16450,32 @@
           "color": "Green",
           "retailForm": "Loose"
         },
-        "source": null,
+        "source": {
+          "provenance": "data/batch-06-media-reuse.json",
+          "file": "Organic curly parsley.jpg",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/Organic_curly_parsley.jpg/1920px-Organic_curly_parsley.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "match": "reviewed-reuse-candidate",
+          "recognitionMode": "product-and-loose-form",
+          "reviewReason": "The existing curly-parsley photograph matches the catalog's Curley spelling variant and raw herb form without importing the source file's organic context."
+        },
         "acceptance": [
           "Metadata must identify the exact product or a reviewed synonym.",
           "Visible form and identity-bearing modifiers must match the learner title.",
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": {
+        "status": "mapped",
+        "relationKind": "shared-code",
+        "reviewBasis": "The catalog-supported code is also recorded for a compatible parsley identity; preserve the exact label and declare the reuse."
+      },
       "publishability": {
-        "status": "blocked",
+        "status": "mapped",
         "blockers": [
           {
             "domain": "code",
             "code": "conflicting-code-mapping",
             "detail": "The same code is attached to another catalog identity or published lesson."
-          },
-          {
-            "domain": "media",
-            "code": "media-evidence-required",
-            "detail": "No human-reviewed recognition source is attached to this exact row."
           }
         ],
         "nextAction": {
@@ -16130,6 +16608,7 @@
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": null,
       "publishability": {
         "status": "blocked",
         "blockers": [
@@ -16279,6 +16758,7 @@
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": null,
       "publishability": {
         "status": "blocked",
         "blockers": [
@@ -16402,8 +16882,9 @@
         "source": null,
         "acceptance": []
       },
+      "mappingDecision": null,
       "publishability": {
-        "status": "out-of-scope",
+        "status": "excluded",
         "blockers": [
           {
             "domain": "scope",
@@ -16559,6 +17040,7 @@
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": null,
       "publishability": {
         "status": "ready",
         "blockers": [],
@@ -16710,6 +17192,7 @@
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": null,
       "publishability": {
         "status": "ready",
         "blockers": [],
@@ -16750,7 +17233,7 @@
       "identityEvidence": {
         "status": "interpreted",
         "title": {
-          "value": "Freestone peach",
+          "value": "Peaches - Freestone (Case)",
           "basis": "taxonomy-helper",
           "sourceFields": [
             "catalog.item"
@@ -16830,38 +17313,56 @@
         ]
       },
       "mediaPlan": {
-        "status": "source-required",
-        "query": "Freestone peach Fuzzy round stone fruit",
+        "status": "reviewed-source",
+        "query": "Peaches - Freestone (Case) Fuzzy round stone fruit",
         "target": {
-          "identity": "Freestone peach",
+          "identity": "Peaches - Freestone (Case)",
           "visibleForm": "Fuzzy round stone fruit",
           "color": "Yellow-red",
           "retailForm": "Loose"
         },
-        "source": null,
+        "source": {
+          "provenance": "public/media-resolution-batch06.json",
+          "file": "Hillview Farms peaches in a basket.jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Hillview_Farms_peaches_in_a_basket.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "match": "reviewed-override",
+          "recognitionMode": "label-assisted",
+          "labelClaims": [
+            {
+              "value": "Freestone",
+              "basis": "workbook-label",
+              "sourceField": "catalog.item",
+              "sourcePages": [
+                5
+              ]
+            },
+            {
+              "value": "Case",
+              "basis": "workbook-label",
+              "sourceField": "catalog.item",
+              "sourcePages": [
+                5
+              ]
+            }
+          ]
+        },
         "acceptance": [
           "Metadata must identify the exact product or a reviewed synonym.",
           "Visible form and identity-bearing modifiers must match the learner title.",
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": {
+        "status": "mapped",
+        "relationKind": "single",
+        "reviewBasis": "The catalog records one checkout code for an interpreted in-scope produce identity."
+      },
       "publishability": {
-        "status": "blocked",
-        "blockers": [
-          {
-            "domain": "retail",
-            "code": "retail-package-evidence-required",
-            "detail": "The named package, case, bin, quantity, or processed form needs exact retail evidence."
-          },
-          {
-            "domain": "media",
-            "code": "media-evidence-required",
-            "detail": "No human-reviewed recognition source is attached to this exact row."
-          }
-        ],
+        "status": "ready",
+        "blockers": [],
         "nextAction": {
-          "type": "verify-retail-unit-and-code",
-          "description": "Capture the exact package, case, bin, or quantity and verify that its code belongs to that retail unit."
+          "type": "none",
+          "description": "All current identity, code, retail, and media gates are satisfied."
         }
       }
     },
@@ -17007,6 +17508,7 @@
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": null,
       "publishability": {
         "status": "ready",
         "blockers": [],
@@ -17047,7 +17549,7 @@
       "identityEvidence": {
         "status": "interpreted",
         "title": {
-          "value": "Asian Yellow pear",
+          "value": "Pears - Asian Yellow",
           "basis": "taxonomy-helper",
           "sourceFields": [
             "catalog.item"
@@ -17125,38 +17627,40 @@
         "packageSignals": []
       },
       "mediaPlan": {
-        "status": "source-required",
-        "query": "Asian Yellow pear Bell-shaped fruit",
+        "status": "reviewed-reuse-candidate",
+        "query": "Pears - Asian Yellow Bell-shaped fruit",
         "target": {
-          "identity": "Asian Yellow pear",
+          "identity": "Pears - Asian Yellow",
           "visibleForm": "Bell-shaped fruit",
           "color": "Yellow",
           "retailForm": "Loose"
         },
-        "source": null,
+        "source": {
+          "provenance": "data/batch-06-media-reuse.json",
+          "file": "Golden Asian Pear.png",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d8/Golden_Asian_Pear.png/1920px-Golden_Asian_Pear.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "match": "reviewed-reuse-candidate",
+          "recognitionMode": "product-and-loose-form",
+          "reviewReason": "The published Asian yellow pear image is an exact visible identity and color match."
+        },
         "acceptance": [
           "Metadata must identify the exact product or a reviewed synonym.",
           "Visible form and identity-bearing modifiers must match the learner title.",
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": {
+        "status": "mapped",
+        "relationKind": "same-label-different-codes",
+        "reviewBasis": "The exact catalog label appears with another recorded checkout code; preserve both source mappings instead of treating one as a replacement."
+      },
       "publishability": {
-        "status": "blocked",
+        "status": "mapped",
         "blockers": [
           {
             "domain": "code",
             "code": "multiple-source-codes",
             "detail": "The source label does not resolve to one unambiguous code."
-          },
-          {
-            "domain": "publishability",
-            "code": "duplicate-lesson-title",
-            "detail": "A published lesson already uses this normalized title."
-          },
-          {
-            "domain": "media",
-            "code": "media-evidence-required",
-            "detail": "No human-reviewed recognition source is attached to this exact row."
           }
         ],
         "nextAction": {
@@ -17315,6 +17819,7 @@
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": null,
       "publishability": {
         "status": "ready",
         "blockers": [],
@@ -17355,7 +17860,7 @@
       "identityEvidence": {
         "status": "interpreted",
         "title": {
-          "value": "Bartlett pear",
+          "value": "Pears - Bartlett 5lb (Bag)",
           "basis": "taxonomy-helper",
           "sourceFields": [
             "catalog.item"
@@ -17436,43 +17941,57 @@
         ]
       },
       "mediaPlan": {
-        "status": "source-required",
-        "query": "Bartlett pear Bell-shaped fruit",
+        "status": "reviewed-source",
+        "query": "Pears - Bartlett 5lb (Bag) Bell-shaped fruit",
         "target": {
-          "identity": "Bartlett pear",
+          "identity": "Pears - Bartlett 5lb (Bag)",
           "visibleForm": "Bell-shaped fruit",
           "color": "Green-yellow",
           "retailForm": "Loose"
         },
-        "source": null,
+        "source": {
+          "provenance": "public/media-resolution-batch06.json",
+          "file": "Bartlett pear.jpg",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/Bartlett_pear.jpg/1920px-Bartlett_pear.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "match": "reviewed-override",
+          "recognitionMode": "label-assisted",
+          "labelClaims": [
+            {
+              "value": "5lb",
+              "basis": "workbook-label",
+              "sourceField": "catalog.item",
+              "sourcePages": [
+                5
+              ]
+            },
+            {
+              "value": "Bag",
+              "basis": "workbook-label",
+              "sourceField": "catalog.item",
+              "sourcePages": [
+                5
+              ]
+            }
+          ]
+        },
         "acceptance": [
           "Metadata must identify the exact product or a reviewed synonym.",
           "Visible form and identity-bearing modifiers must match the learner title.",
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": {
+        "status": "mapped",
+        "relationKind": "single",
+        "reviewBasis": "The catalog records one checkout code; the exact catalog label preserves the bag and quantity distinction from the existing lesson title.",
+        "lessonTitle": "Pears - Bartlett 5lb (Bag)"
+      },
       "publishability": {
-        "status": "blocked",
-        "blockers": [
-          {
-            "domain": "retail",
-            "code": "retail-package-evidence-required",
-            "detail": "The named package, case, bin, quantity, or processed form needs exact retail evidence."
-          },
-          {
-            "domain": "publishability",
-            "code": "duplicate-lesson-title",
-            "detail": "A published lesson already uses this normalized title."
-          },
-          {
-            "domain": "media",
-            "code": "media-evidence-required",
-            "detail": "No human-reviewed recognition source is attached to this exact row."
-          }
-        ],
+        "status": "ready",
+        "blockers": [],
         "nextAction": {
-          "type": "verify-retail-unit-and-code",
-          "description": "Capture the exact package, case, bin, or quantity and verify that its code belongs to that retail unit."
+          "type": "none",
+          "description": "All current identity, code, retail, and media gates are satisfied."
         }
       }
     },
@@ -17589,7 +18108,7 @@
         "packageSignals": []
       },
       "mediaPlan": {
-        "status": "source-required",
+        "status": "reviewed-reuse-candidate",
         "query": "Bosc Large pear Bell-shaped fruit",
         "target": {
           "identity": "Bosc Large pear",
@@ -17597,25 +18116,42 @@
           "color": "Green-yellow",
           "retailForm": "Loose"
         },
-        "source": null,
+        "source": {
+          "provenance": "data/batch-06-media-reuse.json",
+          "file": "Bosc Pear.jpg",
+          "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Bosc_Pear.jpg?width=1600",
+          "match": "reviewed-reuse-candidate",
+          "recognitionMode": "label-assisted",
+          "reviewReason": "The reviewed Bosc image is an exact product match; Large is retained as a catalog size qualifier.",
+          "labelClaims": [
+            {
+              "value": "Large",
+              "basis": "workbook-label",
+              "sourceField": "catalog.item",
+              "sourcePages": [
+                5
+              ]
+            }
+          ]
+        },
         "acceptance": [
           "Metadata must identify the exact product or a reviewed synonym.",
           "Visible form and identity-bearing modifiers must match the learner title.",
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": {
+        "status": "mapped",
+        "relationKind": "shared-code",
+        "reviewBasis": "The catalog-supported code is also recorded for a compatible Bosc pear identity; preserve the exact size label and declare the reuse."
+      },
       "publishability": {
-        "status": "blocked",
+        "status": "mapped",
         "blockers": [
           {
             "domain": "code",
             "code": "conflicting-code-mapping",
             "detail": "The same code is attached to another catalog identity or published lesson."
-          },
-          {
-            "domain": "media",
-            "code": "media-evidence-required",
-            "detail": "No human-reviewed recognition source is attached to this exact row."
           }
         ],
         "nextAction": {
@@ -17754,8 +18290,13 @@
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": {
+        "status": "mapped",
+        "relationKind": "same-label-different-codes",
+        "reviewBasis": "The exact catalog label appears with another recorded checkout code; preserve both source mappings instead of treating one as a replacement."
+      },
       "publishability": {
-        "status": "blocked",
+        "status": "mapped",
         "blockers": [
           {
             "domain": "code",
@@ -17906,6 +18447,7 @@
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": null,
       "publishability": {
         "status": "blocked",
         "blockers": [
@@ -18050,8 +18592,13 @@
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": {
+        "status": "mapped",
+        "relationKind": "single",
+        "reviewBasis": "The catalog records one checkout code for an interpreted in-scope produce identity."
+      },
       "publishability": {
-        "status": "blocked",
+        "status": "mapped",
         "blockers": [
           {
             "domain": "media",
@@ -18207,6 +18754,7 @@
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": null,
       "publishability": {
         "status": "ready",
         "blockers": [],
@@ -18358,6 +18906,7 @@
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": null,
       "publishability": {
         "status": "ready",
         "blockers": [],
@@ -18518,6 +19067,7 @@
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": null,
       "publishability": {
         "status": "ready",
         "blockers": [],
@@ -18667,6 +19217,7 @@
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": null,
       "publishability": {
         "status": "ready",
         "blockers": [],
@@ -18827,6 +19378,7 @@
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": null,
       "publishability": {
         "status": "ready",
         "blockers": [],
@@ -18972,6 +19524,7 @@
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": null,
       "publishability": {
         "status": "blocked",
         "blockers": [
@@ -19139,6 +19692,7 @@
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": null,
       "publishability": {
         "status": "ready",
         "blockers": [],
@@ -19272,8 +19826,13 @@
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": {
+        "status": "mapped",
+        "relationKind": "single",
+        "reviewBasis": "The catalog records one checkout code for an interpreted in-scope produce identity."
+      },
       "publishability": {
-        "status": "blocked",
+        "status": "mapped",
         "blockers": [
           {
             "domain": "media",
@@ -19413,8 +19972,13 @@
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": {
+        "status": "mapped",
+        "relationKind": "single",
+        "reviewBasis": "The catalog records one checkout code for an interpreted in-scope produce identity."
+      },
       "publishability": {
-        "status": "blocked",
+        "status": "mapped",
         "blockers": [
           {
             "domain": "retail",
@@ -19557,8 +20121,13 @@
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": {
+        "status": "mapped",
+        "relationKind": "single",
+        "reviewBasis": "The catalog records one checkout code for an interpreted in-scope produce identity."
+      },
       "publishability": {
-        "status": "blocked",
+        "status": "mapped",
         "blockers": [
           {
             "domain": "media",
@@ -19704,6 +20273,7 @@
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": null,
       "publishability": {
         "status": "blocked",
         "blockers": [
@@ -19866,6 +20436,7 @@
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": null,
       "publishability": {
         "status": "ready",
         "blockers": [],
@@ -20017,6 +20588,7 @@
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": null,
       "publishability": {
         "status": "ready",
         "blockers": [],
@@ -20057,7 +20629,7 @@
       "identityEvidence": {
         "status": "interpreted",
         "title": {
-          "value": "Red potato",
+          "value": "Potato - Red 10lb",
           "basis": "taxonomy-helper",
           "sourceFields": [
             "catalog.item"
@@ -20137,43 +20709,49 @@
         ]
       },
       "mediaPlan": {
-        "status": "source-required",
-        "query": "Red potato Firm round or tapered tuber",
+        "status": "reviewed-source",
+        "query": "Potato - Red 10lb Firm round or tapered tuber",
         "target": {
-          "identity": "Red potato",
+          "identity": "Potato - Red 10lb",
           "visibleForm": "Firm round or tapered tuber",
           "color": "Red",
           "retailForm": "Loose"
         },
-        "source": null,
+        "source": {
+          "provenance": "public/media-resolution-batch06.json",
+          "file": "Red potatoes.jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Red_potatoes.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "match": "reviewed-override",
+          "recognitionMode": "label-assisted",
+          "labelClaims": [
+            {
+              "value": "10lb",
+              "basis": "workbook-label",
+              "sourceField": "catalog.item",
+              "sourcePages": [
+                4
+              ]
+            }
+          ]
+        },
         "acceptance": [
           "Metadata must identify the exact product or a reviewed synonym.",
           "Visible form and identity-bearing modifiers must match the learner title.",
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": {
+        "status": "mapped",
+        "relationKind": "single",
+        "reviewBasis": "The catalog records one checkout code; the exact catalog label preserves the quantity distinction from the existing lesson title.",
+        "lessonTitle": "Potato - Red 10lb"
+      },
       "publishability": {
-        "status": "blocked",
-        "blockers": [
-          {
-            "domain": "retail",
-            "code": "retail-package-evidence-required",
-            "detail": "The named package, case, bin, quantity, or processed form needs exact retail evidence."
-          },
-          {
-            "domain": "publishability",
-            "code": "duplicate-lesson-title",
-            "detail": "A published lesson already uses this normalized title."
-          },
-          {
-            "domain": "media",
-            "code": "media-evidence-required",
-            "detail": "No human-reviewed recognition source is attached to this exact row."
-          }
-        ],
+        "status": "ready",
+        "blockers": [],
         "nextAction": {
-          "type": "verify-retail-unit-and-code",
-          "description": "Capture the exact package, case, bin, or quantity and verify that its code belongs to that retail unit."
+          "type": "none",
+          "description": "All current identity, code, retail, and media gates are satisfied."
         }
       }
     },
@@ -20208,7 +20786,7 @@
       "identityEvidence": {
         "status": "interpreted",
         "title": {
-          "value": "Red potato",
+          "value": "Potato - Red 20lb",
           "basis": "taxonomy-helper",
           "sourceFields": [
             "catalog.item"
@@ -20288,43 +20866,49 @@
         ]
       },
       "mediaPlan": {
-        "status": "source-required",
-        "query": "Red potato Firm round or tapered tuber",
+        "status": "reviewed-source",
+        "query": "Potato - Red 20lb Firm round or tapered tuber",
         "target": {
-          "identity": "Red potato",
+          "identity": "Potato - Red 20lb",
           "visibleForm": "Firm round or tapered tuber",
           "color": "Red",
           "retailForm": "Loose"
         },
-        "source": null,
+        "source": {
+          "provenance": "public/media-resolution-batch06.json",
+          "file": "Red potatoes.jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Red_potatoes.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "match": "reviewed-override",
+          "recognitionMode": "label-assisted",
+          "labelClaims": [
+            {
+              "value": "20lb",
+              "basis": "workbook-label",
+              "sourceField": "catalog.item",
+              "sourcePages": [
+                4
+              ]
+            }
+          ]
+        },
         "acceptance": [
           "Metadata must identify the exact product or a reviewed synonym.",
           "Visible form and identity-bearing modifiers must match the learner title.",
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": {
+        "status": "mapped",
+        "relationKind": "single",
+        "reviewBasis": "The catalog records one checkout code; the exact catalog label preserves the quantity distinction from the existing lesson title.",
+        "lessonTitle": "Potato - Red 20lb"
+      },
       "publishability": {
-        "status": "blocked",
-        "blockers": [
-          {
-            "domain": "retail",
-            "code": "retail-package-evidence-required",
-            "detail": "The named package, case, bin, quantity, or processed form needs exact retail evidence."
-          },
-          {
-            "domain": "publishability",
-            "code": "duplicate-lesson-title",
-            "detail": "A published lesson already uses this normalized title."
-          },
-          {
-            "domain": "media",
-            "code": "media-evidence-required",
-            "detail": "No human-reviewed recognition source is attached to this exact row."
-          }
-        ],
+        "status": "ready",
+        "blockers": [],
         "nextAction": {
-          "type": "verify-retail-unit-and-code",
-          "description": "Capture the exact package, case, bin, or quantity and verify that its code belongs to that retail unit."
+          "type": "none",
+          "description": "All current identity, code, retail, and media gates are satisfied."
         }
       }
     },
@@ -20470,6 +21054,7 @@
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": null,
       "publishability": {
         "status": "ready",
         "blockers": [],
@@ -20621,6 +21206,7 @@
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": null,
       "publishability": {
         "status": "ready",
         "blockers": [],
@@ -20732,7 +21318,7 @@
         "packageSignals": []
       },
       "mediaPlan": {
-        "status": "source-required",
+        "status": "reviewed-reuse-candidate",
         "query": "Sweet Jamaican potato Firm round or tapered tuber",
         "target": {
           "identity": "Sweet Jamaican potato",
@@ -20740,13 +21326,31 @@
           "color": "Brown",
           "retailForm": "Loose"
         },
-        "source": null,
+        "source": {
+          "provenance": "data/batch-06-media-reuse.json",
+          "file": "Sweet-potato.JPG",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/Sweet-potato.JPG/1920px-Sweet-potato.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "match": "reviewed-reuse-candidate",
+          "recognitionMode": "label-assisted",
+          "reviewReason": "The existing Jamaican sweet-potato lesson provides the direct product match; handwritten status remains source provenance.",
+          "labelClaims": [
+            {
+              "value": "(handwritten)",
+              "basis": "workbook-label",
+              "sourceField": "catalog.item",
+              "sourcePages": [
+                4
+              ]
+            }
+          ]
+        },
         "acceptance": [
           "Metadata must identify the exact product or a reviewed synonym.",
           "Visible form and identity-bearing modifiers must match the learner title.",
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": null,
       "publishability": {
         "status": "blocked",
         "blockers": [
@@ -20759,11 +21363,6 @@
             "domain": "code",
             "code": "missing-checkout-code",
             "detail": "The immutable catalog contains no numeric code for this row."
-          },
-          {
-            "domain": "media",
-            "code": "media-evidence-required",
-            "detail": "No human-reviewed recognition source is attached to this exact row."
           }
         ],
         "nextAction": {
@@ -20803,7 +21402,7 @@
       "identityEvidence": {
         "status": "interpreted",
         "title": {
-          "value": "White potato",
+          "value": "Potato - White 10lb",
           "basis": "taxonomy-helper",
           "sourceFields": [
             "catalog.item"
@@ -20883,43 +21482,49 @@
         ]
       },
       "mediaPlan": {
-        "status": "source-required",
-        "query": "White potato Firm round or tapered tuber",
+        "status": "reviewed-source",
+        "query": "Potato - White 10lb Firm round or tapered tuber",
         "target": {
-          "identity": "White potato",
+          "identity": "Potato - White 10lb",
           "visibleForm": "Firm round or tapered tuber",
           "color": "White",
           "retailForm": "Loose"
         },
-        "source": null,
+        "source": {
+          "provenance": "public/media-resolution-batch06.json",
+          "file": "Potatoes-5796 - Hans Braxmeier.jpg",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/Potatoes-5796_-_Hans_Braxmeier.jpg/1920px-Potatoes-5796_-_Hans_Braxmeier.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "match": "reviewed-override",
+          "recognitionMode": "label-assisted",
+          "labelClaims": [
+            {
+              "value": "10lb",
+              "basis": "workbook-label",
+              "sourceField": "catalog.item",
+              "sourcePages": [
+                4
+              ]
+            }
+          ]
+        },
         "acceptance": [
           "Metadata must identify the exact product or a reviewed synonym.",
           "Visible form and identity-bearing modifiers must match the learner title.",
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": {
+        "status": "mapped",
+        "relationKind": "single",
+        "reviewBasis": "The catalog records one checkout code; the exact catalog label preserves the quantity distinction from the existing lesson title.",
+        "lessonTitle": "Potato - White 10lb"
+      },
       "publishability": {
-        "status": "blocked",
-        "blockers": [
-          {
-            "domain": "retail",
-            "code": "retail-package-evidence-required",
-            "detail": "The named package, case, bin, quantity, or processed form needs exact retail evidence."
-          },
-          {
-            "domain": "publishability",
-            "code": "duplicate-lesson-title",
-            "detail": "A published lesson already uses this normalized title."
-          },
-          {
-            "domain": "media",
-            "code": "media-evidence-required",
-            "detail": "No human-reviewed recognition source is attached to this exact row."
-          }
-        ],
+        "status": "ready",
+        "blockers": [],
         "nextAction": {
-          "type": "verify-retail-unit-and-code",
-          "description": "Capture the exact package, case, bin, or quantity and verify that its code belongs to that retail unit."
+          "type": "none",
+          "description": "All current identity, code, retail, and media gates are satisfied."
         }
       }
     },
@@ -20954,7 +21559,7 @@
       "identityEvidence": {
         "status": "interpreted",
         "title": {
-          "value": "Yellow potato",
+          "value": "Potato - Yellow 10lb",
           "basis": "taxonomy-helper",
           "sourceFields": [
             "catalog.item"
@@ -21034,38 +21639,48 @@
         ]
       },
       "mediaPlan": {
-        "status": "source-required",
-        "query": "Yellow potato Firm round or tapered tuber",
+        "status": "reviewed-source",
+        "query": "Potato - Yellow 10lb Firm round or tapered tuber",
         "target": {
-          "identity": "Yellow potato",
+          "identity": "Potato - Yellow 10lb",
           "visibleForm": "Firm round or tapered tuber",
           "color": "Yellow",
           "retailForm": "Loose"
         },
-        "source": null,
+        "source": {
+          "provenance": "public/media-resolution-batch06.json",
+          "file": "Yukon Gold Creamers (29019239791).jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/4/41/Yukon_Gold_Creamers_%2829019239791%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "match": "reviewed-override",
+          "recognitionMode": "label-assisted",
+          "labelClaims": [
+            {
+              "value": "10lb",
+              "basis": "workbook-label",
+              "sourceField": "catalog.item",
+              "sourcePages": [
+                4
+              ]
+            }
+          ]
+        },
         "acceptance": [
           "Metadata must identify the exact product or a reviewed synonym.",
           "Visible form and identity-bearing modifiers must match the learner title.",
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": {
+        "status": "mapped",
+        "relationKind": "single",
+        "reviewBasis": "The catalog records one checkout code for an interpreted in-scope produce identity."
+      },
       "publishability": {
-        "status": "blocked",
-        "blockers": [
-          {
-            "domain": "retail",
-            "code": "retail-package-evidence-required",
-            "detail": "The named package, case, bin, quantity, or processed form needs exact retail evidence."
-          },
-          {
-            "domain": "media",
-            "code": "media-evidence-required",
-            "detail": "No human-reviewed recognition source is attached to this exact row."
-          }
-        ],
+        "status": "ready",
+        "blockers": [],
         "nextAction": {
-          "type": "verify-retail-unit-and-code",
-          "description": "Capture the exact package, case, bin, or quantity and verify that its code belongs to that retail unit."
+          "type": "none",
+          "description": "All current identity, code, retail, and media gates are satisfied."
         }
       }
     },
@@ -21101,7 +21716,7 @@
       "identityEvidence": {
         "status": "interpreted",
         "title": {
-          "value": "Prickly Pears",
+          "value": "Prickly Pears (Tray / Case)",
           "basis": "taxonomy-helper",
           "sourceFields": [
             "catalog.item"
@@ -21182,38 +21797,49 @@
         ]
       },
       "mediaPlan": {
-        "status": "source-required",
-        "query": "Prickly Pears Oval cactus fruit",
+        "status": "reviewed-source",
+        "query": "Prickly Pears (Tray / Case) Oval cactus fruit",
         "target": {
-          "identity": "Prickly Pears",
+          "identity": "Prickly Pears (Tray / Case)",
           "visibleForm": "Oval cactus fruit",
           "color": "Red-green",
           "retailForm": "Loose"
         },
-        "source": null,
+        "source": {
+          "provenance": "public/media-resolution-batch06.json",
+          "file": "Prickly pears.jpg",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/Prickly_pears.jpg/1920px-Prickly_pears.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "match": "reviewed-override",
+          "recognitionMode": "label-assisted",
+          "labelClaims": [
+            {
+              "value": "Tray / Case",
+              "basis": "workbook-label",
+              "sourceField": "catalog.item",
+              "sourcePages": [
+                2,
+                5
+              ]
+            }
+          ]
+        },
         "acceptance": [
           "Metadata must identify the exact product or a reviewed synonym.",
           "Visible form and identity-bearing modifiers must match the learner title.",
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": {
+        "status": "mapped",
+        "relationKind": "single",
+        "reviewBasis": "The catalog records one checkout code for an interpreted in-scope produce identity."
+      },
       "publishability": {
-        "status": "blocked",
-        "blockers": [
-          {
-            "domain": "retail",
-            "code": "retail-package-evidence-required",
-            "detail": "The named package, case, bin, quantity, or processed form needs exact retail evidence."
-          },
-          {
-            "domain": "media",
-            "code": "media-evidence-required",
-            "detail": "No human-reviewed recognition source is attached to this exact row."
-          }
-        ],
+        "status": "ready",
+        "blockers": [],
         "nextAction": {
-          "type": "verify-retail-unit-and-code",
-          "description": "Capture the exact package, case, bin, or quantity and verify that its code belongs to that retail unit."
+          "type": "none",
+          "description": "All current identity, code, retail, and media gates are satisfied."
         }
       }
     },
@@ -21341,6 +21967,7 @@
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": null,
       "publishability": {
         "status": "blocked",
         "blockers": [
@@ -21496,8 +22123,13 @@
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": {
+        "status": "mapped",
+        "relationKind": "same-label-different-codes",
+        "reviewBasis": "The exact catalog label appears with multiple recorded checkout codes across source rows; preserve every source mapping."
+      },
       "publishability": {
-        "status": "blocked",
+        "status": "mapped",
         "blockers": [
           {
             "domain": "code",
@@ -21641,8 +22273,13 @@
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": {
+        "status": "mapped",
+        "relationKind": "same-label-different-codes",
+        "reviewBasis": "The exact catalog label appears with multiple recorded checkout codes across source rows; preserve every source mapping."
+      },
       "publishability": {
-        "status": "blocked",
+        "status": "mapped",
         "blockers": [
           {
             "domain": "code",
@@ -21780,6 +22417,7 @@
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": null,
       "publishability": {
         "status": "blocked",
         "blockers": [
@@ -21922,6 +22560,7 @@
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": null,
       "publishability": {
         "status": "blocked",
         "blockers": [
@@ -22048,7 +22687,7 @@
         "packageSignals": []
       },
       "mediaPlan": {
-        "status": "source-required",
+        "status": "reviewed-reuse-candidate",
         "query": "Bunch radish Small round or long root",
         "target": {
           "identity": "Bunch radish",
@@ -22056,13 +22695,21 @@
           "color": "Red-white",
           "retailForm": "Bunch"
         },
-        "source": null,
+        "source": {
+          "provenance": "data/batch-06-media-reuse.json",
+          "file": "Radish bunches.jpg",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a9/Radish_bunches.jpg/1920px-Radish_bunches.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "match": "reviewed-reuse-candidate",
+          "recognitionMode": "product-and-loose-form",
+          "reviewReason": "The published radish-bunch photograph is a direct product, color, and sale-form match."
+        },
         "acceptance": [
           "Metadata must identify the exact product or a reviewed synonym.",
           "Visible form and identity-bearing modifiers must match the learner title.",
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": null,
       "publishability": {
         "status": "blocked",
         "blockers": [
@@ -22070,11 +22717,6 @@
             "domain": "code",
             "code": "conflicting-code-mapping",
             "detail": "The same code is attached to another catalog identity or published lesson."
-          },
-          {
-            "domain": "media",
-            "code": "media-evidence-required",
-            "detail": "No human-reviewed recognition source is attached to this exact row."
           }
         ],
         "nextAction": {
@@ -22210,8 +22852,13 @@
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": {
+        "status": "mapped",
+        "relationKind": "single",
+        "reviewBasis": "The catalog records one checkout code for an interpreted in-scope produce identity."
+      },
       "publishability": {
-        "status": "blocked",
+        "status": "mapped",
         "blockers": [
           {
             "domain": "retail",
@@ -22357,8 +23004,13 @@
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": {
+        "status": "mapped",
+        "relationKind": "single",
+        "reviewBasis": "The catalog records one checkout code for an interpreted in-scope produce identity."
+      },
       "publishability": {
-        "status": "blocked",
+        "status": "mapped",
         "blockers": [
           {
             "domain": "retail",
@@ -22478,7 +23130,7 @@
         "packageSignals": []
       },
       "mediaPlan": {
-        "status": "source-required",
+        "status": "reviewed-reuse-candidate",
         "query": "Rutabagas Firm underground root or tuber",
         "target": {
           "identity": "Rutabagas",
@@ -22486,13 +23138,21 @@
           "color": "Brown",
           "retailForm": "Loose"
         },
-        "source": null,
+        "source": {
+          "provenance": "data/batch-06-media-reuse.json",
+          "file": "Swede - rutabaga - veggiegroup.jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Swede_-_rutabaga_-_veggiegroup.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "match": "reviewed-reuse-candidate",
+          "recognitionMode": "product-and-loose-form",
+          "reviewReason": "The existing rutabaga photograph directly supports the plural catalog label with the same raw root identity."
+        },
         "acceptance": [
           "Metadata must identify the exact product or a reviewed synonym.",
           "Visible form and identity-bearing modifiers must match the learner title.",
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": null,
       "publishability": {
         "status": "blocked",
         "blockers": [
@@ -22500,11 +23160,6 @@
             "domain": "code",
             "code": "missing-checkout-code",
             "detail": "The immutable catalog contains no numeric code for this row."
-          },
-          {
-            "domain": "media",
-            "code": "media-evidence-required",
-            "detail": "No human-reviewed recognition source is attached to this exact row."
           }
         ],
         "nextAction": {
@@ -22611,8 +23266,9 @@
         "source": null,
         "acceptance": []
       },
+      "mappingDecision": null,
       "publishability": {
-        "status": "out-of-scope",
+        "status": "excluded",
         "blockers": [
           {
             "domain": "scope",
@@ -22750,8 +23406,13 @@
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": {
+        "status": "mapped",
+        "relationKind": "single",
+        "reviewBasis": "The catalog records one checkout code for an interpreted in-scope produce identity."
+      },
       "publishability": {
-        "status": "blocked",
+        "status": "mapped",
         "blockers": [
           {
             "domain": "media",
@@ -22897,6 +23558,7 @@
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": null,
       "publishability": {
         "status": "blocked",
         "blockers": [
@@ -23038,8 +23700,13 @@
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": {
+        "status": "mapped",
+        "relationKind": "single",
+        "reviewBasis": "The catalog records one checkout code for an interpreted in-scope produce identity."
+      },
       "publishability": {
-        "status": "blocked",
+        "status": "mapped",
         "blockers": [
           {
             "domain": "retail",
@@ -23184,8 +23851,13 @@
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": {
+        "status": "mapped",
+        "relationKind": "single",
+        "reviewBasis": "The catalog records one checkout code for an interpreted in-scope produce identity."
+      },
       "publishability": {
-        "status": "blocked",
+        "status": "mapped",
         "blockers": [
           {
             "domain": "retail",
@@ -23328,6 +24000,7 @@
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": null,
       "publishability": {
         "status": "blocked",
         "blockers": [
@@ -23479,6 +24152,7 @@
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": null,
       "publishability": {
         "status": "blocked",
         "blockers": [
@@ -23623,8 +24297,13 @@
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": {
+        "status": "mapped",
+        "relationKind": "single",
+        "reviewBasis": "The catalog records one checkout code for an interpreted in-scope produce identity."
+      },
       "publishability": {
-        "status": "blocked",
+        "status": "mapped",
         "blockers": [
           {
             "domain": "media",
@@ -23778,6 +24457,7 @@
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": null,
       "publishability": {
         "status": "ready",
         "blockers": [],
@@ -23910,6 +24590,7 @@
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": null,
       "publishability": {
         "status": "blocked",
         "blockers": [
@@ -24083,6 +24764,7 @@
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": null,
       "publishability": {
         "status": "ready",
         "blockers": [],
@@ -24240,6 +24922,7 @@
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": null,
       "publishability": {
         "status": "ready",
         "blockers": [],
@@ -24400,6 +25083,7 @@
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": null,
       "publishability": {
         "status": "ready",
         "blockers": [],
@@ -24563,6 +25247,7 @@
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": null,
       "publishability": {
         "status": "ready",
         "blockers": [],
@@ -24682,7 +25367,7 @@
         "packageSignals": []
       },
       "mediaPlan": {
-        "status": "source-required",
+        "status": "reviewed-reuse-candidate",
         "query": "Vine Ripe / Field tomato Smooth round or oblong fruit",
         "target": {
           "identity": "Vine Ripe / Field tomato",
@@ -24690,13 +25375,41 @@
           "color": "Red",
           "retailForm": "Loose"
         },
-        "source": null,
+        "source": {
+          "provenance": "data/batch-06-media-reuse.json",
+          "file": "Strauchtomaten.jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/1/11/Strauchtomaten.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "match": "reviewed-reuse-candidate",
+          "recognitionMode": "label-assisted",
+          "reviewReason": "The reviewed vine-tomato image truthfully anchors the visible product; Field and Bulk remain exact workbook qualifiers.",
+          "labelClaims": [
+            {
+              "value": "Field",
+              "basis": "workbook-label",
+              "sourceField": "catalog.item",
+              "sourcePages": [
+                3,
+                4
+              ]
+            },
+            {
+              "value": "Bulk",
+              "basis": "workbook-label",
+              "sourceField": "catalog.item",
+              "sourcePages": [
+                3,
+                4
+              ]
+            }
+          ]
+        },
         "acceptance": [
           "Metadata must identify the exact product or a reviewed synonym.",
           "Visible form and identity-bearing modifiers must match the learner title.",
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": null,
       "publishability": {
         "status": "blocked",
         "blockers": [
@@ -24709,11 +25422,6 @@
             "domain": "identity",
             "code": "identity-adjudication-required",
             "detail": "This catalog identity is on the explicit source-review list."
-          },
-          {
-            "domain": "media",
-            "code": "media-evidence-required",
-            "detail": "No human-reviewed recognition source is attached to this exact row."
           }
         ],
         "nextAction": {
@@ -24838,6 +25546,7 @@
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": null,
       "publishability": {
         "status": "blocked",
         "blockers": [
@@ -24988,6 +25697,7 @@
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": null,
       "publishability": {
         "status": "ready",
         "blockers": [],
@@ -25124,6 +25834,7 @@
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": null,
       "publishability": {
         "status": "blocked",
         "blockers": [
@@ -25248,8 +25959,9 @@
         "source": null,
         "acceptance": []
       },
+      "mappingDecision": null,
       "publishability": {
-        "status": "out-of-scope",
+        "status": "excluded",
         "blockers": [
           {
             "domain": "scope",
@@ -25367,8 +26079,9 @@
         "source": null,
         "acceptance": []
       },
+      "mappingDecision": null,
       "publishability": {
-        "status": "out-of-scope",
+        "status": "excluded",
         "blockers": [
           {
             "domain": "scope",
@@ -25506,8 +26219,13 @@
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": {
+        "status": "mapped",
+        "relationKind": "single",
+        "reviewBasis": "The catalog records one checkout code for an interpreted in-scope produce identity."
+      },
       "publishability": {
-        "status": "blocked",
+        "status": "mapped",
         "blockers": [
           {
             "domain": "media",
@@ -25552,7 +26270,7 @@
       "identityEvidence": {
         "status": "interpreted",
         "title": {
-          "value": "White yam",
+          "value": "Yams - White",
           "basis": "taxonomy-helper",
           "sourceFields": [
             "catalog.item"
@@ -25632,38 +26350,40 @@
         "packageSignals": []
       },
       "mediaPlan": {
-        "status": "source-required",
-        "query": "White yam Long firm tuber",
+        "status": "reviewed-reuse-candidate",
+        "query": "Yams - White Long firm tuber",
         "target": {
-          "identity": "White yam",
+          "identity": "Yams - White",
           "visibleForm": "Long firm tuber",
           "color": "White",
           "retailForm": "Loose"
         },
-        "source": null,
+        "source": {
+          "provenance": "data/batch-06-media-reuse.json",
+          "file": "Yam Tubers stacked on a plastic table 01.jpg",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1e/Yam_Tubers_stacked_on_a_plastic_table_01.jpg/1920px-Yam_Tubers_stacked_on_a_plastic_table_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "match": "reviewed-reuse-candidate",
+          "recognitionMode": "product-and-loose-form",
+          "reviewReason": "The published white-yam photograph is an exact product and whole-tuber match; white names the yam type rather than visible outer skin."
+        },
         "acceptance": [
           "Metadata must identify the exact product or a reviewed synonym.",
           "Visible form and identity-bearing modifiers must match the learner title.",
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": {
+        "status": "mapped",
+        "relationKind": "shared-code",
+        "reviewBasis": "The catalog-supported code is also recorded for a compatible white yam identity; preserve the exact label and declare the reuse."
+      },
       "publishability": {
-        "status": "blocked",
+        "status": "mapped",
         "blockers": [
           {
             "domain": "code",
             "code": "conflicting-code-mapping",
             "detail": "The same code is attached to another catalog identity or published lesson."
-          },
-          {
-            "domain": "publishability",
-            "code": "duplicate-lesson-title",
-            "detail": "A published lesson already uses this normalized title."
-          },
-          {
-            "domain": "media",
-            "code": "media-evidence-required",
-            "detail": "No human-reviewed recognition source is attached to this exact row."
           }
         ],
         "nextAction": {
@@ -25812,6 +26532,7 @@
           "Rights and source URL must be recorded before admission."
         ]
       },
+      "mappingDecision": null,
       "publishability": {
         "status": "ready",
         "blockers": [],

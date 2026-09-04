@@ -60,6 +60,10 @@ assert.ok(
   globalStyles.includes('@import "./canon/catalog-controls.css"'),
   "Catalog-control CSS must load after the appearance layer.",
 );
+assert.ok(
+  globalStyles.includes('@import "./canon/batch-dispositions.css"'),
+  "Catalog disposition CSS must be included globally.",
+);
 assert.ok(homePage.includes("catalog475"), "The home page must expose the complete Catalog 475 collection.");
 assert.ok(
   homePage.includes("homeStorySummaries"),
@@ -67,5 +71,5 @@ assert.ok(
 );
 
 console.log(
-  "Validated 18-at-a-time ready loading, queued discovery, image laziness, mobile scan grid, horizontal category scrolling, theme-safe selected controls, and the Catalog 475 home feed.",
+  "Validated 18-at-a-time ready loading, mapped/queued/catalog-only discovery, image laziness, mobile scan grid, horizontal category scrolling, theme-safe selected controls, and the Catalog 475 home feed.",
 );

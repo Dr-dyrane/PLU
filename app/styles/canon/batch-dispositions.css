@@ -1,0 +1,46 @@
+.batchSectionNote {
+  max-width: 72ch;
+  margin: -4px 0 13px;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+.batchMapped .batchSectionHeading svg {
+  color: #8eb9ff;
+}
+
+.batchMappedCard {
+  background: rgba(87, 130, 198, 0.09);
+  box-shadow:
+    inset 0 0 0 1px rgba(142, 185, 255, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.045);
+}
+
+.batchMappedCard small {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.batchReferenceCode {
+  max-width: 92px;
+  color: #8eb9ff;
+  font-size: 11px;
+  letter-spacing: 0.04em;
+  text-align: right;
+}
+
+.batchExcluded {
+  opacity: 0.88;
+}
+
+.batchExcluded .batchSectionHeading svg,
+.batchExcludedCard > svg {
+  color: #b5af9f;
+}
+
+.batchExcludedCard {
+  background: rgba(181, 175, 159, 0.065);
+}

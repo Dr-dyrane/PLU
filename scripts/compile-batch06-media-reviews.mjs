@@ -6,6 +6,7 @@ import { normalize, readJson } from "./batch04/common.mjs";
 const DISCOVERY_URL = new URL("../public/media-discovery-batch06.json", import.meta.url);
 const KNOWLEDGE_URL = new URL("../data/batch-06-knowledge.json", import.meta.url);
 const REVIEWED_MEDIA_URL = new URL("../data/batch-06-reviewed-media.json", import.meta.url);
+const MEDIA_REUSE_URL = new URL("../data/batch-06-media-reuse.json", import.meta.url);
 const DECISIONS_URL = new URL("../data/batch-06-media-review-decisions.json", import.meta.url);
 const REVIEW_LANE_URLS = [
   new URL("../data/review-lanes/batch06-media-review-00-26.json", import.meta.url),
@@ -31,6 +32,7 @@ const FOUNDATION_IDS = new Set([
 const discovery = await readJson(DISCOVERY_URL);
 const knowledge = await readJson(KNOWLEDGE_URL);
 const existingLedger = await readJson(REVIEWED_MEDIA_URL);
+const mediaReuse = await readJson(MEDIA_REUSE_URL);
 const lanes = (await Promise.all(REVIEW_LANE_URLS.map(readJson))).flat().map((decision) => ({
   ...decision,
   decision: decision.decision === "approve"
@@ -43,6 +45,9 @@ const lanes = (await Promise.all(REVIEW_LANE_URLS.map(readJson))).flat().map((de
 assert.equal(discovery?.media?.length, 108, "The complete Batch 06 discovery report must contain 108 found candidates.");
 assert.equal(knowledge?.items?.length, 175, "The Batch 06 knowledge overlay must cover all 175 rows.");
 assert.equal(existingLedger?.schemaVersion, "1.0.0", "The Batch 06 reviewed-media ledger is malformed.");
+assert.equal(mediaReuse?.schemaVersion, 1, "The Batch 06 media-reuse ledger is malformed.");
+assert.equal(mediaReuse?.batch, "06", "The Batch 06 media-reuse ledger has the wrong batch.");
+assert.equal(mediaReuse?.items?.length, 44, "The Batch 06 media-reuse ledger must contain the reviewed 44-row set.");
 assert.equal(lanes.length, discovery.media.length, "Every discovered candidate needs one pixel-review decision.");
 
 const discoveryById = new Map(discovery.media.map((item, reportIndex) => [item.catalogId, { ...item, reportIndex }]));
@@ -185,8 +190,30 @@ for (const decision of decisions) {
   generated.push(entry);
 }
 
+const reused = [];
+for (const reuse of mediaReuse.items) {
+  const evidence = knowledgeById.get(reuse.catalogId);
+  assert.ok(evidence, `${reuse.catalogId}: media-reuse knowledge evidence is missing.`);
+  if (
+    evidence.mappingDecision?.relationKind !== "single" ||
+    evidence.scope?.status !== "in-scope" ||
+    evidence.identityEvidence?.status !== "interpreted" ||
+    evidence.codeEvidence?.resolution !== "catalog-supported" ||
+    !evidence.codeEvidence?.primaryCode ||
+    evidence.publishability?.status !== "ready"
+  ) {
+    continue;
+  }
+  const { sourceCatalogId, ...review } = reuse;
+  reused.push({
+    ...review,
+    code: String(evidence.codeEvidence.primaryCode),
+    reuseSourceCatalogId: sourceCatalogId,
+  });
+}
+
 const sourceOrderById = new Map(knowledge.items.map((item) => [item.catalogId, item.sourceOrder]));
-const finalLedgerItems = [...foundation, ...generated].sort(
+const finalLedgerItems = [...foundation, ...generated, ...reused].sort(
   (left, right) => sourceOrderById.get(left.catalogId) - sourceOrderById.get(right.catalogId),
 );
 assert.equal(
@@ -207,6 +234,7 @@ const decisionDocument = {
       (decision) => decision.decision === "approved" && decision.codeResolution === "catalog-supported",
     ).length,
     promotedFromReview: generated.length,
+    promotedFromReuse: reused.length,
   },
   items: decisions,
 };

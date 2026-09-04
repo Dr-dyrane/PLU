@@ -43,6 +43,8 @@ const candidates06 = await readJson("../data/batch-06-candidates.json");
 const dispositions06 = await readJson("../data/batch-06-dispositions.json");
 const knowledge06 = await readJson("../data/batch-06-knowledge.json");
 const reviewedMedia06 = await readJson("../data/batch-06-reviewed-media.json");
+const mappingDecisions06 = await readJson("../data/batch-06-mapping-decisions.json");
+const mediaReuse06 = await readJson("../data/batch-06-media-reuse.json");
 const report04 = await readJson("../public/media-resolution-batch04.json");
 const report05 = await readJson("../public/media-resolution-batch05.json");
 const report06 = await readJson("../public/media-resolution-batch06.json");
@@ -308,12 +310,100 @@ assert.equal(
   "Batch 06: catalog IDs must be unique.",
 );
 assert.ok(
-  batch06.items.every((item) => ["ready", "queued"].includes(item.status)),
-  "Batch 06: every row must be ready or queued.",
+  batch06.items.every((item) => ["ready", "mapped", "queued", "excluded"].includes(item.status)),
+  "Batch 06: every row must have a supported learning disposition.",
 );
 
 const ready06 = batch06.items.filter((item) => item.status === "ready");
+const mapped06 = batch06.items.filter((item) => item.status === "mapped");
 const queued06 = batch06.items.filter((item) => item.status === "queued");
+const excluded06 = batch06.items.filter((item) => item.status === "excluded");
+assert.equal(mappingDecisions06?.schemaVersion, 1, "Batch 06 mapping decisions must use schema version 1.");
+assert.equal(mappingDecisions06?.batch, "06", "Batch 06 mapping decisions have the wrong batch.");
+assert.equal(mappingDecisions06?.items?.length, 61, "Batch 06 mapping decisions must contain 61 rows.");
+const allowedMappingKinds = new Set(["single", "same-label-different-codes", "shared-code"]);
+const mappingDecisions06ById = new Map();
+for (const mapping of mappingDecisions06.items) {
+  const label = `Batch 06 mapping/${mapping?.catalogId ?? "unknown"}`;
+  assert.ok(mapping.catalogId && !mappingDecisions06ById.has(mapping.catalogId), `${label}: duplicate catalog ID.`);
+  assert.ok(allowedMappingKinds.has(mapping.relationKind), `${label}: unsupported relation kind.`);
+  assert.ok(typeof mapping.reviewBasis === "string" && mapping.reviewBasis.trim(), `${label}: review basis is required.`);
+  assert.ok(catalogById.has(mapping.catalogId), `${label}: catalog row is missing.`);
+  const knowledgeMapping = knowledge06ById.get(mapping.catalogId)?.mappingDecision;
+  assert.equal(knowledgeMapping?.status, "mapped", `${label}: knowledge mapping is missing.`);
+  assert.equal(knowledgeMapping?.relationKind, mapping.relationKind, `${label}: knowledge relation kind drifted.`);
+  assert.equal(knowledgeMapping?.reviewBasis, mapping.reviewBasis, `${label}: knowledge review basis drifted.`);
+  assert.equal(knowledgeMapping?.lessonTitle, mapping.lessonTitle, `${label}: knowledge lesson title drifted.`);
+  mappingDecisions06ById.set(mapping.catalogId, mapping);
+}
+const ready06IdSet = new Set(ready06.map((item) => item.catalogId));
+const mapped06IdSet = new Set(mapped06.map((item) => item.catalogId));
+assertSameCatalogIds(
+  mapped06.map((item) => item.catalogId),
+  mappingDecisions06.items
+    .filter((mapping) => !ready06IdSet.has(mapping.catalogId))
+    .map((mapping) => mapping.catalogId),
+  "Batch 06: mapped rows must be the curated mapping set minus promoted ready singles.",
+);
+for (const mapping of mappingDecisions06.items) {
+  const status = ready06IdSet.has(mapping.catalogId) ? "ready" : mapped06IdSet.has(mapping.catalogId) ? "mapped" : null;
+  assert.ok(status, `${mapping.catalogId}: curated mapping must be ready or mapped.`);
+  if (status === "ready") {
+    assert.equal(mapping.relationKind, "single", `${mapping.catalogId}: only a single mapping may become a lesson.`);
+  } else {
+    const batchItem = mapped06.find((item) => item.catalogId === mapping.catalogId);
+    assert.equal(batchItem.mappingKind, mapping.relationKind, `${mapping.catalogId}: manifest mapping kind drifted.`);
+    assert.equal(batchItem.mappingReason, mapping.reviewBasis, `${mapping.catalogId}: manifest mapping reason drifted.`);
+  }
+}
+
+assert.equal(mediaReuse06?.schemaVersion, 1, "Batch 06 media reuse must use schema version 1.");
+assert.equal(mediaReuse06?.batch, "06", "Batch 06 media reuse has the wrong batch.");
+assert.equal(mediaReuse06?.items?.length, 44, "Batch 06 media reuse must contain 44 rows.");
+const mediaReuse06ById = new Map();
+for (const reuse of mediaReuse06.items) {
+  const label = `Batch 06 reuse/${reuse?.catalogId ?? "unknown"}`;
+  assert.ok(reuse.catalogId && !mediaReuse06ById.has(reuse.catalogId), `${label}: duplicate target.`);
+  assert.notEqual(reuse.catalogId, reuse.sourceCatalogId, `${label}: source and target must differ.`);
+  assert.ok(typeof reuse.commonsFile === "string" && reuse.commonsFile.trim(), `${label}: Commons file is required.`);
+  assert.ok(typeof reuse.sharedMediaBasis === "string" && reuse.sharedMediaBasis.trim(), `${label}: shared-media basis is required.`);
+  mediaReuse06ById.set(reuse.catalogId, reuse);
+}
+const priorStoryByCatalogId = new Map(storiesBeforeBatch06.map((story) => [story.catalogId, story]));
+for (const reuse of mediaReuse06.items) {
+  const label = `Batch 06 reuse/${reuse.catalogId}`;
+  assert.ok(!mediaReuse06ById.has(reuse.sourceCatalogId), `${label}: reuse source may not be another reuse target.`);
+  const priorStory = priorStoryByCatalogId.get(reuse.sourceCatalogId);
+  const currentReview = reviewedMedia06ById.get(reuse.sourceCatalogId);
+  assert.ok(priorStory || currentReview, `${label}: reviewed source is missing.`);
+  assert.ok(
+    priorStory
+      ? priorStory.photos?.some((photo) => referencedCommonsFile(photo) === reuse.commonsFile)
+      : currentReview.commonsFile === reuse.commonsFile,
+    `${label}: source/file relationship drifted.`,
+  );
+  const mapping = mappingDecisions06ById.get(reuse.catalogId);
+  if (mapping?.relationKind === "single") {
+    assert.ok(ready06IdSet.has(reuse.catalogId), `${label}: reviewed single reuse must be ready.`);
+    const targetReview = reviewedMedia06ById.get(reuse.catalogId);
+    assert.ok(targetReview, `${label}: promoted target review is missing.`);
+    assert.equal(targetReview.commonsFile, reuse.commonsFile, `${label}: promoted file drifted.`);
+    assert.equal(targetReview.reuseSourceCatalogId, reuse.sourceCatalogId, `${label}: promoted source drifted.`);
+    for (const [field, value] of Object.entries(reuse)) {
+      if (field === "sourceCatalogId") continue;
+      assert.deepEqual(targetReview[field], value, `${label}: promoted ${field} drifted.`);
+    }
+  } else if (mapping) {
+    assert.ok(mapped06IdSet.has(reuse.catalogId), `${label}: ambiguous mapped reuse must not become ready.`);
+  } else {
+    assert.ok(queued06.some((item) => item.catalogId === reuse.catalogId), `${label}: unresolved reuse must remain queued.`);
+  }
+}
+assert.equal(
+  mediaReuse06.items.filter((reuse) => mappingDecisions06ById.get(reuse.catalogId)?.relationKind === "single").length,
+  22,
+  "Batch 06 must promote the reviewed 22-row single-mapping reuse set.",
+);
 assert.deepEqual(
   ready06.map((item) => item.catalogId).sort(),
   [...reviewedMedia06ById.keys()].sort(),
@@ -324,7 +414,21 @@ assert.equal(source06.length, ready06.length, "Batch 06: accepted source count m
 assert.equal(report06.media?.length, ready06.length, "Batch 06: media count must equal ready items.");
 assert.equal(report06.sourceCount, ready06.length, "Batch 06: report source count must equal ready items.");
 assert.equal(report06.candidateCount, candidates06.length, "Batch 06: report candidate count drifted.");
+assert.equal(report06.mapped?.length, mapped06.length, "Batch 06: report must account for every mapped row.");
 assert.equal(report06.queued?.length, queued06.length, "Batch 06: report must account for every queued row.");
+assert.equal(report06.excluded?.length, excluded06.length, "Batch 06: report must account for every excluded row.");
+
+for (const item of mapped06) {
+  const label = `Batch 06 mapped/${item.catalogId}`;
+  assert.ok(
+    ["single", "same-label-different-codes", "shared-code"].includes(item.mappingKind),
+    `${label}: mapping kind is invalid.`,
+  );
+  assert.ok(
+    typeof item.mappingReason === "string" && item.mappingReason.trim().length > 0,
+    `${label}: mapping reason is required.`,
+  );
+}
 
 for (const item of queued06) {
   const label = `Batch 06 queued/${item.catalogId}`;
@@ -339,6 +443,18 @@ for (const item of queued06) {
         (reason) => typeof reason === "string" && reason.trim().length > 0,
       ),
     `${label}: queue reason codes must be non-empty strings.`,
+  );
+}
+
+for (const item of excluded06) {
+  const label = `Batch 06 excluded/${item.catalogId}`;
+  assert.ok(
+    typeof item.queueReason === "string" && item.queueReason.trim().length > 0,
+    `${label}: exclusion reason is required.`,
+  );
+  assert.ok(
+    Array.isArray(item.queueReasonCodes) && item.queueReasonCodes.includes("outside-produce-scope"),
+    `${label}: catalog-only rows must record the scope reason.`,
   );
 }
 
@@ -363,6 +479,16 @@ assertSameCatalogIds(
   report06.queued.map((item) => item.catalogId),
   queued06Ids,
   "Batch 06: media report queue must match the manifest queue.",
+);
+assertSameCatalogIds(
+  report06.mapped.map((item) => item.catalogId),
+  mapped06.map((item) => item.catalogId),
+  "Batch 06: media report mappings must match the manifest mappings.",
+);
+assertSameCatalogIds(
+  report06.excluded.map((item) => item.catalogId),
+  excluded06.map((item) => item.catalogId),
+  "Batch 06: media report exclusions must match the manifest exclusions.",
 );
 
 const source06ById = new Map(source06.map((item) => [item.catalogId, item]));
@@ -478,8 +604,8 @@ const disposition06Ids = dispositions06.map((item) => item.catalogId);
 assert.equal(dispositions06.length, 175, "Batch 06: disposition ledger must contain 175 rows.");
 assert.equal(new Set(disposition06Ids).size, 175, "Batch 06: disposition IDs must be unique.");
 assert.ok(
-  dispositions06.every((item) => ["candidate", "queued"].includes(item.decision)),
-  "Batch 06: every disposition must be candidate or queued.",
+  dispositions06.every((item) => ["candidate", "mapped", "queued", "excluded"].includes(item.decision)),
+  "Batch 06: every disposition must be candidate, mapped, queued, or excluded.",
 );
 for (const item of dispositions06.filter((item) => item.decision === "queued")) {
   const label = `Batch 06 disposition/${item.catalogId}`;
@@ -786,5 +912,5 @@ assert.equal(
 );
 
 console.log(
-  `Verified locked Batch 04–05 data plus Batch 06's full 175-row disposition: ${ready06.length} ready lessons and ${queued06.length} queued rows.`,
+  `Verified locked Batch 04–05 data plus Batch 06's full 175-row disposition: ${ready06.length} ready lessons, ${mapped06.length} mapped references, ${queued06.length} queued rows, and ${excluded06.length} catalog-only rows.`,
 );

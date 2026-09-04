@@ -18,8 +18,11 @@ const EXPECTED_REMAINDER = 175;
 const OUTPUT_URL = new URL("../data/batch-06-knowledge.json", import.meta.url);
 const OVERRIDES_URL = new URL("../data/batch-06-knowledge-overrides.json", import.meta.url);
 const MEDIA_URL = new URL("../public/media-resolution-batch06.json", import.meta.url);
+const REVIEWED_MEDIA_URL = new URL("../data/batch-06-reviewed-media.json", import.meta.url);
 const DISCOVERY_URL = new URL("../public/media-discovery-batch06.json", import.meta.url);
 const MEDIA_DECISIONS_URL = new URL("../data/batch-06-media-review-decisions.json", import.meta.url);
+const MAPPING_DECISIONS_URL = new URL("../data/batch-06-mapping-decisions.json", import.meta.url);
+const MEDIA_REUSE_URL = new URL("../data/batch-06-media-reuse.json", import.meta.url);
 
 const TARGET_OVERRIDE_IDS = [
   "artichokes-small-handwritten",
@@ -53,6 +56,20 @@ const packageSignalPattern =
 
 function readJson(url) {
   return readFile(url, "utf8").then(JSON.parse);
+}
+
+function referencedCommonsFile(photo) {
+  if (typeof photo?.file === "string" && photo.file.trim()) return photo.file;
+  if (typeof photo?.source?.url !== "string") return null;
+  try {
+    const pathname = new URL(photo.source.url).pathname;
+    const marker = "/wiki/File:";
+    const markerIndex = pathname.indexOf(marker);
+    if (markerIndex < 0) return null;
+    return decodeURIComponent(pathname.slice(markerIndex + marker.length)).replaceAll("_", " ");
+  } catch {
+    return null;
+  }
 }
 
 function numericCodes(record) {
@@ -193,6 +210,61 @@ for (const catalogId of TARGET_OVERRIDE_IDS) {
   assert.ok(remainder.some((record) => record.id === catalogId), `${catalogId}: override target is not in Batch 06.`);
 }
 
+const mappingDocument = await readJson(MAPPING_DECISIONS_URL);
+assert.equal(mappingDocument.schemaVersion, 1, "Batch 06 mapping decisions must use schema version 1.");
+assert.equal(mappingDocument.batch, "06", "Batch 06 mapping decisions have the wrong batch.");
+assert.ok(Array.isArray(mappingDocument.items), "Batch 06 mapping decisions are missing.");
+const allowedMappingKinds = new Set(["single", "same-label-different-codes", "shared-code"]);
+const mappingById = new Map();
+for (const mapping of mappingDocument.items) {
+  assert.ok(mapping.catalogId && !mappingById.has(mapping.catalogId), `Duplicate mapping decision: ${mapping.catalogId}.`);
+  assert.ok(allowedMappingKinds.has(mapping.relationKind), `${mapping.catalogId}: unsupported mapping kind.`);
+  assert.ok(
+    typeof mapping.reviewBasis === "string" && mapping.reviewBasis.trim(),
+    `${mapping.catalogId}: mapping review basis is required.`,
+  );
+  assert.ok(remainder.some((record) => record.id === mapping.catalogId), `${mapping.catalogId}: mapping target is not in Batch 06.`);
+  mappingById.set(mapping.catalogId, mapping);
+}
+assert.equal(mappingById.size, 61, "Batch 06 must preserve the reviewed 61-row mapping set.");
+
+const reuseDocument = await readJson(MEDIA_REUSE_URL);
+assert.equal(reuseDocument.schemaVersion, 1, "Batch 06 media reuse must use schema version 1.");
+assert.equal(reuseDocument.batch, "06", "Batch 06 media reuse has the wrong batch.");
+assert.ok(Array.isArray(reuseDocument.items), "Batch 06 media reuse items are missing.");
+const reviewedMediaDocument = await readJson(REVIEWED_MEDIA_URL);
+assert.equal(reviewedMediaDocument.schemaVersion, "1.0.0", "Batch 06 reviewed media must use schema version 1.0.0.");
+assert.equal(reviewedMediaDocument.batch, "06", "Batch 06 reviewed media has the wrong batch.");
+const reviewedLedgerByCatalogId = new Map(
+  reviewedMediaDocument.items.map((review) => [review.catalogId, review]),
+);
+const publishedStoryByCatalogId = new Map(publishedStories.map((story) => [story.catalogId, story]));
+const reuseById = new Map();
+for (const reuse of reuseDocument.items) {
+  assert.ok(reuse.catalogId && !reuseById.has(reuse.catalogId), `Duplicate media reuse: ${reuse.catalogId}.`);
+  const record = remainder.find((candidate) => candidate.id === reuse.catalogId);
+  const sourceStory = publishedStoryByCatalogId.get(reuse.sourceCatalogId);
+  const sourceReview = reviewedLedgerByCatalogId.get(reuse.sourceCatalogId);
+  assert.ok(record, `${reuse.catalogId}: media reuse target is not in Batch 06.`);
+  assert.ok(sourceStory || sourceReview, `${reuse.catalogId}: media reuse source is missing.`);
+  assert.ok(
+    sourceStory
+      ? sourceStory.photos?.some((photo) => referencedCommonsFile(photo) === reuse.commonsFile)
+      : sourceReview.commonsFile === reuse.commonsFile,
+    `${reuse.catalogId}: reused Commons file is absent from ${reuse.sourceCatalogId}.`,
+  );
+  assert.ok(
+    ["product-and-loose-form", "label-assisted"].includes(reuse.recognitionMode),
+    `${reuse.catalogId}: unsupported reuse recognition mode.`,
+  );
+  assert.ok(typeof reuse.reviewBasis === "string" && reuse.reviewBasis.trim(), `${reuse.catalogId}: reuse review basis is required.`);
+  if (reuse.recognitionMode === "label-assisted") {
+    assert.ok(reuse.visibleIdentity && Array.isArray(reuse.labelClaims) && reuse.labelClaims.length, `${reuse.catalogId}: label-assisted reuse is incomplete.`);
+  }
+  reuseById.set(reuse.catalogId, reuse);
+}
+assert.equal(reuseById.size, 44, "Batch 06 must preserve the reviewed 44-row media-reuse set.");
+
 const catalogIdsByCode = new Map();
 const labelsByCode = new Map();
 const codesByLabel = new Map();
@@ -240,18 +312,48 @@ function discoveredMediaSource(catalogId) {
   };
 }
 
+function reusedMediaSource(catalogId) {
+  const reuse = reuseById.get(catalogId);
+  if (!reuse) return null;
+  const sourceStory = publishedStoryByCatalogId.get(reuse.sourceCatalogId);
+  const sourceReview = reviewedLedgerByCatalogId.get(reuse.sourceCatalogId);
+  const photo = sourceStory?.photos.find(
+    (candidate) => referencedCommonsFile(candidate) === reuse.commonsFile,
+  ) ?? (sourceReview?.commonsFile === reuse.commonsFile ? { file: sourceReview.commonsFile } : null);
+  assert.ok(photo, `${catalogId}: reused photo source is missing.`);
+  const sourceUrl = photo.src ?? photo.source?.url ??
+    `https://commons.wikimedia.org/wiki/Special:FilePath/${encodeURIComponent(reuse.commonsFile.replaceAll(" ", "_"))}?width=1600`;
+  return {
+    provenance: "data/batch-06-media-reuse.json",
+    file: reuse.commonsFile,
+    url: sourceUrl,
+    match: "reviewed-reuse-candidate",
+    recognitionMode: reuse.recognitionMode,
+    reviewReason: reuse.reviewBasis,
+    ...(reuse.labelClaims?.length ? { labelClaims: reuse.labelClaims } : {}),
+  };
+}
+
 const items = remainder.map((record, sourceIndex) => {
   const override = overrides[record.id] ?? null;
+  const mapping = mappingById.get(record.id) ?? null;
+  const mediaReuse = reuseById.get(record.id) ?? null;
   const reviewedMedia = reviewedMediaById.get(record.id) ?? null;
-  const reviewedCandidateMedia = discoveredMediaSource(record.id);
-  const recognitionMode = reviewedMedia?.mediaReview?.recognitionMode ?? null;
+  const reviewedCandidateMedia = reusedMediaSource(record.id) ?? discoveredMediaSource(record.id);
+  const recognitionMode =
+    reviewedMedia?.mediaReview?.recognitionMode ?? mediaReuse?.recognitionMode ?? null;
   const labelAssisted = recognitionMode === "label-assisted";
   const rule = familyRuleFor(record.item);
   const family = override?.family ?? rule?.family ?? null;
   const generatedTitle = rule
     ? preserveSourceQualifiers(record.item, titleFor(record, rule)).replace(/\s+/g, " ").trim()
     : record.item;
-  const title = reviewedMedia?.title ?? override?.title ?? generatedTitle;
+  const title =
+    reviewedMedia?.title ??
+    mediaReuse?.lessonTitle ??
+    mapping?.lessonTitle ??
+    override?.title ??
+    generatedTitle;
   const form = override?.form ?? rule?.form ?? null;
   const color = override?.color ?? (rule ? inferredColor(title, rule.color) : null);
   const identityBasis = override ? "curated-knowledge" : rule ? "taxonomy-helper" : "catalog-label";
@@ -315,8 +417,10 @@ const items = remainder.map((record, sourceIndex) => {
     ? "not-applicable"
     : reviewedMedia
       ? "reviewed-source"
-      : reviewedCandidateMedia
-        ? "reviewed-candidate"
+      : mediaReuse
+        ? "reviewed-reuse-candidate"
+        : reviewedCandidateMedia
+          ? "reviewed-candidate"
         : "source-required";
 
   const blockers = [];
@@ -435,8 +539,23 @@ const items = remainder.map((record, sourceIndex) => {
           ]
         : [],
     },
+    mappingDecision: mapping
+      ? {
+          status: "mapped",
+          relationKind: mapping.relationKind,
+          reviewBasis: mapping.reviewBasis,
+          ...(mapping.lessonTitle ? { lessonTitle: mapping.lessonTitle } : {}),
+        }
+      : null,
     publishability: {
-      status: scopeStatus === "out-of-scope" ? "out-of-scope" : blockers.length ? "blocked" : "ready",
+      status:
+        scopeStatus === "out-of-scope"
+          ? "excluded"
+          : blockers.length
+            ? mapping
+              ? "mapped"
+              : "blocked"
+            : "ready",
       blockers,
       nextAction: nextActionFor(blockers),
     },
@@ -458,7 +577,7 @@ for (const item of items) {
     assert.equal(item.codeEvidence.primaryCode, null, `${item.catalogId}: a missing code may not be invented.`);
   }
   const reviewedMedia = reviewedMediaById.get(item.catalogId);
-  const reviewedCandidateMedia = discoveredMediaSource(item.catalogId);
+  const reviewedCandidateMedia = reusedMediaSource(item.catalogId) ?? discoveredMediaSource(item.catalogId);
   if (!reviewedMedia && !reviewedCandidateMedia) {
     assert.equal(item.mediaPlan.source, null, `${item.catalogId}: an unreviewed media source may not be invented.`);
   } else {
@@ -487,11 +606,22 @@ const summary = {
 };
 
 assert.equal(summary.overridesApplied, TARGET_OVERRIDE_IDS.length);
-assert.equal(summary.publishability.ready, reviewedMediaById.size, "Only reviewed media rows may be ready.");
+for (const item of items) {
+  if (item.publishability.status === "ready") {
+    assert.ok(item.mediaPlan.source, `${item.catalogId}: a ready row requires reviewed media.`);
+    assert.equal(item.publishability.blockers.length, 0, `${item.catalogId}: a ready row cannot retain blockers.`);
+  }
+  if (item.publishability.status === "mapped") {
+    assert.ok(mappingById.has(item.catalogId), `${item.catalogId}: mapped status requires an explicit mapping decision.`);
+  }
+  if (item.publishability.status === "excluded") {
+    assert.equal(item.scope.status, "out-of-scope", `${item.catalogId}: only out-of-scope rows may be excluded.`);
+  }
+}
 assert.deepEqual(
-  items.filter((item) => item.publishability.status === "ready").map((item) => item.catalogId).sort(),
-  [...reviewedMediaById.keys()].sort(),
-  "Ready rows must equal the reviewed Batch 06 media set.",
+  items.filter((item) => item.mappingDecision).map((item) => item.catalogId).sort(),
+  [...mappingById.keys()].sort(),
+  "Knowledge mapping decisions must match the curated mapping set.",
 );
 
 const output = {

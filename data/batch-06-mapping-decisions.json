@@ -1,0 +1,322 @@
+{
+  "schemaVersion": 1,
+  "batch": "06",
+  "method": "Human-reviewed code-and-identity admission decisions derived from the Batch 06 knowledge and disposition evidence; media and retail/package gates remain separate.",
+  "items": [
+    {
+      "catalogId": "apples-ambrosia-pc",
+      "relationKind": "single",
+      "reviewBasis": "The catalog records one checkout code for an interpreted in-scope produce identity."
+    },
+    {
+      "catalogId": "apples-golden-delicious-pc",
+      "relationKind": "single",
+      "reviewBasis": "The catalog records one checkout code for an interpreted in-scope produce identity."
+    },
+    {
+      "catalogId": "apples-lady-alice-pc",
+      "relationKind": "single",
+      "reviewBasis": "The catalog records one checkout code for an interpreted in-scope produce identity."
+    },
+    {
+      "catalogId": "beets-10lb",
+      "relationKind": "single",
+      "reviewBasis": "The catalog records one checkout code for an interpreted in-scope produce identity."
+    },
+    {
+      "catalogId": "blackberries-pint-12oz",
+      "relationKind": "single",
+      "reviewBasis": "The catalog records one checkout code for an interpreted in-scope produce identity."
+    },
+    {
+      "catalogId": "blueberries-full-pint-12oz",
+      "relationKind": "single",
+      "reviewBasis": "The catalog records one checkout code for an interpreted in-scope produce identity."
+    },
+    {
+      "catalogId": "blueberries-half-pint-6oz",
+      "relationKind": "single",
+      "reviewBasis": "The catalog records one checkout code for an interpreted in-scope produce identity."
+    },
+    {
+      "catalogId": "carrots-jumbo-case",
+      "relationKind": "single",
+      "reviewBasis": "The catalog records one checkout code for an interpreted in-scope produce identity."
+    },
+    {
+      "catalogId": "celery-hearts",
+      "relationKind": "single",
+      "reviewBasis": "The catalog records one checkout code for an interpreted in-scope produce identity."
+    },
+    {
+      "catalogId": "corn-tray-of-5",
+      "relationKind": "single",
+      "reviewBasis": "The catalog records one checkout code for an interpreted in-scope produce identity."
+    },
+    {
+      "catalogId": "figs-black-227g-pint",
+      "relationKind": "single",
+      "reviewBasis": "The catalog records one checkout code for an interpreted in-scope produce identity."
+    },
+    {
+      "catalogId": "figs-green-case",
+      "relationKind": "single",
+      "reviewBasis": "The catalog records one checkout code for an interpreted in-scope produce identity."
+    },
+    {
+      "catalogId": "garlic-peeled-5lb",
+      "relationKind": "single",
+      "reviewBasis": "The catalog records one checkout code for an interpreted in-scope produce identity."
+    },
+    {
+      "catalogId": "melons-goldendew",
+      "relationKind": "single",
+      "reviewBasis": "The catalog records one checkout code for an interpreted in-scope produce identity."
+    },
+    {
+      "catalogId": "melons-honeykiss",
+      "relationKind": "single",
+      "reviewBasis": "The catalog records one checkout code for an interpreted in-scope produce identity."
+    },
+    {
+      "catalogId": "olives-green-case",
+      "relationKind": "single",
+      "reviewBasis": "The catalog records one checkout code for an interpreted in-scope produce identity."
+    },
+    {
+      "catalogId": "onions-yellow-jumbo-2-case",
+      "relationKind": "single",
+      "reviewBasis": "The catalog records one checkout code for an interpreted in-scope produce identity."
+    },
+    {
+      "catalogId": "papayas-meridol",
+      "relationKind": "single",
+      "reviewBasis": "The catalog records one checkout code for an interpreted in-scope produce identity."
+    },
+    {
+      "catalogId": "peaches-freestone-case",
+      "relationKind": "single",
+      "reviewBasis": "The catalog records one checkout code for an interpreted in-scope produce identity."
+    },
+    {
+      "catalogId": "pears-taylor-gold",
+      "relationKind": "single",
+      "reviewBasis": "The catalog records one checkout code for an interpreted in-scope produce identity."
+    },
+    {
+      "catalogId": "persimmons-vanilla",
+      "relationKind": "single",
+      "reviewBasis": "The catalog records one checkout code for an interpreted in-scope produce identity."
+    },
+    {
+      "catalogId": "persimmons-vanilla-case",
+      "relationKind": "single",
+      "reviewBasis": "The catalog records one checkout code for an interpreted in-scope produce identity."
+    },
+    {
+      "catalogId": "pistachios-bulk-nuts",
+      "relationKind": "single",
+      "reviewBasis": "The catalog records one checkout code for an interpreted in-scope produce identity."
+    },
+    {
+      "catalogId": "potato-yellow-10lb",
+      "relationKind": "single",
+      "reviewBasis": "The catalog records one checkout code for an interpreted in-scope produce identity."
+    },
+    {
+      "catalogId": "prickly-pears-tray-case",
+      "relationKind": "single",
+      "reviewBasis": "The catalog records one checkout code for an interpreted in-scope produce identity."
+    },
+    {
+      "catalogId": "raspberries-red-half-pint-6oz",
+      "relationKind": "single",
+      "reviewBasis": "The catalog records one checkout code for an interpreted in-scope produce identity."
+    },
+    {
+      "catalogId": "raspberries-red-pint-12oz",
+      "relationKind": "single",
+      "reviewBasis": "The catalog records one checkout code for an interpreted in-scope produce identity."
+    },
+    {
+      "catalogId": "sher-li-hon",
+      "relationKind": "single",
+      "reviewBasis": "The catalog records one checkout code for an interpreted in-scope produce identity."
+    },
+    {
+      "catalogId": "strawberries-1lb",
+      "relationKind": "single",
+      "reviewBasis": "The catalog records one checkout code for an interpreted in-scope produce identity."
+    },
+    {
+      "catalogId": "strawberries-2lb",
+      "relationKind": "single",
+      "reviewBasis": "The catalog records one checkout code for an interpreted in-scope produce identity."
+    },
+    {
+      "catalogId": "tangerines-fall-glo",
+      "relationKind": "single",
+      "reviewBasis": "The catalog records one checkout code for an interpreted in-scope produce identity."
+    },
+    {
+      "catalogId": "watermelons-mickey-lee",
+      "relationKind": "single",
+      "reviewBasis": "The catalog records one checkout code for an interpreted in-scope produce identity."
+    },
+    {
+      "catalogId": "beans-green-case",
+      "relationKind": "single",
+      "lessonTitle": "Beans - Green (Case)",
+      "reviewBasis": "The catalog records one checkout code; the exact catalog label preserves the case distinction from the existing lesson title."
+    },
+    {
+      "catalogId": "cucumbers-dill-case",
+      "relationKind": "single",
+      "lessonTitle": "Cucumbers - Dill (Case)",
+      "reviewBasis": "The catalog records one checkout code; the exact catalog label preserves the case distinction from the existing lesson title."
+    },
+    {
+      "catalogId": "figgs-black-case",
+      "relationKind": "single",
+      "lessonTitle": "Figgs - Black (Case)",
+      "reviewBasis": "The catalog records one checkout code; the exact catalog label preserves its spelling and case distinction from the existing lesson title."
+    },
+    {
+      "catalogId": "figs-black-case",
+      "relationKind": "single",
+      "lessonTitle": "Figs - Black (Case)",
+      "reviewBasis": "The catalog records one checkout code; the exact catalog label preserves the case distinction from the existing lesson title."
+    },
+    {
+      "catalogId": "mangos-ataulfo-case",
+      "relationKind": "single",
+      "lessonTitle": "Mangos - Ataulfo (Case)",
+      "reviewBasis": "The catalog records one checkout code; the exact catalog label preserves the case distinction from the existing lesson title."
+    },
+    {
+      "catalogId": "melons-bitter-fu-qua",
+      "relationKind": "single",
+      "lessonTitle": "Melons - Bitter (Fu Qua)",
+      "reviewBasis": "The catalog records one checkout code; the exact catalog label preserves the named retail identity rather than collapsing it into an existing title."
+    },
+    {
+      "catalogId": "pears-bartlett-5lb-bag",
+      "relationKind": "single",
+      "lessonTitle": "Pears - Bartlett 5lb (Bag)",
+      "reviewBasis": "The catalog records one checkout code; the exact catalog label preserves the bag and quantity distinction from the existing lesson title."
+    },
+    {
+      "catalogId": "potato-red-10lb",
+      "relationKind": "single",
+      "lessonTitle": "Potato - Red 10lb",
+      "reviewBasis": "The catalog records one checkout code; the exact catalog label preserves the quantity distinction from the existing lesson title."
+    },
+    {
+      "catalogId": "potato-red-20lb",
+      "relationKind": "single",
+      "lessonTitle": "Potato - Red 20lb",
+      "reviewBasis": "The catalog records one checkout code; the exact catalog label preserves the quantity distinction from the existing lesson title."
+    },
+    {
+      "catalogId": "potato-white-10lb",
+      "relationKind": "single",
+      "lessonTitle": "Potato - White 10lb",
+      "reviewBasis": "The catalog records one checkout code; the exact catalog label preserves the quantity distinction from the existing lesson title."
+    },
+    {
+      "catalogId": "apples-gala",
+      "relationKind": "same-label-different-codes",
+      "reviewBasis": "The exact catalog label carries multiple recorded checkout codes; preserve the complete mapping without selecting a synthetic primary code."
+    },
+    {
+      "catalogId": "apples-red-delicious-2",
+      "relationKind": "same-label-different-codes",
+      "reviewBasis": "The exact catalog label appears with another recorded checkout code; preserve both source mappings instead of treating one as a replacement."
+    },
+    {
+      "catalogId": "apples-royal-gala-2",
+      "relationKind": "same-label-different-codes",
+      "reviewBasis": "The exact catalog label appears with another recorded checkout code; preserve both source mappings instead of treating one as a replacement."
+    },
+    {
+      "catalogId": "apricots-2",
+      "relationKind": "same-label-different-codes",
+      "reviewBasis": "The exact catalog label appears with another recorded checkout code; preserve both source mappings instead of treating one as a replacement."
+    },
+    {
+      "catalogId": "cherimoya",
+      "relationKind": "same-label-different-codes",
+      "reviewBasis": "The exact catalog label appears with multiple recorded checkout codes across source rows; preserve every source mapping."
+    },
+    {
+      "catalogId": "cherimoya-2",
+      "relationKind": "same-label-different-codes",
+      "reviewBasis": "The exact catalog label appears with multiple recorded checkout codes across source rows; preserve every source mapping."
+    },
+    {
+      "catalogId": "mangos-red-case",
+      "relationKind": "same-label-different-codes",
+      "reviewBasis": "The exact catalog label carries multiple recorded checkout codes; preserve the complete mapping without selecting a synthetic primary code."
+    },
+    {
+      "catalogId": "pears-asian-yellow-2",
+      "relationKind": "same-label-different-codes",
+      "reviewBasis": "The exact catalog label appears with another recorded checkout code; preserve both source mappings instead of treating one as a replacement."
+    },
+    {
+      "catalogId": "pears-forelle-2",
+      "relationKind": "same-label-different-codes",
+      "reviewBasis": "The exact catalog label appears with another recorded checkout code; preserve both source mappings instead of treating one as a replacement."
+    },
+    {
+      "catalogId": "pumpkins-large",
+      "relationKind": "same-label-different-codes",
+      "reviewBasis": "The exact catalog label appears with multiple recorded checkout codes across source rows; preserve every source mapping."
+    },
+    {
+      "catalogId": "pumpkins-large-2",
+      "relationKind": "same-label-different-codes",
+      "reviewBasis": "The exact catalog label appears with multiple recorded checkout codes across source rows; preserve every source mapping."
+    },
+    {
+      "catalogId": "carrots-chinese-jumbo",
+      "relationKind": "shared-code",
+      "reviewBasis": "The catalog-supported code is also recorded for a compatible carrot identity; preserve the exact label and declare the reuse."
+    },
+    {
+      "catalogId": "grapefruit-bin",
+      "relationKind": "shared-code",
+      "reviewBasis": "The catalog-supported code is also recorded for a compatible grapefruit identity; preserve the exact label and declare the reuse."
+    },
+    {
+      "catalogId": "mangoes",
+      "relationKind": "shared-code",
+      "reviewBasis": "The catalog-supported code is also recorded for a compatible mango identity; preserve the exact label and declare the reuse."
+    },
+    {
+      "catalogId": "oranges-navel-large",
+      "relationKind": "shared-code",
+      "reviewBasis": "The catalog-supported code is also recorded for a compatible navel orange identity; preserve the exact size label and declare the reuse."
+    },
+    {
+      "catalogId": "oranges-navel-medium",
+      "relationKind": "shared-code",
+      "reviewBasis": "The catalog-supported code is also recorded for a compatible navel orange identity; preserve the exact size label and declare the reuse."
+    },
+    {
+      "catalogId": "parsley-curley-herbs",
+      "relationKind": "shared-code",
+      "reviewBasis": "The catalog-supported code is also recorded for a compatible parsley identity; preserve the exact label and declare the reuse."
+    },
+    {
+      "catalogId": "pears-bosc-large",
+      "relationKind": "shared-code",
+      "reviewBasis": "The catalog-supported code is also recorded for a compatible Bosc pear identity; preserve the exact size label and declare the reuse."
+    },
+    {
+      "catalogId": "yams-white",
+      "relationKind": "shared-code",
+      "reviewBasis": "The catalog-supported code is also recorded for a compatible white yam identity; preserve the exact label and declare the reuse."
+    }
+  ]
+}

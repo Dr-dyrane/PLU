@@ -86,6 +86,7 @@ const candidates = reviewedMedia.items.map((review, reviewIndex) => {
   assert.ok(record, `${review.catalogId}: reviewed media has no catalog row.`);
   assert.ok(evidence, `${review.catalogId}: reviewed media has no knowledge row.`);
   assert.equal(evidence.scope?.status, "in-scope", `${review.catalogId}: only in-scope produce may become a lesson.`);
+  assert.equal(evidence.publishability?.status, "ready", `${review.catalogId}: reviewed media cannot bypass unresolved recall blockers.`);
   assert.equal(
     evidence.codeEvidence?.resolution,
     "catalog-supported",
@@ -168,6 +169,7 @@ const ambiguousLabels = new Set(
 
 const dispositions = remainder.map((record, sourceIndex) => {
   const candidate = candidateById.get(record.id);
+  const evidence = knowledgeById.get(record.id);
   const { rule, title } = generatedIdentity(record);
   if (candidate) {
     return {
@@ -181,6 +183,40 @@ const dispositions = remainder.map((record, sourceIndex) => {
       decision: "candidate",
       reasonCodes: [],
       reason: "Passed exact-code and loose-produce admission; media review required.",
+    };
+  }
+
+  if (evidence?.publishability?.status === "excluded") {
+    return {
+      sourceOrder: sourceIndex + 1,
+      catalogId: record.id,
+      sourceItem: record.item,
+      title: record.item,
+      code: numericCodes(record).length ? numericCodes(record).join(" / ") : "Code needed",
+      family: rule?.family ?? "Catalog only",
+      sourcePages: record.sourcePages,
+      decision: "excluded",
+      reasonCodes: ["outside-produce-scope"],
+      reason: reasonLabels["outside-produce-scope"],
+      flags: record.flags ?? [],
+    };
+  }
+
+  if (evidence?.publishability?.status === "mapped") {
+    const mapping = evidence.mappingDecision;
+    return {
+      sourceOrder: sourceIndex + 1,
+      catalogId: record.id,
+      sourceItem: record.item,
+      title: mapping?.lessonTitle ?? record.item,
+      code: numericCodes(record).length ? numericCodes(record).join(" / ") : "Code needed",
+      family: rule?.family ?? evidence.identityEvidence?.family?.value ?? "Mapped reference",
+      sourcePages: record.sourcePages,
+      decision: "mapped",
+      mappingKind: mapping.relationKind,
+      reasonCodes: [],
+      reason: mapping.reviewBasis,
+      flags: record.flags ?? [],
     };
   }
 
@@ -230,11 +266,14 @@ const dispositions = remainder.map((record, sourceIndex) => {
 assert.equal(dispositions.length, EXPECTED_REMAINDER);
 assert.equal(new Set(dispositions.map((item) => item.catalogId)).size, EXPECTED_REMAINDER);
 assert.equal(dispositions.filter((item) => item.decision === "candidate").length, candidates.length);
-assert.equal(dispositions.filter((item) => item.decision === "queued").length, EXPECTED_REMAINDER - candidates.length);
+assert.equal(
+  dispositions.filter((item) => ["candidate", "mapped", "queued", "excluded"].includes(item.decision)).length,
+  EXPECTED_REMAINDER,
+);
 
 await writeFile(CANDIDATES_URL, `${JSON.stringify(candidates, null, 2)}\n`, "utf8");
 await writeFile(DISPOSITIONS_URL, `${JSON.stringify(dispositions, null, 2)}\n`, "utf8");
 
 console.log(
-  `Prepared all ${dispositions.length} remaining catalog rows: ${candidates.length} human-reviewed lesson candidates and ${dispositions.length - candidates.length} source-review records.`,
+  `Prepared all ${dispositions.length} remaining catalog rows: ${candidates.length} lesson candidates, ${dispositions.filter((item) => item.decision === "mapped").length} mapped references, ${dispositions.filter((item) => item.decision === "queued").length} evidence-gated rows, and ${dispositions.filter((item) => item.decision === "excluded").length} catalog-only rows.`,
 );

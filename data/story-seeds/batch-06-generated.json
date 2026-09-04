@@ -213,12 +213,12 @@
           "label": "Mixed · Round apple"
         },
         {
-          "id": "confusion-apples-gala-orchard-run",
-          "label": "Apples - Gala (Orchard Run)"
+          "id": "confusion-apples-ambrosia-pc",
+          "label": "Apples - Ambrosia PC"
         },
         {
-          "id": "confusion-apples-ginger-gold-orchard-run",
-          "label": "Apples - Ginger Gold (Orchard Run)"
+          "id": "confusion-apples-gala-orchard-run",
+          "label": "Apples - Gala (Orchard Run)"
         }
       ]
     },
@@ -237,21 +237,21 @@
     ],
     "similarItems": [
       {
+        "name": "Apples - Ambrosia PC",
+        "code": "64749",
+        "cue": "Round apples with a mixed red-yellow blush anchor the Ambrosia identity.",
+        "color": "#4F8B58"
+      },
+      {
         "name": "Apples - Gala (Orchard Run)",
         "code": "62021",
         "cue": "The reviewed photograph clearly shows apples - gala in round apple form.",
-        "color": "#4F8B58"
+        "color": "#C25D52"
       },
       {
         "name": "Apples - Ginger Gold (Orchard Run)",
         "code": "3000",
         "cue": "The reviewed photograph clearly shows apples - ginger gold in round apple form.",
-        "color": "#C25D52"
-      },
-      {
-        "name": "Apples - Honeycrisp (Orchard Run)",
-        "code": "59986",
-        "cue": "The reviewed photograph clearly shows apples - honeycrisp in round apple form.",
         "color": "#D1A23B"
       }
     ],
@@ -269,6 +269,154 @@
         "batch-06",
         "catalog-remainder-essential",
         "media-reviewed-override",
+        "media-shared-reviewed",
+        "media-label-assisted",
+        "qualifier-workbook-label"
+      ],
+      "confidence": "verified-from-supplied-material"
+    }
+  },
+  {
+    "schemaVersion": "0.9.0",
+    "id": "apples-ambrosia-pc-64749",
+    "catalogId": "apples-ambrosia-pc",
+    "title": "Apples - Ambrosia PC",
+    "shortTitle": "Apples - Ambrosia PC",
+    "family": "Apples",
+    "priority": "must-know",
+    "selection": {
+      "rawScore": 90,
+      "score": 90,
+      "band": "Essential",
+      "priority": "must-know"
+    },
+    "identity": {
+      "family": "Apples",
+      "form": "Round apple",
+      "color": "Mixed red and yellow",
+      "variant": "Apples - Ambrosia PC"
+    },
+    "checkout": {
+      "code": "64749",
+      "soldBy": "Weight",
+      "saleForm": "Loose",
+      "codeScope": "catalog-listed-retail-unit"
+    },
+    "photos": [
+      {
+        "id": "apples-ambrosia-pc-64749-hero",
+        "file": "Ambrosia apples 2017 A2.jpg",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/Ambrosia_apples_2017_A2.jpg/1920px-Ambrosia_apples_2017_A2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Ambrosia apple reference photograph showing round apples with a mixed red-yellow blush anchor the ambrosia identity.",
+        "role": "hero",
+        "focus": "50% 50%"
+      },
+      {
+        "id": "apples-ambrosia-pc-64749-alternate",
+        "file": "Ambrosia apples 2017 A2.jpg",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/Ambrosia_apples_2017_A2.jpg/1920px-Ambrosia_apples_2017_A2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Alternate crop of Ambrosia apple highlighting its round apple",
+        "role": "alternate",
+        "focus": "38% 50%",
+        "reuseOf": "Ambrosia apples 2017 A2.jpg",
+        "fallbackReason": "One verified exact-item photograph is reused with a different crop so no unverified image can publish."
+      },
+      {
+        "id": "apples-ambrosia-pc-64749-context",
+        "file": "Ambrosia apples 2017 A2.jpg",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/Ambrosia_apples_2017_A2.jpg/1920px-Ambrosia_apples_2017_A2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Ambrosia apple produce reference emphasizing its mixed red and yellow appearance",
+        "role": "context",
+        "focus": "62% 50%",
+        "reuseOf": "Ambrosia apples 2017 A2.jpg",
+        "fallbackReason": "One verified exact-item photograph is reused with a different crop so no unverified image can publish."
+      }
+    ],
+    "visualCues": [
+      "Round apples with a mixed red-yellow blush anchor the Ambrosia identity.",
+      "The visible color is mixed red and yellow; PC is from the workbook label, not appearance.",
+      "Match the store label to Apples - Ambrosia PC before using 64749."
+    ],
+    "classification": {
+      "familyAnswer": "apples",
+      "familyChoices": [
+        {
+          "id": "apples",
+          "label": "Apples"
+        },
+        {
+          "id": "stalk-vegetables",
+          "label": "Stalk Vegetables"
+        },
+        {
+          "id": "avocados",
+          "label": "Avocados"
+        }
+      ],
+      "formAnswer": "round-apple",
+      "formChoices": [
+        {
+          "id": "round-apple",
+          "label": "Mixed red and yellow · Round apple"
+        },
+        {
+          "id": "confusion-apples-ambrosia-bin",
+          "label": "Apples - Ambrosia (Bin)"
+        },
+        {
+          "id": "confusion-apples-gala-orchard-run",
+          "label": "Apples - Gala (Orchard Run)"
+        }
+      ]
+    },
+    "variants": [],
+    "relations": [
+      {
+        "kind": "exception",
+        "title": "The store label selects this listing",
+        "copy": "The photograph teaches Ambrosia apple. PC is copied from the workbook label and is not inferred from appearance."
+      },
+      {
+        "kind": "exception",
+        "title": "The code follows the exact listing",
+        "copy": "Use 64749 only after the label matches Apples - Ambrosia PC."
+      }
+    ],
+    "similarItems": [
+      {
+        "name": "Apples - Ambrosia (Bin)",
+        "code": "25040",
+        "cue": "The reviewed photograph clearly shows apples - ambrosia in round apple form.",
+        "color": "#4F8B58"
+      },
+      {
+        "name": "Apples - Gala (Orchard Run)",
+        "code": "62021",
+        "cue": "The reviewed photograph clearly shows apples - gala in round apple form.",
+        "color": "#C25D52"
+      },
+      {
+        "name": "Apples - Ginger Gold (Orchard Run)",
+        "code": "3000",
+        "cue": "The reviewed photograph clearly shows apples - ginger gold in round apple form.",
+        "color": "#D1A23B"
+      }
+    ],
+    "source": {
+      "primaryPages": [
+        5
+      ],
+      "relatedPages": [
+        5
+      ],
+      "checkedOnReference": true,
+      "flags": [
+        "sold-by-curated",
+        "retail-form-specific",
+        "batch-06",
+        "catalog-remainder-essential",
+        "media-reviewed-override",
+        "media-shared-reviewed",
         "media-label-assisted",
         "qualifier-workbook-label"
       ],
@@ -363,8 +511,8 @@
           "label": "Apples - Ambrosia (Bin)"
         },
         {
-          "id": "confusion-apples-ginger-gold-orchard-run",
-          "label": "Apples - Ginger Gold (Orchard Run)"
+          "id": "confusion-apples-ambrosia-pc",
+          "label": "Apples - Ambrosia PC"
         }
       ]
     },
@@ -389,15 +537,15 @@
         "color": "#4F8B58"
       },
       {
-        "name": "Apples - Ginger Gold (Orchard Run)",
-        "code": "3000",
-        "cue": "The reviewed photograph clearly shows apples - ginger gold in round apple form.",
+        "name": "Apples - Ambrosia PC",
+        "code": "64749",
+        "cue": "Round apples with a mixed red-yellow blush anchor the Ambrosia identity.",
         "color": "#C25D52"
       },
       {
-        "name": "Apples - Honeycrisp (Orchard Run)",
-        "code": "59986",
-        "cue": "The reviewed photograph clearly shows apples - honeycrisp in round apple form.",
+        "name": "Apples - Ginger Gold (Orchard Run)",
+        "code": "3000",
+        "cue": "The reviewed photograph clearly shows apples - ginger gold in round apple form.",
         "color": "#D1A23B"
       }
     ],
@@ -510,8 +658,8 @@
           "label": "Apples - Ambrosia (Bin)"
         },
         {
-          "id": "confusion-apples-gala-orchard-run",
-          "label": "Apples - Gala (Orchard Run)"
+          "id": "confusion-apples-ambrosia-pc",
+          "label": "Apples - Ambrosia PC"
         }
       ]
     },
@@ -536,15 +684,15 @@
         "color": "#4F8B58"
       },
       {
-        "name": "Apples - Gala (Orchard Run)",
-        "code": "62021",
-        "cue": "The reviewed photograph clearly shows apples - gala in round apple form.",
+        "name": "Apples - Ambrosia PC",
+        "code": "64749",
+        "cue": "Round apples with a mixed red-yellow blush anchor the Ambrosia identity.",
         "color": "#C25D52"
       },
       {
-        "name": "Apples - Honeycrisp (Orchard Run)",
-        "code": "59986",
-        "cue": "The reviewed photograph clearly shows apples - honeycrisp in round apple form.",
+        "name": "Apples - Gala (Orchard Run)",
+        "code": "62021",
+        "cue": "The reviewed photograph clearly shows apples - gala in round apple form.",
         "color": "#D1A23B"
       }
     ],
@@ -562,6 +710,153 @@
         "batch-06",
         "catalog-remainder-essential",
         "media-reviewed-override",
+        "media-label-assisted",
+        "qualifier-workbook-label"
+      ],
+      "confidence": "verified-from-supplied-material"
+    }
+  },
+  {
+    "schemaVersion": "0.9.0",
+    "id": "apples-golden-delicious-pc-3005",
+    "catalogId": "apples-golden-delicious-pc",
+    "title": "Apples - Golden Delicious PC",
+    "shortTitle": "Apples - Golden Delicious PC",
+    "family": "Apples",
+    "priority": "must-know",
+    "selection": {
+      "rawScore": 90,
+      "score": 90,
+      "band": "Essential",
+      "priority": "must-know"
+    },
+    "identity": {
+      "family": "Apples",
+      "form": "Round golden apple",
+      "color": "Yellow",
+      "variant": "Apples - Golden Delicious PC"
+    },
+    "checkout": {
+      "code": "3005",
+      "soldBy": "Weight",
+      "saleForm": "Loose",
+      "codeScope": "catalog-listed-retail-unit"
+    },
+    "photos": [
+      {
+        "id": "apples-golden-delicious-pc-3005-hero",
+        "file": "Golden delicious apple.jpg",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/3/35/Golden_delicious_apple.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "alt": "Golden Delicious apple reference photograph showing a round yellow-gold apple anchors golden delicious.",
+        "role": "hero",
+        "focus": "50% 50%"
+      },
+      {
+        "id": "apples-golden-delicious-pc-3005-alternate",
+        "file": "Golden delicious apple.jpg",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/3/35/Golden_delicious_apple.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "alt": "Alternate crop of Golden Delicious apple highlighting its round golden apple",
+        "role": "alternate",
+        "focus": "38% 50%",
+        "reuseOf": "Golden delicious apple.jpg",
+        "fallbackReason": "One verified exact-item photograph is reused with a different crop so no unverified image can publish."
+      },
+      {
+        "id": "apples-golden-delicious-pc-3005-context",
+        "file": "Golden delicious apple.jpg",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/3/35/Golden_delicious_apple.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "alt": "Golden Delicious apple produce reference emphasizing its yellow appearance",
+        "role": "context",
+        "focus": "62% 50%",
+        "reuseOf": "Golden delicious apple.jpg",
+        "fallbackReason": "One verified exact-item photograph is reused with a different crop so no unverified image can publish."
+      }
+    ],
+    "visualCues": [
+      "A round yellow-gold apple anchors Golden Delicious.",
+      "The visible color is yellow; PC is from the workbook label, not appearance.",
+      "Match the store label to Apples - Golden Delicious PC before using 3005."
+    ],
+    "classification": {
+      "familyAnswer": "apples",
+      "familyChoices": [
+        {
+          "id": "apples",
+          "label": "Apples"
+        },
+        {
+          "id": "stalk-vegetables",
+          "label": "Stalk Vegetables"
+        },
+        {
+          "id": "avocados",
+          "label": "Avocados"
+        }
+      ],
+      "formAnswer": "round-golden-apple",
+      "formChoices": [
+        {
+          "id": "round-golden-apple",
+          "label": "Yellow · Round golden apple"
+        },
+        {
+          "id": "confusion-apples-ambrosia-bin",
+          "label": "Apples - Ambrosia (Bin)"
+        },
+        {
+          "id": "confusion-apples-ambrosia-pc",
+          "label": "Apples - Ambrosia PC"
+        }
+      ]
+    },
+    "variants": [],
+    "relations": [
+      {
+        "kind": "exception",
+        "title": "The store label selects this listing",
+        "copy": "The photograph teaches Golden Delicious apple. PC is copied from the workbook label and is not inferred from appearance."
+      },
+      {
+        "kind": "exception",
+        "title": "The code follows the exact listing",
+        "copy": "Use 3005 only after the label matches Apples - Golden Delicious PC."
+      }
+    ],
+    "similarItems": [
+      {
+        "name": "Apples - Ambrosia (Bin)",
+        "code": "25040",
+        "cue": "The reviewed photograph clearly shows apples - ambrosia in round apple form.",
+        "color": "#4F8B58"
+      },
+      {
+        "name": "Apples - Ambrosia PC",
+        "code": "64749",
+        "cue": "Round apples with a mixed red-yellow blush anchor the Ambrosia identity.",
+        "color": "#C25D52"
+      },
+      {
+        "name": "Apples - Gala (Orchard Run)",
+        "code": "62021",
+        "cue": "The reviewed photograph clearly shows apples - gala in round apple form.",
+        "color": "#D1A23B"
+      }
+    ],
+    "source": {
+      "primaryPages": [
+        5
+      ],
+      "relatedPages": [
+        5
+      ],
+      "checkedOnReference": true,
+      "flags": [
+        "sold-by-curated",
+        "retail-form-specific",
+        "batch-06",
+        "catalog-remainder-essential",
+        "media-reviewed-override",
+        "media-shared-reviewed",
         "media-label-assisted",
         "qualifier-workbook-label"
       ],
@@ -656,8 +951,8 @@
           "label": "Apples - Ambrosia (Bin)"
         },
         {
-          "id": "confusion-apples-gala-orchard-run",
-          "label": "Apples - Gala (Orchard Run)"
+          "id": "confusion-apples-ambrosia-pc",
+          "label": "Apples - Ambrosia PC"
         }
       ]
     },
@@ -682,15 +977,15 @@
         "color": "#4F8B58"
       },
       {
-        "name": "Apples - Gala (Orchard Run)",
-        "code": "62021",
-        "cue": "The reviewed photograph clearly shows apples - gala in round apple form.",
+        "name": "Apples - Ambrosia PC",
+        "code": "64749",
+        "cue": "Round apples with a mixed red-yellow blush anchor the Ambrosia identity.",
         "color": "#C25D52"
       },
       {
-        "name": "Apples - Ginger Gold (Orchard Run)",
-        "code": "3000",
-        "cue": "The reviewed photograph clearly shows apples - ginger gold in round apple form.",
+        "name": "Apples - Gala (Orchard Run)",
+        "code": "62021",
+        "cue": "The reviewed photograph clearly shows apples - gala in round apple form.",
         "color": "#D1A23B"
       }
     ],
@@ -803,8 +1098,8 @@
           "label": "Apples - Ambrosia (Bin)"
         },
         {
-          "id": "confusion-apples-gala-orchard-run",
-          "label": "Apples - Gala (Orchard Run)"
+          "id": "confusion-apples-ambrosia-pc",
+          "label": "Apples - Ambrosia PC"
         }
       ]
     },
@@ -829,15 +1124,15 @@
         "color": "#4F8B58"
       },
       {
-        "name": "Apples - Gala (Orchard Run)",
-        "code": "62021",
-        "cue": "The reviewed photograph clearly shows apples - gala in round apple form.",
+        "name": "Apples - Ambrosia PC",
+        "code": "64749",
+        "cue": "Round apples with a mixed red-yellow blush anchor the Ambrosia identity.",
         "color": "#C25D52"
       },
       {
-        "name": "Apples - Ginger Gold (Orchard Run)",
-        "code": "3000",
-        "cue": "The reviewed photograph clearly shows apples - ginger gold in round apple form.",
+        "name": "Apples - Gala (Orchard Run)",
+        "code": "62021",
+        "cue": "The reviewed photograph clearly shows apples - gala in round apple form.",
         "color": "#D1A23B"
       }
     ],
@@ -950,8 +1245,8 @@
           "label": "Apples - Ambrosia (Bin)"
         },
         {
-          "id": "confusion-apples-gala-orchard-run",
-          "label": "Apples - Gala (Orchard Run)"
+          "id": "confusion-apples-ambrosia-pc",
+          "label": "Apples - Ambrosia PC"
         }
       ]
     },
@@ -976,15 +1271,15 @@
         "color": "#4F8B58"
       },
       {
-        "name": "Apples - Gala (Orchard Run)",
-        "code": "62021",
-        "cue": "The reviewed photograph clearly shows apples - gala in round apple form.",
+        "name": "Apples - Ambrosia PC",
+        "code": "64749",
+        "cue": "Round apples with a mixed red-yellow blush anchor the Ambrosia identity.",
         "color": "#C25D52"
       },
       {
-        "name": "Apples - Ginger Gold (Orchard Run)",
-        "code": "3000",
-        "cue": "The reviewed photograph clearly shows apples - ginger gold in round apple form.",
+        "name": "Apples - Gala (Orchard Run)",
+        "code": "62021",
+        "cue": "The reviewed photograph clearly shows apples - gala in round apple form.",
         "color": "#D1A23B"
       }
     ],
@@ -1096,8 +1391,8 @@
           "label": "Apples - Ambrosia (Bin)"
         },
         {
-          "id": "confusion-apples-gala-orchard-run",
-          "label": "Apples - Gala (Orchard Run)"
+          "id": "confusion-apples-ambrosia-pc",
+          "label": "Apples - Ambrosia PC"
         }
       ]
     },
@@ -1122,15 +1417,15 @@
         "color": "#4F8B58"
       },
       {
-        "name": "Apples - Gala (Orchard Run)",
-        "code": "62021",
-        "cue": "The reviewed photograph clearly shows apples - gala in round apple form.",
+        "name": "Apples - Ambrosia PC",
+        "code": "64749",
+        "cue": "Round apples with a mixed red-yellow blush anchor the Ambrosia identity.",
         "color": "#C25D52"
       },
       {
-        "name": "Apples - Ginger Gold (Orchard Run)",
-        "code": "3000",
-        "cue": "The reviewed photograph clearly shows apples - ginger gold in round apple form.",
+        "name": "Apples - Gala (Orchard Run)",
+        "code": "62021",
+        "cue": "The reviewed photograph clearly shows apples - gala in round apple form.",
         "color": "#D1A23B"
       }
     ],
@@ -1566,9 +1861,9 @@
         "color": "#C25D52"
       },
       {
-        "name": "Bok Choy - Shanghai Jr",
-        "code": "64388",
-        "cue": "Pale thick stalks and smooth spoon-shaped green leaves identify Shanghai bok choy.",
+        "name": "Beans - Green (Case)",
+        "code": "6820",
+        "cue": "Long slender green pods with pointed ends identify green beans.",
         "color": "#D1A23B"
       }
     ],
@@ -1594,17 +1889,311 @@
   },
   {
     "schemaVersion": "0.9.0",
-    "id": "blueberries-2lb-39583",
-    "catalogId": "blueberries-2lb",
-    "title": "Blueberries - 2lb",
-    "shortTitle": "Blueberries - 2lb",
-    "family": "Berries",
+    "id": "beans-green-case-6820",
+    "catalogId": "beans-green-case",
+    "title": "Beans - Green (Case)",
+    "shortTitle": "Beans - Green (Case)",
+    "family": "Beans",
     "priority": "common",
     "selection": {
       "rawScore": 75,
       "score": 75,
       "band": "Common",
       "priority": "common"
+    },
+    "identity": {
+      "family": "Beans",
+      "form": "Long slender pods",
+      "color": "Green",
+      "variant": "Beans - Green (Case)"
+    },
+    "checkout": {
+      "code": "6820",
+      "soldBy": "Weight",
+      "saleForm": "Loose",
+      "codeScope": "catalog-listed-retail-unit"
+    },
+    "photos": [
+      {
+        "id": "beans-green-case-6820-hero",
+        "file": "Green-beans.jpg",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Green-beans.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "alt": "Green beans reference photograph showing long slender green pods with pointed ends identify green beans.",
+        "role": "hero",
+        "focus": "50% 50%"
+      },
+      {
+        "id": "beans-green-case-6820-alternate",
+        "file": "Green-beans.jpg",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Green-beans.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "alt": "Alternate crop of Green beans highlighting its long slender pods",
+        "role": "alternate",
+        "focus": "38% 50%",
+        "reuseOf": "Green-beans.jpg",
+        "fallbackReason": "One verified exact-item photograph is reused with a different crop so no unverified image can publish."
+      },
+      {
+        "id": "beans-green-case-6820-context",
+        "file": "Green-beans.jpg",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Green-beans.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "alt": "Green beans produce reference emphasizing its green appearance",
+        "role": "context",
+        "focus": "62% 50%",
+        "reuseOf": "Green-beans.jpg",
+        "fallbackReason": "One verified exact-item photograph is reused with a different crop so no unverified image can publish."
+      }
+    ],
+    "visualCues": [
+      "Long slender green pods with pointed ends identify green beans.",
+      "The visible color is green; Case is from the workbook label, not appearance.",
+      "Match the store label to Beans - Green (Case) before using 6820."
+    ],
+    "classification": {
+      "familyAnswer": "beans",
+      "familyChoices": [
+        {
+          "id": "beans",
+          "label": "Beans"
+        },
+        {
+          "id": "stalk-vegetables",
+          "label": "Stalk Vegetables"
+        },
+        {
+          "id": "apples",
+          "label": "Apples"
+        }
+      ],
+      "formAnswer": "long-slender-pods",
+      "formChoices": [
+        {
+          "id": "long-slender-pods",
+          "label": "Green · Long slender pods"
+        },
+        {
+          "id": "confusion-beans-green",
+          "label": "Green beans"
+        },
+        {
+          "id": "confusion-beans-long-chinese-dow-gok-bodie",
+          "label": "Chinese long beans"
+        }
+      ]
+    },
+    "variants": [],
+    "relations": [
+      {
+        "kind": "exception",
+        "title": "The store label selects this listing",
+        "copy": "The photograph teaches Green beans. Case is copied from the workbook label and is not inferred from appearance."
+      },
+      {
+        "kind": "exception",
+        "title": "The code follows the exact listing",
+        "copy": "Use 6820 only after the label matches Beans - Green (Case)."
+      }
+    ],
+    "similarItems": [
+      {
+        "name": "Green beans",
+        "code": "4066",
+        "cue": "Long slim green pods with gently pointed ends",
+        "color": "#4F8B58"
+      },
+      {
+        "name": "Chinese long beans",
+        "code": "4527",
+        "cue": "Extra-long flexible pods hang in thin rope-like lengths.",
+        "color": "#C25D52"
+      },
+      {
+        "name": "Yellow wax beans",
+        "code": "4533",
+        "cue": "Smooth pale-yellow pods with the same slim form as green beans.",
+        "color": "#D1A23B"
+      }
+    ],
+    "source": {
+      "primaryPages": [
+        4
+      ],
+      "relatedPages": [
+        4
+      ],
+      "checkedOnReference": true,
+      "flags": [
+        "sold-by-curated",
+        "retail-form-specific",
+        "batch-06",
+        "catalog-remainder-common",
+        "media-reviewed-override",
+        "media-shared-reviewed",
+        "media-label-assisted",
+        "qualifier-workbook-label"
+      ],
+      "confidence": "verified-from-supplied-material"
+    }
+  },
+  {
+    "schemaVersion": "0.9.0",
+    "id": "beets-10lb-6996",
+    "catalogId": "beets-10lb",
+    "title": "Beets - 10lb",
+    "shortTitle": "Beets - 10lb",
+    "family": "Roots",
+    "priority": "common",
+    "selection": {
+      "rawScore": 75,
+      "score": 75,
+      "band": "Common",
+      "priority": "common"
+    },
+    "identity": {
+      "family": "Roots",
+      "form": "Round tapered root",
+      "color": "Red-purple",
+      "variant": "Beets - 10lb"
+    },
+    "checkout": {
+      "code": "6996",
+      "soldBy": "Weight",
+      "saleForm": "Loose",
+      "codeScope": "catalog-listed-retail-unit"
+    },
+    "photos": [
+      {
+        "id": "beets-10lb-6996-hero",
+        "file": "Beets-Bundle.jpg",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Beets-Bundle.jpg/1920px-Beets-Bundle.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Beets reference photograph showing round red-purple beet roots provide the visible identity.",
+        "role": "hero",
+        "focus": "50% 50%"
+      },
+      {
+        "id": "beets-10lb-6996-alternate",
+        "file": "Beets-Bundle.jpg",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Beets-Bundle.jpg/1920px-Beets-Bundle.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Alternate crop of Beets highlighting its round tapered root",
+        "role": "alternate",
+        "focus": "38% 50%",
+        "reuseOf": "Beets-Bundle.jpg",
+        "fallbackReason": "One verified exact-item photograph is reused with a different crop so no unverified image can publish."
+      },
+      {
+        "id": "beets-10lb-6996-context",
+        "file": "Beets-Bundle.jpg",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Beets-Bundle.jpg/1920px-Beets-Bundle.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Beets produce reference emphasizing its red-purple appearance",
+        "role": "context",
+        "focus": "62% 50%",
+        "reuseOf": "Beets-Bundle.jpg",
+        "fallbackReason": "One verified exact-item photograph is reused with a different crop so no unverified image can publish."
+      }
+    ],
+    "visualCues": [
+      "Round red-purple beet roots provide the visible identity.",
+      "The visible color is red-purple; 10lb is from the workbook label, not appearance.",
+      "Match the store label to Beets - 10lb before using 6996."
+    ],
+    "classification": {
+      "familyAnswer": "roots",
+      "familyChoices": [
+        {
+          "id": "roots",
+          "label": "Roots"
+        },
+        {
+          "id": "stalk-vegetables",
+          "label": "Stalk Vegetables"
+        },
+        {
+          "id": "apples",
+          "label": "Apples"
+        }
+      ],
+      "formAnswer": "round-tapered-root",
+      "formChoices": [
+        {
+          "id": "round-tapered-root",
+          "label": "Red-purple · Round tapered root"
+        },
+        {
+          "id": "confusion-ginger-root-bulk",
+          "label": "Ginger root"
+        },
+        {
+          "id": "confusion-beets-loose-bulk",
+          "label": "Loose beets"
+        }
+      ]
+    },
+    "variants": [],
+    "relations": [
+      {
+        "kind": "exception",
+        "title": "The store label selects this listing",
+        "copy": "The photograph teaches Beets. 10lb is copied from the workbook label and is not inferred from appearance."
+      },
+      {
+        "kind": "exception",
+        "title": "The code follows the exact listing",
+        "copy": "Use 6996 only after the label matches Beets - 10lb."
+      }
+    ],
+    "similarItems": [
+      {
+        "name": "Ginger root",
+        "code": "4612",
+        "cue": "Irregular hand-like rhizome with many rounded branches",
+        "color": "#4F8B58"
+      },
+      {
+        "name": "Loose beets",
+        "code": "4540",
+        "cue": "Round dark red-purple root with a thin tail",
+        "color": "#C25D52"
+      },
+      {
+        "name": "Daikon radish",
+        "code": "4598",
+        "cue": "Large long cylindrical white root",
+        "color": "#D1A23B"
+      }
+    ],
+    "source": {
+      "primaryPages": [
+        4
+      ],
+      "relatedPages": [
+        4
+      ],
+      "checkedOnReference": true,
+      "flags": [
+        "sold-by-curated",
+        "retail-form-specific",
+        "batch-06",
+        "catalog-remainder-common",
+        "media-reviewed-override",
+        "media-shared-reviewed",
+        "media-label-assisted",
+        "qualifier-workbook-label"
+      ],
+      "confidence": "verified-from-supplied-material"
+    }
+  },
+  {
+    "schemaVersion": "0.9.0",
+    "id": "blueberries-2lb-39583",
+    "catalogId": "blueberries-2lb",
+    "title": "Blueberries - 2lb",
+    "shortTitle": "Blueberries - 2lb",
+    "family": "Berries",
+    "priority": "must-know",
+    "selection": {
+      "rawScore": 90,
+      "score": 90,
+      "band": "Essential",
+      "priority": "must-know"
     },
     "identity": {
       "family": "Berries",
@@ -1676,12 +2265,12 @@
           "label": "Mixed · Small soft berries"
         },
         {
-          "id": "confusion-apples-ambrosia-bin",
-          "label": "Apples - Ambrosia (Bin)"
+          "id": "confusion-blueberries-full-pint-12oz",
+          "label": "Blueberries - Full Pint / 12oz"
         },
         {
-          "id": "confusion-apples-gala-orchard-run",
-          "label": "Apples - Gala (Orchard Run)"
+          "id": "confusion-blueberries-half-pint-6oz",
+          "label": "Blueberries - Half Pint / 6oz"
         }
       ]
     },
@@ -1700,21 +2289,21 @@
     ],
     "similarItems": [
       {
-        "name": "Apples - Ambrosia (Bin)",
-        "code": "25040",
-        "cue": "The reviewed photograph clearly shows apples - ambrosia in round apple form.",
+        "name": "Blueberries - Full Pint / 12oz",
+        "code": "424",
+        "cue": "Small round blue-purple berries with pale bloom identify blueberries.",
         "color": "#4F8B58"
       },
       {
-        "name": "Apples - Gala (Orchard Run)",
-        "code": "62021",
-        "cue": "The reviewed photograph clearly shows apples - gala in round apple form.",
+        "name": "Blueberries - Half Pint / 6oz",
+        "code": "71305",
+        "cue": "Small round blue-purple berries with pale bloom identify blueberries.",
         "color": "#C25D52"
       },
       {
-        "name": "Apples - Ginger Gold (Orchard Run)",
-        "code": "3000",
-        "cue": "The reviewed photograph clearly shows apples - ginger gold in round apple form.",
+        "name": "Apples - Ambrosia (Bin)",
+        "code": "25040",
+        "cue": "The reviewed photograph clearly shows apples - ambrosia in round apple form.",
         "color": "#D1A23B"
       }
     ],
@@ -1730,8 +2319,303 @@
         "sold-by-curated",
         "retail-form-specific",
         "batch-06",
-        "catalog-remainder-common",
+        "catalog-remainder-essential",
         "media-reviewed-override",
+        "media-shared-reviewed",
+        "media-label-assisted",
+        "qualifier-workbook-label"
+      ],
+      "confidence": "verified-from-supplied-material"
+    }
+  },
+  {
+    "schemaVersion": "0.9.0",
+    "id": "blueberries-full-pint-12oz-424",
+    "catalogId": "blueberries-full-pint-12oz",
+    "title": "Blueberries - Full Pint / 12oz",
+    "shortTitle": "Blueberries - Full Pint / 12oz",
+    "family": "Berries",
+    "priority": "must-know",
+    "selection": {
+      "rawScore": 90,
+      "score": 90,
+      "band": "Essential",
+      "priority": "must-know"
+    },
+    "identity": {
+      "family": "Berries",
+      "form": "Small soft berries",
+      "color": "Blue-purple",
+      "variant": "Blueberries - Full Pint / 12oz"
+    },
+    "checkout": {
+      "code": "424",
+      "soldBy": "Weight",
+      "saleForm": "Loose",
+      "codeScope": "catalog-listed-retail-unit"
+    },
+    "photos": [
+      {
+        "id": "blueberries-full-pint-12oz-424-hero",
+        "file": "A generous handful of blueberries depicts the rich abundance of berries that may be found in Alaskan areas. (d84880d1-1dd8-b71b-0b3d-6380eca4c663).jpg",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/A_generous_handful_of_blueberries_depicts_the_rich_abundance_of_berries_that_may_be_found_in_Alaskan_areas._%28d84880d1-1dd8-b71b-0b3d-6380eca4c663%29.jpg/1920px-A_generous_handful_of_blueberries_depicts_the_rich_abundance_of_berries_that_may_be_found_in_Alaskan_areas._%28d84880d1-1dd8-b71b-0b3d-6380eca4c663%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Blueberries reference photograph showing small round blue-purple berries with pale bloom identify blueberries.",
+        "role": "hero",
+        "focus": "50% 50%"
+      },
+      {
+        "id": "blueberries-full-pint-12oz-424-alternate",
+        "file": "A generous handful of blueberries depicts the rich abundance of berries that may be found in Alaskan areas. (d84880d1-1dd8-b71b-0b3d-6380eca4c663).jpg",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/A_generous_handful_of_blueberries_depicts_the_rich_abundance_of_berries_that_may_be_found_in_Alaskan_areas._%28d84880d1-1dd8-b71b-0b3d-6380eca4c663%29.jpg/1920px-A_generous_handful_of_blueberries_depicts_the_rich_abundance_of_berries_that_may_be_found_in_Alaskan_areas._%28d84880d1-1dd8-b71b-0b3d-6380eca4c663%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Alternate crop of Blueberries highlighting its small soft berries",
+        "role": "alternate",
+        "focus": "38% 50%",
+        "reuseOf": "A generous handful of blueberries depicts the rich abundance of berries that may be found in Alaskan areas. (d84880d1-1dd8-b71b-0b3d-6380eca4c663).jpg",
+        "fallbackReason": "One verified exact-item photograph is reused with a different crop so no unverified image can publish."
+      },
+      {
+        "id": "blueberries-full-pint-12oz-424-context",
+        "file": "A generous handful of blueberries depicts the rich abundance of berries that may be found in Alaskan areas. (d84880d1-1dd8-b71b-0b3d-6380eca4c663).jpg",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/A_generous_handful_of_blueberries_depicts_the_rich_abundance_of_berries_that_may_be_found_in_Alaskan_areas._%28d84880d1-1dd8-b71b-0b3d-6380eca4c663%29.jpg/1920px-A_generous_handful_of_blueberries_depicts_the_rich_abundance_of_berries_that_may_be_found_in_Alaskan_areas._%28d84880d1-1dd8-b71b-0b3d-6380eca4c663%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Blueberries produce reference emphasizing its blue-purple appearance",
+        "role": "context",
+        "focus": "62% 50%",
+        "reuseOf": "A generous handful of blueberries depicts the rich abundance of berries that may be found in Alaskan areas. (d84880d1-1dd8-b71b-0b3d-6380eca4c663).jpg",
+        "fallbackReason": "One verified exact-item photograph is reused with a different crop so no unverified image can publish."
+      }
+    ],
+    "visualCues": [
+      "Small round blue-purple berries with pale bloom identify blueberries.",
+      "The visible color is blue-purple; Full Pint and 12oz are from the workbook label, not appearance.",
+      "Match the store label to Blueberries - Full Pint / 12oz before using 424."
+    ],
+    "classification": {
+      "familyAnswer": "berries",
+      "familyChoices": [
+        {
+          "id": "berries",
+          "label": "Berries"
+        },
+        {
+          "id": "stalk-vegetables",
+          "label": "Stalk Vegetables"
+        },
+        {
+          "id": "apples",
+          "label": "Apples"
+        }
+      ],
+      "formAnswer": "small-soft-berries",
+      "formChoices": [
+        {
+          "id": "small-soft-berries",
+          "label": "Blue-purple · Small soft berries"
+        },
+        {
+          "id": "confusion-blueberries-2lb",
+          "label": "Blueberries - 2lb"
+        },
+        {
+          "id": "confusion-blueberries-half-pint-6oz",
+          "label": "Blueberries - Half Pint / 6oz"
+        }
+      ]
+    },
+    "variants": [],
+    "relations": [
+      {
+        "kind": "exception",
+        "title": "The store label selects this listing",
+        "copy": "The photograph teaches Blueberries. Full Pint and 12oz are copied from the workbook label and are not inferred from appearance."
+      },
+      {
+        "kind": "exception",
+        "title": "The code follows the exact listing",
+        "copy": "Use 424 only after the label matches Blueberries - Full Pint / 12oz."
+      }
+    ],
+    "similarItems": [
+      {
+        "name": "Blueberries - 2lb",
+        "code": "39583",
+        "cue": "The reviewed photograph clearly shows blueberries in small soft berries form.",
+        "color": "#4F8B58"
+      },
+      {
+        "name": "Blueberries - Half Pint / 6oz",
+        "code": "71305",
+        "cue": "Small round blue-purple berries with pale bloom identify blueberries.",
+        "color": "#C25D52"
+      },
+      {
+        "name": "Apples - Ambrosia (Bin)",
+        "code": "25040",
+        "cue": "The reviewed photograph clearly shows apples - ambrosia in round apple form.",
+        "color": "#D1A23B"
+      }
+    ],
+    "source": {
+      "primaryPages": [
+        5
+      ],
+      "relatedPages": [
+        5
+      ],
+      "checkedOnReference": true,
+      "flags": [
+        "sold-by-curated",
+        "retail-form-specific",
+        "batch-06",
+        "catalog-remainder-essential",
+        "media-reviewed-override",
+        "media-shared-reviewed",
+        "media-label-assisted",
+        "qualifier-workbook-label"
+      ],
+      "confidence": "verified-from-supplied-material"
+    }
+  },
+  {
+    "schemaVersion": "0.9.0",
+    "id": "blueberries-half-pint-6oz-71305",
+    "catalogId": "blueberries-half-pint-6oz",
+    "title": "Blueberries - Half Pint / 6oz",
+    "shortTitle": "Blueberries - Half Pint / 6oz",
+    "family": "Berries",
+    "priority": "must-know",
+    "selection": {
+      "rawScore": 90,
+      "score": 90,
+      "band": "Essential",
+      "priority": "must-know"
+    },
+    "identity": {
+      "family": "Berries",
+      "form": "Small soft berries",
+      "color": "Blue-purple",
+      "variant": "Blueberries - Half Pint / 6oz"
+    },
+    "checkout": {
+      "code": "71305",
+      "soldBy": "Weight",
+      "saleForm": "Loose",
+      "codeScope": "catalog-listed-retail-unit"
+    },
+    "photos": [
+      {
+        "id": "blueberries-half-pint-6oz-71305-hero",
+        "file": "A generous handful of blueberries depicts the rich abundance of berries that may be found in Alaskan areas. (d84880d1-1dd8-b71b-0b3d-6380eca4c663).jpg",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/A_generous_handful_of_blueberries_depicts_the_rich_abundance_of_berries_that_may_be_found_in_Alaskan_areas._%28d84880d1-1dd8-b71b-0b3d-6380eca4c663%29.jpg/1920px-A_generous_handful_of_blueberries_depicts_the_rich_abundance_of_berries_that_may_be_found_in_Alaskan_areas._%28d84880d1-1dd8-b71b-0b3d-6380eca4c663%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Blueberries reference photograph showing small round blue-purple berries with pale bloom identify blueberries.",
+        "role": "hero",
+        "focus": "50% 50%"
+      },
+      {
+        "id": "blueberries-half-pint-6oz-71305-alternate",
+        "file": "A generous handful of blueberries depicts the rich abundance of berries that may be found in Alaskan areas. (d84880d1-1dd8-b71b-0b3d-6380eca4c663).jpg",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/A_generous_handful_of_blueberries_depicts_the_rich_abundance_of_berries_that_may_be_found_in_Alaskan_areas._%28d84880d1-1dd8-b71b-0b3d-6380eca4c663%29.jpg/1920px-A_generous_handful_of_blueberries_depicts_the_rich_abundance_of_berries_that_may_be_found_in_Alaskan_areas._%28d84880d1-1dd8-b71b-0b3d-6380eca4c663%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Alternate crop of Blueberries highlighting its small soft berries",
+        "role": "alternate",
+        "focus": "38% 50%",
+        "reuseOf": "A generous handful of blueberries depicts the rich abundance of berries that may be found in Alaskan areas. (d84880d1-1dd8-b71b-0b3d-6380eca4c663).jpg",
+        "fallbackReason": "One verified exact-item photograph is reused with a different crop so no unverified image can publish."
+      },
+      {
+        "id": "blueberries-half-pint-6oz-71305-context",
+        "file": "A generous handful of blueberries depicts the rich abundance of berries that may be found in Alaskan areas. (d84880d1-1dd8-b71b-0b3d-6380eca4c663).jpg",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/A_generous_handful_of_blueberries_depicts_the_rich_abundance_of_berries_that_may_be_found_in_Alaskan_areas._%28d84880d1-1dd8-b71b-0b3d-6380eca4c663%29.jpg/1920px-A_generous_handful_of_blueberries_depicts_the_rich_abundance_of_berries_that_may_be_found_in_Alaskan_areas._%28d84880d1-1dd8-b71b-0b3d-6380eca4c663%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Blueberries produce reference emphasizing its blue-purple appearance",
+        "role": "context",
+        "focus": "62% 50%",
+        "reuseOf": "A generous handful of blueberries depicts the rich abundance of berries that may be found in Alaskan areas. (d84880d1-1dd8-b71b-0b3d-6380eca4c663).jpg",
+        "fallbackReason": "One verified exact-item photograph is reused with a different crop so no unverified image can publish."
+      }
+    ],
+    "visualCues": [
+      "Small round blue-purple berries with pale bloom identify blueberries.",
+      "The visible color is blue-purple; Half Pint and 6oz are from the workbook label, not appearance.",
+      "Match the store label to Blueberries - Half Pint / 6oz before using 71305."
+    ],
+    "classification": {
+      "familyAnswer": "berries",
+      "familyChoices": [
+        {
+          "id": "berries",
+          "label": "Berries"
+        },
+        {
+          "id": "stalk-vegetables",
+          "label": "Stalk Vegetables"
+        },
+        {
+          "id": "apples",
+          "label": "Apples"
+        }
+      ],
+      "formAnswer": "small-soft-berries",
+      "formChoices": [
+        {
+          "id": "small-soft-berries",
+          "label": "Blue-purple · Small soft berries"
+        },
+        {
+          "id": "confusion-blueberries-2lb",
+          "label": "Blueberries - 2lb"
+        },
+        {
+          "id": "confusion-blueberries-full-pint-12oz",
+          "label": "Blueberries - Full Pint / 12oz"
+        }
+      ]
+    },
+    "variants": [],
+    "relations": [
+      {
+        "kind": "exception",
+        "title": "The store label selects this listing",
+        "copy": "The photograph teaches Blueberries. Half Pint and 6oz are copied from the workbook label and are not inferred from appearance."
+      },
+      {
+        "kind": "exception",
+        "title": "The code follows the exact listing",
+        "copy": "Use 71305 only after the label matches Blueberries - Half Pint / 6oz."
+      }
+    ],
+    "similarItems": [
+      {
+        "name": "Blueberries - 2lb",
+        "code": "39583",
+        "cue": "The reviewed photograph clearly shows blueberries in small soft berries form.",
+        "color": "#4F8B58"
+      },
+      {
+        "name": "Blueberries - Full Pint / 12oz",
+        "code": "424",
+        "cue": "Small round blue-purple berries with pale bloom identify blueberries.",
+        "color": "#C25D52"
+      },
+      {
+        "name": "Apples - Ambrosia (Bin)",
+        "code": "25040",
+        "cue": "The reviewed photograph clearly shows apples - ambrosia in round apple form.",
+        "color": "#D1A23B"
+      }
+    ],
+    "source": {
+      "primaryPages": [
+        5
+      ],
+      "relatedPages": [
+        5
+      ],
+      "checkedOnReference": true,
+      "flags": [
+        "sold-by-curated",
+        "retail-form-specific",
+        "batch-06",
+        "catalog-remainder-essential",
+        "media-reviewed-override",
+        "media-shared-reviewed",
         "media-label-assisted",
         "qualifier-workbook-label"
       ],
@@ -1886,6 +2770,153 @@
   },
   {
     "schemaVersion": "0.9.0",
+    "id": "carrots-jumbo-case-63559",
+    "catalogId": "carrots-jumbo-case",
+    "title": "Carrots - Jumbo (Case)",
+    "shortTitle": "Carrots - Jumbo (Case)",
+    "family": "Carrots",
+    "priority": "common",
+    "selection": {
+      "rawScore": 75,
+      "score": 75,
+      "band": "Common",
+      "priority": "common"
+    },
+    "identity": {
+      "family": "Carrots",
+      "form": "Large tapered root",
+      "color": "Orange",
+      "variant": "Carrots - Jumbo (Case)"
+    },
+    "checkout": {
+      "code": "63559",
+      "soldBy": "Weight",
+      "saleForm": "Loose",
+      "codeScope": "catalog-listed-retail-unit"
+    },
+    "photos": [
+      {
+        "id": "carrots-jumbo-case-63559-hero",
+        "file": "Big Carrot-2356.jpg",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/Big_Carrot-2356.jpg/1920px-Big_Carrot-2356.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Jumbo carrot reference photograph showing a large orange tapered root anchors the jumbo-carrot identity.",
+        "role": "hero",
+        "focus": "50% 50%"
+      },
+      {
+        "id": "carrots-jumbo-case-63559-alternate",
+        "file": "Big Carrot-2356.jpg",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/Big_Carrot-2356.jpg/1920px-Big_Carrot-2356.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Alternate crop of Jumbo carrot highlighting its large tapered root",
+        "role": "alternate",
+        "focus": "38% 50%",
+        "reuseOf": "Big Carrot-2356.jpg",
+        "fallbackReason": "One verified exact-item photograph is reused with a different crop so no unverified image can publish."
+      },
+      {
+        "id": "carrots-jumbo-case-63559-context",
+        "file": "Big Carrot-2356.jpg",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/Big_Carrot-2356.jpg/1920px-Big_Carrot-2356.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Jumbo carrot produce reference emphasizing its orange appearance",
+        "role": "context",
+        "focus": "62% 50%",
+        "reuseOf": "Big Carrot-2356.jpg",
+        "fallbackReason": "One verified exact-item photograph is reused with a different crop so no unverified image can publish."
+      }
+    ],
+    "visualCues": [
+      "A large orange tapered root anchors the jumbo-carrot identity.",
+      "The visible color is orange; Case is from the workbook label, not appearance.",
+      "Match the store label to Carrots - Jumbo (Case) before using 63559."
+    ],
+    "classification": {
+      "familyAnswer": "carrots",
+      "familyChoices": [
+        {
+          "id": "carrots",
+          "label": "Carrots"
+        },
+        {
+          "id": "stalk-vegetables",
+          "label": "Stalk Vegetables"
+        },
+        {
+          "id": "apples",
+          "label": "Apples"
+        }
+      ],
+      "formAnswer": "large-tapered-root",
+      "formChoices": [
+        {
+          "id": "large-tapered-root",
+          "label": "Orange · Large tapered root"
+        },
+        {
+          "id": "confusion-carrots-regular-bulk",
+          "label": "Carrots"
+        },
+        {
+          "id": "confusion-carrots-bunch",
+          "label": "Carrot bunch"
+        }
+      ]
+    },
+    "variants": [],
+    "relations": [
+      {
+        "kind": "exception",
+        "title": "The store label selects this listing",
+        "copy": "The photograph teaches Jumbo carrot. Case is copied from the workbook label and is not inferred from appearance."
+      },
+      {
+        "kind": "exception",
+        "title": "The code follows the exact listing",
+        "copy": "Use 63559 only after the label matches Carrots - Jumbo (Case)."
+      }
+    ],
+    "similarItems": [
+      {
+        "name": "Carrots",
+        "code": "4562",
+        "cue": "Long straight root that narrows to a pointed tip",
+        "color": "#4F8B58"
+      },
+      {
+        "name": "Carrot bunch",
+        "code": "4094",
+        "cue": "Several tapered orange roots are tied with their green tops attached.",
+        "color": "#C25D52"
+      },
+      {
+        "name": "Jumbo carrots",
+        "code": "3170",
+        "cue": "Thick oversized orange roots taper gradually to a point.",
+        "color": "#D1A23B"
+      }
+    ],
+    "source": {
+      "primaryPages": [
+        4
+      ],
+      "relatedPages": [
+        4
+      ],
+      "checkedOnReference": true,
+      "flags": [
+        "sold-by-curated",
+        "retail-form-specific",
+        "batch-06",
+        "catalog-remainder-common",
+        "media-reviewed-override",
+        "media-shared-reviewed",
+        "media-label-assisted",
+        "qualifier-workbook-label"
+      ],
+      "confidence": "verified-from-supplied-material"
+    }
+  },
+  {
+    "schemaVersion": "0.9.0",
     "id": "cherries-rwb-organic-94045",
     "catalogId": "cherries-rwb-organic",
     "title": "Cherries - RWB (Organic)",
@@ -1972,8 +3003,8 @@
           "label": "Apples - Ambrosia (Bin)"
         },
         {
-          "id": "confusion-apples-gala-orchard-run",
-          "label": "Apples - Gala (Orchard Run)"
+          "id": "confusion-apples-ambrosia-pc",
+          "label": "Apples - Ambrosia PC"
         }
       ]
     },
@@ -1998,15 +3029,15 @@
         "color": "#4F8B58"
       },
       {
-        "name": "Apples - Gala (Orchard Run)",
-        "code": "62021",
-        "cue": "The reviewed photograph clearly shows apples - gala in round apple form.",
+        "name": "Apples - Ambrosia PC",
+        "code": "64749",
+        "cue": "Round apples with a mixed red-yellow blush anchor the Ambrosia identity.",
         "color": "#C25D52"
       },
       {
-        "name": "Apples - Ginger Gold (Orchard Run)",
-        "code": "3000",
-        "cue": "The reviewed photograph clearly shows apples - ginger gold in round apple form.",
+        "name": "Apples - Gala (Orchard Run)",
+        "code": "62021",
+        "cue": "The reviewed photograph clearly shows apples - gala in round apple form.",
         "color": "#D1A23B"
       }
     ],
@@ -2470,6 +3501,153 @@
   },
   {
     "schemaVersion": "0.9.0",
+    "id": "corn-tray-of-5-5438",
+    "catalogId": "corn-tray-of-5",
+    "title": "Corn - Tray of 5",
+    "shortTitle": "Corn - Tray of 5",
+    "family": "Corn",
+    "priority": "common",
+    "selection": {
+      "rawScore": 75,
+      "score": 75,
+      "band": "Common",
+      "priority": "common"
+    },
+    "identity": {
+      "family": "Corn",
+      "form": "Long husked ear",
+      "color": "Yellow-green",
+      "variant": "Corn - Tray of 5"
+    },
+    "checkout": {
+      "code": "5438",
+      "soldBy": "Weight",
+      "saleForm": "Loose",
+      "codeScope": "catalog-listed-retail-unit"
+    },
+    "photos": [
+      {
+        "id": "corn-tray-of-5-5438-hero",
+        "file": "Liat Portal for Foodie Disorder - Fresh Corn on the Cob.jpg",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/Liat_Portal_for_Foodie_Disorder_-_Fresh_Corn_on_the_Cob.jpg/1920px-Liat_Portal_for_Foodie_Disorder_-_Fresh_Corn_on_the_Cob.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Corn reference photograph showing a fresh long ear with green husk and yellow kernels identifies corn.",
+        "role": "hero",
+        "focus": "50% 50%"
+      },
+      {
+        "id": "corn-tray-of-5-5438-alternate",
+        "file": "Liat Portal for Foodie Disorder - Fresh Corn on the Cob.jpg",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/Liat_Portal_for_Foodie_Disorder_-_Fresh_Corn_on_the_Cob.jpg/1920px-Liat_Portal_for_Foodie_Disorder_-_Fresh_Corn_on_the_Cob.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Alternate crop of Corn highlighting its long husked ear",
+        "role": "alternate",
+        "focus": "38% 50%",
+        "reuseOf": "Liat Portal for Foodie Disorder - Fresh Corn on the Cob.jpg",
+        "fallbackReason": "One verified exact-item photograph is reused with a different crop so no unverified image can publish."
+      },
+      {
+        "id": "corn-tray-of-5-5438-context",
+        "file": "Liat Portal for Foodie Disorder - Fresh Corn on the Cob.jpg",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/Liat_Portal_for_Foodie_Disorder_-_Fresh_Corn_on_the_Cob.jpg/1920px-Liat_Portal_for_Foodie_Disorder_-_Fresh_Corn_on_the_Cob.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Corn produce reference emphasizing its yellow-green appearance",
+        "role": "context",
+        "focus": "62% 50%",
+        "reuseOf": "Liat Portal for Foodie Disorder - Fresh Corn on the Cob.jpg",
+        "fallbackReason": "One verified exact-item photograph is reused with a different crop so no unverified image can publish."
+      }
+    ],
+    "visualCues": [
+      "A fresh long ear with green husk and yellow kernels identifies corn.",
+      "The visible color is yellow-green; Tray of 5 is from the workbook label, not appearance.",
+      "Match the store label to Corn - Tray of 5 before using 5438."
+    ],
+    "classification": {
+      "familyAnswer": "corn",
+      "familyChoices": [
+        {
+          "id": "corn",
+          "label": "Corn"
+        },
+        {
+          "id": "stalk-vegetables",
+          "label": "Stalk Vegetables"
+        },
+        {
+          "id": "apples",
+          "label": "Apples"
+        }
+      ],
+      "formAnswer": "long-husked-ear",
+      "formChoices": [
+        {
+          "id": "long-husked-ear",
+          "label": "Yellow-green · Long husked ear"
+        },
+        {
+          "id": "confusion-corn",
+          "label": "Corn"
+        },
+        {
+          "id": "confusion-corn-bicolour-bulk",
+          "label": "Bicolour corn"
+        }
+      ]
+    },
+    "variants": [],
+    "relations": [
+      {
+        "kind": "exception",
+        "title": "The store label selects this listing",
+        "copy": "The photograph teaches Corn. Tray of 5 is copied from the workbook label and is not inferred from appearance."
+      },
+      {
+        "kind": "exception",
+        "title": "The code follows the exact listing",
+        "copy": "Use 5438 only after the label matches Corn - Tray of 5."
+      }
+    ],
+    "similarItems": [
+      {
+        "name": "Corn",
+        "code": "407",
+        "cue": "Long tapered ear enclosed by green husk leaves",
+        "color": "#4F8B58"
+      },
+      {
+        "name": "Bicolour corn",
+        "code": "4078",
+        "cue": "Bicolour corn is identified by its yellow-green appearance and long husked ear.",
+        "color": "#C25D52"
+      },
+      {
+        "name": "Aloe",
+        "code": "3798",
+        "cue": "Aloe is identified by its green appearance and thick tapered succulent leaves.",
+        "color": "#D1A23B"
+      }
+    ],
+    "source": {
+      "primaryPages": [
+        4
+      ],
+      "relatedPages": [
+        4
+      ],
+      "checkedOnReference": true,
+      "flags": [
+        "sold-by-curated",
+        "retail-form-specific",
+        "batch-06",
+        "catalog-remainder-common",
+        "media-reviewed-override",
+        "media-shared-reviewed",
+        "media-label-assisted",
+        "qualifier-workbook-label"
+      ],
+      "confidence": "verified-from-supplied-material"
+    }
+  },
+  {
+    "schemaVersion": "0.9.0",
     "id": "eggplant-purple-case-63582",
     "catalogId": "eggplant-purple-case",
     "title": "Eggplant - Purple (Case)",
@@ -2616,6 +3794,152 @@
   },
   {
     "schemaVersion": "0.9.0",
+    "id": "figgs-black-case-2110",
+    "catalogId": "figgs-black-case",
+    "title": "Figgs - Black (Case)",
+    "shortTitle": "Figgs - Black (Case)",
+    "family": "Figs",
+    "priority": "must-know",
+    "selection": {
+      "rawScore": 105,
+      "score": 100,
+      "band": "Essential",
+      "priority": "must-know"
+    },
+    "identity": {
+      "family": "Figs",
+      "form": "Soft teardrop fruit",
+      "color": "Black-purple",
+      "variant": "Figgs - Black (Case)"
+    },
+    "checkout": {
+      "code": "2110",
+      "soldBy": "Each",
+      "saleForm": "Single",
+      "codeScope": "catalog-listed-retail-unit"
+    },
+    "photos": [
+      {
+        "id": "figgs-black-case-2110-hero",
+        "file": "Stellar Black Mission Figs (22856783955).jpg",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Stellar_Black_Mission_Figs_%2822856783955%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "alt": "Black fig reference photograph showing soft dark teardrop fruit identifies a black fig.",
+        "role": "hero",
+        "focus": "50% 50%"
+      },
+      {
+        "id": "figgs-black-case-2110-alternate",
+        "file": "Stellar Black Mission Figs (22856783955).jpg",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Stellar_Black_Mission_Figs_%2822856783955%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "alt": "Alternate crop of Black fig highlighting its soft teardrop fruit",
+        "role": "alternate",
+        "focus": "38% 50%",
+        "reuseOf": "Stellar Black Mission Figs (22856783955).jpg",
+        "fallbackReason": "One verified exact-item photograph is reused with a different crop so no unverified image can publish."
+      },
+      {
+        "id": "figgs-black-case-2110-context",
+        "file": "Stellar Black Mission Figs (22856783955).jpg",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Stellar_Black_Mission_Figs_%2822856783955%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "alt": "Black fig produce reference emphasizing its black-purple appearance",
+        "role": "context",
+        "focus": "62% 50%",
+        "reuseOf": "Stellar Black Mission Figs (22856783955).jpg",
+        "fallbackReason": "One verified exact-item photograph is reused with a different crop so no unverified image can publish."
+      }
+    ],
+    "visualCues": [
+      "Soft dark teardrop fruit identifies a black fig.",
+      "The visible color is black-purple; Case is from the workbook label, not appearance.",
+      "Match the store label to Figgs - Black (Case) before using 2110."
+    ],
+    "classification": {
+      "familyAnswer": "figs",
+      "familyChoices": [
+        {
+          "id": "figs",
+          "label": "Figs"
+        },
+        {
+          "id": "stalk-vegetables",
+          "label": "Stalk Vegetables"
+        },
+        {
+          "id": "apples",
+          "label": "Apples"
+        }
+      ],
+      "formAnswer": "soft-teardrop-fruit",
+      "formChoices": [
+        {
+          "id": "soft-teardrop-fruit",
+          "label": "Black-purple · Soft teardrop fruit"
+        },
+        {
+          "id": "confusion-figgs-green-case",
+          "label": "Figgs - Green (Case)"
+        },
+        {
+          "id": "confusion-figs-black-case",
+          "label": "Figs - Black (Case)"
+        }
+      ]
+    },
+    "variants": [],
+    "relations": [
+      {
+        "kind": "exception",
+        "title": "The store label selects this listing",
+        "copy": "The photograph teaches Black fig. Case is copied from the workbook label and is not inferred from appearance."
+      },
+      {
+        "kind": "exception",
+        "title": "The code follows the exact listing",
+        "copy": "Use 2110 only after the label matches Figgs - Black (Case)."
+      }
+    ],
+    "similarItems": [
+      {
+        "name": "Figgs - Green (Case)",
+        "code": "6799",
+        "cue": "The reviewed photograph clearly shows figgs - green in soft teardrop fruit form.",
+        "color": "#4F8B58"
+      },
+      {
+        "name": "Figs - Black (Case)",
+        "code": "13491",
+        "cue": "Soft dark teardrop fruit identifies a black fig.",
+        "color": "#C25D52"
+      },
+      {
+        "name": "Figs - Black 227g (Pint)",
+        "code": "58206",
+        "cue": "Soft dark teardrop fruit identifies a black fig.",
+        "color": "#D1A23B"
+      }
+    ],
+    "source": {
+      "primaryPages": [
+        1
+      ],
+      "relatedPages": [
+        1
+      ],
+      "checkedOnReference": true,
+      "flags": [
+        "retail-form-specific",
+        "batch-06",
+        "catalog-remainder-essential",
+        "media-reviewed-override",
+        "media-shared-reviewed",
+        "media-label-assisted",
+        "qualifier-workbook-label"
+      ],
+      "confidence": "verified-from-supplied-material"
+    }
+  },
+  {
+    "schemaVersion": "0.9.0",
     "id": "figgs-green-case-6799",
     "catalogId": "figgs-green-case",
     "title": "Figgs - Green (Case)",
@@ -2623,8 +3947,8 @@
     "family": "Figs",
     "priority": "must-know",
     "selection": {
-      "rawScore": 90,
-      "score": 90,
+      "rawScore": 105,
+      "score": 100,
       "band": "Essential",
       "priority": "must-know"
     },
@@ -2698,12 +4022,12 @@
           "label": "Green · Soft teardrop fruit"
         },
         {
-          "id": "confusion-figgs-black",
-          "label": "Black fig"
+          "id": "confusion-figgs-black-case",
+          "label": "Figgs - Black (Case)"
         },
         {
-          "id": "confusion-apples-ambrosia-bin",
-          "label": "Apples - Ambrosia (Bin)"
+          "id": "confusion-figs-black-case",
+          "label": "Figs - Black (Case)"
         }
       ]
     },
@@ -2722,21 +4046,21 @@
     ],
     "similarItems": [
       {
-        "name": "Black fig",
-        "code": "4266",
-        "cue": "Black fig is identified by its black appearance and soft teardrop fruit.",
+        "name": "Figgs - Black (Case)",
+        "code": "2110",
+        "cue": "Soft dark teardrop fruit identifies a black fig.",
         "color": "#4F8B58"
       },
       {
-        "name": "Apples - Ambrosia (Bin)",
-        "code": "25040",
-        "cue": "The reviewed photograph clearly shows apples - ambrosia in round apple form.",
+        "name": "Figs - Black (Case)",
+        "code": "13491",
+        "cue": "Soft dark teardrop fruit identifies a black fig.",
         "color": "#C25D52"
       },
       {
-        "name": "Apples - Gala (Orchard Run)",
-        "code": "62021",
-        "cue": "The reviewed photograph clearly shows apples - gala in round apple form.",
+        "name": "Figs - Black 227g (Pint)",
+        "code": "58206",
+        "cue": "Soft dark teardrop fruit identifies a black fig.",
         "color": "#D1A23B"
       }
     ],
@@ -2753,6 +4077,448 @@
         "batch-06",
         "catalog-remainder-essential",
         "media-reviewed-override",
+        "media-shared-reviewed",
+        "media-label-assisted",
+        "qualifier-workbook-label"
+      ],
+      "confidence": "verified-from-supplied-material"
+    }
+  },
+  {
+    "schemaVersion": "0.9.0",
+    "id": "figs-black-case-13491",
+    "catalogId": "figs-black-case",
+    "title": "Figs - Black (Case)",
+    "shortTitle": "Figs - Black (Case)",
+    "family": "Figs",
+    "priority": "must-know",
+    "selection": {
+      "rawScore": 90,
+      "score": 90,
+      "band": "Essential",
+      "priority": "must-know"
+    },
+    "identity": {
+      "family": "Figs",
+      "form": "Soft teardrop fruit",
+      "color": "Black-purple",
+      "variant": "Figs - Black (Case)"
+    },
+    "checkout": {
+      "code": "13491",
+      "soldBy": "Weight",
+      "saleForm": "Loose",
+      "codeScope": "catalog-listed-retail-unit"
+    },
+    "photos": [
+      {
+        "id": "figs-black-case-13491-hero",
+        "file": "Stellar Black Mission Figs (22856783955).jpg",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Stellar_Black_Mission_Figs_%2822856783955%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "alt": "Black fig reference photograph showing soft dark teardrop fruit identifies a black fig.",
+        "role": "hero",
+        "focus": "50% 50%"
+      },
+      {
+        "id": "figs-black-case-13491-alternate",
+        "file": "Stellar Black Mission Figs (22856783955).jpg",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Stellar_Black_Mission_Figs_%2822856783955%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "alt": "Alternate crop of Black fig highlighting its soft teardrop fruit",
+        "role": "alternate",
+        "focus": "38% 50%",
+        "reuseOf": "Stellar Black Mission Figs (22856783955).jpg",
+        "fallbackReason": "One verified exact-item photograph is reused with a different crop so no unverified image can publish."
+      },
+      {
+        "id": "figs-black-case-13491-context",
+        "file": "Stellar Black Mission Figs (22856783955).jpg",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Stellar_Black_Mission_Figs_%2822856783955%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "alt": "Black fig produce reference emphasizing its black-purple appearance",
+        "role": "context",
+        "focus": "62% 50%",
+        "reuseOf": "Stellar Black Mission Figs (22856783955).jpg",
+        "fallbackReason": "One verified exact-item photograph is reused with a different crop so no unverified image can publish."
+      }
+    ],
+    "visualCues": [
+      "Soft dark teardrop fruit identifies a black fig.",
+      "The visible color is black-purple; Case is from the workbook label, not appearance.",
+      "Match the store label to Figs - Black (Case) before using 13491."
+    ],
+    "classification": {
+      "familyAnswer": "figs",
+      "familyChoices": [
+        {
+          "id": "figs",
+          "label": "Figs"
+        },
+        {
+          "id": "stalk-vegetables",
+          "label": "Stalk Vegetables"
+        },
+        {
+          "id": "apples",
+          "label": "Apples"
+        }
+      ],
+      "formAnswer": "soft-teardrop-fruit",
+      "formChoices": [
+        {
+          "id": "soft-teardrop-fruit",
+          "label": "Black-purple · Soft teardrop fruit"
+        },
+        {
+          "id": "confusion-figgs-black-case",
+          "label": "Figgs - Black (Case)"
+        },
+        {
+          "id": "confusion-figgs-green-case",
+          "label": "Figgs - Green (Case)"
+        }
+      ]
+    },
+    "variants": [],
+    "relations": [
+      {
+        "kind": "exception",
+        "title": "The store label selects this listing",
+        "copy": "The photograph teaches Black fig. Case is copied from the workbook label and is not inferred from appearance."
+      },
+      {
+        "kind": "exception",
+        "title": "The code follows the exact listing",
+        "copy": "Use 13491 only after the label matches Figs - Black (Case)."
+      }
+    ],
+    "similarItems": [
+      {
+        "name": "Figgs - Black (Case)",
+        "code": "2110",
+        "cue": "Soft dark teardrop fruit identifies a black fig.",
+        "color": "#4F8B58"
+      },
+      {
+        "name": "Figgs - Green (Case)",
+        "code": "6799",
+        "cue": "The reviewed photograph clearly shows figgs - green in soft teardrop fruit form.",
+        "color": "#C25D52"
+      },
+      {
+        "name": "Figs - Black 227g (Pint)",
+        "code": "58206",
+        "cue": "Soft dark teardrop fruit identifies a black fig.",
+        "color": "#D1A23B"
+      }
+    ],
+    "source": {
+      "primaryPages": [
+        5
+      ],
+      "relatedPages": [
+        5
+      ],
+      "checkedOnReference": true,
+      "flags": [
+        "sold-by-curated",
+        "retail-form-specific",
+        "batch-06",
+        "catalog-remainder-essential",
+        "media-reviewed-override",
+        "media-shared-reviewed",
+        "media-label-assisted",
+        "qualifier-workbook-label"
+      ],
+      "confidence": "verified-from-supplied-material"
+    }
+  },
+  {
+    "schemaVersion": "0.9.0",
+    "id": "figs-black-227g-pint-58206",
+    "catalogId": "figs-black-227g-pint",
+    "title": "Figs - Black 227g (Pint)",
+    "shortTitle": "Figs - Black 227g (Pint)",
+    "family": "Figs",
+    "priority": "must-know",
+    "selection": {
+      "rawScore": 90,
+      "score": 90,
+      "band": "Essential",
+      "priority": "must-know"
+    },
+    "identity": {
+      "family": "Figs",
+      "form": "Soft teardrop fruit",
+      "color": "Black-purple",
+      "variant": "Figs - Black 227g (Pint)"
+    },
+    "checkout": {
+      "code": "58206",
+      "soldBy": "Weight",
+      "saleForm": "Loose",
+      "codeScope": "catalog-listed-retail-unit"
+    },
+    "photos": [
+      {
+        "id": "figs-black-227g-pint-58206-hero",
+        "file": "Stellar Black Mission Figs (22856783955).jpg",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Stellar_Black_Mission_Figs_%2822856783955%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "alt": "Black fig reference photograph showing soft dark teardrop fruit identifies a black fig.",
+        "role": "hero",
+        "focus": "50% 50%"
+      },
+      {
+        "id": "figs-black-227g-pint-58206-alternate",
+        "file": "Stellar Black Mission Figs (22856783955).jpg",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Stellar_Black_Mission_Figs_%2822856783955%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "alt": "Alternate crop of Black fig highlighting its soft teardrop fruit",
+        "role": "alternate",
+        "focus": "38% 50%",
+        "reuseOf": "Stellar Black Mission Figs (22856783955).jpg",
+        "fallbackReason": "One verified exact-item photograph is reused with a different crop so no unverified image can publish."
+      },
+      {
+        "id": "figs-black-227g-pint-58206-context",
+        "file": "Stellar Black Mission Figs (22856783955).jpg",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Stellar_Black_Mission_Figs_%2822856783955%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "alt": "Black fig produce reference emphasizing its black-purple appearance",
+        "role": "context",
+        "focus": "62% 50%",
+        "reuseOf": "Stellar Black Mission Figs (22856783955).jpg",
+        "fallbackReason": "One verified exact-item photograph is reused with a different crop so no unverified image can publish."
+      }
+    ],
+    "visualCues": [
+      "Soft dark teardrop fruit identifies a black fig.",
+      "The visible color is black-purple; 227g (Pint) is from the workbook label, not appearance.",
+      "Match the store label to Figs - Black 227g (Pint) before using 58206."
+    ],
+    "classification": {
+      "familyAnswer": "figs",
+      "familyChoices": [
+        {
+          "id": "figs",
+          "label": "Figs"
+        },
+        {
+          "id": "stalk-vegetables",
+          "label": "Stalk Vegetables"
+        },
+        {
+          "id": "apples",
+          "label": "Apples"
+        }
+      ],
+      "formAnswer": "soft-teardrop-fruit",
+      "formChoices": [
+        {
+          "id": "soft-teardrop-fruit",
+          "label": "Black-purple · Soft teardrop fruit"
+        },
+        {
+          "id": "confusion-figgs-black-case",
+          "label": "Figgs - Black (Case)"
+        },
+        {
+          "id": "confusion-figgs-green-case",
+          "label": "Figgs - Green (Case)"
+        }
+      ]
+    },
+    "variants": [],
+    "relations": [
+      {
+        "kind": "exception",
+        "title": "The store label selects this listing",
+        "copy": "The photograph teaches Black fig. 227g (Pint) is copied from the workbook label and is not inferred from appearance."
+      },
+      {
+        "kind": "exception",
+        "title": "The code follows the exact listing",
+        "copy": "Use 58206 only after the label matches Figs - Black 227g (Pint)."
+      }
+    ],
+    "similarItems": [
+      {
+        "name": "Figgs - Black (Case)",
+        "code": "2110",
+        "cue": "Soft dark teardrop fruit identifies a black fig.",
+        "color": "#4F8B58"
+      },
+      {
+        "name": "Figgs - Green (Case)",
+        "code": "6799",
+        "cue": "The reviewed photograph clearly shows figgs - green in soft teardrop fruit form.",
+        "color": "#C25D52"
+      },
+      {
+        "name": "Figs - Black (Case)",
+        "code": "13491",
+        "cue": "Soft dark teardrop fruit identifies a black fig.",
+        "color": "#D1A23B"
+      }
+    ],
+    "source": {
+      "primaryPages": [
+        5
+      ],
+      "relatedPages": [
+        5
+      ],
+      "checkedOnReference": true,
+      "flags": [
+        "sold-by-curated",
+        "retail-form-specific",
+        "batch-06",
+        "catalog-remainder-essential",
+        "media-reviewed-override",
+        "media-shared-reviewed",
+        "media-label-assisted",
+        "qualifier-workbook-label"
+      ],
+      "confidence": "verified-from-supplied-material"
+    }
+  },
+  {
+    "schemaVersion": "0.9.0",
+    "id": "figs-green-case-3536",
+    "catalogId": "figs-green-case",
+    "title": "Figs - Green (Case)",
+    "shortTitle": "Figs - Green (Case)",
+    "family": "Figs",
+    "priority": "must-know",
+    "selection": {
+      "rawScore": 90,
+      "score": 90,
+      "band": "Essential",
+      "priority": "must-know"
+    },
+    "identity": {
+      "family": "Figs",
+      "form": "Soft teardrop fruit",
+      "color": "Green",
+      "variant": "Figs - Green (Case)"
+    },
+    "checkout": {
+      "code": "3536",
+      "soldBy": "Weight",
+      "saleForm": "Loose",
+      "codeScope": "catalog-listed-retail-unit"
+    },
+    "photos": [
+      {
+        "id": "figs-green-case-3536-hero",
+        "file": "Common fig - leaves and green figs.jpg",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/0/03/Common_fig_-_leaves_and_green_figs.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "alt": "Green fig reference photograph showing several green teardrop-shaped figs provide the visible identity.",
+        "role": "hero",
+        "focus": "50% 50%"
+      },
+      {
+        "id": "figs-green-case-3536-alternate",
+        "file": "Common fig - leaves and green figs.jpg",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/0/03/Common_fig_-_leaves_and_green_figs.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "alt": "Alternate crop of Green fig highlighting its soft teardrop fruit",
+        "role": "alternate",
+        "focus": "38% 50%",
+        "reuseOf": "Common fig - leaves and green figs.jpg",
+        "fallbackReason": "One verified exact-item photograph is reused with a different crop so no unverified image can publish."
+      },
+      {
+        "id": "figs-green-case-3536-context",
+        "file": "Common fig - leaves and green figs.jpg",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/0/03/Common_fig_-_leaves_and_green_figs.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "alt": "Green fig produce reference emphasizing its green appearance",
+        "role": "context",
+        "focus": "62% 50%",
+        "reuseOf": "Common fig - leaves and green figs.jpg",
+        "fallbackReason": "One verified exact-item photograph is reused with a different crop so no unverified image can publish."
+      }
+    ],
+    "visualCues": [
+      "Several green teardrop-shaped figs provide the visible identity.",
+      "The visible color is green; Case is from the workbook label, not appearance.",
+      "Match the store label to Figs - Green (Case) before using 3536."
+    ],
+    "classification": {
+      "familyAnswer": "figs",
+      "familyChoices": [
+        {
+          "id": "figs",
+          "label": "Figs"
+        },
+        {
+          "id": "stalk-vegetables",
+          "label": "Stalk Vegetables"
+        },
+        {
+          "id": "apples",
+          "label": "Apples"
+        }
+      ],
+      "formAnswer": "soft-teardrop-fruit",
+      "formChoices": [
+        {
+          "id": "soft-teardrop-fruit",
+          "label": "Green · Soft teardrop fruit"
+        },
+        {
+          "id": "confusion-figgs-black-case",
+          "label": "Figgs - Black (Case)"
+        },
+        {
+          "id": "confusion-figgs-green-case",
+          "label": "Figgs - Green (Case)"
+        }
+      ]
+    },
+    "variants": [],
+    "relations": [
+      {
+        "kind": "exception",
+        "title": "The store label selects this listing",
+        "copy": "The photograph teaches Green fig. Case is copied from the workbook label and is not inferred from appearance."
+      },
+      {
+        "kind": "exception",
+        "title": "The code follows the exact listing",
+        "copy": "Use 3536 only after the label matches Figs - Green (Case)."
+      }
+    ],
+    "similarItems": [
+      {
+        "name": "Figgs - Black (Case)",
+        "code": "2110",
+        "cue": "Soft dark teardrop fruit identifies a black fig.",
+        "color": "#4F8B58"
+      },
+      {
+        "name": "Figgs - Green (Case)",
+        "code": "6799",
+        "cue": "The reviewed photograph clearly shows figgs - green in soft teardrop fruit form.",
+        "color": "#C25D52"
+      },
+      {
+        "name": "Figs - Black (Case)",
+        "code": "13491",
+        "cue": "Soft dark teardrop fruit identifies a black fig.",
+        "color": "#D1A23B"
+      }
+    ],
+    "source": {
+      "primaryPages": [
+        5
+      ],
+      "relatedPages": [
+        5
+      ],
+      "checkedOnReference": true,
+      "flags": [
+        "sold-by-curated",
+        "retail-form-specific",
+        "batch-06",
+        "catalog-remainder-essential",
+        "media-reviewed-override",
+        "media-shared-reviewed",
         "media-label-assisted",
         "qualifier-workbook-label"
       ],
@@ -2879,9 +4645,9 @@
         "color": "#C25D52"
       },
       {
-        "name": "Onions - Yellow Organic 2lb",
-        "code": "62810",
-        "cue": "The reviewed photograph clearly shows onions - yellow in layered bulb or stalk form.",
+        "name": "Onions - Yellow Jumbo #2 (Case)",
+        "code": "63555",
+        "cue": "Round yellow-brown papery layered bulbs identify yellow onions.",
         "color": "#D1A23B"
       }
     ],
@@ -3285,8 +5051,8 @@
           "label": "Apples - Ambrosia (Bin)"
         },
         {
-          "id": "confusion-apples-gala-orchard-run",
-          "label": "Apples - Gala (Orchard Run)"
+          "id": "confusion-apples-ambrosia-pc",
+          "label": "Apples - Ambrosia PC"
         }
       ]
     },
@@ -3311,15 +5077,15 @@
         "color": "#4F8B58"
       },
       {
-        "name": "Apples - Gala (Orchard Run)",
-        "code": "62021",
-        "cue": "The reviewed photograph clearly shows apples - gala in round apple form.",
+        "name": "Apples - Ambrosia PC",
+        "code": "64749",
+        "cue": "Round apples with a mixed red-yellow blush anchor the Ambrosia identity.",
         "color": "#C25D52"
       },
       {
-        "name": "Apples - Ginger Gold (Orchard Run)",
-        "code": "3000",
-        "cue": "The reviewed photograph clearly shows apples - ginger gold in round apple form.",
+        "name": "Apples - Gala (Orchard Run)",
+        "code": "62021",
+        "cue": "The reviewed photograph clearly shows apples - gala in round apple form.",
         "color": "#D1A23B"
       }
     ],
@@ -3865,12 +5631,12 @@
           "label": "Yellow-red · Oval tapered fruit"
         },
         {
-          "id": "confusion-mangos-east-indian-case",
-          "label": "Mangos - East Indian (Case)"
+          "id": "confusion-mangos-ataulfo-case",
+          "label": "Mangos - Ataulfo (Case)"
         },
         {
-          "id": "confusion-mangos-red",
-          "label": "Red mango"
+          "id": "confusion-mangos-east-indian-case",
+          "label": "Mangos - East Indian (Case)"
         }
       ]
     },
@@ -3889,21 +5655,21 @@
     ],
     "similarItems": [
       {
+        "name": "Mangos - Ataulfo (Case)",
+        "code": "1043",
+        "cue": "Small curved yellow mangoes identify Ataulfo.",
+        "color": "#4F8B58"
+      },
+      {
         "name": "Mangos - East Indian (Case)",
         "code": "12966",
         "cue": "The reviewed photograph clearly shows mangos - east indian in oval tapered fruit form.",
-        "color": "#4F8B58"
+        "color": "#C25D52"
       },
       {
         "name": "Red mango",
         "code": "4051",
         "cue": "Oval-to-kidney-shaped fruit with one fuller cheek",
-        "color": "#C25D52"
-      },
-      {
-        "name": "Ataulfo mango",
-        "code": "4961",
-        "cue": "A small slender mango curves gently and ripens to solid golden yellow.",
         "color": "#D1A23B"
       }
     ],
@@ -3921,6 +5687,152 @@
         "batch-06",
         "catalog-remainder-essential",
         "media-reviewed-override",
+        "media-label-assisted",
+        "qualifier-workbook-label"
+      ],
+      "confidence": "verified-from-supplied-material"
+    }
+  },
+  {
+    "schemaVersion": "0.9.0",
+    "id": "mangos-ataulfo-case-1043",
+    "catalogId": "mangos-ataulfo-case",
+    "title": "Mangos - Ataulfo (Case)",
+    "shortTitle": "Mangos - Ataulfo (Case)",
+    "family": "Mangoes",
+    "priority": "must-know",
+    "selection": {
+      "rawScore": 105,
+      "score": 100,
+      "band": "Essential",
+      "priority": "must-know"
+    },
+    "identity": {
+      "family": "Mangoes",
+      "form": "Small curved mango",
+      "color": "Yellow",
+      "variant": "Mangos - Ataulfo (Case)"
+    },
+    "checkout": {
+      "code": "1043",
+      "soldBy": "Each",
+      "saleForm": "Single",
+      "codeScope": "catalog-listed-retail-unit"
+    },
+    "photos": [
+      {
+        "id": "mangos-ataulfo-case-1043-hero",
+        "file": "Mango Ataulfo.jpg",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/Mango_Ataulfo.jpg/1920px-Mango_Ataulfo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Ataulfo mango reference photograph showing small curved yellow mangoes identify ataulfo.",
+        "role": "hero",
+        "focus": "50% 50%"
+      },
+      {
+        "id": "mangos-ataulfo-case-1043-alternate",
+        "file": "Mango Ataulfo.jpg",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/Mango_Ataulfo.jpg/1920px-Mango_Ataulfo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Alternate crop of Ataulfo mango highlighting its small curved mango",
+        "role": "alternate",
+        "focus": "38% 50%",
+        "reuseOf": "Mango Ataulfo.jpg",
+        "fallbackReason": "One verified exact-item photograph is reused with a different crop so no unverified image can publish."
+      },
+      {
+        "id": "mangos-ataulfo-case-1043-context",
+        "file": "Mango Ataulfo.jpg",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/Mango_Ataulfo.jpg/1920px-Mango_Ataulfo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Ataulfo mango produce reference emphasizing its yellow appearance",
+        "role": "context",
+        "focus": "62% 50%",
+        "reuseOf": "Mango Ataulfo.jpg",
+        "fallbackReason": "One verified exact-item photograph is reused with a different crop so no unverified image can publish."
+      }
+    ],
+    "visualCues": [
+      "Small curved yellow mangoes identify Ataulfo.",
+      "The visible color is yellow; Case is from the workbook label, not appearance.",
+      "Match the store label to Mangos - Ataulfo (Case) before using 1043."
+    ],
+    "classification": {
+      "familyAnswer": "mangoes",
+      "familyChoices": [
+        {
+          "id": "mangoes",
+          "label": "Mangoes"
+        },
+        {
+          "id": "stalk-vegetables",
+          "label": "Stalk Vegetables"
+        },
+        {
+          "id": "apples",
+          "label": "Apples"
+        }
+      ],
+      "formAnswer": "small-curved-mango",
+      "formChoices": [
+        {
+          "id": "small-curved-mango",
+          "label": "Yellow · Small curved mango"
+        },
+        {
+          "id": "confusion-mangoes-case-10lb",
+          "label": "Mangoes - Case 10lb"
+        },
+        {
+          "id": "confusion-mangos-east-indian-case",
+          "label": "Mangos - East Indian (Case)"
+        }
+      ]
+    },
+    "variants": [],
+    "relations": [
+      {
+        "kind": "exception",
+        "title": "The store label selects this listing",
+        "copy": "The photograph teaches Ataulfo mango. Case is copied from the workbook label and is not inferred from appearance."
+      },
+      {
+        "kind": "exception",
+        "title": "The code follows the exact listing",
+        "copy": "Use 1043 only after the label matches Mangos - Ataulfo (Case)."
+      }
+    ],
+    "similarItems": [
+      {
+        "name": "Mangoes - Case 10lb",
+        "code": "62464",
+        "cue": "The reviewed photograph clearly shows mangoes in oval tapered fruit form.",
+        "color": "#4F8B58"
+      },
+      {
+        "name": "Mangos - East Indian (Case)",
+        "code": "12966",
+        "cue": "The reviewed photograph clearly shows mangos - east indian in oval tapered fruit form.",
+        "color": "#C25D52"
+      },
+      {
+        "name": "Red mango",
+        "code": "4051",
+        "cue": "Oval-to-kidney-shaped fruit with one fuller cheek",
+        "color": "#D1A23B"
+      }
+    ],
+    "source": {
+      "primaryPages": [
+        2
+      ],
+      "relatedPages": [
+        2
+      ],
+      "checkedOnReference": true,
+      "flags": [
+        "retail-form-specific",
+        "batch-06",
+        "catalog-remainder-essential",
+        "media-reviewed-override",
+        "media-shared-reviewed",
         "media-label-assisted",
         "qualifier-workbook-label"
       ],
@@ -4015,8 +5927,8 @@
           "label": "Mangoes - Case 10lb"
         },
         {
-          "id": "confusion-mangos-red",
-          "label": "Red mango"
+          "id": "confusion-mangos-ataulfo-case",
+          "label": "Mangos - Ataulfo (Case)"
         }
       ]
     },
@@ -4041,15 +5953,15 @@
         "color": "#4F8B58"
       },
       {
-        "name": "Red mango",
-        "code": "4051",
-        "cue": "Oval-to-kidney-shaped fruit with one fuller cheek",
+        "name": "Mangos - Ataulfo (Case)",
+        "code": "1043",
+        "cue": "Small curved yellow mangoes identify Ataulfo.",
         "color": "#C25D52"
       },
       {
-        "name": "Ataulfo mango",
-        "code": "4961",
-        "cue": "A small slender mango curves gently and ripens to solid golden yellow.",
+        "name": "Red mango",
+        "code": "4051",
+        "cue": "Oval-to-kidney-shaped fruit with one fuller cheek",
         "color": "#D1A23B"
       }
     ],
@@ -4068,6 +5980,139 @@
         "media-reviewed-override",
         "media-label-assisted",
         "qualifier-workbook-label"
+      ],
+      "confidence": "verified-from-supplied-material"
+    }
+  },
+  {
+    "schemaVersion": "0.9.0",
+    "id": "melons-bitter-fu-qua-4783",
+    "catalogId": "melons-bitter-fu-qua",
+    "title": "Melons - Bitter (Fu Qua)",
+    "shortTitle": "Melons - Bitter (Fu Qua)",
+    "family": "Squash",
+    "priority": "must-know",
+    "selection": {
+      "rawScore": 90,
+      "score": 90,
+      "band": "Essential",
+      "priority": "must-know"
+    },
+    "identity": {
+      "family": "Squash",
+      "form": "Ridged oblong gourd",
+      "color": "Green",
+      "variant": "Melons - Bitter (Fu Qua)"
+    },
+    "checkout": {
+      "code": "4783",
+      "soldBy": "Weight",
+      "saleForm": "Loose",
+      "codeScope": "primary-loose-produce"
+    },
+    "photos": [
+      {
+        "id": "melons-bitter-fu-qua-4783-hero",
+        "file": "Bitter melon 01.jpg",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/Bitter_melon_01.jpg/1920px-Bitter_melon_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Melons - Bitter (Fu Qua) reference photograph showing a deeply ridged oblong green gourd identifies bitter melon, also called fu qua.",
+        "role": "hero",
+        "focus": "50% 50%"
+      },
+      {
+        "id": "melons-bitter-fu-qua-4783-alternate",
+        "file": "Bitter melon 01.jpg",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/Bitter_melon_01.jpg/1920px-Bitter_melon_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Alternate crop of Melons - Bitter (Fu Qua) highlighting its ridged oblong gourd",
+        "role": "alternate",
+        "focus": "38% 50%",
+        "reuseOf": "Bitter melon 01.jpg",
+        "fallbackReason": "One verified exact-item photograph is reused with a different crop so no unverified image can publish."
+      },
+      {
+        "id": "melons-bitter-fu-qua-4783-context",
+        "file": "Bitter melon 01.jpg",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/Bitter_melon_01.jpg/1920px-Bitter_melon_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Melons - Bitter (Fu Qua) produce reference emphasizing its green appearance",
+        "role": "context",
+        "focus": "62% 50%",
+        "reuseOf": "Bitter melon 01.jpg",
+        "fallbackReason": "One verified exact-item photograph is reused with a different crop so no unverified image can publish."
+      }
+    ],
+    "visualCues": [
+      "A deeply ridged oblong green gourd identifies bitter melon, also called Fu Qua.",
+      "Look for the green color together with the ridged oblong gourd.",
+      "Keep it separate from nearby squash by checking shape, color, and sale form."
+    ],
+    "classification": {
+      "familyAnswer": "squash",
+      "familyChoices": [
+        {
+          "id": "squash",
+          "label": "Squash"
+        },
+        {
+          "id": "stalk-vegetables",
+          "label": "Stalk Vegetables"
+        },
+        {
+          "id": "apples",
+          "label": "Apples"
+        }
+      ],
+      "formAnswer": "ridged-oblong-gourd",
+      "formChoices": [
+        {
+          "id": "ridged-oblong-gourd",
+          "label": "Green · Ridged oblong gourd"
+        },
+        {
+          "id": "confusion-bittermelon",
+          "label": "Bitter melon"
+        },
+        {
+          "id": "confusion-squash-butternut",
+          "label": "Butternut squash"
+        }
+      ]
+    },
+    "variants": [],
+    "similarItems": [
+      {
+        "name": "Bitter melon",
+        "code": "4857",
+        "cue": "Deeply wrinkled ridges cover a narrow oblong gourd.",
+        "color": "#4F8B58"
+      },
+      {
+        "name": "Butternut squash",
+        "code": "4759",
+        "cue": "A smooth tan squash has a long solid neck and bulbous seed end.",
+        "color": "#C25D52"
+      },
+      {
+        "name": "Chayote squash",
+        "code": "4761",
+        "cue": "A pale-green pear-shaped squash has a deep folded crease at one end.",
+        "color": "#D1A23B"
+      }
+    ],
+    "source": {
+      "primaryPages": [
+        2,
+        4
+      ],
+      "relatedPages": [
+        2,
+        4
+      ],
+      "checkedOnReference": true,
+      "flags": [
+        "batch-06",
+        "catalog-remainder-essential",
+        "media-reviewed-override",
+        "media-shared-reviewed"
       ],
       "confidence": "verified-from-supplied-material"
     }
@@ -4338,9 +6383,9 @@
         "color": "#C25D52"
       },
       {
-        "name": "Onions - Yellow Organic 2lb",
-        "code": "62810",
-        "cue": "The reviewed photograph clearly shows onions - yellow in layered bulb or stalk form.",
+        "name": "Onions - Yellow Jumbo #2 (Case)",
+        "code": "63555",
+        "cue": "Round yellow-brown papery layered bulbs identify yellow onions.",
         "color": "#D1A23B"
       }
     ],
@@ -4484,9 +6529,9 @@
         "color": "#C25D52"
       },
       {
-        "name": "Onions - Yellow Organic 2lb",
-        "code": "62810",
-        "cue": "The reviewed photograph clearly shows onions - yellow in layered bulb or stalk form.",
+        "name": "Onions - Yellow Jumbo #2 (Case)",
+        "code": "63555",
+        "cue": "Round yellow-brown papery layered bulbs identify yellow onions.",
         "color": "#D1A23B"
       }
     ],
@@ -4505,6 +6550,153 @@
         "batch-06",
         "catalog-remainder-essential",
         "media-reviewed-override",
+        "media-label-assisted",
+        "qualifier-workbook-label"
+      ],
+      "confidence": "verified-from-supplied-material"
+    }
+  },
+  {
+    "schemaVersion": "0.9.0",
+    "id": "onions-yellow-jumbo-2-case-63555",
+    "catalogId": "onions-yellow-jumbo-2-case",
+    "title": "Onions - Yellow Jumbo #2 (Case)",
+    "shortTitle": "Onions - Yellow Jumbo #2 (Case)",
+    "family": "Alliums",
+    "priority": "must-know",
+    "selection": {
+      "rawScore": 90,
+      "score": 90,
+      "band": "Essential",
+      "priority": "must-know"
+    },
+    "identity": {
+      "family": "Alliums",
+      "form": "Round layered bulb",
+      "color": "Yellow",
+      "variant": "Onions - Yellow Jumbo #2 (Case)"
+    },
+    "checkout": {
+      "code": "63555",
+      "soldBy": "Weight",
+      "saleForm": "Loose",
+      "codeScope": "catalog-listed-retail-unit"
+    },
+    "photos": [
+      {
+        "id": "onions-yellow-jumbo-2-case-63555-hero",
+        "file": "Yellow onions vegetables.jpg",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/a/a1/Yellow_onions_vegetables.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "alt": "Yellow onion reference photograph showing round yellow-brown papery layered bulbs identify yellow onions.",
+        "role": "hero",
+        "focus": "50% 50%"
+      },
+      {
+        "id": "onions-yellow-jumbo-2-case-63555-alternate",
+        "file": "Yellow onions vegetables.jpg",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/a/a1/Yellow_onions_vegetables.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "alt": "Alternate crop of Yellow onion highlighting its round layered bulb",
+        "role": "alternate",
+        "focus": "38% 50%",
+        "reuseOf": "Yellow onions vegetables.jpg",
+        "fallbackReason": "One verified exact-item photograph is reused with a different crop so no unverified image can publish."
+      },
+      {
+        "id": "onions-yellow-jumbo-2-case-63555-context",
+        "file": "Yellow onions vegetables.jpg",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/a/a1/Yellow_onions_vegetables.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "alt": "Yellow onion produce reference emphasizing its yellow appearance",
+        "role": "context",
+        "focus": "62% 50%",
+        "reuseOf": "Yellow onions vegetables.jpg",
+        "fallbackReason": "One verified exact-item photograph is reused with a different crop so no unverified image can publish."
+      }
+    ],
+    "visualCues": [
+      "Round yellow-brown papery layered bulbs identify yellow onions.",
+      "The visible color is yellow; Jumbo #2 and Case are from the workbook label, not appearance.",
+      "Match the store label to Onions - Yellow Jumbo #2 (Case) before using 63555."
+    ],
+    "classification": {
+      "familyAnswer": "alliums",
+      "familyChoices": [
+        {
+          "id": "alliums",
+          "label": "Alliums"
+        },
+        {
+          "id": "stalk-vegetables",
+          "label": "Stalk Vegetables"
+        },
+        {
+          "id": "apples",
+          "label": "Apples"
+        }
+      ],
+      "formAnswer": "round-layered-bulb",
+      "formChoices": [
+        {
+          "id": "round-layered-bulb",
+          "label": "Yellow · Round layered bulb"
+        },
+        {
+          "id": "confusion-garlic-1kg-bagged",
+          "label": "Garlic 1kg (bagged)"
+        },
+        {
+          "id": "confusion-onions-red-10lb",
+          "label": "Onions - Red 10lb"
+        }
+      ]
+    },
+    "variants": [],
+    "relations": [
+      {
+        "kind": "exception",
+        "title": "The store label selects this listing",
+        "copy": "The photograph teaches Yellow onion. Jumbo #2 and Case are copied from the workbook label and are not inferred from appearance."
+      },
+      {
+        "kind": "exception",
+        "title": "The code follows the exact listing",
+        "copy": "Use 63555 only after the label matches Onions - Yellow Jumbo #2 (Case)."
+      }
+    ],
+    "similarItems": [
+      {
+        "name": "Garlic 1kg (bagged)",
+        "code": "9578",
+        "cue": "The reviewed photograph clearly shows garlic in segmented bulb form.",
+        "color": "#4F8B58"
+      },
+      {
+        "name": "Onions - Red 10lb",
+        "code": "3506",
+        "cue": "The reviewed photograph clearly shows onions - red in layered bulb or stalk form.",
+        "color": "#C25D52"
+      },
+      {
+        "name": "Onions - Yellow 3lb (Bag)",
+        "code": "59662",
+        "cue": "The reviewed photograph clearly shows onions - yellow in layered bulb or stalk form.",
+        "color": "#D1A23B"
+      }
+    ],
+    "source": {
+      "primaryPages": [
+        4
+      ],
+      "relatedPages": [
+        4
+      ],
+      "checkedOnReference": true,
+      "flags": [
+        "sold-by-curated",
+        "retail-form-specific",
+        "batch-06",
+        "catalog-remainder-essential",
+        "media-reviewed-override",
+        "media-shared-reviewed",
         "media-label-assisted",
         "qualifier-workbook-label"
       ],
@@ -4745,8 +6937,8 @@
           "label": "Peaches - 3L"
         },
         {
-          "id": "confusion-peaches-tree-ripe-case",
-          "label": "Peaches - Tree Ripe (Case)"
+          "id": "confusion-peaches-freestone-case",
+          "label": "Peaches - Freestone (Case)"
         }
       ]
     },
@@ -4771,15 +6963,15 @@
         "color": "#4F8B58"
       },
       {
-        "name": "Peaches - Tree Ripe (Case)",
-        "code": "6808",
-        "cue": "The reviewed photograph clearly shows peaches - tree ripe in fuzzy round stone fruit form.",
+        "name": "Peaches - Freestone (Case)",
+        "code": "13241",
+        "cue": "Whole fuzzy round yellow-red fruit anchors peach identity.",
         "color": "#C25D52"
       },
       {
-        "name": "Apples - Ambrosia (Bin)",
-        "code": "25040",
-        "cue": "The reviewed photograph clearly shows apples - ambrosia in round apple form.",
+        "name": "Peaches - Tree Ripe (Case)",
+        "code": "6808",
+        "cue": "The reviewed photograph clearly shows peaches - tree ripe in fuzzy round stone fruit form.",
         "color": "#D1A23B"
       }
     ],
@@ -4797,6 +6989,7 @@
         "batch-06",
         "catalog-remainder-essential",
         "media-reviewed-override",
+        "media-shared-reviewed",
         "media-label-assisted",
         "qualifier-workbook-label"
       ],
@@ -4891,8 +7084,8 @@
           "label": "Peaches (Case)"
         },
         {
-          "id": "confusion-peaches-tree-ripe-case",
-          "label": "Peaches - Tree Ripe (Case)"
+          "id": "confusion-peaches-freestone-case",
+          "label": "Peaches - Freestone (Case)"
         }
       ]
     },
@@ -4917,15 +7110,15 @@
         "color": "#4F8B58"
       },
       {
-        "name": "Peaches - Tree Ripe (Case)",
-        "code": "6808",
-        "cue": "The reviewed photograph clearly shows peaches - tree ripe in fuzzy round stone fruit form.",
+        "name": "Peaches - Freestone (Case)",
+        "code": "13241",
+        "cue": "Whole fuzzy round yellow-red fruit anchors peach identity.",
         "color": "#C25D52"
       },
       {
-        "name": "Apples - Ambrosia (Bin)",
-        "code": "25040",
-        "cue": "The reviewed photograph clearly shows apples - ambrosia in round apple form.",
+        "name": "Peaches - Tree Ripe (Case)",
+        "code": "6808",
+        "cue": "The reviewed photograph clearly shows peaches - tree ripe in fuzzy round stone fruit form.",
         "color": "#D1A23B"
       }
     ],
@@ -4943,6 +7136,153 @@
         "batch-06",
         "catalog-remainder-essential",
         "media-reviewed-override",
+        "media-label-assisted",
+        "qualifier-workbook-label"
+      ],
+      "confidence": "verified-from-supplied-material"
+    }
+  },
+  {
+    "schemaVersion": "0.9.0",
+    "id": "peaches-freestone-case-13241",
+    "catalogId": "peaches-freestone-case",
+    "title": "Peaches - Freestone (Case)",
+    "shortTitle": "Peaches - Freestone (Case)",
+    "family": "Peaches",
+    "priority": "must-know",
+    "selection": {
+      "rawScore": 90,
+      "score": 90,
+      "band": "Essential",
+      "priority": "must-know"
+    },
+    "identity": {
+      "family": "Peaches",
+      "form": "Fuzzy round stone fruit",
+      "color": "Yellow-red",
+      "variant": "Peaches - Freestone (Case)"
+    },
+    "checkout": {
+      "code": "13241",
+      "soldBy": "Weight",
+      "saleForm": "Loose",
+      "codeScope": "catalog-listed-retail-unit"
+    },
+    "photos": [
+      {
+        "id": "peaches-freestone-case-13241-hero",
+        "file": "Hillview Farms peaches in a basket.jpg",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Hillview_Farms_peaches_in_a_basket.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "alt": "Peaches reference photograph showing whole fuzzy round yellow-red fruit anchors peach identity.",
+        "role": "hero",
+        "focus": "50% 50%"
+      },
+      {
+        "id": "peaches-freestone-case-13241-alternate",
+        "file": "Hillview Farms peaches in a basket.jpg",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Hillview_Farms_peaches_in_a_basket.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "alt": "Alternate crop of Peaches highlighting its fuzzy round stone fruit",
+        "role": "alternate",
+        "focus": "38% 50%",
+        "reuseOf": "Hillview Farms peaches in a basket.jpg",
+        "fallbackReason": "One verified exact-item photograph is reused with a different crop so no unverified image can publish."
+      },
+      {
+        "id": "peaches-freestone-case-13241-context",
+        "file": "Hillview Farms peaches in a basket.jpg",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Hillview_Farms_peaches_in_a_basket.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "alt": "Peaches produce reference emphasizing its yellow-red appearance",
+        "role": "context",
+        "focus": "62% 50%",
+        "reuseOf": "Hillview Farms peaches in a basket.jpg",
+        "fallbackReason": "One verified exact-item photograph is reused with a different crop so no unverified image can publish."
+      }
+    ],
+    "visualCues": [
+      "Whole fuzzy round yellow-red fruit anchors peach identity.",
+      "The visible color is yellow-red; Freestone and Case are from the workbook label, not appearance.",
+      "Match the store label to Peaches - Freestone (Case) before using 13241."
+    ],
+    "classification": {
+      "familyAnswer": "peaches",
+      "familyChoices": [
+        {
+          "id": "peaches",
+          "label": "Peaches"
+        },
+        {
+          "id": "stalk-vegetables",
+          "label": "Stalk Vegetables"
+        },
+        {
+          "id": "apples",
+          "label": "Apples"
+        }
+      ],
+      "formAnswer": "fuzzy-round-stone-fruit",
+      "formChoices": [
+        {
+          "id": "fuzzy-round-stone-fruit",
+          "label": "Yellow-red · Fuzzy round stone fruit"
+        },
+        {
+          "id": "confusion-peaches-case",
+          "label": "Peaches (Case)"
+        },
+        {
+          "id": "confusion-peaches-3l",
+          "label": "Peaches - 3L"
+        }
+      ]
+    },
+    "variants": [],
+    "relations": [
+      {
+        "kind": "exception",
+        "title": "The store label selects this listing",
+        "copy": "The photograph teaches Peaches. Freestone and Case are copied from the workbook label and are not inferred from appearance."
+      },
+      {
+        "kind": "exception",
+        "title": "The code follows the exact listing",
+        "copy": "Use 13241 only after the label matches Peaches - Freestone (Case)."
+      }
+    ],
+    "similarItems": [
+      {
+        "name": "Peaches (Case)",
+        "code": "68599",
+        "cue": "The reviewed photograph clearly shows peaches in fuzzy round stone fruit form.",
+        "color": "#4F8B58"
+      },
+      {
+        "name": "Peaches - 3L",
+        "code": "6992",
+        "cue": "The reviewed photograph clearly shows peaches in fuzzy round stone fruit form.",
+        "color": "#C25D52"
+      },
+      {
+        "name": "Peaches - Tree Ripe (Case)",
+        "code": "6808",
+        "cue": "The reviewed photograph clearly shows peaches - tree ripe in fuzzy round stone fruit form.",
+        "color": "#D1A23B"
+      }
+    ],
+    "source": {
+      "primaryPages": [
+        5
+      ],
+      "relatedPages": [
+        5
+      ],
+      "checkedOnReference": true,
+      "flags": [
+        "sold-by-curated",
+        "retail-form-specific",
+        "batch-06",
+        "catalog-remainder-essential",
+        "media-reviewed-override",
+        "media-shared-reviewed",
         "media-label-assisted",
         "qualifier-workbook-label"
       ],
@@ -5069,9 +7409,9 @@
         "color": "#C25D52"
       },
       {
-        "name": "Apples - Ambrosia (Bin)",
-        "code": "25040",
-        "cue": "The reviewed photograph clearly shows apples - ambrosia in round apple form.",
+        "name": "Peaches - Freestone (Case)",
+        "code": "13241",
+        "cue": "Whole fuzzy round yellow-red fruit anchors peach identity.",
         "color": "#D1A23B"
       }
     ],
@@ -5102,12 +7442,12 @@
     "title": "Pears - Bartlett 3lb (Organic)",
     "shortTitle": "Pears - Bartlett 3lb (Organic)",
     "family": "Pears",
-    "priority": "common",
+    "priority": "must-know",
     "selection": {
-      "rawScore": 75,
-      "score": 75,
-      "band": "Common",
-      "priority": "common"
+      "rawScore": 90,
+      "score": 90,
+      "band": "Essential",
+      "priority": "must-know"
     },
     "identity": {
       "family": "Pears",
@@ -5179,12 +7519,12 @@
           "label": "Green-yellow · Bell-shaped fruit"
         },
         {
-          "id": "confusion-pears-bartlett",
-          "label": "Bartlett pear"
+          "id": "confusion-pears-bartlett-5lb-bag",
+          "label": "Pears - Bartlett 5lb (Bag)"
         },
         {
-          "id": "confusion-pears-bosc",
-          "label": "Bosc pear"
+          "id": "confusion-pears-bartlett",
+          "label": "Bartlett pear"
         }
       ]
     },
@@ -5203,21 +7543,21 @@
     ],
     "similarItems": [
       {
+        "name": "Pears - Bartlett 5lb (Bag)",
+        "code": "63487",
+        "cue": "The classic bell-shaped yellow pear anchors Bartlett identity.",
+        "color": "#4F8B58"
+      },
+      {
         "name": "Bartlett pear",
         "code": "4024",
         "cue": "Classic pear body with a narrow neck and broad base",
-        "color": "#4F8B58"
+        "color": "#C25D52"
       },
       {
         "name": "Bosc pear",
         "code": "4026",
         "cue": "Long narrow neck with a broad lower body",
-        "color": "#C25D52"
-      },
-      {
-        "name": "D'Anjou pear",
-        "code": "4025",
-        "cue": "Broad rounded pear with a short neck",
         "color": "#D1A23B"
       }
     ],
@@ -5233,7 +7573,154 @@
         "sold-by-curated",
         "retail-form-specific",
         "batch-06",
-        "catalog-remainder-common",
+        "catalog-remainder-essential",
+        "media-reviewed-override",
+        "media-shared-reviewed",
+        "media-label-assisted",
+        "qualifier-workbook-label"
+      ],
+      "confidence": "verified-from-supplied-material"
+    }
+  },
+  {
+    "schemaVersion": "0.9.0",
+    "id": "pears-bartlett-5lb-bag-63487",
+    "catalogId": "pears-bartlett-5lb-bag",
+    "title": "Pears - Bartlett 5lb (Bag)",
+    "shortTitle": "Pears - Bartlett 5lb (Bag)",
+    "family": "Pears",
+    "priority": "must-know",
+    "selection": {
+      "rawScore": 90,
+      "score": 90,
+      "band": "Essential",
+      "priority": "must-know"
+    },
+    "identity": {
+      "family": "Pears",
+      "form": "Classic bell-shaped pear",
+      "color": "Yellow",
+      "variant": "Pears - Bartlett 5lb (Bag)"
+    },
+    "checkout": {
+      "code": "63487",
+      "soldBy": "Weight",
+      "saleForm": "Loose",
+      "codeScope": "catalog-listed-retail-unit"
+    },
+    "photos": [
+      {
+        "id": "pears-bartlett-5lb-bag-63487-hero",
+        "file": "Bartlett pear.jpg",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/Bartlett_pear.jpg/1920px-Bartlett_pear.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Bartlett pear reference photograph showing the classic bell-shaped yellow pear anchors bartlett identity.",
+        "role": "hero",
+        "focus": "50% 50%"
+      },
+      {
+        "id": "pears-bartlett-5lb-bag-63487-alternate",
+        "file": "Bartlett pear.jpg",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/Bartlett_pear.jpg/1920px-Bartlett_pear.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Alternate crop of Bartlett pear highlighting its classic bell-shaped pear",
+        "role": "alternate",
+        "focus": "38% 50%",
+        "reuseOf": "Bartlett pear.jpg",
+        "fallbackReason": "One verified exact-item photograph is reused with a different crop so no unverified image can publish."
+      },
+      {
+        "id": "pears-bartlett-5lb-bag-63487-context",
+        "file": "Bartlett pear.jpg",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/Bartlett_pear.jpg/1920px-Bartlett_pear.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Bartlett pear produce reference emphasizing its yellow appearance",
+        "role": "context",
+        "focus": "62% 50%",
+        "reuseOf": "Bartlett pear.jpg",
+        "fallbackReason": "One verified exact-item photograph is reused with a different crop so no unverified image can publish."
+      }
+    ],
+    "visualCues": [
+      "The classic bell-shaped yellow pear anchors Bartlett identity.",
+      "The visible color is yellow; 5lb and Bag are from the workbook label, not appearance.",
+      "Match the store label to Pears - Bartlett 5lb (Bag) before using 63487."
+    ],
+    "classification": {
+      "familyAnswer": "pears",
+      "familyChoices": [
+        {
+          "id": "pears",
+          "label": "Pears"
+        },
+        {
+          "id": "stalk-vegetables",
+          "label": "Stalk Vegetables"
+        },
+        {
+          "id": "apples",
+          "label": "Apples"
+        }
+      ],
+      "formAnswer": "classic-bell-shaped-pear",
+      "formChoices": [
+        {
+          "id": "classic-bell-shaped-pear",
+          "label": "Yellow · Classic bell-shaped pear"
+        },
+        {
+          "id": "confusion-pears-bartlett-3lb-organic",
+          "label": "Pears - Bartlett 3lb (Organic)"
+        },
+        {
+          "id": "confusion-pears-bartlett",
+          "label": "Bartlett pear"
+        }
+      ]
+    },
+    "variants": [],
+    "relations": [
+      {
+        "kind": "exception",
+        "title": "The store label selects this listing",
+        "copy": "The photograph teaches Bartlett pear. 5lb and Bag are copied from the workbook label and are not inferred from appearance."
+      },
+      {
+        "kind": "exception",
+        "title": "The code follows the exact listing",
+        "copy": "Use 63487 only after the label matches Pears - Bartlett 5lb (Bag)."
+      }
+    ],
+    "similarItems": [
+      {
+        "name": "Pears - Bartlett 3lb (Organic)",
+        "code": "63486",
+        "cue": "The reviewed photograph clearly shows pears - bartlett in bell-shaped fruit form.",
+        "color": "#4F8B58"
+      },
+      {
+        "name": "Bartlett pear",
+        "code": "4024",
+        "cue": "Classic pear body with a narrow neck and broad base",
+        "color": "#C25D52"
+      },
+      {
+        "name": "Bosc pear",
+        "code": "4026",
+        "cue": "Long narrow neck with a broad lower body",
+        "color": "#D1A23B"
+      }
+    ],
+    "source": {
+      "primaryPages": [
+        5
+      ],
+      "relatedPages": [
+        5
+      ],
+      "checkedOnReference": true,
+      "flags": [
+        "sold-by-curated",
+        "retail-form-specific",
+        "batch-06",
+        "catalog-remainder-essential",
         "media-reviewed-override",
         "media-shared-reviewed",
         "media-label-assisted",
@@ -6093,9 +8580,9 @@
         "color": "#C25D52"
       },
       {
-        "name": "Apples - Gala (Orchard Run)",
-        "code": "62021",
-        "cue": "The reviewed photograph clearly shows apples - gala in round apple form.",
+        "name": "Apples - Ambrosia PC",
+        "code": "64749",
+        "cue": "Round apples with a mixed red-yellow blush anchor the Ambrosia identity.",
         "color": "#D1A23B"
       }
     ],
@@ -6414,6 +8901,300 @@
   },
   {
     "schemaVersion": "0.9.0",
+    "id": "potato-red-10lb-2674",
+    "catalogId": "potato-red-10lb",
+    "title": "Potato - Red 10lb",
+    "shortTitle": "Potato - Red 10lb",
+    "family": "Potatoes",
+    "priority": "must-know",
+    "selection": {
+      "rawScore": 90,
+      "score": 90,
+      "band": "Essential",
+      "priority": "must-know"
+    },
+    "identity": {
+      "family": "Potatoes",
+      "form": "Round waxy tuber",
+      "color": "Red",
+      "variant": "Potato - Red 10lb"
+    },
+    "checkout": {
+      "code": "2674",
+      "soldBy": "Weight",
+      "saleForm": "Loose",
+      "codeScope": "catalog-listed-retail-unit"
+    },
+    "photos": [
+      {
+        "id": "potato-red-10lb-2674-hero",
+        "file": "Red potatoes.jpg",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Red_potatoes.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "alt": "Red potato reference photograph showing a compact round tuber with smooth red skin identifies a red potato.",
+        "role": "hero",
+        "focus": "50% 50%"
+      },
+      {
+        "id": "potato-red-10lb-2674-alternate",
+        "file": "Red potatoes.jpg",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Red_potatoes.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "alt": "Alternate crop of Red potato highlighting its round waxy tuber",
+        "role": "alternate",
+        "focus": "38% 50%",
+        "reuseOf": "Red potatoes.jpg",
+        "fallbackReason": "One verified exact-item photograph is reused with a different crop so no unverified image can publish."
+      },
+      {
+        "id": "potato-red-10lb-2674-context",
+        "file": "Red potatoes.jpg",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Red_potatoes.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "alt": "Red potato produce reference emphasizing its red appearance",
+        "role": "context",
+        "focus": "62% 50%",
+        "reuseOf": "Red potatoes.jpg",
+        "fallbackReason": "One verified exact-item photograph is reused with a different crop so no unverified image can publish."
+      }
+    ],
+    "visualCues": [
+      "A compact round tuber with smooth red skin identifies a red potato.",
+      "The visible color is red; 10lb is from the workbook label, not appearance.",
+      "Match the store label to Potato - Red 10lb before using 2674."
+    ],
+    "classification": {
+      "familyAnswer": "potatoes",
+      "familyChoices": [
+        {
+          "id": "potatoes",
+          "label": "Potatoes"
+        },
+        {
+          "id": "stalk-vegetables",
+          "label": "Stalk Vegetables"
+        },
+        {
+          "id": "apples",
+          "label": "Apples"
+        }
+      ],
+      "formAnswer": "round-waxy-tuber",
+      "formChoices": [
+        {
+          "id": "round-waxy-tuber",
+          "label": "Red · Round waxy tuber"
+        },
+        {
+          "id": "confusion-potato-red-20lb",
+          "label": "Potato - Red 20lb"
+        },
+        {
+          "id": "confusion-potato-russet-white-20lb",
+          "label": "Potato - Russet / White 20lb"
+        }
+      ]
+    },
+    "variants": [],
+    "relations": [
+      {
+        "kind": "exception",
+        "title": "The store label selects this listing",
+        "copy": "The photograph teaches Red potato. 10lb is copied from the workbook label and is not inferred from appearance."
+      },
+      {
+        "kind": "exception",
+        "title": "The code follows the exact listing",
+        "copy": "Use 2674 only after the label matches Potato - Red 10lb."
+      }
+    ],
+    "similarItems": [
+      {
+        "name": "Potato - Red 20lb",
+        "code": "2116",
+        "cue": "A compact round tuber with smooth red skin identifies a red potato.",
+        "color": "#4F8B58"
+      },
+      {
+        "name": "Potato - Russet / White 20lb",
+        "code": "62006",
+        "cue": "The reviewed photograph clearly shows potato - russet / white in firm round or tapered tuber form.",
+        "color": "#C25D52"
+      },
+      {
+        "name": "Potato - Russet 10lb",
+        "code": "171",
+        "cue": "The reviewed photograph clearly shows potato - russet in firm round or tapered tuber form.",
+        "color": "#D1A23B"
+      }
+    ],
+    "source": {
+      "primaryPages": [
+        4
+      ],
+      "relatedPages": [
+        4
+      ],
+      "checkedOnReference": true,
+      "flags": [
+        "sold-by-curated",
+        "retail-form-specific",
+        "batch-06",
+        "catalog-remainder-essential",
+        "media-reviewed-override",
+        "media-shared-reviewed",
+        "media-label-assisted",
+        "qualifier-workbook-label"
+      ],
+      "confidence": "verified-from-supplied-material"
+    }
+  },
+  {
+    "schemaVersion": "0.9.0",
+    "id": "potato-red-20lb-2116",
+    "catalogId": "potato-red-20lb",
+    "title": "Potato - Red 20lb",
+    "shortTitle": "Potato - Red 20lb",
+    "family": "Potatoes",
+    "priority": "must-know",
+    "selection": {
+      "rawScore": 90,
+      "score": 90,
+      "band": "Essential",
+      "priority": "must-know"
+    },
+    "identity": {
+      "family": "Potatoes",
+      "form": "Round waxy tuber",
+      "color": "Red",
+      "variant": "Potato - Red 20lb"
+    },
+    "checkout": {
+      "code": "2116",
+      "soldBy": "Weight",
+      "saleForm": "Loose",
+      "codeScope": "catalog-listed-retail-unit"
+    },
+    "photos": [
+      {
+        "id": "potato-red-20lb-2116-hero",
+        "file": "Red potatoes.jpg",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Red_potatoes.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "alt": "Red potato reference photograph showing a compact round tuber with smooth red skin identifies a red potato.",
+        "role": "hero",
+        "focus": "50% 50%"
+      },
+      {
+        "id": "potato-red-20lb-2116-alternate",
+        "file": "Red potatoes.jpg",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Red_potatoes.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "alt": "Alternate crop of Red potato highlighting its round waxy tuber",
+        "role": "alternate",
+        "focus": "38% 50%",
+        "reuseOf": "Red potatoes.jpg",
+        "fallbackReason": "One verified exact-item photograph is reused with a different crop so no unverified image can publish."
+      },
+      {
+        "id": "potato-red-20lb-2116-context",
+        "file": "Red potatoes.jpg",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Red_potatoes.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "alt": "Red potato produce reference emphasizing its red appearance",
+        "role": "context",
+        "focus": "62% 50%",
+        "reuseOf": "Red potatoes.jpg",
+        "fallbackReason": "One verified exact-item photograph is reused with a different crop so no unverified image can publish."
+      }
+    ],
+    "visualCues": [
+      "A compact round tuber with smooth red skin identifies a red potato.",
+      "The visible color is red; 20lb is from the workbook label, not appearance.",
+      "Match the store label to Potato - Red 20lb before using 2116."
+    ],
+    "classification": {
+      "familyAnswer": "potatoes",
+      "familyChoices": [
+        {
+          "id": "potatoes",
+          "label": "Potatoes"
+        },
+        {
+          "id": "stalk-vegetables",
+          "label": "Stalk Vegetables"
+        },
+        {
+          "id": "apples",
+          "label": "Apples"
+        }
+      ],
+      "formAnswer": "round-waxy-tuber",
+      "formChoices": [
+        {
+          "id": "round-waxy-tuber",
+          "label": "Red · Round waxy tuber"
+        },
+        {
+          "id": "confusion-potato-red-10lb",
+          "label": "Potato - Red 10lb"
+        },
+        {
+          "id": "confusion-potato-russet-white-20lb",
+          "label": "Potato - Russet / White 20lb"
+        }
+      ]
+    },
+    "variants": [],
+    "relations": [
+      {
+        "kind": "exception",
+        "title": "The store label selects this listing",
+        "copy": "The photograph teaches Red potato. 20lb is copied from the workbook label and is not inferred from appearance."
+      },
+      {
+        "kind": "exception",
+        "title": "The code follows the exact listing",
+        "copy": "Use 2116 only after the label matches Potato - Red 20lb."
+      }
+    ],
+    "similarItems": [
+      {
+        "name": "Potato - Red 10lb",
+        "code": "2674",
+        "cue": "A compact round tuber with smooth red skin identifies a red potato.",
+        "color": "#4F8B58"
+      },
+      {
+        "name": "Potato - Russet / White 20lb",
+        "code": "62006",
+        "cue": "The reviewed photograph clearly shows potato - russet / white in firm round or tapered tuber form.",
+        "color": "#C25D52"
+      },
+      {
+        "name": "Potato - Russet 10lb",
+        "code": "171",
+        "cue": "The reviewed photograph clearly shows potato - russet in firm round or tapered tuber form.",
+        "color": "#D1A23B"
+      }
+    ],
+    "source": {
+      "primaryPages": [
+        4
+      ],
+      "relatedPages": [
+        4
+      ],
+      "checkedOnReference": true,
+      "flags": [
+        "sold-by-curated",
+        "retail-form-specific",
+        "batch-06",
+        "catalog-remainder-essential",
+        "media-reviewed-override",
+        "media-shared-reviewed",
+        "media-label-assisted",
+        "qualifier-workbook-label"
+      ],
+      "confidence": "verified-from-supplied-material"
+    }
+  },
+  {
+    "schemaVersion": "0.9.0",
     "id": "potato-russet-white-20lb-62006",
     "catalogId": "potato-russet-white-20lb",
     "title": "Potato - Russet / White 20lb",
@@ -6496,12 +9277,12 @@
           "label": "White · Firm round or tapered tuber"
         },
         {
-          "id": "confusion-potato-russet-10lb",
-          "label": "Potato - Russet 10lb"
+          "id": "confusion-potato-red-10lb",
+          "label": "Potato - Red 10lb"
         },
         {
-          "id": "confusion-potatoes-russet-baker-baking-bulk",
-          "label": "Russet potato"
+          "id": "confusion-potato-red-20lb",
+          "label": "Potato - Red 20lb"
         }
       ]
     },
@@ -6520,21 +9301,21 @@
     ],
     "similarItems": [
       {
-        "name": "Potato - Russet 10lb",
-        "code": "171",
-        "cue": "The reviewed photograph clearly shows potato - russet in firm round or tapered tuber form.",
+        "name": "Potato - Red 10lb",
+        "code": "2674",
+        "cue": "A compact round tuber with smooth red skin identifies a red potato.",
         "color": "#4F8B58"
       },
       {
-        "name": "Russet potato",
-        "code": "4072",
-        "cue": "Long oval or oblong potato with a substantial body",
+        "name": "Potato - Red 20lb",
+        "code": "2116",
+        "cue": "A compact round tuber with smooth red skin identifies a red potato.",
         "color": "#C25D52"
       },
       {
-        "name": "White potato",
-        "code": "4083",
-        "cue": "Round-to-oval potato with a compact body",
+        "name": "Potato - Russet 10lb",
+        "code": "171",
+        "cue": "The reviewed photograph clearly shows potato - russet in firm round or tapered tuber form.",
         "color": "#D1A23B"
       }
     ],
@@ -6643,12 +9424,12 @@
           "label": "Brown · Firm round or tapered tuber"
         },
         {
-          "id": "confusion-potato-russet-white-20lb",
-          "label": "Potato - Russet / White 20lb"
+          "id": "confusion-potato-red-10lb",
+          "label": "Potato - Red 10lb"
         },
         {
-          "id": "confusion-potatoes-russet-baker-baking-bulk",
-          "label": "Russet potato"
+          "id": "confusion-potato-red-20lb",
+          "label": "Potato - Red 20lb"
         }
       ]
     },
@@ -6667,21 +9448,21 @@
     ],
     "similarItems": [
       {
-        "name": "Potato - Russet / White 20lb",
-        "code": "62006",
-        "cue": "The reviewed photograph clearly shows potato - russet / white in firm round or tapered tuber form.",
+        "name": "Potato - Red 10lb",
+        "code": "2674",
+        "cue": "A compact round tuber with smooth red skin identifies a red potato.",
         "color": "#4F8B58"
       },
       {
-        "name": "Russet potato",
-        "code": "4072",
-        "cue": "Long oval or oblong potato with a substantial body",
+        "name": "Potato - Red 20lb",
+        "code": "2116",
+        "cue": "A compact round tuber with smooth red skin identifies a red potato.",
         "color": "#C25D52"
       },
       {
-        "name": "White potato",
-        "code": "4083",
-        "cue": "Round-to-oval potato with a compact body",
+        "name": "Potato - Russet / White 20lb",
+        "code": "62006",
+        "cue": "The reviewed photograph clearly shows potato - russet / white in firm round or tapered tuber form.",
         "color": "#D1A23B"
       }
     ],
@@ -6699,6 +9480,448 @@
         "batch-06",
         "catalog-remainder-essential",
         "media-reviewed-override",
+        "media-label-assisted",
+        "qualifier-workbook-label"
+      ],
+      "confidence": "verified-from-supplied-material"
+    }
+  },
+  {
+    "schemaVersion": "0.9.0",
+    "id": "potato-white-10lb-41",
+    "catalogId": "potato-white-10lb",
+    "title": "Potato - White 10lb",
+    "shortTitle": "Potato - White 10lb",
+    "family": "Potatoes",
+    "priority": "must-know",
+    "selection": {
+      "rawScore": 90,
+      "score": 90,
+      "band": "Essential",
+      "priority": "must-know"
+    },
+    "identity": {
+      "family": "Potatoes",
+      "form": "Round smooth tuber",
+      "color": "White",
+      "variant": "Potato - White 10lb"
+    },
+    "checkout": {
+      "code": "41",
+      "soldBy": "Weight",
+      "saleForm": "Loose",
+      "codeScope": "catalog-listed-retail-unit"
+    },
+    "photos": [
+      {
+        "id": "potato-white-10lb-41-hero",
+        "file": "Potatoes-5796 - Hans Braxmeier.jpg",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/Potatoes-5796_-_Hans_Braxmeier.jpg/1920px-Potatoes-5796_-_Hans_Braxmeier.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "White potato reference photograph showing a round smooth cream-white tuber identifies a white potato.",
+        "role": "hero",
+        "focus": "50% 50%"
+      },
+      {
+        "id": "potato-white-10lb-41-alternate",
+        "file": "Potatoes-5796 - Hans Braxmeier.jpg",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/Potatoes-5796_-_Hans_Braxmeier.jpg/1920px-Potatoes-5796_-_Hans_Braxmeier.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Alternate crop of White potato highlighting its round smooth tuber",
+        "role": "alternate",
+        "focus": "38% 50%",
+        "reuseOf": "Potatoes-5796 - Hans Braxmeier.jpg",
+        "fallbackReason": "One verified exact-item photograph is reused with a different crop so no unverified image can publish."
+      },
+      {
+        "id": "potato-white-10lb-41-context",
+        "file": "Potatoes-5796 - Hans Braxmeier.jpg",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/Potatoes-5796_-_Hans_Braxmeier.jpg/1920px-Potatoes-5796_-_Hans_Braxmeier.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "White potato produce reference emphasizing its white appearance",
+        "role": "context",
+        "focus": "62% 50%",
+        "reuseOf": "Potatoes-5796 - Hans Braxmeier.jpg",
+        "fallbackReason": "One verified exact-item photograph is reused with a different crop so no unverified image can publish."
+      }
+    ],
+    "visualCues": [
+      "A round smooth cream-white tuber identifies a white potato.",
+      "The visible color is white; 10lb is from the workbook label, not appearance.",
+      "Match the store label to Potato - White 10lb before using 41."
+    ],
+    "classification": {
+      "familyAnswer": "potatoes",
+      "familyChoices": [
+        {
+          "id": "potatoes",
+          "label": "Potatoes"
+        },
+        {
+          "id": "stalk-vegetables",
+          "label": "Stalk Vegetables"
+        },
+        {
+          "id": "apples",
+          "label": "Apples"
+        }
+      ],
+      "formAnswer": "round-smooth-tuber",
+      "formChoices": [
+        {
+          "id": "round-smooth-tuber",
+          "label": "White · Round smooth tuber"
+        },
+        {
+          "id": "confusion-potato-red-10lb",
+          "label": "Potato - Red 10lb"
+        },
+        {
+          "id": "confusion-potato-red-20lb",
+          "label": "Potato - Red 20lb"
+        }
+      ]
+    },
+    "variants": [],
+    "relations": [
+      {
+        "kind": "exception",
+        "title": "The store label selects this listing",
+        "copy": "The photograph teaches White potato. 10lb is copied from the workbook label and is not inferred from appearance."
+      },
+      {
+        "kind": "exception",
+        "title": "The code follows the exact listing",
+        "copy": "Use 41 only after the label matches Potato - White 10lb."
+      }
+    ],
+    "similarItems": [
+      {
+        "name": "Potato - Red 10lb",
+        "code": "2674",
+        "cue": "A compact round tuber with smooth red skin identifies a red potato.",
+        "color": "#4F8B58"
+      },
+      {
+        "name": "Potato - Red 20lb",
+        "code": "2116",
+        "cue": "A compact round tuber with smooth red skin identifies a red potato.",
+        "color": "#C25D52"
+      },
+      {
+        "name": "Potato - Russet / White 20lb",
+        "code": "62006",
+        "cue": "The reviewed photograph clearly shows potato - russet / white in firm round or tapered tuber form.",
+        "color": "#D1A23B"
+      }
+    ],
+    "source": {
+      "primaryPages": [
+        4
+      ],
+      "relatedPages": [
+        4
+      ],
+      "checkedOnReference": true,
+      "flags": [
+        "sold-by-curated",
+        "retail-form-specific",
+        "batch-06",
+        "catalog-remainder-essential",
+        "media-reviewed-override",
+        "media-shared-reviewed",
+        "media-label-assisted",
+        "qualifier-workbook-label"
+      ],
+      "confidence": "verified-from-supplied-material"
+    }
+  },
+  {
+    "schemaVersion": "0.9.0",
+    "id": "potato-yellow-10lb-1093",
+    "catalogId": "potato-yellow-10lb",
+    "title": "Potato - Yellow 10lb",
+    "shortTitle": "Potato - Yellow 10lb",
+    "family": "Potatoes",
+    "priority": "must-know",
+    "selection": {
+      "rawScore": 90,
+      "score": 90,
+      "band": "Essential",
+      "priority": "must-know"
+    },
+    "identity": {
+      "family": "Potatoes",
+      "form": "Round smooth potato",
+      "color": "Yellow-tan",
+      "variant": "Potato - Yellow 10lb"
+    },
+    "checkout": {
+      "code": "1093",
+      "soldBy": "Weight",
+      "saleForm": "Loose",
+      "codeScope": "catalog-listed-retail-unit"
+    },
+    "photos": [
+      {
+        "id": "potato-yellow-10lb-1093-hero",
+        "file": "Yukon Gold Creamers (29019239791).jpg",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/4/41/Yukon_Gold_Creamers_%2829019239791%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "alt": "Yellow potato reference photograph showing round smooth yellow-tan potatoes provide the yellow-potato visual anchor.",
+        "role": "hero",
+        "focus": "50% 50%"
+      },
+      {
+        "id": "potato-yellow-10lb-1093-alternate",
+        "file": "Yukon Gold Creamers (29019239791).jpg",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/4/41/Yukon_Gold_Creamers_%2829019239791%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "alt": "Alternate crop of Yellow potato highlighting its round smooth potato",
+        "role": "alternate",
+        "focus": "38% 50%",
+        "reuseOf": "Yukon Gold Creamers (29019239791).jpg",
+        "fallbackReason": "One verified exact-item photograph is reused with a different crop so no unverified image can publish."
+      },
+      {
+        "id": "potato-yellow-10lb-1093-context",
+        "file": "Yukon Gold Creamers (29019239791).jpg",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/4/41/Yukon_Gold_Creamers_%2829019239791%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "alt": "Yellow potato produce reference emphasizing its yellow-tan appearance",
+        "role": "context",
+        "focus": "62% 50%",
+        "reuseOf": "Yukon Gold Creamers (29019239791).jpg",
+        "fallbackReason": "One verified exact-item photograph is reused with a different crop so no unverified image can publish."
+      }
+    ],
+    "visualCues": [
+      "Round smooth yellow-tan potatoes provide the yellow-potato visual anchor.",
+      "The visible color is yellow-tan; 10lb is from the workbook label, not appearance.",
+      "Match the store label to Potato - Yellow 10lb before using 1093."
+    ],
+    "classification": {
+      "familyAnswer": "potatoes",
+      "familyChoices": [
+        {
+          "id": "potatoes",
+          "label": "Potatoes"
+        },
+        {
+          "id": "stalk-vegetables",
+          "label": "Stalk Vegetables"
+        },
+        {
+          "id": "apples",
+          "label": "Apples"
+        }
+      ],
+      "formAnswer": "round-smooth-potato",
+      "formChoices": [
+        {
+          "id": "round-smooth-potato",
+          "label": "Yellow-tan · Round smooth potato"
+        },
+        {
+          "id": "confusion-potato-red-10lb",
+          "label": "Potato - Red 10lb"
+        },
+        {
+          "id": "confusion-potato-red-20lb",
+          "label": "Potato - Red 20lb"
+        }
+      ]
+    },
+    "variants": [],
+    "relations": [
+      {
+        "kind": "exception",
+        "title": "The store label selects this listing",
+        "copy": "The photograph teaches Yellow potato. 10lb is copied from the workbook label and is not inferred from appearance."
+      },
+      {
+        "kind": "exception",
+        "title": "The code follows the exact listing",
+        "copy": "Use 1093 only after the label matches Potato - Yellow 10lb."
+      }
+    ],
+    "similarItems": [
+      {
+        "name": "Potato - Red 10lb",
+        "code": "2674",
+        "cue": "A compact round tuber with smooth red skin identifies a red potato.",
+        "color": "#4F8B58"
+      },
+      {
+        "name": "Potato - Red 20lb",
+        "code": "2116",
+        "cue": "A compact round tuber with smooth red skin identifies a red potato.",
+        "color": "#C25D52"
+      },
+      {
+        "name": "Potato - Russet / White 20lb",
+        "code": "62006",
+        "cue": "The reviewed photograph clearly shows potato - russet / white in firm round or tapered tuber form.",
+        "color": "#D1A23B"
+      }
+    ],
+    "source": {
+      "primaryPages": [
+        4
+      ],
+      "relatedPages": [
+        4
+      ],
+      "checkedOnReference": true,
+      "flags": [
+        "sold-by-curated",
+        "retail-form-specific",
+        "batch-06",
+        "catalog-remainder-essential",
+        "media-reviewed-override",
+        "media-shared-reviewed",
+        "media-label-assisted",
+        "qualifier-workbook-label"
+      ],
+      "confidence": "verified-from-supplied-material"
+    }
+  },
+  {
+    "schemaVersion": "0.9.0",
+    "id": "prickly-pears-tray-case-6798",
+    "catalogId": "prickly-pears-tray-case",
+    "title": "Prickly Pears (Tray / Case)",
+    "shortTitle": "Prickly Pears (Tray / Case)",
+    "family": "Tropical Fruit",
+    "priority": "must-know",
+    "selection": {
+      "rawScore": 90,
+      "score": 90,
+      "band": "Essential",
+      "priority": "must-know"
+    },
+    "identity": {
+      "family": "Tropical Fruit",
+      "form": "Oval cactus fruit",
+      "color": "Red-green",
+      "variant": "Prickly Pears (Tray / Case)"
+    },
+    "checkout": {
+      "code": "6798",
+      "soldBy": "Weight",
+      "saleForm": "Loose",
+      "codeScope": "catalog-listed-retail-unit"
+    },
+    "photos": [
+      {
+        "id": "prickly-pears-tray-case-6798-hero",
+        "file": "Prickly pears.jpg",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/Prickly_pears.jpg/1920px-Prickly_pears.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Prickly pear reference photograph showing oval red-green cactus fruit with small areoles identifies prickly pear.",
+        "role": "hero",
+        "focus": "50% 50%"
+      },
+      {
+        "id": "prickly-pears-tray-case-6798-alternate",
+        "file": "Prickly pears.jpg",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/Prickly_pears.jpg/1920px-Prickly_pears.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Alternate crop of Prickly pear highlighting its oval cactus fruit",
+        "role": "alternate",
+        "focus": "38% 50%",
+        "reuseOf": "Prickly pears.jpg",
+        "fallbackReason": "One verified exact-item photograph is reused with a different crop so no unverified image can publish."
+      },
+      {
+        "id": "prickly-pears-tray-case-6798-context",
+        "file": "Prickly pears.jpg",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/Prickly_pears.jpg/1920px-Prickly_pears.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Prickly pear produce reference emphasizing its red-green appearance",
+        "role": "context",
+        "focus": "62% 50%",
+        "reuseOf": "Prickly pears.jpg",
+        "fallbackReason": "One verified exact-item photograph is reused with a different crop so no unverified image can publish."
+      }
+    ],
+    "visualCues": [
+      "Oval red-green cactus fruit with small areoles identifies prickly pear.",
+      "The visible color is red-green; Tray / Case is from the workbook label, not appearance.",
+      "Match the store label to Prickly Pears (Tray / Case) before using 6798."
+    ],
+    "classification": {
+      "familyAnswer": "tropical-fruit",
+      "familyChoices": [
+        {
+          "id": "tropical-fruit",
+          "label": "Tropical Fruit"
+        },
+        {
+          "id": "stalk-vegetables",
+          "label": "Stalk Vegetables"
+        },
+        {
+          "id": "apples",
+          "label": "Apples"
+        }
+      ],
+      "formAnswer": "oval-cactus-fruit",
+      "formChoices": [
+        {
+          "id": "oval-cactus-fruit",
+          "label": "Red-green · Oval cactus fruit"
+        },
+        {
+          "id": "confusion-kiwi",
+          "label": "Kiwi"
+        },
+        {
+          "id": "confusion-guava",
+          "label": "Guava"
+        }
+      ]
+    },
+    "variants": [],
+    "relations": [
+      {
+        "kind": "exception",
+        "title": "The store label selects this listing",
+        "copy": "The photograph teaches Prickly pear. Tray / Case is copied from the workbook label and is not inferred from appearance."
+      },
+      {
+        "kind": "exception",
+        "title": "The code follows the exact listing",
+        "copy": "Use 6798 only after the label matches Prickly Pears (Tray / Case)."
+      }
+    ],
+    "similarItems": [
+      {
+        "name": "Kiwi",
+        "code": "4030",
+        "cue": "Small egg-shaped fruit with fuzzy brown skin",
+        "color": "#4F8B58"
+      },
+      {
+        "name": "Guava",
+        "code": "4299",
+        "cue": "Round-to-pear-shaped fruit with smooth green skin",
+        "color": "#C25D52"
+      },
+      {
+        "name": "Dragon fruit",
+        "code": "3040",
+        "cue": "Oval bright pink-red fruit with broad green-tipped scales",
+        "color": "#D1A23B"
+      }
+    ],
+    "source": {
+      "primaryPages": [
+        2,
+        5
+      ],
+      "relatedPages": [
+        2,
+        5
+      ],
+      "checkedOnReference": true,
+      "flags": [
+        "retail-form-specific",
+        "batch-06",
+        "catalog-remainder-essential",
+        "media-reviewed-override",
+        "media-shared-reviewed",
         "media-label-assisted",
         "qualifier-workbook-label"
       ],

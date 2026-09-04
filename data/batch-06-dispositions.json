@@ -58,12 +58,9 @@
     "sourcePages": [
       5
     ],
-    "decision": "queued",
-    "reasonCodes": [
-      "package-evidence-required"
-    ],
-    "reason": "Package or case evidence is required",
-    "flags": []
+    "decision": "candidate",
+    "reasonCodes": [],
+    "reason": "Passed exact-code and loose-produce admission; media review required."
   },
   {
     "sourceOrder": 5,
@@ -75,13 +72,10 @@
     "sourcePages": [
       1
     ],
-    "decision": "queued",
-    "reasonCodes": [
-      "multiple-codes",
-      "duplicate-label-codes",
-      "conflicting-code"
-    ],
-    "reason": "Multiple source codes need one primary mapping",
+    "decision": "mapped",
+    "mappingKind": "same-label-different-codes",
+    "reasonCodes": [],
+    "reason": "The exact catalog label carries multiple recorded checkout codes; preserve the complete mapping without selecting a synthetic primary code.",
     "flags": []
   },
   {
@@ -123,12 +117,9 @@
     "sourcePages": [
       5
     ],
-    "decision": "queued",
-    "reasonCodes": [
-      "package-evidence-required"
-    ],
-    "reason": "Package or case evidence is required",
-    "flags": []
+    "decision": "candidate",
+    "reasonCodes": [],
+    "reason": "Passed exact-code and loose-produce admission; media review required."
   },
   {
     "sourceOrder": 9,
@@ -154,11 +145,10 @@
     "sourcePages": [
       5
     ],
-    "decision": "queued",
-    "reasonCodes": [
-      "package-evidence-required"
-    ],
-    "reason": "Package or case evidence is required",
+    "decision": "mapped",
+    "mappingKind": "single",
+    "reasonCodes": [],
+    "reason": "The catalog records one checkout code for an interpreted in-scope produce identity.",
     "flags": []
   },
   {
@@ -222,12 +212,10 @@
     "sourcePages": [
       5
     ],
-    "decision": "queued",
-    "reasonCodes": [
-      "duplicate-label-codes",
-      "duplicate-lesson-title"
-    ],
-    "reason": "The same source label has competing codes",
+    "decision": "mapped",
+    "mappingKind": "same-label-different-codes",
+    "reasonCodes": [],
+    "reason": "The exact catalog label appears with another recorded checkout code; preserve both source mappings instead of treating one as a replacement.",
     "flags": []
   },
   {
@@ -240,13 +228,10 @@
     "sourcePages": [
       5
     ],
-    "decision": "queued",
-    "reasonCodes": [
-      "duplicate-label-codes",
-      "conflicting-code",
-      "duplicate-lesson-title"
-    ],
-    "reason": "The same source label has competing codes",
+    "decision": "mapped",
+    "mappingKind": "same-label-different-codes",
+    "reasonCodes": [],
+    "reason": "The exact catalog label appears with another recorded checkout code; preserve both source mappings instead of treating one as a replacement.",
     "flags": []
   },
   {
@@ -287,11 +272,10 @@
     "sourcePages": [
       5
     ],
-    "decision": "queued",
-    "reasonCodes": [
-      "duplicate-label-codes"
-    ],
-    "reason": "The same source label has competing codes",
+    "decision": "mapped",
+    "mappingKind": "same-label-different-codes",
+    "reasonCodes": [],
+    "reason": "The exact catalog label appears with another recorded checkout code; preserve both source mappings instead of treating one as a replacement.",
     "flags": []
   },
   {
@@ -479,13 +463,9 @@
     "sourcePages": [
       4
     ],
-    "decision": "queued",
-    "reasonCodes": [
-      "package-evidence-required",
-      "duplicate-lesson-title"
-    ],
-    "reason": "Package or case evidence is required",
-    "flags": []
+    "decision": "candidate",
+    "reasonCodes": [],
+    "reason": "Passed exact-code and loose-produce admission; media review required."
   },
   {
     "sourceOrder": 30,
@@ -497,12 +477,9 @@
     "sourcePages": [
       4
     ],
-    "decision": "queued",
-    "reasonCodes": [
-      "package-evidence-required"
-    ],
-    "reason": "Package or case evidence is required",
-    "flags": []
+    "decision": "candidate",
+    "reasonCodes": [],
+    "reason": "Passed exact-code and loose-produce admission; media review required."
   },
   {
     "sourceOrder": 31,
@@ -514,11 +491,10 @@
     "sourcePages": [
       5
     ],
-    "decision": "queued",
-    "reasonCodes": [
-      "package-evidence-required"
-    ],
-    "reason": "Package or case evidence is required",
+    "decision": "mapped",
+    "mappingKind": "single",
+    "reasonCodes": [],
+    "reason": "The catalog records one checkout code for an interpreted in-scope produce identity.",
     "flags": []
   },
   {
@@ -545,12 +521,9 @@
     "sourcePages": [
       5
     ],
-    "decision": "queued",
-    "reasonCodes": [
-      "package-evidence-required"
-    ],
-    "reason": "Package or case evidence is required",
-    "flags": []
+    "decision": "candidate",
+    "reasonCodes": [],
+    "reason": "Passed exact-code and loose-produce admission; media review required."
   },
   {
     "sourceOrder": 34,
@@ -562,12 +535,9 @@
     "sourcePages": [
       5
     ],
-    "decision": "queued",
-    "reasonCodes": [
-      "package-evidence-required"
-    ],
-    "reason": "Package or case evidence is required",
-    "flags": []
+    "decision": "candidate",
+    "reasonCodes": [],
+    "reason": "Passed exact-code and loose-produce admission; media review required."
   },
   {
     "sourceOrder": 35,
@@ -610,11 +580,10 @@
     "sourcePages": [
       4
     ],
-    "decision": "queued",
-    "reasonCodes": [
-      "conflicting-code"
-    ],
-    "reason": "The code is attached to another source identity",
+    "decision": "mapped",
+    "mappingKind": "shared-code",
+    "reasonCodes": [],
+    "reason": "The catalog-supported code is also recorded for a compatible carrot identity; preserve the exact label and declare the reuse.",
     "flags": []
   },
   {
@@ -627,12 +596,9 @@
     "sourcePages": [
       4
     ],
-    "decision": "queued",
-    "reasonCodes": [
-      "package-evidence-required"
-    ],
-    "reason": "Package or case evidence is required",
-    "flags": []
+    "decision": "candidate",
+    "reasonCodes": [],
+    "reason": "Passed exact-code and loose-produce admission; media review required."
   },
   {
     "sourceOrder": 39,
@@ -644,11 +610,10 @@
     "sourcePages": [
       4
     ],
-    "decision": "queued",
-    "reasonCodes": [
-      "strict-admission-review"
-    ],
-    "reason": "The row needs manual source review",
+    "decision": "mapped",
+    "mappingKind": "single",
+    "reasonCodes": [],
+    "reason": "The catalog records one checkout code for an interpreted in-scope produce identity.",
     "flags": []
   },
   {
@@ -661,11 +626,10 @@
     "sourcePages": [
       1
     ],
-    "decision": "queued",
-    "reasonCodes": [
-      "duplicate-label-codes"
-    ],
-    "reason": "The same source label has competing codes",
+    "decision": "mapped",
+    "mappingKind": "same-label-different-codes",
+    "reasonCodes": [],
+    "reason": "The exact catalog label appears with multiple recorded checkout codes across source rows; preserve every source mapping.",
     "flags": []
   },
   {
@@ -678,11 +642,10 @@
     "sourcePages": [
       5
     ],
-    "decision": "queued",
-    "reasonCodes": [
-      "duplicate-label-codes"
-    ],
-    "reason": "The same source label has competing codes",
+    "decision": "mapped",
+    "mappingKind": "same-label-different-codes",
+    "reasonCodes": [],
+    "reason": "The exact catalog label appears with multiple recorded checkout codes across source rows; preserve every source mapping.",
     "flags": []
   },
   {
@@ -768,12 +731,9 @@
     "sourcePages": [
       4
     ],
-    "decision": "queued",
-    "reasonCodes": [
-      "package-evidence-required"
-    ],
-    "reason": "Package or case evidence is required",
-    "flags": []
+    "decision": "candidate",
+    "reasonCodes": [],
+    "reason": "Passed exact-code and loose-produce admission; media review required."
   },
   {
     "sourceOrder": 48,
@@ -781,14 +741,13 @@
     "sourceItem": "Croissants - Baked Goods",
     "title": "Croissants - Baked Goods",
     "code": "24306",
-    "family": "Source review",
+    "family": "Catalog only",
     "sourcePages": [
       3
     ],
-    "decision": "queued",
+    "decision": "excluded",
     "reasonCodes": [
-      "outside-produce-scope",
-      "unclassified-product"
+      "outside-produce-scope"
     ],
     "reason": "Outside the produce-learning scope",
     "flags": []
@@ -803,12 +762,10 @@
     "sourcePages": [
       4
     ],
-    "decision": "queued",
-    "reasonCodes": [
-      "package-evidence-required",
-      "duplicate-lesson-title"
-    ],
-    "reason": "Package or case evidence is required",
+    "decision": "mapped",
+    "mappingKind": "single",
+    "reasonCodes": [],
+    "reason": "The catalog records one checkout code; the exact catalog label preserves the case distinction from the existing lesson title.",
     "flags": []
   },
   {
@@ -834,14 +791,13 @@
     "sourceItem": "Donuts - Baked Goods",
     "title": "Donuts - Baked Goods",
     "code": "24146",
-    "family": "Source review",
+    "family": "Catalog only",
     "sourcePages": [
       3
     ],
-    "decision": "queued",
+    "decision": "excluded",
     "reasonCodes": [
-      "outside-produce-scope",
-      "unclassified-product"
+      "outside-produce-scope"
     ],
     "reason": "Outside the produce-learning scope",
     "flags": []
@@ -852,14 +808,13 @@
     "sourceItem": "Duck Eggs - Preserved",
     "title": "Duck Eggs - Preserved",
     "code": "64395",
-    "family": "Source review",
+    "family": "Catalog only",
     "sourcePages": [
       4
     ],
-    "decision": "queued",
+    "decision": "excluded",
     "reasonCodes": [
-      "outside-produce-scope",
-      "unclassified-product"
+      "outside-produce-scope"
     ],
     "reason": "Outside the produce-learning scope",
     "flags": []
@@ -870,14 +825,13 @@
     "sourceItem": "Duck Eggs - Salted",
     "title": "Duck Eggs - Salted",
     "code": "3485",
-    "family": "Source review",
+    "family": "Catalog only",
     "sourcePages": [
       4
     ],
-    "decision": "queued",
+    "decision": "excluded",
     "reasonCodes": [
-      "outside-produce-scope",
-      "unclassified-product"
+      "outside-produce-scope"
     ],
     "reason": "Outside the produce-learning scope",
     "flags": []
@@ -966,13 +920,9 @@
     "sourcePages": [
       1
     ],
-    "decision": "queued",
-    "reasonCodes": [
-      "package-evidence-required",
-      "duplicate-lesson-title"
-    ],
-    "reason": "Package or case evidence is required",
-    "flags": []
+    "decision": "candidate",
+    "reasonCodes": [],
+    "reason": "Passed exact-code and loose-produce admission; media review required."
   },
   {
     "sourceOrder": 59,
@@ -998,13 +948,9 @@
     "sourcePages": [
       5
     ],
-    "decision": "queued",
-    "reasonCodes": [
-      "package-evidence-required",
-      "duplicate-lesson-title"
-    ],
-    "reason": "Package or case evidence is required",
-    "flags": []
+    "decision": "candidate",
+    "reasonCodes": [],
+    "reason": "Passed exact-code and loose-produce admission; media review required."
   },
   {
     "sourceOrder": 61,
@@ -1016,12 +962,9 @@
     "sourcePages": [
       5
     ],
-    "decision": "queued",
-    "reasonCodes": [
-      "package-evidence-required"
-    ],
-    "reason": "Package or case evidence is required",
-    "flags": []
+    "decision": "candidate",
+    "reasonCodes": [],
+    "reason": "Passed exact-code and loose-produce admission; media review required."
   },
   {
     "sourceOrder": 62,
@@ -1033,12 +976,9 @@
     "sourcePages": [
       5
     ],
-    "decision": "queued",
-    "reasonCodes": [
-      "package-evidence-required"
-    ],
-    "reason": "Package or case evidence is required",
-    "flags": []
+    "decision": "candidate",
+    "reasonCodes": [],
+    "reason": "Passed exact-code and loose-produce admission; media review required."
   },
   {
     "sourceOrder": 63,
@@ -1067,11 +1007,10 @@
     "sourcePages": [
       4
     ],
-    "decision": "queued",
-    "reasonCodes": [
-      "package-evidence-required"
-    ],
-    "reason": "Package or case evidence is required",
+    "decision": "mapped",
+    "mappingKind": "single",
+    "reasonCodes": [],
+    "reason": "The catalog records one checkout code for an interpreted in-scope produce identity.",
     "flags": []
   },
   {
@@ -1119,13 +1058,10 @@
     "sourcePages": [
       5
     ],
-    "decision": "queued",
-    "reasonCodes": [
-      "package-evidence-required",
-      "conflicting-code",
-      "already-taught-code"
-    ],
-    "reason": "Package or case evidence is required",
+    "decision": "mapped",
+    "mappingKind": "shared-code",
+    "reasonCodes": [],
+    "reason": "The catalog-supported code is also recorded for a compatible grapefruit identity; preserve the exact label and declare the reuse.",
     "flags": []
   },
   {
@@ -1162,14 +1098,13 @@
     "sourceItem": "Ice",
     "title": "Ice",
     "code": "944",
-    "family": "Source review",
+    "family": "Catalog only",
     "sourcePages": [
       2
     ],
-    "decision": "queued",
+    "decision": "excluded",
     "reasonCodes": [
-      "outside-produce-scope",
-      "unclassified-product"
+      "outside-produce-scope"
     ],
     "reason": "Outside the produce-learning scope",
     "flags": []
@@ -1304,12 +1239,10 @@
     "sourcePages": [
       5
     ],
-    "decision": "queued",
-    "reasonCodes": [
-      "conflicting-code",
-      "already-taught-code"
-    ],
-    "reason": "The code is attached to another source identity",
+    "decision": "mapped",
+    "mappingKind": "shared-code",
+    "reasonCodes": [],
+    "reason": "The catalog-supported code is also recorded for a compatible mango identity; preserve the exact label and declare the reuse.",
     "flags": []
   },
   {
@@ -1379,13 +1312,9 @@
     "sourcePages": [
       2
     ],
-    "decision": "queued",
-    "reasonCodes": [
-      "package-evidence-required",
-      "duplicate-lesson-title"
-    ],
-    "reason": "Package or case evidence is required",
-    "flags": []
+    "decision": "candidate",
+    "reasonCodes": [],
+    "reason": "Passed exact-code and loose-produce admission; media review required."
   },
   {
     "sourceOrder": 83,
@@ -1411,15 +1340,10 @@
     "sourcePages": [
       2
     ],
-    "decision": "queued",
-    "reasonCodes": [
-      "multiple-codes",
-      "package-evidence-required",
-      "duplicate-label-codes",
-      "conflicting-code",
-      "duplicate-lesson-title"
-    ],
-    "reason": "Multiple source codes need one primary mapping",
+    "decision": "mapped",
+    "mappingKind": "same-label-different-codes",
+    "reasonCodes": [],
+    "reason": "The exact catalog label carries multiple recorded checkout codes; preserve the complete mapping without selecting a synthetic primary code.",
     "flags": []
   },
   {
@@ -1450,12 +1374,9 @@
       2,
       4
     ],
-    "decision": "queued",
-    "reasonCodes": [
-      "duplicate-lesson-title"
-    ],
-    "reason": "The learner title already exists",
-    "flags": []
+    "decision": "candidate",
+    "reasonCodes": [],
+    "reason": "Passed exact-code and loose-produce admission; media review required."
   },
   {
     "sourceOrder": 87,
@@ -1481,11 +1402,10 @@
     "sourcePages": [
       5
     ],
-    "decision": "queued",
-    "reasonCodes": [
-      "strict-admission-review"
-    ],
-    "reason": "The row needs manual source review",
+    "decision": "mapped",
+    "mappingKind": "single",
+    "reasonCodes": [],
+    "reason": "The catalog records one checkout code for an interpreted in-scope produce identity.",
     "flags": []
   },
   {
@@ -1498,11 +1418,10 @@
     "sourcePages": [
       5
     ],
-    "decision": "queued",
-    "reasonCodes": [
-      "strict-admission-review"
-    ],
-    "reason": "The row needs manual source review",
+    "decision": "mapped",
+    "mappingKind": "single",
+    "reasonCodes": [],
+    "reason": "The catalog records one checkout code for an interpreted in-scope produce identity.",
     "flags": []
   },
   {
@@ -1563,15 +1482,13 @@
     "sourceItem": "NoFrills Reusable Bag - Black",
     "title": "NoFrills Reusable Bag - Black",
     "code": "18951",
-    "family": "Source review",
+    "family": "Catalog only",
     "sourcePages": [
       1
     ],
-    "decision": "queued",
+    "decision": "excluded",
     "reasonCodes": [
-      "outside-produce-scope",
-      "package-evidence-required",
-      "unclassified-product"
+      "outside-produce-scope"
     ],
     "reason": "Outside the produce-learning scope",
     "flags": []
@@ -1582,15 +1499,13 @@
     "sourceItem": "NoFrills Reusable Bag - Yellow",
     "title": "NoFrills Reusable Bag - Yellow",
     "code": "18902",
-    "family": "Source review",
+    "family": "Catalog only",
     "sourcePages": [
       1
     ],
-    "decision": "queued",
+    "decision": "excluded",
     "reasonCodes": [
-      "outside-produce-scope",
-      "package-evidence-required",
-      "unclassified-product"
+      "outside-produce-scope"
     ],
     "reason": "Outside the produce-learning scope",
     "flags": []
@@ -1601,19 +1516,15 @@
     "sourceItem": "PC Bag Points (MC)",
     "title": "PC Bag Points (MC)",
     "code": "53398 / 53399",
-    "family": "Source review",
+    "family": "Catalog only",
     "sourcePages": [
       1
     ],
-    "decision": "queued",
+    "decision": "excluded",
     "reasonCodes": [
-      "multiple-codes",
-      "outside-produce-scope",
-      "package-evidence-required",
-      "duplicate-label-codes",
-      "unclassified-product"
+      "outside-produce-scope"
     ],
-    "reason": "Multiple source codes need one primary mapping",
+    "reason": "Outside the produce-learning scope",
     "flags": []
   },
   {
@@ -1622,16 +1533,14 @@
     "sourceItem": "Olives - Green (Case)",
     "title": "Olives - Green (Case)",
     "code": "54050",
-    "family": "Source review",
+    "family": "Olives",
     "sourcePages": [
       4
     ],
-    "decision": "queued",
-    "reasonCodes": [
-      "package-evidence-required",
-      "unclassified-product"
-    ],
-    "reason": "Package or case evidence is required",
+    "decision": "mapped",
+    "mappingKind": "single",
+    "reasonCodes": [],
+    "reason": "The catalog records one checkout code for an interpreted in-scope produce identity.",
     "flags": []
   },
   {
@@ -1748,12 +1657,9 @@
     "sourcePages": [
       4
     ],
-    "decision": "queued",
-    "reasonCodes": [
-      "package-evidence-required"
-    ],
-    "reason": "Package or case evidence is required",
-    "flags": []
+    "decision": "candidate",
+    "reasonCodes": [],
+    "reason": "Passed exact-code and loose-produce admission; media review required."
   },
   {
     "sourceOrder": 104,
@@ -1779,12 +1685,10 @@
     "sourcePages": [
       5
     ],
-    "decision": "queued",
-    "reasonCodes": [
-      "conflicting-code",
-      "already-taught-code"
-    ],
-    "reason": "The code is attached to another source identity",
+    "decision": "mapped",
+    "mappingKind": "shared-code",
+    "reasonCodes": [],
+    "reason": "The catalog-supported code is also recorded for a compatible navel orange identity; preserve the exact size label and declare the reuse.",
     "flags": []
   },
   {
@@ -1797,11 +1701,10 @@
     "sourcePages": [
       5
     ],
-    "decision": "queued",
-    "reasonCodes": [
-      "conflicting-code"
-    ],
-    "reason": "The code is attached to another source identity",
+    "decision": "mapped",
+    "mappingKind": "shared-code",
+    "reasonCodes": [],
+    "reason": "The catalog-supported code is also recorded for a compatible navel orange identity; preserve the exact size label and declare the reuse.",
     "flags": []
   },
   {
@@ -1814,11 +1717,10 @@
     "sourcePages": [
       2
     ],
-    "decision": "queued",
-    "reasonCodes": [
-      "strict-admission-review"
-    ],
-    "reason": "The row needs manual source review",
+    "decision": "mapped",
+    "mappingKind": "single",
+    "reasonCodes": [],
+    "reason": "The catalog records one checkout code for an interpreted in-scope produce identity.",
     "flags": []
   },
   {
@@ -1831,12 +1733,10 @@
     "sourcePages": [
       4
     ],
-    "decision": "queued",
-    "reasonCodes": [
-      "conflicting-code",
-      "already-taught-code"
-    ],
-    "reason": "The code is attached to another source identity",
+    "decision": "mapped",
+    "mappingKind": "shared-code",
+    "reasonCodes": [],
+    "reason": "The catalog-supported code is also recorded for a compatible parsley identity; preserve the exact label and declare the reuse.",
     "flags": []
   },
   {
@@ -1889,14 +1789,13 @@
     "sourceItem": "Pastries (General) - Baked Goods",
     "title": "Pastries (General) - Baked Goods",
     "code": "24145",
-    "family": "Source review",
+    "family": "Catalog only",
     "sourcePages": [
       3
     ],
-    "decision": "queued",
+    "decision": "excluded",
     "reasonCodes": [
-      "outside-produce-scope",
-      "unclassified-product"
+      "outside-produce-scope"
     ],
     "reason": "Outside the produce-learning scope",
     "flags": []
@@ -1939,12 +1838,9 @@
     "sourcePages": [
       5
     ],
-    "decision": "queued",
-    "reasonCodes": [
-      "package-evidence-required"
-    ],
-    "reason": "Package or case evidence is required",
-    "flags": []
+    "decision": "candidate",
+    "reasonCodes": [],
+    "reason": "Passed exact-code and loose-produce admission; media review required."
   },
   {
     "sourceOrder": 115,
@@ -1970,12 +1866,10 @@
     "sourcePages": [
       5
     ],
-    "decision": "queued",
-    "reasonCodes": [
-      "duplicate-label-codes",
-      "duplicate-lesson-title"
-    ],
-    "reason": "The same source label has competing codes",
+    "decision": "mapped",
+    "mappingKind": "same-label-different-codes",
+    "reasonCodes": [],
+    "reason": "The exact catalog label appears with another recorded checkout code; preserve both source mappings instead of treating one as a replacement.",
     "flags": []
   },
   {
@@ -2002,13 +1896,9 @@
     "sourcePages": [
       5
     ],
-    "decision": "queued",
-    "reasonCodes": [
-      "package-evidence-required",
-      "duplicate-lesson-title"
-    ],
-    "reason": "Package or case evidence is required",
-    "flags": []
+    "decision": "candidate",
+    "reasonCodes": [],
+    "reason": "Passed exact-code and loose-produce admission; media review required."
   },
   {
     "sourceOrder": 119,
@@ -2020,12 +1910,10 @@
     "sourcePages": [
       5
     ],
-    "decision": "queued",
-    "reasonCodes": [
-      "conflicting-code",
-      "already-taught-code"
-    ],
-    "reason": "The code is attached to another source identity",
+    "decision": "mapped",
+    "mappingKind": "shared-code",
+    "reasonCodes": [],
+    "reason": "The catalog-supported code is also recorded for a compatible Bosc pear identity; preserve the exact size label and declare the reuse.",
     "flags": []
   },
   {
@@ -2038,12 +1926,10 @@
     "sourcePages": [
       5
     ],
-    "decision": "queued",
-    "reasonCodes": [
-      "duplicate-label-codes",
-      "duplicate-lesson-title"
-    ],
-    "reason": "The same source label has competing codes",
+    "decision": "mapped",
+    "mappingKind": "same-label-different-codes",
+    "reasonCodes": [],
+    "reason": "The exact catalog label appears with another recorded checkout code; preserve both source mappings instead of treating one as a replacement.",
     "flags": []
   },
   {
@@ -2074,11 +1960,10 @@
     "sourcePages": [
       5
     ],
-    "decision": "queued",
-    "reasonCodes": [
-      "strict-admission-review"
-    ],
-    "reason": "The row needs manual source review",
+    "decision": "mapped",
+    "mappingKind": "single",
+    "reasonCodes": [],
+    "reason": "The catalog records one checkout code for an interpreted in-scope produce identity.",
     "flags": []
   },
   {
@@ -2197,11 +2082,10 @@
     "sourcePages": [
       5
     ],
-    "decision": "queued",
-    "reasonCodes": [
-      "strict-admission-review"
-    ],
-    "reason": "The row needs manual source review",
+    "decision": "mapped",
+    "mappingKind": "single",
+    "reasonCodes": [],
+    "reason": "The catalog records one checkout code for an interpreted in-scope produce identity.",
     "flags": []
   },
   {
@@ -2214,11 +2098,10 @@
     "sourcePages": [
       5
     ],
-    "decision": "queued",
-    "reasonCodes": [
-      "package-evidence-required"
-    ],
-    "reason": "Package or case evidence is required",
+    "decision": "mapped",
+    "mappingKind": "single",
+    "reasonCodes": [],
+    "reason": "The catalog records one checkout code for an interpreted in-scope produce identity.",
     "flags": []
   },
   {
@@ -2227,15 +2110,14 @@
     "sourceItem": "Pistachios (Bulk) - Nuts",
     "title": "Pistachios (Bulk) - Nuts",
     "code": "1400",
-    "family": "Source review",
+    "family": "Nuts",
     "sourcePages": [
       5
     ],
-    "decision": "queued",
-    "reasonCodes": [
-      "unclassified-product"
-    ],
-    "reason": "The product family is not yet verified",
+    "decision": "mapped",
+    "mappingKind": "single",
+    "reasonCodes": [],
+    "reason": "The catalog records one checkout code for an interpreted in-scope produce identity.",
     "flags": []
   },
   {
@@ -2296,13 +2178,9 @@
     "sourcePages": [
       4
     ],
-    "decision": "queued",
-    "reasonCodes": [
-      "package-evidence-required",
-      "duplicate-lesson-title"
-    ],
-    "reason": "Package or case evidence is required",
-    "flags": []
+    "decision": "candidate",
+    "reasonCodes": [],
+    "reason": "Passed exact-code and loose-produce admission; media review required."
   },
   {
     "sourceOrder": 137,
@@ -2314,13 +2192,9 @@
     "sourcePages": [
       4
     ],
-    "decision": "queued",
-    "reasonCodes": [
-      "package-evidence-required",
-      "duplicate-lesson-title"
-    ],
-    "reason": "Package or case evidence is required",
-    "flags": []
+    "decision": "candidate",
+    "reasonCodes": [],
+    "reason": "Passed exact-code and loose-produce admission; media review required."
   },
   {
     "sourceOrder": 138,
@@ -2381,13 +2255,9 @@
     "sourcePages": [
       4
     ],
-    "decision": "queued",
-    "reasonCodes": [
-      "package-evidence-required",
-      "duplicate-lesson-title"
-    ],
-    "reason": "Package or case evidence is required",
-    "flags": []
+    "decision": "candidate",
+    "reasonCodes": [],
+    "reason": "Passed exact-code and loose-produce admission; media review required."
   },
   {
     "sourceOrder": 142,
@@ -2399,12 +2269,9 @@
     "sourcePages": [
       4
     ],
-    "decision": "queued",
-    "reasonCodes": [
-      "package-evidence-required"
-    ],
-    "reason": "Package or case evidence is required",
-    "flags": []
+    "decision": "candidate",
+    "reasonCodes": [],
+    "reason": "Passed exact-code and loose-produce admission; media review required."
   },
   {
     "sourceOrder": 143,
@@ -2417,12 +2284,9 @@
       2,
       5
     ],
-    "decision": "queued",
-    "reasonCodes": [
-      "package-evidence-required"
-    ],
-    "reason": "Package or case evidence is required",
-    "flags": []
+    "decision": "candidate",
+    "reasonCodes": [],
+    "reason": "Passed exact-code and loose-produce admission; media review required."
   },
   {
     "sourceOrder": 144,
@@ -2451,11 +2315,10 @@
     "sourcePages": [
       3
     ],
-    "decision": "queued",
-    "reasonCodes": [
-      "duplicate-label-codes"
-    ],
-    "reason": "The same source label has competing codes",
+    "decision": "mapped",
+    "mappingKind": "same-label-different-codes",
+    "reasonCodes": [],
+    "reason": "The exact catalog label appears with multiple recorded checkout codes across source rows; preserve every source mapping.",
     "flags": []
   },
   {
@@ -2468,11 +2331,10 @@
     "sourcePages": [
       4
     ],
-    "decision": "queued",
-    "reasonCodes": [
-      "duplicate-label-codes"
-    ],
-    "reason": "The same source label has competing codes",
+    "decision": "mapped",
+    "mappingKind": "same-label-different-codes",
+    "reasonCodes": [],
+    "reason": "The exact catalog label appears with multiple recorded checkout codes across source rows; preserve every source mapping.",
     "flags": []
   },
   {
@@ -2543,11 +2405,10 @@
     "sourcePages": [
       5
     ],
-    "decision": "queued",
-    "reasonCodes": [
-      "package-evidence-required"
-    ],
-    "reason": "Package or case evidence is required",
+    "decision": "mapped",
+    "mappingKind": "single",
+    "reasonCodes": [],
+    "reason": "The catalog records one checkout code for an interpreted in-scope produce identity.",
     "flags": []
   },
   {
@@ -2560,11 +2421,10 @@
     "sourcePages": [
       5
     ],
-    "decision": "queued",
-    "reasonCodes": [
-      "package-evidence-required"
-    ],
-    "reason": "Package or case evidence is required",
+    "decision": "mapped",
+    "mappingKind": "single",
+    "reasonCodes": [],
+    "reason": "The catalog records one checkout code for an interpreted in-scope produce identity.",
     "flags": []
   },
   {
@@ -2593,14 +2453,13 @@
     "sourceItem": "Safety Salt (Snow)",
     "title": "Safety Salt (Snow)",
     "code": "958",
-    "family": "Source review",
+    "family": "Catalog only",
     "sourcePages": [
       3
     ],
-    "decision": "queued",
+    "decision": "excluded",
     "reasonCodes": [
-      "outside-produce-scope",
-      "unclassified-product"
+      "outside-produce-scope"
     ],
     "reason": "Outside the produce-learning scope",
     "flags": []
@@ -2615,11 +2474,10 @@
     "sourcePages": [
       4
     ],
-    "decision": "queued",
-    "reasonCodes": [
-      "strict-admission-review"
-    ],
-    "reason": "The row needs manual source review",
+    "decision": "mapped",
+    "mappingKind": "single",
+    "reasonCodes": [],
+    "reason": "The catalog records one checkout code for an interpreted in-scope produce identity.",
     "flags": []
   },
   {
@@ -2649,11 +2507,10 @@
     "sourcePages": [
       5
     ],
-    "decision": "queued",
-    "reasonCodes": [
-      "package-evidence-required"
-    ],
-    "reason": "Package or case evidence is required",
+    "decision": "mapped",
+    "mappingKind": "single",
+    "reasonCodes": [],
+    "reason": "The catalog records one checkout code for an interpreted in-scope produce identity.",
     "flags": []
   },
   {
@@ -2666,11 +2523,10 @@
     "sourcePages": [
       5
     ],
-    "decision": "queued",
-    "reasonCodes": [
-      "package-evidence-required"
-    ],
-    "reason": "Package or case evidence is required",
+    "decision": "mapped",
+    "mappingKind": "single",
+    "reasonCodes": [],
+    "reason": "The catalog records one checkout code for an interpreted in-scope produce identity.",
     "flags": []
   },
   {
@@ -2720,11 +2576,10 @@
     "sourcePages": [
       3
     ],
-    "decision": "queued",
-    "reasonCodes": [
-      "strict-admission-review"
-    ],
-    "reason": "The row needs manual source review",
+    "decision": "mapped",
+    "mappingKind": "single",
+    "reasonCodes": [],
+    "reason": "The catalog records one checkout code for an interpreted in-scope produce identity.",
     "flags": []
   },
   {
@@ -2900,16 +2755,13 @@
     "sourceItem": "Water Bottle Case 18 (PC)",
     "title": "Water Bottle Case 18 (PC)",
     "code": "06038378106",
-    "family": "Source review",
+    "family": "Catalog only",
     "sourcePages": [
       3
     ],
-    "decision": "queued",
+    "decision": "excluded",
     "reasonCodes": [
-      "outside-produce-scope",
-      "store-barcode-not-plu",
-      "package-evidence-required",
-      "unclassified-product"
+      "outside-produce-scope"
     ],
     "reason": "Outside the produce-learning scope",
     "flags": [
@@ -2922,16 +2774,13 @@
     "sourceItem": "Water Bottle Case 24 (PC)",
     "title": "Water Bottle Case 24 (PC)",
     "code": "06038375938",
-    "family": "Source review",
+    "family": "Catalog only",
     "sourcePages": [
       3
     ],
-    "decision": "queued",
+    "decision": "excluded",
     "reasonCodes": [
-      "outside-produce-scope",
-      "store-barcode-not-plu",
-      "package-evidence-required",
-      "unclassified-product"
+      "outside-produce-scope"
     ],
     "reason": "Outside the produce-learning scope",
     "flags": [
@@ -2948,11 +2797,10 @@
     "sourcePages": [
       3
     ],
-    "decision": "queued",
-    "reasonCodes": [
-      "strict-admission-review"
-    ],
-    "reason": "The row needs manual source review",
+    "decision": "mapped",
+    "mappingKind": "single",
+    "reasonCodes": [],
+    "reason": "The catalog records one checkout code for an interpreted in-scope produce identity.",
     "flags": []
   },
   {
@@ -2965,12 +2813,10 @@
     "sourcePages": [
       4
     ],
-    "decision": "queued",
-    "reasonCodes": [
-      "conflicting-code",
-      "duplicate-lesson-title"
-    ],
-    "reason": "The code is attached to another source identity",
+    "decision": "mapped",
+    "mappingKind": "shared-code",
+    "reasonCodes": [],
+    "reason": "The catalog-supported code is also recorded for a compatible white yam identity; preserve the exact label and declare the reuse.",
     "flags": []
   },
   {

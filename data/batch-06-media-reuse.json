@@ -1,0 +1,1062 @@
+{
+  "schemaVersion": 1,
+  "batch": "06",
+  "method": "Media-only reuse of already human-reviewed Wikimedia Commons files from published PLU lessons, limited to the same visible produce identity; catalog-only qualifiers remain explicit label claims.",
+  "items": [
+    {
+      "catalogId": "aloe-vera-handwritten",
+      "sourceCatalogId": "aloe",
+      "commonsFile": "Aloe vera for sale.jpg",
+      "recognitionMode": "label-assisted",
+      "visibleIdentity": {
+        "label": "Aloe vera",
+        "form": "Thick tapered succulent leaves",
+        "color": "Green",
+        "cue": "Thick tapered green succulent leaves identify Aloe vera."
+      },
+      "labelClaims": [
+        {
+          "value": "(handwritten)",
+          "basis": "workbook-label",
+          "sourceField": "catalog.item",
+          "sourcePages": [
+            5
+          ]
+        }
+      ],
+      "sharedMediaBasis": "The source lesson's reviewed Commons file anchors the same visible produce identity; target-only package, grade, store, or source-note qualifiers remain workbook-label claims.",
+      "reviewBasis": "The already-reviewed retail photograph clearly shows Aloe vera leaves; handwriting status is source provenance, not a pixel claim."
+    },
+    {
+      "catalogId": "apples-ambrosia-pc",
+      "sourceCatalogId": "apples-ambrosia-bin",
+      "commonsFile": "Ambrosia apples 2017 A2.jpg",
+      "recognitionMode": "label-assisted",
+      "visibleIdentity": {
+        "label": "Ambrosia apple",
+        "form": "Round apple",
+        "color": "Mixed red and yellow",
+        "cue": "Round apples with a mixed red-yellow blush anchor the Ambrosia identity."
+      },
+      "labelClaims": [
+        {
+          "value": "PC",
+          "basis": "workbook-label",
+          "sourceField": "catalog.item",
+          "sourcePages": [
+            5
+          ]
+        }
+      ],
+      "sharedMediaBasis": "The source lesson's reviewed Commons file anchors the same visible produce identity; target-only package, grade, store, or source-note qualifiers remain workbook-label claims.",
+      "reviewBasis": "The reviewed Ambrosia photograph shows the same apple identity and color; PC is retained only from the workbook label."
+    },
+    {
+      "catalogId": "apples-golden-delicious-pc",
+      "sourceCatalogId": "apples-golden-delicious",
+      "commonsFile": "Golden delicious apple.jpg",
+      "recognitionMode": "label-assisted",
+      "visibleIdentity": {
+        "label": "Golden Delicious apple",
+        "form": "Round golden apple",
+        "color": "Yellow",
+        "cue": "A round yellow-gold apple anchors Golden Delicious."
+      },
+      "labelClaims": [
+        {
+          "value": "PC",
+          "basis": "workbook-label",
+          "sourceField": "catalog.item",
+          "sourcePages": [
+            5
+          ]
+        }
+      ],
+      "sharedMediaBasis": "The source lesson's reviewed Commons file anchors the same visible produce identity; target-only package, grade, store, or source-note qualifiers remain workbook-label claims.",
+      "reviewBasis": "The existing Golden Delicious photograph truthfully shows the named apple; PC is not inferred from the pixels."
+    },
+    {
+      "catalogId": "apples-mcintosh-extra-fancy",
+      "sourceCatalogId": "apples-mcintosh",
+      "commonsFile": "McIntosh Apples.jpg",
+      "recognitionMode": "label-assisted",
+      "visibleIdentity": {
+        "label": "McIntosh apple",
+        "form": "Round soft-shouldered apple",
+        "color": "Red",
+        "cue": "Round red McIntosh apples with soft shoulders provide the visible anchor."
+      },
+      "labelClaims": [
+        {
+          "value": "Extra Fancy",
+          "basis": "workbook-label",
+          "sourceField": "catalog.item",
+          "sourcePages": [
+            5
+          ]
+        }
+      ],
+      "sharedMediaBasis": "The source lesson's reviewed Commons file anchors the same visible produce identity; target-only package, grade, store, or source-note qualifiers remain workbook-label claims.",
+      "reviewBasis": "The reviewed McIntosh image supports product identity; Extra Fancy is a workbook grade and is not assigned from appearance."
+    },
+    {
+      "catalogId": "artichokes-small-handwritten",
+      "sourceCatalogId": "artichokes-large",
+      "commonsFile": "Artichoke stack.JPG",
+      "recognitionMode": "label-assisted",
+      "visibleIdentity": {
+        "label": "Artichoke",
+        "form": "Layered round flower bud",
+        "color": "Green",
+        "cue": "Tight overlapping green bracts identify an artichoke flower bud."
+      },
+      "labelClaims": [
+        {
+          "value": "Small",
+          "basis": "workbook-label",
+          "sourceField": "catalog.item",
+          "sourcePages": [
+            1,
+            4
+          ]
+        },
+        {
+          "value": "(handwritten)",
+          "basis": "workbook-label",
+          "sourceField": "catalog.item",
+          "sourcePages": [
+            1,
+            4
+          ]
+        }
+      ],
+      "sharedMediaBasis": "The source lesson's reviewed Commons file anchors the same visible produce identity; target-only package, grade, store, or source-note qualifiers remain workbook-label claims.",
+      "reviewBasis": "The photograph clearly anchors artichoke identity; Small and the handwritten source status stay label-assisted because the crop has no reliable scale."
+    },
+    {
+      "catalogId": "bartlett-orchard-run-first-word-obscured",
+      "sourceCatalogId": "pears-bartlett",
+      "commonsFile": "Bartlett pear.jpg",
+      "recognitionMode": "label-assisted",
+      "visibleIdentity": {
+        "label": "Bartlett pear",
+        "form": "Classic bell-shaped pear",
+        "color": "Yellow",
+        "cue": "The classic bell-shaped yellow pear anchors Bartlett identity."
+      },
+      "labelClaims": [
+        {
+          "value": "Orchard Run",
+          "basis": "workbook-label",
+          "sourceField": "catalog.item",
+          "sourcePages": [
+            5
+          ]
+        },
+        {
+          "value": "(first word obscured)",
+          "basis": "workbook-label",
+          "sourceField": "catalog.item",
+          "sourcePages": [
+            5
+          ]
+        }
+      ],
+      "sharedMediaBasis": "The source lesson's reviewed Commons file anchors the same visible produce identity; target-only package, grade, store, or source-note qualifiers remain workbook-label claims.",
+      "reviewBasis": "The existing Bartlett image anchors the pear identity; orchard-run grade and the obscured-word note remain exact workbook claims."
+    },
+    {
+      "catalogId": "beans-green-case",
+      "sourceCatalogId": "beans-green",
+      "commonsFile": "Green-beans.jpg",
+      "recognitionMode": "label-assisted",
+      "lessonTitle": "Beans - Green (Case)",
+      "visibleIdentity": {
+        "label": "Green beans",
+        "form": "Long slender pods",
+        "color": "Green",
+        "cue": "Long slender green pods with pointed ends identify green beans."
+      },
+      "labelClaims": [
+        {
+          "value": "Case",
+          "basis": "workbook-label",
+          "sourceField": "catalog.item",
+          "sourcePages": [
+            4
+          ]
+        }
+      ],
+      "sharedMediaBasis": "The source lesson's reviewed Commons file anchors the same visible produce identity; target-only package, grade, store, or source-note qualifiers remain workbook-label claims.",
+      "reviewBasis": "The published green-bean photograph is an exact visible product match; Case is supplied only by the workbook."
+    },
+    {
+      "catalogId": "beets-10lb",
+      "sourceCatalogId": "beets-loose-bulk",
+      "commonsFile": "Beets-Bundle.jpg",
+      "recognitionMode": "label-assisted",
+      "visibleIdentity": {
+        "label": "Beets",
+        "form": "Round tapered root",
+        "color": "Red-purple",
+        "cue": "Round red-purple beet roots provide the visible identity."
+      },
+      "labelClaims": [
+        {
+          "value": "10lb",
+          "basis": "workbook-label",
+          "sourceField": "catalog.item",
+          "sourcePages": [
+            4
+          ]
+        }
+      ],
+      "sharedMediaBasis": "The source lesson's reviewed Commons file anchors the same visible produce identity; target-only package, grade, store, or source-note qualifiers remain workbook-label claims.",
+      "reviewBasis": "The reviewed beet photograph shows the same raw roots; the 10lb retail quantity remains label-only."
+    },
+    {
+      "catalogId": "blueberries-full-pint-12oz",
+      "sourceCatalogId": "blueberries-2lb",
+      "commonsFile": "A generous handful of blueberries depicts the rich abundance of berries that may be found in Alaskan areas. (d84880d1-1dd8-b71b-0b3d-6380eca4c663).jpg",
+      "recognitionMode": "label-assisted",
+      "visibleIdentity": {
+        "label": "Blueberries",
+        "form": "Small soft berries",
+        "color": "Blue-purple",
+        "cue": "Small round blue-purple berries with pale bloom identify blueberries."
+      },
+      "labelClaims": [
+        {
+          "value": "Full Pint",
+          "basis": "workbook-label",
+          "sourceField": "catalog.item",
+          "sourcePages": [
+            5
+          ]
+        },
+        {
+          "value": "12oz",
+          "basis": "workbook-label",
+          "sourceField": "catalog.item",
+          "sourcePages": [
+            5
+          ]
+        }
+      ],
+      "sharedMediaBasis": "The source lesson's reviewed Commons file anchors the same visible produce identity; target-only package, grade, store, or source-note qualifiers remain workbook-label claims.",
+      "reviewBasis": "The approved close photograph clearly shows blueberries; Full Pint and 12oz are workbook retail-unit claims."
+    },
+    {
+      "catalogId": "blueberries-half-pint-6oz",
+      "sourceCatalogId": "blueberries-2lb",
+      "commonsFile": "A generous handful of blueberries depicts the rich abundance of berries that may be found in Alaskan areas. (d84880d1-1dd8-b71b-0b3d-6380eca4c663).jpg",
+      "recognitionMode": "label-assisted",
+      "visibleIdentity": {
+        "label": "Blueberries",
+        "form": "Small soft berries",
+        "color": "Blue-purple",
+        "cue": "Small round blue-purple berries with pale bloom identify blueberries."
+      },
+      "labelClaims": [
+        {
+          "value": "Half Pint",
+          "basis": "workbook-label",
+          "sourceField": "catalog.item",
+          "sourcePages": [
+            5
+          ]
+        },
+        {
+          "value": "6oz",
+          "basis": "workbook-label",
+          "sourceField": "catalog.item",
+          "sourcePages": [
+            5
+          ]
+        }
+      ],
+      "sharedMediaBasis": "The source lesson's reviewed Commons file anchors the same visible produce identity; target-only package, grade, store, or source-note qualifiers remain workbook-label claims.",
+      "reviewBasis": "The approved close photograph clearly shows blueberries; Half Pint and 6oz are workbook retail-unit claims."
+    },
+    {
+      "catalogId": "carrots-chinese-jumbo",
+      "sourceCatalogId": "carrots-jumbo",
+      "commonsFile": "Big Carrot-2356.jpg",
+      "recognitionMode": "label-assisted",
+      "visibleIdentity": {
+        "label": "Jumbo carrot",
+        "form": "Large tapered root",
+        "color": "Orange",
+        "cue": "A large orange tapered root anchors the jumbo-carrot identity."
+      },
+      "labelClaims": [
+        {
+          "value": "Chinese",
+          "basis": "workbook-label",
+          "sourceField": "catalog.item",
+          "sourcePages": [
+            4
+          ]
+        }
+      ],
+      "sharedMediaBasis": "The source lesson's reviewed Commons file anchors the same visible produce identity; target-only package, grade, store, or source-note qualifiers remain workbook-label claims.",
+      "reviewBasis": "The reviewed image truthfully shows a jumbo carrot; Chinese is preserved as an exact catalog modifier rather than inferred visually."
+    },
+    {
+      "catalogId": "carrots-jumbo-case",
+      "sourceCatalogId": "carrots-jumbo",
+      "commonsFile": "Big Carrot-2356.jpg",
+      "recognitionMode": "label-assisted",
+      "visibleIdentity": {
+        "label": "Jumbo carrot",
+        "form": "Large tapered root",
+        "color": "Orange",
+        "cue": "A large orange tapered root anchors the jumbo-carrot identity."
+      },
+      "labelClaims": [
+        {
+          "value": "Case",
+          "basis": "workbook-label",
+          "sourceField": "catalog.item",
+          "sourcePages": [
+            4
+          ]
+        }
+      ],
+      "sharedMediaBasis": "The source lesson's reviewed Commons file anchors the same visible produce identity; target-only package, grade, store, or source-note qualifiers remain workbook-label claims.",
+      "reviewBasis": "The existing jumbo-carrot photograph matches the visible item; Case remains a workbook retail-form claim."
+    },
+    {
+      "catalogId": "corn-tray-of-5",
+      "sourceCatalogId": "corn-bicolour-bulk",
+      "commonsFile": "Liat Portal for Foodie Disorder - Fresh Corn on the Cob.jpg",
+      "recognitionMode": "label-assisted",
+      "visibleIdentity": {
+        "label": "Corn",
+        "form": "Long husked ear",
+        "color": "Yellow-green",
+        "cue": "A fresh long ear with green husk and yellow kernels identifies corn."
+      },
+      "labelClaims": [
+        {
+          "value": "Tray of 5",
+          "basis": "workbook-label",
+          "sourceField": "catalog.item",
+          "sourcePages": [
+            4
+          ]
+        }
+      ],
+      "sharedMediaBasis": "The source lesson's reviewed Commons file anchors the same visible produce identity; target-only package, grade, store, or source-note qualifiers remain workbook-label claims.",
+      "reviewBasis": "The reviewed raw corn-on-the-cob photograph anchors the product; the tray count comes only from the catalog."
+    },
+    {
+      "catalogId": "fennel-anise",
+      "sourceCatalogId": "anise-fennel-herbs",
+      "commonsFile": "Finocchio 2.jpg",
+      "recognitionMode": "product-and-loose-form",
+      "visibleIdentity": {
+        "label": "Fennel / Anise",
+        "form": "Layered bulb with feathery fronds",
+        "color": "White and green",
+        "cue": "A layered white-green bulb with feathery fronds identifies fennel, also sold as anise."
+      },
+      "sharedMediaBasis": "The source lesson's reviewed Commons file anchors the same visible produce identity, form, and color for this catalog synonym or broader label.",
+      "reviewBasis": "The existing fennel photograph and source lesson already anchor the same reviewed produce synonym and loose form."
+    },
+    {
+      "catalogId": "figgs-black-case",
+      "sourceCatalogId": "figgs-black",
+      "commonsFile": "Stellar Black Mission Figs (22856783955).jpg",
+      "recognitionMode": "label-assisted",
+      "lessonTitle": "Figgs - Black (Case)",
+      "visibleIdentity": {
+        "label": "Black fig",
+        "form": "Soft teardrop fruit",
+        "color": "Black-purple",
+        "cue": "Soft dark teardrop fruit identifies a black fig."
+      },
+      "labelClaims": [
+        {
+          "value": "Case",
+          "basis": "workbook-label",
+          "sourceField": "catalog.item",
+          "sourcePages": [
+            1
+          ]
+        }
+      ],
+      "sharedMediaBasis": "The source lesson's reviewed Commons file anchors the same visible produce identity; target-only package, grade, store, or source-note qualifiers remain workbook-label claims.",
+      "reviewBasis": "The reviewed Black Mission fig image clearly anchors black-fig identity; Case and the source spelling remain in the exact lesson label."
+    },
+    {
+      "catalogId": "figs-black-case",
+      "sourceCatalogId": "figgs-black",
+      "commonsFile": "Stellar Black Mission Figs (22856783955).jpg",
+      "recognitionMode": "label-assisted",
+      "lessonTitle": "Figs - Black (Case)",
+      "visibleIdentity": {
+        "label": "Black fig",
+        "form": "Soft teardrop fruit",
+        "color": "Black-purple",
+        "cue": "Soft dark teardrop fruit identifies a black fig."
+      },
+      "labelClaims": [
+        {
+          "value": "Case",
+          "basis": "workbook-label",
+          "sourceField": "catalog.item",
+          "sourcePages": [
+            5
+          ]
+        }
+      ],
+      "sharedMediaBasis": "The source lesson's reviewed Commons file anchors the same visible produce identity; target-only package, grade, store, or source-note qualifiers remain workbook-label claims.",
+      "reviewBasis": "The existing black-fig photograph is an exact visible identity match; Case is retained from the workbook."
+    },
+    {
+      "catalogId": "figs-black-227g-pint",
+      "sourceCatalogId": "figgs-black",
+      "commonsFile": "Stellar Black Mission Figs (22856783955).jpg",
+      "recognitionMode": "label-assisted",
+      "visibleIdentity": {
+        "label": "Black fig",
+        "form": "Soft teardrop fruit",
+        "color": "Black-purple",
+        "cue": "Soft dark teardrop fruit identifies a black fig."
+      },
+      "labelClaims": [
+        {
+          "value": "227g (Pint)",
+          "basis": "workbook-label",
+          "sourceField": "catalog.item",
+          "sourcePages": [
+            5
+          ]
+        }
+      ],
+      "sharedMediaBasis": "The source lesson's reviewed Commons file anchors the same visible produce identity; target-only package, grade, store, or source-note qualifiers remain workbook-label claims.",
+      "reviewBasis": "The reviewed photo clearly shows black figs; the 227g pint quantity is not inferred from the crop."
+    },
+    {
+      "catalogId": "figs-green-case",
+      "sourceCatalogId": "figgs-green-case",
+      "commonsFile": "Common fig - leaves and green figs.jpg",
+      "recognitionMode": "label-assisted",
+      "visibleIdentity": {
+        "label": "Green fig",
+        "form": "Soft teardrop fruit",
+        "color": "Green",
+        "cue": "Several green teardrop-shaped figs provide the visible identity."
+      },
+      "labelClaims": [
+        {
+          "value": "Case",
+          "basis": "workbook-label",
+          "sourceField": "catalog.item",
+          "sourcePages": [
+            5
+          ]
+        }
+      ],
+      "sharedMediaBasis": "The source lesson's reviewed Commons file anchors the same visible produce identity; target-only package, grade, store, or source-note qualifiers remain workbook-label claims.",
+      "reviewBasis": "The already-reviewed green-fig photograph shows the same fruit identity and color; Case stays workbook-only."
+    },
+    {
+      "catalogId": "garlic-loose-bulk",
+      "sourceCatalogId": "garlic-loose",
+      "commonsFile": "Garlic.jpg",
+      "recognitionMode": "label-assisted",
+      "visibleIdentity": {
+        "label": "Loose garlic",
+        "form": "Papery divided bulb",
+        "color": "White",
+        "cue": "White papery bulbs divided into cloves identify loose garlic."
+      },
+      "labelClaims": [
+        {
+          "value": "Bulk",
+          "basis": "workbook-label",
+          "sourceField": "catalog.item",
+          "sourcePages": [
+            4
+          ]
+        }
+      ],
+      "sharedMediaBasis": "The source lesson's reviewed Commons file anchors the same visible produce identity; target-only package, grade, store, or source-note qualifiers remain workbook-label claims.",
+      "reviewBasis": "The published loose-garlic photograph is an exact visible match; Bulk describes the catalog sale presentation."
+    },
+    {
+      "catalogId": "gourds-ornamental",
+      "sourceCatalogId": "pumpkins-gourds",
+      "commonsFile": "Cucurbita pepo ornamental gourds - 14.Autumn.WholeFoods.1440P.NW.WDC.14October2014.jpg",
+      "recognitionMode": "product-and-loose-form",
+      "visibleIdentity": {
+        "label": "Ornamental gourds",
+        "form": "Small hard-shelled decorative gourds",
+        "color": "Mixed",
+        "cue": "Mixed-color small hard-shelled gourds anchor the ornamental-gourd identity."
+      },
+      "sharedMediaBasis": "The source lesson's reviewed Commons file anchors the same visible produce identity, form, and color for this catalog synonym or broader label.",
+      "reviewBasis": "The existing Commons photograph is specifically identified as ornamental gourds and shows the expected mixed forms and colors."
+    },
+    {
+      "catalogId": "kohlrabi-note-on-sheet-kohlrabi-1692-handwritten",
+      "sourceCatalogId": "kohlrabi-green",
+      "commonsFile": "GreenKohlrabi.jpg",
+      "recognitionMode": "label-assisted",
+      "visibleIdentity": {
+        "label": "Kohlrabi",
+        "form": "Round swollen stem with shoots",
+        "color": "Pale green",
+        "cue": "A round swollen pale-green stem with projecting shoots identifies kohlrabi."
+      },
+      "labelClaims": [
+        {
+          "value": "note on sheet: 'Kohlrabi = 1692'",
+          "basis": "workbook-label",
+          "sourceField": "catalog.item",
+          "sourcePages": [
+            2,
+            4
+          ]
+        },
+        {
+          "value": "(handwritten)",
+          "basis": "workbook-label",
+          "sourceField": "catalog.item",
+          "sourcePages": [
+            2,
+            4
+          ]
+        }
+      ],
+      "sharedMediaBasis": "The source lesson's reviewed Commons file anchors the same visible produce identity; target-only package, grade, store, or source-note qualifiers remain workbook-label claims.",
+      "reviewBasis": "The reviewed green-kohlrabi photograph anchors only product identity; the handwritten note is preserved verbatim without resolving its code claim."
+    },
+    {
+      "catalogId": "mangoes",
+      "sourceCatalogId": "mangoes-case-10lb",
+      "commonsFile": "Alphonso mango.jpg",
+      "recognitionMode": "product-and-loose-form",
+      "visibleIdentity": {
+        "label": "Mangoes",
+        "form": "Oval tapered fruit",
+        "color": "Yellow-red",
+        "cue": "Whole yellow-red oval fruit with a tapered end provides the generic mango anchor."
+      },
+      "sharedMediaBasis": "The source lesson's reviewed Commons file anchors the same visible produce identity, form, and color for this catalog synonym or broader label.",
+      "reviewBasis": "The reviewed whole-mango photograph safely supports the broader Mangoes catalog label without importing its source lesson's case quantity."
+    },
+    {
+      "catalogId": "mangoes-ataulfo-case-handwritten",
+      "sourceCatalogId": "mangos-ataulfo",
+      "commonsFile": "Mango Ataulfo.jpg",
+      "recognitionMode": "label-assisted",
+      "lessonTitle": "Mangoes - Ataulfo (Case) (handwritten)",
+      "visibleIdentity": {
+        "label": "Ataulfo mango",
+        "form": "Small curved mango",
+        "color": "Yellow",
+        "cue": "Small curved yellow mangoes identify Ataulfo."
+      },
+      "labelClaims": [
+        {
+          "value": "Case",
+          "basis": "workbook-label",
+          "sourceField": "catalog.item",
+          "sourcePages": [
+            5
+          ]
+        },
+        {
+          "value": "(handwritten)",
+          "basis": "workbook-label",
+          "sourceField": "catalog.item",
+          "sourcePages": [
+            5
+          ]
+        }
+      ],
+      "sharedMediaBasis": "The source lesson's reviewed Commons file anchors the same visible produce identity; target-only package, grade, store, or source-note qualifiers remain workbook-label claims.",
+      "reviewBasis": "The existing Ataulfo photograph is an exact product match; Case and handwritten status remain catalog claims."
+    },
+    {
+      "catalogId": "mangos-ataulfo-case",
+      "sourceCatalogId": "mangos-ataulfo",
+      "commonsFile": "Mango Ataulfo.jpg",
+      "recognitionMode": "label-assisted",
+      "lessonTitle": "Mangos - Ataulfo (Case)",
+      "visibleIdentity": {
+        "label": "Ataulfo mango",
+        "form": "Small curved mango",
+        "color": "Yellow",
+        "cue": "Small curved yellow mangoes identify Ataulfo."
+      },
+      "labelClaims": [
+        {
+          "value": "Case",
+          "basis": "workbook-label",
+          "sourceField": "catalog.item",
+          "sourcePages": [
+            2
+          ]
+        }
+      ],
+      "sharedMediaBasis": "The source lesson's reviewed Commons file anchors the same visible produce identity; target-only package, grade, store, or source-note qualifiers remain workbook-label claims.",
+      "reviewBasis": "The published Ataulfo image anchors the exact mango variety; Case remains label-assisted."
+    },
+    {
+      "catalogId": "melons-bitter-fu-qua",
+      "sourceCatalogId": "bittermelon",
+      "commonsFile": "Bitter melon 01.jpg",
+      "recognitionMode": "product-and-loose-form",
+      "lessonTitle": "Melons - Bitter (Fu Qua)",
+      "visibleIdentity": {
+        "label": "Bitter melon",
+        "form": "Ridged oblong gourd",
+        "color": "Green",
+        "cue": "A deeply ridged oblong green gourd identifies bitter melon, also called Fu Qua."
+      },
+      "sharedMediaBasis": "The source lesson's reviewed Commons file anchors the same visible produce identity, form, and color for this catalog synonym or broader label.",
+      "reviewBasis": "The reviewed bitter-melon photograph anchors the same product and the source-supported Fu Qua synonym."
+    },
+    {
+      "catalogId": "methileaf-herbs",
+      "sourceCatalogId": "methi-leaf-fenugreek",
+      "commonsFile": "Methi leaves.jpg",
+      "recognitionMode": "product-and-loose-form",
+      "visibleIdentity": {
+        "label": "Methi leaf",
+        "form": "Broad leafy stems",
+        "color": "Green",
+        "cue": "Broad green leafy stems identify fresh methi leaf."
+      },
+      "sharedMediaBasis": "The source lesson's reviewed Commons file anchors the same visible produce identity, form, and color for this catalog synonym or broader label.",
+      "reviewBasis": "The published Methi Leaf (Fenugreek) photograph provides a direct synonym and loose-herb identity match for Methileaf."
+    },
+    {
+      "catalogId": "mushrooms-white-bulk-rcwc",
+      "sourceCatalogId": "mushrooms-white-bulk-rcss-exfd-4645-4653",
+      "commonsFile": "1 - button mushrooms.jpg",
+      "recognitionMode": "label-assisted",
+      "visibleIdentity": {
+        "label": "White mushrooms",
+        "form": "Small round caps",
+        "color": "White",
+        "cue": "Small white dome-shaped caps with short pale stems identify white button mushrooms."
+      },
+      "labelClaims": [
+        {
+          "value": "Bulk, RCWC",
+          "basis": "workbook-label",
+          "sourceField": "catalog.item",
+          "sourcePages": [
+            4
+          ]
+        }
+      ],
+      "sharedMediaBasis": "The source lesson's reviewed Commons file anchors the same visible produce identity; target-only package, grade, store, or source-note qualifiers remain workbook-label claims.",
+      "reviewBasis": "The existing white-button-mushroom image anchors product identity; Bulk and RCWC are preserved only as workbook wording."
+    },
+    {
+      "catalogId": "onions-yellow-jumbo-2-case",
+      "sourceCatalogId": "onions-yellow-bulk",
+      "commonsFile": "Yellow onions vegetables.jpg",
+      "recognitionMode": "label-assisted",
+      "visibleIdentity": {
+        "label": "Yellow onion",
+        "form": "Round layered bulb",
+        "color": "Yellow",
+        "cue": "Round yellow-brown papery layered bulbs identify yellow onions."
+      },
+      "labelClaims": [
+        {
+          "value": "Jumbo #2",
+          "basis": "workbook-label",
+          "sourceField": "catalog.item",
+          "sourcePages": [
+            4
+          ]
+        },
+        {
+          "value": "Case",
+          "basis": "workbook-label",
+          "sourceField": "catalog.item",
+          "sourcePages": [
+            4
+          ]
+        }
+      ],
+      "sharedMediaBasis": "The source lesson's reviewed Commons file anchors the same visible produce identity; target-only package, grade, store, or source-note qualifiers remain workbook-label claims.",
+      "reviewBasis": "The reviewed yellow-onion photograph anchors the visible product; Jumbo #2 grade and Case are exact workbook claims."
+    },
+    {
+      "catalogId": "oranges-navel-large",
+      "sourceCatalogId": "oranges-navel",
+      "commonsFile": "Navel orange.jpg",
+      "recognitionMode": "label-assisted",
+      "visibleIdentity": {
+        "label": "Navel orange",
+        "form": "Round citrus with navel",
+        "color": "Orange",
+        "cue": "A round orange fruit with the small navel formation identifies a navel orange."
+      },
+      "labelClaims": [
+        {
+          "value": "Large",
+          "basis": "workbook-label",
+          "sourceField": "catalog.item",
+          "sourcePages": [
+            5
+          ]
+        }
+      ],
+      "sharedMediaBasis": "The source lesson's reviewed Commons file anchors the same visible produce identity; target-only package, grade, store, or source-note qualifiers remain workbook-label claims.",
+      "reviewBasis": "The published navel-orange photograph anchors the exact citrus identity; Large stays a catalog size claim."
+    },
+    {
+      "catalogId": "parsley-curley-herbs",
+      "sourceCatalogId": "parsley-herbs",
+      "commonsFile": "Organic curly parsley.jpg",
+      "recognitionMode": "product-and-loose-form",
+      "visibleIdentity": {
+        "label": "Curly parsley",
+        "form": "Tightly curled herb leaves",
+        "color": "Dark green",
+        "cue": "Tightly curled dark-green leaves identify curly parsley."
+      },
+      "sharedMediaBasis": "The source lesson's reviewed Commons file anchors the same visible produce identity, form, and color for this catalog synonym or broader label.",
+      "reviewBasis": "The existing curly-parsley photograph matches the catalog's Curley spelling variant and raw herb form without importing the source file's organic context."
+    },
+    {
+      "catalogId": "peaches-freestone-case",
+      "sourceCatalogId": "peaches-case",
+      "commonsFile": "Hillview Farms peaches in a basket.jpg",
+      "recognitionMode": "label-assisted",
+      "visibleIdentity": {
+        "label": "Peaches",
+        "form": "Fuzzy round stone fruit",
+        "color": "Yellow-red",
+        "cue": "Whole fuzzy round yellow-red fruit anchors peach identity."
+      },
+      "labelClaims": [
+        {
+          "value": "Freestone",
+          "basis": "workbook-label",
+          "sourceField": "catalog.item",
+          "sourcePages": [
+            5
+          ]
+        },
+        {
+          "value": "Case",
+          "basis": "workbook-label",
+          "sourceField": "catalog.item",
+          "sourcePages": [
+            5
+          ]
+        }
+      ],
+      "sharedMediaBasis": "The source lesson's reviewed Commons file anchors the same visible produce identity; target-only package, grade, store, or source-note qualifiers remain workbook-label claims.",
+      "reviewBasis": "The reviewed whole-peach photograph anchors visible peach identity; Freestone and Case cannot be concluded from the pixels."
+    },
+    {
+      "catalogId": "pears-asian-yellow-2",
+      "sourceCatalogId": "pears-asian-yellow",
+      "commonsFile": "Golden Asian Pear.png",
+      "recognitionMode": "product-and-loose-form",
+      "lessonTitle": "Pears - Asian Yellow",
+      "visibleIdentity": {
+        "label": "Asian yellow pear",
+        "form": "Round apple-shaped pear",
+        "color": "Yellow",
+        "cue": "A round apple-shaped yellow pear identifies the Asian yellow type."
+      },
+      "sharedMediaBasis": "The source lesson's reviewed Commons file anchors the same visible produce identity, form, and color for this catalog synonym or broader label.",
+      "reviewBasis": "The published Asian yellow pear image is an exact visible identity and color match."
+    },
+    {
+      "catalogId": "pears-bartlett-5lb-bag",
+      "sourceCatalogId": "pears-bartlett",
+      "commonsFile": "Bartlett pear.jpg",
+      "recognitionMode": "label-assisted",
+      "lessonTitle": "Pears - Bartlett 5lb (Bag)",
+      "visibleIdentity": {
+        "label": "Bartlett pear",
+        "form": "Classic bell-shaped pear",
+        "color": "Yellow",
+        "cue": "The classic bell-shaped yellow pear anchors Bartlett identity."
+      },
+      "labelClaims": [
+        {
+          "value": "5lb",
+          "basis": "workbook-label",
+          "sourceField": "catalog.item",
+          "sourcePages": [
+            5
+          ]
+        },
+        {
+          "value": "Bag",
+          "basis": "workbook-label",
+          "sourceField": "catalog.item",
+          "sourcePages": [
+            5
+          ]
+        }
+      ],
+      "sharedMediaBasis": "The source lesson's reviewed Commons file anchors the same visible produce identity; target-only package, grade, store, or source-note qualifiers remain workbook-label claims.",
+      "reviewBasis": "The existing Bartlett image truthfully anchors the pear; 5lb and Bag remain workbook retail-unit claims."
+    },
+    {
+      "catalogId": "pears-bosc-large",
+      "sourceCatalogId": "pears-bosc",
+      "commonsFile": "Bosc Pear.jpg",
+      "recognitionMode": "label-assisted",
+      "visibleIdentity": {
+        "label": "Bosc pear",
+        "form": "Long-necked russet pear",
+        "color": "Brown",
+        "cue": "A long-necked brown russet pear identifies Bosc."
+      },
+      "labelClaims": [
+        {
+          "value": "Large",
+          "basis": "workbook-label",
+          "sourceField": "catalog.item",
+          "sourcePages": [
+            5
+          ]
+        }
+      ],
+      "sharedMediaBasis": "The source lesson's reviewed Commons file anchors the same visible produce identity; target-only package, grade, store, or source-note qualifiers remain workbook-label claims.",
+      "reviewBasis": "The reviewed Bosc image is an exact product match; Large is retained as a catalog size qualifier."
+    },
+    {
+      "catalogId": "potato-red-10lb",
+      "sourceCatalogId": "potatoes-red-handwritten",
+      "commonsFile": "Red potatoes.jpg",
+      "recognitionMode": "label-assisted",
+      "lessonTitle": "Potato - Red 10lb",
+      "visibleIdentity": {
+        "label": "Red potato",
+        "form": "Round waxy tuber",
+        "color": "Red",
+        "cue": "A compact round tuber with smooth red skin identifies a red potato."
+      },
+      "labelClaims": [
+        {
+          "value": "10lb",
+          "basis": "workbook-label",
+          "sourceField": "catalog.item",
+          "sourcePages": [
+            4
+          ]
+        }
+      ],
+      "sharedMediaBasis": "The source lesson's reviewed Commons file anchors the same visible produce identity; target-only package, grade, store, or source-note qualifiers remain workbook-label claims.",
+      "reviewBasis": "The published red-potato photograph anchors the exact visible product; 10lb remains a workbook quantity."
+    },
+    {
+      "catalogId": "potato-red-20lb",
+      "sourceCatalogId": "potatoes-red-handwritten",
+      "commonsFile": "Red potatoes.jpg",
+      "recognitionMode": "label-assisted",
+      "lessonTitle": "Potato - Red 20lb",
+      "visibleIdentity": {
+        "label": "Red potato",
+        "form": "Round waxy tuber",
+        "color": "Red",
+        "cue": "A compact round tuber with smooth red skin identifies a red potato."
+      },
+      "labelClaims": [
+        {
+          "value": "20lb",
+          "basis": "workbook-label",
+          "sourceField": "catalog.item",
+          "sourcePages": [
+            4
+          ]
+        }
+      ],
+      "sharedMediaBasis": "The source lesson's reviewed Commons file anchors the same visible produce identity; target-only package, grade, store, or source-note qualifiers remain workbook-label claims.",
+      "reviewBasis": "The published red-potato photograph anchors the exact visible product; 20lb remains a workbook quantity."
+    },
+    {
+      "catalogId": "potato-sweet-jamaican-handwritten",
+      "sourceCatalogId": "potatoes-yams-jamaican-sweet",
+      "commonsFile": "Sweet-potato.JPG",
+      "recognitionMode": "label-assisted",
+      "visibleIdentity": {
+        "label": "Jamaican sweet potato",
+        "form": "Irregular tapered sweet potato",
+        "color": "Purple-brown",
+        "cue": "An irregular tapered purple-brown sweet potato anchors the Jamaican sweet-potato identity."
+      },
+      "labelClaims": [
+        {
+          "value": "(handwritten)",
+          "basis": "workbook-label",
+          "sourceField": "catalog.item",
+          "sourcePages": [
+            4
+          ]
+        }
+      ],
+      "sharedMediaBasis": "The source lesson's reviewed Commons file anchors the same visible produce identity; target-only package, grade, store, or source-note qualifiers remain workbook-label claims.",
+      "reviewBasis": "The existing Jamaican sweet-potato lesson provides the direct product match; handwritten status remains source provenance."
+    },
+    {
+      "catalogId": "potato-white-10lb",
+      "sourceCatalogId": "potatoes-white-bulk",
+      "commonsFile": "Potatoes-5796 - Hans Braxmeier.jpg",
+      "recognitionMode": "label-assisted",
+      "lessonTitle": "Potato - White 10lb",
+      "visibleIdentity": {
+        "label": "White potato",
+        "form": "Round smooth tuber",
+        "color": "White",
+        "cue": "A round smooth cream-white tuber identifies a white potato."
+      },
+      "labelClaims": [
+        {
+          "value": "10lb",
+          "basis": "workbook-label",
+          "sourceField": "catalog.item",
+          "sourcePages": [
+            4
+          ]
+        }
+      ],
+      "sharedMediaBasis": "The source lesson's reviewed Commons file anchors the same visible produce identity; target-only package, grade, store, or source-note qualifiers remain workbook-label claims.",
+      "reviewBasis": "The published white-potato photograph anchors the visible product; 10lb is supplied only by the workbook."
+    },
+    {
+      "catalogId": "potato-yellow-10lb",
+      "sourceCatalogId": "potatoes-yellow-yukon-gold-bulk-handwritten",
+      "commonsFile": "Yukon Gold Creamers (29019239791).jpg",
+      "recognitionMode": "label-assisted",
+      "visibleIdentity": {
+        "label": "Yellow potato",
+        "form": "Round smooth potato",
+        "color": "Yellow-tan",
+        "cue": "Round smooth yellow-tan potatoes provide the yellow-potato visual anchor."
+      },
+      "labelClaims": [
+        {
+          "value": "10lb",
+          "basis": "workbook-label",
+          "sourceField": "catalog.item",
+          "sourcePages": [
+            4
+          ]
+        }
+      ],
+      "sharedMediaBasis": "The source lesson's reviewed Commons file anchors the same visible produce identity; target-only package, grade, store, or source-note qualifiers remain workbook-label claims.",
+      "reviewBasis": "The reviewed Yukon Gold photograph safely anchors the broader yellow-potato identity; 10lb remains label-only."
+    },
+    {
+      "catalogId": "prickly-pears-tray-case",
+      "sourceCatalogId": "prickly-pears-bulk",
+      "commonsFile": "Prickly pears.jpg",
+      "recognitionMode": "label-assisted",
+      "visibleIdentity": {
+        "label": "Prickly pear",
+        "form": "Oval cactus fruit",
+        "color": "Red-green",
+        "cue": "Oval red-green cactus fruit with small areoles identifies prickly pear."
+      },
+      "labelClaims": [
+        {
+          "value": "Tray / Case",
+          "basis": "workbook-label",
+          "sourceField": "catalog.item",
+          "sourcePages": [
+            2,
+            5
+          ]
+        }
+      ],
+      "sharedMediaBasis": "The source lesson's reviewed Commons file anchors the same visible produce identity; target-only package, grade, store, or source-note qualifiers remain workbook-label claims.",
+      "reviewBasis": "The existing prickly-pear image matches the raw fruit identity; Tray / Case is a workbook retail-form claim."
+    },
+    {
+      "catalogId": "radish-bunch",
+      "sourceCatalogId": "radishes-bunch",
+      "commonsFile": "Radish bunches.jpg",
+      "recognitionMode": "product-and-loose-form",
+      "visibleIdentity": {
+        "label": "Radish bunch",
+        "form": "Small round roots with tops",
+        "color": "Red and white",
+        "cue": "Small red-and-white roots attached to leafy tops identify a radish bunch."
+      },
+      "sharedMediaBasis": "The source lesson's reviewed Commons file anchors the same visible produce identity, form, and color for this catalog synonym or broader label.",
+      "reviewBasis": "The published radish-bunch photograph is a direct product, color, and sale-form match."
+    },
+    {
+      "catalogId": "rutabagas",
+      "sourceCatalogId": "rutabaga",
+      "commonsFile": "Swede - rutabaga - veggiegroup.jpg",
+      "recognitionMode": "product-and-loose-form",
+      "visibleIdentity": {
+        "label": "Rutabaga",
+        "form": "Large round waxy root",
+        "color": "Tan and purple",
+        "cue": "A large round tan-and-purple waxy root identifies rutabaga."
+      },
+      "sharedMediaBasis": "The source lesson's reviewed Commons file anchors the same visible produce identity, form, and color for this catalog synonym or broader label.",
+      "reviewBasis": "The existing rutabaga photograph directly supports the plural catalog label with the same raw root identity."
+    },
+    {
+      "catalogId": "tomatoes-vine-ripe-field-bulk",
+      "sourceCatalogId": "tomatoes-vine-ripe-big",
+      "commonsFile": "Strauchtomaten.jpg",
+      "recognitionMode": "label-assisted",
+      "visibleIdentity": {
+        "label": "Vine-ripe tomato",
+        "form": "Large round ripe tomato",
+        "color": "Red",
+        "cue": "Round ripe red tomatoes attached along the vine anchor vine-ripe tomato identity."
+      },
+      "labelClaims": [
+        {
+          "value": "Field",
+          "basis": "workbook-label",
+          "sourceField": "catalog.item",
+          "sourcePages": [
+            3,
+            4
+          ]
+        },
+        {
+          "value": "Bulk",
+          "basis": "workbook-label",
+          "sourceField": "catalog.item",
+          "sourcePages": [
+            3,
+            4
+          ]
+        }
+      ],
+      "sharedMediaBasis": "The source lesson's reviewed Commons file anchors the same visible produce identity; target-only package, grade, store, or source-note qualifiers remain workbook-label claims.",
+      "reviewBasis": "The reviewed vine-tomato image truthfully anchors the visible product; Field and Bulk remain exact workbook qualifiers."
+    },
+    {
+      "catalogId": "yams-white",
+      "sourceCatalogId": "potatoes-yams-white-yam",
+      "commonsFile": "Yam Tubers stacked on a plastic table 01.jpg",
+      "recognitionMode": "product-and-loose-form",
+      "lessonTitle": "Yams - White",
+      "visibleIdentity": {
+        "label": "White yam",
+        "form": "Large cylindrical tuber",
+        "color": "Brown",
+        "cue": "Large cylindrical brown-skinned tubers provide the visible anchor for white yam."
+      },
+      "sharedMediaBasis": "The source lesson's reviewed Commons file anchors the same visible produce identity, form, and color for this catalog synonym or broader label.",
+      "reviewBasis": "The published white-yam photograph is an exact product and whole-tuber match; white names the yam type rather than visible outer skin."
+    }
+  ]
+}

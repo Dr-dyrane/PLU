@@ -2,6 +2,8 @@
 
 import { useEffect, useRef } from "react";
 import {
+  Archive,
+  BookOpenCheck,
   Check,
   CircleDot,
   Clock3,
@@ -13,7 +15,7 @@ import {
 } from "lucide-react";
 
 export type SoldFilter = "all" | "weight" | "each";
-export type LearningFilter = "all" | "ready" | "learned" | "queued";
+export type LearningFilter = "all" | "ready" | "learned" | "mapped" | "queued" | "excluded";
 
 const soldOptions: Array<{
   value: SoldFilter;
@@ -32,14 +34,26 @@ const learningOptions: Array<{
   detail: string;
   icon: typeof Sparkles;
 }> = [
-  { value: "all", label: "All lessons", detail: "Ready and source review", icon: Layers3 },
+  { value: "all", label: "Entire catalog", detail: "Lessons, mappings, and review", icon: Layers3 },
   { value: "ready", label: "Ready to learn", detail: "Available, not completed", icon: Sparkles },
   { value: "learned", label: "Learned", detail: "Completed on this device", icon: Check },
+  {
+    value: "mapped",
+    label: "Mapped reference",
+    detail: "Exact catalog data, not a quiz lesson",
+    icon: BookOpenCheck,
+  },
   {
     value: "queued",
     label: "Needs source review",
     detail: "Held until evidence is verified",
     icon: Clock3,
+  },
+  {
+    value: "excluded",
+    label: "Catalog only",
+    detail: "Outside produce-learning scope",
+    icon: Archive,
   },
 ];
 

@@ -197,7 +197,9 @@ const mappings = [];
 const checkoutCodes = [];
 const assignedCatalogIds = [];
 let readyCount = 0;
+let mappedCount = 0;
 let queuedCount = 0;
+let excludedCount = 0;
 
 assert.equal(storyIds.size, stories.length, "Story IDs must be unique.");
 assert.equal(storyByCatalogId.size, stories.length, "Story catalog IDs must be unique.");
@@ -222,8 +224,8 @@ for (const [index, batch] of batches.entries()) {
     const catalogRecord = catalogById.get(item.catalogId);
     assert.ok(catalogRecord, `${batch.id}/${item.title}: catalog record is missing.`);
     assert.ok(
-      ["ready", "queued"].includes(item.status),
-      `${batch.id}/${item.title}: status must be ready or queued.`,
+      ["ready", "mapped", "queued", "excluded"].includes(item.status),
+      `${batch.id}/${item.title}: unsupported batch status.`,
     );
     assert.ok(
       typeof item.title === "string" && item.title.trim().length > 1,
@@ -235,15 +237,31 @@ for (const [index, batch] of batches.entries()) {
     );
     assignedCatalogIds.push(item.catalogId);
 
-    if (item.status === "queued") {
+    if (item.status !== "ready") {
       assert.equal(
         batch.id,
         "batch-06-catalog-remainder-175",
-        `${batch.id}/${item.title}: only the catalog-remainder batch may contain queued rows.`,
+        `${batch.id}/${item.title}: only the catalog-remainder batch may contain non-ready rows.`,
       );
       assert.ok(
+        !storyByCatalogId.has(item.catalogId),
+        `${batch.id}/${item.title}: non-ready row may not publish a learning story.`,
+      );
+      if (item.status === "mapped") {
+        assert.ok(
+          ["single", "same-label-different-codes", "shared-code"].includes(item.mappingKind),
+          `${batch.id}/${item.title}: mapped row requires a supported mapping kind.`,
+        );
+        assert.ok(
+          typeof item.mappingReason === "string" && item.mappingReason.trim().length > 0,
+          `${batch.id}/${item.title}: mapped row requires a review reason.`,
+        );
+        mappedCount += 1;
+        continue;
+      }
+      assert.ok(
         typeof item.queueReason === "string" && item.queueReason.trim().length > 0,
-        `${batch.id}/${item.title}: queued row requires a reason.`,
+        `${batch.id}/${item.title}: ${item.status} row requires a reason.`,
       );
       if (item.queueReasonCodes != null) {
         assert.ok(
@@ -255,11 +273,8 @@ for (const [index, batch] of batches.entries()) {
           `${batch.id}/${item.title}: queue reason codes must be non-empty strings.`,
         );
       }
-      assert.ok(
-        !storyByCatalogId.has(item.catalogId),
-        `${batch.id}/${item.title}: queued row may not publish a learning story.`,
-      );
-      queuedCount += 1;
+      if (item.status === "queued") queuedCount += 1;
+      else excludedCount += 1;
       continue;
     }
 
@@ -384,11 +399,15 @@ assert.equal(
 assert.equal(
   stories.length,
   readyCount,
-  "Every ready item must have exactly one story, while queued rows must have none.",
+  "Every ready item must have exactly one story, while non-ready rows must have none.",
 );
 assert.equal(mappings.length, readyCount, "Every ready item must have one exact catalog/code mapping.");
-assert.equal(readyCount + queuedCount, catalog.length, "Every catalog row must be ready or queued.");
+assert.equal(
+  readyCount + mappedCount + queuedCount + excludedCount,
+  catalog.length,
+  "Every catalog row must have one explicit learning disposition.",
+);
 
 console.log(
-  `Validated ${batches.length} batches covering ${catalog.length} catalog rows: ${readyCount} exact ready lessons and ${queuedCount} evidence-gated rows.`,
+  `Validated ${batches.length} batches covering ${catalog.length} catalog rows: ${readyCount} ready lessons, ${mappedCount} mapped references, ${queuedCount} evidence-gated rows, and ${excludedCount} catalog-only rows.`,
 );

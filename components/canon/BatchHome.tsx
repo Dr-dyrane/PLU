@@ -2,7 +2,9 @@
 
 import Link from "next/link";
 import {
+  Archive,
   ArrowRight,
+  BookOpenCheck,
   CheckCircle2,
   ChevronDown,
   Clock3,
@@ -64,7 +66,7 @@ function categoryFor(item: BatchItem): Exclude<CategoryFilter, "all"> {
   const family = item.family.trim().toLowerCase();
   if (family === "peppers") return "peppers";
   if (family === "herbs") return "herbs";
-  if (family === "source review") return "other";
+  if (["source review", "mapped reference", "catalog only"].includes(family)) return "other";
   if (fruitFamilies.has(family)) return "fruit";
   return "vegetables";
 }
@@ -91,7 +93,9 @@ export function BatchHome({ batch, stories }: { batch: ProductBatch; stories: Ba
   const [sold, setSold] = useState<SoldFilter>("all");
   const [learning, setLearning] = useState<LearningFilter>("all");
   const [filterOpen, setFilterOpen] = useState(false);
+  const [showAllMapped, setShowAllMapped] = useState(false);
   const [showAllQueued, setShowAllQueued] = useState(false);
+  const [showAllExcluded, setShowAllExcluded] = useState(false);
   const [completedIds, setCompletedIds] = useState<Set<string>>(new Set());
   const [urlReady, setUrlReady] = useState(false);
   const [progressiveWindow, setProgressiveWindow] = useState<ProgressiveWindow>({
@@ -116,7 +120,7 @@ export function BatchHome({ batch, stories }: { batch: ProductBatch; stories: Ba
     setQuery(params.get("q") ?? "");
     if (categories.some((item) => item.value === nextCategory)) setCategory(nextCategory!);
     if (["all", "weight", "each"].includes(nextSold ?? "")) setSold(nextSold!);
-    if (["all", "ready", "learned", "queued"].includes(nextLearning ?? "")) {
+    if (["all", "ready", "learned", "mapped", "queued", "excluded"].includes(nextLearning ?? "")) {
       setLearning(nextLearning!);
     }
     setCompletedIds(readCompleted(stories));
@@ -162,6 +166,8 @@ export function BatchHome({ batch, stories }: { batch: ProductBatch; stories: Ba
             item.title,
             item.code,
             item.family,
+            item.mappingKind ?? "",
+            item.mappingReason ?? "",
             item.queueReason ?? "",
             ...(item.queueReasonCodes ?? []),
             story?.title ?? "",
@@ -192,22 +198,39 @@ export function BatchHome({ batch, stories }: { batch: ProductBatch; stories: Ba
 
       if (learning === "ready" && (record.item.status !== "ready" || record.learned)) return false;
       if (learning === "learned" && !record.learned) return false;
+      if (learning === "mapped" && record.item.status !== "mapped") return false;
       if (learning === "queued" && record.item.status !== "queued") return false;
+      if (learning === "excluded" && record.item.status !== "excluded") return false;
 
       return true;
     });
   }, [category, learning, query, records, sold]);
 
   const ready = filtered.filter((record) => record.item.status === "ready" && record.story);
+  const mapped = filtered.filter((record) => record.item.status === "mapped");
   const queued = filtered.filter((record) => record.item.status === "queued");
+  const excluded = filtered.filter((record) => record.item.status === "excluded");
   const allReady = records.filter((record) => record.item.status === "ready" && record.story);
+  const allMapped = records.filter((record) => record.item.status === "mapped");
+  const allQueued = records.filter((record) => record.item.status === "queued");
+  const allExcluded = records.filter((record) => record.item.status === "excluded");
   const learnedCount = records.filter((record) => record.learned).length;
   const first = allReady.find((record) => !record.learned) ?? allReady[0];
   const visibleQueued =
     showAllQueued || query.trim() || learning === "queued" || category !== "all" || sold !== "all"
       ? queued
       : queued.slice(0, 4);
+  const visibleMapped =
+    showAllMapped || query.trim() || learning === "mapped" || category !== "all" || sold !== "all"
+      ? mapped
+      : mapped.slice(0, 4);
+  const visibleExcluded =
+    showAllExcluded || query.trim() || learning === "excluded" || category !== "all" || sold !== "all"
+      ? excluded
+      : excluded.slice(0, 4);
+  const hiddenMapped = Math.max(0, mapped.length - visibleMapped.length);
   const hiddenQueued = Math.max(0, queued.length - visibleQueued.length);
+  const hiddenExcluded = Math.max(0, excluded.length - visibleExcluded.length);
   const activeFilterCount = Number(sold !== "all") + Number(learning !== "all");
   const hasDiscoveryState = Boolean(
     query.trim() || category !== "all" || sold !== "all" || learning !== "all",
@@ -270,7 +293,9 @@ export function BatchHome({ batch, stories }: { batch: ProductBatch; stories: Ba
     setCategory("all");
     setSold("all");
     setLearning("all");
+    setShowAllMapped(false);
     setShowAllQueued(false);
+    setShowAllExcluded(false);
   };
 
   return (
@@ -286,10 +311,10 @@ export function BatchHome({ batch, stories }: { batch: ProductBatch; stories: Ba
           </Link>
           <div
             className="batchCount"
-            aria-label={`${learnedCount} learned, ${allReady.length} ready, ${batch.size} total`}
+            aria-label={`${learnedCount} learned, ${allReady.length} ready, ${allMapped.length} mapped, ${allQueued.length} needing source review, ${allExcluded.length} catalog only, ${batch.size} total`}
           >
             <span>{learnedCount}</span>
-            <small>learned · {allReady.length} ready</small>
+            <small>learned · {allReady.length} ready · {allQueued.length} review</small>
           </div>
         </header>
 
@@ -436,6 +461,55 @@ export function BatchHome({ batch, stories }: { batch: ProductBatch; stories: Ba
           </section>
         )}
 
+        {mapped.length > 0 && (
+          <section className="batchSection batchQueue batchMapped" aria-labelledby="mappedHeading">
+            <div className="batchSectionHeading">
+              <div>
+                <BookOpenCheck aria-hidden="true" />
+                <h2 id="mappedHeading">Mapped, not quizzed</h2>
+              </div>
+              {hiddenMapped > 0 || showAllMapped ? (
+                <button
+                  className="batchQueueToggle"
+                  type="button"
+                  aria-expanded={showAllMapped}
+                  onClick={() => setShowAllMapped((value) => !value)}
+                >
+                  {showAllMapped ? "Show less" : `View all ${mapped.length}`}
+                  <ChevronDown aria-hidden="true" />
+                </button>
+              ) : (
+                <span>{mapped.length} references</span>
+              )}
+            </div>
+            <p className="batchSectionNote">
+              Exact catalog relationships kept as reference data until both the answer and its recognition evidence are safe to quiz.
+            </p>
+            <div className="batchQueueGrid">
+              {visibleMapped.map(({ item }) => (
+                <article className="batchQueueCard batchMappedCard" key={item.catalogId}>
+                  <span>{String(item.order).padStart(3, "0")}</span>
+                  <div>
+                    <strong>{item.title}</strong>
+                    <small>{item.mappingReason ?? "Exact catalog mapping"}</small>
+                  </div>
+                  <b className="batchReferenceCode">{item.code}</b>
+                </article>
+              ))}
+              {hiddenMapped > 0 && (
+                <button
+                  className="batchQueueMore"
+                  type="button"
+                  onClick={() => setShowAllMapped(true)}
+                >
+                  <span>+{hiddenMapped}</span>
+                  <small>more mapped references</small>
+                </button>
+              )}
+            </div>
+          </section>
+        )}
+
         {queued.length > 0 && (
           <section className="batchSection batchQueue" aria-labelledby="queueHeading">
             <div className="batchSectionHeading">
@@ -443,15 +517,19 @@ export function BatchHome({ batch, stories }: { batch: ProductBatch; stories: Ba
                 <Clock3 aria-hidden="true" />
                 <h2 id="queueHeading">Needs source review</h2>
               </div>
-              <button
-                className="batchQueueToggle"
-                type="button"
-                aria-expanded={showAllQueued}
-                onClick={() => setShowAllQueued((value) => !value)}
-              >
-                {showAllQueued ? "Show less" : `View all ${queued.length}`}
-                <ChevronDown aria-hidden="true" />
-              </button>
+              {hiddenQueued > 0 || showAllQueued ? (
+                <button
+                  className="batchQueueToggle"
+                  type="button"
+                  aria-expanded={showAllQueued}
+                  onClick={() => setShowAllQueued((value) => !value)}
+                >
+                  {showAllQueued ? "Show less" : `View all ${queued.length}`}
+                  <ChevronDown aria-hidden="true" />
+                </button>
+              ) : (
+                <span>{queued.length} rows</span>
+              )}
             </div>
             <div className="batchQueueGrid">
               {visibleQueued.map(({ item }) => (
@@ -478,7 +556,56 @@ export function BatchHome({ batch, stories }: { batch: ProductBatch; stories: Ba
           </section>
         )}
 
-        {!ready.length && !queued.length && (
+        {excluded.length > 0 && (
+          <section className="batchSection batchQueue batchExcluded" aria-labelledby="excludedHeading">
+            <div className="batchSectionHeading">
+              <div>
+                <Archive aria-hidden="true" />
+                <h2 id="excludedHeading">Catalog only</h2>
+              </div>
+              {hiddenExcluded > 0 || showAllExcluded ? (
+                <button
+                  className="batchQueueToggle"
+                  type="button"
+                  aria-expanded={showAllExcluded}
+                  onClick={() => setShowAllExcluded((value) => !value)}
+                >
+                  {showAllExcluded ? "Show less" : `View all ${excluded.length}`}
+                  <ChevronDown aria-hidden="true" />
+                </button>
+              ) : (
+                <span>{excluded.length} rows</span>
+              )}
+            </div>
+            <p className="batchSectionNote">
+              Retained from the source workbook for completeness, but outside the produce-learning curriculum.
+            </p>
+            <div className="batchQueueGrid">
+              {visibleExcluded.map(({ item }) => (
+                <article className="batchQueueCard batchExcludedCard" key={item.catalogId}>
+                  <span>{String(item.order).padStart(3, "0")}</span>
+                  <div>
+                    <strong>{item.title}</strong>
+                    <small>{item.queueReason ?? "Outside produce-learning scope"}</small>
+                  </div>
+                  <Archive aria-hidden="true" />
+                </article>
+              ))}
+              {hiddenExcluded > 0 && (
+                <button
+                  className="batchQueueMore"
+                  type="button"
+                  onClick={() => setShowAllExcluded(true)}
+                >
+                  <span>+{hiddenExcluded}</span>
+                  <small>more catalog-only rows</small>
+                </button>
+              )}
+            </div>
+          </section>
+        )}
+
+        {!ready.length && !mapped.length && !queued.length && !excluded.length && (
           <section className="batchEmpty" aria-live="polite">
             <SearchX aria-hidden="true" />
             <h2>No match yet.</h2>

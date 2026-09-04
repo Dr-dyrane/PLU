@@ -27,7 +27,9 @@ The home page combines them into one searchable **Catalog 475** collection. The 
 
 Batch 05 is selected from the remaining normalized catalog rows. It rejects already-published IDs, uncertain codes, non-produce rows, and weak media matches before accepting exactly 100 lessons.
 
-Batch 06 accounts for every source row left after Batch 05. Its full-remainder pass searches all 163 in-scope identities, not only the old strict loose-produce subset: 108 returned candidate media, all 422 primary/alternative images were decoded and pixel-reviewed, and 75 candidates passed visual review. The admission gate now yields 53 ready Batch 06 lessons and 122 searchable queued rows, bringing the ready lesson total to 353. Approved media for code- or identity-blocked rows is retained as evidence without inventing or guessing a checkout mapping.
+Batch 06 accounts for every source row left after Batch 05. Its full-remainder pass searched all 163 in-scope identities, not only the old strict loose-produce subset: 108 returned candidate media, all 422 primary/alternative images were decoded and pixel-reviewed, and 75 candidates passed visual review. A second catalog-relationship pass reused 22 already-reviewed recognition photos where the remaining row had one exact code and a safe label-assisted lesson contract. Batch 06 now contains 75 ready lessons, 39 exact mapped references, 49 rows needing source review, and 12 catalog-only rows, bringing the ready lesson total to 375.
+
+Mapped references preserve exact catalog truth without forcing multi-code, shared-code, or not-yet-photographed relationships into a one-answer recall lesson. The 49-row review queue is limited to real evidence gaps: 26 identity adjudications, 9 missing-code captures, 13 code reconciliations, and 1 store-code classification.
 
 ## Product stories
 
@@ -52,7 +54,7 @@ The image pipeline separates three checks:
 2. **Subject:** prepared meals, catalogue pages, illustrations, animals, historical scans, and unrelated objects are rejected.
 3. **Delivery:** the selected Wikimedia URL must resolve as an image with sufficient dimensions.
 
-`media-resolution-batch04.json` records the corrected audit of products 101–200. `media-resolution-batch05.json` records every accepted and rejected Batch 05 candidate. `media-discovery-batch06.json` records the complete non-publishing search pass, `data/batch-06-media-review-decisions.json` preserves the pixel decisions, and `media-resolution-batch06.json` records the subset whose identity, code, label, and media gates all passed.
+`media-resolution-batch04.json` records the corrected audit of products 101–200. `media-resolution-batch05.json` records every accepted and rejected Batch 05 candidate. `media-discovery-batch06.json` records the complete non-publishing search pass, `data/batch-06-media-review-decisions.json` preserves the pixel decisions, `data/batch-06-media-reuse.json` records reviewed source/target reuse, and `media-resolution-batch06.json` records the subset whose identity, code, label, and media gates all passed.
 
 ## Appearance
 
@@ -86,6 +88,6 @@ npm run typecheck
 npm run build
 ```
 
-The generated Batch 04–06 data are committed so ordinary Vercel builds are deterministic and do not depend on live media search. A new discovery report invalidates the old lane indexes and must be pixel-reviewed again before compilation. Contact-sheet output is local review material under `artifacts/`; the committed review decisions and `public/media-render-audit.json` preserve the durable evidence. The production build verifies complete 475-row accounting, exact mappings for every ready lesson, explicit reasons for every queued row, media coverage, label-assisted qualifier boundaries, semantic image identity, story uniqueness, visible classification labels, multi-family interaction, semantic appearance, native interaction safeguards, safe areas, touch targets, clean learner copy, and static rendering.
+The generated Batch 04–06 data are committed so ordinary Vercel builds are deterministic and do not depend on live media search. A new discovery report invalidates the old lane indexes and must be pixel-reviewed again before compilation. Contact-sheet output is local review material under `artifacts/`; the committed review decisions and `public/media-render-audit.json` preserve the durable evidence. The production build verifies complete 475-row accounting, exact mappings for every ready lesson, the 61-row mapping ledger, the 44-row reuse ledger, explicit reasons for every queued or excluded row, media coverage, label-assisted qualifier boundaries, semantic image identity, story uniqueness, visible classification labels, multi-family interaction, semantic appearance, native interaction safeguards, safe areas, touch targets, clean learner copy, and static rendering.
 
 Node is pinned to `22.x`. No database, authentication, API, or environment variable is required.

@@ -5,7 +5,12 @@ import type {
   ProductStory,
 } from "@/types/trace";
 
-export type BatchItemStatus = "ready" | "queued";
+export type BatchItemStatus = "ready" | "mapped" | "queued" | "excluded";
+
+export type CatalogMappingKind =
+  | "single"
+  | "same-label-different-codes"
+  | "shared-code";
 
 export interface BatchItem {
   order: number;
@@ -14,6 +19,8 @@ export interface BatchItem {
   code: string;
   family: string;
   status: BatchItemStatus;
+  mappingKind?: CatalogMappingKind;
+  mappingReason?: string;
   queueReason?: string;
   queueReasonCodes?: string[];
   mediaReason?: string;

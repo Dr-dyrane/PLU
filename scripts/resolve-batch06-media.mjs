@@ -251,7 +251,9 @@ const report = {
   sourceCount: 0,
   media: [],
   rejected: [],
+  mapped: [],
   queued: [],
+  excluded: [],
 };
 
 for (const [candidateIndex, item] of candidates.entries()) {
@@ -494,11 +496,41 @@ const sourceQueued = dispositions
     queueReason: item.reason,
     queueReasonCodes: item.reasonCodes,
   }));
-const queuedItems = [...mediaQueued, ...sourceQueued].map((item, index) => ({
+const mappedItems = dispositions
+  .filter((item) => item.decision === "mapped")
+  .map((item) => ({
+    catalogId: item.catalogId,
+    title: item.title,
+    code: item.code,
+    family: item.family,
+    status: "mapped",
+    mappingKind: item.mappingKind,
+    mappingReason: item.reason,
+  }));
+const excludedItems = dispositions
+  .filter((item) => item.decision === "excluded")
+  .map((item) => ({
+    catalogId: item.catalogId,
+    title: item.title,
+    code: item.code,
+    family: item.family,
+    status: "excluded",
+    queueReason: item.reason,
+    queueReasonCodes: item.reasonCodes,
+  }));
+const mappedWithOrder = mappedItems.map((item, index) => ({
   ...item,
   order: readyItems.length + index + 1,
 }));
-const items = [...readyItems, ...queuedItems];
+const queuedItems = [...mediaQueued, ...sourceQueued].map((item, index) => ({
+  ...item,
+  order: readyItems.length + mappedWithOrder.length + index + 1,
+}));
+const excludedWithOrder = excludedItems.map((item, index) => ({
+  ...item,
+  order: readyItems.length + mappedWithOrder.length + queuedItems.length + index + 1,
+}));
+const items = [...readyItems, ...mappedWithOrder, ...queuedItems, ...excludedWithOrder];
 if (items.length !== EXPECTED_REMAINDER) {
   throw new Error(`Batch 06 manifest contains ${items.length}/${EXPECTED_REMAINDER} rows.`);
 }
@@ -508,13 +540,15 @@ const batch = {
   id: "batch-06-catalog-remainder-175",
   title: "Catalog remainder 175",
   size: items.length,
-  strategy: "Human-reviewed lessons plus an explicit evidence-gated disposition for every remaining source row",
+  strategy: "Human-reviewed lessons, exact catalog mappings, evidence-gated source review, and explicit out-of-scope rows",
   items,
 };
 
 await mkdir(PUBLIC_URL, { recursive: true });
 report.sourceCount = acceptedSource.length;
+report.mapped = mappedWithOrder;
 report.queued = queuedItems.map(({ order, ...item }) => ({ order, ...item }));
+report.excluded = excludedWithOrder;
 await writeFile(REPORT_URL, `${JSON.stringify(report, null, 2)}\n`, "utf8");
 
 await writeFile(SOURCE_URL, `${JSON.stringify(acceptedSource, null, 2)}\n`, "utf8");
@@ -522,5 +556,5 @@ await writeFile(BATCH_URL, `${JSON.stringify(batch, null, 2)}\n`, "utf8");
 await writeFile(SEED_URL, `${JSON.stringify(seeds, null, 2)}\n`, "utf8");
 
 console.log(
-  `Generated Batch 06 with ${readyItems.length} ready lessons and ${queuedItems.length} evidence-gated rows.`,
+  `Generated Batch 06 with ${readyItems.length} ready lessons, ${mappedWithOrder.length} mapped references, ${queuedItems.length} evidence-gated rows, and ${excludedWithOrder.length} catalog-only rows.`,
 );
