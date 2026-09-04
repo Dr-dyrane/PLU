@@ -1,0 +1,878 @@
+{
+  "schemaVersion": 1,
+  "batch": "06",
+  "method": "Pixel review of every primary and alternative returned by the full 163-identity discovery pass.",
+  "summary": {
+    "discovered": 108,
+    "approved": 75,
+    "rejected": 33,
+    "codeSupportedApproved": 47,
+    "promotedFromReview": 41
+  },
+  "items": [
+    {
+      "reportIndex": 0,
+      "catalogId": "aloe",
+      "decision": "approved",
+      "selectedFile": "Aloe vera for sale.jpg",
+      "reason": "Clearly shows loose, thick aloe leaves for sale.",
+      "codeResolution": "catalog-supported"
+    },
+    {
+      "reportIndex": 1,
+      "catalogId": "apples-ambrosia-bin",
+      "decision": "approved",
+      "selectedFile": "Ambrosia apples 2017 A2.jpg",
+      "reason": "Clear red-yellow apples presented in bulk bin form.",
+      "codeResolution": "catalog-supported"
+    },
+    {
+      "reportIndex": 2,
+      "catalogId": "apples-gala",
+      "decision": "approved",
+      "selectedFile": "2015-02-xx Gala (apple).jpg",
+      "reason": "Superior alternative with an isolated, clearly visible red-yellow Gala-compatible apple.",
+      "codeResolution": "primary-code-required"
+    },
+    {
+      "reportIndex": 3,
+      "catalogId": "apples-gala-orchard-run",
+      "decision": "approved",
+      "selectedFile": "2015-02-xx Gala (apple).jpg",
+      "reason": "Clearly shows a Gala-compatible apple; orchard-run grade can remain workbook evidence.",
+      "codeResolution": "catalog-supported"
+    },
+    {
+      "reportIndex": 4,
+      "catalogId": "apples-ginger-gold-orchard-run",
+      "decision": "approved",
+      "selectedFile": "Malus Ginger-Gold.jpg",
+      "reason": "Clearly shows pale green-yellow apples growing on the tree.",
+      "codeResolution": "catalog-supported"
+    },
+    {
+      "reportIndex": 5,
+      "catalogId": "apples-honeycrisp-orchard-run",
+      "decision": "approved",
+      "selectedFile": "Honeycrisp-Apple.jpg",
+      "reason": "Clean, isolated red-yellow apple with unobstructed form.",
+      "codeResolution": "catalog-supported"
+    },
+    {
+      "reportIndex": 6,
+      "catalogId": "apples-mcintosh-orchard-bin",
+      "decision": "approved",
+      "selectedFile": "McIntosh Apples.jpg",
+      "reason": "Superior alternative with clear dark-red apples grouped in a box bin.",
+      "codeResolution": "catalog-supported"
+    },
+    {
+      "reportIndex": 7,
+      "catalogId": "apples-red-delicious-2",
+      "decision": "approved",
+      "selectedFile": "Red delicious red chief apple.JPG",
+      "reason": "Two unobstructed deep-red apples with compatible identity and color.",
+      "codeResolution": "primary-code-required"
+    },
+    {
+      "reportIndex": 8,
+      "catalogId": "apples-royal-gala-2",
+      "decision": "approved",
+      "selectedFile": "Royal Gala apple.jpg",
+      "reason": "Clear isolated red-yellow apple with no competing subjects.",
+      "codeResolution": "primary-code-required"
+    },
+    {
+      "reportIndex": 9,
+      "catalogId": "apples-spartan-orchard-run-bin",
+      "decision": "approved",
+      "selectedFile": "Spartan Apple.jpg",
+      "reason": "Basket of dark-red apples with a visible Spartan label.",
+      "codeResolution": "catalog-supported"
+    },
+    {
+      "reportIndex": 10,
+      "catalogId": "apples-sunrise-orchard-run",
+      "decision": "approved",
+      "selectedFile": "Sunrise apple 20240127 151109.jpg",
+      "reason": "Superior alternative showing actual red-green apples in a market basket instead of a distant orchard.",
+      "codeResolution": "catalog-supported"
+    },
+    {
+      "reportIndex": 11,
+      "catalogId": "apricots-2",
+      "decision": "approved",
+      "selectedFile": "Apricots real2.jpg",
+      "reason": "Clear close-up of multiple whole orange apricots.",
+      "codeResolution": "primary-code-required"
+    },
+    {
+      "reportIndex": 12,
+      "catalogId": "artichokes-small-handwritten",
+      "decision": "rejected",
+      "selectedFile": null,
+      "reason": "Candidates show prepared dishes or unrelated land art, with no clear whole small artichoke.",
+      "codeResolution": "conflict-review-required"
+    },
+    {
+      "reportIndex": 13,
+      "catalogId": "asparagus-organic",
+      "decision": "approved",
+      "selectedFile": "HK CWB 銅鑼灣 Causeway Bay 軒尼詩道 500 Hennessy Road 希慎廣場 Hysan Place mall B2 basement shop MarketPlace by Jasons Supermarket October 2021 SS2 02.jpg",
+      "reason": "Superior alternative showing many unmistakable raw green asparagus bundles; organic status remains workbook-only.",
+      "codeResolution": "catalog-supported"
+    },
+    {
+      "reportIndex": 14,
+      "catalogId": "avocado-5ct-bag-handwritten",
+      "decision": "approved",
+      "selectedFile": "Avocado with cross section edit.jpg",
+      "reason": "Clean whole-and-halved avocado reference; package count can remain workbook-only.",
+      "codeResolution": "catalog-supported"
+    },
+    {
+      "reportIndex": 15,
+      "catalogId": "avocado-organic-3ct",
+      "decision": "approved",
+      "selectedFile": "Organic avocado.jpg",
+      "reason": "Superior alternative showing an unmistakable whole green avocado instead of a prepared dish.",
+      "codeResolution": "catalog-supported"
+    },
+    {
+      "reportIndex": 16,
+      "catalogId": "bananas-case",
+      "decision": "approved",
+      "selectedFile": "Bananas on countertop.JPG",
+      "reason": "Clean close-up of a whole yellow banana bunch; case qualifier can remain workbook-only.",
+      "codeResolution": "catalog-supported"
+    },
+    {
+      "reportIndex": 17,
+      "catalogId": "bananas-baby-bananas-mini-4186",
+      "decision": "rejected",
+      "selectedFile": null,
+      "reason": "The only candidate shows sweet bread or cookies, not bananas.",
+      "codeResolution": "conflict-review-required"
+    },
+    {
+      "reportIndex": 18,
+      "catalogId": "bananas-red",
+      "decision": "approved",
+      "selectedFile": "\"Red banana\".jpg",
+      "reason": "Superior alternative with a close, well-lit bunch showing unmistakable red-orange banana form.",
+      "codeResolution": "conflict-review-required"
+    },
+    {
+      "reportIndex": 19,
+      "catalogId": "bean-sprouts-case",
+      "decision": "approved",
+      "selectedFile": "Bean sprouts 04.jpg",
+      "reason": "Superior alternative showing unmistakable fresh sprouts in bulk container form.",
+      "codeResolution": "catalog-supported"
+    },
+    {
+      "reportIndex": 20,
+      "catalogId": "beans-green-case",
+      "decision": "rejected",
+      "selectedFile": null,
+      "reason": "Every candidate shows cut, cooked, or actively prepared beans rather than whole raw retail green beans.",
+      "codeResolution": "catalog-supported"
+    },
+    {
+      "reportIndex": 21,
+      "catalogId": "beets-10lb",
+      "decision": "rejected",
+      "selectedFile": null,
+      "reason": "Candidates are cut or prepared, wrong-colored beet varieties, or an unusable sugar-beet crop; none shows whole red-purple round roots.",
+      "codeResolution": "catalog-supported"
+    },
+    {
+      "reportIndex": 22,
+      "catalogId": "blueberries-2lb",
+      "decision": "approved",
+      "selectedFile": "A generous handful of blueberries depicts the rich abundance of berries that may be found in Alaskan areas. (d84880d1-1dd8-b71b-0b3d-6380eca4c663).jpg",
+      "reason": "Superior alternative with a close, unobstructed handful of blueberries and no mixed fruit.",
+      "codeResolution": "catalog-supported"
+    },
+    {
+      "reportIndex": 23,
+      "catalogId": "cabbage-sour",
+      "decision": "rejected",
+      "selectedFile": null,
+      "reason": "Candidates show raw cabbage or preparation steps, not a visibly finished sour-cabbage product.",
+      "codeResolution": "catalog-supported"
+    },
+    {
+      "reportIndex": 24,
+      "catalogId": "cherimoya",
+      "decision": "approved",
+      "selectedFile": "Cherimoya fruit basket 1.jpg",
+      "reason": "Superior alternative showing a basket of clearly visible whole knobbly cherimoya fruit.",
+      "codeResolution": "primary-code-required"
+    },
+    {
+      "reportIndex": 25,
+      "catalogId": "cherimoya-2",
+      "decision": "approved",
+      "selectedFile": "Cherimoya fruit basket 1.jpg",
+      "reason": "Strongest available view, clearly showing whole cherimoyas in a basket.",
+      "codeResolution": "primary-code-required"
+    },
+    {
+      "reportIndex": 26,
+      "catalogId": "cherries-white-ranier-264497",
+      "decision": "rejected",
+      "selectedFile": null,
+      "reason": "All five candidates depict dragonflies, not cherries.",
+      "codeResolution": "conflict-review-required"
+    },
+    {
+      "reportIndex": 27,
+      "catalogId": "citrus-bulk-unlabelled-row-1st",
+      "decision": "approved",
+      "selectedFile": "Citrus japonica.jpg",
+      "reason": "Superior alternative clearly shows multiple round orange-yellow citrus fruits; the primary is a single green fruit.",
+      "codeResolution": "catalog-supported"
+    },
+    {
+      "reportIndex": 28,
+      "catalogId": "citrus-bulk-unlabelled-row-2nd",
+      "decision": "approved",
+      "selectedFile": "Citrus japonica.jpg",
+      "reason": "Clearly shows multiple round orange-yellow citrus fruits on the tree.",
+      "codeResolution": "catalog-supported"
+    },
+    {
+      "reportIndex": 29,
+      "catalogId": "clementines-3lb",
+      "decision": "approved",
+      "selectedFile": "Clementines citrus fruit (klementiner) EXTRA (Coop supermarket) Sem Norway 2017-11-07.jpg",
+      "reason": "Clear frame-filling display of whole orange clementines; package weight can remain workbook-only.",
+      "codeResolution": "catalog-supported"
+    },
+    {
+      "reportIndex": 30,
+      "catalogId": "corn-tray-of-5",
+      "decision": "rejected",
+      "selectedFile": null,
+      "reason": "The only candidate shows prepared corn dogs, not raw corn ears.",
+      "codeResolution": "catalog-supported"
+    },
+    {
+      "reportIndex": 31,
+      "catalogId": "cucumbers-dill-case",
+      "decision": "rejected",
+      "selectedFile": null,
+      "reason": "All candidates show prepared cucumber cups, pickles, dip, or active preparation rather than clear whole dill cucumbers.",
+      "codeResolution": "catalog-supported"
+    },
+    {
+      "reportIndex": 32,
+      "catalogId": "dill-weed-pickling-herbs",
+      "decision": "approved",
+      "selectedFile": "Samara Market 04 Dill, lots of dill (4136882030).jpg",
+      "reason": "Superior alternative clearly shows abundant fresh green dill bunches at market; the primary is a landscape of the town Dill.",
+      "codeResolution": "catalog-supported"
+    },
+    {
+      "reportIndex": 33,
+      "catalogId": "eddoes-handwritten",
+      "decision": "approved",
+      "selectedFile": "Eddoes at Church Fruit Farm BK NYC.jpg",
+      "reason": "Clearly shows a retail bin of small brown hairy eddoe corms.",
+      "codeResolution": "source-required"
+    },
+    {
+      "reportIndex": 34,
+      "catalogId": "eggplant-purple-case",
+      "decision": "approved",
+      "selectedFile": "HK SYP Best of Best Vegetable purple Eggplant Aug-2012.JPG",
+      "reason": "Clearly shows a bulk retail display of smooth purple eggplants.",
+      "codeResolution": "catalog-supported"
+    },
+    {
+      "reportIndex": 35,
+      "catalogId": "figgs-black-case",
+      "decision": "rejected",
+      "selectedFile": null,
+      "reason": "Every candidate depicts FIG artistic gymnasts, not black figs.",
+      "codeResolution": "catalog-supported"
+    },
+    {
+      "reportIndex": 36,
+      "catalogId": "figgs-green-case",
+      "decision": "approved",
+      "selectedFile": "Common fig - leaves and green figs.jpg",
+      "reason": "Clearly shows several green figs with the expected rounded teardrop form on a fig tree.",
+      "codeResolution": "catalog-supported"
+    },
+    {
+      "reportIndex": 37,
+      "catalogId": "figs-black-case",
+      "decision": "rejected",
+      "selectedFile": null,
+      "reason": "Every candidate depicts FIG artistic gymnasts, not black figs.",
+      "codeResolution": "catalog-supported"
+    },
+    {
+      "reportIndex": 38,
+      "catalogId": "figs-green-case",
+      "decision": "rejected",
+      "selectedFile": null,
+      "reason": "The only fruit candidate appears dark purple-black rather than green; the remaining alternatives are a distant tree or gymnasts.",
+      "codeResolution": "catalog-supported"
+    },
+    {
+      "reportIndex": 39,
+      "catalogId": "garlic-peeled-5lb",
+      "decision": "rejected",
+      "selectedFile": null,
+      "reason": "The only candidate explicitly shows overripe, sprouting peeled cloves and is not a usable fresh-produce anchor.",
+      "codeResolution": "catalog-supported"
+    },
+    {
+      "reportIndex": 40,
+      "catalogId": "garlic-1kg-bagged",
+      "decision": "approved",
+      "selectedFile": "Garlic Acceptance, Garlic History and Garlic Uses..jpg",
+      "reason": "Clearly shows intact white garlic bulbs in a transparent bag; bag weight can remain workbook-only.",
+      "codeResolution": "catalog-supported"
+    },
+    {
+      "reportIndex": 41,
+      "catalogId": "grapefruit-bin",
+      "decision": "approved",
+      "selectedFile": "Citrus paradisi (Grapefruit, pink).jpg",
+      "reason": "Clean image shows whole and cut round grapefruit with unmistakable pink flesh.",
+      "codeResolution": "conflict-review-required"
+    },
+    {
+      "reportIndex": 42,
+      "catalogId": "grapes-green-seedless-2lb",
+      "decision": "approved",
+      "selectedFile": "\"Bunch of Green Grapes in Salem\".jpg",
+      "reason": "Superior alternative clearly shows clustered pale-green grape berries without unrelated subjects; seedless and weight remain workbook-only.",
+      "codeResolution": "catalog-supported"
+    },
+    {
+      "reportIndex": 43,
+      "catalogId": "grapes-red-seedless-2lb",
+      "decision": "approved",
+      "selectedFile": "Red grapes (1).jpg",
+      "reason": "Superior alternative isolates a clear cluster of red grapes; seedless and weight remain workbook-only.",
+      "codeResolution": "catalog-supported"
+    },
+    {
+      "reportIndex": 44,
+      "catalogId": "jicama-roots",
+      "decision": "approved",
+      "selectedFile": "Jicama Ecuador 2.jpg",
+      "reason": "Clearly shows freshly dug whole brown jicama roots with the expected firm tuber form.",
+      "codeResolution": "source-required"
+    },
+    {
+      "reportIndex": 45,
+      "catalogId": "kiwi-1kg",
+      "decision": "approved",
+      "selectedFile": "Kiwi aka.jpg",
+      "reason": "Clean isolated view of whole brown kiwi fruit and green cross-sections; weight can remain workbook-only.",
+      "codeResolution": "catalog-supported"
+    },
+    {
+      "reportIndex": 46,
+      "catalogId": "kohlrabi-note-on-sheet-kohlrabi-1692-handwritten",
+      "decision": "rejected",
+      "selectedFile": null,
+      "reason": "The only candidate is a damaged cut stem with fly larvae, not a usable whole kohlrabi anchor.",
+      "codeResolution": "catalog-supported"
+    },
+    {
+      "reportIndex": 47,
+      "catalogId": "lettuce-boston-dome",
+      "decision": "approved",
+      "selectedFile": "New Lettuce (6193662526).jpg",
+      "reason": "Clearly shows two harvested soft-leaf Boston-style lettuce heads; dome packaging can remain workbook-only.",
+      "codeResolution": "catalog-supported"
+    },
+    {
+      "reportIndex": 48,
+      "catalogId": "lettuce-iceberg-organic",
+      "decision": "rejected",
+      "selectedFile": null,
+      "reason": "The image is a distant mixed lettuce garden with no clear compact iceberg head.",
+      "codeResolution": "catalog-supported"
+    },
+    {
+      "reportIndex": 49,
+      "catalogId": "limes-key-1lb",
+      "decision": "approved",
+      "selectedFile": "Key lime (Citrus × aurantiifolia) - DSC09279.jpg",
+      "reason": "Superior alternative clearly shows a large loose pile of small round green key limes; weight remains workbook-only.",
+      "codeResolution": "catalog-supported"
+    },
+    {
+      "reportIndex": 50,
+      "catalogId": "mangoes",
+      "decision": "rejected",
+      "selectedFile": null,
+      "reason": "The whole-fruit candidates are green while the stated visible color is yellow-red; the remaining alternatives are sliced prepared mango.",
+      "codeResolution": "conflict-review-required"
+    },
+    {
+      "reportIndex": 51,
+      "catalogId": "mangoes-ataulfo-case-handwritten",
+      "decision": "rejected",
+      "selectedFile": null,
+      "reason": "Every candidate is an unlabeled side-by-side comparison of Ataulfo with a different mango variety, making the target visually ambiguous.",
+      "codeResolution": "catalog-supported"
+    },
+    {
+      "reportIndex": 52,
+      "catalogId": "mangoes-case-10lb",
+      "decision": "approved",
+      "selectedFile": "Alphonso mango.jpg",
+      "reason": "Clearly shows multiple whole oval yellow-orange mangoes; case weight can remain workbook-only.",
+      "codeResolution": "catalog-supported"
+    },
+    {
+      "reportIndex": 53,
+      "catalogId": "mangoes-red-case-handwritten",
+      "decision": "approved",
+      "selectedFile": "HK food red fruit 芒果 mango March 2021 SS2 03.jpg",
+      "reason": "Superior alternative shows a single whole oval red mango; the primary is an unrelated Red Mango storefront.",
+      "codeResolution": "conflict-review-required"
+    },
+    {
+      "reportIndex": 54,
+      "catalogId": "mangos-ataulfo-case",
+      "decision": "rejected",
+      "selectedFile": null,
+      "reason": "Every result is an unlabeled side-by-side comparison with another mango cultivar, so the Ataulfo target is ambiguous.",
+      "codeResolution": "catalog-supported"
+    },
+    {
+      "reportIndex": 55,
+      "catalogId": "mangos-east-indian-case",
+      "decision": "approved",
+      "selectedFile": "Mango EastIndian Asit ftg.jpg",
+      "reason": "Whole East Indian mangoes are clear in a produce basket with the cultivar sign.",
+      "codeResolution": "catalog-supported"
+    },
+    {
+      "reportIndex": 56,
+      "catalogId": "mangos-red-case",
+      "decision": "approved",
+      "selectedFile": "HK food red fruit 芒果 mango March 2021 SS2 03.jpg",
+      "reason": "Isolated whole red mango with the correct color and form.",
+      "codeResolution": "primary-code-required"
+    },
+    {
+      "reportIndex": 57,
+      "catalogId": "mangos-spice",
+      "decision": "rejected",
+      "selectedFile": null,
+      "reason": "All results explicitly show other cultivars, not Spice mango.",
+      "codeResolution": "catalog-supported"
+    },
+    {
+      "reportIndex": 58,
+      "catalogId": "melons-bitter-fu-qua",
+      "decision": "rejected",
+      "selectedFile": null,
+      "reason": "Primary is an overripe orange fruit on the vine and alternatives are seedlings or foliage, not green retail Fu Qua.",
+      "codeResolution": "catalog-supported"
+    },
+    {
+      "reportIndex": 59,
+      "catalogId": "nappa-baby-4540-bag",
+      "decision": "approved",
+      "selectedFile": "Mini Tientsin Pakchoi ~ Baby napa cabbage.jpg",
+      "reason": "Unmistakable baby napa heads; bands can remain workbook-only.",
+      "codeResolution": "conflict-review-required"
+    },
+    {
+      "reportIndex": 60,
+      "catalogId": "onions-1381-label-as-printed",
+      "decision": "approved",
+      "selectedFile": "Onions.jpg",
+      "reason": "Clean whole raw onion bulbs.",
+      "codeResolution": "conflict-review-required"
+    },
+    {
+      "reportIndex": 61,
+      "catalogId": "onions-medium-50lb-724-58312",
+      "decision": "rejected",
+      "selectedFile": null,
+      "reason": "Only result is a wild onion flower and shows no retail bulb.",
+      "codeResolution": "conflict-review-required"
+    },
+    {
+      "reportIndex": 62,
+      "catalogId": "onions-red-10lb",
+      "decision": "approved",
+      "selectedFile": "Red onion.jpg",
+      "reason": "Two clear whole red onion bulbs.",
+      "codeResolution": "catalog-supported"
+    },
+    {
+      "reportIndex": 63,
+      "catalogId": "onions-sweet-4166-59914",
+      "decision": "approved",
+      "selectedFile": "Sweet onions in a pile.jpg",
+      "reason": "Clear pile of whole sweet onions.",
+      "codeResolution": "conflict-review-required"
+    },
+    {
+      "reportIndex": 64,
+      "catalogId": "onions-yellow-25lb-334",
+      "decision": "approved",
+      "selectedFile": "Yellow onion with x-section.jpg",
+      "reason": "Whole and cut yellow onions clearly show identity and color.",
+      "codeResolution": "conflict-review-required"
+    },
+    {
+      "reportIndex": 65,
+      "catalogId": "onions-yellow-3lb-bag",
+      "decision": "approved",
+      "selectedFile": "Yellow onion with x-section.jpg",
+      "reason": "Clearly better than the prepared-natto primary and shows exact raw yellow onion identity.",
+      "codeResolution": "catalog-supported"
+    },
+    {
+      "reportIndex": 66,
+      "catalogId": "onions-yellow-organic-2lb",
+      "decision": "approved",
+      "selectedFile": "20171027-AMS-LSC-0205 (38037158392).jpg",
+      "reason": "Several whole yellow onions are clearly visible; organic and package qualifiers remain workbook-only.",
+      "codeResolution": "catalog-supported"
+    },
+    {
+      "reportIndex": 67,
+      "catalogId": "oranges-navel-medium",
+      "decision": "approved",
+      "selectedFile": "Navel orange1.jpg",
+      "reason": "Isolated whole navel orange with the correct color and form.",
+      "codeResolution": "conflict-review-required"
+    },
+    {
+      "reportIndex": 68,
+      "catalogId": "parsley-curley-herbs",
+      "decision": "rejected",
+      "selectedFile": null,
+      "reason": "Primary is an unclear wet stalk, one alternative is flowering, and the other appears flat-leaf rather than curly retail parsley.",
+      "codeResolution": "conflict-review-required"
+    },
+    {
+      "reportIndex": 69,
+      "catalogId": "parsnips-2lb",
+      "decision": "approved",
+      "selectedFile": "Parsnips.JPG",
+      "reason": "Clear pile of whole cream tapered parsnips.",
+      "codeResolution": "source-required"
+    },
+    {
+      "reportIndex": 70,
+      "catalogId": "parsnips-bulk-4672",
+      "decision": "approved",
+      "selectedFile": "Parsnips on a shelf.jpg",
+      "reason": "Unmistakable raw parsnips in a retail context.",
+      "codeResolution": "source-required"
+    },
+    {
+      "reportIndex": 71,
+      "catalogId": "peaches-case",
+      "decision": "approved",
+      "selectedFile": "Hillview Farms peaches in a basket.jpg",
+      "reason": "Whole fuzzy red-yellow peaches are clearer than the cut-fruit primary.",
+      "codeResolution": "catalog-supported"
+    },
+    {
+      "reportIndex": 72,
+      "catalogId": "peaches-3l",
+      "decision": "approved",
+      "selectedFile": "White-Peaches-Bunch.jpg",
+      "reason": "Whole and cut peaches clearly establish fruit identity and form; the size unit remains workbook-only.",
+      "codeResolution": "catalog-supported"
+    },
+    {
+      "reportIndex": 73,
+      "catalogId": "peaches-freestone-case",
+      "decision": "rejected",
+      "selectedFile": null,
+      "reason": "The generic Autumn Red peach image does not establish the freestone variant.",
+      "codeResolution": "catalog-supported"
+    },
+    {
+      "reportIndex": 74,
+      "catalogId": "peaches-tree-ripe-case",
+      "decision": "approved",
+      "selectedFile": "Ripe peach.jpg",
+      "reason": "Ripe peach visibly attached to the tree, directly matching the form qualifier.",
+      "codeResolution": "catalog-supported"
+    },
+    {
+      "reportIndex": 75,
+      "catalogId": "pears-asian-yellow-2",
+      "decision": "rejected",
+      "selectedFile": null,
+      "reason": "The only result is an archival cityscape with no pear.",
+      "codeResolution": "primary-code-required"
+    },
+    {
+      "reportIndex": 76,
+      "catalogId": "pears-bartlett-3lb-organic",
+      "decision": "approved",
+      "selectedFile": "Organic Bartlett Pears.jpg",
+      "reason": "Clean group of green-yellow Bartlett pears.",
+      "codeResolution": "catalog-supported"
+    },
+    {
+      "reportIndex": 77,
+      "catalogId": "pears-bartlett-5lb-bag",
+      "decision": "rejected",
+      "selectedFile": null,
+      "reason": "Primary and most alternatives are red Bartletts; the only green-yellow option is dominated by severe bruising.",
+      "codeResolution": "catalog-supported"
+    },
+    {
+      "reportIndex": 78,
+      "catalogId": "pears-forelle-2",
+      "decision": "approved",
+      "selectedFile": "Forelle pear 01.jpg",
+      "reason": "Clear whole Forelle pear with expected speckled green-yellow and red skin.",
+      "codeResolution": "primary-code-required"
+    },
+    {
+      "reportIndex": 79,
+      "catalogId": "pears-red-4415",
+      "decision": "approved",
+      "selectedFile": "Red Modoc (pear) jm135831.jpg",
+      "reason": "Clearly red whole and cut pear, truer to the requested color than the russet Bartlett results.",
+      "codeResolution": "conflict-review-required"
+    },
+    {
+      "reportIndex": 80,
+      "catalogId": "peppers-assorted-bin",
+      "decision": "approved",
+      "selectedFile": "Assorted Bell Peppers.jpg",
+      "reason": "Clean red, orange, and yellow bell-pepper assortment with no prepared-food distraction.",
+      "codeResolution": "catalog-supported"
+    },
+    {
+      "reportIndex": 81,
+      "catalogId": "peppers-green-case",
+      "decision": "approved",
+      "selectedFile": "Green bell pepper pile.jpg",
+      "reason": "Clear pile of raw green bell peppers; the primary was peppercorns.",
+      "codeResolution": "catalog-supported"
+    },
+    {
+      "reportIndex": 82,
+      "catalogId": "peppers-green-4ct-bag",
+      "decision": "approved",
+      "selectedFile": "Green bell pepper 2017 A.jpg",
+      "reason": "Isolated whole green bell pepper; package count remains workbook-only.",
+      "codeResolution": "catalog-supported"
+    },
+    {
+      "reportIndex": 83,
+      "catalogId": "peppers-red-4ct-bag",
+      "decision": "approved",
+      "selectedFile": "Red bell pepper.jpg",
+      "reason": "Clean whole and cut red bell peppers.",
+      "codeResolution": "catalog-supported"
+    },
+    {
+      "reportIndex": 84,
+      "catalogId": "peppers-red-long-handwritten",
+      "decision": "approved",
+      "selectedFile": "Long hot red chili pepper.jpg",
+      "reason": "Basket of unmistakable long red peppers.",
+      "codeResolution": "conflict-review-required"
+    },
+    {
+      "reportIndex": 85,
+      "catalogId": "persimmons-hachiya-case",
+      "decision": "approved",
+      "selectedFile": "Hachiya persimmons - Heart of the City Farmers' Market - San Francisco.jpg",
+      "reason": "Exact Hachiya fruit in a market crate; avoids drying and mixed-variety results.",
+      "codeResolution": "catalog-supported"
+    },
+    {
+      "reportIndex": 86,
+      "catalogId": "plumcots-handwritten",
+      "decision": "approved",
+      "selectedFile": "Metis Plumcot Pluot.jpg",
+      "reason": "Clear whole and sliced plumcot or pluot fruit.",
+      "codeResolution": "catalog-supported"
+    },
+    {
+      "reportIndex": 87,
+      "catalogId": "plums-blue-1-5l",
+      "decision": "approved",
+      "selectedFile": "Bluebyrd plum (1).jpg",
+      "reason": "Clear blue-purple whole plums on the tree.",
+      "codeResolution": "catalog-supported"
+    },
+    {
+      "reportIndex": 88,
+      "catalogId": "plums-yellow-1-5l",
+      "decision": "approved",
+      "selectedFile": "Yellow Plum (5918708991).jpg",
+      "reason": "Isolated whole yellow plum.",
+      "codeResolution": "catalog-supported"
+    },
+    {
+      "reportIndex": 89,
+      "catalogId": "potato-red-10lb",
+      "decision": "rejected",
+      "selectedFile": null,
+      "reason": "Only image is cooked orange sweet-potato pieces, the wrong product and form.",
+      "codeResolution": "catalog-supported"
+    },
+    {
+      "reportIndex": 90,
+      "catalogId": "potato-red-20lb",
+      "decision": "rejected",
+      "selectedFile": null,
+      "reason": "Bird, sweet potato, distant field or harvest, and chips do not clearly show raw red potatoes.",
+      "codeResolution": "catalog-supported"
+    },
+    {
+      "reportIndex": 91,
+      "catalogId": "potato-russet-white-20lb",
+      "decision": "approved",
+      "selectedFile": "Russet potato cultivar with sprouts.jpg",
+      "reason": "Whole russet plus cut white interior clearly supports skin and flesh identity.",
+      "codeResolution": "catalog-supported"
+    },
+    {
+      "reportIndex": 92,
+      "catalogId": "potato-russet-10lb",
+      "decision": "approved",
+      "selectedFile": "Russet potato.jpg",
+      "reason": "Clean close pile of whole russet potatoes.",
+      "codeResolution": "catalog-supported"
+    },
+    {
+      "reportIndex": 93,
+      "catalogId": "potato-white-10lb",
+      "decision": "rejected",
+      "selectedFile": null,
+      "reason": "Peeler, sprouted russet, mixed stall, cut yellow-flesh cultivar, and baked plate do not establish raw white potato.",
+      "codeResolution": "catalog-supported"
+    },
+    {
+      "reportIndex": 94,
+      "catalogId": "potato-yellow-10lb",
+      "decision": "rejected",
+      "selectedFile": null,
+      "reason": "All five images are prepared tuna on a plate with no raw yellow potato.",
+      "codeResolution": "catalog-supported"
+    },
+    {
+      "reportIndex": 95,
+      "catalogId": "pumpkins-jamaican",
+      "decision": "rejected",
+      "selectedFile": null,
+      "reason": "Prepared-food bowl with no visible Jamaican pumpkin.",
+      "codeResolution": "catalog-supported"
+    },
+    {
+      "reportIndex": 96,
+      "catalogId": "pumpkins-large",
+      "decision": "approved",
+      "selectedFile": "Cucurbita 2011 G1 Large.jpg",
+      "reason": "Group of unmistakable large round pumpkins; primary was a butternut or crookneck squash.",
+      "codeResolution": "primary-code-required"
+    },
+    {
+      "reportIndex": 97,
+      "catalogId": "pumpkins-large-2",
+      "decision": "approved",
+      "selectedFile": "Cucurbita 2011 G1 Large.jpg",
+      "reason": "Whole large round pumpkins are clearly visible.",
+      "codeResolution": "primary-code-required"
+    },
+    {
+      "reportIndex": 98,
+      "catalogId": "pumpkins-small-pie-4737",
+      "decision": "approved",
+      "selectedFile": "20171027-AMS-LSC-0131 (38068402991).jpg",
+      "reason": "Isolated small orange pie pumpkin on straw.",
+      "codeResolution": "source-required"
+    },
+    {
+      "reportIndex": 99,
+      "catalogId": "pumpkins-white",
+      "decision": "approved",
+      "selectedFile": "Cucurbita pepo white pumpkin 15.Autumn.WholeFoods.1440P.NW.WDC.14October2014.jpg",
+      "reason": "Clear retail display of white pumpkins.",
+      "codeResolution": "source-required"
+    },
+    {
+      "reportIndex": 100,
+      "catalogId": "squash-buttercup",
+      "decision": "approved",
+      "selectedFile": "Buttercup Squash on Kitchen Counter.jpg",
+      "reason": "Whole green buttercup squash; avoids the two fungus and disease images.",
+      "codeResolution": "conflict-review-required"
+    },
+    {
+      "reportIndex": 101,
+      "catalogId": "strawberries-1lb",
+      "decision": "rejected",
+      "selectedFile": null,
+      "reason": "All candidates are mixed-berry compositions where strawberries are not the sole recognition target.",
+      "codeResolution": "catalog-supported"
+    },
+    {
+      "reportIndex": 102,
+      "catalogId": "strawberries-2lb",
+      "decision": "rejected",
+      "selectedFile": null,
+      "reason": "Same mixed-berry set, not a clean strawberry image.",
+      "codeResolution": "catalog-supported"
+    },
+    {
+      "reportIndex": 103,
+      "catalogId": "sweet-potatoes-white",
+      "decision": "rejected",
+      "selectedFile": null,
+      "reason": "Prepared and context shots are unsuitable, and the only raw option mixes white and red varieties without a clear target.",
+      "codeResolution": "catalog-supported"
+    },
+    {
+      "reportIndex": 104,
+      "catalogId": "tomato-heirloom-handwritten",
+      "decision": "approved",
+      "selectedFile": "Capay heirloom tomatoes at Slow Food Nation.jpg",
+      "reason": "Clear basket of visually distinctive multicolor heirloom tomatoes.",
+      "codeResolution": "source-required"
+    },
+    {
+      "reportIndex": 105,
+      "catalogId": "tomato-hh-red-bulk",
+      "decision": "approved",
+      "selectedFile": "Healthy Red Tomatoes with Water Drops.jpg",
+      "reason": "Clear whole red tomatoes; already reviewed.",
+      "codeResolution": "catalog-supported"
+    },
+    {
+      "reportIndex": 106,
+      "catalogId": "tomatoes-roma-plum-box-half-bushel",
+      "decision": "approved",
+      "selectedFile": "Roma Tomatoes - Flickr - pinemikey.jpg",
+      "reason": "Clean pile of oblong Roma or plum tomatoes; box qualifier remains workbook-only.",
+      "codeResolution": "catalog-supported"
+    },
+    {
+      "reportIndex": 107,
+      "catalogId": "yams-white",
+      "decision": "rejected",
+      "selectedFile": null,
+      "reason": "Planting image shows upright brown yam setts and does not visibly establish white flesh or retail form.",
+      "codeResolution": "conflict-review-required"
+    }
+  ]
+}

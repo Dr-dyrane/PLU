@@ -1,0 +1,218 @@
+[
+  {
+    "reportIndex": 27,
+    "catalogId": "citrus-bulk-unlabelled-row-1st",
+    "decision": "approved",
+    "selectedFile": "Citrus japonica.jpg",
+    "reason": "Superior alternative clearly shows multiple round orange-yellow citrus fruits; the primary is a single green fruit.",
+    "codeResolution": "catalog-supported"
+  },
+  {
+    "reportIndex": 28,
+    "catalogId": "citrus-bulk-unlabelled-row-2nd",
+    "decision": "approved",
+    "selectedFile": "Citrus japonica.jpg",
+    "reason": "Clearly shows multiple round orange-yellow citrus fruits on the tree.",
+    "codeResolution": "catalog-supported"
+  },
+  {
+    "reportIndex": 29,
+    "catalogId": "clementines-3lb",
+    "decision": "approved",
+    "selectedFile": "Clementines citrus fruit (klementiner) EXTRA (Coop supermarket) Sem Norway 2017-11-07.jpg",
+    "reason": "Clear frame-filling display of whole orange clementines; package weight can remain workbook-only.",
+    "codeResolution": "catalog-supported"
+  },
+  {
+    "reportIndex": 30,
+    "catalogId": "corn-tray-of-5",
+    "decision": "rejected",
+    "selectedFile": null,
+    "reason": "The only candidate shows prepared corn dogs, not raw corn ears.",
+    "codeResolution": "catalog-supported"
+  },
+  {
+    "reportIndex": 31,
+    "catalogId": "cucumbers-dill-case",
+    "decision": "rejected",
+    "selectedFile": null,
+    "reason": "All candidates show prepared cucumber cups, pickles, dip, or active preparation rather than clear whole dill cucumbers.",
+    "codeResolution": "catalog-supported"
+  },
+  {
+    "reportIndex": 32,
+    "catalogId": "dill-weed-pickling-herbs",
+    "decision": "approved",
+    "selectedFile": "Samara Market 04 Dill, lots of dill (4136882030).jpg",
+    "reason": "Superior alternative clearly shows abundant fresh green dill bunches at market; the primary is a landscape of the town Dill.",
+    "codeResolution": "catalog-supported"
+  },
+  {
+    "reportIndex": 33,
+    "catalogId": "eddoes-handwritten",
+    "decision": "approved",
+    "selectedFile": "Eddoes at Church Fruit Farm BK NYC.jpg",
+    "reason": "Clearly shows a retail bin of small brown hairy eddoe corms.",
+    "codeResolution": "source-required"
+  },
+  {
+    "reportIndex": 34,
+    "catalogId": "eggplant-purple-case",
+    "decision": "approved",
+    "selectedFile": "HK SYP Best of Best Vegetable purple Eggplant Aug-2012.JPG",
+    "reason": "Clearly shows a bulk retail display of smooth purple eggplants.",
+    "codeResolution": "catalog-supported"
+  },
+  {
+    "reportIndex": 35,
+    "catalogId": "figgs-black-case",
+    "decision": "rejected",
+    "selectedFile": null,
+    "reason": "Every candidate depicts FIG artistic gymnasts, not black figs.",
+    "codeResolution": "catalog-supported"
+  },
+  {
+    "reportIndex": 36,
+    "catalogId": "figgs-green-case",
+    "decision": "approved",
+    "selectedFile": "Common fig - leaves and green figs.jpg",
+    "reason": "Clearly shows several green figs with the expected rounded teardrop form on a fig tree.",
+    "codeResolution": "catalog-supported"
+  },
+  {
+    "reportIndex": 37,
+    "catalogId": "figs-black-case",
+    "decision": "rejected",
+    "selectedFile": null,
+    "reason": "Every candidate depicts FIG artistic gymnasts, not black figs.",
+    "codeResolution": "catalog-supported"
+  },
+  {
+    "reportIndex": 38,
+    "catalogId": "figs-green-case",
+    "decision": "rejected",
+    "selectedFile": null,
+    "reason": "The only fruit candidate appears dark purple-black rather than green; the remaining alternatives are a distant tree or gymnasts.",
+    "codeResolution": "catalog-supported"
+  },
+  {
+    "reportIndex": 39,
+    "catalogId": "garlic-peeled-5lb",
+    "decision": "rejected",
+    "selectedFile": null,
+    "reason": "The only candidate explicitly shows overripe, sprouting peeled cloves and is not a usable fresh-produce anchor.",
+    "codeResolution": "catalog-supported"
+  },
+  {
+    "reportIndex": 40,
+    "catalogId": "garlic-1kg-bagged",
+    "decision": "approved",
+    "selectedFile": "Garlic Acceptance, Garlic History and Garlic Uses..jpg",
+    "reason": "Clearly shows intact white garlic bulbs in a transparent bag; bag weight can remain workbook-only.",
+    "codeResolution": "catalog-supported"
+  },
+  {
+    "reportIndex": 41,
+    "catalogId": "grapefruit-bin",
+    "decision": "approved",
+    "selectedFile": "Citrus paradisi (Grapefruit, pink).jpg",
+    "reason": "Clean image shows whole and cut round grapefruit with unmistakable pink flesh.",
+    "codeResolution": "conflict-review-required"
+  },
+  {
+    "reportIndex": 42,
+    "catalogId": "grapes-green-seedless-2lb",
+    "decision": "approved",
+    "selectedFile": "\"Bunch of Green Grapes in Salem\".jpg",
+    "reason": "Superior alternative clearly shows clustered pale-green grape berries without unrelated subjects; seedless and weight remain workbook-only.",
+    "codeResolution": "catalog-supported"
+  },
+  {
+    "reportIndex": 43,
+    "catalogId": "grapes-red-seedless-2lb",
+    "decision": "approved",
+    "selectedFile": "Red grapes (1).jpg",
+    "reason": "Superior alternative isolates a clear cluster of red grapes; seedless and weight remain workbook-only.",
+    "codeResolution": "catalog-supported"
+  },
+  {
+    "reportIndex": 44,
+    "catalogId": "jicama-roots",
+    "decision": "approved",
+    "selectedFile": "Jicama Ecuador 2.jpg",
+    "reason": "Clearly shows freshly dug whole brown jicama roots with the expected firm tuber form.",
+    "codeResolution": "source-required"
+  },
+  {
+    "reportIndex": 45,
+    "catalogId": "kiwi-1kg",
+    "decision": "approved",
+    "selectedFile": "Kiwi aka.jpg",
+    "reason": "Clean isolated view of whole brown kiwi fruit and green cross-sections; weight can remain workbook-only.",
+    "codeResolution": "catalog-supported"
+  },
+  {
+    "reportIndex": 46,
+    "catalogId": "kohlrabi-note-on-sheet-kohlrabi-1692-handwritten",
+    "decision": "rejected",
+    "selectedFile": null,
+    "reason": "The only candidate is a damaged cut stem with fly larvae, not a usable whole kohlrabi anchor.",
+    "codeResolution": "catalog-supported"
+  },
+  {
+    "reportIndex": 47,
+    "catalogId": "lettuce-boston-dome",
+    "decision": "approved",
+    "selectedFile": "New Lettuce (6193662526).jpg",
+    "reason": "Clearly shows two harvested soft-leaf Boston-style lettuce heads; dome packaging can remain workbook-only.",
+    "codeResolution": "catalog-supported"
+  },
+  {
+    "reportIndex": 48,
+    "catalogId": "lettuce-iceberg-organic",
+    "decision": "rejected",
+    "selectedFile": null,
+    "reason": "The image is a distant mixed lettuce garden with no clear compact iceberg head.",
+    "codeResolution": "catalog-supported"
+  },
+  {
+    "reportIndex": 49,
+    "catalogId": "limes-key-1lb",
+    "decision": "approved",
+    "selectedFile": "Key lime (Citrus × aurantiifolia) - DSC09279.jpg",
+    "reason": "Superior alternative clearly shows a large loose pile of small round green key limes; weight remains workbook-only.",
+    "codeResolution": "catalog-supported"
+  },
+  {
+    "reportIndex": 50,
+    "catalogId": "mangoes",
+    "decision": "rejected",
+    "selectedFile": null,
+    "reason": "The whole-fruit candidates are green while the stated visible color is yellow-red; the remaining alternatives are sliced prepared mango.",
+    "codeResolution": "conflict-review-required"
+  },
+  {
+    "reportIndex": 51,
+    "catalogId": "mangoes-ataulfo-case-handwritten",
+    "decision": "rejected",
+    "selectedFile": null,
+    "reason": "Every candidate is an unlabeled side-by-side comparison of Ataulfo with a different mango variety, making the target visually ambiguous.",
+    "codeResolution": "catalog-supported"
+  },
+  {
+    "reportIndex": 52,
+    "catalogId": "mangoes-case-10lb",
+    "decision": "approved",
+    "selectedFile": "Alphonso mango.jpg",
+    "reason": "Clearly shows multiple whole oval yellow-orange mangoes; case weight can remain workbook-only.",
+    "codeResolution": "catalog-supported"
+  },
+  {
+    "reportIndex": 53,
+    "catalogId": "mangoes-red-case-handwritten",
+    "decision": "approved",
+    "selectedFile": "HK food red fruit 芒果 mango March 2021 SS2 03.jpg",
+    "reason": "Superior alternative shows a single whole oval red mango; the primary is an unrelated Red Mango storefront.",
+    "codeResolution": "conflict-review-required"
+  }
+]

@@ -3,8 +3,11 @@ import { mkdir, writeFile } from "node:fs/promises";
 import {
   categoryForFamily,
   loadJsonRecords,
+  normalize,
+  productHeadGroups,
   readJson,
   sleep,
+  words,
 } from "./batch04/common.mjs";
 import { resolveImage } from "./batch04/media.mjs";
 import {
@@ -17,24 +20,31 @@ import {
   slugify,
 } from "./batch04/story.mjs";
 
-const EXPECTED_CANDIDATES = 21;
 const EXPECTED_REMAINDER = 175;
 const CANDIDATES_URL = new URL("../data/batch-06-candidates.json", import.meta.url);
 const DISPOSITIONS_URL = new URL("../data/batch-06-dispositions.json", import.meta.url);
 const SOURCE_URL = new URL("../data/batch-06-source.json", import.meta.url);
 const BATCH_URL = new URL("../data/batches/batch-06.json", import.meta.url);
 const SEED_URL = new URL("../data/story-seeds/batch-06-generated.json", import.meta.url);
+const REVIEWED_MEDIA_URL = new URL("../data/batch-06-reviewed-media.json", import.meta.url);
 const PUBLIC_URL = new URL("../public/", import.meta.url);
 const REPORT_URL = new URL("media-resolution-batch06.json", PUBLIC_URL);
-const REVIEWED_READY_IDS = new Set(["aloe", "tomato-hh-red-bulk"]);
 
 const candidates = await readJson(CANDIDATES_URL);
 const dispositions = await readJson(DISPOSITIONS_URL);
-if (!Array.isArray(candidates) || candidates.length !== EXPECTED_CANDIDATES) {
-  throw new Error(`Batch 06 requires exactly ${EXPECTED_CANDIDATES} strict candidates.`);
+const reviewedMedia = await readJson(REVIEWED_MEDIA_URL);
+if (!Array.isArray(candidates) || !candidates.length) {
+  throw new Error("Batch 06 requires at least one human-reviewed candidate.");
 }
 if (!Array.isArray(dispositions) || dispositions.length !== EXPECTED_REMAINDER) {
   throw new Error(`Batch 06 requires dispositions for all ${EXPECTED_REMAINDER} remaining rows.`);
+}
+if (
+  reviewedMedia?.schemaVersion !== "1.0.0" ||
+  reviewedMedia.batch !== "06" ||
+  !Array.isArray(reviewedMedia.items)
+) {
+  throw new Error("Batch 06 reviewed media ledger is malformed.");
 }
 
 const catalog = await loadJsonRecords(new URL("../data/catalog/", import.meta.url));
@@ -49,9 +59,39 @@ const existingStories = [
 ];
 const existingCatalogIds = new Set(existingStories.map((story) => story.catalogId));
 const existingStoryIds = new Set(existingStories.map((story) => story.id));
+
+function referencedCommonsFile(photo) {
+  if (typeof photo?.file === "string" && photo.file.trim()) return photo.file;
+  if (typeof photo?.source?.url !== "string") return null;
+  try {
+    const pathname = new URL(photo.source.url).pathname;
+    const marker = "/wiki/File:";
+    const markerIndex = pathname.indexOf(marker);
+    if (markerIndex < 0) return null;
+    return decodeURIComponent(pathname.slice(markerIndex + marker.length)).replaceAll("_", " ");
+  } catch {
+    return null;
+  }
+}
+
+function includesNormalizedPhrase(value, phrase) {
+  return ` ${normalize(value)} `.includes(` ${normalize(phrase)} `);
+}
+
+function visibleLabelMatchesCatalog(visibleLabel, catalogItem) {
+  const visibleTokens = new Set(words(visibleLabel));
+  const catalogTokens = new Set(words(catalogItem));
+  if ([...visibleTokens].some((token) => catalogTokens.has(token))) return true;
+  return productHeadGroups.some(
+    (group) =>
+      group.some((token) => visibleTokens.has(token)) &&
+      group.some((token) => catalogTokens.has(token)),
+  );
+}
+
 const usedFiles = new Set(
   existingStories.flatMap((story) =>
-    (story.photos ?? []).map((photo) => photo.file).filter(Boolean),
+    (story.photos ?? []).map(referencedCommonsFile).filter(Boolean),
   ),
 );
 
@@ -87,6 +127,97 @@ for (const item of candidates) {
   });
 }
 
+const reviewedMediaByCatalogId = new Map();
+for (const review of reviewedMedia.items) {
+  const requiredFields = ["catalogId", "code", "commonsFile", "recognitionMode", "reviewBasis"];
+  if (!requiredFields.every((field) => typeof review?.[field] === "string" && review[field].trim())) {
+    throw new Error(`Batch 06 reviewed media entry is incomplete: ${JSON.stringify(review)}`);
+  }
+  if (reviewedMediaByCatalogId.has(review.catalogId)) {
+    throw new Error(`Duplicate Batch 06 reviewed media catalog ID: ${review.catalogId}`);
+  }
+  const candidate = candidates.find((item) => item.catalogId === review.catalogId);
+  if (!candidate) {
+    throw new Error(`${review.catalogId}: reviewed media entry is not a strict Batch 06 candidate.`);
+  }
+  if (String(candidate.code) !== String(review.code)) {
+    throw new Error(`${review.catalogId}: reviewed media code does not match the candidate.`);
+  }
+  if (
+    !["product-and-loose-form", "family-color-and-loose-form", "label-assisted"].includes(
+      review.recognitionMode,
+    )
+  ) {
+    throw new Error(`${review.catalogId}: unsupported recognition mode ${review.recognitionMode}.`);
+  }
+  if (review.recognitionMode === "label-assisted") {
+    const visibleFields = ["label", "form", "color", "cue"];
+    if (!visibleFields.every((field) => typeof review.visibleIdentity?.[field] === "string" && review.visibleIdentity[field].trim())) {
+      throw new Error(`${review.catalogId}: label-assisted review needs a complete visible identity.`);
+    }
+    if (!Array.isArray(review.labelClaims) || !review.labelClaims.length) {
+      throw new Error(`${review.catalogId}: label-assisted review needs workbook label claims.`);
+    }
+    const catalogRecord = catalogById.get(review.catalogId);
+    if (!visibleLabelMatchesCatalog(review.visibleIdentity.label, catalogRecord.item)) {
+      throw new Error(`${review.catalogId}: visible identity is not anchored to the catalog item.`);
+    }
+    const sourcePages = new Set(catalogRecord.sourcePages ?? []);
+    const labelClaimValues = new Set();
+    for (const labelClaim of review.labelClaims) {
+      if (
+        typeof labelClaim?.value !== "string" ||
+        labelClaim.basis !== "workbook-label" ||
+        labelClaim.sourceField !== "catalog.item" ||
+        !Array.isArray(labelClaim.sourcePages) ||
+        !labelClaim.sourcePages.length ||
+        !labelClaim.sourcePages.every(Number.isInteger)
+      ) {
+        throw new Error(`${review.catalogId}: malformed workbook label claim.`);
+      }
+      const normalizedClaim = normalize(labelClaim.value);
+      if (labelClaimValues.has(normalizedClaim)) {
+        throw new Error(`${review.catalogId}: duplicate workbook label claim ${labelClaim.value}.`);
+      }
+      labelClaimValues.add(normalizedClaim);
+      if (!includesNormalizedPhrase(catalogRecord.item, labelClaim.value)) {
+        throw new Error(`${review.catalogId}: label claim is not present in the catalog item (${labelClaim.value}).`);
+      }
+      if (!labelClaim.sourcePages.every((page) => sourcePages.has(page))) {
+        throw new Error(`${review.catalogId}: label claim pages are not catalog source pages.`);
+      }
+      if (
+        Object.values(review.visibleIdentity).some((value) =>
+          includesNormalizedPhrase(value, normalizedClaim),
+        )
+      ) {
+        throw new Error(`${review.catalogId}: a workbook-only label claim leaked into the visible identity.`);
+      }
+    }
+  }
+  reviewedMediaByCatalogId.set(review.catalogId, review);
+}
+if (candidates.length !== reviewedMediaByCatalogId.size) {
+  throw new Error(
+    `Batch 06 candidate/review count differs (${candidates.length} candidates, ${reviewedMediaByCatalogId.size} reviews).`,
+  );
+}
+
+const reviewsByFile = new Map();
+for (const review of reviewedMedia.items) {
+  const reviews = reviewsByFile.get(review.commonsFile) ?? [];
+  reviews.push(review);
+  reviewsByFile.set(review.commonsFile, reviews);
+}
+const sharedReviewedFiles = new Set();
+for (const [commonsFile, reviews] of reviewsByFile) {
+  if (reviews.length < 2 && !usedFiles.has(commonsFile)) continue;
+  if (reviews.some((review) => typeof review.sharedMediaBasis !== "string" || !review.sharedMediaBasis.trim())) {
+    throw new Error(`${commonsFile}: every reused reviewed file needs a shared-media basis.`);
+  }
+  sharedReviewedFiles.add(commonsFile);
+}
+
 const dispositionIds = new Set(dispositions.map((item) => item.catalogId));
 if (dispositionIds.size !== EXPECTED_REMAINDER) {
   throw new Error("Batch 06 dispositions contain duplicate catalog IDs.");
@@ -115,7 +246,7 @@ const report = {
   generatedAt: new Date().toISOString(),
   batch: "06",
   strategy:
-    "Resolve every remaining strict loose-produce candidate and retain all other catalog rows as evidence-gated source review records.",
+    "Resolve the human-reviewed subset of the complete catalog remainder, using label-assisted truth when store qualifiers are not visible in product pixels.",
   candidateCount: candidates.length,
   sourceCount: 0,
   media: [],
@@ -135,7 +266,8 @@ for (const [candidateIndex, item] of candidates.entries()) {
     continue;
   }
 
-  if (!REVIEWED_READY_IDS.has(item.catalogId)) {
+  const reviewedMapping = reviewedMediaByCatalogId.get(item.catalogId);
+  if (!reviewedMapping) {
     report.rejected.push({
       candidateOrder: candidateIndex + 1,
       catalogId: item.catalogId,
@@ -147,7 +279,7 @@ for (const [candidateIndex, item] of candidates.entries()) {
 
   let media;
   try {
-    media = await resolveImage(item, usedFiles);
+    media = await resolveImage(item, usedFiles, reviewedMapping.commonsFile);
   } catch (error) {
     report.rejected.push({
       candidateOrder: candidateIndex + 1,
@@ -158,6 +290,11 @@ for (const [candidateIndex, item] of candidates.entries()) {
     console.warn(`Unresolved Batch 06 candidate ${candidateIndex + 1}: ${item.title}.`);
     await sleep(120);
     continue;
+  }
+  if (media.match !== "reviewed-override" || media.file !== reviewedMapping.commonsFile) {
+    throw new Error(
+      `${item.catalogId}: resolved media does not match its committed reviewed-media mapping.`,
+    );
   }
 
   const storyId = `${slugify(item.title)}-${item.code}`;
@@ -183,8 +320,19 @@ for (const [candidateIndex, item] of candidates.entries()) {
     continue;
   }
 
+  const labelAssisted = reviewedMapping.recognitionMode === "label-assisted";
+  const visibleIdentity = labelAssisted
+    ? reviewedMapping.visibleIdentity
+    : { label: item.title, form: item.form, color: item.color, cue: item.cue };
+  const visualItem = {
+    ...item,
+    title: visibleIdentity.label,
+    form: visibleIdentity.form,
+    color: visibleIdentity.color,
+    cue: visibleIdentity.cue,
+  };
   const familyChoices = chooseFamilyChoices(item, allPeerPool);
-  const formAnswer = slugify(item.form);
+  const formAnswer = slugify(visibleIdentity.form);
   const selection = calculateSelection(item, groupSizes.get(item.group) ?? 1);
   const flags = [
     ...new Set([
@@ -192,12 +340,17 @@ for (const [candidateIndex, item] of candidates.entries()) {
       "batch-06",
       `catalog-remainder-${selection.band.toLowerCase()}`,
       `media-${media.match}`,
-      ...(media.sharedAcrossProducts ? ["media-shared-reviewed"] : []),
+      ...(sharedReviewedFiles.has(reviewedMapping.commonsFile) ? ["media-shared-reviewed"] : []),
+      ...(labelAssisted ? ["media-label-assisted", "qualifier-workbook-label"] : []),
     ]),
   ];
   const photos = ["hero", "alternate", "context"].map((role, photoIndex) =>
-    photoRole(storyId, item, media, role, photoIndex),
+    photoRole(storyId, visualItem, media, role, photoIndex),
   );
+  const labelClaimNames = labelAssisted
+    ? reviewedMapping.labelClaims.map((claim) => claim.value).join(" and ")
+    : "";
+  const labelClaimCopula = reviewedMapping.labelClaims?.length === 1 ? "is" : "are";
 
   seeds.push({
     schemaVersion: "0.9.0",
@@ -210,38 +363,59 @@ for (const [candidateIndex, item] of candidates.entries()) {
     selection,
     identity: {
       family: item.family,
-      form: item.form,
-      color: item.color,
+      form: visibleIdentity.form,
+      color: visibleIdentity.color,
       variant: item.title,
     },
     checkout: {
       code: item.code,
       soldBy: item.soldBy,
       saleForm: item.saleForm,
-      codeScope:
-        item.saleForm === "Cut"
+      codeScope: labelAssisted
+        ? "catalog-listed-retail-unit"
+        : item.saleForm === "Cut"
           ? "primary-cut-produce"
           : item.soldBy === "Weight"
             ? "primary-loose-produce"
             : "primary-each-produce",
     },
     photos,
-    visualCues: [
-      item.cue,
-      `Look for the ${item.color.toLowerCase()} color together with the ${item.form.toLowerCase()}.`,
-      `Keep it separate from nearby ${item.group.replaceAll("-", " ")} by checking shape, color, and sale form.`,
-    ],
+    visualCues: labelAssisted
+      ? [
+          visibleIdentity.cue,
+          `The visible color is ${visibleIdentity.color.toLowerCase()}; ${labelClaimNames} ${labelClaimCopula} from the workbook label, not appearance.`,
+          `Match the store label to ${item.title} before using ${item.code}.`,
+        ]
+      : [
+          item.cue,
+          `Look for the ${item.color.toLowerCase()} color together with the ${item.form.toLowerCase()}.`,
+          `Keep it separate from nearby ${item.group.replaceAll("-", " ")} by checking shape, color, and sale form.`,
+        ],
     classification: {
       familyAnswer: slugify(item.family),
       familyChoices,
       formAnswer,
       formChoices: [
-        { id: formAnswer, label: `${item.color} · ${item.form}` },
+        { id: formAnswer, label: `${visibleIdentity.color} · ${visibleIdentity.form}` },
         { id: `confusion-${slugify(peers[0].catalogId)}`, label: peers[0].title },
         { id: `confusion-${slugify(peers[1].catalogId)}`, label: peers[1].title },
       ],
     },
     variants: [],
+    relations: labelAssisted
+      ? [
+          {
+            kind: "exception",
+            title: "The store label selects this listing",
+            copy: `The photograph teaches ${visibleIdentity.label}. ${labelClaimNames} ${labelClaimCopula} copied from the workbook label and ${labelClaimCopula} not inferred from appearance.`,
+          },
+          {
+            kind: "exception",
+            title: "The code follows the exact listing",
+            copy: `Use ${item.code} only after the label matches ${item.title}.`,
+          },
+        ]
+      : undefined,
     similarItems: peers.map((peer, peerIndex) => ({
       name: peer.title,
       code: peer.code,
@@ -266,7 +440,7 @@ for (const [candidateIndex, item] of candidates.entries()) {
     family: item.family,
     status: "ready",
   });
-  acceptedSource.push({ ...item });
+  acceptedSource.push({ ...item, mediaReview: reviewedMapping });
   acceptedMappings.add(mapping);
   report.media.push({
     order,
@@ -276,15 +450,16 @@ for (const [candidateIndex, item] of candidates.entries()) {
     title: item.title,
     query: item.imageQuery,
     selection,
+    mediaReview: reviewedMapping,
     ...media,
   });
 
-  console.log(`Accepted Batch 06 lesson ${order}/${EXPECTED_CANDIDATES}: ${item.title}.`);
+  console.log(`Accepted Batch 06 lesson ${order}/${candidates.length}: ${item.title}.`);
   await sleep(120);
 }
 
 const acceptedCatalogIds = new Set(readyItems.map((item) => item.catalogId));
-const expectedReadyIds = [...REVIEWED_READY_IDS].sort();
+const expectedReadyIds = [...reviewedMediaByCatalogId.keys()].sort();
 const resolvedReadyIds = [...acceptedCatalogIds].sort();
 if (JSON.stringify(resolvedReadyIds) !== JSON.stringify(expectedReadyIds)) {
   throw new Error(
@@ -333,7 +508,7 @@ const batch = {
   id: "batch-06-catalog-remainder-175",
   title: "Catalog remainder 175",
   size: items.length,
-  strategy: "Strict ready lessons plus an explicit evidence-gated disposition for every remaining source row",
+  strategy: "Human-reviewed lessons plus an explicit evidence-gated disposition for every remaining source row",
   items,
 };
 

@@ -3,7 +3,7 @@
   "id": "batch-06-catalog-remainder-175",
   "title": "Catalog remainder 175",
   "size": 175,
-  "strategy": "Strict ready lessons plus an explicit evidence-gated disposition for every remaining source row",
+  "strategy": "Human-reviewed lessons plus an explicit evidence-gated disposition for every remaining source row",
   "items": [
     {
       "order": 1,
@@ -15,258 +15,419 @@
     },
     {
       "order": 2,
+      "catalogId": "apples-ambrosia-bin",
+      "title": "Apples - Ambrosia (Bin)",
+      "code": "25040",
+      "family": "Apples",
+      "status": "ready"
+    },
+    {
+      "order": 3,
+      "catalogId": "apples-gala-orchard-run",
+      "title": "Apples - Gala (Orchard Run)",
+      "code": "62021",
+      "family": "Apples",
+      "status": "ready"
+    },
+    {
+      "order": 4,
+      "catalogId": "apples-ginger-gold-orchard-run",
+      "title": "Apples - Ginger Gold (Orchard Run)",
+      "code": "3000",
+      "family": "Apples",
+      "status": "ready"
+    },
+    {
+      "order": 5,
+      "catalogId": "apples-honeycrisp-orchard-run",
+      "title": "Apples - Honeycrisp (Orchard Run)",
+      "code": "59986",
+      "family": "Apples",
+      "status": "ready"
+    },
+    {
+      "order": 6,
+      "catalogId": "apples-mcintosh-orchard-bin",
+      "title": "Apples - McIntosh (Orchard Bin)",
+      "code": "62010",
+      "family": "Apples",
+      "status": "ready"
+    },
+    {
+      "order": 7,
+      "catalogId": "apples-spartan-orchard-run-bin",
+      "title": "Apples - Spartan (Orchard Run Bin)",
+      "code": "62013",
+      "family": "Apples",
+      "status": "ready"
+    },
+    {
+      "order": 8,
+      "catalogId": "apples-sunrise-orchard-run",
+      "title": "Apples - Sunrise (Orchard Run)",
+      "code": "62023",
+      "family": "Apples",
+      "status": "ready"
+    },
+    {
+      "order": 9,
+      "catalogId": "avocado-organic-3ct",
+      "title": "Avocado - Organic 3ct",
+      "code": "40719",
+      "family": "Avocados",
+      "status": "ready"
+    },
+    {
+      "order": 10,
+      "catalogId": "bananas-case",
+      "title": "Bananas (Case)",
+      "code": "6794",
+      "family": "Bananas",
+      "status": "ready"
+    },
+    {
+      "order": 11,
+      "catalogId": "bean-sprouts-case",
+      "title": "Bean Sprouts (Case)",
+      "code": "63604",
+      "family": "Sprouts",
+      "status": "ready"
+    },
+    {
+      "order": 12,
+      "catalogId": "blueberries-2lb",
+      "title": "Blueberries - 2lb",
+      "code": "39583",
+      "family": "Berries",
+      "status": "ready"
+    },
+    {
+      "order": 13,
+      "catalogId": "bok-choy-shanghai-jr",
+      "title": "Bok Choy - Shanghai Jr",
+      "code": "64388",
+      "family": "Leafy Greens",
+      "status": "ready"
+    },
+    {
+      "order": 14,
+      "catalogId": "cherries-rwb-organic",
+      "title": "Cherries - RWB (Organic)",
+      "code": "94045",
+      "family": "Cherries",
+      "status": "ready"
+    },
+    {
+      "order": 15,
+      "catalogId": "citrus-bulk-unlabelled-row-1st",
+      "title": "Citrus - Bulk (unlabelled row, 1st)",
+      "code": "0240",
+      "family": "Citrus",
+      "status": "ready"
+    },
+    {
+      "order": 16,
+      "catalogId": "citrus-bulk-unlabelled-row-2nd",
+      "title": "Citrus - Bulk (unlabelled row, 2nd)",
+      "code": "3029",
+      "family": "Citrus",
+      "status": "ready"
+    },
+    {
+      "order": 17,
+      "catalogId": "clementines-3lb",
+      "title": "Clementines - 3lb",
+      "code": "1835",
+      "family": "Citrus",
+      "status": "ready"
+    },
+    {
+      "order": 18,
+      "catalogId": "eggplant-purple-case",
+      "title": "Eggplant - Purple (Case)",
+      "code": "63582",
+      "family": "Eggplants",
+      "status": "ready"
+    },
+    {
+      "order": 19,
+      "catalogId": "figgs-green-case",
+      "title": "Figgs - Green (Case)",
+      "code": "6799",
+      "family": "Figs",
+      "status": "ready"
+    },
+    {
+      "order": 20,
+      "catalogId": "garlic-1kg-bagged",
+      "title": "Garlic 1kg (bagged)",
+      "code": "9578",
+      "family": "Alliums",
+      "status": "ready"
+    },
+    {
+      "order": 21,
+      "catalogId": "grapes-green-seedless-2lb",
+      "title": "Grapes - Green (Seedless) 2lb",
+      "code": "84022",
+      "family": "Grapes",
+      "status": "ready"
+    },
+    {
+      "order": 22,
+      "catalogId": "grapes-red-seedless-2lb",
+      "title": "Grapes - Red (Seedless) 2lb",
+      "code": "84636",
+      "family": "Grapes",
+      "status": "ready"
+    },
+    {
+      "order": 23,
+      "catalogId": "kiwi-1kg",
+      "title": "Kiwi - 1kg",
+      "code": "1465",
+      "family": "Kiwi",
+      "status": "ready"
+    },
+    {
+      "order": 24,
+      "catalogId": "lettuce-boston-dome",
+      "title": "Lettuce - Boston (Dome)",
+      "code": "3557",
+      "family": "Lettuce",
+      "status": "ready"
+    },
+    {
+      "order": 25,
+      "catalogId": "lettuce-iceberg-organic",
+      "title": "Lettuce - Iceberg (Organic)",
+      "code": "94061",
+      "family": "Lettuce",
+      "status": "ready"
+    },
+    {
+      "order": 26,
+      "catalogId": "limes-key-1lb",
+      "title": "Limes - Key 1lb",
+      "code": "3653",
+      "family": "Citrus",
+      "status": "ready"
+    },
+    {
+      "order": 27,
+      "catalogId": "mangoes-case-10lb",
+      "title": "Mangoes - Case 10lb",
+      "code": "62464",
+      "family": "Mangoes",
+      "status": "ready"
+    },
+    {
+      "order": 28,
+      "catalogId": "mangos-east-indian-case",
+      "title": "Mangos - East Indian (Case)",
+      "code": "12966",
+      "family": "Mangoes",
+      "status": "ready"
+    },
+    {
+      "order": 29,
+      "catalogId": "melons-cantaloupe-organic",
+      "title": "Melons - Cantaloupe (Organic)",
+      "code": "94050",
+      "family": "Melons",
+      "status": "ready"
+    },
+    {
+      "order": 30,
+      "catalogId": "onions-red-10lb",
+      "title": "Onions - Red 10lb",
+      "code": "3506",
+      "family": "Alliums",
+      "status": "ready"
+    },
+    {
+      "order": 31,
+      "catalogId": "onions-yellow-3lb-bag",
+      "title": "Onions - Yellow 3lb (Bag)",
+      "code": "59662",
+      "family": "Alliums",
+      "status": "ready"
+    },
+    {
+      "order": 32,
+      "catalogId": "onions-yellow-organic-2lb",
+      "title": "Onions - Yellow Organic 2lb",
+      "code": "62810",
+      "family": "Alliums",
+      "status": "ready"
+    },
+    {
+      "order": 33,
+      "catalogId": "peaches-case",
+      "title": "Peaches (Case)",
+      "code": "68599",
+      "family": "Peaches",
+      "status": "ready"
+    },
+    {
+      "order": 34,
+      "catalogId": "peaches-3l",
+      "title": "Peaches - 3L",
+      "code": "6992",
+      "family": "Peaches",
+      "status": "ready"
+    },
+    {
+      "order": 35,
+      "catalogId": "peaches-tree-ripe-case",
+      "title": "Peaches - Tree Ripe (Case)",
+      "code": "6808",
+      "family": "Peaches",
+      "status": "ready"
+    },
+    {
+      "order": 36,
+      "catalogId": "pears-bartlett-3lb-organic",
+      "title": "Pears - Bartlett 3lb (Organic)",
+      "code": "63486",
+      "family": "Pears",
+      "status": "ready"
+    },
+    {
+      "order": 37,
+      "catalogId": "peppers-assorted-bin",
+      "title": "Peppers - Assorted (Bin)",
+      "code": "8170",
+      "family": "Peppers",
+      "status": "ready"
+    },
+    {
+      "order": 38,
+      "catalogId": "peppers-green-case",
+      "title": "Peppers - Green (Case)",
+      "code": "63866",
+      "family": "Peppers",
+      "status": "ready"
+    },
+    {
+      "order": 39,
+      "catalogId": "peppers-green-4ct-bag",
+      "title": "Peppers - Green 4ct (Bag)",
+      "code": "3014",
+      "family": "Peppers",
+      "status": "ready"
+    },
+    {
+      "order": 40,
+      "catalogId": "peppers-green-hh-bulk",
+      "title": "Peppers - Green HH (Bulk)",
+      "code": "3120",
+      "family": "Peppers",
+      "status": "ready"
+    },
+    {
+      "order": 41,
+      "catalogId": "peppers-red-4ct-bag",
+      "title": "Peppers - Red 4ct (Bag)",
+      "code": "64116",
+      "family": "Peppers",
+      "status": "ready"
+    },
+    {
+      "order": 42,
+      "catalogId": "persimmons-hachiya-case",
+      "title": "Persimmons - Hachiya (Case)",
+      "code": "36308",
+      "family": "Persimmons",
+      "status": "ready"
+    },
+    {
+      "order": 43,
+      "catalogId": "plums-blue-1-5l",
+      "title": "Plums - Blue 1.5L",
+      "code": "6706",
+      "family": "Plums",
+      "status": "ready"
+    },
+    {
+      "order": 44,
+      "catalogId": "plums-yellow-1-5l",
+      "title": "Plums - Yellow 1.5L",
+      "code": "1383",
+      "family": "Plums",
+      "status": "ready"
+    },
+    {
+      "order": 45,
+      "catalogId": "potato-russet-white-20lb",
+      "title": "Potato - Russet / White 20lb",
+      "code": "62006",
+      "family": "Potatoes",
+      "status": "ready"
+    },
+    {
+      "order": 46,
+      "catalogId": "potato-russet-10lb",
+      "title": "Potato - Russet 10lb",
+      "code": "171",
+      "family": "Potatoes",
+      "status": "ready"
+    },
+    {
+      "order": 47,
+      "catalogId": "tomato-fm-on-the-vine-bulk",
+      "title": "Tomato - FM On The Vine (Bulk)",
+      "code": "64664",
+      "family": "Tomatoes",
+      "status": "ready"
+    },
+    {
+      "order": 48,
+      "catalogId": "tomato-hh-organic",
+      "title": "Tomato - HH (Organic)",
+      "code": "94798",
+      "family": "Tomatoes",
+      "status": "ready"
+    },
+    {
+      "order": 49,
       "catalogId": "tomato-hh-red-bulk",
-      "title": "HH Red tomato",
+      "title": "Tomato - HH Red (Bulk)",
       "code": "4798",
       "family": "Tomatoes",
       "status": "ready"
     },
     {
-      "catalogId": "tangerines-fall-glo",
-      "title": "Fall Glo tangerine",
-      "code": "3144",
-      "family": "Citrus",
-      "status": "queued",
-      "queueReason": "Exact recognition photograph needs source review.",
-      "queueReasonCodes": [
-        "media-evidence-required"
-      ],
-      "mediaReason": "reviewed-source-evidence-required",
-      "order": 3
-    },
-    {
-      "catalogId": "papayas-meridol",
-      "title": "Meridol papaya",
-      "code": "3112",
-      "family": "Papayas",
-      "status": "queued",
-      "queueReason": "Exact recognition photograph needs source review.",
-      "queueReasonCodes": [
-        "media-evidence-required"
-      ],
-      "mediaReason": "reviewed-source-evidence-required",
-      "order": 4
-    },
-    {
-      "catalogId": "watermelons-mickey-lee",
-      "title": "Mickey Lee watermelon",
-      "code": "4331",
-      "family": "Watermelons",
-      "status": "queued",
-      "queueReason": "Exact recognition photograph needs source review.",
-      "queueReasonCodes": [
-        "media-evidence-required"
-      ],
-      "mediaReason": "reviewed-source-evidence-required",
-      "order": 5
-    },
-    {
+      "order": 50,
       "catalogId": "tomatoes-on-the-vine-hh-organic",
-      "title": "Organic On The Vine HH tomato",
+      "title": "Tomatoes - On The Vine HH (Organic)",
       "code": "94664",
       "family": "Tomatoes",
-      "status": "queued",
-      "queueReason": "Exact recognition photograph needs source review.",
-      "queueReasonCodes": [
-        "media-evidence-required"
-      ],
-      "mediaReason": "reviewed-source-evidence-required",
-      "order": 6
+      "status": "ready"
     },
     {
-      "catalogId": "pears-taylor-gold",
-      "title": "Taylor Gold pear",
-      "code": "4553",
-      "family": "Pears",
-      "status": "queued",
-      "queueReason": "Exact recognition photograph needs source review.",
-      "queueReasonCodes": [
-        "media-evidence-required"
-      ],
-      "mediaReason": "reviewed-source-evidence-required",
-      "order": 7
-    },
-    {
-      "catalogId": "peppers-green-hh-bulk",
-      "title": "Green HH pepper",
-      "code": "3120",
-      "family": "Peppers",
-      "status": "queued",
-      "queueReason": "Exact recognition photograph needs source review.",
-      "queueReasonCodes": [
-        "media-evidence-required"
-      ],
-      "mediaReason": "reviewed-source-evidence-required",
-      "order": 8
-    },
-    {
-      "catalogId": "melons-goldendew",
-      "title": "Goldendew melon",
-      "code": "3100",
-      "family": "Melons",
-      "status": "queued",
-      "queueReason": "Exact recognition photograph needs source review.",
-      "queueReasonCodes": [
-        "media-evidence-required"
-      ],
-      "mediaReason": "reviewed-source-evidence-required",
-      "order": 9
-    },
-    {
-      "catalogId": "melons-honeykiss",
-      "title": "Honeykiss melon",
-      "code": "4375",
-      "family": "Melons",
-      "status": "queued",
-      "queueReason": "Exact recognition photograph needs source review.",
-      "queueReasonCodes": [
-        "media-evidence-required"
-      ],
-      "mediaReason": "reviewed-source-evidence-required",
-      "order": 10
-    },
-    {
-      "catalogId": "celery-hearts",
-      "title": "Hearts celery",
-      "code": "4575",
-      "family": "Stalk Vegetables",
-      "status": "queued",
-      "queueReason": "Exact recognition photograph needs source review.",
-      "queueReasonCodes": [
-        "media-evidence-required"
-      ],
-      "mediaReason": "reviewed-source-evidence-required",
-      "order": 11
-    },
-    {
-      "catalogId": "tomato-fm-on-the-vine-bulk",
-      "title": "FM On The Vine tomato",
-      "code": "64664",
+      "order": 51,
+      "catalogId": "tomatoes-roma-plum-box-half-bushel",
+      "title": "Tomatoes - Roma / Plum (Box, Half Bushel)",
+      "code": "70755",
       "family": "Tomatoes",
-      "status": "queued",
-      "queueReason": "Exact recognition photograph needs source review.",
-      "queueReasonCodes": [
-        "media-evidence-required"
-      ],
-      "mediaReason": "reviewed-source-evidence-required",
-      "order": 12
+      "status": "ready"
     },
     {
-      "catalogId": "yu-choy-jr",
-      "title": "Jr Yu choy",
-      "code": "10260",
-      "family": "Leafy Greens",
-      "status": "queued",
-      "queueReason": "Exact recognition photograph needs source review.",
-      "queueReasonCodes": [
-        "media-evidence-required"
-      ],
-      "mediaReason": "reviewed-source-evidence-required",
-      "order": 13
-    },
-    {
-      "catalogId": "bok-choy-shanghai-jr",
-      "title": "Shanghai Jr bok choy",
-      "code": "64388",
-      "family": "Leafy Greens",
-      "status": "queued",
-      "queueReason": "Exact recognition photograph needs source review.",
-      "queueReasonCodes": [
-        "media-evidence-required"
-      ],
-      "mediaReason": "reviewed-source-evidence-required",
-      "order": 14
-    },
-    {
-      "catalogId": "sher-li-hon",
-      "title": "Sher-Li-Hon",
-      "code": "69624",
-      "family": "Leafy Greens",
-      "status": "queued",
-      "queueReason": "Exact recognition photograph needs source review.",
-      "queueReasonCodes": [
-        "media-evidence-required"
-      ],
-      "mediaReason": "reviewed-source-evidence-required",
-      "order": 15
-    },
-    {
+      "order": 52,
       "catalogId": "uchoy-sum",
       "title": "Uchoy Sum",
       "code": "64387",
       "family": "Leafy Greens",
-      "status": "queued",
-      "queueReason": "Exact recognition photograph needs source review.",
-      "queueReasonCodes": [
-        "media-evidence-required"
-      ],
-      "mediaReason": "reviewed-source-evidence-required",
-      "order": 16
+      "status": "ready"
     },
     {
-      "catalogId": "persimmons-vanilla",
-      "title": "Vanilla persimmon",
-      "code": "69220",
-      "family": "Persimmons",
-      "status": "queued",
-      "queueReason": "Exact recognition photograph needs source review.",
-      "queueReasonCodes": [
-        "media-evidence-required"
-      ],
-      "mediaReason": "reviewed-source-evidence-required",
-      "order": 17
-    },
-    {
-      "catalogId": "tomato-hh-organic",
-      "title": "Organic HH tomato",
-      "code": "94798",
-      "family": "Tomatoes",
-      "status": "queued",
-      "queueReason": "Exact recognition photograph needs source review.",
-      "queueReasonCodes": [
-        "media-evidence-required"
-      ],
-      "mediaReason": "reviewed-source-evidence-required",
-      "order": 18
-    },
-    {
-      "catalogId": "melons-cantaloupe-organic",
-      "title": "Organic Cantaloupe melon",
-      "code": "94050",
-      "family": "Melons",
-      "status": "queued",
-      "queueReason": "Exact recognition photograph needs source review.",
-      "queueReasonCodes": [
-        "media-evidence-required"
-      ],
-      "mediaReason": "reviewed-source-evidence-required",
-      "order": 19
-    },
-    {
-      "catalogId": "cherries-rwb-organic",
-      "title": "Organic RWB cherries",
-      "code": "94045",
-      "family": "Cherries",
-      "status": "queued",
-      "queueReason": "Exact recognition photograph needs source review.",
-      "queueReasonCodes": [
-        "media-evidence-required"
-      ],
-      "mediaReason": "reviewed-source-evidence-required",
-      "order": 20
-    },
-    {
-      "catalogId": "lettuce-iceberg-organic",
-      "title": "Organic Iceberg lettuce",
-      "code": "94061",
-      "family": "Lettuce",
-      "status": "queued",
-      "queueReason": "Exact recognition photograph needs source review.",
-      "queueReasonCodes": [
-        "media-evidence-required"
-      ],
-      "mediaReason": "reviewed-source-evidence-required",
-      "order": 21
+      "order": 53,
+      "catalogId": "yu-choy-jr",
+      "title": "Yu Choy - Jr",
+      "code": "10260",
+      "family": "Leafy Greens",
+      "status": "ready"
     },
     {
       "catalogId": "aloe-vera-handwritten",
@@ -279,20 +440,7 @@
         "missing-code",
         "uncertain-source"
       ],
-      "order": 22
-    },
-    {
-      "catalogId": "apples-ambrosia-bin",
-      "title": "Apples - Ambrosia (Bin)",
-      "code": "25040",
-      "family": "Apples",
-      "status": "queued",
-      "queueReason": "Package or case evidence is required",
-      "queueReasonCodes": [
-        "package-evidence-required",
-        "duplicate-lesson-title"
-      ],
-      "order": 23
+      "order": 54
     },
     {
       "catalogId": "apples-ambrosia-pc",
@@ -304,7 +452,7 @@
       "queueReasonCodes": [
         "package-evidence-required"
       ],
-      "order": 24
+      "order": 55
     },
     {
       "catalogId": "apples-gala",
@@ -318,31 +466,7 @@
         "duplicate-label-codes",
         "conflicting-code"
       ],
-      "order": 25
-    },
-    {
-      "catalogId": "apples-gala-orchard-run",
-      "title": "Apples - Gala (Orchard Run)",
-      "code": "62021",
-      "family": "Apples",
-      "status": "queued",
-      "queueReason": "Package or case evidence is required",
-      "queueReasonCodes": [
-        "package-evidence-required"
-      ],
-      "order": 26
-    },
-    {
-      "catalogId": "apples-ginger-gold-orchard-run",
-      "title": "Apples - Ginger Gold (Orchard Run)",
-      "code": "3000",
-      "family": "Apples",
-      "status": "queued",
-      "queueReason": "Package or case evidence is required",
-      "queueReasonCodes": [
-        "package-evidence-required"
-      ],
-      "order": 27
+      "order": 56
     },
     {
       "catalogId": "apples-golden-delicious-pc",
@@ -354,20 +478,7 @@
       "queueReasonCodes": [
         "package-evidence-required"
       ],
-      "order": 28
-    },
-    {
-      "catalogId": "apples-honeycrisp-orchard-run",
-      "title": "Apples - Honeycrisp (Orchard Run)",
-      "code": "59986",
-      "family": "Apples",
-      "status": "queued",
-      "queueReason": "Package or case evidence is required",
-      "queueReasonCodes": [
-        "package-evidence-required",
-        "duplicate-lesson-title"
-      ],
-      "order": 29
+      "order": 57
     },
     {
       "catalogId": "apples-lady-alice-pc",
@@ -379,7 +490,7 @@
       "queueReasonCodes": [
         "package-evidence-required"
       ],
-      "order": 30
+      "order": 58
     },
     {
       "catalogId": "apples-large-extra-fancy-first-word-obscured",
@@ -392,20 +503,7 @@
         "uncertain-source",
         "conflicting-code"
       ],
-      "order": 31
-    },
-    {
-      "catalogId": "apples-mcintosh-orchard-bin",
-      "title": "Apples - McIntosh (Orchard Bin)",
-      "code": "62010",
-      "family": "Apples",
-      "status": "queued",
-      "queueReason": "Package or case evidence is required",
-      "queueReasonCodes": [
-        "package-evidence-required",
-        "duplicate-lesson-title"
-      ],
-      "order": 32
+      "order": 59
     },
     {
       "catalogId": "apples-mcintosh-extra-fancy",
@@ -417,7 +515,7 @@
       "queueReasonCodes": [
         "conflicting-code"
       ],
-      "order": 33
+      "order": 60
     },
     {
       "catalogId": "apples-red-delicious-2",
@@ -430,7 +528,7 @@
         "duplicate-label-codes",
         "duplicate-lesson-title"
       ],
-      "order": 34
+      "order": 61
     },
     {
       "catalogId": "apples-royal-gala-2",
@@ -444,32 +542,7 @@
         "conflicting-code",
         "duplicate-lesson-title"
       ],
-      "order": 35
-    },
-    {
-      "catalogId": "apples-spartan-orchard-run-bin",
-      "title": "Apples - Spartan (Orchard Run Bin)",
-      "code": "62013",
-      "family": "Apples",
-      "status": "queued",
-      "queueReason": "Package or case evidence is required",
-      "queueReasonCodes": [
-        "package-evidence-required",
-        "duplicate-lesson-title"
-      ],
-      "order": 36
-    },
-    {
-      "catalogId": "apples-sunrise-orchard-run",
-      "title": "Apples - Sunrise (Orchard Run)",
-      "code": "62023",
-      "family": "Apples",
-      "status": "queued",
-      "queueReason": "Package or case evidence is required",
-      "queueReasonCodes": [
-        "package-evidence-required"
-      ],
-      "order": 37
+      "order": 62
     },
     {
       "catalogId": "apricots-2",
@@ -481,7 +554,7 @@
       "queueReasonCodes": [
         "duplicate-label-codes"
       ],
-      "order": 38
+      "order": 63
     },
     {
       "catalogId": "artichokes-small-handwritten",
@@ -495,7 +568,7 @@
         "conflicting-code",
         "unclassified-product"
       ],
-      "order": 39
+      "order": 64
     },
     {
       "catalogId": "asparagus-organic",
@@ -507,7 +580,7 @@
       "queueReasonCodes": [
         "source-identity-review"
       ],
-      "order": 40
+      "order": 65
     },
     {
       "catalogId": "avocado-5ct-bag-handwritten",
@@ -521,7 +594,7 @@
         "package-evidence-required",
         "duplicate-lesson-title"
       ],
-      "order": 41
+      "order": 66
     },
     {
       "catalogId": "avocado-caribbean",
@@ -533,31 +606,7 @@
       "queueReasonCodes": [
         "source-identity-review"
       ],
-      "order": 42
-    },
-    {
-      "catalogId": "avocado-organic-3ct",
-      "title": "Avocado - Organic 3ct",
-      "code": "40719",
-      "family": "Avocados",
-      "status": "queued",
-      "queueReason": "Package or case evidence is required",
-      "queueReasonCodes": [
-        "package-evidence-required"
-      ],
-      "order": 43
-    },
-    {
-      "catalogId": "bananas-case",
-      "title": "Bananas (Case)",
-      "code": "6794",
-      "family": "Bananas",
-      "status": "queued",
-      "queueReason": "Package or case evidence is required",
-      "queueReasonCodes": [
-        "package-evidence-required"
-      ],
-      "order": 44
+      "order": 67
     },
     {
       "catalogId": "bananas-baby-bananas-mini-4186",
@@ -570,7 +619,7 @@
         "conflicting-code",
         "competing-label-number"
       ],
-      "order": 45
+      "order": 68
     },
     {
       "catalogId": "bananas-red",
@@ -582,7 +631,7 @@
       "queueReasonCodes": [
         "conflicting-code"
       ],
-      "order": 46
+      "order": 69
     },
     {
       "catalogId": "bartlett-orchard-run-first-word-obscured",
@@ -596,20 +645,7 @@
         "package-evidence-required",
         "unclassified-product"
       ],
-      "order": 47
-    },
-    {
-      "catalogId": "bean-sprouts-case",
-      "title": "Bean Sprouts (Case)",
-      "code": "63604",
-      "family": "Sprouts",
-      "status": "queued",
-      "queueReason": "Package or case evidence is required",
-      "queueReasonCodes": [
-        "package-evidence-required",
-        "duplicate-lesson-title"
-      ],
-      "order": 48
+      "order": 70
     },
     {
       "catalogId": "beans-green-case",
@@ -622,7 +658,7 @@
         "package-evidence-required",
         "duplicate-lesson-title"
       ],
-      "order": 49
+      "order": 71
     },
     {
       "catalogId": "beets-10lb",
@@ -634,7 +670,7 @@
       "queueReasonCodes": [
         "package-evidence-required"
       ],
-      "order": 50
+      "order": 72
     },
     {
       "catalogId": "blackberries-pint-12oz",
@@ -646,19 +682,7 @@
       "queueReasonCodes": [
         "package-evidence-required"
       ],
-      "order": 51
-    },
-    {
-      "catalogId": "blueberries-2lb",
-      "title": "Blueberries - 2lb",
-      "code": "39583",
-      "family": "Berries",
-      "status": "queued",
-      "queueReason": "Package or case evidence is required",
-      "queueReasonCodes": [
-        "package-evidence-required"
-      ],
-      "order": 52
+      "order": 73
     },
     {
       "catalogId": "blueberries-full-pint-12oz",
@@ -670,7 +694,7 @@
       "queueReasonCodes": [
         "package-evidence-required"
       ],
-      "order": 53
+      "order": 74
     },
     {
       "catalogId": "blueberries-half-pint-6oz",
@@ -682,7 +706,7 @@
       "queueReasonCodes": [
         "package-evidence-required"
       ],
-      "order": 54
+      "order": 75
     },
     {
       "catalogId": "cabbage-sour",
@@ -694,7 +718,7 @@
       "queueReasonCodes": [
         "source-identity-review"
       ],
-      "order": 55
+      "order": 76
     },
     {
       "catalogId": "carrots-chinese-jumbo",
@@ -706,7 +730,7 @@
       "queueReasonCodes": [
         "conflicting-code"
       ],
-      "order": 56
+      "order": 77
     },
     {
       "catalogId": "carrots-jumbo-case",
@@ -718,7 +742,19 @@
       "queueReasonCodes": [
         "package-evidence-required"
       ],
-      "order": 57
+      "order": 78
+    },
+    {
+      "catalogId": "celery-hearts",
+      "title": "Celery - Hearts",
+      "code": "4575",
+      "family": "Stalk Vegetables",
+      "status": "queued",
+      "queueReason": "The row needs manual source review",
+      "queueReasonCodes": [
+        "strict-admission-review"
+      ],
+      "order": 79
     },
     {
       "catalogId": "cherimoya",
@@ -730,7 +766,7 @@
       "queueReasonCodes": [
         "duplicate-label-codes"
       ],
-      "order": 58
+      "order": 80
     },
     {
       "catalogId": "cherimoya-2",
@@ -742,7 +778,7 @@
       "queueReasonCodes": [
         "duplicate-label-codes"
       ],
-      "order": 59
+      "order": 81
     },
     {
       "catalogId": "cherries-white-ranier-264497",
@@ -754,43 +790,7 @@
       "queueReasonCodes": [
         "competing-label-number"
       ],
-      "order": 60
-    },
-    {
-      "catalogId": "citrus-bulk-unlabelled-row-1st",
-      "title": "Citrus - Bulk (unlabelled row, 1st)",
-      "code": "0240",
-      "family": "Citrus",
-      "status": "queued",
-      "queueReason": "Source identity or code is marked uncertain",
-      "queueReasonCodes": [
-        "uncertain-source"
-      ],
-      "order": 61
-    },
-    {
-      "catalogId": "citrus-bulk-unlabelled-row-2nd",
-      "title": "Citrus - Bulk (unlabelled row, 2nd)",
-      "code": "3029",
-      "family": "Citrus",
-      "status": "queued",
-      "queueReason": "Source identity or code is marked uncertain",
-      "queueReasonCodes": [
-        "uncertain-source"
-      ],
-      "order": 62
-    },
-    {
-      "catalogId": "clementines-3lb",
-      "title": "Clementines - 3lb",
-      "code": "1835",
-      "family": "Citrus",
-      "status": "queued",
-      "queueReason": "Package or case evidence is required",
-      "queueReasonCodes": [
-        "package-evidence-required"
-      ],
-      "order": 63
+      "order": 82
     },
     {
       "catalogId": "corn-tray-of-5",
@@ -802,7 +802,7 @@
       "queueReasonCodes": [
         "package-evidence-required"
       ],
-      "order": 64
+      "order": 83
     },
     {
       "catalogId": "croissants-baked-goods",
@@ -815,7 +815,7 @@
         "outside-produce-scope",
         "unclassified-product"
       ],
-      "order": 65
+      "order": 84
     },
     {
       "catalogId": "cucumbers-dill-case",
@@ -828,7 +828,7 @@
         "package-evidence-required",
         "duplicate-lesson-title"
       ],
-      "order": 66
+      "order": 85
     },
     {
       "catalogId": "dill-weed-pickling-herbs",
@@ -840,7 +840,7 @@
       "queueReasonCodes": [
         "source-identity-review"
       ],
-      "order": 67
+      "order": 86
     },
     {
       "catalogId": "donuts-baked-goods",
@@ -853,7 +853,7 @@
         "outside-produce-scope",
         "unclassified-product"
       ],
-      "order": 68
+      "order": 87
     },
     {
       "catalogId": "duck-eggs-preserved",
@@ -866,7 +866,7 @@
         "outside-produce-scope",
         "unclassified-product"
       ],
-      "order": 69
+      "order": 88
     },
     {
       "catalogId": "duck-eggs-salted",
@@ -879,7 +879,7 @@
         "outside-produce-scope",
         "unclassified-product"
       ],
-      "order": 70
+      "order": 89
     },
     {
       "catalogId": "durian-frozen",
@@ -893,7 +893,7 @@
         "uncertain-source",
         "unclassified-product"
       ],
-      "order": 71
+      "order": 90
     },
     {
       "catalogId": "eddoes-handwritten",
@@ -907,19 +907,7 @@
         "uncertain-source",
         "unclassified-product"
       ],
-      "order": 72
-    },
-    {
-      "catalogId": "eggplant-purple-case",
-      "title": "Eggplant - Purple (Case)",
-      "code": "63582",
-      "family": "Eggplants",
-      "status": "queued",
-      "queueReason": "Package or case evidence is required",
-      "queueReasonCodes": [
-        "package-evidence-required"
-      ],
-      "order": 73
+      "order": 91
     },
     {
       "catalogId": "fennel-anise",
@@ -931,7 +919,7 @@
       "queueReasonCodes": [
         "conflicting-code"
       ],
-      "order": 74
+      "order": 92
     },
     {
       "catalogId": "figgs-black-case",
@@ -944,19 +932,7 @@
         "package-evidence-required",
         "duplicate-lesson-title"
       ],
-      "order": 75
-    },
-    {
-      "catalogId": "figgs-green-case",
-      "title": "Figgs - Green (Case)",
-      "code": "6799",
-      "family": "Figs",
-      "status": "queued",
-      "queueReason": "Package or case evidence is required",
-      "queueReasonCodes": [
-        "package-evidence-required"
-      ],
-      "order": 76
+      "order": 93
     },
     {
       "catalogId": "figs-black-case",
@@ -969,7 +945,7 @@
         "package-evidence-required",
         "duplicate-lesson-title"
       ],
-      "order": 77
+      "order": 94
     },
     {
       "catalogId": "figs-black-227g-pint",
@@ -981,7 +957,7 @@
       "queueReasonCodes": [
         "package-evidence-required"
       ],
-      "order": 78
+      "order": 95
     },
     {
       "catalogId": "figs-green-case",
@@ -993,7 +969,7 @@
       "queueReasonCodes": [
         "package-evidence-required"
       ],
-      "order": 79
+      "order": 96
     },
     {
       "catalogId": "garlic-loose-bulk",
@@ -1005,7 +981,7 @@
       "queueReasonCodes": [
         "source-identity-review"
       ],
-      "order": 80
+      "order": 97
     },
     {
       "catalogId": "garlic-peeled-5lb",
@@ -1017,19 +993,7 @@
       "queueReasonCodes": [
         "package-evidence-required"
       ],
-      "order": 81
-    },
-    {
-      "catalogId": "garlic-1kg-bagged",
-      "title": "Garlic 1kg (bagged)",
-      "code": "9578",
-      "family": "Alliums",
-      "status": "queued",
-      "queueReason": "Package or case evidence is required",
-      "queueReasonCodes": [
-        "package-evidence-required"
-      ],
-      "order": 82
+      "order": 98
     },
     {
       "catalogId": "gourds-ornamental",
@@ -1043,7 +1007,7 @@
         "uncertain-source",
         "unclassified-product"
       ],
-      "order": 83
+      "order": 99
     },
     {
       "catalogId": "grapefruit-bin",
@@ -1057,31 +1021,7 @@
         "conflicting-code",
         "already-taught-code"
       ],
-      "order": 84
-    },
-    {
-      "catalogId": "grapes-green-seedless-2lb",
-      "title": "Grapes - Green (Seedless) 2lb",
-      "code": "84022",
-      "family": "Grapes",
-      "status": "queued",
-      "queueReason": "Package or case evidence is required",
-      "queueReasonCodes": [
-        "package-evidence-required"
-      ],
-      "order": 85
-    },
-    {
-      "catalogId": "grapes-red-seedless-2lb",
-      "title": "Grapes - Red (Seedless) 2lb",
-      "code": "84636",
-      "family": "Grapes",
-      "status": "queued",
-      "queueReason": "Package or case evidence is required",
-      "queueReasonCodes": [
-        "package-evidence-required"
-      ],
-      "order": 86
+      "order": 100
     },
     {
       "catalogId": "ice",
@@ -1094,7 +1034,7 @@
         "outside-produce-scope",
         "unclassified-product"
       ],
-      "order": 87
+      "order": 101
     },
     {
       "catalogId": "jackfruit-cut-handwritten",
@@ -1108,7 +1048,7 @@
         "uncertain-source",
         "unclassified-product"
       ],
-      "order": 88
+      "order": 102
     },
     {
       "catalogId": "jicama-roots",
@@ -1122,20 +1062,7 @@
         "uncertain-source",
         "duplicate-lesson-title"
       ],
-      "order": 89
-    },
-    {
-      "catalogId": "kiwi-1kg",
-      "title": "Kiwi - 1kg",
-      "code": "1465",
-      "family": "Kiwi",
-      "status": "queued",
-      "queueReason": "Package or case evidence is required",
-      "queueReasonCodes": [
-        "package-evidence-required",
-        "duplicate-lesson-title"
-      ],
-      "order": 90
+      "order": 103
     },
     {
       "catalogId": "kohlrabi-note-on-sheet-kohlrabi-1692-handwritten",
@@ -1148,31 +1075,7 @@
         "uncertain-source",
         "source-identity-review"
       ],
-      "order": 91
-    },
-    {
-      "catalogId": "lettuce-boston-dome",
-      "title": "Lettuce - Boston (Dome)",
-      "code": "3557",
-      "family": "Lettuce",
-      "status": "queued",
-      "queueReason": "Package or case evidence is required",
-      "queueReasonCodes": [
-        "package-evidence-required"
-      ],
-      "order": 92
-    },
-    {
-      "catalogId": "limes-key-1lb",
-      "title": "Limes - Key 1lb",
-      "code": "3653",
-      "family": "Citrus",
-      "status": "queued",
-      "queueReason": "Package or case evidence is required",
-      "queueReasonCodes": [
-        "package-evidence-required"
-      ],
-      "order": 93
+      "order": 104
     },
     {
       "catalogId": "mangoes",
@@ -1185,7 +1088,7 @@
         "conflicting-code",
         "already-taught-code"
       ],
-      "order": 94
+      "order": 105
     },
     {
       "catalogId": "mangoes-ataulfo-case-handwritten",
@@ -1199,19 +1102,7 @@
         "package-evidence-required",
         "duplicate-lesson-title"
       ],
-      "order": 95
-    },
-    {
-      "catalogId": "mangoes-case-10lb",
-      "title": "Mangoes - Case 10lb",
-      "code": "62464",
-      "family": "Mangoes",
-      "status": "queued",
-      "queueReason": "Package or case evidence is required",
-      "queueReasonCodes": [
-        "package-evidence-required"
-      ],
-      "order": 96
+      "order": 106
     },
     {
       "catalogId": "mangoes-red-case-handwritten",
@@ -1226,7 +1117,7 @@
         "conflicting-code",
         "duplicate-lesson-title"
       ],
-      "order": 97
+      "order": 107
     },
     {
       "catalogId": "mangos-ataulfo-case",
@@ -1239,19 +1130,7 @@
         "package-evidence-required",
         "duplicate-lesson-title"
       ],
-      "order": 98
-    },
-    {
-      "catalogId": "mangos-east-indian-case",
-      "title": "Mangos - East Indian (Case)",
-      "code": "12966",
-      "family": "Mangoes",
-      "status": "queued",
-      "queueReason": "Package or case evidence is required",
-      "queueReasonCodes": [
-        "package-evidence-required"
-      ],
-      "order": 99
+      "order": 108
     },
     {
       "catalogId": "mangos-red-case",
@@ -1267,7 +1146,7 @@
         "conflicting-code",
         "duplicate-lesson-title"
       ],
-      "order": 100
+      "order": 109
     },
     {
       "catalogId": "mangos-spice",
@@ -1279,7 +1158,7 @@
       "queueReasonCodes": [
         "source-identity-review"
       ],
-      "order": 101
+      "order": 110
     },
     {
       "catalogId": "melons-bitter-fu-qua",
@@ -1291,7 +1170,31 @@
       "queueReasonCodes": [
         "duplicate-lesson-title"
       ],
-      "order": 102
+      "order": 111
+    },
+    {
+      "catalogId": "melons-goldendew",
+      "title": "Melons - Goldendew",
+      "code": "3100",
+      "family": "Melons",
+      "status": "queued",
+      "queueReason": "The row needs manual source review",
+      "queueReasonCodes": [
+        "strict-admission-review"
+      ],
+      "order": 112
+    },
+    {
+      "catalogId": "melons-honeykiss",
+      "title": "Melons - Honeykiss",
+      "code": "4375",
+      "family": "Melons",
+      "status": "queued",
+      "queueReason": "The row needs manual source review",
+      "queueReasonCodes": [
+        "strict-admission-review"
+      ],
+      "order": 113
     },
     {
       "catalogId": "methileaf-herbs",
@@ -1303,7 +1206,7 @@
       "queueReasonCodes": [
         "source-identity-review"
       ],
-      "order": 103
+      "order": 114
     },
     {
       "catalogId": "mushrooms-white-bulk-rcwc",
@@ -1315,7 +1218,7 @@
       "queueReasonCodes": [
         "source-identity-review"
       ],
-      "order": 104
+      "order": 115
     },
     {
       "catalogId": "nappa-baby-4540-bag",
@@ -1328,7 +1231,7 @@
         "package-evidence-required",
         "competing-label-number"
       ],
-      "order": 105
+      "order": 116
     },
     {
       "catalogId": "nofrills-reusable-bag-black",
@@ -1342,7 +1245,7 @@
         "package-evidence-required",
         "unclassified-product"
       ],
-      "order": 106
+      "order": 117
     },
     {
       "catalogId": "nofrills-reusable-bag-yellow",
@@ -1356,7 +1259,7 @@
         "package-evidence-required",
         "unclassified-product"
       ],
-      "order": 107
+      "order": 118
     },
     {
       "catalogId": "pc-bag-points-mc",
@@ -1372,7 +1275,7 @@
         "duplicate-label-codes",
         "unclassified-product"
       ],
-      "order": 108
+      "order": 119
     },
     {
       "catalogId": "olives-green-case",
@@ -1385,7 +1288,7 @@
         "package-evidence-required",
         "unclassified-product"
       ],
-      "order": 109
+      "order": 120
     },
     {
       "catalogId": "onions-1381-label-as-printed",
@@ -1398,7 +1301,7 @@
         "uncertain-source",
         "competing-label-number"
       ],
-      "order": 110
+      "order": 121
     },
     {
       "catalogId": "onions-medium-50lb-724-58312",
@@ -1411,20 +1314,7 @@
         "package-evidence-required",
         "competing-label-number"
       ],
-      "order": 111
-    },
-    {
-      "catalogId": "onions-red-10lb",
-      "title": "Onions - Red 10lb",
-      "code": "3506",
-      "family": "Alliums",
-      "status": "queued",
-      "queueReason": "Package or case evidence is required",
-      "queueReasonCodes": [
-        "package-evidence-required",
-        "duplicate-lesson-title"
-      ],
-      "order": 112
+      "order": 122
     },
     {
       "catalogId": "onions-sweet-4166-59914",
@@ -1439,7 +1329,7 @@
         "competing-label-number",
         "duplicate-lesson-title"
       ],
-      "order": 113
+      "order": 123
     },
     {
       "catalogId": "onions-yellow-25lb-334",
@@ -1453,20 +1343,7 @@
         "competing-label-number",
         "duplicate-lesson-title"
       ],
-      "order": 114
-    },
-    {
-      "catalogId": "onions-yellow-3lb-bag",
-      "title": "Onions - Yellow 3lb (Bag)",
-      "code": "59662",
-      "family": "Alliums",
-      "status": "queued",
-      "queueReason": "Package or case evidence is required",
-      "queueReasonCodes": [
-        "package-evidence-required",
-        "duplicate-lesson-title"
-      ],
-      "order": 115
+      "order": 124
     },
     {
       "catalogId": "onions-yellow-jumbo-2-case",
@@ -1478,19 +1355,7 @@
       "queueReasonCodes": [
         "package-evidence-required"
       ],
-      "order": 116
-    },
-    {
-      "catalogId": "onions-yellow-organic-2lb",
-      "title": "Onions - Yellow Organic 2lb",
-      "code": "62810",
-      "family": "Alliums",
-      "status": "queued",
-      "queueReason": "Package or case evidence is required",
-      "queueReasonCodes": [
-        "package-evidence-required"
-      ],
-      "order": 117
+      "order": 125
     },
     {
       "catalogId": "oranges-navel-large",
@@ -1503,7 +1368,7 @@
         "conflicting-code",
         "already-taught-code"
       ],
-      "order": 118
+      "order": 126
     },
     {
       "catalogId": "oranges-navel-medium",
@@ -1515,7 +1380,19 @@
       "queueReasonCodes": [
         "conflicting-code"
       ],
-      "order": 119
+      "order": 127
+    },
+    {
+      "catalogId": "papayas-meridol",
+      "title": "Papayas - Meridol",
+      "code": "3112",
+      "family": "Papayas",
+      "status": "queued",
+      "queueReason": "The row needs manual source review",
+      "queueReasonCodes": [
+        "strict-admission-review"
+      ],
+      "order": 128
     },
     {
       "catalogId": "parsley-curley-herbs",
@@ -1528,7 +1405,7 @@
         "conflicting-code",
         "already-taught-code"
       ],
-      "order": 120
+      "order": 129
     },
     {
       "catalogId": "parsnips-2lb",
@@ -1543,7 +1420,7 @@
         "package-evidence-required",
         "duplicate-lesson-title"
       ],
-      "order": 121
+      "order": 130
     },
     {
       "catalogId": "parsnips-bulk-4672",
@@ -1558,7 +1435,7 @@
         "competing-label-number",
         "duplicate-lesson-title"
       ],
-      "order": 122
+      "order": 131
     },
     {
       "catalogId": "pastries-general-baked-goods",
@@ -1571,31 +1448,7 @@
         "outside-produce-scope",
         "unclassified-product"
       ],
-      "order": 123
-    },
-    {
-      "catalogId": "peaches-case",
-      "title": "Peaches (Case)",
-      "code": "68599",
-      "family": "Peaches",
-      "status": "queued",
-      "queueReason": "Package or case evidence is required",
-      "queueReasonCodes": [
-        "package-evidence-required"
-      ],
-      "order": 124
-    },
-    {
-      "catalogId": "peaches-3l",
-      "title": "Peaches - 3L",
-      "code": "6992",
-      "family": "Peaches",
-      "status": "queued",
-      "queueReason": "Package or case evidence is required",
-      "queueReasonCodes": [
-        "package-evidence-required"
-      ],
-      "order": 125
+      "order": 132
     },
     {
       "catalogId": "peaches-freestone-case",
@@ -1607,19 +1460,7 @@
       "queueReasonCodes": [
         "package-evidence-required"
       ],
-      "order": 126
-    },
-    {
-      "catalogId": "peaches-tree-ripe-case",
-      "title": "Peaches - Tree Ripe (Case)",
-      "code": "6808",
-      "family": "Peaches",
-      "status": "queued",
-      "queueReason": "Package or case evidence is required",
-      "queueReasonCodes": [
-        "package-evidence-required"
-      ],
-      "order": 127
+      "order": 133
     },
     {
       "catalogId": "pears-asian-yellow-2",
@@ -1632,20 +1473,7 @@
         "duplicate-label-codes",
         "duplicate-lesson-title"
       ],
-      "order": 128
-    },
-    {
-      "catalogId": "pears-bartlett-3lb-organic",
-      "title": "Pears - Bartlett 3lb (Organic)",
-      "code": "63486",
-      "family": "Pears",
-      "status": "queued",
-      "queueReason": "Package or case evidence is required",
-      "queueReasonCodes": [
-        "package-evidence-required",
-        "duplicate-lesson-title"
-      ],
-      "order": 129
+      "order": 134
     },
     {
       "catalogId": "pears-bartlett-5lb-bag",
@@ -1658,7 +1486,7 @@
         "package-evidence-required",
         "duplicate-lesson-title"
       ],
-      "order": 130
+      "order": 135
     },
     {
       "catalogId": "pears-bosc-large",
@@ -1671,7 +1499,7 @@
         "conflicting-code",
         "already-taught-code"
       ],
-      "order": 131
+      "order": 136
     },
     {
       "catalogId": "pears-forelle-2",
@@ -1684,7 +1512,7 @@
         "duplicate-label-codes",
         "duplicate-lesson-title"
       ],
-      "order": 132
+      "order": 137
     },
     {
       "catalogId": "pears-red-4415",
@@ -1697,57 +1525,19 @@
         "competing-label-number",
         "duplicate-lesson-title"
       ],
-      "order": 133
+      "order": 138
     },
     {
-      "catalogId": "peppers-assorted-bin",
-      "title": "Peppers - Assorted (Bin)",
-      "code": "8170",
-      "family": "Peppers",
+      "catalogId": "pears-taylor-gold",
+      "title": "Pears - Taylor Gold",
+      "code": "4553",
+      "family": "Pears",
       "status": "queued",
-      "queueReason": "Package or case evidence is required",
+      "queueReason": "The row needs manual source review",
       "queueReasonCodes": [
-        "package-evidence-required"
+        "strict-admission-review"
       ],
-      "order": 134
-    },
-    {
-      "catalogId": "peppers-green-case",
-      "title": "Peppers - Green (Case)",
-      "code": "63866",
-      "family": "Peppers",
-      "status": "queued",
-      "queueReason": "Package or case evidence is required",
-      "queueReasonCodes": [
-        "package-evidence-required",
-        "duplicate-lesson-title"
-      ],
-      "order": 135
-    },
-    {
-      "catalogId": "peppers-green-4ct-bag",
-      "title": "Peppers - Green 4ct (Bag)",
-      "code": "3014",
-      "family": "Peppers",
-      "status": "queued",
-      "queueReason": "Package or case evidence is required",
-      "queueReasonCodes": [
-        "package-evidence-required",
-        "duplicate-lesson-title"
-      ],
-      "order": 136
-    },
-    {
-      "catalogId": "peppers-red-4ct-bag",
-      "title": "Peppers - Red 4ct (Bag)",
-      "code": "64116",
-      "family": "Peppers",
-      "status": "queued",
-      "queueReason": "Package or case evidence is required",
-      "queueReasonCodes": [
-        "package-evidence-required"
-      ],
-      "order": 137
+      "order": 139
     },
     {
       "catalogId": "peppers-red-long-handwritten",
@@ -1762,20 +1552,19 @@
         "already-taught-code",
         "duplicate-lesson-title"
       ],
-      "order": 138
+      "order": 140
     },
     {
-      "catalogId": "persimmons-hachiya-case",
-      "title": "Persimmons - Hachiya (Case)",
-      "code": "36308",
+      "catalogId": "persimmons-vanilla",
+      "title": "Persimmons - Vanilla",
+      "code": "69220",
       "family": "Persimmons",
       "status": "queued",
-      "queueReason": "Package or case evidence is required",
+      "queueReason": "The row needs manual source review",
       "queueReasonCodes": [
-        "package-evidence-required",
-        "duplicate-lesson-title"
+        "strict-admission-review"
       ],
-      "order": 139
+      "order": 141
     },
     {
       "catalogId": "persimmons-vanilla-case",
@@ -1787,7 +1576,7 @@
       "queueReasonCodes": [
         "package-evidence-required"
       ],
-      "order": 140
+      "order": 142
     },
     {
       "catalogId": "pistachios-bulk-nuts",
@@ -1799,7 +1588,7 @@
       "queueReasonCodes": [
         "unclassified-product"
       ],
-      "order": 141
+      "order": 143
     },
     {
       "catalogId": "plumcots-handwritten",
@@ -1811,30 +1600,6 @@
       "queueReasonCodes": [
         "uncertain-source",
         "source-identity-review"
-      ],
-      "order": 142
-    },
-    {
-      "catalogId": "plums-blue-1-5l",
-      "title": "Plums - Blue 1.5L",
-      "code": "6706",
-      "family": "Plums",
-      "status": "queued",
-      "queueReason": "Package or case evidence is required",
-      "queueReasonCodes": [
-        "package-evidence-required"
-      ],
-      "order": 143
-    },
-    {
-      "catalogId": "plums-yellow-1-5l",
-      "title": "Plums - Yellow 1.5L",
-      "code": "1383",
-      "family": "Plums",
-      "status": "queued",
-      "queueReason": "Package or case evidence is required",
-      "queueReasonCodes": [
-        "package-evidence-required"
       ],
       "order": 144
     },
@@ -1865,31 +1630,6 @@
       "order": 146
     },
     {
-      "catalogId": "potato-russet-white-20lb",
-      "title": "Potato - Russet / White 20lb",
-      "code": "62006",
-      "family": "Potatoes",
-      "status": "queued",
-      "queueReason": "Package or case evidence is required",
-      "queueReasonCodes": [
-        "package-evidence-required"
-      ],
-      "order": 147
-    },
-    {
-      "catalogId": "potato-russet-10lb",
-      "title": "Potato - Russet 10lb",
-      "code": "171",
-      "family": "Potatoes",
-      "status": "queued",
-      "queueReason": "Package or case evidence is required",
-      "queueReasonCodes": [
-        "package-evidence-required",
-        "duplicate-lesson-title"
-      ],
-      "order": 148
-    },
-    {
       "catalogId": "potato-sweet-jamaican-handwritten",
       "title": "Potato - Sweet Jamaican (handwritten)",
       "code": "Code needed",
@@ -1900,7 +1640,7 @@
         "missing-code",
         "uncertain-source"
       ],
-      "order": 149
+      "order": 147
     },
     {
       "catalogId": "potato-white-10lb",
@@ -1913,7 +1653,7 @@
         "package-evidence-required",
         "duplicate-lesson-title"
       ],
-      "order": 150
+      "order": 148
     },
     {
       "catalogId": "potato-yellow-10lb",
@@ -1925,7 +1665,7 @@
       "queueReasonCodes": [
         "package-evidence-required"
       ],
-      "order": 151
+      "order": 149
     },
     {
       "catalogId": "prickly-pears-tray-case",
@@ -1937,7 +1677,7 @@
       "queueReasonCodes": [
         "package-evidence-required"
       ],
-      "order": 152
+      "order": 150
     },
     {
       "catalogId": "pumpkins-jamaican",
@@ -1949,7 +1689,7 @@
       "queueReasonCodes": [
         "source-identity-review"
       ],
-      "order": 153
+      "order": 151
     },
     {
       "catalogId": "pumpkins-large",
@@ -1961,7 +1701,7 @@
       "queueReasonCodes": [
         "duplicate-label-codes"
       ],
-      "order": 154
+      "order": 152
     },
     {
       "catalogId": "pumpkins-large-2",
@@ -1973,7 +1713,7 @@
       "queueReasonCodes": [
         "duplicate-label-codes"
       ],
-      "order": 155
+      "order": 153
     },
     {
       "catalogId": "pumpkins-small-pie-4737",
@@ -1987,7 +1727,7 @@
         "uncertain-source",
         "competing-label-number"
       ],
-      "order": 156
+      "order": 154
     },
     {
       "catalogId": "pumpkins-white",
@@ -2000,7 +1740,7 @@
         "missing-code",
         "uncertain-source"
       ],
-      "order": 157
+      "order": 155
     },
     {
       "catalogId": "radish-bunch",
@@ -2012,7 +1752,7 @@
       "queueReasonCodes": [
         "conflicting-code"
       ],
-      "order": 158
+      "order": 156
     },
     {
       "catalogId": "raspberries-red-half-pint-6oz",
@@ -2024,7 +1764,7 @@
       "queueReasonCodes": [
         "package-evidence-required"
       ],
-      "order": 159
+      "order": 157
     },
     {
       "catalogId": "raspberries-red-pint-12oz",
@@ -2036,7 +1776,7 @@
       "queueReasonCodes": [
         "package-evidence-required"
       ],
-      "order": 160
+      "order": 158
     },
     {
       "catalogId": "rutabagas",
@@ -2049,7 +1789,7 @@
         "missing-code",
         "uncertain-source"
       ],
-      "order": 161
+      "order": 159
     },
     {
       "catalogId": "safety-salt-snow",
@@ -2062,7 +1802,19 @@
         "outside-produce-scope",
         "unclassified-product"
       ],
-      "order": 162
+      "order": 160
+    },
+    {
+      "catalogId": "sher-li-hon",
+      "title": "Sher-Li-Hon",
+      "code": "69624",
+      "family": "Leafy Greens",
+      "status": "queued",
+      "queueReason": "The row needs manual source review",
+      "queueReasonCodes": [
+        "strict-admission-review"
+      ],
+      "order": 161
     },
     {
       "catalogId": "squash-buttercup",
@@ -2074,7 +1826,7 @@
       "queueReasonCodes": [
         "conflicting-code"
       ],
-      "order": 163
+      "order": 162
     },
     {
       "catalogId": "strawberries-1lb",
@@ -2086,7 +1838,7 @@
       "queueReasonCodes": [
         "package-evidence-required"
       ],
-      "order": 164
+      "order": 163
     },
     {
       "catalogId": "strawberries-2lb",
@@ -2098,7 +1850,7 @@
       "queueReasonCodes": [
         "package-evidence-required"
       ],
-      "order": 165
+      "order": 164
     },
     {
       "catalogId": "sweet-potatoes-white",
@@ -2110,7 +1862,7 @@
       "queueReasonCodes": [
         "source-identity-review"
       ],
-      "order": 166
+      "order": 165
     },
     {
       "catalogId": "sweet-sop",
@@ -2122,6 +1874,18 @@
       "queueReasonCodes": [
         "store-barcode-not-plu",
         "unclassified-product"
+      ],
+      "order": 166
+    },
+    {
+      "catalogId": "tangerines-fall-glo",
+      "title": "Tangerines - Fall Glo",
+      "code": "3144",
+      "family": "Citrus",
+      "status": "queued",
+      "queueReason": "The row needs manual source review",
+      "queueReasonCodes": [
+        "strict-admission-review"
       ],
       "order": 167
     },
@@ -2140,18 +1904,6 @@
       "order": 168
     },
     {
-      "catalogId": "tomatoes-roma-plum-box-half-bushel",
-      "title": "Tomatoes - Roma / Plum (Box, Half Bushel)",
-      "code": "70755",
-      "family": "Tomatoes",
-      "status": "queued",
-      "queueReason": "Package or case evidence is required",
-      "queueReasonCodes": [
-        "package-evidence-required"
-      ],
-      "order": 169
-    },
-    {
       "catalogId": "tomatoes-vine-ripe-field-bulk",
       "title": "Tomatoes - Vine Ripe / Field (Bulk)",
       "code": "3061",
@@ -2161,7 +1913,7 @@
       "queueReasonCodes": [
         "source-identity-review"
       ],
-      "order": 170
+      "order": 169
     },
     {
       "catalogId": "turnip-purple-top-white",
@@ -2174,7 +1926,7 @@
         "missing-code",
         "uncertain-source"
       ],
-      "order": 171
+      "order": 170
     },
     {
       "catalogId": "walnuts-bulk-nuts-handwritten",
@@ -2187,7 +1939,7 @@
         "uncertain-source",
         "unclassified-product"
       ],
-      "order": 172
+      "order": 171
     },
     {
       "catalogId": "water-bottle-case-18-pc",
@@ -2202,7 +1954,7 @@
         "package-evidence-required",
         "unclassified-product"
       ],
-      "order": 173
+      "order": 172
     },
     {
       "catalogId": "water-bottle-case-24-pc",
@@ -2216,6 +1968,18 @@
         "store-barcode-not-plu",
         "package-evidence-required",
         "unclassified-product"
+      ],
+      "order": 173
+    },
+    {
+      "catalogId": "watermelons-mickey-lee",
+      "title": "Watermelons - Mickey Lee",
+      "code": "4331",
+      "family": "Watermelons",
+      "status": "queued",
+      "queueReason": "The row needs manual source review",
+      "queueReasonCodes": [
+        "strict-admission-review"
       ],
       "order": 174
     },

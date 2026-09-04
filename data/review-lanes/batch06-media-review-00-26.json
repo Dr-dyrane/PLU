@@ -1,0 +1,218 @@
+[
+  {
+    "reportIndex": 0,
+    "catalogId": "aloe",
+    "decision": "approved",
+    "selectedFile": "Aloe vera for sale.jpg",
+    "reason": "Clearly shows loose, thick aloe leaves for sale.",
+    "codeResolution": "catalog-supported"
+  },
+  {
+    "reportIndex": 1,
+    "catalogId": "apples-ambrosia-bin",
+    "decision": "approved",
+    "selectedFile": "Ambrosia apples 2017 A2.jpg",
+    "reason": "Clear red-yellow apples presented in bulk bin form.",
+    "codeResolution": "catalog-supported"
+  },
+  {
+    "reportIndex": 2,
+    "catalogId": "apples-gala",
+    "decision": "approved",
+    "selectedFile": "2015-02-xx Gala (apple).jpg",
+    "reason": "Superior alternative with an isolated, clearly visible red-yellow Gala-compatible apple.",
+    "codeResolution": "primary-code-required"
+  },
+  {
+    "reportIndex": 3,
+    "catalogId": "apples-gala-orchard-run",
+    "decision": "approved",
+    "selectedFile": "2015-02-xx Gala (apple).jpg",
+    "reason": "Clearly shows a Gala-compatible apple; orchard-run grade can remain workbook evidence.",
+    "codeResolution": "catalog-supported"
+  },
+  {
+    "reportIndex": 4,
+    "catalogId": "apples-ginger-gold-orchard-run",
+    "decision": "approved",
+    "selectedFile": "Malus Ginger-Gold.jpg",
+    "reason": "Clearly shows pale green-yellow apples growing on the tree.",
+    "codeResolution": "catalog-supported"
+  },
+  {
+    "reportIndex": 5,
+    "catalogId": "apples-honeycrisp-orchard-run",
+    "decision": "approved",
+    "selectedFile": "Honeycrisp-Apple.jpg",
+    "reason": "Clean, isolated red-yellow apple with unobstructed form.",
+    "codeResolution": "catalog-supported"
+  },
+  {
+    "reportIndex": 6,
+    "catalogId": "apples-mcintosh-orchard-bin",
+    "decision": "approved",
+    "selectedFile": "McIntosh Apples.jpg",
+    "reason": "Superior alternative with clear dark-red apples grouped in a box bin.",
+    "codeResolution": "catalog-supported"
+  },
+  {
+    "reportIndex": 7,
+    "catalogId": "apples-red-delicious-2",
+    "decision": "approved",
+    "selectedFile": "Red delicious red chief apple.JPG",
+    "reason": "Two unobstructed deep-red apples with compatible identity and color.",
+    "codeResolution": "primary-code-required"
+  },
+  {
+    "reportIndex": 8,
+    "catalogId": "apples-royal-gala-2",
+    "decision": "approved",
+    "selectedFile": "Royal Gala apple.jpg",
+    "reason": "Clear isolated red-yellow apple with no competing subjects.",
+    "codeResolution": "primary-code-required"
+  },
+  {
+    "reportIndex": 9,
+    "catalogId": "apples-spartan-orchard-run-bin",
+    "decision": "approved",
+    "selectedFile": "Spartan Apple.jpg",
+    "reason": "Basket of dark-red apples with a visible Spartan label.",
+    "codeResolution": "catalog-supported"
+  },
+  {
+    "reportIndex": 10,
+    "catalogId": "apples-sunrise-orchard-run",
+    "decision": "approved",
+    "selectedFile": "Sunrise apple 20240127 151109.jpg",
+    "reason": "Superior alternative showing actual red-green apples in a market basket instead of a distant orchard.",
+    "codeResolution": "catalog-supported"
+  },
+  {
+    "reportIndex": 11,
+    "catalogId": "apricots-2",
+    "decision": "approved",
+    "selectedFile": "Apricots real2.jpg",
+    "reason": "Clear close-up of multiple whole orange apricots.",
+    "codeResolution": "primary-code-required"
+  },
+  {
+    "reportIndex": 12,
+    "catalogId": "artichokes-small-handwritten",
+    "decision": "rejected",
+    "selectedFile": null,
+    "reason": "Candidates show prepared dishes or unrelated land art, with no clear whole small artichoke.",
+    "codeResolution": "conflict-review-required"
+  },
+  {
+    "reportIndex": 13,
+    "catalogId": "asparagus-organic",
+    "decision": "approved",
+    "selectedFile": "HK CWB 銅鑼灣 Causeway Bay 軒尼詩道 500 Hennessy Road 希慎廣場 Hysan Place mall B2 basement shop MarketPlace by Jasons Supermarket October 2021 SS2 02.jpg",
+    "reason": "Superior alternative showing many unmistakable raw green asparagus bundles; organic status remains workbook-only.",
+    "codeResolution": "catalog-supported"
+  },
+  {
+    "reportIndex": 14,
+    "catalogId": "avocado-5ct-bag-handwritten",
+    "decision": "approved",
+    "selectedFile": "Avocado with cross section edit.jpg",
+    "reason": "Clean whole-and-halved avocado reference; package count can remain workbook-only.",
+    "codeResolution": "catalog-supported"
+  },
+  {
+    "reportIndex": 15,
+    "catalogId": "avocado-organic-3ct",
+    "decision": "approved",
+    "selectedFile": "Organic avocado.jpg",
+    "reason": "Superior alternative showing an unmistakable whole green avocado instead of a prepared dish.",
+    "codeResolution": "catalog-supported"
+  },
+  {
+    "reportIndex": 16,
+    "catalogId": "bananas-case",
+    "decision": "approved",
+    "selectedFile": "Bananas on countertop.JPG",
+    "reason": "Clean close-up of a whole yellow banana bunch; case qualifier can remain workbook-only.",
+    "codeResolution": "catalog-supported"
+  },
+  {
+    "reportIndex": 17,
+    "catalogId": "bananas-baby-bananas-mini-4186",
+    "decision": "rejected",
+    "selectedFile": null,
+    "reason": "The only candidate shows sweet bread or cookies, not bananas.",
+    "codeResolution": "conflict-review-required"
+  },
+  {
+    "reportIndex": 18,
+    "catalogId": "bananas-red",
+    "decision": "approved",
+    "selectedFile": "\"Red banana\".jpg",
+    "reason": "Superior alternative with a close, well-lit bunch showing unmistakable red-orange banana form.",
+    "codeResolution": "conflict-review-required"
+  },
+  {
+    "reportIndex": 19,
+    "catalogId": "bean-sprouts-case",
+    "decision": "approved",
+    "selectedFile": "Bean sprouts 04.jpg",
+    "reason": "Superior alternative showing unmistakable fresh sprouts in bulk container form.",
+    "codeResolution": "catalog-supported"
+  },
+  {
+    "reportIndex": 20,
+    "catalogId": "beans-green-case",
+    "decision": "rejected",
+    "selectedFile": null,
+    "reason": "Every candidate shows cut, cooked, or actively prepared beans rather than whole raw retail green beans.",
+    "codeResolution": "catalog-supported"
+  },
+  {
+    "reportIndex": 21,
+    "catalogId": "beets-10lb",
+    "decision": "rejected",
+    "selectedFile": null,
+    "reason": "Candidates are cut or prepared, wrong-colored beet varieties, or an unusable sugar-beet crop; none shows whole red-purple round roots.",
+    "codeResolution": "catalog-supported"
+  },
+  {
+    "reportIndex": 22,
+    "catalogId": "blueberries-2lb",
+    "decision": "approved",
+    "selectedFile": "A generous handful of blueberries depicts the rich abundance of berries that may be found in Alaskan areas. (d84880d1-1dd8-b71b-0b3d-6380eca4c663).jpg",
+    "reason": "Superior alternative with a close, unobstructed handful of blueberries and no mixed fruit.",
+    "codeResolution": "catalog-supported"
+  },
+  {
+    "reportIndex": 23,
+    "catalogId": "cabbage-sour",
+    "decision": "rejected",
+    "selectedFile": null,
+    "reason": "Candidates show raw cabbage or preparation steps, not a visibly finished sour-cabbage product.",
+    "codeResolution": "catalog-supported"
+  },
+  {
+    "reportIndex": 24,
+    "catalogId": "cherimoya",
+    "decision": "approved",
+    "selectedFile": "Cherimoya fruit basket 1.jpg",
+    "reason": "Superior alternative showing a basket of clearly visible whole knobbly cherimoya fruit.",
+    "codeResolution": "primary-code-required"
+  },
+  {
+    "reportIndex": 25,
+    "catalogId": "cherimoya-2",
+    "decision": "approved",
+    "selectedFile": "Cherimoya fruit basket 1.jpg",
+    "reason": "Strongest available view, clearly showing whole cherimoyas in a basket.",
+    "codeResolution": "primary-code-required"
+  },
+  {
+    "reportIndex": 26,
+    "catalogId": "cherries-white-ranier-264497",
+    "decision": "rejected",
+    "selectedFile": null,
+    "reason": "All five candidates depict dragonflies, not cherries.",
+    "codeResolution": "conflict-review-required"
+  }
+]

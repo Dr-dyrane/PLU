@@ -104,6 +104,7 @@ export const queryAliasesByCatalogId = {
   ],
   "arrow-root": ["arrowroot rhizome", "Maranta arundinacea edible rhizome"],
   "bean-sprouts": ["mung bean sprouts raw", "fresh bean sprouts produce"],
+  "figgs-green-case": ["green figs", "common fig fruit"],
   "chestnuts-bulk-nuts": ["raw chestnuts whole", "fresh chestnut nuts"],
   "bok-choy-shanghai": [
     "Shanghai pak choi", "bok choy vegetable", "pak choi vegetable",
@@ -142,6 +143,7 @@ export const queryAliasesByCatalogId = {
   "pears-asian-yellow": ["Asian pear", "nashi pear", "Pyrus pyrifolia fruit"],
   "pears-yali-ya": ["Yali pear", "Chinese white pear", "Pyrus bretschneideri Yali", "Asian pear"],
   "grapes-italy-green": ["Italia grape", "Italia table grapes", "Muscat Italia grapes", "Raisin Italia"],
+  "melons-cantaloupe-organic": ["cantaloupe", "cantaloupes", "Cucumis melo"],
   "melons-hami-handwritten": ["Hami melon", "Chinese Hami melon"],
   "melons-santa-claus-handwritten": ["Piel de Sapo melon", "Santa Claus melon"],
   "pummelo-white-chinese": ["white pomelo", "Chinese pomelo", "Citrus maxima fruit"],
@@ -156,6 +158,7 @@ export const queryAliasesByCatalogId = {
   "tomatoes-on-the-vine-bulk-mesh": ["tomatoes on vine cluster", "vine tomatoes cluster"],
   "tomatoes-vine-ripe-big": ["vine ripe tomato", "beefsteak tomato raw"],
   "watermelon-red-seedless-cuts": ["seedless watermelon cut pieces", "fresh cut watermelon"],
+  "uchoy-sum": ["Choi Sum", "Choy sum", "Brassica rapa parachinensis"],
   "persimmons-hachiya-japanese-99038": ["Hachiya persimmon fresh fruit"],
   "mangos-yellow": ["yellow mango whole fruit"],
   "chives-nira": ["cut garlic chives", "Chinese garlic chives"],
@@ -175,11 +178,13 @@ export const reviewedIdentityEvidenceByCatalogId = {
   "ong-choy": ["water spinach", "Ipomoea aquatica"],
   "qua": ["Luffa acutangula", "angled luffa"],
   "melons-cantaloupe-large": ["cantaloupes", "Cucumis melo"],
+  "melons-cantaloupe-organic": ["cantaloupe", "cantaloupes", "Cucumis melo"],
   "persimmons-sharon-fruit": ["sharon fruit", "sharon fruits"],
   "a-choy": ["Indian lettuce", "Lactuca sativa"],
   "water-chestnut": ["wasserkastanien", "Eleocharis dulcis"],
   "guar": ["cluster bean", "Cyamopsis tetragonoloba"],
   "plums-cherry-plum-handwritten": ["kirschpflaumen", "Prunus cerasifera"],
+  "uchoy-sum": ["Choi Sum", "Brassica rapa subsp. chinensis var. parachinensis"],
 };
 
 /** Exact source-title overrides reviewed against the intended product. */

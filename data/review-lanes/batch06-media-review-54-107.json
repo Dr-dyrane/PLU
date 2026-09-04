@@ -1,0 +1,434 @@
+[
+  {
+    "reportIndex": 54,
+    "catalogId": "mangos-ataulfo-case",
+    "decision": "reject",
+    "selectedFile": null,
+    "reason": "Every result is an unlabeled side-by-side comparison with another mango cultivar, so the Ataulfo target is ambiguous.",
+    "codeResolution": "catalog-supported"
+  },
+  {
+    "reportIndex": 55,
+    "catalogId": "mangos-east-indian-case",
+    "decision": "approve",
+    "selectedFile": "Mango EastIndian Asit ftg.jpg",
+    "reason": "Whole East Indian mangoes are clear in a produce basket with the cultivar sign.",
+    "codeResolution": "catalog-supported"
+  },
+  {
+    "reportIndex": 56,
+    "catalogId": "mangos-red-case",
+    "decision": "approve",
+    "selectedFile": "HK food red fruit 芒果 mango March 2021 SS2 03.jpg",
+    "reason": "Isolated whole red mango with the correct color and form.",
+    "codeResolution": "primary-code-required"
+  },
+  {
+    "reportIndex": 57,
+    "catalogId": "mangos-spice",
+    "decision": "reject",
+    "selectedFile": null,
+    "reason": "All results explicitly show other cultivars, not Spice mango.",
+    "codeResolution": "catalog-supported"
+  },
+  {
+    "reportIndex": 58,
+    "catalogId": "melons-bitter-fu-qua",
+    "decision": "reject",
+    "selectedFile": null,
+    "reason": "Primary is an overripe orange fruit on the vine and alternatives are seedlings or foliage, not green retail Fu Qua.",
+    "codeResolution": "catalog-supported"
+  },
+  {
+    "reportIndex": 59,
+    "catalogId": "nappa-baby-4540-bag",
+    "decision": "approve",
+    "selectedFile": "Mini Tientsin Pakchoi ~ Baby napa cabbage.jpg",
+    "reason": "Unmistakable baby napa heads; bands can remain workbook-only.",
+    "codeResolution": "conflict-review-required"
+  },
+  {
+    "reportIndex": 60,
+    "catalogId": "onions-1381-label-as-printed",
+    "decision": "approve",
+    "selectedFile": "Onions.jpg",
+    "reason": "Clean whole raw onion bulbs.",
+    "codeResolution": "conflict-review-required"
+  },
+  {
+    "reportIndex": 61,
+    "catalogId": "onions-medium-50lb-724-58312",
+    "decision": "reject",
+    "selectedFile": null,
+    "reason": "Only result is a wild onion flower and shows no retail bulb.",
+    "codeResolution": "conflict-review-required"
+  },
+  {
+    "reportIndex": 62,
+    "catalogId": "onions-red-10lb",
+    "decision": "approve",
+    "selectedFile": "Red onion.jpg",
+    "reason": "Two clear whole red onion bulbs.",
+    "codeResolution": "catalog-supported"
+  },
+  {
+    "reportIndex": 63,
+    "catalogId": "onions-sweet-4166-59914",
+    "decision": "approve",
+    "selectedFile": "Sweet onions in a pile.jpg",
+    "reason": "Clear pile of whole sweet onions.",
+    "codeResolution": "conflict-review-required"
+  },
+  {
+    "reportIndex": 64,
+    "catalogId": "onions-yellow-25lb-334",
+    "decision": "approve",
+    "selectedFile": "Yellow onion with x-section.jpg",
+    "reason": "Whole and cut yellow onions clearly show identity and color.",
+    "codeResolution": "conflict-review-required"
+  },
+  {
+    "reportIndex": 65,
+    "catalogId": "onions-yellow-3lb-bag",
+    "decision": "approve",
+    "selectedFile": "Yellow onion with x-section.jpg",
+    "reason": "Clearly better than the prepared-natto primary and shows exact raw yellow onion identity.",
+    "codeResolution": "catalog-supported"
+  },
+  {
+    "reportIndex": 66,
+    "catalogId": "onions-yellow-organic-2lb",
+    "decision": "approve",
+    "selectedFile": "20171027-AMS-LSC-0205 (38037158392).jpg",
+    "reason": "Several whole yellow onions are clearly visible; organic and package qualifiers remain workbook-only.",
+    "codeResolution": "catalog-supported"
+  },
+  {
+    "reportIndex": 67,
+    "catalogId": "oranges-navel-medium",
+    "decision": "approve",
+    "selectedFile": "Navel orange1.jpg",
+    "reason": "Isolated whole navel orange with the correct color and form.",
+    "codeResolution": "conflict-review-required"
+  },
+  {
+    "reportIndex": 68,
+    "catalogId": "parsley-curley-herbs",
+    "decision": "reject",
+    "selectedFile": null,
+    "reason": "Primary is an unclear wet stalk, one alternative is flowering, and the other appears flat-leaf rather than curly retail parsley.",
+    "codeResolution": "conflict-review-required"
+  },
+  {
+    "reportIndex": 69,
+    "catalogId": "parsnips-2lb",
+    "decision": "approve",
+    "selectedFile": "Parsnips.JPG",
+    "reason": "Clear pile of whole cream tapered parsnips.",
+    "codeResolution": "source-required"
+  },
+  {
+    "reportIndex": 70,
+    "catalogId": "parsnips-bulk-4672",
+    "decision": "approve",
+    "selectedFile": "Parsnips on a shelf.jpg",
+    "reason": "Unmistakable raw parsnips in a retail context.",
+    "codeResolution": "source-required"
+  },
+  {
+    "reportIndex": 71,
+    "catalogId": "peaches-case",
+    "decision": "approve",
+    "selectedFile": "Hillview Farms peaches in a basket.jpg",
+    "reason": "Whole fuzzy red-yellow peaches are clearer than the cut-fruit primary.",
+    "codeResolution": "catalog-supported"
+  },
+  {
+    "reportIndex": 72,
+    "catalogId": "peaches-3l",
+    "decision": "approve",
+    "selectedFile": "White-Peaches-Bunch.jpg",
+    "reason": "Whole and cut peaches clearly establish fruit identity and form; the size unit remains workbook-only.",
+    "codeResolution": "catalog-supported"
+  },
+  {
+    "reportIndex": 73,
+    "catalogId": "peaches-freestone-case",
+    "decision": "reject",
+    "selectedFile": null,
+    "reason": "The generic Autumn Red peach image does not establish the freestone variant.",
+    "codeResolution": "catalog-supported"
+  },
+  {
+    "reportIndex": 74,
+    "catalogId": "peaches-tree-ripe-case",
+    "decision": "approve",
+    "selectedFile": "Ripe peach.jpg",
+    "reason": "Ripe peach visibly attached to the tree, directly matching the form qualifier.",
+    "codeResolution": "catalog-supported"
+  },
+  {
+    "reportIndex": 75,
+    "catalogId": "pears-asian-yellow-2",
+    "decision": "reject",
+    "selectedFile": null,
+    "reason": "The only result is an archival cityscape with no pear.",
+    "codeResolution": "primary-code-required"
+  },
+  {
+    "reportIndex": 76,
+    "catalogId": "pears-bartlett-3lb-organic",
+    "decision": "approve",
+    "selectedFile": "Organic Bartlett Pears.jpg",
+    "reason": "Clean group of green-yellow Bartlett pears.",
+    "codeResolution": "catalog-supported"
+  },
+  {
+    "reportIndex": 77,
+    "catalogId": "pears-bartlett-5lb-bag",
+    "decision": "reject",
+    "selectedFile": null,
+    "reason": "Primary and most alternatives are red Bartletts; the only green-yellow option is dominated by severe bruising.",
+    "codeResolution": "catalog-supported"
+  },
+  {
+    "reportIndex": 78,
+    "catalogId": "pears-forelle-2",
+    "decision": "approve",
+    "selectedFile": "Forelle pear 01.jpg",
+    "reason": "Clear whole Forelle pear with expected speckled green-yellow and red skin.",
+    "codeResolution": "primary-code-required"
+  },
+  {
+    "reportIndex": 79,
+    "catalogId": "pears-red-4415",
+    "decision": "approve",
+    "selectedFile": "Red Modoc (pear) jm135831.jpg",
+    "reason": "Clearly red whole and cut pear, truer to the requested color than the russet Bartlett results.",
+    "codeResolution": "conflict-review-required"
+  },
+  {
+    "reportIndex": 80,
+    "catalogId": "peppers-assorted-bin",
+    "decision": "approve",
+    "selectedFile": "Assorted Bell Peppers.jpg",
+    "reason": "Clean red, orange, and yellow bell-pepper assortment with no prepared-food distraction.",
+    "codeResolution": "catalog-supported"
+  },
+  {
+    "reportIndex": 81,
+    "catalogId": "peppers-green-case",
+    "decision": "approve",
+    "selectedFile": "Green bell pepper pile.jpg",
+    "reason": "Clear pile of raw green bell peppers; the primary was peppercorns.",
+    "codeResolution": "catalog-supported"
+  },
+  {
+    "reportIndex": 82,
+    "catalogId": "peppers-green-4ct-bag",
+    "decision": "approve",
+    "selectedFile": "Green bell pepper 2017 A.jpg",
+    "reason": "Isolated whole green bell pepper; package count remains workbook-only.",
+    "codeResolution": "catalog-supported"
+  },
+  {
+    "reportIndex": 83,
+    "catalogId": "peppers-red-4ct-bag",
+    "decision": "approve",
+    "selectedFile": "Red bell pepper.jpg",
+    "reason": "Clean whole and cut red bell peppers.",
+    "codeResolution": "catalog-supported"
+  },
+  {
+    "reportIndex": 84,
+    "catalogId": "peppers-red-long-handwritten",
+    "decision": "approve",
+    "selectedFile": "Long hot red chili pepper.jpg",
+    "reason": "Basket of unmistakable long red peppers.",
+    "codeResolution": "conflict-review-required"
+  },
+  {
+    "reportIndex": 85,
+    "catalogId": "persimmons-hachiya-case",
+    "decision": "approve",
+    "selectedFile": "Hachiya persimmons - Heart of the City Farmers' Market - San Francisco.jpg",
+    "reason": "Exact Hachiya fruit in a market crate; avoids drying and mixed-variety results.",
+    "codeResolution": "catalog-supported"
+  },
+  {
+    "reportIndex": 86,
+    "catalogId": "plumcots-handwritten",
+    "decision": "approve",
+    "selectedFile": "Metis Plumcot Pluot.jpg",
+    "reason": "Clear whole and sliced plumcot or pluot fruit.",
+    "codeResolution": "catalog-supported"
+  },
+  {
+    "reportIndex": 87,
+    "catalogId": "plums-blue-1-5l",
+    "decision": "approve",
+    "selectedFile": "Bluebyrd plum (1).jpg",
+    "reason": "Clear blue-purple whole plums on the tree.",
+    "codeResolution": "catalog-supported"
+  },
+  {
+    "reportIndex": 88,
+    "catalogId": "plums-yellow-1-5l",
+    "decision": "approve",
+    "selectedFile": "Yellow Plum (5918708991).jpg",
+    "reason": "Isolated whole yellow plum.",
+    "codeResolution": "catalog-supported"
+  },
+  {
+    "reportIndex": 89,
+    "catalogId": "potato-red-10lb",
+    "decision": "reject",
+    "selectedFile": null,
+    "reason": "Only image is cooked orange sweet-potato pieces, the wrong product and form.",
+    "codeResolution": "catalog-supported"
+  },
+  {
+    "reportIndex": 90,
+    "catalogId": "potato-red-20lb",
+    "decision": "reject",
+    "selectedFile": null,
+    "reason": "Bird, sweet potato, distant field or harvest, and chips do not clearly show raw red potatoes.",
+    "codeResolution": "catalog-supported"
+  },
+  {
+    "reportIndex": 91,
+    "catalogId": "potato-russet-white-20lb",
+    "decision": "approve",
+    "selectedFile": "Russet potato cultivar with sprouts.jpg",
+    "reason": "Whole russet plus cut white interior clearly supports skin and flesh identity.",
+    "codeResolution": "catalog-supported"
+  },
+  {
+    "reportIndex": 92,
+    "catalogId": "potato-russet-10lb",
+    "decision": "approve",
+    "selectedFile": "Russet potato.jpg",
+    "reason": "Clean close pile of whole russet potatoes.",
+    "codeResolution": "catalog-supported"
+  },
+  {
+    "reportIndex": 93,
+    "catalogId": "potato-white-10lb",
+    "decision": "reject",
+    "selectedFile": null,
+    "reason": "Peeler, sprouted russet, mixed stall, cut yellow-flesh cultivar, and baked plate do not establish raw white potato.",
+    "codeResolution": "catalog-supported"
+  },
+  {
+    "reportIndex": 94,
+    "catalogId": "potato-yellow-10lb",
+    "decision": "reject",
+    "selectedFile": null,
+    "reason": "All five images are prepared tuna on a plate with no raw yellow potato.",
+    "codeResolution": "catalog-supported"
+  },
+  {
+    "reportIndex": 95,
+    "catalogId": "pumpkins-jamaican",
+    "decision": "reject",
+    "selectedFile": null,
+    "reason": "Prepared-food bowl with no visible Jamaican pumpkin.",
+    "codeResolution": "catalog-supported"
+  },
+  {
+    "reportIndex": 96,
+    "catalogId": "pumpkins-large",
+    "decision": "approve",
+    "selectedFile": "Cucurbita 2011 G1 Large.jpg",
+    "reason": "Group of unmistakable large round pumpkins; primary was a butternut or crookneck squash.",
+    "codeResolution": "primary-code-required"
+  },
+  {
+    "reportIndex": 97,
+    "catalogId": "pumpkins-large-2",
+    "decision": "approve",
+    "selectedFile": "Cucurbita 2011 G1 Large.jpg",
+    "reason": "Whole large round pumpkins are clearly visible.",
+    "codeResolution": "primary-code-required"
+  },
+  {
+    "reportIndex": 98,
+    "catalogId": "pumpkins-small-pie-4737",
+    "decision": "approve",
+    "selectedFile": "20171027-AMS-LSC-0131 (38068402991).jpg",
+    "reason": "Isolated small orange pie pumpkin on straw.",
+    "codeResolution": "source-required"
+  },
+  {
+    "reportIndex": 99,
+    "catalogId": "pumpkins-white",
+    "decision": "approve",
+    "selectedFile": "Cucurbita pepo white pumpkin 15.Autumn.WholeFoods.1440P.NW.WDC.14October2014.jpg",
+    "reason": "Clear retail display of white pumpkins.",
+    "codeResolution": "source-required"
+  },
+  {
+    "reportIndex": 100,
+    "catalogId": "squash-buttercup",
+    "decision": "approve",
+    "selectedFile": "Buttercup Squash on Kitchen Counter.jpg",
+    "reason": "Whole green buttercup squash; avoids the two fungus and disease images.",
+    "codeResolution": "conflict-review-required"
+  },
+  {
+    "reportIndex": 101,
+    "catalogId": "strawberries-1lb",
+    "decision": "reject",
+    "selectedFile": null,
+    "reason": "All candidates are mixed-berry compositions where strawberries are not the sole recognition target.",
+    "codeResolution": "catalog-supported"
+  },
+  {
+    "reportIndex": 102,
+    "catalogId": "strawberries-2lb",
+    "decision": "reject",
+    "selectedFile": null,
+    "reason": "Same mixed-berry set, not a clean strawberry image.",
+    "codeResolution": "catalog-supported"
+  },
+  {
+    "reportIndex": 103,
+    "catalogId": "sweet-potatoes-white",
+    "decision": "reject",
+    "selectedFile": null,
+    "reason": "Prepared and context shots are unsuitable, and the only raw option mixes white and red varieties without a clear target.",
+    "codeResolution": "catalog-supported"
+  },
+  {
+    "reportIndex": 104,
+    "catalogId": "tomato-heirloom-handwritten",
+    "decision": "approve",
+    "selectedFile": "Capay heirloom tomatoes at Slow Food Nation.jpg",
+    "reason": "Clear basket of visually distinctive multicolor heirloom tomatoes.",
+    "codeResolution": "source-required"
+  },
+  {
+    "reportIndex": 105,
+    "catalogId": "tomato-hh-red-bulk",
+    "decision": "approve",
+    "selectedFile": "Healthy Red Tomatoes with Water Drops.jpg",
+    "reason": "Clear whole red tomatoes; already reviewed.",
+    "codeResolution": "catalog-supported"
+  },
+  {
+    "reportIndex": 106,
+    "catalogId": "tomatoes-roma-plum-box-half-bushel",
+    "decision": "approve",
+    "selectedFile": "Roma Tomatoes - Flickr - pinemikey.jpg",
+    "reason": "Clean pile of oblong Roma or plum tomatoes; box qualifier remains workbook-only.",
+    "codeResolution": "catalog-supported"
+  },
+  {
+    "reportIndex": 107,
+    "catalogId": "yams-white",
+    "decision": "reject",
+    "selectedFile": null,
+    "reason": "Planting image shows upright brown yam setts and does not visibly establish white flesh or retail form.",
+    "codeResolution": "conflict-review-required"
+  }
+]

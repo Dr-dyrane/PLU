@@ -238,8 +238,8 @@ function mediaResult(selected, alternatives, match, usedFiles) {
   };
 }
 
-export async function resolveImage(item, usedFiles) {
-  const override = mediaOverridesByCatalogId[item.catalogId];
+export async function resolveImage(item, usedFiles, reviewedFile = null) {
+  const override = reviewedFile ?? mediaOverridesByCatalogId[item.catalogId];
   if (override) {
     const page = await queryExactFile(override);
     if (!page) throw new Error(`${item.title}: reviewed media override is missing (${override}).`);

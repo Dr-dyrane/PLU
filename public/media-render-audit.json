@@ -13,6 +13,13 @@
       "decoded": 100,
       "contactSheets": 5,
       "failures": []
+    },
+    {
+      "batch": "06",
+      "media": 53,
+      "decoded": 53,
+      "contactSheets": 3,
+      "failures": []
     }
   ]
 }

@@ -5,7 +5,9 @@ import {
   loadJsonRecords,
   mediaOverridesByCatalogId,
   normalize,
+  productHeadGroups,
   reviewedIdentityEvidenceByCatalogId,
+  words,
 } from "./batch04/common.mjs";
 
 async function readJson(relativePath) {
@@ -39,6 +41,8 @@ const source06 = await readJson("../data/batch-06-source.json");
 const candidates05 = await readJson("../data/batch-05-candidates.json");
 const candidates06 = await readJson("../data/batch-06-candidates.json");
 const dispositions06 = await readJson("../data/batch-06-dispositions.json");
+const knowledge06 = await readJson("../data/batch-06-knowledge.json");
+const reviewedMedia06 = await readJson("../data/batch-06-reviewed-media.json");
 const report04 = await readJson("../public/media-resolution-batch04.json");
 const report05 = await readJson("../public/media-resolution-batch05.json");
 const report06 = await readJson("../public/media-resolution-batch06.json");
@@ -52,12 +56,17 @@ const catalog = (
   )
 ).flat();
 const catalogById = new Map(catalog.map((record) => [record.id, record]));
+const knowledge06ById = new Map((knowledge06.items ?? []).map((item) => [item.catalogId, item]));
+const reviewedMedia06Ids = new Set((reviewedMedia06.items ?? []).map((review) => review.catalogId));
 for (const [catalogId, file] of Object.entries(mediaOverridesByCatalogId)) {
   assert.ok(catalogById.has(catalogId), `Reviewed media override has an unknown catalog ID: ${catalogId}.`);
   assert.ok(typeof file === "string" && file.trim(), `${catalogId}: reviewed media filename is empty.`);
 }
 for (const [catalogId, phrases] of Object.entries(reviewedIdentityEvidenceByCatalogId)) {
-  assert.ok(mediaOverridesByCatalogId[catalogId], `Reviewed identity evidence has no media override: ${catalogId}.`);
+  assert.ok(
+    mediaOverridesByCatalogId[catalogId] || reviewedMedia06Ids.has(catalogId),
+    `Reviewed identity evidence has no reviewed media mapping: ${catalogId}.`,
+  );
   assert.ok(
     Array.isArray(phrases) && phrases.every((phrase) => typeof phrase === "string" && phrase.trim()),
     `${catalogId}: reviewed identity evidence must contain non-empty phrases.`,
@@ -117,6 +126,146 @@ function assertSameCatalogIds(actual, expected, message) {
   );
 }
 
+function referencedCommonsFile(photo) {
+  if (typeof photo?.file === "string" && photo.file.trim()) return photo.file;
+  if (typeof photo?.source?.url !== "string") return null;
+  try {
+    const pathname = new URL(photo.source.url).pathname;
+    const marker = "/wiki/File:";
+    const markerIndex = pathname.indexOf(marker);
+    if (markerIndex < 0) return null;
+    return decodeURIComponent(pathname.slice(markerIndex + marker.length)).replaceAll("_", " ");
+  } catch {
+    return null;
+  }
+}
+
+function includesNormalizedPhrase(value, phrase) {
+  return ` ${normalize(value)} `.includes(` ${normalize(phrase)} `);
+}
+
+function visibleLabelMatchesCatalog(visibleLabel, catalogItem) {
+  const visibleTokens = new Set(words(visibleLabel));
+  const catalogTokens = new Set(words(catalogItem));
+  if ([...visibleTokens].some((token) => catalogTokens.has(token))) return true;
+  return productHeadGroups.some(
+    (group) =>
+      group.some((token) => visibleTokens.has(token)) &&
+      group.some((token) => catalogTokens.has(token)),
+  );
+}
+
+assert.equal(reviewedMedia06?.schemaVersion, "1.0.0", "Unsupported Batch 06 reviewed media schema.");
+assert.equal(reviewedMedia06?.batch, "06", "Batch 06 reviewed media ledger has the wrong batch.");
+assert.ok(Array.isArray(reviewedMedia06?.items), "Batch 06 reviewed media ledger is malformed.");
+const candidate06ById = new Map(candidates06.map((item) => [item.catalogId, item]));
+const resolvedMedia06ById = new Map(report06.media.map((item) => [item.catalogId, item]));
+const reviewedMedia06ById = new Map();
+const allowedRecognitionModes = new Set([
+  "product-and-loose-form",
+  "family-color-and-loose-form",
+  "label-assisted",
+]);
+for (const review of reviewedMedia06.items) {
+  const label = `Batch 06 reviewed media/${review?.catalogId ?? "unknown"}`;
+  const requiredFields = ["catalogId", "code", "commonsFile", "recognitionMode", "reviewBasis"];
+  assert.ok(
+    requiredFields.every(
+      (field) => typeof review?.[field] === "string" && review[field].trim().length > 0,
+    ),
+    `${label}: catalog ID, code, Commons file, recognition mode, and review basis are required.`,
+  );
+  assert.ok(!reviewedMedia06ById.has(review.catalogId), `${label}: duplicate catalog ID.`);
+  assert.ok(allowedRecognitionModes.has(review.recognitionMode), `${label}: unsupported recognition mode.`);
+  assert.ok(candidate06ById.has(review.catalogId), `${label}: entry is not a strict candidate.`);
+  assert.equal(
+    String(candidate06ById.get(review.catalogId).code),
+    String(review.code),
+    `${label}: candidate code drifted.`,
+  );
+  const catalogRecord = catalogById.get(review.catalogId);
+  assert.ok(catalogRecord, `${label}: catalog record is missing.`);
+  assert.ok(catalogRecord.codes.includes(review.code), `${label}: reviewed code is absent from catalog.`);
+  if (review.recognitionMode === "label-assisted") {
+    const visibleFields = ["label", "form", "color", "cue"];
+    assert.ok(
+      visibleFields.every(
+        (field) =>
+          typeof review.visibleIdentity?.[field] === "string" &&
+          review.visibleIdentity[field].trim().length > 0,
+      ),
+      `${label}: label-assisted media needs a complete visible identity.`,
+    );
+    assert.ok(
+      Array.isArray(review.labelClaims) && review.labelClaims.length > 0,
+      `${label}: label-assisted media needs workbook label claims.`,
+    );
+    assert.ok(
+      visibleLabelMatchesCatalog(review.visibleIdentity.label, catalogRecord.item),
+      `${label}: visible identity must be anchored to the catalog item.`,
+    );
+    const catalogPages = new Set(catalogRecord.sourcePages ?? []);
+    const claimValues = new Set();
+    for (const claim of review.labelClaims) {
+      const normalizedClaim = normalize(claim?.value ?? "");
+      assert.ok(normalizedClaim, `${label}: label claim value is required.`);
+      assert.ok(!claimValues.has(normalizedClaim), `${label}: duplicate label claim ${claim.value}.`);
+      claimValues.add(normalizedClaim);
+      assert.equal(claim.basis, "workbook-label", `${label}: claim basis must be workbook-label.`);
+      assert.equal(claim.sourceField, "catalog.item", `${label}: claim must cite catalog.item.`);
+      assert.ok(
+        Array.isArray(claim.sourcePages) &&
+          claim.sourcePages.length > 0 &&
+          claim.sourcePages.every((page) => Number.isInteger(page) && catalogPages.has(page)),
+        `${label}: claim pages must be catalog source pages.`,
+      );
+      assert.ok(
+        includesNormalizedPhrase(catalogRecord.item, normalizedClaim),
+        `${label}: claim is absent from the catalog item.`,
+      );
+      assert.ok(
+        !Object.values(review.visibleIdentity).some((value) =>
+          includesNormalizedPhrase(value, normalizedClaim),
+        ),
+        `${label}: workbook-only claim leaked into the visible identity.`,
+      );
+    }
+  }
+  const resolved = resolvedMedia06ById.get(review.catalogId);
+  assert.equal(resolved?.match, "reviewed-override", `${label}: unreviewed media cannot publish.`);
+  assert.equal(resolved?.file, review.commonsFile, `${label}: resolved media differs from the ledger.`);
+  assert.deepEqual(resolved?.mediaReview, review, `${label}: report review metadata drifted.`);
+  reviewedMedia06ById.set(review.catalogId, review);
+}
+const priorMediaFiles = new Set(
+  storiesBeforeBatch06.flatMap((story) =>
+    (story.photos ?? []).map(referencedCommonsFile).filter(Boolean),
+  ),
+);
+const reviewedMedia06ByFile = new Map();
+for (const review of reviewedMedia06.items) {
+  const reviews = reviewedMedia06ByFile.get(review.commonsFile) ?? [];
+  reviews.push(review);
+  reviewedMedia06ByFile.set(review.commonsFile, reviews);
+}
+const sharedReviewedFiles = new Set();
+for (const [commonsFile, reviews] of reviewedMedia06ByFile) {
+  if (reviews.length < 2 && !priorMediaFiles.has(commonsFile)) continue;
+  assert.ok(
+    reviews.every(
+      (review) =>
+        typeof review.sharedMediaBasis === "string" && review.sharedMediaBasis.trim().length > 0,
+    ),
+    `${commonsFile}: every reused reviewed file needs a shared-media basis.`,
+  );
+  sharedReviewedFiles.add(commonsFile);
+}
+assertSameCatalogIds(
+  report06.media.map((item) => item.catalogId),
+  reviewedMedia06ById.keys(),
+  "Batch 06: unreviewed media cannot appear in the resolved report.",
+);
+
 for (const [label, batch, seeds, report] of [
   ["Batch 04", batch04, seed04, report04],
   ["Batch 05", batch05, seed05, report05],
@@ -167,8 +316,8 @@ const ready06 = batch06.items.filter((item) => item.status === "ready");
 const queued06 = batch06.items.filter((item) => item.status === "queued");
 assert.deepEqual(
   ready06.map((item) => item.catalogId).sort(),
-  ["aloe", "tomato-hh-red-bulk"],
-  "Batch 06: the exact human-reviewed ready set must not drift.",
+  [...reviewedMedia06ById.keys()].sort(),
+  "Batch 06: ready rows must match the committed reviewed-media ledger.",
 );
 assert.equal(seed06.length, ready06.length, "Batch 06: story count must equal ready items.");
 assert.equal(source06.length, ready06.length, "Batch 06: accepted source count must equal ready items.");
@@ -220,11 +369,15 @@ const source06ById = new Map(source06.map((item) => [item.catalogId, item]));
 const seed06ById = new Map(seed06.map((item) => [item.catalogId, item]));
 const media06ById = new Map(report06.media.map((item) => [item.catalogId, item]));
 for (const batchItem of ready06) {
+  const review = reviewedMedia06ById.get(batchItem.catalogId);
   const source = source06ById.get(batchItem.catalogId);
   const seed = seed06ById.get(batchItem.catalogId);
   const media = media06ById.get(batchItem.catalogId);
   const label = `Batch 06 ready/${batchItem.catalogId}`;
-  assert.ok(source && seed && media, `${label}: source, story, and media must all be present.`);
+  assert.ok(review && source && seed && media, `${label}: review, source, story, and media must all be present.`);
+  assert.equal(String(batchItem.code), String(review.code), `${label}: manifest/review code drifted.`);
+  assert.equal(media.file, review.commonsFile, `${label}: media/review file drifted.`);
+  assert.equal(media.match, "reviewed-override", `${label}: unreviewed media cannot publish.`);
   assert.equal(batchItem.order, media.order, `${label}: manifest/media order drifted.`);
   assert.equal(batchItem.title, source.title, `${label}: manifest/source title drifted.`);
   assert.equal(seed.title, source.title, `${label}: seed/source title drifted.`);
@@ -232,6 +385,93 @@ for (const batchItem of ready06) {
   assert.equal(String(batchItem.code), String(source.code), `${label}: manifest/source code drifted.`);
   assert.equal(String(seed.checkout?.code), String(source.code), `${label}: seed/source code drifted.`);
   assert.equal(media.storyId, seed.id, `${label}: media/seed story ID drifted.`);
+  assert.deepEqual(source.mediaReview, review, `${label}: accepted-source review metadata drifted.`);
+  assert.deepEqual(media.mediaReview, review, `${label}: media-report review metadata drifted.`);
+  const flags = new Set(seed.source?.flags ?? []);
+  assert.equal(
+    flags.has("media-shared-reviewed"),
+    sharedReviewedFiles.has(review.commonsFile),
+    `${label}: shared reviewed-media flag drifted.`,
+  );
+  if (review.recognitionMode === "label-assisted") {
+    assert.ok(flags.has("media-label-assisted"), `${label}: label-assisted media flag is required.`);
+    assert.ok(flags.has("qualifier-workbook-label"), `${label}: workbook-label flag is required.`);
+    assert.equal(seed.identity?.form, review.visibleIdentity.form, `${label}: visible form drifted.`);
+    assert.equal(seed.identity?.color, review.visibleIdentity.color, `${label}: visible color drifted.`);
+    assert.equal(seed.visualCues?.[0], review.visibleIdentity.cue, `${label}: visible cue drifted.`);
+    assert.equal(seed.photos?.length, 3, `${label}: label-assisted seed needs three reviewed photo roles.`);
+    const [heroPhoto, alternatePhoto, contextPhoto] = seed.photos;
+    assert.ok(
+      includesNormalizedPhrase(heroPhoto.alt, review.visibleIdentity.label) &&
+        includesNormalizedPhrase(heroPhoto.alt, review.visibleIdentity.cue),
+      `${label}: hero alt text must describe the reviewed visible label and cue.`,
+    );
+    assert.ok(
+      includesNormalizedPhrase(alternatePhoto.alt, review.visibleIdentity.label) &&
+        includesNormalizedPhrase(alternatePhoto.alt, review.visibleIdentity.form),
+      `${label}: alternate alt text must describe the reviewed visible label and form.`,
+    );
+    assert.ok(
+      includesNormalizedPhrase(contextPhoto.alt, review.visibleIdentity.label) &&
+        includesNormalizedPhrase(contextPhoto.alt, review.visibleIdentity.color),
+      `${label}: context alt text must describe the reviewed visible label and color.`,
+    );
+    const photoAltText = seed.photos.map((photo) => photo.alt).join(" ");
+    const visibleCueText = normalize(seed.visualCues?.[0] ?? "");
+    const disclosureText = normalize(seed.visualCues?.[1] ?? "");
+    const labelMatchCue = seed.visualCues?.[2] ?? "";
+    assert.ok(
+      /store label/i.test(labelMatchCue) &&
+        includesNormalizedPhrase(labelMatchCue, seed.title) &&
+        includesNormalizedPhrase(labelMatchCue, seed.checkout?.code),
+      `${label}: final cue must bind the exact listing and code to the store label.`,
+    );
+    const labelClaimNames = review.labelClaims.map((claim) => claim.value).join(" and ");
+    const labelClaimCopula = review.labelClaims.length === 1 ? "is" : "are";
+    const labelRelation = (seed.relations ?? []).find(
+      (relation) => relation.title === "The store label selects this listing",
+    );
+    assert.ok(labelRelation, `${label}: workbook-label disclosure relation is required.`);
+    const relationText = normalize(labelRelation.copy);
+    for (const claim of review.labelClaims) {
+      const normalizedClaim = normalize(claim.value);
+      assert.ok(!includesNormalizedPhrase(photoAltText, normalizedClaim), `${label}: label claim leaked into photo alt text.`);
+      assert.ok(!includesNormalizedPhrase(visibleCueText, normalizedClaim), `${label}: label claim leaked into visible cue.`);
+      assert.ok(includesNormalizedPhrase(disclosureText, normalizedClaim), `${label}: cue disclosure omits ${claim.value}.`);
+      assert.ok(includesNormalizedPhrase(relationText, normalizedClaim), `${label}: relation disclosure omits ${claim.value}.`);
+    }
+    assert.match(
+      disclosureText,
+      /workbook label.*not appearance/,
+      `${label}: cue must distinguish workbook-label truth from appearance.`,
+    );
+    assert.ok(
+      disclosureText.includes(normalize(`${labelClaimNames} ${labelClaimCopula} from`)),
+      `${label}: cue uses incorrect label-claim number agreement.`,
+    );
+    assert.match(
+      relationText,
+      /workbook label.*not inferred from appearance/,
+      `${label}: relation must distinguish workbook-label truth from appearance.`,
+    );
+    assert.ok(
+      relationText.includes(normalize(`${labelClaimNames} ${labelClaimCopula} copied`)),
+      `${label}: relation uses incorrect label-claim number agreement.`,
+    );
+  } else {
+    assert.ok(!flags.has("media-label-assisted"), `${label}: exact visual review has label-assisted flag.`);
+    assert.ok(!flags.has("qualifier-workbook-label"), `${label}: exact visual review has workbook-label flag.`);
+  }
+}
+
+const seenMediaFiles = new Set(priorMediaFiles);
+for (const media of [...report06.media].sort((left, right) => left.order - right.order)) {
+  assert.equal(
+    Boolean(media.sharedAcrossProducts),
+    seenMediaFiles.has(media.file),
+    `Batch 06 ready/${media.catalogId}: resolved shared-media state drifted.`,
+  );
+  seenMediaFiles.add(media.file);
 }
 
 const disposition06Ids = dispositions06.map((item) => item.catalogId);
@@ -373,13 +613,22 @@ assertSameCatalogIds(
 
 function validateStrictCandidate(item, publishedCodes, publishedTitles, batchLabel) {
   const catalogRecord = catalogById.get(item.catalogId);
+  const reviewedBatch06 = batchLabel === "Batch 06"
+    ? reviewedMedia06ById.get(item.catalogId)
+    : null;
+  const evidenceBatch06 = batchLabel === "Batch 06"
+    ? knowledge06ById.get(item.catalogId)
+    : null;
   assert.ok(catalogRecord, `${batchLabel} source record is missing: ${item.catalogId}.`);
   assert.equal(item.sourceItem, catalogRecord.item, `${item.catalogId}: source identity drifted from the catalog.`);
   assert.ok(catalogRecord.codes.map(String).includes(String(item.code)), `${item.catalogId}: code drifted from the catalog.`);
-  assert.ok(
-    !packageOrInventory.test(item.sourceItem),
-    `${item.catalogId}: packaged or inventory-specific rows are outside the loose-produce curriculum.`,
-  );
+  if (packageOrInventory.test(item.sourceItem)) {
+    assert.equal(
+      reviewedBatch06?.recognitionMode,
+      "label-assisted",
+      `${item.catalogId}: a packaged or inventory-specific row requires label-assisted review.`,
+    );
+  }
   assert.ok(
     !ambiguousCatalogLabels.has(normalize(item.sourceItem)),
     `${item.catalogId}: identical catalog label has competing codes.`,
@@ -402,19 +651,28 @@ function validateStrictCandidate(item, publishedCodes, publishedTitles, batchLab
     `${item.catalogId}: source label contains a competing number.`,
   );
 
-  const expectedSaleForm = /\bcuts?\b/i.test(item.sourceItem)
-    ? "Cut"
-    : /\bbunch\b/i.test(item.sourceItem)
-      ? "Bunch"
-      : /\bhead\b/i.test(item.sourceItem) && ["Broccoli", "Brassicas", "Cabbages", "Cauliflower", "Lettuce"].includes(item.family)
-        ? "Head"
-        : /\bstalk\b/i.test(item.sourceItem)
-          ? "Stalk"
-          : /\bcluster|on the vine\b/i.test(item.sourceItem)
-            ? "Cluster"
-            : item.soldBy === "Each"
-              ? "Single"
-              : "Loose";
+  const expectedSaleForm = evidenceBatch06?.retailEvidence?.saleForm?.value ?? (
+    /\bcuts?\b/i.test(item.sourceItem)
+      ? "Cut"
+      : /\bbunch\b/i.test(item.sourceItem)
+        ? "Bunch"
+        : /\bhead\b/i.test(item.sourceItem) && ["Broccoli", "Brassicas", "Cabbages", "Cauliflower", "Lettuce"].includes(item.family)
+          ? "Head"
+          : /\bstalk\b/i.test(item.sourceItem)
+            ? "Stalk"
+            : /\bcluster|on the vine\b/i.test(item.sourceItem)
+              ? "Cluster"
+              : item.soldBy === "Each"
+                ? "Single"
+                : "Loose"
+  );
+  if (evidenceBatch06) {
+    assert.equal(
+      item.soldBy,
+      evidenceBatch06.retailEvidence?.soldBy?.value,
+      `${item.catalogId}: sold-by value drifted from the reviewed knowledge overlay.`,
+    );
+  }
   assert.equal(item.saleForm, expectedSaleForm, `${item.catalogId}: sale form drifted from the source identity.`);
 }
 

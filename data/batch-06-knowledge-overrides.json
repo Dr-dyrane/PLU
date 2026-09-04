@@ -1,0 +1,138 @@
+{
+  "schemaVersion": 1,
+  "policy": "These entries interpret product identity and retail form only. They are not checkout-code evidence and they do not nominate media sources.",
+  "overrides": {
+    "artichokes-small-handwritten": {
+      "scope": "in-scope",
+      "title": "Small artichoke",
+      "family": "Artichokes",
+      "form": "Compact layered flower bud",
+      "color": "Green",
+      "sale": {
+        "saleForm": "Single",
+        "soldBy": "Each"
+      },
+      "curationNote": "The source label clearly names a small artichoke; the handwritten code still needs independent adjudication."
+    },
+    "bartlett-orchard-run-first-word-obscured": {
+      "scope": "in-scope",
+      "title": "Bartlett pear — orchard run",
+      "family": "Pears",
+      "form": "Mixed-size bell-shaped pears",
+      "color": "Green and Yellow",
+      "sale": {
+        "saleForm": "Orchard bin",
+        "soldBy": "Weight"
+      },
+      "curationNote": "Bartlett is interpreted as the pear cultivar and orchard run as a mixed-grade retail lot; the obscured source wording remains a review gate."
+    },
+    "durian-frozen": {
+      "scope": "in-scope",
+      "title": "Frozen durian",
+      "family": "Tropical Fruit",
+      "form": "Frozen durian flesh or segments",
+      "color": "Cream and Yellow",
+      "sale": {
+        "saleForm": "Frozen package",
+        "soldBy": "Package"
+      },
+      "curationNote": "The identity is usable for taxonomy, but the package and checkout code must come from retail evidence."
+    },
+    "eddoes-handwritten": {
+      "scope": "in-scope",
+      "title": "Eddoes",
+      "family": "Roots",
+      "form": "Small hairy corms",
+      "color": "Brown",
+      "sale": {
+        "saleForm": "Loose",
+        "soldBy": "Weight"
+      },
+      "curationNote": "Eddoes are treated as small edible corms; the handwritten row supplies no verified code."
+    },
+    "gourds-ornamental": {
+      "scope": "in-scope",
+      "title": "Ornamental gourds",
+      "family": "Squash",
+      "form": "Small hard-shelled decorative gourds",
+      "color": "Mixed",
+      "sale": {
+        "saleForm": "Single",
+        "soldBy": "Each"
+      },
+      "curationNote": "The seasonal produce identity is clear, while its exact store unit and checkout code remain unknown."
+    },
+    "jackfruit-cut-handwritten": {
+      "scope": "in-scope",
+      "title": "Cut jackfruit",
+      "family": "Tropical Fruit",
+      "form": "Cut sections of large textured fruit",
+      "color": "Green and Yellow",
+      "sale": {
+        "saleForm": "Cut",
+        "soldBy": "Weight"
+      },
+      "curationNote": "The label supports cut jackfruit as the identity, but neither the handwritten row nor this override supplies a code."
+    },
+    "limes-key-1lb": {
+      "scope": "in-scope",
+      "title": "Key lime",
+      "family": "Citrus",
+      "form": "Small round citrus fruit",
+      "color": "Green",
+      "sale": {
+        "saleForm": "1 lb package",
+        "soldBy": "Each"
+      },
+      "curationNote": "The source label identifies Key limes and a 1 lb retail unit; the reviewed photograph supports their small round green appearance."
+    },
+    "olives-green-case": {
+      "scope": "in-scope",
+      "title": "Green olives — case",
+      "family": "Olives",
+      "form": "Small oval stone fruits",
+      "color": "Green",
+      "sale": {
+        "saleForm": "Case",
+        "soldBy": "Case"
+      },
+      "curationNote": "This is a case-level green-olive identity; exact case contents and unit handling require retail evidence."
+    },
+    "pistachios-bulk-nuts": {
+      "scope": "in-scope",
+      "title": "Bulk pistachios",
+      "family": "Nuts",
+      "form": "Small nuts in split beige shells",
+      "color": "Beige and Green",
+      "sale": {
+        "saleForm": "Loose",
+        "soldBy": "Weight"
+      },
+      "curationNote": "The source label supports a bulk pistachio identity; the sale interpretation still needs store confirmation."
+    },
+    "sweet-sop": {
+      "scope": "in-scope",
+      "title": "Sweet sop (sugar apple)",
+      "family": "Tropical Fruit",
+      "form": "Round or heart-shaped segmented fruit",
+      "color": "Green",
+      "sale": {
+        "saleForm": "Loose",
+        "soldBy": "Weight"
+      },
+      "curationNote": "Sweet sop is treated as the sugar-apple identity; the seven-digit catalog value remains a store barcode, not a validated PLU."
+    },
+    "walnuts-bulk-nuts-handwritten": {
+      "scope": "in-scope",
+      "title": "Bulk walnuts",
+      "family": "Nuts",
+      "form": "Large ridged nuts in brown shells",
+      "color": "Brown",
+      "sale": {
+        "saleForm": "Loose",
+        "soldBy": "Weight"
+      },
+      "curationNote": "The source label supports bulk walnuts as the identity; the handwritten code remains separately reviewable."
+    }
+  }
+}

@@ -178,7 +178,7 @@ const titleOverridesByCatalogId = new Map([
 function cleanDescriptor(value) {
   return value
     .replace(/\([^)]*\)/g, " ")
-    .replace(/\b\d+\s*(?:ct|lb|lbs|kg|l)\b/gi, " ")
+    .replace(/\b\d+(?:\.\d+)?\s*(?:ct|lb|lbs|kg|l)\b/gi, " ")
     .replace(/\b\d{3,6}\b/g, " ")
     .replace(/\s+/g, " ")
     .replace(/^[-–—\s]+|[-–—\s]+$/g, "")

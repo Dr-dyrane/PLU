@@ -1,13 +1,19 @@
 import assert from "node:assert/strict";
 import { readFile, readdir } from "node:fs/promises";
 
+import {
+  normalize,
+  productHeadGroups,
+  words,
+} from "./batch04/common.mjs";
+
 async function readJson(url) {
   return JSON.parse(await readFile(url, "utf8"));
 }
 
-async function loadJsonRecords(directoryUrl) {
+async function loadJsonRecords(directoryUrl, filter = () => true) {
   const files = (await readdir(directoryUrl).catch(() => []))
-    .filter((name) => name.endsWith(".json"))
+    .filter((name) => name.endsWith(".json") && filter(name))
     .sort();
 
   return (
@@ -20,7 +26,42 @@ async function loadJsonRecords(directoryUrl) {
   ).flat();
 }
 
+function referencedCommonsFile(photo) {
+  if (typeof photo?.file === "string" && photo.file.trim()) return photo.file;
+  if (typeof photo?.source?.url !== "string") return null;
+  try {
+    const pathname = new URL(photo.source.url).pathname;
+    const marker = "/wiki/File:";
+    const markerIndex = pathname.indexOf(marker);
+    if (markerIndex < 0) return null;
+    return decodeURIComponent(pathname.slice(markerIndex + marker.length)).replaceAll("_", " ");
+  } catch {
+    return null;
+  }
+}
+
+function includesNormalizedPhrase(value, phrase) {
+  return ` ${normalize(value)} `.includes(` ${normalize(phrase)} `);
+}
+
+function visibleLabelMatchesCatalog(visibleLabel, catalogItem) {
+  const visibleTokens = new Set(words(visibleLabel));
+  const catalogTokens = new Set(words(catalogItem));
+  if ([...visibleTokens].some((token) => catalogTokens.has(token))) return true;
+  return productHeadGroups.some(
+    (group) =>
+      group.some((token) => visibleTokens.has(token)) &&
+      group.some((token) => catalogTokens.has(token)),
+  );
+}
+
 const catalog = await loadJsonRecords(new URL("../data/catalog/", import.meta.url));
+const reviewedMedia06 = await readJson(
+  new URL("../data/batch-06-reviewed-media.json", import.meta.url),
+);
+const report06 = await readJson(
+  new URL("../public/media-resolution-batch06.json", import.meta.url),
+);
 const batchDirectory = new URL("../data/batches/", import.meta.url);
 const batchFiles = (await readdir(batchDirectory))
   .filter((name) => /^batch-\d+\.json$/.test(name))
@@ -32,6 +73,14 @@ const stories = [
   ...(await loadJsonRecords(new URL("../data/stories/", import.meta.url))),
   ...(await loadJsonRecords(new URL("../data/story-batches/", import.meta.url))),
   ...(await loadJsonRecords(new URL("../data/story-seeds/", import.meta.url))),
+];
+const storiesBeforeBatch06 = [
+  ...(await loadJsonRecords(new URL("../data/stories/", import.meta.url))),
+  ...(await loadJsonRecords(new URL("../data/story-batches/", import.meta.url))),
+  ...(await loadJsonRecords(
+    new URL("../data/story-seeds/", import.meta.url),
+    (name) => name !== "batch-06-generated.json",
+  )),
 ];
 
 const expected = [
@@ -46,6 +95,102 @@ const expected = [
 assert.equal(batches.length, expected.length, "Expected six production batches covering the catalog.");
 
 const catalogById = new Map(catalog.map((record) => [record.id, record]));
+assert.equal(reviewedMedia06?.schemaVersion, "1.0.0", "Unsupported Batch 06 reviewed media schema.");
+assert.equal(reviewedMedia06?.batch, "06", "Batch 06 reviewed media ledger has the wrong batch.");
+assert.ok(Array.isArray(reviewedMedia06?.items), "Batch 06 reviewed media ledger is malformed.");
+const reviewedMedia06ById = new Map();
+const allowedRecognitionModes = new Set([
+  "product-and-loose-form",
+  "family-color-and-loose-form",
+  "label-assisted",
+]);
+for (const review of reviewedMedia06.items) {
+  const label = `Batch 06 reviewed media/${review?.catalogId ?? "unknown"}`;
+  const requiredFields = ["catalogId", "code", "commonsFile", "recognitionMode", "reviewBasis"];
+  assert.ok(
+    requiredFields.every(
+      (field) => typeof review?.[field] === "string" && review[field].trim().length > 0,
+    ),
+    `${label}: catalog ID, code, Commons file, recognition mode, and review basis are required.`,
+  );
+  assert.ok(!reviewedMedia06ById.has(review.catalogId), `${label}: duplicate catalog ID.`);
+  assert.ok(allowedRecognitionModes.has(review.recognitionMode), `${label}: unsupported recognition mode.`);
+  assert.ok(catalogById.has(review.catalogId), `${label}: catalog record is missing.`);
+  const catalogRecord = catalogById.get(review.catalogId);
+  assert.ok(
+    catalogRecord.codes.includes(review.code),
+    `${label}: reviewed code is not in the catalog record.`,
+  );
+  if (review.recognitionMode === "label-assisted") {
+    const visibleFields = ["label", "form", "color", "cue"];
+    assert.ok(
+      visibleFields.every(
+        (field) =>
+          typeof review.visibleIdentity?.[field] === "string" &&
+          review.visibleIdentity[field].trim().length > 0,
+      ),
+      `${label}: label-assisted media needs a complete visible identity.`,
+    );
+    assert.ok(
+      Array.isArray(review.labelClaims) && review.labelClaims.length > 0,
+      `${label}: label-assisted media needs workbook label claims.`,
+    );
+    assert.ok(
+      visibleLabelMatchesCatalog(review.visibleIdentity.label, catalogRecord.item),
+      `${label}: visible identity must be anchored to the catalog item.`,
+    );
+    const catalogPages = new Set(catalogRecord.sourcePages ?? []);
+    const claimValues = new Set();
+    for (const claim of review.labelClaims) {
+      const normalizedClaim = normalize(claim?.value ?? "");
+      assert.ok(normalizedClaim, `${label}: label claim value is required.`);
+      assert.ok(!claimValues.has(normalizedClaim), `${label}: duplicate label claim ${claim.value}.`);
+      claimValues.add(normalizedClaim);
+      assert.equal(claim.basis, "workbook-label", `${label}: label claim basis must be workbook-label.`);
+      assert.equal(claim.sourceField, "catalog.item", `${label}: label claim must cite catalog.item.`);
+      assert.ok(
+        Array.isArray(claim.sourcePages) &&
+          claim.sourcePages.length > 0 &&
+          claim.sourcePages.every((page) => Number.isInteger(page) && catalogPages.has(page)),
+        `${label}: label claim pages must be catalog source pages.`,
+      );
+      assert.ok(
+        includesNormalizedPhrase(catalogRecord.item, normalizedClaim),
+        `${label}: label claim is absent from the catalog item.`,
+      );
+      assert.ok(
+        !Object.values(review.visibleIdentity).some((value) =>
+          includesNormalizedPhrase(value, normalizedClaim),
+        ),
+        `${label}: workbook-only claim leaked into the visible identity.`,
+      );
+    }
+  }
+  reviewedMedia06ById.set(review.catalogId, review);
+}
+const priorReviewedFiles = new Set(
+  storiesBeforeBatch06.flatMap((story) =>
+    (story.photos ?? []).map(referencedCommonsFile).filter(Boolean),
+  ),
+);
+const reviewedMedia06ByFile = new Map();
+for (const review of reviewedMedia06.items) {
+  const fileReviews = reviewedMedia06ByFile.get(review.commonsFile) ?? [];
+  fileReviews.push(review);
+  reviewedMedia06ByFile.set(review.commonsFile, fileReviews);
+}
+const sharedReviewedFiles = new Set();
+for (const [commonsFile, reviews] of reviewedMedia06ByFile) {
+  if (reviews.length < 2 && !priorReviewedFiles.has(commonsFile)) continue;
+  assert.ok(
+    reviews.every(
+      (review) =>
+        typeof review.sharedMediaBasis === "string" && review.sharedMediaBasis.trim().length > 0,
+    ),
+    `${commonsFile}: every reused reviewed file needs a shared-media basis.`,
+  );
+  sharedReviewedFiles.add(commonsFile);
+}
 const storyByCatalogId = new Map(stories.map((story) => [story.catalogId, story]));
 const storyIds = new Set(stories.map((story) => story.id));
 const mappings = [];
@@ -178,9 +323,38 @@ assert.deepEqual(
 );
 assert.deepEqual(
   batch06ReadyIds,
-  ["aloe", "tomato-hh-red-bulk"],
-  "Batch 06 must preserve the exact human-reviewed ready set.",
+  [...reviewedMedia06ById.keys()].sort(),
+  "Batch 06 ready rows must match the committed reviewed-media ledger.",
 );
+const batch06ById = new Map(batches.at(-1).items.map((item) => [item.catalogId, item]));
+const report06ById = new Map(report06.media.map((item) => [item.catalogId, item]));
+assert.deepEqual(
+  [...report06ById.keys()].sort(),
+  [...reviewedMedia06ById.keys()].sort(),
+  "Batch 06 resolved media must match the committed reviewed-media ledger.",
+);
+for (const [catalogId, review] of reviewedMedia06ById) {
+  const batchItem = batch06ById.get(catalogId);
+  const media = report06ById.get(catalogId);
+  const story = storyByCatalogId.get(catalogId);
+  assert.equal(String(batchItem?.code), String(review.code), `${catalogId}: ledger/manifest code drifted.`);
+  assert.equal(media?.match, "reviewed-override", `${catalogId}: unreviewed media cannot publish.`);
+  assert.equal(media?.file, review.commonsFile, `${catalogId}: resolved media differs from the ledger.`);
+  assert.deepEqual(media?.mediaReview, review, `${catalogId}: report review metadata drifted.`);
+  if (sharedReviewedFiles.has(review.commonsFile)) {
+    assert.ok(
+      story?.source?.flags?.includes("media-shared-reviewed"),
+      `${catalogId}: shared reviewed media flag is required.`,
+    );
+  }
+  if (review.recognitionMode === "label-assisted") {
+    assert.ok(
+      story?.source?.flags?.includes("media-label-assisted") &&
+        story.source.flags.includes("qualifier-workbook-label"),
+      `${catalogId}: label-assisted provenance flags are required.`,
+    );
+  }
+}
 assert.equal(
   assignedCatalogIds.length,
   catalog.length,

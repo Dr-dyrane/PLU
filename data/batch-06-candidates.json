@@ -1,41 +1,5 @@
 [
   {
-    "catalogId": "tangerines-fall-glo",
-    "title": "Fall Glo tangerine",
-    "code": "3144",
-    "family": "Citrus",
-    "soldBy": "Weight",
-    "saleForm": "Loose",
-    "form": "Round citrus fruit",
-    "color": "Orange-yellow",
-    "imageQuery": "Fall Glo tangerine raw produce",
-    "cue": "Fall Glo tangerine is identified by its orange-yellow appearance and round citrus fruit.",
-    "group": "citrus",
-    "sourcePages": [
-      3
-    ],
-    "candidateScore": 134,
-    "sourceItem": "Tangerines - Fall Glo"
-  },
-  {
-    "catalogId": "papayas-meridol",
-    "title": "Meridol papaya",
-    "code": "3112",
-    "family": "Papayas",
-    "soldBy": "Weight",
-    "saleForm": "Loose",
-    "form": "Large oblong fruit",
-    "color": "Green-orange",
-    "imageQuery": "Meridol papaya raw produce",
-    "cue": "Meridol papaya is identified by its green-orange appearance and large oblong fruit.",
-    "group": "papayas",
-    "sourcePages": [
-      2
-    ],
-    "candidateScore": 124,
-    "sourceItem": "Papayas - Meridol"
-  },
-  {
     "catalogId": "aloe",
     "title": "Aloe",
     "code": "3798",
@@ -50,78 +14,848 @@
     "sourcePages": [
       1
     ],
-    "candidateScore": 124,
-    "sourceItem": "Aloe"
+    "sourceItem": "Aloe",
+    "sourceOrder": 1
   },
   {
-    "catalogId": "watermelons-mickey-lee",
-    "title": "Mickey Lee watermelon",
-    "code": "4331",
-    "family": "Watermelons",
-    "soldBy": "Each",
-    "saleForm": "Single",
-    "form": "Large round or oval melon",
-    "color": "Green-red",
-    "imageQuery": "Mickey Lee watermelon raw produce",
-    "cue": "Mickey Lee watermelon is identified by its green-red appearance and large round or oval melon.",
-    "group": "watermelons",
-    "sourcePages": [
-      3
-    ],
-    "candidateScore": 124,
-    "sourceItem": "Watermelons - Mickey Lee"
-  },
-  {
-    "catalogId": "tomatoes-on-the-vine-hh-organic",
-    "title": "Organic On The Vine HH tomato",
-    "code": "94664",
-    "family": "Tomatoes",
-    "soldBy": "Weight",
-    "saleForm": "Cluster",
-    "form": "Smooth round or oblong fruit",
-    "color": "Red",
-    "imageQuery": "Organic On The Vine HH tomato raw produce",
-    "cue": "Organic On The Vine HH tomato is identified by its red appearance and smooth round or oblong fruit.",
-    "group": "tomatoes",
-    "sourcePages": [
-      3,
-      4
-    ],
-    "candidateScore": 99,
-    "sourceItem": "Tomatoes - On The Vine HH (Organic)"
-  },
-  {
-    "catalogId": "pears-taylor-gold",
-    "title": "Taylor Gold pear",
-    "code": "4553",
-    "family": "Pears",
+    "catalogId": "apples-ambrosia-bin",
+    "title": "Apples - Ambrosia (Bin)",
+    "code": "25040",
+    "family": "Apples",
     "soldBy": "Weight",
     "saleForm": "Loose",
-    "form": "Bell-shaped fruit",
+    "form": "Round apple",
+    "color": "Mixed",
+    "imageQuery": "Apples - Ambrosia raw produce",
+    "cue": "The reviewed photograph clearly shows apples - ambrosia in round apple form.",
+    "group": "apples",
+    "sourcePages": [
+      5
+    ],
+    "flags": [
+      "sold-by-curated",
+      "retail-form-specific"
+    ],
+    "sourceItem": "Apples - Ambrosia (Bin)",
+    "sourceOrder": 3
+  },
+  {
+    "catalogId": "apples-gala-orchard-run",
+    "title": "Apples - Gala (Orchard Run)",
+    "code": "62021",
+    "family": "Apples",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Round apple",
+    "color": "Mixed",
+    "imageQuery": "Apples - Gala raw produce",
+    "cue": "The reviewed photograph clearly shows apples - gala in round apple form.",
+    "group": "apples",
+    "sourcePages": [
+      1,
+      5
+    ],
+    "flags": [
+      "retail-form-specific"
+    ],
+    "sourceItem": "Apples - Gala (Orchard Run)",
+    "sourceOrder": 6
+  },
+  {
+    "catalogId": "apples-ginger-gold-orchard-run",
+    "title": "Apples - Ginger Gold (Orchard Run)",
+    "code": "3000",
+    "family": "Apples",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Round apple",
     "color": "Gold",
-    "imageQuery": "Taylor Gold pear raw produce",
-    "cue": "Taylor Gold pear is identified by its gold appearance and bell-shaped fruit.",
-    "group": "pears",
+    "imageQuery": "Apples - Ginger Gold raw produce",
+    "cue": "The reviewed photograph clearly shows apples - ginger gold in round apple form.",
+    "group": "apples",
+    "sourcePages": [
+      5
+    ],
+    "flags": [
+      "sold-by-curated",
+      "retail-form-specific"
+    ],
+    "sourceItem": "Apples - Ginger Gold (Orchard Run)",
+    "sourceOrder": 7
+  },
+  {
+    "catalogId": "apples-honeycrisp-orchard-run",
+    "title": "Apples - Honeycrisp (Orchard Run)",
+    "code": "59986",
+    "family": "Apples",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Round apple",
+    "color": "Mixed",
+    "imageQuery": "Apples - Honeycrisp raw produce",
+    "cue": "The reviewed photograph clearly shows apples - honeycrisp in round apple form.",
+    "group": "apples",
+    "sourcePages": [
+      5
+    ],
+    "flags": [
+      "sold-by-curated",
+      "retail-form-specific"
+    ],
+    "sourceItem": "Apples - Honeycrisp (Orchard Run)",
+    "sourceOrder": 9
+  },
+  {
+    "catalogId": "apples-mcintosh-orchard-bin",
+    "title": "Apples - McIntosh (Orchard Bin)",
+    "code": "62010",
+    "family": "Apples",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Round apple",
+    "color": "Mixed",
+    "imageQuery": "Apples - McIntosh raw produce",
+    "cue": "The reviewed photograph clearly shows apples - mcintosh in round apple form.",
+    "group": "apples",
+    "sourcePages": [
+      5
+    ],
+    "flags": [
+      "sold-by-curated",
+      "retail-form-specific"
+    ],
+    "sourceItem": "Apples - McIntosh (Orchard Bin)",
+    "sourceOrder": 12
+  },
+  {
+    "catalogId": "apples-spartan-orchard-run-bin",
+    "title": "Apples - Spartan (Orchard Run Bin)",
+    "code": "62013",
+    "family": "Apples",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Round apple",
+    "color": "Mixed",
+    "imageQuery": "Apples - Spartan raw produce",
+    "cue": "The reviewed photograph clearly shows apples - spartan in round apple form.",
+    "group": "apples",
+    "sourcePages": [
+      5
+    ],
+    "flags": [
+      "sold-by-curated",
+      "retail-form-specific"
+    ],
+    "sourceItem": "Apples - Spartan (Orchard Run Bin)",
+    "sourceOrder": 16
+  },
+  {
+    "catalogId": "apples-sunrise-orchard-run",
+    "title": "Apples - Sunrise (Orchard Run)",
+    "code": "62023",
+    "family": "Apples",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Round apple",
+    "color": "Mixed",
+    "imageQuery": "Apples - Sunrise raw produce",
+    "cue": "The reviewed photograph clearly shows apples - sunrise in round apple form.",
+    "group": "apples",
+    "sourcePages": [
+      5
+    ],
+    "flags": [
+      "sold-by-curated",
+      "retail-form-specific"
+    ],
+    "sourceItem": "Apples - Sunrise (Orchard Run)",
+    "sourceOrder": 17
+  },
+  {
+    "catalogId": "avocado-organic-3ct",
+    "title": "Avocado - Organic 3ct",
+    "code": "40719",
+    "family": "Avocados",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Pear-shaped fruit",
+    "color": "Green",
+    "imageQuery": "Avocado raw produce",
+    "cue": "The reviewed photograph clearly shows avocado in pear-shaped fruit form.",
+    "group": "avocados",
+    "sourcePages": [
+      5
+    ],
+    "flags": [
+      "sold-by-curated",
+      "retail-form-specific"
+    ],
+    "sourceItem": "Avocado - Organic 3ct",
+    "sourceOrder": 23
+  },
+  {
+    "catalogId": "bananas-case",
+    "title": "Bananas (Case)",
+    "code": "6794",
+    "family": "Bananas",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Long curved fruit",
+    "color": "Yellow-green",
+    "imageQuery": "Bananas raw produce",
+    "cue": "The reviewed photograph clearly shows bananas in long curved fruit form.",
+    "group": "bananas",
+    "sourcePages": [
+      5
+    ],
+    "flags": [
+      "sold-by-curated",
+      "retail-form-specific"
+    ],
+    "sourceItem": "Bananas (Case)",
+    "sourceOrder": 24
+  },
+  {
+    "catalogId": "bean-sprouts-case",
+    "title": "Bean Sprouts (Case)",
+    "code": "63604",
+    "family": "Sprouts",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Tender sprouted stems",
+    "color": "White-yellow",
+    "imageQuery": "Bean Sprouts raw produce",
+    "cue": "The reviewed photograph clearly shows bean sprouts in tender sprouted stems form.",
+    "group": "sprouts",
+    "sourcePages": [
+      4
+    ],
+    "flags": [
+      "sold-by-curated",
+      "retail-form-specific"
+    ],
+    "sourceItem": "Bean Sprouts (Case)",
+    "sourceOrder": 28
+  },
+  {
+    "catalogId": "blueberries-2lb",
+    "title": "Blueberries - 2lb",
+    "code": "39583",
+    "family": "Berries",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Small soft berries",
+    "color": "Mixed",
+    "imageQuery": "Blueberries raw produce",
+    "cue": "The reviewed photograph clearly shows blueberries in small soft berries form.",
+    "group": "berries",
+    "sourcePages": [
+      5
+    ],
+    "flags": [
+      "sold-by-curated",
+      "retail-form-specific"
+    ],
+    "sourceItem": "Blueberries - 2lb",
+    "sourceOrder": 32
+  },
+  {
+    "catalogId": "bok-choy-shanghai-jr",
+    "title": "Bok Choy - Shanghai Jr",
+    "code": "64388",
+    "family": "Leafy Greens",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Pale thick stalks with spoon-shaped green leaves",
+    "color": "Pale Green and Green",
+    "imageQuery": "Shanghai bok choy raw produce",
+    "cue": "Pale thick stalks and smooth spoon-shaped green leaves identify Shanghai bok choy.",
+    "group": "leafy-greens",
+    "sourcePages": [
+      4
+    ],
+    "flags": [
+      "sold-by-curated"
+    ],
+    "sourceItem": "Bok Choy - Shanghai Jr",
+    "sourceOrder": 35
+  },
+  {
+    "catalogId": "cherries-rwb-organic",
+    "title": "Cherries - RWB (Organic)",
+    "code": "94045",
+    "family": "Cherries",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Small round cherries with stems",
+    "color": "Red to Dark Red",
+    "imageQuery": "loose cherries raw produce",
+    "cue": "Loose cherries with stems fill the market display in red-to-dark shades.",
+    "group": "cherries",
     "sourcePages": [
       5
     ],
     "flags": [
       "sold-by-curated"
     ],
-    "candidateScore": 94,
-    "sourceItem": "Pears - Taylor Gold"
+    "sourceItem": "Cherries - RWB (Organic)",
+    "sourceOrder": 42
   },
   {
-    "catalogId": "peppers-green-hh-bulk",
-    "title": "Green HH pepper",
-    "code": "3120",
+    "catalogId": "citrus-bulk-unlabelled-row-1st",
+    "title": "Citrus - Bulk (unlabelled row, 1st)",
+    "code": "0240",
+    "family": "Citrus",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Round citrus fruit",
+    "color": "Orange-yellow",
+    "imageQuery": "Citrus raw produce",
+    "cue": "The reviewed photograph clearly shows citrus in round citrus fruit form.",
+    "group": "citrus",
+    "sourcePages": [
+      5
+    ],
+    "flags": [
+      "sold-by-curated"
+    ],
+    "sourceItem": "Citrus - Bulk (unlabelled row, 1st)",
+    "sourceOrder": 44
+  },
+  {
+    "catalogId": "citrus-bulk-unlabelled-row-2nd",
+    "title": "Citrus - Bulk (unlabelled row, 2nd)",
+    "code": "3029",
+    "family": "Citrus",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Round citrus fruit",
+    "color": "Orange-yellow",
+    "imageQuery": "Citrus raw produce",
+    "cue": "The reviewed photograph clearly shows citrus in round citrus fruit form.",
+    "group": "citrus",
+    "sourcePages": [
+      5
+    ],
+    "flags": [
+      "sold-by-curated"
+    ],
+    "sourceItem": "Citrus - Bulk (unlabelled row, 2nd)",
+    "sourceOrder": 45
+  },
+  {
+    "catalogId": "clementines-3lb",
+    "title": "Clementines - 3lb",
+    "code": "1835",
+    "family": "Citrus",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Round citrus fruit",
+    "color": "Orange-yellow",
+    "imageQuery": "Clementines raw produce",
+    "cue": "The reviewed photograph clearly shows clementines in round citrus fruit form.",
+    "group": "citrus",
+    "sourcePages": [
+      5
+    ],
+    "flags": [
+      "sold-by-curated",
+      "retail-form-specific"
+    ],
+    "sourceItem": "Clementines - 3lb",
+    "sourceOrder": 46
+  },
+  {
+    "catalogId": "eggplant-purple-case",
+    "title": "Eggplant - Purple (Case)",
+    "code": "63582",
+    "family": "Eggplants",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Smooth oval fruit",
+    "color": "Purple",
+    "imageQuery": "Eggplant - Purple raw produce",
+    "cue": "The reviewed photograph clearly shows eggplant - purple in smooth oval fruit form.",
+    "group": "eggplants",
+    "sourcePages": [
+      4
+    ],
+    "flags": [
+      "sold-by-curated",
+      "retail-form-specific"
+    ],
+    "sourceItem": "Eggplant - Purple (Case)",
+    "sourceOrder": 56
+  },
+  {
+    "catalogId": "figgs-green-case",
+    "title": "Figgs - Green (Case)",
+    "code": "6799",
+    "family": "Figs",
+    "soldBy": "Each",
+    "saleForm": "Single",
+    "form": "Soft teardrop fruit",
+    "color": "Green",
+    "imageQuery": "Figgs - Green raw produce",
+    "cue": "The reviewed photograph clearly shows figgs - green in soft teardrop fruit form.",
+    "group": "figs",
+    "sourcePages": [
+      1
+    ],
+    "flags": [
+      "retail-form-specific"
+    ],
+    "sourceItem": "Figgs - Green (Case)",
+    "sourceOrder": 59
+  },
+  {
+    "catalogId": "garlic-1kg-bagged",
+    "title": "Garlic 1kg (bagged)",
+    "code": "9578",
+    "family": "Alliums",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Segmented bulb",
+    "color": "White",
+    "imageQuery": "Garlic raw produce",
+    "cue": "The reviewed photograph clearly shows garlic in segmented bulb form.",
+    "group": "alliums",
+    "sourcePages": [
+      4
+    ],
+    "flags": [
+      "sold-by-curated",
+      "retail-form-specific"
+    ],
+    "sourceItem": "Garlic 1kg (bagged)",
+    "sourceOrder": 65
+  },
+  {
+    "catalogId": "grapes-green-seedless-2lb",
+    "title": "Grapes - Green (Seedless) 2lb",
+    "code": "84022",
+    "family": "Grapes",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Clustered round berries",
+    "color": "Green",
+    "imageQuery": "Grapes - Green Seedless raw produce",
+    "cue": "The reviewed photograph clearly shows grapes - green seedless in clustered round berries form.",
+    "group": "grapes",
+    "sourcePages": [
+      5
+    ],
+    "flags": [
+      "sold-by-curated",
+      "retail-form-specific"
+    ],
+    "sourceItem": "Grapes - Green (Seedless) 2lb",
+    "sourceOrder": 68
+  },
+  {
+    "catalogId": "grapes-red-seedless-2lb",
+    "title": "Grapes - Red (Seedless) 2lb",
+    "code": "84636",
+    "family": "Grapes",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Clustered round berries",
+    "color": "Red",
+    "imageQuery": "Grapes - Red Seedless raw produce",
+    "cue": "The reviewed photograph clearly shows grapes - red seedless in clustered round berries form.",
+    "group": "grapes",
+    "sourcePages": [
+      5
+    ],
+    "flags": [
+      "sold-by-curated",
+      "retail-form-specific"
+    ],
+    "sourceItem": "Grapes - Red (Seedless) 2lb",
+    "sourceOrder": 69
+  },
+  {
+    "catalogId": "kiwi-1kg",
+    "title": "Kiwi - 1kg",
+    "code": "1465",
+    "family": "Kiwi",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Small oval fruit",
+    "color": "Brown-green",
+    "imageQuery": "Kiwi raw produce",
+    "cue": "The reviewed photograph clearly shows kiwi in small oval fruit form.",
+    "group": "kiwi",
+    "sourcePages": [
+      5
+    ],
+    "flags": [
+      "sold-by-curated",
+      "retail-form-specific"
+    ],
+    "sourceItem": "Kiwi - 1kg",
+    "sourceOrder": 73
+  },
+  {
+    "catalogId": "lettuce-boston-dome",
+    "title": "Lettuce - Boston (Dome)",
+    "code": "3557",
+    "family": "Lettuce",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Leafy head",
+    "color": "Green",
+    "imageQuery": "Lettuce - Boston raw produce",
+    "cue": "The reviewed photograph clearly shows lettuce - boston in leafy head form.",
+    "group": "lettuce",
+    "sourcePages": [
+      4
+    ],
+    "flags": [
+      "sold-by-curated",
+      "retail-form-specific"
+    ],
+    "sourceItem": "Lettuce - Boston (Dome)",
+    "sourceOrder": 75
+  },
+  {
+    "catalogId": "lettuce-iceberg-organic",
+    "title": "Lettuce - Iceberg (Organic)",
+    "code": "94061",
+    "family": "Lettuce",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Compact harvested lettuce head",
+    "color": "Pale Green",
+    "imageQuery": "iceberg lettuce raw produce",
+    "cue": "A compact harvested iceberg head shows tightly layered pale-green leaves.",
+    "group": "lettuce",
+    "sourcePages": [
+      4
+    ],
+    "flags": [
+      "sold-by-curated"
+    ],
+    "sourceItem": "Lettuce - Iceberg (Organic)",
+    "sourceOrder": 76
+  },
+  {
+    "catalogId": "limes-key-1lb",
+    "title": "Limes - Key 1lb",
+    "code": "3653",
+    "family": "Citrus",
+    "soldBy": "Each",
+    "saleForm": "1 lb package",
+    "form": "Small round citrus fruit",
+    "color": "Green",
+    "imageQuery": "Limes - Key raw produce",
+    "cue": "The reviewed photograph clearly shows limes - key in small round citrus fruit form.",
+    "group": "citrus",
+    "sourcePages": [
+      5
+    ],
+    "flags": [
+      "sold-by-curated",
+      "retail-form-specific"
+    ],
+    "sourceItem": "Limes - Key 1lb",
+    "sourceOrder": 77
+  },
+  {
+    "catalogId": "mangoes-case-10lb",
+    "title": "Mangoes - Case 10lb",
+    "code": "62464",
+    "family": "Mangoes",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Oval tapered fruit",
+    "color": "Yellow-red",
+    "imageQuery": "Mangoes raw produce",
+    "cue": "The reviewed photograph clearly shows mangoes in oval tapered fruit form.",
+    "group": "mangoes",
+    "sourcePages": [
+      5
+    ],
+    "flags": [
+      "sold-by-curated",
+      "retail-form-specific"
+    ],
+    "sourceItem": "Mangoes - Case 10lb",
+    "sourceOrder": 80
+  },
+  {
+    "catalogId": "mangos-east-indian-case",
+    "title": "Mangos - East Indian (Case)",
+    "code": "12966",
+    "family": "Mangoes",
+    "soldBy": "Each",
+    "saleForm": "Single",
+    "form": "Oval tapered fruit",
+    "color": "Yellow-red",
+    "imageQuery": "Mangos - East Indian raw produce",
+    "cue": "The reviewed photograph clearly shows mangos - east indian in oval tapered fruit form.",
+    "group": "mangoes",
+    "sourcePages": [
+      2
+    ],
+    "flags": [
+      "retail-form-specific"
+    ],
+    "sourceItem": "Mangos - East Indian (Case)",
+    "sourceOrder": 83
+  },
+  {
+    "catalogId": "melons-cantaloupe-organic",
+    "title": "Melons - Cantaloupe (Organic)",
+    "code": "94050",
+    "family": "Melons",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Whole round netted melon",
+    "color": "Tan and Green",
+    "imageQuery": "cantaloupe raw produce",
+    "cue": "Whole cantaloupes show a round form and coarse netted rind.",
+    "group": "melons",
+    "sourcePages": [
+      5
+    ],
+    "flags": [
+      "sold-by-curated"
+    ],
+    "sourceItem": "Melons - Cantaloupe (Organic)",
+    "sourceOrder": 87
+  },
+  {
+    "catalogId": "onions-red-10lb",
+    "title": "Onions - Red 10lb",
+    "code": "3506",
+    "family": "Alliums",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Layered bulb or stalk",
+    "color": "Red",
+    "imageQuery": "Onions - Red raw produce",
+    "cue": "The reviewed photograph clearly shows onions - red in layered bulb or stalk form.",
+    "group": "alliums",
+    "sourcePages": [
+      4
+    ],
+    "flags": [
+      "sold-by-curated",
+      "retail-form-specific"
+    ],
+    "sourceItem": "Onions - Red 10lb",
+    "sourceOrder": 99
+  },
+  {
+    "catalogId": "onions-yellow-3lb-bag",
+    "title": "Onions - Yellow 3lb (Bag)",
+    "code": "59662",
+    "family": "Alliums",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Layered bulb or stalk",
+    "color": "Yellow",
+    "imageQuery": "Onions - Yellow raw produce",
+    "cue": "The reviewed photograph clearly shows onions - yellow in layered bulb or stalk form.",
+    "group": "alliums",
+    "sourcePages": [
+      2,
+      4
+    ],
+    "flags": [
+      "retail-form-specific"
+    ],
+    "sourceItem": "Onions - Yellow 3lb (Bag)",
+    "sourceOrder": 102
+  },
+  {
+    "catalogId": "onions-yellow-organic-2lb",
+    "title": "Onions - Yellow Organic 2lb",
+    "code": "62810",
+    "family": "Alliums",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Layered bulb or stalk",
+    "color": "Yellow",
+    "imageQuery": "Onions - Yellow raw produce",
+    "cue": "The reviewed photograph clearly shows onions - yellow in layered bulb or stalk form.",
+    "group": "alliums",
+    "sourcePages": [
+      4
+    ],
+    "flags": [
+      "sold-by-curated",
+      "retail-form-specific"
+    ],
+    "sourceItem": "Onions - Yellow Organic 2lb",
+    "sourceOrder": 104
+  },
+  {
+    "catalogId": "peaches-case",
+    "title": "Peaches (Case)",
+    "code": "68599",
+    "family": "Peaches",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Fuzzy round stone fruit",
+    "color": "Yellow-red",
+    "imageQuery": "Peaches raw produce",
+    "cue": "The reviewed photograph clearly shows peaches in fuzzy round stone fruit form.",
+    "group": "peaches",
+    "sourcePages": [
+      5
+    ],
+    "flags": [
+      "sold-by-curated",
+      "retail-form-specific"
+    ],
+    "sourceItem": "Peaches (Case)",
+    "sourceOrder": 112
+  },
+  {
+    "catalogId": "peaches-3l",
+    "title": "Peaches - 3L",
+    "code": "6992",
+    "family": "Peaches",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Fuzzy round stone fruit",
+    "color": "Yellow-red",
+    "imageQuery": "Peaches raw produce",
+    "cue": "The reviewed photograph clearly shows peaches in fuzzy round stone fruit form.",
+    "group": "peaches",
+    "sourcePages": [
+      5
+    ],
+    "flags": [
+      "sold-by-curated",
+      "retail-form-specific"
+    ],
+    "sourceItem": "Peaches - 3L",
+    "sourceOrder": 113
+  },
+  {
+    "catalogId": "peaches-tree-ripe-case",
+    "title": "Peaches - Tree Ripe (Case)",
+    "code": "6808",
+    "family": "Peaches",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Fuzzy round stone fruit",
+    "color": "Yellow-red",
+    "imageQuery": "Peaches - Tree Ripe raw produce",
+    "cue": "The reviewed photograph clearly shows peaches - tree ripe in fuzzy round stone fruit form.",
+    "group": "peaches",
+    "sourcePages": [
+      5
+    ],
+    "flags": [
+      "sold-by-curated",
+      "retail-form-specific"
+    ],
+    "sourceItem": "Peaches - Tree Ripe (Case)",
+    "sourceOrder": 115
+  },
+  {
+    "catalogId": "pears-bartlett-3lb-organic",
+    "title": "Pears - Bartlett 3lb (Organic)",
+    "code": "63486",
+    "family": "Pears",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Bell-shaped fruit",
+    "color": "Green-yellow",
+    "imageQuery": "Pears - Bartlett raw produce",
+    "cue": "The reviewed photograph clearly shows pears - bartlett in bell-shaped fruit form.",
+    "group": "pears",
+    "sourcePages": [
+      5
+    ],
+    "flags": [
+      "sold-by-curated",
+      "retail-form-specific"
+    ],
+    "sourceItem": "Pears - Bartlett 3lb (Organic)",
+    "sourceOrder": 117
+  },
+  {
+    "catalogId": "peppers-assorted-bin",
+    "title": "Peppers - Assorted (Bin)",
+    "code": "8170",
+    "family": "Peppers",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Hollow tapered fruit",
+    "color": "Mixed",
+    "imageQuery": "Peppers - Assorted raw produce",
+    "cue": "The reviewed photograph clearly shows peppers - assorted in hollow tapered fruit form.",
+    "group": "peppers",
+    "sourcePages": [
+      4
+    ],
+    "flags": [
+      "sold-by-curated",
+      "retail-form-specific"
+    ],
+    "sourceItem": "Peppers - Assorted (Bin)",
+    "sourceOrder": 123
+  },
+  {
+    "catalogId": "peppers-green-case",
+    "title": "Peppers - Green (Case)",
+    "code": "63866",
     "family": "Peppers",
     "soldBy": "Weight",
     "saleForm": "Loose",
     "form": "Hollow tapered fruit",
     "color": "Green",
-    "imageQuery": "Green HH pepper raw produce",
-    "cue": "Green HH pepper is identified by its green appearance and hollow tapered fruit.",
+    "imageQuery": "Peppers - Green raw produce",
+    "cue": "The reviewed photograph clearly shows peppers - green in hollow tapered fruit form.",
+    "group": "peppers",
+    "sourcePages": [
+      4
+    ],
+    "flags": [
+      "sold-by-curated",
+      "retail-form-specific"
+    ],
+    "sourceItem": "Peppers - Green (Case)",
+    "sourceOrder": 124
+  },
+  {
+    "catalogId": "peppers-green-4ct-bag",
+    "title": "Peppers - Green 4ct (Bag)",
+    "code": "3014",
+    "family": "Peppers",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Hollow tapered fruit",
+    "color": "Green",
+    "imageQuery": "Peppers - Green raw produce",
+    "cue": "The reviewed photograph clearly shows peppers - green in hollow tapered fruit form.",
+    "group": "peppers",
+    "sourcePages": [
+      4
+    ],
+    "flags": [
+      "sold-by-curated",
+      "retail-form-specific"
+    ],
+    "sourceItem": "Peppers - Green 4ct (Bag)",
+    "sourceOrder": 125
+  },
+  {
+    "catalogId": "peppers-green-hh-bulk",
+    "title": "Peppers - Green HH (Bulk)",
+    "code": "3120",
+    "family": "Peppers",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Blocky hollow bell pepper",
+    "color": "Green",
+    "imageQuery": "green bell pepper raw produce",
+    "cue": "A whole blocky green bell pepper with broad lobes is clearly visible.",
     "group": "peppers",
     "sourcePages": [
       4
@@ -129,104 +863,152 @@
     "flags": [
       "sold-by-curated"
     ],
-    "candidateScore": 94,
-    "sourceItem": "Peppers - Green HH (Bulk)"
+    "sourceItem": "Peppers - Green HH (Bulk)",
+    "sourceOrder": 126
   },
   {
-    "catalogId": "tomato-hh-red-bulk",
-    "title": "HH Red tomato",
-    "code": "4798",
-    "family": "Tomatoes",
+    "catalogId": "peppers-red-4ct-bag",
+    "title": "Peppers - Red 4ct (Bag)",
+    "code": "64116",
+    "family": "Peppers",
     "soldBy": "Weight",
     "saleForm": "Loose",
-    "form": "Smooth round or oblong fruit",
+    "form": "Hollow tapered fruit",
     "color": "Red",
-    "imageQuery": "HH Red tomato raw produce",
-    "cue": "HH Red tomato is identified by its red appearance and smooth round or oblong fruit.",
-    "group": "tomatoes",
+    "imageQuery": "Peppers - Red raw produce",
+    "cue": "The reviewed photograph clearly shows peppers - red in hollow tapered fruit form.",
+    "group": "peppers",
     "sourcePages": [
       4
     ],
     "flags": [
-      "sold-by-curated"
+      "sold-by-curated",
+      "retail-form-specific"
     ],
-    "candidateScore": 94,
-    "sourceItem": "Tomato - HH Red (Bulk)"
+    "sourceItem": "Peppers - Red 4ct (Bag)",
+    "sourceOrder": 127
   },
   {
-    "catalogId": "melons-goldendew",
-    "title": "Goldendew melon",
-    "code": "3100",
-    "family": "Melons",
+    "catalogId": "persimmons-hachiya-case",
+    "title": "Persimmons - Hachiya (Case)",
+    "code": "36308",
+    "family": "Persimmons",
     "soldBy": "Weight",
     "saleForm": "Loose",
-    "form": "Large round or oval melon",
-    "color": "Green-yellow",
-    "imageQuery": "Goldendew melon raw produce",
-    "cue": "Goldendew melon is identified by its green-yellow appearance and large round or oval melon.",
-    "group": "melons",
+    "form": "Round orange fruit with leafy cap",
+    "color": "Orange",
+    "imageQuery": "Persimmons - Hachiya raw produce",
+    "cue": "The reviewed photograph clearly shows persimmons - hachiya in round orange fruit with leafy cap form.",
+    "group": "persimmons",
     "sourcePages": [
       5
     ],
     "flags": [
-      "sold-by-curated"
+      "sold-by-curated",
+      "retail-form-specific"
     ],
-    "candidateScore": 91,
-    "sourceItem": "Melons - Goldendew"
+    "sourceItem": "Persimmons - Hachiya (Case)",
+    "sourceOrder": 129
   },
   {
-    "catalogId": "melons-honeykiss",
-    "title": "Honeykiss melon",
-    "code": "4375",
-    "family": "Melons",
+    "catalogId": "plums-blue-1-5l",
+    "title": "Plums - Blue 1.5L",
+    "code": "6706",
+    "family": "Plums",
     "soldBy": "Weight",
     "saleForm": "Loose",
-    "form": "Large round or oval melon",
-    "color": "Green-yellow",
-    "imageQuery": "Honeykiss melon raw produce",
-    "cue": "Honeykiss melon is identified by its green-yellow appearance and large round or oval melon.",
-    "group": "melons",
+    "form": "Smooth round stone fruit",
+    "color": "Blue",
+    "imageQuery": "Plums - Blue raw produce",
+    "cue": "The reviewed photograph clearly shows plums - blue in smooth round stone fruit form.",
+    "group": "plums",
     "sourcePages": [
       5
     ],
     "flags": [
-      "sold-by-curated"
+      "sold-by-curated",
+      "retail-form-specific"
     ],
-    "candidateScore": 91,
-    "sourceItem": "Melons - Honeykiss"
+    "sourceItem": "Plums - Blue 1.5L",
+    "sourceOrder": 134
   },
   {
-    "catalogId": "celery-hearts",
-    "title": "Hearts celery",
-    "code": "4575",
-    "family": "Stalk Vegetables",
+    "catalogId": "plums-yellow-1-5l",
+    "title": "Plums - Yellow 1.5L",
+    "code": "1383",
+    "family": "Plums",
     "soldBy": "Weight",
     "saleForm": "Loose",
-    "form": "Crisp ribbed stalks",
-    "color": "Green",
-    "imageQuery": "Hearts celery raw produce",
-    "cue": "Hearts celery is identified by its green appearance and crisp ribbed stalks.",
-    "group": "stalk-vegetables",
+    "form": "Smooth round stone fruit",
+    "color": "Yellow",
+    "imageQuery": "Plums - Yellow raw produce",
+    "cue": "The reviewed photograph clearly shows plums - yellow in smooth round stone fruit form.",
+    "group": "plums",
+    "sourcePages": [
+      5
+    ],
+    "flags": [
+      "sold-by-curated",
+      "retail-form-specific"
+    ],
+    "sourceItem": "Plums - Yellow 1.5L",
+    "sourceOrder": 135
+  },
+  {
+    "catalogId": "potato-russet-white-20lb",
+    "title": "Potato - Russet / White 20lb",
+    "code": "62006",
+    "family": "Potatoes",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Firm round or tapered tuber",
+    "color": "White",
+    "imageQuery": "Potato - Russet / White raw produce",
+    "cue": "The reviewed photograph clearly shows potato - russet / white in firm round or tapered tuber form.",
+    "group": "potatoes",
     "sourcePages": [
       4
     ],
     "flags": [
-      "sold-by-curated"
+      "sold-by-curated",
+      "retail-form-specific"
     ],
-    "candidateScore": 86,
-    "sourceItem": "Celery - Hearts"
+    "sourceItem": "Potato - Russet / White 20lb",
+    "sourceOrder": 138
+  },
+  {
+    "catalogId": "potato-russet-10lb",
+    "title": "Potato - Russet 10lb",
+    "code": "171",
+    "family": "Potatoes",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Firm round or tapered tuber",
+    "color": "Brown",
+    "imageQuery": "Potato - Russet raw produce",
+    "cue": "The reviewed photograph clearly shows potato - russet in firm round or tapered tuber form.",
+    "group": "potatoes",
+    "sourcePages": [
+      4
+    ],
+    "flags": [
+      "sold-by-curated",
+      "retail-form-specific"
+    ],
+    "sourceItem": "Potato - Russet 10lb",
+    "sourceOrder": 139
   },
   {
     "catalogId": "tomato-fm-on-the-vine-bulk",
-    "title": "FM On The Vine tomato",
+    "title": "Tomato - FM On The Vine (Bulk)",
     "code": "64664",
     "family": "Tomatoes",
     "soldBy": "Weight",
     "saleForm": "Cluster",
-    "form": "Smooth round or oblong fruit",
+    "form": "Round tomato cluster on the vine",
     "color": "Red",
-    "imageQuery": "FM On The Vine tomato raw produce",
-    "cue": "FM On The Vine tomato is identified by its red appearance and smooth round or oblong fruit.",
+    "imageQuery": "tomatoes on the vine raw produce",
+    "cue": "A red tomato cluster remains visibly attached to its vine.",
     "group": "tomatoes",
     "sourcePages": [
       4
@@ -234,71 +1016,91 @@
     "flags": [
       "sold-by-curated"
     ],
-    "candidateScore": 82,
-    "sourceItem": "Tomato - FM On The Vine (Bulk)"
+    "sourceItem": "Tomato - FM On The Vine (Bulk)",
+    "sourceOrder": 161
   },
   {
-    "catalogId": "yu-choy-jr",
-    "title": "Jr Yu choy",
-    "code": "10260",
-    "family": "Leafy Greens",
+    "catalogId": "tomato-hh-organic",
+    "title": "Tomato - HH (Organic)",
+    "code": "94798",
+    "family": "Tomatoes",
     "soldBy": "Weight",
     "saleForm": "Loose",
-    "form": "Broad leafy stems",
-    "color": "Green",
-    "imageQuery": "Jr Yu choy raw produce",
-    "cue": "Jr Yu choy is identified by its green appearance and broad leafy stems.",
-    "group": "leafy-greens",
+    "form": "Smooth round loose tomatoes",
+    "color": "Red",
+    "imageQuery": "hothouse tomatoes raw produce",
+    "cue": "Smooth round red tomatoes are shown together as loose hothouse produce.",
+    "group": "tomatoes",
     "sourcePages": [
       4
     ],
     "flags": [
       "sold-by-curated"
     ],
-    "candidateScore": 81,
-    "sourceItem": "Yu Choy - Jr"
+    "sourceItem": "Tomato - HH (Organic)",
+    "sourceOrder": 163
   },
   {
-    "catalogId": "bok-choy-shanghai-jr",
-    "title": "Shanghai Jr bok choy",
-    "code": "64388",
-    "family": "Leafy Greens",
+    "catalogId": "tomato-hh-red-bulk",
+    "title": "Tomato - HH Red (Bulk)",
+    "code": "4798",
+    "family": "Tomatoes",
     "soldBy": "Weight",
     "saleForm": "Loose",
-    "form": "Leafy stem cluster",
-    "color": "Green",
-    "imageQuery": "Shanghai Jr bok choy raw produce",
-    "cue": "Shanghai Jr bok choy is identified by its green appearance and leafy stem cluster.",
-    "group": "leafy-greens",
+    "form": "Smooth round whole tomato",
+    "color": "Red",
+    "imageQuery": "red tomato raw produce",
+    "cue": "Smooth round red tomatoes are clearly visible in loose whole form.",
+    "group": "tomatoes",
     "sourcePages": [
       4
     ],
     "flags": [
       "sold-by-curated"
     ],
-    "candidateScore": 81,
-    "sourceItem": "Bok Choy - Shanghai Jr"
+    "sourceItem": "Tomato - HH Red (Bulk)",
+    "sourceOrder": 164
   },
   {
-    "catalogId": "sher-li-hon",
-    "title": "Sher-Li-Hon",
-    "code": "69624",
-    "family": "Leafy Greens",
+    "catalogId": "tomatoes-on-the-vine-hh-organic",
+    "title": "Tomatoes - On The Vine HH (Organic)",
+    "code": "94664",
+    "family": "Tomatoes",
     "soldBy": "Weight",
-    "saleForm": "Loose",
-    "form": "Broad leafy stems",
-    "color": "Green",
-    "imageQuery": "Sher-Li-Hon raw produce",
-    "cue": "Sher-Li-Hon is identified by its green appearance and broad leafy stems.",
-    "group": "leafy-greens",
+    "saleForm": "Cluster",
+    "form": "Round tomato cluster on the vine",
+    "color": "Red",
+    "imageQuery": "tomatoes on the vine raw produce",
+    "cue": "A red tomato cluster remains visibly attached to its vine.",
+    "group": "tomatoes",
     "sourcePages": [
+      3,
+      4
+    ],
+    "sourceItem": "Tomatoes - On The Vine HH (Organic)",
+    "sourceOrder": 165
+  },
+  {
+    "catalogId": "tomatoes-roma-plum-box-half-bushel",
+    "title": "Tomatoes - Roma / Plum (Box, Half Bushel)",
+    "code": "70755",
+    "family": "Tomatoes",
+    "soldBy": "Each",
+    "saleForm": "Single",
+    "form": "Oblong meaty tomato",
+    "color": "Red",
+    "imageQuery": "Tomatoes - Roma / Plum raw produce",
+    "cue": "The reviewed photograph clearly shows tomatoes - roma / plum in oblong meaty tomato form.",
+    "group": "tomatoes",
+    "sourcePages": [
+      3,
       4
     ],
     "flags": [
-      "sold-by-curated"
+      "retail-form-specific"
     ],
-    "candidateScore": 81,
-    "sourceItem": "Sher-Li-Hon"
+    "sourceItem": "Tomatoes - Roma / Plum (Box, Half Bushel)",
+    "sourceOrder": 166
   },
   {
     "catalogId": "uchoy-sum",
@@ -318,112 +1120,28 @@
     "flags": [
       "sold-by-curated"
     ],
-    "candidateScore": 81,
-    "sourceItem": "Uchoy Sum"
+    "sourceItem": "Uchoy Sum",
+    "sourceOrder": 169
   },
   {
-    "catalogId": "persimmons-vanilla",
-    "title": "Vanilla persimmon",
-    "code": "69220",
-    "family": "Persimmons",
+    "catalogId": "yu-choy-jr",
+    "title": "Yu Choy - Jr",
+    "code": "10260",
+    "family": "Leafy Greens",
     "soldBy": "Weight",
     "saleForm": "Loose",
-    "form": "Round orange fruit with leafy cap",
-    "color": "Orange",
-    "imageQuery": "Vanilla persimmon raw produce",
-    "cue": "Vanilla persimmon is identified by its orange appearance and round orange fruit with leafy cap.",
-    "group": "persimmons",
-    "sourcePages": [
-      5
-    ],
-    "flags": [
-      "sold-by-curated"
-    ],
-    "candidateScore": 74,
-    "sourceItem": "Persimmons - Vanilla"
-  },
-  {
-    "catalogId": "tomato-hh-organic",
-    "title": "Organic HH tomato",
-    "code": "94798",
-    "family": "Tomatoes",
-    "soldBy": "Weight",
-    "saleForm": "Loose",
-    "form": "Smooth round or oblong fruit",
-    "color": "Red",
-    "imageQuery": "Organic HH tomato raw produce",
-    "cue": "Organic HH tomato is identified by its red appearance and smooth round or oblong fruit.",
-    "group": "tomatoes",
+    "form": "Tender leafy stems with small yellow flowers",
+    "color": "Green and Yellow",
+    "imageQuery": "yu choy (choi sum) raw produce",
+    "cue": "Green leafy stems and small yellow flowers identify the yu choy or choi sum form.",
+    "group": "leafy-greens",
     "sourcePages": [
       4
     ],
     "flags": [
       "sold-by-curated"
     ],
-    "candidateScore": 60,
-    "sourceItem": "Tomato - HH (Organic)"
-  },
-  {
-    "catalogId": "melons-cantaloupe-organic",
-    "title": "Organic Cantaloupe melon",
-    "code": "94050",
-    "family": "Melons",
-    "soldBy": "Weight",
-    "saleForm": "Loose",
-    "form": "Large round or oval melon",
-    "color": "Green-yellow",
-    "imageQuery": "Organic Cantaloupe melon raw produce",
-    "cue": "Organic Cantaloupe melon is identified by its green-yellow appearance and large round or oval melon.",
-    "group": "melons",
-    "sourcePages": [
-      5
-    ],
-    "flags": [
-      "sold-by-curated"
-    ],
-    "candidateScore": 57,
-    "sourceItem": "Melons - Cantaloupe (Organic)"
-  },
-  {
-    "catalogId": "cherries-rwb-organic",
-    "title": "Organic RWB cherries",
-    "code": "94045",
-    "family": "Cherries",
-    "soldBy": "Weight",
-    "saleForm": "Loose",
-    "form": "Small round stone fruit",
-    "color": "Red",
-    "imageQuery": "Organic RWB cherries raw produce",
-    "cue": "Organic RWB cherries is identified by its red appearance and small round stone fruit.",
-    "group": "cherries",
-    "sourcePages": [
-      5
-    ],
-    "flags": [
-      "sold-by-curated"
-    ],
-    "candidateScore": 52,
-    "sourceItem": "Cherries - RWB (Organic)"
-  },
-  {
-    "catalogId": "lettuce-iceberg-organic",
-    "title": "Organic Iceberg lettuce",
-    "code": "94061",
-    "family": "Lettuce",
-    "soldBy": "Weight",
-    "saleForm": "Loose",
-    "form": "Leafy head",
-    "color": "Green",
-    "imageQuery": "Organic Iceberg lettuce raw produce",
-    "cue": "Organic Iceberg lettuce is identified by its green appearance and leafy head.",
-    "group": "lettuce",
-    "sourcePages": [
-      4
-    ],
-    "flags": [
-      "sold-by-curated"
-    ],
-    "candidateScore": 52,
-    "sourceItem": "Lettuce - Iceberg (Organic)"
+    "sourceItem": "Yu Choy - Jr",
+    "sourceOrder": 175
   }
 ]

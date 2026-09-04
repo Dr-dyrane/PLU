@@ -1,51 +1,15 @@
-[
-  {
-    "catalogId": "aloe",
-    "title": "Aloe",
-    "code": "3798",
-    "family": "Stalk Vegetables",
-    "soldBy": "Weight",
-    "saleForm": "Loose",
-    "form": "Thick tapered succulent leaves",
-    "color": "Green",
-    "imageQuery": "Aloe raw produce",
-    "cue": "Aloe is identified by its green appearance and thick tapered succulent leaves.",
-    "group": "stalk-vegetables",
-    "sourcePages": [
-      1
-    ],
-    "sourceItem": "Aloe",
-    "sourceOrder": 1,
-    "mediaReview": {
+{
+  "schemaVersion": "1.0.0",
+  "batch": "06",
+  "items": [
+    {
       "catalogId": "aloe",
       "code": "3798",
       "commonsFile": "Aloe vera for sale.jpg",
       "recognitionMode": "product-and-loose-form",
       "reviewBasis": "The photograph clearly shows Aloe vera leaves presented for retail sale as the loose checkout item."
-    }
-  },
-  {
-    "catalogId": "apples-ambrosia-bin",
-    "title": "Apples - Ambrosia (Bin)",
-    "code": "25040",
-    "family": "Apples",
-    "soldBy": "Weight",
-    "saleForm": "Loose",
-    "form": "Round apple",
-    "color": "Mixed",
-    "imageQuery": "Apples - Ambrosia raw produce",
-    "cue": "The reviewed photograph clearly shows apples - ambrosia in round apple form.",
-    "group": "apples",
-    "sourcePages": [
-      5
-    ],
-    "flags": [
-      "sold-by-curated",
-      "retail-form-specific"
-    ],
-    "sourceItem": "Apples - Ambrosia (Bin)",
-    "sourceOrder": 3,
-    "mediaReview": {
+    },
+    {
       "catalogId": "apples-ambrosia-bin",
       "code": "25040",
       "commonsFile": "Ambrosia apples 2017 A2.jpg",
@@ -68,30 +32,8 @@
       ],
       "sharedMediaBasis": "The reviewed photograph anchors the visible produce identity; any store-only qualifier or retail-unit detail is read from the workbook label.",
       "reviewBasis": "Clear red-yellow apples presented in bulk bin form. Store-only or package qualifiers remain workbook-label claims and are not inferred from pixels."
-    }
-  },
-  {
-    "catalogId": "apples-gala-orchard-run",
-    "title": "Apples - Gala (Orchard Run)",
-    "code": "62021",
-    "family": "Apples",
-    "soldBy": "Weight",
-    "saleForm": "Loose",
-    "form": "Round apple",
-    "color": "Mixed",
-    "imageQuery": "Apples - Gala raw produce",
-    "cue": "The reviewed photograph clearly shows apples - gala in round apple form.",
-    "group": "apples",
-    "sourcePages": [
-      1,
-      5
-    ],
-    "flags": [
-      "retail-form-specific"
-    ],
-    "sourceItem": "Apples - Gala (Orchard Run)",
-    "sourceOrder": 6,
-    "mediaReview": {
+    },
+    {
       "catalogId": "apples-gala-orchard-run",
       "code": "62021",
       "commonsFile": "2015-02-xx Gala (apple).jpg",
@@ -115,30 +57,8 @@
       ],
       "sharedMediaBasis": "The reviewed photograph anchors the visible produce identity; any store-only qualifier or retail-unit detail is read from the workbook label.",
       "reviewBasis": "Clearly shows a Gala-compatible apple; orchard-run grade can remain workbook evidence. Store-only or package qualifiers remain workbook-label claims and are not inferred from pixels."
-    }
-  },
-  {
-    "catalogId": "apples-ginger-gold-orchard-run",
-    "title": "Apples - Ginger Gold (Orchard Run)",
-    "code": "3000",
-    "family": "Apples",
-    "soldBy": "Weight",
-    "saleForm": "Loose",
-    "form": "Round apple",
-    "color": "Gold",
-    "imageQuery": "Apples - Ginger Gold raw produce",
-    "cue": "The reviewed photograph clearly shows apples - ginger gold in round apple form.",
-    "group": "apples",
-    "sourcePages": [
-      5
-    ],
-    "flags": [
-      "sold-by-curated",
-      "retail-form-specific"
-    ],
-    "sourceItem": "Apples - Ginger Gold (Orchard Run)",
-    "sourceOrder": 7,
-    "mediaReview": {
+    },
+    {
       "catalogId": "apples-ginger-gold-orchard-run",
       "code": "3000",
       "commonsFile": "Malus Ginger-Gold.jpg",
@@ -161,30 +81,8 @@
       ],
       "sharedMediaBasis": "The reviewed photograph anchors the visible produce identity; any store-only qualifier or retail-unit detail is read from the workbook label.",
       "reviewBasis": "Clearly shows pale green-yellow apples growing on the tree. Store-only or package qualifiers remain workbook-label claims and are not inferred from pixels."
-    }
-  },
-  {
-    "catalogId": "apples-honeycrisp-orchard-run",
-    "title": "Apples - Honeycrisp (Orchard Run)",
-    "code": "59986",
-    "family": "Apples",
-    "soldBy": "Weight",
-    "saleForm": "Loose",
-    "form": "Round apple",
-    "color": "Mixed",
-    "imageQuery": "Apples - Honeycrisp raw produce",
-    "cue": "The reviewed photograph clearly shows apples - honeycrisp in round apple form.",
-    "group": "apples",
-    "sourcePages": [
-      5
-    ],
-    "flags": [
-      "sold-by-curated",
-      "retail-form-specific"
-    ],
-    "sourceItem": "Apples - Honeycrisp (Orchard Run)",
-    "sourceOrder": 9,
-    "mediaReview": {
+    },
+    {
       "catalogId": "apples-honeycrisp-orchard-run",
       "code": "59986",
       "commonsFile": "Honeycrisp-Apple.jpg",
@@ -207,30 +105,8 @@
       ],
       "sharedMediaBasis": "The reviewed photograph anchors the visible produce identity; any store-only qualifier or retail-unit detail is read from the workbook label.",
       "reviewBasis": "Clean, isolated red-yellow apple with unobstructed form. Store-only or package qualifiers remain workbook-label claims and are not inferred from pixels."
-    }
-  },
-  {
-    "catalogId": "apples-mcintosh-orchard-bin",
-    "title": "Apples - McIntosh (Orchard Bin)",
-    "code": "62010",
-    "family": "Apples",
-    "soldBy": "Weight",
-    "saleForm": "Loose",
-    "form": "Round apple",
-    "color": "Mixed",
-    "imageQuery": "Apples - McIntosh raw produce",
-    "cue": "The reviewed photograph clearly shows apples - mcintosh in round apple form.",
-    "group": "apples",
-    "sourcePages": [
-      5
-    ],
-    "flags": [
-      "sold-by-curated",
-      "retail-form-specific"
-    ],
-    "sourceItem": "Apples - McIntosh (Orchard Bin)",
-    "sourceOrder": 12,
-    "mediaReview": {
+    },
+    {
       "catalogId": "apples-mcintosh-orchard-bin",
       "code": "62010",
       "commonsFile": "McIntosh Apples.jpg",
@@ -253,30 +129,8 @@
       ],
       "sharedMediaBasis": "The reviewed photograph anchors the visible produce identity; any store-only qualifier or retail-unit detail is read from the workbook label.",
       "reviewBasis": "Superior alternative with clear dark-red apples grouped in a box bin. Store-only or package qualifiers remain workbook-label claims and are not inferred from pixels."
-    }
-  },
-  {
-    "catalogId": "apples-spartan-orchard-run-bin",
-    "title": "Apples - Spartan (Orchard Run Bin)",
-    "code": "62013",
-    "family": "Apples",
-    "soldBy": "Weight",
-    "saleForm": "Loose",
-    "form": "Round apple",
-    "color": "Mixed",
-    "imageQuery": "Apples - Spartan raw produce",
-    "cue": "The reviewed photograph clearly shows apples - spartan in round apple form.",
-    "group": "apples",
-    "sourcePages": [
-      5
-    ],
-    "flags": [
-      "sold-by-curated",
-      "retail-form-specific"
-    ],
-    "sourceItem": "Apples - Spartan (Orchard Run Bin)",
-    "sourceOrder": 16,
-    "mediaReview": {
+    },
+    {
       "catalogId": "apples-spartan-orchard-run-bin",
       "code": "62013",
       "commonsFile": "Spartan Apple.jpg",
@@ -307,30 +161,8 @@
       ],
       "sharedMediaBasis": "The reviewed photograph anchors the visible produce identity; any store-only qualifier or retail-unit detail is read from the workbook label.",
       "reviewBasis": "Basket of dark-red apples with a visible Spartan label. Store-only or package qualifiers remain workbook-label claims and are not inferred from pixels."
-    }
-  },
-  {
-    "catalogId": "apples-sunrise-orchard-run",
-    "title": "Apples - Sunrise (Orchard Run)",
-    "code": "62023",
-    "family": "Apples",
-    "soldBy": "Weight",
-    "saleForm": "Loose",
-    "form": "Round apple",
-    "color": "Mixed",
-    "imageQuery": "Apples - Sunrise raw produce",
-    "cue": "The reviewed photograph clearly shows apples - sunrise in round apple form.",
-    "group": "apples",
-    "sourcePages": [
-      5
-    ],
-    "flags": [
-      "sold-by-curated",
-      "retail-form-specific"
-    ],
-    "sourceItem": "Apples - Sunrise (Orchard Run)",
-    "sourceOrder": 17,
-    "mediaReview": {
+    },
+    {
       "catalogId": "apples-sunrise-orchard-run",
       "code": "62023",
       "commonsFile": "Sunrise apple 20240127 151109.jpg",
@@ -353,30 +185,8 @@
       ],
       "sharedMediaBasis": "The reviewed photograph anchors the visible produce identity; any store-only qualifier or retail-unit detail is read from the workbook label.",
       "reviewBasis": "Superior alternative showing actual red-green apples in a market basket instead of a distant orchard. Store-only or package qualifiers remain workbook-label claims and are not inferred from pixels."
-    }
-  },
-  {
-    "catalogId": "avocado-organic-3ct",
-    "title": "Avocado - Organic 3ct",
-    "code": "40719",
-    "family": "Avocados",
-    "soldBy": "Weight",
-    "saleForm": "Loose",
-    "form": "Pear-shaped fruit",
-    "color": "Green",
-    "imageQuery": "Avocado raw produce",
-    "cue": "The reviewed photograph clearly shows avocado in pear-shaped fruit form.",
-    "group": "avocados",
-    "sourcePages": [
-      5
-    ],
-    "flags": [
-      "sold-by-curated",
-      "retail-form-specific"
-    ],
-    "sourceItem": "Avocado - Organic 3ct",
-    "sourceOrder": 23,
-    "mediaReview": {
+    },
+    {
       "catalogId": "avocado-organic-3ct",
       "code": "40719",
       "commonsFile": "Organic avocado.jpg",
@@ -407,30 +217,8 @@
       ],
       "sharedMediaBasis": "The reviewed photograph anchors the visible produce identity; any store-only qualifier or retail-unit detail is read from the workbook label.",
       "reviewBasis": "Superior alternative showing an unmistakable whole green avocado instead of a prepared dish. Store-only or package qualifiers remain workbook-label claims and are not inferred from pixels."
-    }
-  },
-  {
-    "catalogId": "bananas-case",
-    "title": "Bananas (Case)",
-    "code": "6794",
-    "family": "Bananas",
-    "soldBy": "Weight",
-    "saleForm": "Loose",
-    "form": "Long curved fruit",
-    "color": "Yellow-green",
-    "imageQuery": "Bananas raw produce",
-    "cue": "The reviewed photograph clearly shows bananas in long curved fruit form.",
-    "group": "bananas",
-    "sourcePages": [
-      5
-    ],
-    "flags": [
-      "sold-by-curated",
-      "retail-form-specific"
-    ],
-    "sourceItem": "Bananas (Case)",
-    "sourceOrder": 24,
-    "mediaReview": {
+    },
+    {
       "catalogId": "bananas-case",
       "code": "6794",
       "commonsFile": "Bananas on countertop.JPG",
@@ -453,30 +241,8 @@
       ],
       "sharedMediaBasis": "The reviewed photograph anchors the visible produce identity; any store-only qualifier or retail-unit detail is read from the workbook label.",
       "reviewBasis": "Clean close-up of a whole yellow banana bunch; case qualifier can remain workbook-only. Store-only or package qualifiers remain workbook-label claims and are not inferred from pixels."
-    }
-  },
-  {
-    "catalogId": "bean-sprouts-case",
-    "title": "Bean Sprouts (Case)",
-    "code": "63604",
-    "family": "Sprouts",
-    "soldBy": "Weight",
-    "saleForm": "Loose",
-    "form": "Tender sprouted stems",
-    "color": "White-yellow",
-    "imageQuery": "Bean Sprouts raw produce",
-    "cue": "The reviewed photograph clearly shows bean sprouts in tender sprouted stems form.",
-    "group": "sprouts",
-    "sourcePages": [
-      4
-    ],
-    "flags": [
-      "sold-by-curated",
-      "retail-form-specific"
-    ],
-    "sourceItem": "Bean Sprouts (Case)",
-    "sourceOrder": 28,
-    "mediaReview": {
+    },
+    {
       "catalogId": "bean-sprouts-case",
       "code": "63604",
       "commonsFile": "Bean sprouts 04.jpg",
@@ -499,30 +265,8 @@
       ],
       "sharedMediaBasis": "The reviewed photograph anchors the visible produce identity; any store-only qualifier or retail-unit detail is read from the workbook label.",
       "reviewBasis": "Superior alternative showing unmistakable fresh sprouts in bulk container form. Store-only or package qualifiers remain workbook-label claims and are not inferred from pixels."
-    }
-  },
-  {
-    "catalogId": "blueberries-2lb",
-    "title": "Blueberries - 2lb",
-    "code": "39583",
-    "family": "Berries",
-    "soldBy": "Weight",
-    "saleForm": "Loose",
-    "form": "Small soft berries",
-    "color": "Mixed",
-    "imageQuery": "Blueberries raw produce",
-    "cue": "The reviewed photograph clearly shows blueberries in small soft berries form.",
-    "group": "berries",
-    "sourcePages": [
-      5
-    ],
-    "flags": [
-      "sold-by-curated",
-      "retail-form-specific"
-    ],
-    "sourceItem": "Blueberries - 2lb",
-    "sourceOrder": 32,
-    "mediaReview": {
+    },
+    {
       "catalogId": "blueberries-2lb",
       "code": "39583",
       "commonsFile": "A generous handful of blueberries depicts the rich abundance of berries that may be found in Alaskan areas. (d84880d1-1dd8-b71b-0b3d-6380eca4c663).jpg",
@@ -545,29 +289,8 @@
       ],
       "sharedMediaBasis": "The reviewed photograph anchors the visible produce identity; any store-only qualifier or retail-unit detail is read from the workbook label.",
       "reviewBasis": "Superior alternative with a close, unobstructed handful of blueberries and no mixed fruit. Store-only or package qualifiers remain workbook-label claims and are not inferred from pixels."
-    }
-  },
-  {
-    "catalogId": "bok-choy-shanghai-jr",
-    "title": "Bok Choy - Shanghai Jr",
-    "code": "64388",
-    "family": "Leafy Greens",
-    "soldBy": "Weight",
-    "saleForm": "Loose",
-    "form": "Pale thick stalks with spoon-shaped green leaves",
-    "color": "Pale Green and Green",
-    "imageQuery": "Shanghai bok choy raw produce",
-    "cue": "Pale thick stalks and smooth spoon-shaped green leaves identify Shanghai bok choy.",
-    "group": "leafy-greens",
-    "sourcePages": [
-      4
-    ],
-    "flags": [
-      "sold-by-curated"
-    ],
-    "sourceItem": "Bok Choy - Shanghai Jr",
-    "sourceOrder": 35,
-    "mediaReview": {
+    },
+    {
       "catalogId": "bok-choy-shanghai-jr",
       "code": "64388",
       "commonsFile": "20140223-OC-LSC-0115 (14822531181).jpg",
@@ -590,29 +313,8 @@
       ],
       "sharedMediaBasis": "The USDA market photograph exactly anchors Shanghai bok choy; Jr is a store-label size distinction.",
       "reviewBasis": "Commons metadata explicitly identifies Shanghai bok choy for sale. The Jr qualifier remains label-assisted."
-    }
-  },
-  {
-    "catalogId": "cherries-rwb-organic",
-    "title": "Cherries - RWB (Organic)",
-    "code": "94045",
-    "family": "Cherries",
-    "soldBy": "Weight",
-    "saleForm": "Loose",
-    "form": "Small round cherries with stems",
-    "color": "Red to Dark Red",
-    "imageQuery": "loose cherries raw produce",
-    "cue": "Loose cherries with stems fill the market display in red-to-dark shades.",
-    "group": "cherries",
-    "sourcePages": [
-      5
-    ],
-    "flags": [
-      "sold-by-curated"
-    ],
-    "sourceItem": "Cherries - RWB (Organic)",
-    "sourceOrder": 42,
-    "mediaReview": {
+    },
+    {
       "catalogId": "cherries-rwb-organic",
       "code": "94045",
       "commonsFile": "Cherries in fruit market.jpg",
@@ -643,29 +345,8 @@
       ],
       "sharedMediaBasis": "The grocery-market photograph anchors loose cherries; RWB is preserved without expansion and Organic comes from the workbook label.",
       "reviewBasis": "Commons identifies cherries in a grocery market and pixels show loose red-to-dark cherries. RWB and Organic are not inferred from the image."
-    }
-  },
-  {
-    "catalogId": "citrus-bulk-unlabelled-row-1st",
-    "title": "Citrus - Bulk (unlabelled row, 1st)",
-    "code": "0240",
-    "family": "Citrus",
-    "soldBy": "Weight",
-    "saleForm": "Loose",
-    "form": "Round citrus fruit",
-    "color": "Orange-yellow",
-    "imageQuery": "Citrus raw produce",
-    "cue": "The reviewed photograph clearly shows citrus in round citrus fruit form.",
-    "group": "citrus",
-    "sourcePages": [
-      5
-    ],
-    "flags": [
-      "sold-by-curated"
-    ],
-    "sourceItem": "Citrus - Bulk (unlabelled row, 1st)",
-    "sourceOrder": 44,
-    "mediaReview": {
+    },
+    {
       "catalogId": "citrus-bulk-unlabelled-row-1st",
       "code": "0240",
       "commonsFile": "Citrus japonica.jpg",
@@ -696,29 +377,8 @@
       ],
       "sharedMediaBasis": "The reviewed photograph anchors the visible produce identity; any store-only qualifier or retail-unit detail is read from the workbook label.",
       "reviewBasis": "Superior alternative clearly shows multiple round orange-yellow citrus fruits; the primary is a single green fruit. Store-only or package qualifiers remain workbook-label claims and are not inferred from pixels."
-    }
-  },
-  {
-    "catalogId": "citrus-bulk-unlabelled-row-2nd",
-    "title": "Citrus - Bulk (unlabelled row, 2nd)",
-    "code": "3029",
-    "family": "Citrus",
-    "soldBy": "Weight",
-    "saleForm": "Loose",
-    "form": "Round citrus fruit",
-    "color": "Orange-yellow",
-    "imageQuery": "Citrus raw produce",
-    "cue": "The reviewed photograph clearly shows citrus in round citrus fruit form.",
-    "group": "citrus",
-    "sourcePages": [
-      5
-    ],
-    "flags": [
-      "sold-by-curated"
-    ],
-    "sourceItem": "Citrus - Bulk (unlabelled row, 2nd)",
-    "sourceOrder": 45,
-    "mediaReview": {
+    },
+    {
       "catalogId": "citrus-bulk-unlabelled-row-2nd",
       "code": "3029",
       "commonsFile": "Citrus japonica.jpg",
@@ -749,30 +409,8 @@
       ],
       "sharedMediaBasis": "The reviewed photograph anchors the visible produce identity; any store-only qualifier or retail-unit detail is read from the workbook label.",
       "reviewBasis": "Clearly shows multiple round orange-yellow citrus fruits on the tree. Store-only or package qualifiers remain workbook-label claims and are not inferred from pixels."
-    }
-  },
-  {
-    "catalogId": "clementines-3lb",
-    "title": "Clementines - 3lb",
-    "code": "1835",
-    "family": "Citrus",
-    "soldBy": "Weight",
-    "saleForm": "Loose",
-    "form": "Round citrus fruit",
-    "color": "Orange-yellow",
-    "imageQuery": "Clementines raw produce",
-    "cue": "The reviewed photograph clearly shows clementines in round citrus fruit form.",
-    "group": "citrus",
-    "sourcePages": [
-      5
-    ],
-    "flags": [
-      "sold-by-curated",
-      "retail-form-specific"
-    ],
-    "sourceItem": "Clementines - 3lb",
-    "sourceOrder": 46,
-    "mediaReview": {
+    },
+    {
       "catalogId": "clementines-3lb",
       "code": "1835",
       "commonsFile": "Clementines citrus fruit (klementiner) EXTRA (Coop supermarket) Sem Norway 2017-11-07.jpg",
@@ -795,30 +433,8 @@
       ],
       "sharedMediaBasis": "The reviewed photograph anchors the visible produce identity; any store-only qualifier or retail-unit detail is read from the workbook label.",
       "reviewBasis": "Clear frame-filling display of whole orange clementines; package weight can remain workbook-only. Store-only or package qualifiers remain workbook-label claims and are not inferred from pixels."
-    }
-  },
-  {
-    "catalogId": "eggplant-purple-case",
-    "title": "Eggplant - Purple (Case)",
-    "code": "63582",
-    "family": "Eggplants",
-    "soldBy": "Weight",
-    "saleForm": "Loose",
-    "form": "Smooth oval fruit",
-    "color": "Purple",
-    "imageQuery": "Eggplant - Purple raw produce",
-    "cue": "The reviewed photograph clearly shows eggplant - purple in smooth oval fruit form.",
-    "group": "eggplants",
-    "sourcePages": [
-      4
-    ],
-    "flags": [
-      "sold-by-curated",
-      "retail-form-specific"
-    ],
-    "sourceItem": "Eggplant - Purple (Case)",
-    "sourceOrder": 56,
-    "mediaReview": {
+    },
+    {
       "catalogId": "eggplant-purple-case",
       "code": "63582",
       "commonsFile": "HK SYP Best of Best Vegetable purple Eggplant Aug-2012.JPG",
@@ -841,29 +457,8 @@
       ],
       "sharedMediaBasis": "The reviewed photograph anchors the visible produce identity; any store-only qualifier or retail-unit detail is read from the workbook label.",
       "reviewBasis": "Clearly shows a bulk retail display of smooth purple eggplants. Store-only or package qualifiers remain workbook-label claims and are not inferred from pixels."
-    }
-  },
-  {
-    "catalogId": "figgs-green-case",
-    "title": "Figgs - Green (Case)",
-    "code": "6799",
-    "family": "Figs",
-    "soldBy": "Each",
-    "saleForm": "Single",
-    "form": "Soft teardrop fruit",
-    "color": "Green",
-    "imageQuery": "Figgs - Green raw produce",
-    "cue": "The reviewed photograph clearly shows figgs - green in soft teardrop fruit form.",
-    "group": "figs",
-    "sourcePages": [
-      1
-    ],
-    "flags": [
-      "retail-form-specific"
-    ],
-    "sourceItem": "Figgs - Green (Case)",
-    "sourceOrder": 59,
-    "mediaReview": {
+    },
+    {
       "catalogId": "figgs-green-case",
       "code": "6799",
       "commonsFile": "Common fig - leaves and green figs.jpg",
@@ -886,30 +481,8 @@
       ],
       "sharedMediaBasis": "The reviewed photograph anchors the visible produce identity; any store-only qualifier or retail-unit detail is read from the workbook label.",
       "reviewBasis": "Clearly shows several green figs with the expected rounded teardrop form on a fig tree. Store-only or package qualifiers remain workbook-label claims and are not inferred from pixels."
-    }
-  },
-  {
-    "catalogId": "garlic-1kg-bagged",
-    "title": "Garlic 1kg (bagged)",
-    "code": "9578",
-    "family": "Alliums",
-    "soldBy": "Weight",
-    "saleForm": "Loose",
-    "form": "Segmented bulb",
-    "color": "White",
-    "imageQuery": "Garlic raw produce",
-    "cue": "The reviewed photograph clearly shows garlic in segmented bulb form.",
-    "group": "alliums",
-    "sourcePages": [
-      4
-    ],
-    "flags": [
-      "sold-by-curated",
-      "retail-form-specific"
-    ],
-    "sourceItem": "Garlic 1kg (bagged)",
-    "sourceOrder": 65,
-    "mediaReview": {
+    },
+    {
       "catalogId": "garlic-1kg-bagged",
       "code": "9578",
       "commonsFile": "Garlic Acceptance, Garlic History and Garlic Uses..jpg",
@@ -940,30 +513,8 @@
       ],
       "sharedMediaBasis": "The reviewed photograph anchors the visible produce identity; any store-only qualifier or retail-unit detail is read from the workbook label.",
       "reviewBasis": "Clearly shows intact white garlic bulbs in a transparent bag; bag weight can remain workbook-only. Store-only or package qualifiers remain workbook-label claims and are not inferred from pixels."
-    }
-  },
-  {
-    "catalogId": "grapes-green-seedless-2lb",
-    "title": "Grapes - Green (Seedless) 2lb",
-    "code": "84022",
-    "family": "Grapes",
-    "soldBy": "Weight",
-    "saleForm": "Loose",
-    "form": "Clustered round berries",
-    "color": "Green",
-    "imageQuery": "Grapes - Green Seedless raw produce",
-    "cue": "The reviewed photograph clearly shows grapes - green seedless in clustered round berries form.",
-    "group": "grapes",
-    "sourcePages": [
-      5
-    ],
-    "flags": [
-      "sold-by-curated",
-      "retail-form-specific"
-    ],
-    "sourceItem": "Grapes - Green (Seedless) 2lb",
-    "sourceOrder": 68,
-    "mediaReview": {
+    },
+    {
       "catalogId": "grapes-green-seedless-2lb",
       "code": "84022",
       "commonsFile": "\"Bunch of Green Grapes in Salem\".jpg",
@@ -986,30 +537,8 @@
       ],
       "sharedMediaBasis": "The reviewed photograph anchors the visible produce identity; any store-only qualifier or retail-unit detail is read from the workbook label.",
       "reviewBasis": "Superior alternative clearly shows clustered pale-green grape berries without unrelated subjects; seedless and weight remain workbook-only. Store-only or package qualifiers remain workbook-label claims and are not inferred from pixels."
-    }
-  },
-  {
-    "catalogId": "grapes-red-seedless-2lb",
-    "title": "Grapes - Red (Seedless) 2lb",
-    "code": "84636",
-    "family": "Grapes",
-    "soldBy": "Weight",
-    "saleForm": "Loose",
-    "form": "Clustered round berries",
-    "color": "Red",
-    "imageQuery": "Grapes - Red Seedless raw produce",
-    "cue": "The reviewed photograph clearly shows grapes - red seedless in clustered round berries form.",
-    "group": "grapes",
-    "sourcePages": [
-      5
-    ],
-    "flags": [
-      "sold-by-curated",
-      "retail-form-specific"
-    ],
-    "sourceItem": "Grapes - Red (Seedless) 2lb",
-    "sourceOrder": 69,
-    "mediaReview": {
+    },
+    {
       "catalogId": "grapes-red-seedless-2lb",
       "code": "84636",
       "commonsFile": "Red grapes (1).jpg",
@@ -1032,30 +561,8 @@
       ],
       "sharedMediaBasis": "The reviewed photograph anchors the visible produce identity; any store-only qualifier or retail-unit detail is read from the workbook label.",
       "reviewBasis": "Superior alternative isolates a clear cluster of red grapes; seedless and weight remain workbook-only. Store-only or package qualifiers remain workbook-label claims and are not inferred from pixels."
-    }
-  },
-  {
-    "catalogId": "kiwi-1kg",
-    "title": "Kiwi - 1kg",
-    "code": "1465",
-    "family": "Kiwi",
-    "soldBy": "Weight",
-    "saleForm": "Loose",
-    "form": "Small oval fruit",
-    "color": "Brown-green",
-    "imageQuery": "Kiwi raw produce",
-    "cue": "The reviewed photograph clearly shows kiwi in small oval fruit form.",
-    "group": "kiwi",
-    "sourcePages": [
-      5
-    ],
-    "flags": [
-      "sold-by-curated",
-      "retail-form-specific"
-    ],
-    "sourceItem": "Kiwi - 1kg",
-    "sourceOrder": 73,
-    "mediaReview": {
+    },
+    {
       "catalogId": "kiwi-1kg",
       "code": "1465",
       "commonsFile": "Kiwi aka.jpg",
@@ -1078,30 +585,8 @@
       ],
       "sharedMediaBasis": "The reviewed photograph anchors the visible produce identity; any store-only qualifier or retail-unit detail is read from the workbook label.",
       "reviewBasis": "Clean isolated view of whole brown kiwi fruit and green cross-sections; weight can remain workbook-only. Store-only or package qualifiers remain workbook-label claims and are not inferred from pixels."
-    }
-  },
-  {
-    "catalogId": "lettuce-boston-dome",
-    "title": "Lettuce - Boston (Dome)",
-    "code": "3557",
-    "family": "Lettuce",
-    "soldBy": "Weight",
-    "saleForm": "Loose",
-    "form": "Leafy head",
-    "color": "Green",
-    "imageQuery": "Lettuce - Boston raw produce",
-    "cue": "The reviewed photograph clearly shows lettuce - boston in leafy head form.",
-    "group": "lettuce",
-    "sourcePages": [
-      4
-    ],
-    "flags": [
-      "sold-by-curated",
-      "retail-form-specific"
-    ],
-    "sourceItem": "Lettuce - Boston (Dome)",
-    "sourceOrder": 75,
-    "mediaReview": {
+    },
+    {
       "catalogId": "lettuce-boston-dome",
       "code": "3557",
       "commonsFile": "New Lettuce (6193662526).jpg",
@@ -1124,29 +609,8 @@
       ],
       "sharedMediaBasis": "The reviewed photograph anchors the visible produce identity; any store-only qualifier or retail-unit detail is read from the workbook label.",
       "reviewBasis": "Clearly shows two harvested soft-leaf Boston-style lettuce heads; dome packaging can remain workbook-only. Store-only or package qualifiers remain workbook-label claims and are not inferred from pixels."
-    }
-  },
-  {
-    "catalogId": "lettuce-iceberg-organic",
-    "title": "Lettuce - Iceberg (Organic)",
-    "code": "94061",
-    "family": "Lettuce",
-    "soldBy": "Weight",
-    "saleForm": "Loose",
-    "form": "Compact harvested lettuce head",
-    "color": "Pale Green",
-    "imageQuery": "iceberg lettuce raw produce",
-    "cue": "A compact harvested iceberg head shows tightly layered pale-green leaves.",
-    "group": "lettuce",
-    "sourcePages": [
-      4
-    ],
-    "flags": [
-      "sold-by-curated"
-    ],
-    "sourceItem": "Lettuce - Iceberg (Organic)",
-    "sourceOrder": 76,
-    "mediaReview": {
+    },
+    {
       "catalogId": "lettuce-iceberg-organic",
       "code": "94061",
       "commonsFile": "Lactuca sativa 结球莴苣 包心生菜 Iceberg lettuce.jpg",
@@ -1169,30 +633,8 @@
       ],
       "sharedMediaBasis": "The whole harvested head anchors iceberg lettuce; Organic is a workbook-label distinction.",
       "reviewBasis": "The photograph shows a harvested whole iceberg head and the filename names iceberg lettuce. Organic status is not inferred from appearance."
-    }
-  },
-  {
-    "catalogId": "limes-key-1lb",
-    "title": "Limes - Key 1lb",
-    "code": "3653",
-    "family": "Citrus",
-    "soldBy": "Each",
-    "saleForm": "1 lb package",
-    "form": "Small round citrus fruit",
-    "color": "Green",
-    "imageQuery": "Limes - Key raw produce",
-    "cue": "The reviewed photograph clearly shows limes - key in small round citrus fruit form.",
-    "group": "citrus",
-    "sourcePages": [
-      5
-    ],
-    "flags": [
-      "sold-by-curated",
-      "retail-form-specific"
-    ],
-    "sourceItem": "Limes - Key 1lb",
-    "sourceOrder": 77,
-    "mediaReview": {
+    },
+    {
       "catalogId": "limes-key-1lb",
       "code": "3653",
       "commonsFile": "Key lime (Citrus × aurantiifolia) - DSC09279.jpg",
@@ -1215,30 +657,8 @@
       ],
       "sharedMediaBasis": "The reviewed photograph anchors the visible produce identity; any store-only qualifier or retail-unit detail is read from the workbook label.",
       "reviewBasis": "Superior alternative clearly shows a large loose pile of small round green key limes; weight remains workbook-only. Store-only or package qualifiers remain workbook-label claims and are not inferred from pixels."
-    }
-  },
-  {
-    "catalogId": "mangoes-case-10lb",
-    "title": "Mangoes - Case 10lb",
-    "code": "62464",
-    "family": "Mangoes",
-    "soldBy": "Weight",
-    "saleForm": "Loose",
-    "form": "Oval tapered fruit",
-    "color": "Yellow-red",
-    "imageQuery": "Mangoes raw produce",
-    "cue": "The reviewed photograph clearly shows mangoes in oval tapered fruit form.",
-    "group": "mangoes",
-    "sourcePages": [
-      5
-    ],
-    "flags": [
-      "sold-by-curated",
-      "retail-form-specific"
-    ],
-    "sourceItem": "Mangoes - Case 10lb",
-    "sourceOrder": 80,
-    "mediaReview": {
+    },
+    {
       "catalogId": "mangoes-case-10lb",
       "code": "62464",
       "commonsFile": "Alphonso mango.jpg",
@@ -1269,29 +689,8 @@
       ],
       "sharedMediaBasis": "The reviewed photograph anchors the visible produce identity; any store-only qualifier or retail-unit detail is read from the workbook label.",
       "reviewBasis": "Clearly shows multiple whole oval yellow-orange mangoes; case weight can remain workbook-only. Store-only or package qualifiers remain workbook-label claims and are not inferred from pixels."
-    }
-  },
-  {
-    "catalogId": "mangos-east-indian-case",
-    "title": "Mangos - East Indian (Case)",
-    "code": "12966",
-    "family": "Mangoes",
-    "soldBy": "Each",
-    "saleForm": "Single",
-    "form": "Oval tapered fruit",
-    "color": "Yellow-red",
-    "imageQuery": "Mangos - East Indian raw produce",
-    "cue": "The reviewed photograph clearly shows mangos - east indian in oval tapered fruit form.",
-    "group": "mangoes",
-    "sourcePages": [
-      2
-    ],
-    "flags": [
-      "retail-form-specific"
-    ],
-    "sourceItem": "Mangos - East Indian (Case)",
-    "sourceOrder": 83,
-    "mediaReview": {
+    },
+    {
       "catalogId": "mangos-east-indian-case",
       "code": "12966",
       "commonsFile": "Mango EastIndian Asit ftg.jpg",
@@ -1314,29 +713,8 @@
       ],
       "sharedMediaBasis": "The reviewed photograph anchors the visible produce identity; any store-only qualifier or retail-unit detail is read from the workbook label.",
       "reviewBasis": "Whole East Indian mangoes are clear in a produce basket with the cultivar sign. Store-only or package qualifiers remain workbook-label claims and are not inferred from pixels."
-    }
-  },
-  {
-    "catalogId": "melons-cantaloupe-organic",
-    "title": "Melons - Cantaloupe (Organic)",
-    "code": "94050",
-    "family": "Melons",
-    "soldBy": "Weight",
-    "saleForm": "Loose",
-    "form": "Whole round netted melon",
-    "color": "Tan and Green",
-    "imageQuery": "cantaloupe raw produce",
-    "cue": "Whole cantaloupes show a round form and coarse netted rind.",
-    "group": "melons",
-    "sourcePages": [
-      5
-    ],
-    "flags": [
-      "sold-by-curated"
-    ],
-    "sourceItem": "Melons - Cantaloupe (Organic)",
-    "sourceOrder": 87,
-    "mediaReview": {
+    },
+    {
       "catalogId": "melons-cantaloupe-organic",
       "code": "94050",
       "commonsFile": "Cantaloupes Market 1.JPG",
@@ -1359,30 +737,8 @@
       ],
       "sharedMediaBasis": "The market photograph anchors whole cantaloupe; Organic is read from the workbook label.",
       "reviewBasis": "The photograph and Commons description show whole cantaloupes at market. Organic status is not inferred from appearance."
-    }
-  },
-  {
-    "catalogId": "onions-red-10lb",
-    "title": "Onions - Red 10lb",
-    "code": "3506",
-    "family": "Alliums",
-    "soldBy": "Weight",
-    "saleForm": "Loose",
-    "form": "Layered bulb or stalk",
-    "color": "Red",
-    "imageQuery": "Onions - Red raw produce",
-    "cue": "The reviewed photograph clearly shows onions - red in layered bulb or stalk form.",
-    "group": "alliums",
-    "sourcePages": [
-      4
-    ],
-    "flags": [
-      "sold-by-curated",
-      "retail-form-specific"
-    ],
-    "sourceItem": "Onions - Red 10lb",
-    "sourceOrder": 99,
-    "mediaReview": {
+    },
+    {
       "catalogId": "onions-red-10lb",
       "code": "3506",
       "commonsFile": "Red onion.jpg",
@@ -1405,30 +761,8 @@
       ],
       "sharedMediaBasis": "The reviewed photograph anchors the visible produce identity; any store-only qualifier or retail-unit detail is read from the workbook label.",
       "reviewBasis": "Two clear whole red onion bulbs. Store-only or package qualifiers remain workbook-label claims and are not inferred from pixels."
-    }
-  },
-  {
-    "catalogId": "onions-yellow-3lb-bag",
-    "title": "Onions - Yellow 3lb (Bag)",
-    "code": "59662",
-    "family": "Alliums",
-    "soldBy": "Weight",
-    "saleForm": "Loose",
-    "form": "Layered bulb or stalk",
-    "color": "Yellow",
-    "imageQuery": "Onions - Yellow raw produce",
-    "cue": "The reviewed photograph clearly shows onions - yellow in layered bulb or stalk form.",
-    "group": "alliums",
-    "sourcePages": [
-      2,
-      4
-    ],
-    "flags": [
-      "retail-form-specific"
-    ],
-    "sourceItem": "Onions - Yellow 3lb (Bag)",
-    "sourceOrder": 102,
-    "mediaReview": {
+    },
+    {
       "catalogId": "onions-yellow-3lb-bag",
       "code": "59662",
       "commonsFile": "Yellow onion with x-section.jpg",
@@ -1461,30 +795,8 @@
       ],
       "sharedMediaBasis": "The reviewed photograph anchors the visible produce identity; any store-only qualifier or retail-unit detail is read from the workbook label.",
       "reviewBasis": "Clearly better than the prepared-natto primary and shows exact raw yellow onion identity. Store-only or package qualifiers remain workbook-label claims and are not inferred from pixels."
-    }
-  },
-  {
-    "catalogId": "onions-yellow-organic-2lb",
-    "title": "Onions - Yellow Organic 2lb",
-    "code": "62810",
-    "family": "Alliums",
-    "soldBy": "Weight",
-    "saleForm": "Loose",
-    "form": "Layered bulb or stalk",
-    "color": "Yellow",
-    "imageQuery": "Onions - Yellow raw produce",
-    "cue": "The reviewed photograph clearly shows onions - yellow in layered bulb or stalk form.",
-    "group": "alliums",
-    "sourcePages": [
-      4
-    ],
-    "flags": [
-      "sold-by-curated",
-      "retail-form-specific"
-    ],
-    "sourceItem": "Onions - Yellow Organic 2lb",
-    "sourceOrder": 104,
-    "mediaReview": {
+    },
+    {
       "catalogId": "onions-yellow-organic-2lb",
       "code": "62810",
       "commonsFile": "20171027-AMS-LSC-0205 (38037158392).jpg",
@@ -1515,30 +827,8 @@
       ],
       "sharedMediaBasis": "The reviewed photograph anchors the visible produce identity; any store-only qualifier or retail-unit detail is read from the workbook label.",
       "reviewBasis": "Several whole yellow onions are clearly visible; organic and package qualifiers remain workbook-only. Store-only or package qualifiers remain workbook-label claims and are not inferred from pixels."
-    }
-  },
-  {
-    "catalogId": "peaches-case",
-    "title": "Peaches (Case)",
-    "code": "68599",
-    "family": "Peaches",
-    "soldBy": "Weight",
-    "saleForm": "Loose",
-    "form": "Fuzzy round stone fruit",
-    "color": "Yellow-red",
-    "imageQuery": "Peaches raw produce",
-    "cue": "The reviewed photograph clearly shows peaches in fuzzy round stone fruit form.",
-    "group": "peaches",
-    "sourcePages": [
-      5
-    ],
-    "flags": [
-      "sold-by-curated",
-      "retail-form-specific"
-    ],
-    "sourceItem": "Peaches (Case)",
-    "sourceOrder": 112,
-    "mediaReview": {
+    },
+    {
       "catalogId": "peaches-case",
       "code": "68599",
       "commonsFile": "Hillview Farms peaches in a basket.jpg",
@@ -1561,30 +851,8 @@
       ],
       "sharedMediaBasis": "The reviewed photograph anchors the visible produce identity; any store-only qualifier or retail-unit detail is read from the workbook label.",
       "reviewBasis": "Whole fuzzy red-yellow peaches are clearer than the cut-fruit primary. Store-only or package qualifiers remain workbook-label claims and are not inferred from pixels."
-    }
-  },
-  {
-    "catalogId": "peaches-3l",
-    "title": "Peaches - 3L",
-    "code": "6992",
-    "family": "Peaches",
-    "soldBy": "Weight",
-    "saleForm": "Loose",
-    "form": "Fuzzy round stone fruit",
-    "color": "Yellow-red",
-    "imageQuery": "Peaches raw produce",
-    "cue": "The reviewed photograph clearly shows peaches in fuzzy round stone fruit form.",
-    "group": "peaches",
-    "sourcePages": [
-      5
-    ],
-    "flags": [
-      "sold-by-curated",
-      "retail-form-specific"
-    ],
-    "sourceItem": "Peaches - 3L",
-    "sourceOrder": 113,
-    "mediaReview": {
+    },
+    {
       "catalogId": "peaches-3l",
       "code": "6992",
       "commonsFile": "White-Peaches-Bunch.jpg",
@@ -1607,30 +875,8 @@
       ],
       "sharedMediaBasis": "The reviewed photograph anchors the visible produce identity; any store-only qualifier or retail-unit detail is read from the workbook label.",
       "reviewBasis": "Whole and cut peaches clearly establish fruit identity and form; the size unit remains workbook-only. Store-only or package qualifiers remain workbook-label claims and are not inferred from pixels."
-    }
-  },
-  {
-    "catalogId": "peaches-tree-ripe-case",
-    "title": "Peaches - Tree Ripe (Case)",
-    "code": "6808",
-    "family": "Peaches",
-    "soldBy": "Weight",
-    "saleForm": "Loose",
-    "form": "Fuzzy round stone fruit",
-    "color": "Yellow-red",
-    "imageQuery": "Peaches - Tree Ripe raw produce",
-    "cue": "The reviewed photograph clearly shows peaches - tree ripe in fuzzy round stone fruit form.",
-    "group": "peaches",
-    "sourcePages": [
-      5
-    ],
-    "flags": [
-      "sold-by-curated",
-      "retail-form-specific"
-    ],
-    "sourceItem": "Peaches - Tree Ripe (Case)",
-    "sourceOrder": 115,
-    "mediaReview": {
+    },
+    {
       "catalogId": "peaches-tree-ripe-case",
       "code": "6808",
       "commonsFile": "Ripe peach.jpg",
@@ -1653,30 +899,8 @@
       ],
       "sharedMediaBasis": "The reviewed photograph anchors the visible produce identity; any store-only qualifier or retail-unit detail is read from the workbook label.",
       "reviewBasis": "Ripe peach visibly attached to the tree, directly matching the form qualifier. Store-only or package qualifiers remain workbook-label claims and are not inferred from pixels."
-    }
-  },
-  {
-    "catalogId": "pears-bartlett-3lb-organic",
-    "title": "Pears - Bartlett 3lb (Organic)",
-    "code": "63486",
-    "family": "Pears",
-    "soldBy": "Weight",
-    "saleForm": "Loose",
-    "form": "Bell-shaped fruit",
-    "color": "Green-yellow",
-    "imageQuery": "Pears - Bartlett raw produce",
-    "cue": "The reviewed photograph clearly shows pears - bartlett in bell-shaped fruit form.",
-    "group": "pears",
-    "sourcePages": [
-      5
-    ],
-    "flags": [
-      "sold-by-curated",
-      "retail-form-specific"
-    ],
-    "sourceItem": "Pears - Bartlett 3lb (Organic)",
-    "sourceOrder": 117,
-    "mediaReview": {
+    },
+    {
       "catalogId": "pears-bartlett-3lb-organic",
       "code": "63486",
       "commonsFile": "Organic Bartlett Pears.jpg",
@@ -1707,30 +931,8 @@
       ],
       "sharedMediaBasis": "The reviewed photograph anchors the visible produce identity; any store-only qualifier or retail-unit detail is read from the workbook label.",
       "reviewBasis": "Clean group of green-yellow Bartlett pears. Store-only or package qualifiers remain workbook-label claims and are not inferred from pixels."
-    }
-  },
-  {
-    "catalogId": "peppers-assorted-bin",
-    "title": "Peppers - Assorted (Bin)",
-    "code": "8170",
-    "family": "Peppers",
-    "soldBy": "Weight",
-    "saleForm": "Loose",
-    "form": "Hollow tapered fruit",
-    "color": "Mixed",
-    "imageQuery": "Peppers - Assorted raw produce",
-    "cue": "The reviewed photograph clearly shows peppers - assorted in hollow tapered fruit form.",
-    "group": "peppers",
-    "sourcePages": [
-      4
-    ],
-    "flags": [
-      "sold-by-curated",
-      "retail-form-specific"
-    ],
-    "sourceItem": "Peppers - Assorted (Bin)",
-    "sourceOrder": 123,
-    "mediaReview": {
+    },
+    {
       "catalogId": "peppers-assorted-bin",
       "code": "8170",
       "commonsFile": "Assorted Bell Peppers.jpg",
@@ -1753,30 +955,8 @@
       ],
       "sharedMediaBasis": "The reviewed photograph anchors the visible produce identity; any store-only qualifier or retail-unit detail is read from the workbook label.",
       "reviewBasis": "Clean red, orange, and yellow bell-pepper assortment with no prepared-food distraction. Store-only or package qualifiers remain workbook-label claims and are not inferred from pixels."
-    }
-  },
-  {
-    "catalogId": "peppers-green-case",
-    "title": "Peppers - Green (Case)",
-    "code": "63866",
-    "family": "Peppers",
-    "soldBy": "Weight",
-    "saleForm": "Loose",
-    "form": "Hollow tapered fruit",
-    "color": "Green",
-    "imageQuery": "Peppers - Green raw produce",
-    "cue": "The reviewed photograph clearly shows peppers - green in hollow tapered fruit form.",
-    "group": "peppers",
-    "sourcePages": [
-      4
-    ],
-    "flags": [
-      "sold-by-curated",
-      "retail-form-specific"
-    ],
-    "sourceItem": "Peppers - Green (Case)",
-    "sourceOrder": 124,
-    "mediaReview": {
+    },
+    {
       "catalogId": "peppers-green-case",
       "code": "63866",
       "commonsFile": "Green bell pepper pile.jpg",
@@ -1799,30 +979,8 @@
       ],
       "sharedMediaBasis": "The reviewed photograph anchors the visible produce identity; any store-only qualifier or retail-unit detail is read from the workbook label.",
       "reviewBasis": "Clear pile of raw green bell peppers; the primary was peppercorns. Store-only or package qualifiers remain workbook-label claims and are not inferred from pixels."
-    }
-  },
-  {
-    "catalogId": "peppers-green-4ct-bag",
-    "title": "Peppers - Green 4ct (Bag)",
-    "code": "3014",
-    "family": "Peppers",
-    "soldBy": "Weight",
-    "saleForm": "Loose",
-    "form": "Hollow tapered fruit",
-    "color": "Green",
-    "imageQuery": "Peppers - Green raw produce",
-    "cue": "The reviewed photograph clearly shows peppers - green in hollow tapered fruit form.",
-    "group": "peppers",
-    "sourcePages": [
-      4
-    ],
-    "flags": [
-      "sold-by-curated",
-      "retail-form-specific"
-    ],
-    "sourceItem": "Peppers - Green 4ct (Bag)",
-    "sourceOrder": 125,
-    "mediaReview": {
+    },
+    {
       "catalogId": "peppers-green-4ct-bag",
       "code": "3014",
       "commonsFile": "Green bell pepper 2017 A.jpg",
@@ -1853,29 +1011,8 @@
       ],
       "sharedMediaBasis": "The reviewed photograph anchors the visible produce identity; any store-only qualifier or retail-unit detail is read from the workbook label.",
       "reviewBasis": "Isolated whole green bell pepper; package count remains workbook-only. Store-only or package qualifiers remain workbook-label claims and are not inferred from pixels."
-    }
-  },
-  {
-    "catalogId": "peppers-green-hh-bulk",
-    "title": "Peppers - Green HH (Bulk)",
-    "code": "3120",
-    "family": "Peppers",
-    "soldBy": "Weight",
-    "saleForm": "Loose",
-    "form": "Blocky hollow bell pepper",
-    "color": "Green",
-    "imageQuery": "green bell pepper raw produce",
-    "cue": "A whole blocky green bell pepper with broad lobes is clearly visible.",
-    "group": "peppers",
-    "sourcePages": [
-      4
-    ],
-    "flags": [
-      "sold-by-curated"
-    ],
-    "sourceItem": "Peppers - Green HH (Bulk)",
-    "sourceOrder": 126,
-    "mediaReview": {
+    },
+    {
       "catalogId": "peppers-green-hh-bulk",
       "code": "3120",
       "commonsFile": "Green-Bell-Pepper.jpg",
@@ -1898,30 +1035,8 @@
       ],
       "sharedMediaBasis": "The canonical green-pepper photograph anchors the visible item; HH is a store-label distinction.",
       "reviewBasis": "The public-domain photograph is an exact whole green bell pepper. HH is not inferred from appearance."
-    }
-  },
-  {
-    "catalogId": "peppers-red-4ct-bag",
-    "title": "Peppers - Red 4ct (Bag)",
-    "code": "64116",
-    "family": "Peppers",
-    "soldBy": "Weight",
-    "saleForm": "Loose",
-    "form": "Hollow tapered fruit",
-    "color": "Red",
-    "imageQuery": "Peppers - Red raw produce",
-    "cue": "The reviewed photograph clearly shows peppers - red in hollow tapered fruit form.",
-    "group": "peppers",
-    "sourcePages": [
-      4
-    ],
-    "flags": [
-      "sold-by-curated",
-      "retail-form-specific"
-    ],
-    "sourceItem": "Peppers - Red 4ct (Bag)",
-    "sourceOrder": 127,
-    "mediaReview": {
+    },
+    {
       "catalogId": "peppers-red-4ct-bag",
       "code": "64116",
       "commonsFile": "Red bell pepper.jpg",
@@ -1952,30 +1067,8 @@
       ],
       "sharedMediaBasis": "The reviewed photograph anchors the visible produce identity; any store-only qualifier or retail-unit detail is read from the workbook label.",
       "reviewBasis": "Clean whole and cut red bell peppers. Store-only or package qualifiers remain workbook-label claims and are not inferred from pixels."
-    }
-  },
-  {
-    "catalogId": "persimmons-hachiya-case",
-    "title": "Persimmons - Hachiya (Case)",
-    "code": "36308",
-    "family": "Persimmons",
-    "soldBy": "Weight",
-    "saleForm": "Loose",
-    "form": "Round orange fruit with leafy cap",
-    "color": "Orange",
-    "imageQuery": "Persimmons - Hachiya raw produce",
-    "cue": "The reviewed photograph clearly shows persimmons - hachiya in round orange fruit with leafy cap form.",
-    "group": "persimmons",
-    "sourcePages": [
-      5
-    ],
-    "flags": [
-      "sold-by-curated",
-      "retail-form-specific"
-    ],
-    "sourceItem": "Persimmons - Hachiya (Case)",
-    "sourceOrder": 129,
-    "mediaReview": {
+    },
+    {
       "catalogId": "persimmons-hachiya-case",
       "code": "36308",
       "commonsFile": "Hachiya persimmons - Heart of the City Farmers' Market - San Francisco.jpg",
@@ -1998,30 +1091,8 @@
       ],
       "sharedMediaBasis": "The reviewed photograph anchors the visible produce identity; any store-only qualifier or retail-unit detail is read from the workbook label.",
       "reviewBasis": "Exact Hachiya fruit in a market crate; avoids drying and mixed-variety results. Store-only or package qualifiers remain workbook-label claims and are not inferred from pixels."
-    }
-  },
-  {
-    "catalogId": "plums-blue-1-5l",
-    "title": "Plums - Blue 1.5L",
-    "code": "6706",
-    "family": "Plums",
-    "soldBy": "Weight",
-    "saleForm": "Loose",
-    "form": "Smooth round stone fruit",
-    "color": "Blue",
-    "imageQuery": "Plums - Blue raw produce",
-    "cue": "The reviewed photograph clearly shows plums - blue in smooth round stone fruit form.",
-    "group": "plums",
-    "sourcePages": [
-      5
-    ],
-    "flags": [
-      "sold-by-curated",
-      "retail-form-specific"
-    ],
-    "sourceItem": "Plums - Blue 1.5L",
-    "sourceOrder": 134,
-    "mediaReview": {
+    },
+    {
       "catalogId": "plums-blue-1-5l",
       "code": "6706",
       "commonsFile": "Bluebyrd plum (1).jpg",
@@ -2044,30 +1115,8 @@
       ],
       "sharedMediaBasis": "The reviewed photograph anchors the visible produce identity; any store-only qualifier or retail-unit detail is read from the workbook label.",
       "reviewBasis": "Clear blue-purple whole plums on the tree. Store-only or package qualifiers remain workbook-label claims and are not inferred from pixels."
-    }
-  },
-  {
-    "catalogId": "plums-yellow-1-5l",
-    "title": "Plums - Yellow 1.5L",
-    "code": "1383",
-    "family": "Plums",
-    "soldBy": "Weight",
-    "saleForm": "Loose",
-    "form": "Smooth round stone fruit",
-    "color": "Yellow",
-    "imageQuery": "Plums - Yellow raw produce",
-    "cue": "The reviewed photograph clearly shows plums - yellow in smooth round stone fruit form.",
-    "group": "plums",
-    "sourcePages": [
-      5
-    ],
-    "flags": [
-      "sold-by-curated",
-      "retail-form-specific"
-    ],
-    "sourceItem": "Plums - Yellow 1.5L",
-    "sourceOrder": 135,
-    "mediaReview": {
+    },
+    {
       "catalogId": "plums-yellow-1-5l",
       "code": "1383",
       "commonsFile": "Yellow Plum (5918708991).jpg",
@@ -2090,30 +1139,8 @@
       ],
       "sharedMediaBasis": "The reviewed photograph anchors the visible produce identity; any store-only qualifier or retail-unit detail is read from the workbook label.",
       "reviewBasis": "Isolated whole yellow plum. Store-only or package qualifiers remain workbook-label claims and are not inferred from pixels."
-    }
-  },
-  {
-    "catalogId": "potato-russet-white-20lb",
-    "title": "Potato - Russet / White 20lb",
-    "code": "62006",
-    "family": "Potatoes",
-    "soldBy": "Weight",
-    "saleForm": "Loose",
-    "form": "Firm round or tapered tuber",
-    "color": "White",
-    "imageQuery": "Potato - Russet / White raw produce",
-    "cue": "The reviewed photograph clearly shows potato - russet / white in firm round or tapered tuber form.",
-    "group": "potatoes",
-    "sourcePages": [
-      4
-    ],
-    "flags": [
-      "sold-by-curated",
-      "retail-form-specific"
-    ],
-    "sourceItem": "Potato - Russet / White 20lb",
-    "sourceOrder": 138,
-    "mediaReview": {
+    },
+    {
       "catalogId": "potato-russet-white-20lb",
       "code": "62006",
       "commonsFile": "Russet potato cultivar with sprouts.jpg",
@@ -2136,30 +1163,8 @@
       ],
       "sharedMediaBasis": "The reviewed photograph anchors the visible produce identity; any store-only qualifier or retail-unit detail is read from the workbook label.",
       "reviewBasis": "Whole russet plus cut white interior clearly supports skin and flesh identity. Store-only or package qualifiers remain workbook-label claims and are not inferred from pixels."
-    }
-  },
-  {
-    "catalogId": "potato-russet-10lb",
-    "title": "Potato - Russet 10lb",
-    "code": "171",
-    "family": "Potatoes",
-    "soldBy": "Weight",
-    "saleForm": "Loose",
-    "form": "Firm round or tapered tuber",
-    "color": "Brown",
-    "imageQuery": "Potato - Russet raw produce",
-    "cue": "The reviewed photograph clearly shows potato - russet in firm round or tapered tuber form.",
-    "group": "potatoes",
-    "sourcePages": [
-      4
-    ],
-    "flags": [
-      "sold-by-curated",
-      "retail-form-specific"
-    ],
-    "sourceItem": "Potato - Russet 10lb",
-    "sourceOrder": 139,
-    "mediaReview": {
+    },
+    {
       "catalogId": "potato-russet-10lb",
       "code": "171",
       "commonsFile": "Russet potato.jpg",
@@ -2182,29 +1187,8 @@
       ],
       "sharedMediaBasis": "The reviewed photograph anchors the visible produce identity; any store-only qualifier or retail-unit detail is read from the workbook label.",
       "reviewBasis": "Clean close pile of whole russet potatoes. Store-only or package qualifiers remain workbook-label claims and are not inferred from pixels."
-    }
-  },
-  {
-    "catalogId": "tomato-fm-on-the-vine-bulk",
-    "title": "Tomato - FM On The Vine (Bulk)",
-    "code": "64664",
-    "family": "Tomatoes",
-    "soldBy": "Weight",
-    "saleForm": "Cluster",
-    "form": "Round tomato cluster on the vine",
-    "color": "Red",
-    "imageQuery": "tomatoes on the vine raw produce",
-    "cue": "A red tomato cluster remains visibly attached to its vine.",
-    "group": "tomatoes",
-    "sourcePages": [
-      4
-    ],
-    "flags": [
-      "sold-by-curated"
-    ],
-    "sourceItem": "Tomato - FM On The Vine (Bulk)",
-    "sourceOrder": 161,
-    "mediaReview": {
+    },
+    {
       "catalogId": "tomato-fm-on-the-vine-bulk",
       "code": "64664",
       "commonsFile": "Cluster of Tomatoes on Vine.jpg",
@@ -2227,29 +1211,8 @@
       ],
       "sharedMediaBasis": "The photograph truthfully anchors the same visible vine-tomato form; FM is retained as an unexplained store-label qualifier.",
       "reviewBasis": "Pixels and Commons metadata support tomatoes on the vine. The literal FM qualifier comes only from the workbook label."
-    }
-  },
-  {
-    "catalogId": "tomato-hh-organic",
-    "title": "Tomato - HH (Organic)",
-    "code": "94798",
-    "family": "Tomatoes",
-    "soldBy": "Weight",
-    "saleForm": "Loose",
-    "form": "Smooth round loose tomatoes",
-    "color": "Red",
-    "imageQuery": "hothouse tomatoes raw produce",
-    "cue": "Smooth round red tomatoes are shown together as loose hothouse produce.",
-    "group": "tomatoes",
-    "sourcePages": [
-      4
-    ],
-    "flags": [
-      "sold-by-curated"
-    ],
-    "sourceItem": "Tomato - HH (Organic)",
-    "sourceOrder": 163,
-    "mediaReview": {
+    },
+    {
       "catalogId": "tomato-hh-organic",
       "code": "94798",
       "commonsFile": "Hothouse Tomatoes - Flickr - pinemikey.jpg",
@@ -2280,29 +1243,8 @@
       ],
       "sharedMediaBasis": "The hothouse-tomato photograph anchors the visible item; Organic and the literal HH label come from the workbook.",
       "reviewBasis": "Commons identifies hothouse tomatoes. Organic status is not visible and is taught only as a workbook-label qualifier."
-    }
-  },
-  {
-    "catalogId": "tomato-hh-red-bulk",
-    "title": "Tomato - HH Red (Bulk)",
-    "code": "4798",
-    "family": "Tomatoes",
-    "soldBy": "Weight",
-    "saleForm": "Loose",
-    "form": "Smooth round whole tomato",
-    "color": "Red",
-    "imageQuery": "red tomato raw produce",
-    "cue": "Smooth round red tomatoes are clearly visible in loose whole form.",
-    "group": "tomatoes",
-    "sourcePages": [
-      4
-    ],
-    "flags": [
-      "sold-by-curated"
-    ],
-    "sourceItem": "Tomato - HH Red (Bulk)",
-    "sourceOrder": 164,
-    "mediaReview": {
+    },
+    {
       "catalogId": "tomato-hh-red-bulk",
       "code": "4798",
       "commonsFile": "Healthy Red Tomatoes with Water Drops.jpg",
@@ -2333,27 +1275,8 @@
       ],
       "sharedMediaBasis": "The photograph anchors the visible whole red-tomato form; HH and Bulk are selected from the workbook label.",
       "reviewBasis": "The photograph clearly supports whole red tomato and loose-form recognition. HH and Bulk remain workbook-label claims rather than visual attributes."
-    }
-  },
-  {
-    "catalogId": "tomatoes-on-the-vine-hh-organic",
-    "title": "Tomatoes - On The Vine HH (Organic)",
-    "code": "94664",
-    "family": "Tomatoes",
-    "soldBy": "Weight",
-    "saleForm": "Cluster",
-    "form": "Round tomato cluster on the vine",
-    "color": "Red",
-    "imageQuery": "tomatoes on the vine raw produce",
-    "cue": "A red tomato cluster remains visibly attached to its vine.",
-    "group": "tomatoes",
-    "sourcePages": [
-      3,
-      4
-    ],
-    "sourceItem": "Tomatoes - On The Vine HH (Organic)",
-    "sourceOrder": 165,
-    "mediaReview": {
+    },
+    {
       "catalogId": "tomatoes-on-the-vine-hh-organic",
       "code": "94664",
       "commonsFile": "Cluster of Tomatoes on Vine.jpg",
@@ -2386,30 +1309,8 @@
       ],
       "sharedMediaBasis": "The same vine-cluster photograph anchors the visible produce form; HH and Organic are selected from the workbook label.",
       "reviewBasis": "Pixels and Commons metadata support tomatoes attached to the vine. The photograph does not establish HH or Organic, so those qualifiers remain explicitly label-assisted."
-    }
-  },
-  {
-    "catalogId": "tomatoes-roma-plum-box-half-bushel",
-    "title": "Tomatoes - Roma / Plum (Box, Half Bushel)",
-    "code": "70755",
-    "family": "Tomatoes",
-    "soldBy": "Each",
-    "saleForm": "Single",
-    "form": "Oblong meaty tomato",
-    "color": "Red",
-    "imageQuery": "Tomatoes - Roma / Plum raw produce",
-    "cue": "The reviewed photograph clearly shows tomatoes - roma / plum in oblong meaty tomato form.",
-    "group": "tomatoes",
-    "sourcePages": [
-      3,
-      4
-    ],
-    "flags": [
-      "retail-form-specific"
-    ],
-    "sourceItem": "Tomatoes - Roma / Plum (Box, Half Bushel)",
-    "sourceOrder": 166,
-    "mediaReview": {
+    },
+    {
       "catalogId": "tomatoes-roma-plum-box-half-bushel",
       "code": "70755",
       "commonsFile": "Roma Tomatoes - Flickr - pinemikey.jpg",
@@ -2442,58 +1343,16 @@
       ],
       "sharedMediaBasis": "The reviewed photograph anchors the visible produce identity; any store-only qualifier or retail-unit detail is read from the workbook label.",
       "reviewBasis": "Clean pile of oblong Roma or plum tomatoes; box qualifier remains workbook-only. Store-only or package qualifiers remain workbook-label claims and are not inferred from pixels."
-    }
-  },
-  {
-    "catalogId": "uchoy-sum",
-    "title": "Uchoy Sum",
-    "code": "64387",
-    "family": "Leafy Greens",
-    "soldBy": "Weight",
-    "saleForm": "Loose",
-    "form": "Broad leafy stems",
-    "color": "Green",
-    "imageQuery": "Uchoy Sum raw produce",
-    "cue": "Uchoy Sum is identified by its green appearance and broad leafy stems.",
-    "group": "leafy-greens",
-    "sourcePages": [
-      4
-    ],
-    "flags": [
-      "sold-by-curated"
-    ],
-    "sourceItem": "Uchoy Sum",
-    "sourceOrder": 169,
-    "mediaReview": {
+    },
+    {
       "catalogId": "uchoy-sum",
       "code": "64387",
       "commonsFile": "Chinese vegetable 027.jpg",
       "recognitionMode": "product-and-loose-form",
       "sharedMediaBasis": "Commons identifies the product as Choi Sum; the spelling Uchoy Sum is preserved exactly from the workbook row.",
       "reviewBasis": "Commons metadata identifies Green Choi Sum and the photograph shows its leafy stems and yellow flowers in market form."
-    }
-  },
-  {
-    "catalogId": "yu-choy-jr",
-    "title": "Yu Choy - Jr",
-    "code": "10260",
-    "family": "Leafy Greens",
-    "soldBy": "Weight",
-    "saleForm": "Loose",
-    "form": "Tender leafy stems with small yellow flowers",
-    "color": "Green and Yellow",
-    "imageQuery": "yu choy (choi sum) raw produce",
-    "cue": "Green leafy stems and small yellow flowers identify the yu choy or choi sum form.",
-    "group": "leafy-greens",
-    "sourcePages": [
-      4
-    ],
-    "flags": [
-      "sold-by-curated"
-    ],
-    "sourceItem": "Yu Choy - Jr",
-    "sourceOrder": 175,
-    "mediaReview": {
+    },
+    {
       "catalogId": "yu-choy-jr",
       "code": "10260",
       "commonsFile": "Chinese vegetable 027.jpg",
@@ -2517,5 +1376,5 @@
       "sharedMediaBasis": "The same reviewed choi-sum photograph anchors Yu Choy; Jr is a store-label size distinction.",
       "reviewBasis": "Commons describes the photographed produce as Green Choi Sum, a name used for Yu Choy. Jr is not claimed from the pixels."
     }
-  }
-]
+  ]
+}
