@@ -8,42 +8,13 @@ import {
   knownBadMediaFiles,
   mediaOverridesByCatalogId,
   normalize,
+  productHeadGroups,
   queryAliasesByCatalogId,
+  reviewedIdentityEvidenceByCatalogId,
   sleep,
   softBlockedTokens,
   words,
 } from "./common.mjs";
-
-const headGroups = [
-  ["apple", "apples"], ["apricot", "apricots"], ["artichoke", "artichokes"],
-  ["asparagus"], ["avocado", "avocados"], ["banana", "bananas", "plantain", "plantains"],
-  ["basil"], ["bean", "beans"], ["beet", "beets", "beetroot"],
-  ["bittermelon", "bitter", "gourd", "momordica"], ["bok", "choi", "pak"],
-  ["breadfruit"], ["broccoli", "lan"], ["cabbage", "cabbages", "napa", "savoy"],
-  ["carrot", "carrots"], ["cassava", "yucca", "yuca"], ["collard", "collards"],
-  ["cucumber", "cucumbers"], ["dandelion"], ["dill"], ["eddoe", "eddoes", "taro", "colocasia"],
-  ["endive", "escarole", "cichorium"], ["fennel", "anise"], ["grape", "grapes", "raisin"],
-  ["horseradish"], ["jicama"], ["kale", "cavolo"], ["kohlrabi"],
-  ["leek", "leeks"], ["lettuce"], ["lotus"], ["mango", "mangos", "mangoes"],
-  ["melon", "melons", "honeydew", "watermelon", "watermelons"], ["mint"],
-  ["mushroom", "mushrooms", "pleurotus"], ["nectarine", "nectarines"],
-  ["onion", "onions", "shallot", "shallots"], ["parsley"], ["pea", "peas", "pisum"],
-  ["pear", "pears", "pyrus", "nashi"], ["pepper", "peppers", "chili", "chilli", "capsicum"],
-  ["persimmon", "persimmons", "hachiya"], ["pomelo", "pummelo", "citrus"],
-  ["potato", "potatoes", "yam", "yams", "dioscorea", "boniato"],
-  ["prickly", "opuntia"], ["radicchio", "chicory"], ["radish", "radishes"],
-  ["rapini", "rabe", "raab"], ["rhubarb", "rheum"], ["rutabaga", "swede"],
-  ["squash", "chayote", "butternut", "acorn", "zucchini", "courgette", "cucurbita"],
-  ["tangelo", "minneola"], ["tangerine", "mandarin"], ["tomato", "tomatoes"],
-  ["turmeric", "curcuma", "kurkuma"],
-  ["berry", "berries", "blueberry", "blackberry", "raspberry", "strawberry"],
-  ["cauliflower"], ["celery"], ["cherry", "cherries"], ["coconut"], ["corn"],
-  ["date", "dates"], ["eggplant", "aubergine"], ["fig", "figs"], ["garlic"],
-  ["ginger"], ["kiwi"], ["longan", "lychee", "rambutan"], ["okra"], ["papaya", "papayas"],
-  ["parsnip", "parsnips"], ["passion"], ["peach", "peaches"], ["pineapple", "pineapples"],
-  ["plum", "plums", "pluot"], ["pomegranate", "pomegranates"], ["spinach"],
-  ["starfruit", "guava"], ["turnip", "turnips"],
-];
 
 const modifierStopWords = new Set([
   ...genericQueryTokens,
@@ -64,15 +35,32 @@ function candidateText(page) {
   ].join(" ");
 }
 
+function candidateContextText(page) {
+  const image = page.imageinfo?.[0];
+  return [page.title, extValue(image, "ObjectName"), extValue(image, "Categories")].join(" ");
+}
+
 function targetWords(item) {
   return [item.title, item.imageQuery, ...(queryAliasesByCatalogId[item.catalogId] ?? [])]
     .flatMap(words);
 }
 
 function targetHeadGroup(item) {
+  const title = new Set(words(item.title));
+  const direct = productHeadGroups.find((group) => group.some((token) => title.has(token)));
+  if (direct) return direct;
   const target = new Set(targetWords(item));
-  return headGroups.find((group) => group.some((token) => target.has(token))) ?? [];
+  return productHeadGroups.find((group) => group.some((token) => target.has(token))) ?? [];
 }
+
+const rawSubjectTokens = new Set([
+  "bunch", "corm", "corms", "fruit", "fruits", "market", "pod", "pods",
+  "produce", "root", "roots", "stalk", "stalks", "tuber", "tubers",
+  "vegetable", "vegetables", "whole",
+]);
+const metadataHardBlockExceptions = new Set([
+  "bird", "garden", "label", "orchard", "plant", "price", "seed", "seeds", "tree",
+]);
 
 function targetModifiers(item, headGroup) {
   const heads = new Set(headGroup);
@@ -94,12 +82,26 @@ function blockedReason(page, item) {
     if (titleTokens.has(token)) return `blocked-${token}`;
   }
 
+  const sourceTokens = new Set(words(candidateContextText(page)));
+  for (const token of hardBlockedTokens) {
+    if (sourceTokens.has(token) && !metadataHardBlockExceptions.has(token)) {
+      return `blocked-source-${token}`;
+    }
+  }
+
   const title = normalize(page.title);
   if (/\b(18\d{2}|19[0-5]\d)\b/.test(title)) return "historical-source";
 
   const target = new Set(targetWords(item));
   for (const token of softBlockedTokens) {
     if (titleTokens.has(token) && !target.has(token)) return `non-retail-${token}`;
+    if (
+      sourceTokens.has(token) &&
+      !target.has(token) &&
+      ![...rawSubjectTokens].some((subject) => sourceTokens.has(subject))
+    ) {
+      return `non-retail-source-${token}`;
+    }
   }
 
   return null;
@@ -127,6 +129,7 @@ function analyzeCandidate(page, item, usedFiles, mode = "strict") {
   const matchedFileTargets = targets.filter((token) => fileWords.has(token));
   const matchedModifiers = modifiers.filter((token) => searchableWords.has(token));
   const matchedFileModifiers = modifiers.filter((token) => fileWords.has(token));
+  const matchedIdentity = headGroup.filter((token) => searchableWords.has(token));
 
   if (!matchedFileTargets.length && mode !== "family") {
     return { valid: false, reason: "no-filename-anchor", score: Number.NEGATIVE_INFINITY };
@@ -158,7 +161,15 @@ function analyzeCandidate(page, item, usedFiles, mode = "strict") {
     matchedFileTargets,
     matchedModifiers,
     matchedFileModifiers,
+    matchedIdentity,
   };
+}
+
+function reviewedIdentityEvidence(page, item) {
+  const sourceWords = new Set(words(candidateText(page)));
+  return (reviewedIdentityEvidenceByCatalogId[item.catalogId] ?? []).find((phrase) =>
+    words(phrase).every((token) => sourceWords.has(token)),
+  );
 }
 
 async function queryExactFile(file) {
@@ -209,6 +220,13 @@ function mediaResult(selected, alternatives, match, usedFiles) {
     match,
     matchedTargets: selected.matchedTargets ?? [],
     matchedModifiers: selected.matchedModifiers ?? [],
+    identityEvidence: selected.identityEvidence ?? selected.matchedIdentity ?? [],
+    sourceEvidence: {
+      title: cleanFileTitle(selected.page.title),
+      objectName: extValue(image, "ObjectName"),
+      description: extValue(image, "ImageDescription"),
+      categories: extValue(image, "Categories"),
+    },
     alternatives: alternatives
       .filter((candidate) => candidate.file !== selected.file)
       .slice(0, 4)
@@ -226,10 +244,28 @@ export async function resolveImage(item, usedFiles) {
     const page = await queryExactFile(override);
     if (!page) throw new Error(`${item.title}: reviewed media override is missing (${override}).`);
     const analyzed = { page, ...analyzeCandidate(page, item, usedFiles, "family") };
-    if (!analyzed.valid) {
+    const aliasEvidence = reviewedIdentityEvidence(page, item);
+    const reviewedAliasOnly = !analyzed.valid &&
+      analyzed.reason === "missing-product-head" &&
+      aliasEvidence;
+    if (!analyzed.valid && !reviewedAliasOnly) {
       throw new Error(`${item.title}: reviewed media override failed safety checks (${analyzed.reason}).`);
     }
-    return mediaResult(analyzed, [], "reviewed-override", usedFiles);
+    const reviewed = reviewedAliasOnly
+      ? {
+          ...analyzed,
+          file: cleanFileTitle(page.title),
+          score: 55,
+          matchedTargets: words(aliasEvidence),
+          matchedModifiers: [],
+          identityEvidence: aliasEvidence,
+        }
+      : analyzed;
+    return mediaResult(reviewed, [], "reviewed-override", usedFiles);
+  }
+
+  if (!targetHeadGroup(item).length) {
+    throw new Error(`No product-head vocabulary is configured for ${item.title}.`);
   }
 
   const aliases = queryAliasesByCatalogId[item.catalogId] ?? [];

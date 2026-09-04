@@ -1,0 +1,4551 @@
+{
+  "generatedAt": "2026-09-04T19:53:08.506Z",
+  "batch": "04",
+  "strategy": "Resolve a verified Wikimedia Commons photograph for every lesson. Prefer unique exact-item media; allow an audited shared source only when it remains the strongest product match.",
+  "sourceCount": 100,
+  "media": [
+    {
+      "order": 1,
+      "storyId": "ambrosia-apple-3438",
+      "catalogId": "apples-ambrosia",
+      "title": "Ambrosia apple",
+      "query": "Ambrosia apple cultivar fruit",
+      "selection": {
+        "rawScore": 90,
+        "score": 90,
+        "band": "Essential",
+        "priority": "must-know"
+      },
+      "file": "Ambrosia Apples 3438.jpg",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/Ambrosia_Apples_3438.jpg/1920px-Ambrosia_Apples_3438.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "mime": "image/jpeg",
+      "width": 3264,
+      "height": 2448,
+      "thumbWidth": 1600,
+      "thumbHeight": 1200,
+      "score": 199,
+      "sharedAcrossProducts": false,
+      "match": "strict-identity-match",
+      "matchedTargets": [
+        "ambrosia",
+        "apple"
+      ],
+      "matchedModifiers": [
+        "ambrosia"
+      ],
+      "identityEvidence": [
+        "apple",
+        "apples"
+      ],
+      "sourceEvidence": {
+        "title": "Ambrosia Apples 3438.jpg",
+        "objectName": "Ambrosia Apples 3438",
+        "description": "Eine Apfelsorte, die ca. 1990 in Kanada entdeckt und kultiviert wurde. Süß, knackig und hervorragend lagerbar.",
+        "categories": "Ambrosia (apple)|Self-published work"
+      },
+      "alternatives": [
+        {
+          "file": "Ambrosia apples 2017 A2.jpg",
+          "score": 171,
+          "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/Ambrosia_apples_2017_A2.jpg/1920px-Ambrosia_apples_2017_A2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        },
+        {
+          "file": "Ambrosia apples 2017 A3.jpg",
+          "score": 169,
+          "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f1/Ambrosia_apples_2017_A3.jpg/1920px-Ambrosia_apples_2017_A3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        },
+        {
+          "file": "Ambrosia apple.jpg",
+          "score": 167,
+          "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f1/Ambrosia_apple.jpg/1920px-Ambrosia_apple.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        },
+        {
+          "file": "Ambrosia apples 2017 A1.jpg",
+          "score": 167,
+          "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/Ambrosia_apples_2017_A1.jpg/1920px-Ambrosia_apples_2017_A1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        }
+      ]
+    },
+    {
+      "order": 2,
+      "storyId": "chinese-fuji-apple-54131",
+      "catalogId": "apples-chinese-fuji",
+      "title": "Chinese Fuji apple",
+      "query": "Fuji apple fruit",
+      "selection": {
+        "rawScore": 105,
+        "score": 100,
+        "band": "Essential",
+        "priority": "must-know"
+      },
+      "file": "Fuji apple.jpg",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/Fuji_apple.jpg/1920px-Fuji_apple.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "mime": "image/jpeg",
+      "width": 2790,
+      "height": 1758,
+      "thumbWidth": 1600,
+      "thumbHeight": 1008,
+      "score": 253,
+      "sharedAcrossProducts": false,
+      "match": "strict-identity-match",
+      "matchedTargets": [
+        "fuji",
+        "apple",
+        "fruit"
+      ],
+      "matchedModifiers": [
+        "fuji"
+      ],
+      "identityEvidence": [
+        "apple",
+        "apples"
+      ],
+      "sourceEvidence": {
+        "title": "Fuji apple.jpg",
+        "objectName": "Fuji apple",
+        "description": "Two Fuji apples. In 1992, Washington apple growers harvested about 805,000 boxes of Fujis. Three years later, production had quadrupled to 3.5 million boxes.",
+        "categories": "Fuji (apple)|PD USDA ARS|Media created by the United States Agricultural Research Service with known IDs|Water droplets on fruit"
+      },
+      "alternatives": [
+        {
+          "file": "Rosaceae Malus pumila Malus pumila Var domestica Apples Fuji.jpg",
+          "score": 231,
+          "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c0/Rosaceae_Malus_pumila_Malus_pumila_Var_domestica_Apples_Fuji.jpg/1920px-Rosaceae_Malus_pumila_Malus_pumila_Var_domestica_Apples_Fuji.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        },
+        {
+          "file": "Fuji apples.jpg",
+          "score": 229,
+          "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/Fuji_apples.jpg/1920px-Fuji_apples.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        },
+        {
+          "file": "2024-09-14 12 16 14 Fuji apple trees with ripening fruit at the Terhune Orchards in Lawrence Township, Mercer County, New Jersey.jpg",
+          "score": 181,
+          "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/2024-09-14_12_16_14_Fuji_apple_trees_with_ripening_fruit_at_the_Terhune_Orchards_in_Lawrence_Township%2C_Mercer_County%2C_New_Jersey.jpg/1920px-2024-09-14_12_16_14_Fuji_apple_trees_with_ripening_fruit_at_the_Terhune_Orchards_in_Lawrence_Township%2C_Mercer_County%2C_New_Jersey.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        }
+      ]
+    },
+    {
+      "order": 3,
+      "storyId": "golden-apple-4021",
+      "catalogId": "apples-golden",
+      "title": "Golden apple",
+      "query": "yellow golden apple fruit",
+      "selection": {
+        "rawScore": 105,
+        "score": 100,
+        "band": "Essential",
+        "priority": "must-know"
+      },
+      "file": "Golden delicious apple.jpg",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/3/35/Golden_delicious_apple.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "mime": "image/jpeg",
+      "width": 1600,
+      "height": 1067,
+      "thumbWidth": 1600,
+      "thumbHeight": 1067,
+      "score": 265,
+      "sharedAcrossProducts": false,
+      "match": "strict-identity-match",
+      "matchedTargets": [
+        "golden",
+        "apple",
+        "yellow",
+        "fruit"
+      ],
+      "matchedModifiers": [
+        "golden"
+      ],
+      "identityEvidence": [
+        "apple",
+        "apples"
+      ],
+      "sourceEvidence": {
+        "title": "Golden delicious apple.jpg",
+        "objectName": "Golden delicious apple",
+        "description": "Golden delecious apple fruit",
+        "categories": "Golden Delicious|Taken with Canon EOS 20D|GFDL-1.2|CC-BY-NC-3.0|License migration opt-out|Pommes des Alpes de Haute-Durance|Taken with Tamron SP AF 28-75mm F2.8 XR Di|Yellow apples"
+      },
+      "alternatives": [
+        {
+          "file": "Golden Delicious apples.jpg",
+          "score": 145,
+          "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/Golden_Delicious_apples.jpg/1920px-Golden_Delicious_apples.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        }
+      ]
+    },
+    {
+      "order": 4,
+      "storyId": "pink-lady-apple-4128",
+      "catalogId": "apples-pink-lady-cripps",
+      "title": "Pink Lady apple",
+      "query": "Pink Lady Cripps apple fruit",
+      "selection": {
+        "rawScore": 90,
+        "score": 90,
+        "band": "Essential",
+        "priority": "must-know"
+      },
+      "file": "Apple Pink Lady.jpg",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/Apple_Pink_Lady.jpg/1920px-Apple_Pink_Lady.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "mime": "image/jpeg",
+      "width": 4380,
+      "height": 2920,
+      "thumbWidth": 1600,
+      "thumbHeight": 1067,
+      "score": 306,
+      "sharedAcrossProducts": false,
+      "match": "strict-identity-match",
+      "matchedTargets": [
+        "pink",
+        "lady",
+        "apple",
+        "cripps"
+      ],
+      "matchedModifiers": [
+        "pink",
+        "lady"
+      ],
+      "identityEvidence": [
+        "apple",
+        "apples"
+      ],
+      "sourceEvidence": {
+        "title": "Apple Pink Lady.jpg",
+        "objectName": "Apple Pink Lady",
+        "description": "Apple 'Pink Lady'",
+        "categories": "Taken with Nikon D3300|Cripps Pink (apple)|Self-published work|Tournasol7's quality images|Apples in France|Occitanie photographs taken on 2018-09-05"
+      },
+      "alternatives": [
+        {
+          "file": "Pink Lady apples.JPG",
+          "score": 302,
+          "src": "https://upload.wikimedia.org/wikipedia/commons/5/54/Pink_Lady_apples.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+        }
+      ]
+    },
+    {
+      "order": 5,
+      "storyId": "spartan-apple-4177",
+      "catalogId": "apples-spartan-extra-fancy",
+      "title": "Spartan apple",
+      "query": "Spartan apple cultivar fruit",
+      "selection": {
+        "rawScore": 90,
+        "score": 90,
+        "band": "Essential",
+        "priority": "must-know"
+      },
+      "file": "Spartan apple.jpg",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/3/35/Spartan_apple.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "mime": "image/jpeg",
+      "width": 1188,
+      "height": 810,
+      "thumbWidth": 1600,
+      "thumbHeight": 1091,
+      "score": 245,
+      "sharedAcrossProducts": false,
+      "match": "strict-identity-match",
+      "matchedTargets": [
+        "spartan",
+        "apple",
+        "cultivar"
+      ],
+      "matchedModifiers": [
+        "spartan"
+      ],
+      "identityEvidence": [
+        "apple"
+      ],
+      "sourceEvidence": {
+        "title": "Spartan apple.jpg",
+        "objectName": "Spartan apple",
+        "description": "Spartan -  apple cultivar",
+        "categories": "Spartan (apple)|Self-published work"
+      },
+      "alternatives": [
+        {
+          "file": "Spartan Apple.jpg",
+          "score": 241,
+          "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/93/Spartan_Apple.jpg/1920px-Spartan_Apple.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        },
+        {
+          "file": "Spartan apple, morning rain - geograph.org.uk - 6621997.jpg",
+          "score": 237,
+          "src": "https://upload.wikimedia.org/wikipedia/commons/d/da/Spartan_apple%2C_morning_rain_-_geograph.org.uk_-_6621997.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+        }
+      ]
+    },
+    {
+      "order": 6,
+      "storyId": "white-nectarine-4188",
+      "catalogId": "nectarines-white-flesh",
+      "title": "White nectarine",
+      "query": "white nectarine fruit",
+      "selection": {
+        "rawScore": 90,
+        "score": 90,
+        "band": "Essential",
+        "priority": "must-know"
+      },
+      "file": "White nectarine and cross section02 edit.jpg",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/c/cb/White_nectarine_and_cross_section02_edit.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "mime": "image/jpeg",
+      "width": 1891,
+      "height": 1006,
+      "thumbWidth": 1600,
+      "thumbHeight": 851,
+      "score": 106,
+      "sharedAcrossProducts": false,
+      "match": "reviewed-override",
+      "matchedTargets": [
+        "white",
+        "nectarine"
+      ],
+      "matchedModifiers": [
+        "white"
+      ],
+      "identityEvidence": [
+        "nectarine",
+        "nectarines"
+      ],
+      "sourceEvidence": {
+        "title": "White nectarine and cross section02 edit.jpg",
+        "objectName": "White nectarine and cross section02 edit",
+        "description": "White necatrine and its cross section isolated on a white background",
+        "categories": "Taken with Canon EOS 20D|GFDL-1.2|CC-BY-NC-3.0|License migration opt-out|Taken with Sigma 150mm F2.8 EX DG APO Macro HSM|Featured pictures on Wikipedia, English|Commons featured widescreen desktop backgrounds|Files with Assessments template missing SDC Commons no value quality assessment|Cross sections of peaches and nectarines|Drupes on white background"
+      },
+      "alternatives": []
+    },
+    {
+      "order": 7,
+      "storyId": "basil-4885",
+      "catalogId": "basil-herbs",
+      "title": "Basil",
+      "query": "sweet basil leaves bunch",
+      "selection": {
+        "rawScore": 105,
+        "score": 100,
+        "band": "Essential",
+        "priority": "must-know"
+      },
+      "file": "Basil (Ocimum basilicum).jpg",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/2/23/Basil_%28Ocimum_basilicum%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "mime": "image/jpeg",
+      "width": 1024,
+      "height": 768,
+      "thumbWidth": 1600,
+      "thumbHeight": 1200,
+      "score": 170,
+      "sharedAcrossProducts": false,
+      "match": "strict-identity-match",
+      "matchedTargets": [
+        "basil"
+      ],
+      "matchedModifiers": [],
+      "identityEvidence": [
+        "basil"
+      ],
+      "sourceEvidence": {
+        "title": "Basil (Ocimum basilicum).jpg",
+        "objectName": "Basil (Ocimum basilicum)",
+        "description": "Mediterranean and Indochinese cuisines frequently use basil, the former frequently combining it with tomato. Basil is one of the main ingredients in pesto—a green Italian oil-and-herb sauce from the city of Genoa, its other two main ingredients being olive oil and pine nuts.",
+        "categories": "Taken with Olympus C-5060WZ|Flickr images uploaded by Flickr upload bot|Information field template with formatting|Ocimum basilicum in pots"
+      },
+      "alternatives": [
+        {
+          "file": "Sweet Basil (Ocimum basilicum) 3.jpg",
+          "score": 154,
+          "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/Sweet_Basil_%28Ocimum_basilicum%29_3.jpg/1920px-Sweet_Basil_%28Ocimum_basilicum%29_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        },
+        {
+          "file": "Sweet Basil (Ocimum basilicum) 1.jpg",
+          "score": 152,
+          "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/Sweet_Basil_%28Ocimum_basilicum%29_1.jpg/1920px-Sweet_Basil_%28Ocimum_basilicum%29_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        },
+        {
+          "file": "Basil-Basilico-Ocimum basilicum-albahaca.jpg",
+          "score": 150,
+          "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/Basil-Basilico-Ocimum_basilicum-albahaca.jpg/1920px-Basil-Basilico-Ocimum_basilicum-albahaca.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        },
+        {
+          "file": "Sweet Basil (Ocimum basilicum).jpg",
+          "score": 150,
+          "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Sweet_Basil_%28Ocimum_basilicum%29.jpg/1920px-Sweet_Basil_%28Ocimum_basilicum%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        }
+      ]
+    },
+    {
+      "order": 8,
+      "storyId": "anise-fennel-4515",
+      "catalogId": "anise-fennel-herbs",
+      "title": "Anise fennel",
+      "query": "fennel bulb vegetable fronds",
+      "selection": {
+        "rawScore": 105,
+        "score": 100,
+        "band": "Essential",
+        "priority": "must-know"
+      },
+      "file": "Finocchio 2.jpg",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Finocchio_2.jpg/1920px-Finocchio_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "mime": "image/jpeg",
+      "width": 2866,
+      "height": 3094,
+      "thumbWidth": 1600,
+      "thumbHeight": 1727,
+      "score": 26,
+      "sharedAcrossProducts": false,
+      "match": "reviewed-override",
+      "matchedTargets": [
+        "fennel",
+        "bulb",
+        "vegetable",
+        "florence"
+      ],
+      "matchedModifiers": [],
+      "identityEvidence": [
+        "fennel"
+      ],
+      "sourceEvidence": {
+        "title": "Finocchio 2.jpg",
+        "objectName": "Finocchio 2",
+        "description": "Florence fennel or finocchio is a selection with a swollen, bulb-like stem base that is used as a vegetable.",
+        "categories": "Self-published work|Uploaded with Mobile/Android|Uploaded with Mobile/Android (Nov 2017-Aug 2019)|Files with coordinates missing SDC location of creation|United Arab Emirates photographs taken on 2018-07-17|Fennel bulbs"
+      },
+      "alternatives": []
+    },
+    {
+      "order": 9,
+      "storyId": "large-artichoke-4084",
+      "catalogId": "artichokes-large",
+      "title": "Large artichoke",
+      "query": "globe artichoke vegetable",
+      "selection": {
+        "rawScore": 90,
+        "score": 90,
+        "band": "Essential",
+        "priority": "must-know"
+      },
+      "file": "Artichoke stack.JPG",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/Artichoke_stack.JPG/1920px-Artichoke_stack.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "mime": "image/jpeg",
+      "width": 3446,
+      "height": 1539,
+      "thumbWidth": 1600,
+      "thumbHeight": 715,
+      "score": 55,
+      "sharedAcrossProducts": false,
+      "match": "reviewed-override",
+      "matchedTargets": [
+        "artichoke",
+        "vegetable"
+      ],
+      "matchedModifiers": [],
+      "identityEvidence": [
+        "artichoke",
+        "artichokes"
+      ],
+      "sourceEvidence": {
+        "title": "Artichoke stack.JPG",
+        "objectName": "Artichoke stack",
+        "description": "Stacked artichokes in a fruit and vegetable store.",
+        "categories": "Cynara cardunculus|GFDL|Taken with Canon EOS 400D|Artichokes as food|License migration redundant|Self-published work|Photographs by User:99of9|Australia photographs taken on 2009-10-10|Files with coordinates missing SDC location of creation (34° S, 151° E)|Fruit textures|Green textures (plants)"
+      },
+      "alternatives": []
+    },
+    {
+      "order": 10,
+      "storyId": "baby-bok-choy-4544",
+      "catalogId": "bok-choy-baby-hai-tupak-choy",
+      "title": "Baby bok choy",
+      "query": "baby bok choy vegetable",
+      "selection": {
+        "rawScore": 105,
+        "score": 100,
+        "band": "Essential",
+        "priority": "must-know"
+      },
+      "file": "Baby Pak Choi (02).JPG",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/Baby_Pak_Choi_%2802%29.JPG/1920px-Baby_Pak_Choi_%2802%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "mime": "image/jpeg",
+      "width": 2319,
+      "height": 1824,
+      "thumbWidth": 1600,
+      "thumbHeight": 1258,
+      "score": 267,
+      "sharedAcrossProducts": false,
+      "match": "strict-identity-match",
+      "matchedTargets": [
+        "baby",
+        "pak",
+        "choi"
+      ],
+      "matchedModifiers": [
+        "baby"
+      ],
+      "identityEvidence": [
+        "choi",
+        "pak"
+      ],
+      "sourceEvidence": {
+        "title": "Baby Pak Choi (02).JPG",
+        "objectName": "Baby Pak Choi (02)",
+        "description": "Pak Choi",
+        "categories": "Brassica rapa subsp. chinensis|Self-published work|Photographs by Karl-Heinz Wellmann"
+      },
+      "alternatives": [
+        {
+          "file": "Baby Pak Choi (01).JPG",
+          "score": 265,
+          "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e3/Baby_Pak_Choi_%2801%29.JPG/1920px-Baby_Pak_Choi_%2801%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        },
+        {
+          "file": "Pak choi red.JPG",
+          "score": 229,
+          "src": "https://upload.wikimedia.org/wikipedia/commons/1/16/Pak_choi_red.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+        }
+      ]
+    },
+    {
+      "order": 11,
+      "storyId": "shanghai-bok-choy-3163",
+      "catalogId": "bok-choy-shanghai",
+      "title": "Shanghai bok choy",
+      "query": "Shanghai bok choy vegetable",
+      "selection": {
+        "rawScore": 105,
+        "score": 100,
+        "band": "Essential",
+        "priority": "must-know"
+      },
+      "file": "20140223-OC-LSC-0115 (14822531181).jpg",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/20140223-OC-LSC-0115_%2814822531181%29.jpg/1920px-20140223-OC-LSC-0115_%2814822531181%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "mime": "image/jpeg",
+      "width": 4928,
+      "height": 3280,
+      "thumbWidth": 1600,
+      "thumbHeight": 1065,
+      "score": 29,
+      "sharedAcrossProducts": false,
+      "match": "reviewed-override",
+      "matchedTargets": [
+        "shanghai",
+        "bok",
+        "choy"
+      ],
+      "matchedModifiers": [
+        "shanghai"
+      ],
+      "identityEvidence": [
+        "bok",
+        "choy"
+      ],
+      "sourceEvidence": {
+        "title": "20140223-OC-LSC-0115 (14822531181).jpg",
+        "objectName": "20140223-OC-LSC-0115 (14822531181)",
+        "description": "Shanghai bok choy for sale at Jack London Square, in Oakland, CA, on Sunday, March 2, 2014. USDA photo by Lance Cheung.",
+        "categories": "Oakland, California|PD USDA|Flickr images missing SDC creator|United States photographs taken on 2014-02-23|Flickr images reviewed by FlickreviewR 2|Files from U.S. Department of Agriculture Flickr stream|Flickr images missing SDC published in|U.S. Department of Agriculture Flickr files uploaded by OptimusPrimeBot with bad file names"
+      },
+      "alternatives": []
+    },
+    {
+      "order": 12,
+      "storyId": "chinese-long-beans-4527",
+      "catalogId": "beans-long-chinese-dow-gok-bodie",
+      "title": "Chinese long beans",
+      "query": "yardlong beans vegetable",
+      "selection": {
+        "rawScore": 105,
+        "score": 100,
+        "band": "Essential",
+        "priority": "must-know"
+      },
+      "file": "Snake Bean BNC.jpg",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Snake_Bean_BNC.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "mime": "image/jpeg",
+      "width": 1900,
+      "height": 2850,
+      "thumbWidth": 1600,
+      "thumbHeight": 2400,
+      "score": 55,
+      "sharedAcrossProducts": false,
+      "match": "reviewed-override",
+      "matchedTargets": [
+        "beans",
+        "bean"
+      ],
+      "matchedModifiers": [],
+      "identityEvidence": [
+        "bean",
+        "beans"
+      ],
+      "sourceEvidence": {
+        "title": "Snake Bean BNC.jpg",
+        "objectName": "Snake Bean BNC",
+        "description": "Snake Bean",
+        "categories": "GFDL-1.2|FAL|Self-published work|Asparagus beans"
+      },
+      "alternatives": []
+    },
+    {
+      "order": 13,
+      "storyId": "yellow-wax-beans-4533",
+      "catalogId": "beans-yellow-wax",
+      "title": "Yellow wax beans",
+      "query": "yellow wax beans vegetable",
+      "selection": {
+        "rawScore": 105,
+        "score": 100,
+        "band": "Essential",
+        "priority": "must-know"
+      },
+      "file": "Yellow capitano bush bean.jpg",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/Yellow_capitano_bush_bean.jpg/1920px-Yellow_capitano_bush_bean.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "mime": "image/jpeg",
+      "width": 3732,
+      "height": 1389,
+      "thumbWidth": 1600,
+      "thumbHeight": 595,
+      "score": 88,
+      "sharedAcrossProducts": false,
+      "match": "reviewed-override",
+      "matchedTargets": [
+        "yellow",
+        "beans"
+      ],
+      "matchedModifiers": [
+        "yellow"
+      ],
+      "identityEvidence": [
+        "bean",
+        "beans"
+      ],
+      "sourceEvidence": {
+        "title": "Yellow capitano bush bean.jpg",
+        "objectName": "Yellow capitano bush bean",
+        "description": "Yellow capitano bush beans (<i>Phaseolus vulgaris</i>) that won second place in a produce contest at a county fair.",
+        "categories": "Phaseolus vulgaris|Self-published work|Files with coordinates missing SDC location of creation"
+      },
+      "alternatives": []
+    },
+    {
+      "order": 14,
+      "storyId": "beet-bunch-4539",
+      "catalogId": "beets-bunch",
+      "title": "Beet bunch",
+      "query": "beetroot bunch leaves",
+      "selection": {
+        "rawScore": 105,
+        "score": 100,
+        "band": "Essential",
+        "priority": "must-know"
+      },
+      "file": "Beta vulgaris, San Francisco farmers market.jpg",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/Beta_vulgaris%2C_San_Francisco_farmers_market.jpg/1920px-Beta_vulgaris%2C_San_Francisco_farmers_market.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "mime": "image/jpeg",
+      "width": 5184,
+      "height": 3456,
+      "thumbWidth": 1600,
+      "thumbHeight": 1067,
+      "score": 10,
+      "sharedAcrossProducts": false,
+      "match": "reviewed-override",
+      "matchedTargets": [
+        "bunch",
+        "beetroot"
+      ],
+      "matchedModifiers": [],
+      "identityEvidence": [
+        "beets",
+        "beetroot"
+      ],
+      "sourceEvidence": {
+        "title": "Beta vulgaris, San Francisco farmers market.jpg",
+        "objectName": "Beta vulgaris, San Francisco farmers market",
+        "description": "Beets (<i>Beta vulgaris</i>) at the Fort Mason farmers market in San Francisco.",
+        "categories": "Beetroot|Taken with Canon EOS 7D|CC-Zero|Self-published work|Assorted objects|Files with coordinates missing SDC location of creation|Photo challenge/2014 - January - A bunch of stuff"
+      },
+      "alternatives": []
+    },
+    {
+      "order": 15,
+      "storyId": "bitter-melon-4857",
+      "catalogId": "bittermelon",
+      "title": "Bitter melon",
+      "query": "bitter melon fruit vegetable",
+      "selection": {
+        "rawScore": 105,
+        "score": 100,
+        "band": "Essential",
+        "priority": "must-know"
+      },
+      "file": "Bitter melon 01.jpg",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/Bitter_melon_01.jpg/1920px-Bitter_melon_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "mime": "image/jpeg",
+      "width": 3264,
+      "height": 2448,
+      "thumbWidth": 1600,
+      "thumbHeight": 1200,
+      "score": 106,
+      "sharedAcrossProducts": false,
+      "match": "reviewed-override",
+      "matchedTargets": [
+        "bitter",
+        "melon"
+      ],
+      "matchedModifiers": [
+        "melon"
+      ],
+      "identityEvidence": [
+        "bitter"
+      ],
+      "sourceEvidence": {
+        "title": "Bitter melon 01.jpg",
+        "objectName": "Bitter melon 01",
+        "description": "bitter melon",
+        "categories": "Taken with Canon Digital IXUS 80 IS|Bitter melon|Flickr images reviewed by File Upload Bot (Magnus Manske)"
+      },
+      "alternatives": []
+    },
+    {
+      "order": 16,
+      "storyId": "breadfruit-3805",
+      "catalogId": "breadfruit",
+      "title": "Breadfruit",
+      "query": "breadfruit fruit",
+      "selection": {
+        "rawScore": 70,
+        "score": 70,
+        "band": "Common",
+        "priority": "common"
+      },
+      "file": "Fruit of Artocarpus altilis (breadfruit).JPG",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Fruit_of_Artocarpus_altilis_%28breadfruit%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "mime": "image/jpeg",
+      "width": 1704,
+      "height": 2272,
+      "thumbWidth": 1600,
+      "thumbHeight": 2133,
+      "score": 190,
+      "sharedAcrossProducts": false,
+      "match": "strict-identity-match",
+      "matchedTargets": [
+        "breadfruit",
+        "fruit"
+      ],
+      "matchedModifiers": [],
+      "identityEvidence": [
+        "breadfruit"
+      ],
+      "sourceEvidence": {
+        "title": "Fruit of Artocarpus altilis (breadfruit).JPG",
+        "objectName": "Fruit of Artocarpus altilis (breadfruit)",
+        "description": "The female and male parts of breadfruit. Location: Palmira, Valle del Cauca, Colombia.",
+        "categories": "Artocarpus altilis|Self-published work|Nature of Palmira, Valle del Cauca"
+      },
+      "alternatives": [
+        {
+          "file": "BreadFruit.JPG",
+          "score": 176,
+          "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/BreadFruit.JPG/1920px-BreadFruit.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        },
+        {
+          "file": "Breadfruit (Artocarpus altilis), Malaysia.JPG",
+          "score": 174,
+          "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c0/Breadfruit_%28Artocarpus_altilis%29%2C_Malaysia.JPG/1920px-Breadfruit_%28Artocarpus_altilis%29%2C_Malaysia.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        },
+        {
+          "file": "Breadfruit (Artocarpus altilis); fruiting stem, leaf, fruit Wellcome V0043967.jpg",
+          "score": 172,
+          "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/Breadfruit_%28Artocarpus_altilis%29%3B_fruiting_stem%2C_leaf%2C_fruit_Wellcome_V0043967.jpg/1920px-Breadfruit_%28Artocarpus_altilis%29%3B_fruiting_stem%2C_leaf%2C_fruit_Wellcome_V0043967.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        },
+        {
+          "file": "Breadfruit - Artocarpus altilis.jpg",
+          "score": 170,
+          "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/Breadfruit_-_Artocarpus_altilis.jpg/1920px-Breadfruit_-_Artocarpus_altilis.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        }
+      ]
+    },
+    {
+      "order": 17,
+      "storyId": "savoy-cabbage-745",
+      "catalogId": "cabbages-savoy",
+      "title": "Savoy cabbage",
+      "query": "Savoy cabbage head",
+      "selection": {
+        "rawScore": 105,
+        "score": 100,
+        "band": "Essential",
+        "priority": "must-know"
+      },
+      "file": "A head of Savoy cabbage - geograph.org.uk - 6071054.jpg",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/b/b0/A_head_of_Savoy_cabbage_-_geograph.org.uk_-_6071054.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "mime": "image/jpeg",
+      "width": 800,
+      "height": 566,
+      "thumbWidth": 1600,
+      "thumbHeight": 1132,
+      "score": 220,
+      "sharedAcrossProducts": false,
+      "match": "strict-identity-match",
+      "matchedTargets": [
+        "savoy",
+        "cabbage",
+        "head"
+      ],
+      "matchedModifiers": [],
+      "identityEvidence": [
+        "cabbage",
+        "savoy"
+      ],
+      "sourceEvidence": {
+        "title": "A head of Savoy cabbage - geograph.org.uk - 6071054.jpg",
+        "objectName": "A head of Savoy cabbage - geograph.org.uk - 6071054",
+        "description": "A head of Savoy cabbage <span class=\"mw-valign-text-top noprint\" typeof=\"mw:File/Frameless\"><a href=\"//commons.wikimedia.org/wiki/File:A_head_of_Savoy_cabbage_-_geograph.org.uk_-_6071054.jpg#ooui-php-4\" title=\"Edit this at Structured Data on Commons\"><img alt=\"Edit this at Structured Data on Commons\" src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/20px-OOjs_UI_icon_edit-ltr-progressive.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"10\" height=\"10\" class=\"mw-file-element\" data-file-width=\"20\" data-file-height=\"20\"></a></span>",
+        "categories": "Yelverton, Norfolk|Images from Geograph Britain and Ireland"
+      },
+      "alternatives": [
+        {
+          "file": "Savoy Cabbage wrinkles.jpg",
+          "score": 206,
+          "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/61/Savoy_Cabbage_wrinkles.jpg/1920px-Savoy_Cabbage_wrinkles.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        }
+      ]
+    },
+    {
+      "order": 18,
+      "storyId": "napa-cabbage-4552",
+      "catalogId": "cabbages-chinese-nappa-suey-choy",
+      "title": "Napa cabbage",
+      "query": "napa cabbage head",
+      "selection": {
+        "rawScore": 105,
+        "score": 100,
+        "band": "Essential",
+        "priority": "must-know"
+      },
+      "file": "HK SYP Best of Best Vegetable Chinese cabbage Aug-2012.JPG",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/HK_SYP_Best_of_Best_Vegetable_Chinese_cabbage_Aug-2012.JPG/1920px-HK_SYP_Best_of_Best_Vegetable_Chinese_cabbage_Aug-2012.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "mime": "image/jpeg",
+      "width": 2592,
+      "height": 1944,
+      "thumbWidth": 1600,
+      "thumbHeight": 1200,
+      "score": 208,
+      "sharedAcrossProducts": false,
+      "match": "strict-identity-match",
+      "matchedTargets": [
+        "napa",
+        "cabbage",
+        "chinese"
+      ],
+      "matchedModifiers": [],
+      "identityEvidence": [
+        "cabbage",
+        "napa"
+      ],
+      "sourceEvidence": {
+        "title": "HK SYP Best of Best Vegetable Chinese cabbage Aug-2012.JPG",
+        "objectName": "HK SYP Best of Best Vegetable Chinese cabbage Aug-2012",
+        "description": "<a href=\"https://zh.wikipedia.org/wiki/%E5%A5%BD%E4%B8%8A%E5%A5%BD%E8%86%B3%E5%BA%B7%E8%8F%93%E8%8F%9C%E9%9B%9C%E8%B2%A8%E5%85%AC%E5%8F%B8\" class=\"extiw\" title=\"zh:好上好膳康菓菜雜貨公司\">好上好膳康菓菜雜貨公司</a>",
+        "categories": "Taken with Ricoh R10|Self-published work|Vegetables of Hong Kong|Photographs by Anonymous Hong Kong Photographer 1|Hong Kong photographs taken on 2012-08-26|Best of Best Sin Hong Company|Vegetables in Hong Kong market|Napa cabbage in Hong Kong"
+      },
+      "alternatives": [
+        {
+          "file": "NAPA cabbage at Asian supermarket in New Jersey.jpg",
+          "score": 206,
+          "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/NAPA_cabbage_at_Asian_supermarket_in_New_Jersey.jpg/1920px-NAPA_cabbage_at_Asian_supermarket_in_New_Jersey.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        },
+        {
+          "file": "Starr-070730-7855-Brassica rapa-Napa cabbage-Foodland Pukalani-Maui (24890474225).jpg",
+          "score": 194,
+          "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Starr-070730-7855-Brassica_rapa-Napa_cabbage-Foodland_Pukalani-Maui_%2824890474225%29.jpg/1920px-Starr-070730-7855-Brassica_rapa-Napa_cabbage-Foodland_Pukalani-Maui_%2824890474225%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        },
+        {
+          "file": "Napa cabbage and chili peppers.jpg",
+          "score": 186,
+          "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/Napa_cabbage_and_chili_peppers.jpg/1920px-Napa_cabbage_and_chili_peppers.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        },
+        {
+          "file": "6094Chicken napa cabbage 01.jpg",
+          "score": 180,
+          "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/91/6094Chicken_napa_cabbage_01.jpg/1920px-6094Chicken_napa_cabbage_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        }
+      ]
+    },
+    {
+      "order": 19,
+      "storyId": "carrot-bunch-4094",
+      "catalogId": "carrots-bunch",
+      "title": "Carrot bunch",
+      "query": "carrots bunch leafy tops",
+      "selection": {
+        "rawScore": 105,
+        "score": 100,
+        "band": "Essential",
+        "priority": "must-know"
+      },
+      "file": "Carrots at Ljubljana Central Market.JPG",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Carrots_at_Ljubljana_Central_Market.JPG/1920px-Carrots_at_Ljubljana_Central_Market.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "mime": "image/jpeg",
+      "width": 4592,
+      "height": 2576,
+      "thumbWidth": 1600,
+      "thumbHeight": 898,
+      "score": 51,
+      "sharedAcrossProducts": false,
+      "match": "reviewed-override",
+      "matchedTargets": [
+        "carrots"
+      ],
+      "matchedModifiers": [],
+      "identityEvidence": [
+        "carrots"
+      ],
+      "sourceEvidence": {
+        "title": "Carrots at Ljubljana Central Market.JPG",
+        "objectName": "Carrots at Ljubljana Central Market",
+        "description": "A close-up of bunches of carrots on display at Ljublana Central Market",
+        "categories": "Carrots|Self-published work|Greengrocer stalls at Ljubljana Central Market"
+      },
+      "alternatives": []
+    },
+    {
+      "order": 20,
+      "storyId": "jumbo-carrots-3170",
+      "catalogId": "carrots-jumbo",
+      "title": "Jumbo carrots",
+      "query": "Big Carrot-2356",
+      "selection": {
+        "rawScore": 105,
+        "score": 100,
+        "band": "Essential",
+        "priority": "must-know"
+      },
+      "file": "Big Carrot-2356.jpg",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/Big_Carrot-2356.jpg/1920px-Big_Carrot-2356.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "mime": "image/jpeg",
+      "width": 4645,
+      "height": 2613,
+      "thumbWidth": 1600,
+      "thumbHeight": 900,
+      "score": 115,
+      "sharedAcrossProducts": false,
+      "match": "reviewed-override",
+      "matchedTargets": [
+        "carrots",
+        "big",
+        "carrot",
+        "2356"
+      ],
+      "matchedModifiers": [],
+      "identityEvidence": [
+        "carrot",
+        "carrots"
+      ],
+      "sourceEvidence": {
+        "title": "Big Carrot-2356.jpg",
+        "objectName": "Big Carrot-2356",
+        "description": "Big Carrot. Length: ~ 31 cm",
+        "categories": "Carrots|Self-published work|Files by User:Raymond from de.wikipedia/Objects|Information field template with formatting|Uploaded with LrMediaWiki|Fotosession im Lokal K (Nahrungsmittel und Getränke)|Food on white background|Fotosession im Lokal K (2019)|Roots on white background"
+      },
+      "alternatives": []
+    },
+    {
+      "order": 21,
+      "storyId": "cassava-root-4819",
+      "catalogId": "cassava-root-yucca",
+      "title": "Cassava root",
+      "query": "cassava roots tuber",
+      "selection": {
+        "rawScore": 105,
+        "score": 100,
+        "band": "Essential",
+        "priority": "must-know"
+      },
+      "file": "PeeLawPeeNam Cassava root Yuca Manioc.jpg",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/PeeLawPeeNam_Cassava_root_Yuca_Manioc.jpg/1920px-PeeLawPeeNam_Cassava_root_Yuca_Manioc.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "mime": "image/jpeg",
+      "width": 6000,
+      "height": 6625,
+      "thumbWidth": 1600,
+      "thumbHeight": 1767,
+      "score": 106,
+      "sharedAcrossProducts": false,
+      "match": "reviewed-override",
+      "matchedTargets": [
+        "cassava",
+        "root"
+      ],
+      "matchedModifiers": [
+        "root"
+      ],
+      "identityEvidence": [
+        "cassava",
+        "yuca"
+      ],
+      "sourceEvidence": {
+        "title": "PeeLawPeeNam Cassava root Yuca Manioc.jpg",
+        "objectName": "PeeLawPeeNam Cassava root Yuca Manioc",
+        "description": "cassava root, also known as manioc or yuca. PeeLawPeeNam ပီလောပီနံဥ",
+        "categories": "Manihot esculenta|CC-Zero|Self-published work|Uploaded with Mobile/Android|Photographs taken on 2025-08-18"
+      },
+      "alternatives": []
+    },
+    {
+      "order": 22,
+      "storyId": "collard-greens-4614",
+      "catalogId": "collard-greens",
+      "title": "Collard greens",
+      "query": "Collard green bunches",
+      "selection": {
+        "rawScore": 105,
+        "score": 100,
+        "band": "Essential",
+        "priority": "must-know"
+      },
+      "file": "Collard green bunches.jpg",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/Collard_green_bunches.jpg/1920px-Collard_green_bunches.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "mime": "image/jpeg",
+      "width": 3456,
+      "height": 4608,
+      "thumbWidth": 1600,
+      "thumbHeight": 2133,
+      "score": 103,
+      "sharedAcrossProducts": false,
+      "match": "reviewed-override",
+      "matchedTargets": [
+        "collard",
+        "green",
+        "bunches"
+      ],
+      "matchedModifiers": [],
+      "identityEvidence": [
+        "collard"
+      ],
+      "sourceEvidence": {
+        "title": "Collard green bunches.jpg",
+        "objectName": "Collard green bunches",
+        "description": "Collard green bunches in a grocery store.",
+        "categories": "CC-Zero|Self-published work|Collard-based food"
+      },
+      "alternatives": []
+    },
+    {
+      "order": 23,
+      "storyId": "dill-cucumber-4596",
+      "catalogId": "cucumbers-dill",
+      "title": "Dill cucumber",
+      "query": "pickling dill cucumber",
+      "selection": {
+        "rawScore": 90,
+        "score": 90,
+        "band": "Essential",
+        "priority": "must-know"
+      },
+      "file": "Tanunda Show 2008 dill cucumbers.jpg",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/5/5d/Tanunda_Show_2008_dill_cucumbers.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "mime": "image/jpeg",
+      "width": 640,
+      "height": 480,
+      "thumbWidth": 1600,
+      "thumbHeight": 1200,
+      "score": 199,
+      "sharedAcrossProducts": false,
+      "match": "strict-identity-match",
+      "matchedTargets": [
+        "dill",
+        "cucumber"
+      ],
+      "matchedModifiers": [
+        "dill"
+      ],
+      "identityEvidence": [
+        "cucumber",
+        "cucumbers"
+      ],
+      "sourceEvidence": {
+        "title": "Tanunda Show 2008 dill cucumbers.jpg",
+        "objectName": "Tanunda Show 2008 dill cucumbers",
+        "description": "Entries in the South Australian Dill Cucumber Championships at the 2008 Tanunda Show",
+        "categories": "GFDL|Taken with Panasonic Lumix DMC-FZ20|License migration redundant|Self-published work|Photographs by Fairv8|Dill pickles|Tanunda Show"
+      },
+      "alternatives": [
+        {
+          "file": "Pickled cucumber.jpg",
+          "score": 187,
+          "src": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Pickled_cucumber.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+        }
+      ]
+    },
+    {
+      "order": 24,
+      "storyId": "dandelion-greens-4615",
+      "catalogId": "dandelion",
+      "title": "Dandelion greens",
+      "query": "Dandelion greens.jpg",
+      "selection": {
+        "rawScore": 105,
+        "score": 100,
+        "band": "Essential",
+        "priority": "must-know"
+      },
+      "file": "Dandelion greens for sale at Whole Foods.jpg",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Dandelion_greens_for_sale_at_Whole_Foods.jpg/1920px-Dandelion_greens_for_sale_at_Whole_Foods.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "mime": "image/jpeg",
+      "width": 3024,
+      "height": 4032,
+      "thumbWidth": 1600,
+      "thumbHeight": 2133,
+      "score": 243,
+      "sharedAcrossProducts": false,
+      "match": "strict-identity-match",
+      "matchedTargets": [
+        "dandelion",
+        "greens"
+      ],
+      "matchedModifiers": [
+        "greens"
+      ],
+      "identityEvidence": [
+        "dandelion"
+      ],
+      "sourceEvidence": {
+        "title": "Dandelion greens for sale at Whole Foods.jpg",
+        "objectName": "Dandelion greens for sale at Whole Foods",
+        "description": "Dandelion greens sold at Whole Foods",
+        "categories": "Leaf vegetables|Self-published work|Files with coordinates missing SDC location of creation|Dandelions"
+      },
+      "alternatives": [
+        {
+          "file": "Dandelion greens 2 (2480772700).jpg",
+          "score": 239,
+          "src": "https://upload.wikimedia.org/wikipedia/commons/0/0e/Dandelion_greens_2_%282480772700%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+        },
+        {
+          "file": "Dandelion greens.jpg",
+          "score": 231,
+          "src": "https://upload.wikimedia.org/wikipedia/commons/e/ed/Dandelion_greens.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+        },
+        {
+          "file": "Dandelion greens at market.jpg",
+          "score": 219,
+          "src": "https://upload.wikimedia.org/wikipedia/commons/a/ad/Dandelion_greens_at_market.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+        }
+      ]
+    },
+    {
+      "order": 25,
+      "storyId": "dill-4891",
+      "catalogId": "dill-baby-dill-herbs",
+      "title": "Dill",
+      "query": "fresh dill herb bunch",
+      "selection": {
+        "rawScore": 105,
+        "score": 100,
+        "band": "Essential",
+        "priority": "must-know"
+      },
+      "file": "Kostroma Market 11 Herbs and Dill (4125392684).jpg",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Kostroma_Market_11_Herbs_and_Dill_%284125392684%29.jpg/1920px-Kostroma_Market_11_Herbs_and_Dill_%284125392684%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "mime": "image/jpeg",
+      "width": 3648,
+      "height": 2736,
+      "thumbWidth": 1600,
+      "thumbHeight": 1200,
+      "score": 172,
+      "sharedAcrossProducts": false,
+      "match": "strict-identity-match",
+      "matchedTargets": [
+        "dill"
+      ],
+      "matchedModifiers": [],
+      "identityEvidence": [
+        "dill"
+      ],
+      "sourceEvidence": {
+        "title": "Kostroma Market 11 Herbs and Dill (4125392684).jpg",
+        "objectName": "Kostroma Market 11 Herbs and Dill (4125392684)",
+        "description": "Kostroma Market 11 Herbs and Dill",
+        "categories": "Taken with Panasonic Lumix DMC-FZ28|Flickr images reviewed by File Upload Bot (Magnus Manske)|Markets in Kostroma|Dill spice|Photographs by Michael Clarke"
+      },
+      "alternatives": [
+        {
+          "file": "Dill-spice.jpg",
+          "score": 166,
+          "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/Dill-spice.jpg/1920px-Dill-spice.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        },
+        {
+          "file": "Dill Morgen.jpg",
+          "score": 162,
+          "src": "https://upload.wikimedia.org/wikipedia/commons/9/90/Dill_Morgen.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+        },
+        {
+          "file": "Dill Flowers (259888893).jpeg",
+          "score": 158,
+          "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Dill_Flowers_%28259888893%29.jpeg/1920px-Dill_Flowers_%28259888893%29.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        },
+        {
+          "file": "Dill, Hans-Otto.jpg",
+          "score": 156,
+          "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e3/Dill%2C_Hans-Otto.jpg/1920px-Dill%2C_Hans-Otto.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        }
+      ]
+    },
+    {
+      "order": 26,
+      "storyId": "eddoes-taro-root-4794",
+      "catalogId": "eddoes-taro-root-small",
+      "title": "Eddoes taro root",
+      "query": "eddoe taro root corms",
+      "selection": {
+        "rawScore": 70,
+        "score": 70,
+        "band": "Common",
+        "priority": "common"
+      },
+      "file": "Taro Root, Eddoe or Colocasia Esculenta.jpg",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f3/Taro_Root%2C_Eddoe_or_Colocasia_Esculenta.jpg/1920px-Taro_Root%2C_Eddoe_or_Colocasia_Esculenta.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "mime": "image/jpeg",
+      "width": 7476,
+      "height": 5511,
+      "thumbWidth": 1600,
+      "thumbHeight": 1179,
+      "score": 166,
+      "sharedAcrossProducts": false,
+      "match": "reviewed-override",
+      "matchedTargets": [
+        "taro",
+        "root",
+        "eddoe",
+        "colocasia"
+      ],
+      "matchedModifiers": [
+        "root"
+      ],
+      "identityEvidence": [
+        "eddoe",
+        "taro",
+        "colocasia"
+      ],
+      "sourceEvidence": {
+        "title": "Taro Root, Eddoe or Colocasia Esculenta.jpg",
+        "objectName": "Taro Root, Eddoe or Colocasia Esculenta",
+        "description": "Taro Root, Eddoe or Colocasia Esculenta",
+        "categories": "Colocasia esculenta|CC-Zero|Self-published work|Colocasia esculenta roots|Taro root|Eddoe"
+      },
+      "alternatives": []
+    },
+    {
+      "order": 27,
+      "storyId": "belgian-endive-4543",
+      "catalogId": "endive-belgium",
+      "title": "Belgian endive",
+      "query": "Belgian endive vegetable",
+      "selection": {
+        "rawScore": 105,
+        "score": 100,
+        "band": "Essential",
+        "priority": "must-know"
+      },
+      "file": "Endive p1160063.jpg",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/Endive_p1160063.jpg/1920px-Endive_p1160063.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "mime": "image/jpeg",
+      "width": 2388,
+      "height": 1677,
+      "thumbWidth": 1600,
+      "thumbHeight": 1124,
+      "score": 70,
+      "sharedAcrossProducts": false,
+      "match": "reviewed-override",
+      "matchedTargets": [
+        "belgian",
+        "endive"
+      ],
+      "matchedModifiers": [
+        "belgian"
+      ],
+      "identityEvidence": [
+        "endive",
+        "cichorium"
+      ],
+      "sourceEvidence": {
+        "title": "Endive p1160063.jpg",
+        "objectName": "Endive p1160063",
+        "description": "An <a href=\"//commons.wikimedia.org/wiki/Cichorium_intybus#var._foliosum_Hegi\" title=\"Cichorium intybus\">Belgian endive</a> (chicory).",
+        "categories": "Chicory|GFDL|License migration redundant|Self-published work|Photographs and images by David Monniaux|Photographs taken on 2007-01-21"
+      },
+      "alternatives": []
+    },
+    {
+      "order": 28,
+      "storyId": "gai-lan-3160",
+      "catalogId": "gai-lan-chinese-broccoli",
+      "title": "Gai lan",
+      "query": "gai lan Chinese broccoli vegetable",
+      "selection": {
+        "rawScore": 55,
+        "score": 55,
+        "band": "Useful",
+        "priority": "specialty"
+      },
+      "file": "Gai lan.jpg",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/Gai_lan.jpg/1920px-Gai_lan.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "mime": "image/jpeg",
+      "width": 3337,
+      "height": 2298,
+      "thumbWidth": 1600,
+      "thumbHeight": 1102,
+      "score": 106,
+      "sharedAcrossProducts": false,
+      "match": "reviewed-override",
+      "matchedTargets": [
+        "gai",
+        "lan"
+      ],
+      "matchedModifiers": [
+        "gai"
+      ],
+      "identityEvidence": [
+        "lan"
+      ],
+      "sourceEvidence": {
+        "title": "Gai lan.jpg",
+        "objectName": "Gai lan",
+        "description": "Gai lan",
+        "categories": "Gai lan|Self-published work|Files with coordinates missing SDC location of creation"
+      },
+      "alternatives": []
+    },
+    {
+      "order": 29,
+      "storyId": "horseradish-root-4625",
+      "catalogId": "horseradish",
+      "title": "Horseradish root",
+      "query": "horseradish root vegetable",
+      "selection": {
+        "rawScore": 105,
+        "score": 100,
+        "band": "Essential",
+        "priority": "must-know"
+      },
+      "file": "Horseradish (8047799197).jpg",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Horseradish_%288047799197%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "mime": "image/jpeg",
+      "width": 800,
+      "height": 534,
+      "thumbWidth": 1600,
+      "thumbHeight": 1068,
+      "score": 183,
+      "sharedAcrossProducts": false,
+      "match": "strict-identity-match",
+      "matchedTargets": [
+        "horseradish",
+        "root"
+      ],
+      "matchedModifiers": [
+        "root"
+      ],
+      "identityEvidence": [
+        "horseradish"
+      ],
+      "sourceEvidence": {
+        "title": "Horseradish (8047799197).jpg",
+        "objectName": "Horseradish (8047799197)",
+        "description": "We also made a horseradish gnocchi. Be warned when using fresh horseradish. Like chopping onions or hot peppers, it's a sinus-clearing experience.",
+        "categories": "Taken with Canon EOS 450D|Root vegetables|Flickr images reviewed by FlickreviewR|Files with coordinates missing SDC location of creation"
+      },
+      "alternatives": []
+    },
+    {
+      "order": 30,
+      "storyId": "jicama-4626",
+      "catalogId": "jicama",
+      "title": "Jicama",
+      "query": "jicama root vegetable",
+      "selection": {
+        "rawScore": 90,
+        "score": 90,
+        "band": "Essential",
+        "priority": "must-know"
+      },
+      "file": "Jicama-Jakarta.JPG",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Jicama-Jakarta.JPG/1920px-Jicama-Jakarta.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "mime": "image/jpeg",
+      "width": 2736,
+      "height": 1824,
+      "thumbWidth": 1600,
+      "thumbHeight": 1067,
+      "score": 190,
+      "sharedAcrossProducts": false,
+      "match": "strict-identity-match",
+      "matchedTargets": [
+        "jicama",
+        "root"
+      ],
+      "matchedModifiers": [],
+      "identityEvidence": [
+        "jicama"
+      ],
+      "sourceEvidence": {
+        "title": "Jicama-Jakarta.JPG",
+        "objectName": "Jicama-Jakarta",
+        "description": "Jicama (\"bangkuang\" in Indonesian) in a supermarket in Jakarta, Indonesia",
+        "categories": "Taken with Sony DSC-RX100|Root vegetables|Self-published work|Jicamas|Jicamas in Indonesia"
+      },
+      "alternatives": []
+    },
+    {
+      "order": 31,
+      "storyId": "black-kale-4624",
+      "catalogId": "kale-black",
+      "title": "Black kale",
+      "query": "lacinato black kale leaves",
+      "selection": {
+        "rawScore": 90,
+        "score": 90,
+        "band": "Essential",
+        "priority": "must-know"
+      },
+      "file": "Lacinato Kale.jpg",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/Lacinato_Kale.jpg/1920px-Lacinato_Kale.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "mime": "image/jpeg",
+      "width": 2084,
+      "height": 4624,
+      "thumbWidth": 1600,
+      "thumbHeight": 3550,
+      "score": 73,
+      "sharedAcrossProducts": false,
+      "match": "reviewed-override",
+      "matchedTargets": [
+        "kale",
+        "lacinato"
+      ],
+      "matchedModifiers": [],
+      "identityEvidence": [
+        "kale"
+      ],
+      "sourceEvidence": {
+        "title": "Lacinato Kale.jpg",
+        "objectName": "Lacinato Kale",
+        "description": "lacinato Kale in Kenya",
+        "categories": "CC-Zero|Self-published work|Vegetables of Kenya|Files with coordinates missing SDC location of creation"
+      },
+      "alternatives": []
+    },
+    {
+      "order": 32,
+      "storyId": "green-kohlrabi-4628",
+      "catalogId": "kohlrabi-green",
+      "title": "Green kohlrabi",
+      "query": "green kohlrabi vegetable",
+      "selection": {
+        "rawScore": 105,
+        "score": 100,
+        "band": "Essential",
+        "priority": "must-know"
+      },
+      "file": "GreenKohlrabi.jpg",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/GreenKohlrabi.jpg/1920px-GreenKohlrabi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "mime": "image/jpeg",
+      "width": 3165,
+      "height": 2446,
+      "thumbWidth": 1600,
+      "thumbHeight": 1237,
+      "score": 17,
+      "sharedAcrossProducts": false,
+      "match": "reviewed-override",
+      "matchedTargets": [
+        "green",
+        "kohlrabi"
+      ],
+      "matchedModifiers": [
+        "green"
+      ],
+      "identityEvidence": [
+        "kohlrabi"
+      ],
+      "sourceEvidence": {
+        "title": "GreenKohlrabi.jpg",
+        "objectName": "GreenKohlrabi",
+        "description": "A fresh green whole Kohlrabi (<i>Brassica oleracea var. gongylodes</i>), Gigante cultivar",
+        "categories": "Brassica oleracea var. gongylodes|Taken with Canon EOS 40D|GFDL-1.2"
+      },
+      "alternatives": []
+    },
+    {
+      "order": 33,
+      "storyId": "baby-leeks-4630",
+      "catalogId": "leeks-baby",
+      "title": "Baby leeks",
+      "query": "baby leeks vegetable bunch",
+      "selection": {
+        "rawScore": 105,
+        "score": 100,
+        "band": "Essential",
+        "priority": "must-know"
+      },
+      "file": "Leeks in a bundle.jpg",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Leeks_in_a_bundle.jpg/1920px-Leeks_in_a_bundle.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "mime": "image/jpeg",
+      "width": 3456,
+      "height": 4608,
+      "thumbWidth": 1600,
+      "thumbHeight": 2133,
+      "score": 55,
+      "sharedAcrossProducts": false,
+      "match": "reviewed-override",
+      "matchedTargets": [
+        "leeks",
+        "vegetable"
+      ],
+      "matchedModifiers": [],
+      "identityEvidence": [
+        "leek",
+        "leeks"
+      ],
+      "sourceEvidence": {
+        "title": "Leeks in a bundle.jpg",
+        "objectName": "Leeks in a bundle",
+        "description": "Leeks in a bundle on the shelf of a grocery store.",
+        "categories": "CC-Zero|Self-published work|Unidentified Allium|Leek (vegetable)"
+      },
+      "alternatives": []
+    },
+    {
+      "order": 34,
+      "storyId": "regular-leeks-4629",
+      "catalogId": "leeks-regular",
+      "title": "Regular leeks",
+      "query": "leek vegetable bunch",
+      "selection": {
+        "rawScore": 105,
+        "score": 100,
+        "band": "Essential",
+        "priority": "must-know"
+      },
+      "file": "Leeks on shelf.jpg",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Leeks_on_shelf.jpg/1920px-Leeks_on_shelf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "mime": "image/jpeg",
+      "width": 3456,
+      "height": 4608,
+      "thumbWidth": 1600,
+      "thumbHeight": 2133,
+      "score": 67,
+      "sharedAcrossProducts": false,
+      "match": "reviewed-override",
+      "matchedTargets": [
+        "leeks",
+        "leek",
+        "vegetable"
+      ],
+      "matchedModifiers": [],
+      "identityEvidence": [
+        "leek",
+        "leeks"
+      ],
+      "sourceEvidence": {
+        "title": "Leeks on shelf.jpg",
+        "objectName": "Leeks on shelf",
+        "description": "Leeks on shelf at a grocery store. They are glistening from moisture.",
+        "categories": "CC-Zero|Self-published work|Leek (vegetable)"
+      },
+      "alternatives": []
+    },
+    {
+      "order": 35,
+      "storyId": "boston-butter-lettuce-4632",
+      "catalogId": "lettuce-boston-butter",
+      "title": "Boston butter lettuce",
+      "query": "butterhead Boston lettuce",
+      "selection": {
+        "rawScore": 105,
+        "score": 100,
+        "band": "Essential",
+        "priority": "must-know"
+      },
+      "file": "Lufa Farms Boston Lettuce.jpg",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/Lufa_Farms_Boston_Lettuce.jpg/1920px-Lufa_Farms_Boston_Lettuce.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "mime": "image/jpeg",
+      "width": 2592,
+      "height": 1936,
+      "thumbWidth": 1600,
+      "thumbHeight": 1195,
+      "score": 233,
+      "sharedAcrossProducts": false,
+      "match": "strict-identity-match",
+      "matchedTargets": [
+        "boston",
+        "lettuce"
+      ],
+      "matchedModifiers": [
+        "boston"
+      ],
+      "identityEvidence": [
+        "lettuce"
+      ],
+      "sourceEvidence": {
+        "title": "Lufa Farms Boston Lettuce.jpg",
+        "objectName": "Lufa Farms Boston Lettuce",
+        "description": "Boston Lettuce at <a href=\"https://en.wikipedia.org/wiki/Lufa_Farms\" class=\"extiw\" title=\"en:Lufa Farms\">Lufa Farms</a>, the world’s first commercial rooftop greenhouses. <a href=\"https://en.wikipedia.org/wiki/Montreal\" class=\"extiw\" title=\"en:Montreal\">Montreal</a> neighborhood of <a href=\"https://en.wikipedia.org/wiki/Ahuntsic-Cartierville\" class=\"extiw\" title=\"en:Ahuntsic-Cartierville\">Ahuntsic-Cartierville</a>.",
+        "categories": "Taken with iPhone 4|Lufa Farms|Flickr images verified by UploadWizard|Files with coordinates missing SDC location of creation"
+      },
+      "alternatives": [
+        {
+          "file": "New Lettuce (6193662526).jpg",
+          "score": 213,
+          "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/New_Lettuce_%286193662526%29.jpg/1920px-New_Lettuce_%286193662526%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        },
+        {
+          "file": "Lettuce (4988502260).jpg",
+          "score": 211,
+          "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Lettuce_%284988502260%29.jpg/1920px-Lettuce_%284988502260%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        },
+        {
+          "file": "Lettuce watering in CAR.jpg",
+          "score": 197,
+          "src": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Lettuce_watering_in_CAR.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+        }
+      ]
+    },
+    {
+      "order": 36,
+      "storyId": "escarole-4605",
+      "catalogId": "lettuce-escarole",
+      "title": "Escarole",
+      "query": "escarole lettuce head",
+      "selection": {
+        "rawScore": 105,
+        "score": 100,
+        "band": "Essential",
+        "priority": "must-know"
+      },
+      "file": "Andijvie rand Cichorium endivia.jpg",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Andijvie_rand_Cichorium_endivia.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "mime": "image/jpeg",
+      "width": 1495,
+      "height": 1540,
+      "thumbWidth": 1600,
+      "thumbHeight": 1648,
+      "score": 79,
+      "sharedAcrossProducts": false,
+      "match": "reviewed-override",
+      "matchedTargets": [
+        "cichorium",
+        "endivia",
+        "latifolium"
+      ],
+      "matchedModifiers": [],
+      "identityEvidence": [
+        "cichorium"
+      ],
+      "sourceEvidence": {
+        "title": "Andijvie rand Cichorium endivia.jpg",
+        "objectName": "Andijvie rand Cichorium endivia",
+        "description": "Cichorium endivia",
+        "categories": "Cichorium endivia var. latifolium|GFDL|License migration completed"
+      },
+      "alternatives": []
+    },
+    {
+      "order": 37,
+      "storyId": "green-leaf-lettuce-4076",
+      "catalogId": "lettuce-green-leaf",
+      "title": "Green leaf lettuce",
+      "query": "green leaf lettuce head",
+      "selection": {
+        "rawScore": 105,
+        "score": 100,
+        "band": "Essential",
+        "priority": "must-know"
+      },
+      "file": "Starr 070730-7909 Lactuca sativa.jpg",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/Starr_070730-7909_Lactuca_sativa.jpg/1920px-Starr_070730-7909_Lactuca_sativa.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "mime": "image/jpeg",
+      "width": 2816,
+      "height": 2112,
+      "thumbWidth": 1600,
+      "thumbHeight": 1200,
+      "score": 44,
+      "sharedAcrossProducts": false,
+      "match": "reviewed-override",
+      "matchedTargets": [
+        "green",
+        "leaf",
+        "lettuce"
+      ],
+      "matchedModifiers": [
+        "green",
+        "leaf"
+      ],
+      "identityEvidence": [
+        "lettuce"
+      ],
+      "sourceEvidence": {
+        "title": "Starr 070730-7909 Lactuca sativa.jpg",
+        "objectName": "Starr 070730-7909 Lactuca sativa",
+        "description": "Lactuca sativa (green leaf variety). Location: Maui, Foodland Pukalani",
+        "categories": "Lettuce|Taken with Sony DSC-H2|Images from Forest & Kim Starr"
+      },
+      "alternatives": []
+    },
+    {
+      "order": 38,
+      "storyId": "red-leaf-lettuce-4075",
+      "catalogId": "lettuce-red-leaf",
+      "title": "Red leaf lettuce",
+      "query": "red leaf lettuce head",
+      "selection": {
+        "rawScore": 105,
+        "score": 100,
+        "band": "Essential",
+        "priority": "must-know"
+      },
+      "file": "Starr 070730-7907 Lactuca sativa.jpg",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/Starr_070730-7907_Lactuca_sativa.jpg/1920px-Starr_070730-7907_Lactuca_sativa.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "mime": "image/jpeg",
+      "width": 2816,
+      "height": 2112,
+      "thumbWidth": 1600,
+      "thumbHeight": 1200,
+      "score": 44,
+      "sharedAcrossProducts": false,
+      "match": "reviewed-override",
+      "matchedTargets": [
+        "red",
+        "leaf",
+        "lettuce"
+      ],
+      "matchedModifiers": [
+        "red",
+        "leaf"
+      ],
+      "identityEvidence": [
+        "lettuce"
+      ],
+      "sourceEvidence": {
+        "title": "Starr 070730-7907 Lactuca sativa.jpg",
+        "objectName": "Starr 070730-7907 Lactuca sativa",
+        "description": "Lactuca sativa (red leaf variety). Location: Maui, Foodland Pukalani",
+        "categories": "Lettuce|Taken with Sony DSC-H2|Images from Forest & Kim Starr"
+      },
+      "alternatives": []
+    },
+    {
+      "order": 39,
+      "storyId": "lotus-root-3099",
+      "catalogId": "lotus-root",
+      "title": "Lotus root",
+      "query": "lotus root vegetable sliced",
+      "selection": {
+        "rawScore": 70,
+        "score": 70,
+        "band": "Common",
+        "priority": "common"
+      },
+      "file": "Lotus root.jpg",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/2/27/Lotus_root.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "mime": "image/jpeg",
+      "width": 1200,
+      "height": 935,
+      "thumbWidth": 1600,
+      "thumbHeight": 1247,
+      "score": 247,
+      "sharedAcrossProducts": false,
+      "match": "strict-identity-match",
+      "matchedTargets": [
+        "lotus",
+        "root",
+        "sliced"
+      ],
+      "matchedModifiers": [
+        "root"
+      ],
+      "identityEvidence": [
+        "lotus"
+      ],
+      "sourceEvidence": {
+        "title": "Lotus root.jpg",
+        "objectName": "Lotus root",
+        "description": "Lotus rhizome (Nelumbo nucifera)",
+        "categories": "Nelumbo nucifera rhizome|Holes|Flickr images uploaded by Flickr upload bot|Sliced vegetables"
+      },
+      "alternatives": [
+        {
+          "file": "Pickled lotus root.jpg",
+          "score": 221,
+          "src": "https://upload.wikimedia.org/wikipedia/commons/0/03/Pickled_lotus_root.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+        }
+      ]
+    },
+    {
+      "order": 40,
+      "storyId": "mint-bunch-4896",
+      "catalogId": "mint-bunch-herbs",
+      "title": "Mint bunch",
+      "query": "fresh mint leaves bunch",
+      "selection": {
+        "rawScore": 105,
+        "score": 100,
+        "band": "Essential",
+        "priority": "must-know"
+      },
+      "file": "Liat Portal for Foodie Disorder - Fresh Mint from San Francisco Farmers Market.jpg",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/Liat_Portal_for_Foodie_Disorder_-_Fresh_Mint_from_San_Francisco_Farmers_Market.jpg/1920px-Liat_Portal_for_Foodie_Disorder_-_Fresh_Mint_from_San_Francisco_Farmers_Market.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "mime": "image/jpeg",
+      "width": 3024,
+      "height": 4032,
+      "thumbWidth": 1600,
+      "thumbHeight": 2133,
+      "score": 105,
+      "sharedAcrossProducts": false,
+      "match": "reviewed-override",
+      "matchedTargets": [
+        "mint",
+        "bunch",
+        "fresh",
+        "leaves"
+      ],
+      "matchedModifiers": [],
+      "identityEvidence": [
+        "mint"
+      ],
+      "sourceEvidence": {
+        "title": "Liat Portal for Foodie Disorder - Fresh Mint from San Francisco Farmers Market.jpg",
+        "objectName": "Liat Portal for Foodie Disorder - Fresh Mint from San Francisco Farmers Market",
+        "description": "High-quality photograph by Liat Portal showing a fresh bunch of mint leaves purchased at a San Francisco farmers' market. This image documents mint as part of the Foodie Disorder global food culture archive.",
+        "categories": "Food photography|Self-published work|Files with coordinates missing SDC location of creation|Mint"
+      },
+      "alternatives": []
+    },
+    {
+      "order": 41,
+      "storyId": "oyster-mushrooms-4649",
+      "catalogId": "mushrooms-oyster-bulk-handwritten",
+      "title": "Oyster mushrooms",
+      "query": "oyster mushrooms Pleurotus ostreatus",
+      "selection": {
+        "rawScore": 90,
+        "score": 90,
+        "band": "Essential",
+        "priority": "must-know"
+      },
+      "file": "Oyster mushrooms at the Santa Fe Farmers' Market (15450536494).jpg",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/Oyster_mushrooms_at_the_Santa_Fe_Farmers%27_Market_%2815450536494%29.jpg/1920px-Oyster_mushrooms_at_the_Santa_Fe_Farmers%27_Market_%2815450536494%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "mime": "image/jpeg",
+      "width": 4288,
+      "height": 2848,
+      "thumbWidth": 1600,
+      "thumbHeight": 1063,
+      "score": 114,
+      "sharedAcrossProducts": false,
+      "match": "reviewed-override",
+      "matchedTargets": [
+        "oyster",
+        "mushrooms"
+      ],
+      "matchedModifiers": [
+        "oyster"
+      ],
+      "identityEvidence": [
+        "mushrooms"
+      ],
+      "sourceEvidence": {
+        "title": "Oyster mushrooms at the Santa Fe Farmers' Market (15450536494).jpg",
+        "objectName": "Oyster mushrooms at the Santa Fe Farmers' Market (15450536494)",
+        "description": "Santa Fe, New Mexico.",
+        "categories": "Files with coordinates missing SDC location of creation|Flickr images reviewed by FlickreviewR 2|Santa Fe Farmers Market"
+      },
+      "alternatives": []
+    },
+    {
+      "order": 42,
+      "storyId": "pickling-onions-4661",
+      "catalogId": "onions-pickling",
+      "title": "Pickling onions",
+      "query": "pickling onions small bulbs",
+      "selection": {
+        "rawScore": 90,
+        "score": 90,
+        "band": "Essential",
+        "priority": "must-know"
+      },
+      "file": "Pearl onions (5313561388).jpg",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/Pearl_onions_%285313561388%29.jpg/1920px-Pearl_onions_%285313561388%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "mime": "image/jpeg",
+      "width": 2816,
+      "height": 1880,
+      "thumbWidth": 1600,
+      "thumbHeight": 1068,
+      "score": 43,
+      "sharedAcrossProducts": false,
+      "match": "reviewed-override",
+      "matchedTargets": [
+        "onions"
+      ],
+      "matchedModifiers": [],
+      "identityEvidence": [
+        "onion",
+        "onions"
+      ],
+      "sourceEvidence": {
+        "title": "Pearl onions (5313561388).jpg",
+        "objectName": "Pearl onions (5313561388)",
+        "description": "Pearl onions",
+        "categories": "Taken with Canon EOS 400D|Photos uploaded from Flickr by Fæ using a script|Flickr images reviewed by File Upload Bot (Magnus Manske)|Photos by Jules Morgan|Onions in Canada|December 2010 in Montreal|Onion textures|Pearl onion"
+      },
+      "alternatives": []
+    },
+    {
+      "order": 43,
+      "storyId": "spanish-onion-4093",
+      "catalogId": "onions-spanish",
+      "title": "Spanish onion",
+      "query": "Spanish onion bulb",
+      "selection": {
+        "rawScore": 105,
+        "score": 100,
+        "band": "Essential",
+        "priority": "must-know"
+      },
+      "file": "Jumbo Spanish onions for sale in supermarket.JPG",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/9/97/Jumbo_Spanish_onions_for_sale_in_supermarket.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "mime": "image/jpeg",
+      "width": 1483,
+      "height": 1152,
+      "thumbWidth": 1600,
+      "thumbHeight": 1243,
+      "score": 215,
+      "sharedAcrossProducts": false,
+      "match": "strict-identity-match",
+      "matchedTargets": [
+        "spanish",
+        "onion"
+      ],
+      "matchedModifiers": [
+        "spanish"
+      ],
+      "identityEvidence": [
+        "onion",
+        "onions"
+      ],
+      "sourceEvidence": {
+        "title": "Jumbo Spanish onions for sale in supermarket.JPG",
+        "objectName": "Jumbo Spanish onions for sale in supermarket",
+        "description": "Jumbo Spanish onions.",
+        "categories": "Taken with Sony DSC-W530|CC-Zero|Food of Spain|Photographs with aspect ratio of 9:7|Self-published work|Interiors of supermarkets in Spain|Onion bulbs|Onion textures|Spanish onion"
+      },
+      "alternatives": [
+        {
+          "file": "Spanish Onions - The Fruit Bowl, Brighton 2024-03-21.jpg",
+          "score": 133,
+          "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/Spanish_Onions_-_The_Fruit_Bowl%2C_Brighton_2024-03-21.jpg/1920px-Spanish_Onions_-_The_Fruit_Bowl%2C_Brighton_2024-03-21.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        }
+      ]
+    },
+    {
+      "order": 44,
+      "storyId": "sweet-onion-4159",
+      "catalogId": "onions-sweet",
+      "title": "Sweet onion",
+      "query": "sweet onion bulb Vidalia",
+      "selection": {
+        "rawScore": 105,
+        "score": 100,
+        "band": "Essential",
+        "priority": "must-know"
+      },
+      "file": "Sweet onions 1.jpg",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/2/25/Sweet_onions_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "mime": "image/jpeg",
+      "width": 500,
+      "height": 375,
+      "thumbWidth": 1600,
+      "thumbHeight": 1200,
+      "score": 70,
+      "sharedAcrossProducts": false,
+      "match": "reviewed-override",
+      "matchedTargets": [
+        "sweet",
+        "onion"
+      ],
+      "matchedModifiers": [
+        "sweet"
+      ],
+      "identityEvidence": [
+        "onion",
+        "onions"
+      ],
+      "sourceEvidence": {
+        "title": "Sweet onions 1.jpg",
+        "objectName": "Sweet onions 1",
+        "description": "",
+        "categories": "Files with no machine-readable author|Files with no machine-readable source|Media missing infobox template|Flickr images reviewed by trusted users|Onion bulbs"
+      },
+      "alternatives": []
+    },
+    {
+      "order": 45,
+      "storyId": "white-onion-4663",
+      "catalogId": "onions-white-bulk",
+      "title": "White onion",
+      "query": "white onion bulb",
+      "selection": {
+        "rawScore": 105,
+        "score": 100,
+        "band": "Essential",
+        "priority": "must-know"
+      },
+      "file": "White onion bulb sprouting1.jpg",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/b/b8/White_onion_bulb_sprouting1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "mime": "image/jpeg",
+      "width": 1892,
+      "height": 2137,
+      "thumbWidth": 1600,
+      "thumbHeight": 1807,
+      "score": 269,
+      "sharedAcrossProducts": false,
+      "match": "strict-identity-match",
+      "matchedTargets": [
+        "white",
+        "onion",
+        "bulb"
+      ],
+      "matchedModifiers": [
+        "white"
+      ],
+      "identityEvidence": [
+        "onion",
+        "onions"
+      ],
+      "sourceEvidence": {
+        "title": "White onion bulb sprouting1.jpg",
+        "objectName": "White onion bulb sprouting1",
+        "description": "",
+        "categories": "Files with no machine-readable author|Files with no machine-readable source|Sprouts|Media missing infobox template|Photographs with aspect ratio of 8:9|Self-published work|White onions|Onion bulbs"
+      },
+      "alternatives": [
+        {
+          "file": "White onion bulb sprouting2.jpg",
+          "score": 267,
+          "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/White_onion_bulb_sprouting2.jpg/1920px-White_onion_bulb_sprouting2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        },
+        {
+          "file": "White onion cross section.jpg",
+          "score": 241,
+          "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/White_onion_cross_section.jpg/1920px-White_onion_cross_section.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        }
+      ]
+    },
+    {
+      "order": 46,
+      "storyId": "curly-parsley-4899",
+      "catalogId": "parsley-herbs",
+      "title": "Curly parsley",
+      "query": "curly parsley bunch",
+      "selection": {
+        "rawScore": 105,
+        "score": 100,
+        "band": "Essential",
+        "priority": "must-know"
+      },
+      "file": "Organic curly parsley.jpg",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/Organic_curly_parsley.jpg/1920px-Organic_curly_parsley.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "mime": "image/jpeg",
+      "width": 4608,
+      "height": 3456,
+      "thumbWidth": 1600,
+      "thumbHeight": 1200,
+      "score": 241,
+      "sharedAcrossProducts": false,
+      "match": "strict-identity-match",
+      "matchedTargets": [
+        "curly",
+        "parsley"
+      ],
+      "matchedModifiers": [
+        "curly"
+      ],
+      "identityEvidence": [
+        "parsley"
+      ],
+      "sourceEvidence": {
+        "title": "Organic curly parsley.jpg",
+        "objectName": "Organic curly parsley",
+        "description": "Organic curly parsley on a shelf at a grocery store.",
+        "categories": "Petroselinum crispum|CC-Zero|Herbs|Self-published work"
+      },
+      "alternatives": []
+    },
+    {
+      "order": 47,
+      "storyId": "italian-parsley-4901",
+      "catalogId": "parsley-italian-herbs",
+      "title": "Italian parsley",
+      "query": "flat leaf Italian parsley bunch",
+      "selection": {
+        "rawScore": 90,
+        "score": 90,
+        "band": "Essential",
+        "priority": "must-know"
+      },
+      "file": "Italian flat leaf parsley.jpg",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/22/Italian_flat_leaf_parsley.jpg/1920px-Italian_flat_leaf_parsley.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "mime": "image/jpeg",
+      "width": 4608,
+      "height": 3456,
+      "thumbWidth": 1600,
+      "thumbHeight": 1200,
+      "score": 293,
+      "sharedAcrossProducts": false,
+      "match": "strict-identity-match",
+      "matchedTargets": [
+        "italian",
+        "parsley",
+        "flat",
+        "leaf"
+      ],
+      "matchedModifiers": [
+        "italian"
+      ],
+      "identityEvidence": [
+        "parsley"
+      ],
+      "sourceEvidence": {
+        "title": "Italian flat leaf parsley.jpg",
+        "objectName": "Italian flat leaf parsley",
+        "description": "Italian flat leaf parsley glistening from moisture. It is on a shelf at a grocery store.",
+        "categories": "Petroselinum crispum|CC-Zero|Herbs|Self-published work"
+      },
+      "alternatives": [
+        {
+          "file": "Italian parsley on my balcony.JPG",
+          "score": 241,
+          "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/Italian_parsley_on_my_balcony.JPG/1920px-Italian_parsley_on_my_balcony.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        }
+      ]
+    },
+    {
+      "order": 48,
+      "storyId": "parsley-root-4671",
+      "catalogId": "parsley-root-herbs",
+      "title": "Parsley root",
+      "query": "Petersilienwurzel parsley root",
+      "selection": {
+        "rawScore": 105,
+        "score": 100,
+        "band": "Essential",
+        "priority": "must-know"
+      },
+      "file": "Petersilienwurzel (fcm).jpg",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/Petersilienwurzel_%28fcm%29.jpg/1920px-Petersilienwurzel_%28fcm%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "mime": "image/jpeg",
+      "width": 3704,
+      "height": 2184,
+      "thumbWidth": 1600,
+      "thumbHeight": 943,
+      "score": 55,
+      "sharedAcrossProducts": false,
+      "match": "reviewed-override",
+      "matchedTargets": [
+        "petersilienwurzel"
+      ],
+      "matchedModifiers": [],
+      "identityEvidence": "petersilienwurzel",
+      "sourceEvidence": {
+        "title": "Petersilienwurzel (fcm).jpg",
+        "objectName": "Petersilienwurzel (fcm)",
+        "description": "<br>\n<ul><li>Bildinhalt: Petersilienwurzel mit Messer zum Größenvergleich, grauer Hintergrund.</li>\n<li>Aufnahmeort: Mannheim, Deutschland</li></ul>",
+        "categories": "Taken with Canon PowerShot SX30 IS|Self-published work|Images by Frank C. Müller|Photographs taken on 2011-12-31|Food on gray background|Petroselinum crispum roots"
+      },
+      "alternatives": []
+    },
+    {
+      "order": 49,
+      "storyId": "green-peas-4674",
+      "catalogId": "peas-green-english-bulk",
+      "title": "Green peas",
+      "query": "green English peas pods",
+      "selection": {
+        "rawScore": 105,
+        "score": 100,
+        "band": "Essential",
+        "priority": "must-know"
+      },
+      "file": "Green peas 8927.jpg",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/Green_peas_8927.jpg/1920px-Green_peas_8927.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "mime": "image/jpeg",
+      "width": 4928,
+      "height": 3264,
+      "thumbWidth": 1600,
+      "thumbHeight": 1060,
+      "score": 130,
+      "sharedAcrossProducts": false,
+      "match": "reviewed-override",
+      "matchedTargets": [
+        "green",
+        "peas",
+        "pisum",
+        "sativum"
+      ],
+      "matchedModifiers": [
+        "green"
+      ],
+      "identityEvidence": [
+        "pea",
+        "peas",
+        "pisum"
+      ],
+      "sourceEvidence": {
+        "title": "Green peas 8927.jpg",
+        "objectName": "Green peas 8927",
+        "description": "Green peas",
+        "categories": "Taken with Nikon D7000|Self-published work|Green peas|Pisum sativum (fruit)|Green pea textures|Images by Amada44"
+      },
+      "alternatives": []
+    },
+    {
+      "order": 50,
+      "storyId": "snow-peas-4092",
+      "catalogId": "peas-snow-bulk",
+      "title": "Snow peas",
+      "query": "snow peas pods",
+      "selection": {
+        "rawScore": 105,
+        "score": 100,
+        "band": "Essential",
+        "priority": "must-know"
+      },
+      "file": "Snow peas.jpg",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/29/Snow_peas.jpg/1920px-Snow_peas.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "mime": "image/jpeg",
+      "width": 2700,
+      "height": 1800,
+      "thumbWidth": 1600,
+      "thumbHeight": 1067,
+      "score": 239,
+      "sharedAcrossProducts": false,
+      "match": "strict-identity-match",
+      "matchedTargets": [
+        "snow",
+        "peas"
+      ],
+      "matchedModifiers": [
+        "snow"
+      ],
+      "identityEvidence": [
+        "peas",
+        "pisum"
+      ],
+      "sourceEvidence": {
+        "title": "Snow peas.jpg",
+        "objectName": "Snow peas",
+        "description": "<br>\n<dl><dd><b>Title</b> Snow Peas</dd>\n<dd><b>Description</b> A group of four snow peas.</dd></dl>",
+        "categories": "Pisum sativum var. macrocarpon|National Institutes of Health images|PD-author|Images uploaded by Fæ|PD US NIH|CC-PD-Mark|Media from National Cancer Institute Visuals Online|Media from National Cancer Institute Visuals Online with known IDs"
+      },
+      "alternatives": [
+        {
+          "file": "Veal and snow peas.jpg",
+          "score": 235,
+          "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/Veal_and_snow_peas.jpg/1920px-Veal_and_snow_peas.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        },
+        {
+          "file": "Snow peas on a shelf.jpg",
+          "score": 233,
+          "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4f/Snow_peas_on_a_shelf.jpg/1920px-Snow_peas_on_a_shelf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        },
+        {
+          "file": "Snow peas (4348187932).jpg",
+          "score": 231,
+          "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b2/Snow_peas_%284348187932%29.jpg/1920px-Snow_peas_%284348187932%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        },
+        {
+          "file": "Starr-070730-7867-Pisum sativum var macrocarpum-snow peas-Foodland Pukalani-Maui (24522893769).jpg",
+          "score": 229,
+          "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/Starr-070730-7867-Pisum_sativum_var_macrocarpum-snow_peas-Foodland_Pukalani-Maui_%2824522893769%29.jpg/1920px-Starr-070730-7867-Pisum_sativum_var_macrocarpum-snow_peas-Foodland_Pukalani-Maui_%2824522893769%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        }
+      ]
+    },
+    {
+      "order": 51,
+      "storyId": "sugar-snap-peas-4675",
+      "catalogId": "peas-sugar-snap-bulk",
+      "title": "Sugar snap peas",
+      "query": "sugar snap peas pods",
+      "selection": {
+        "rawScore": 105,
+        "score": 100,
+        "band": "Essential",
+        "priority": "must-know"
+      },
+      "file": "Sugar Snap Peas or ervilhas (20818785979).jpg",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/Sugar_Snap_Peas_or_ervilhas_%2820818785979%29.jpg/1920px-Sugar_Snap_Peas_or_ervilhas_%2820818785979%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "mime": "image/jpeg",
+      "width": 4608,
+      "height": 3456,
+      "thumbWidth": 1600,
+      "thumbHeight": 1200,
+      "score": 169,
+      "sharedAcrossProducts": false,
+      "match": "reviewed-override",
+      "matchedTargets": [
+        "sugar",
+        "snap",
+        "peas"
+      ],
+      "matchedModifiers": [
+        "sugar",
+        "snap"
+      ],
+      "identityEvidence": [
+        "peas"
+      ],
+      "sourceEvidence": {
+        "title": "Sugar Snap Peas or ervilhas (20818785979).jpg",
+        "objectName": "Sugar Snap Peas or ervilhas (20818785979)",
+        "description": "Sugar Snap Peas or ervilhas",
+        "categories": "Diamantina|Flickr images reviewed by FlickreviewR 2|Unidentified Fabales in Brazil"
+      },
+      "alternatives": []
+    },
+    {
+      "order": 52,
+      "storyId": "green-finger-pepper-4707",
+      "catalogId": "peppers-green-finger-hot",
+      "title": "Green finger pepper",
+      "query": "green finger chilli pepper",
+      "selection": {
+        "rawScore": 105,
+        "score": 100,
+        "band": "Essential",
+        "priority": "must-know"
+      },
+      "file": "Bhiwapur Chilli - Green Unripened.jpg",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Bhiwapur_Chilli_-_Green_Unripened.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "mime": "image/jpeg",
+      "width": 1200,
+      "height": 1600,
+      "thumbWidth": 1600,
+      "thumbHeight": 2133,
+      "score": 100,
+      "sharedAcrossProducts": false,
+      "match": "reviewed-override",
+      "matchedTargets": [
+        "green",
+        "chilli"
+      ],
+      "matchedModifiers": [
+        "green"
+      ],
+      "identityEvidence": [
+        "chilli"
+      ],
+      "sourceEvidence": {
+        "title": "Bhiwapur Chilli - Green Unripened.jpg",
+        "objectName": "Bhiwapur Chilli - Green Unripened",
+        "description": "Bhiwapur Chilli - Green Unripened",
+        "categories": "CC-Zero|Bhiwapur chilli"
+      },
+      "alternatives": []
+    },
+    {
+      "order": 53,
+      "storyId": "green-thai-chili-58278",
+      "catalogId": "peppers-green-thai-chilli",
+      "title": "Green Thai chili",
+      "query": "green Thai chili peppers",
+      "selection": {
+        "rawScore": 70,
+        "score": 70,
+        "band": "Common",
+        "priority": "common"
+      },
+      "file": "Birdchili.jpg",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Birdchili.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "mime": "image/jpeg",
+      "width": 811,
+      "height": 787,
+      "thumbWidth": 1600,
+      "thumbHeight": 1553,
+      "score": 11,
+      "sharedAcrossProducts": false,
+      "match": "reviewed-override",
+      "matchedTargets": [
+        "green",
+        "chili",
+        "peppers"
+      ],
+      "matchedModifiers": [
+        "green"
+      ],
+      "identityEvidence": [
+        "peppers",
+        "chili",
+        "capsicum"
+      ],
+      "sourceEvidence": {
+        "title": "Birdchili.jpg",
+        "objectName": "Birdchili",
+        "description": "<p>Grüner Bird Chili aus Thailand\n</p>\n<ul><li>Fotograf: <a href=\"https://de.wikipedia.org/wiki/Benutzer:Oeschi\" class=\"extiw\" title=\"de:Benutzer:Oeschi\">Oeschi</a></li>\n<li>Lizenz: <a href=\"https://de.wikipedia.org/wiki/GFDL\" class=\"extiw\" title=\"de:GFDL\">de:GFDL</a></li></ul>",
+        "categories": "Capsicum frutescens|GFDL|License migration completed|Green chili peppers|Bird's eye chillies in Thailand"
+      },
+      "alternatives": []
+    },
+    {
+      "order": 54,
+      "storyId": "red-long-pepper-4711",
+      "catalogId": "peppers-red-long",
+      "title": "Red long pepper",
+      "query": "long red chili pepper",
+      "selection": {
+        "rawScore": 105,
+        "score": 100,
+        "band": "Essential",
+        "priority": "must-know"
+      },
+      "file": "Long hot red chili pepper.jpg",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/Long_hot_red_chili_pepper.jpg/1920px-Long_hot_red_chili_pepper.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "mime": "image/jpeg",
+      "width": 2088,
+      "height": 2094,
+      "thumbWidth": 1600,
+      "thumbHeight": 1605,
+      "score": 300,
+      "sharedAcrossProducts": false,
+      "match": "strict-identity-match",
+      "matchedTargets": [
+        "red",
+        "long",
+        "pepper",
+        "chili"
+      ],
+      "matchedModifiers": [
+        "red",
+        "long"
+      ],
+      "identityEvidence": [
+        "pepper",
+        "peppers",
+        "chili"
+      ],
+      "sourceEvidence": {
+        "title": "Long hot red chili pepper.jpg",
+        "objectName": "Long hot red chili pepper",
+        "description": "also known as red rocket and Cheyenne",
+        "categories": "Chili peppers|Chili pepper cultivars|Self-published work|Uploaded with Mobile/Android|Uploaded with Mobile/Android (Nov 2017-Aug 2019)|Files with coordinates missing SDC location of creation|United Arab Emirates photographs taken on 2018-07-15"
+      },
+      "alternatives": [
+        {
+          "file": "Red chili before sunlight in char of Sirajganj 01.jpg",
+          "score": 227,
+          "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/Red_chili_before_sunlight_in_char_of_Sirajganj_01.jpg/1920px-Red_chili_before_sunlight_in_char_of_Sirajganj_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        },
+        {
+          "file": "Red chili before sunlight in char of Sirajganj 02.jpg",
+          "score": 225,
+          "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/Red_chili_before_sunlight_in_char_of_Sirajganj_02.jpg/1920px-Red_chili_before_sunlight_in_char_of_Sirajganj_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        },
+        {
+          "file": "Red chili before sunlight in char of Sirajganj 03.jpg",
+          "score": 223,
+          "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/Red_chili_before_sunlight_in_char_of_Sirajganj_03.jpg/1920px-Red_chili_before_sunlight_in_char_of_Sirajganj_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        },
+        {
+          "file": "A Fat Red Cayenne Pepper.jpg",
+          "score": 163,
+          "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/A_Fat_Red_Cayenne_Pepper.jpg/1920px-A_Fat_Red_Cayenne_Pepper.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        }
+      ]
+    },
+    {
+      "order": 55,
+      "storyId": "scotch-bonnet-pepper-433",
+      "catalogId": "peppers-scotch-bonnet-handwritten",
+      "title": "Scotch bonnet pepper",
+      "query": "Scotch bonnet pepper fruit",
+      "selection": {
+        "rawScore": 105,
+        "score": 100,
+        "band": "Essential",
+        "priority": "must-know"
+      },
+      "file": "Jamaican scotch bonnet peppers.jpg",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/Jamaican_scotch_bonnet_peppers.jpg/1920px-Jamaican_scotch_bonnet_peppers.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "mime": "image/jpeg",
+      "width": 2498,
+      "height": 2498,
+      "thumbWidth": 1600,
+      "thumbHeight": 1600,
+      "score": 163,
+      "sharedAcrossProducts": false,
+      "match": "reviewed-override",
+      "matchedTargets": [
+        "scotch",
+        "bonnet",
+        "capsicum",
+        "chinense"
+      ],
+      "matchedModifiers": [
+        "scotch",
+        "bonnet"
+      ],
+      "identityEvidence": [
+        "peppers",
+        "capsicum"
+      ],
+      "sourceEvidence": {
+        "title": "Jamaican scotch bonnet peppers.jpg",
+        "objectName": "Jamaican scotch bonnet peppers",
+        "description": "Scotch bonnet peppers indigenous to Jamaica.",
+        "categories": "Capsicum chinense|Self-published work|Jerk seasoning"
+      },
+      "alternatives": []
+    },
+    {
+      "order": 56,
+      "storyId": "yellow-hot-pepper-4690",
+      "catalogId": "peppers-yellow-hot",
+      "title": "Yellow hot pepper",
+      "query": "yellow chili pepper fruit",
+      "selection": {
+        "rawScore": 105,
+        "score": 100,
+        "band": "Essential",
+        "priority": "must-know"
+      },
+      "file": "Long yellow chili pepper.jpg",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/91/Long_yellow_chili_pepper.jpg/1920px-Long_yellow_chili_pepper.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "mime": "image/jpeg",
+      "width": 3024,
+      "height": 4032,
+      "thumbWidth": 1600,
+      "thumbHeight": 2133,
+      "score": 136,
+      "sharedAcrossProducts": false,
+      "match": "reviewed-override",
+      "matchedTargets": [
+        "yellow",
+        "pepper",
+        "chili"
+      ],
+      "matchedModifiers": [
+        "yellow"
+      ],
+      "identityEvidence": [
+        "pepper",
+        "peppers",
+        "chili"
+      ],
+      "sourceEvidence": {
+        "title": "Long yellow chili pepper.jpg",
+        "objectName": "Long yellow chili pepper",
+        "description": "in Dubai",
+        "categories": "Chili peppers|Self-published work|Uploaded with Mobile/Android|Uploaded with Mobile/Android (Nov 2017-Aug 2019)|Files with coordinates missing SDC location of creation|United Arab Emirates photographs taken on 2018-07-17"
+      },
+      "alternatives": []
+    },
+    {
+      "order": 57,
+      "storyId": "radicchio-4738",
+      "catalogId": "radicchio",
+      "title": "Radicchio",
+      "query": "radicchio head vegetable",
+      "selection": {
+        "rawScore": 105,
+        "score": 100,
+        "band": "Essential",
+        "priority": "must-know"
+      },
+      "file": "Radicchio.jpg",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Radicchio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "mime": "image/jpeg",
+      "width": 1024,
+      "height": 768,
+      "thumbWidth": 1600,
+      "thumbHeight": 1200,
+      "score": 37,
+      "sharedAcrossProducts": false,
+      "match": "reviewed-override",
+      "matchedTargets": [
+        "radicchio"
+      ],
+      "matchedModifiers": [],
+      "identityEvidence": [
+        "radicchio"
+      ],
+      "sourceEvidence": {
+        "title": "Radicchio.jpg",
+        "objectName": "Radicchio",
+        "description": "<p>Radicchio\n</p>\n<ul><li>Autore: Paolo Ciarlantini</li></ul>",
+        "categories": "Taken with Canon PowerShot A520|Files with no machine-readable source|Radicchio di Chioggia|Self-published work|Assumed own work|Photographs taken on 2006-10-26"
+      },
+      "alternatives": []
+    },
+    {
+      "order": 58,
+      "storyId": "radish-bunch-4089",
+      "catalogId": "radishes-bunch",
+      "title": "Radish bunch",
+      "query": "red radish bunch leaves",
+      "selection": {
+        "rawScore": 105,
+        "score": 100,
+        "band": "Essential",
+        "priority": "must-know"
+      },
+      "file": "Radish bunches.jpg",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a9/Radish_bunches.jpg/1920px-Radish_bunches.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "mime": "image/jpeg",
+      "width": 4608,
+      "height": 3456,
+      "thumbWidth": 1600,
+      "thumbHeight": 1200,
+      "score": 55,
+      "sharedAcrossProducts": false,
+      "match": "reviewed-override",
+      "matchedTargets": [
+        "radish",
+        "red"
+      ],
+      "matchedModifiers": [],
+      "identityEvidence": [
+        "radish",
+        "radishes"
+      ],
+      "sourceEvidence": {
+        "title": "Radish bunches.jpg",
+        "objectName": "Radish bunches",
+        "description": "Bunches of red radishes in a grocery store.",
+        "categories": "Radishes|CC-Zero|Self-published work"
+      },
+      "alternatives": []
+    },
+    {
+      "order": 59,
+      "storyId": "rapini-4547",
+      "catalogId": "rapini-saag",
+      "title": "Rapini",
+      "query": "rapini broccoli rabe bunch",
+      "selection": {
+        "rawScore": 105,
+        "score": 100,
+        "band": "Essential",
+        "priority": "must-know"
+      },
+      "file": "Rapini.jpg",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/7/76/Rapini.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "mime": "image/jpeg",
+      "width": 500,
+      "height": 567,
+      "thumbWidth": 1600,
+      "thumbHeight": 1814,
+      "score": 49,
+      "sharedAcrossProducts": false,
+      "match": "reviewed-override",
+      "matchedTargets": [
+        "rapini",
+        "rapa",
+        "brassica"
+      ],
+      "matchedModifiers": [],
+      "identityEvidence": [
+        "rapini"
+      ],
+      "sourceEvidence": {
+        "title": "Rapini.jpg",
+        "objectName": "Rapini",
+        "description": "Picture of <a href=\"https://en.wikipedia.org/wiki/Rapini\" class=\"extiw\" title=\"en:Rapini\">en:Rapini</a>.",
+        "categories": "GFDL|License migration completed|Brassica rapa subsp. sylvestris"
+      },
+      "alternatives": []
+    },
+    {
+      "order": 60,
+      "storyId": "rhubarb-4745",
+      "catalogId": "rhubarb",
+      "title": "Rhubarb",
+      "query": "rhubarb stalks vegetable",
+      "selection": {
+        "rawScore": 75,
+        "score": 75,
+        "band": "Common",
+        "priority": "common"
+      },
+      "file": "Rheum rhabarbarum stalks.jpg",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/9/99/Rheum_rhabarbarum_stalks.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "mime": "image/jpeg",
+      "width": 1024,
+      "height": 683,
+      "thumbWidth": 1600,
+      "thumbHeight": 1067,
+      "score": 49,
+      "sharedAcrossProducts": false,
+      "match": "reviewed-override",
+      "matchedTargets": [
+        "rhubarb",
+        "stalks",
+        "vegetable"
+      ],
+      "matchedModifiers": [],
+      "identityEvidence": [
+        "rhubarb",
+        "rheum"
+      ],
+      "sourceEvidence": {
+        "title": "Rheum rhabarbarum stalks.jpg",
+        "objectName": "Rheum rhabarbarum stalks",
+        "description": "<i><a href=\"//commons.wikimedia.org/wiki/Rheum_rhabarbarum\" title=\"Rheum rhabarbarum\">Rheum rhabarbarum</a></i> - Rhubarb",
+        "categories": "Rhubarb|Flickr images reviewed by FlickreviewR|Vegetable textures"
+      },
+      "alternatives": []
+    },
+    {
+      "order": 61,
+      "storyId": "rutabaga-4747",
+      "catalogId": "rutabaga",
+      "title": "Rutabaga",
+      "query": "rutabaga swede root vegetable",
+      "selection": {
+        "rawScore": 105,
+        "score": 100,
+        "band": "Essential",
+        "priority": "must-know"
+      },
+      "file": "Swede - rutabaga - veggiegroup.jpg",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Swede_-_rutabaga_-_veggiegroup.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "mime": "image/jpeg",
+      "width": 1024,
+      "height": 768,
+      "thumbWidth": 1600,
+      "thumbHeight": 1200,
+      "score": 220,
+      "sharedAcrossProducts": false,
+      "match": "strict-identity-match",
+      "matchedTargets": [
+        "rutabaga",
+        "swede",
+        "brassica",
+        "napus"
+      ],
+      "matchedModifiers": [],
+      "identityEvidence": [
+        "rutabaga",
+        "swede"
+      ],
+      "sourceEvidence": {
+        "title": "Swede - rutabaga - veggiegroup.jpg",
+        "objectName": "Swede - rutabaga - veggiegroup",
+        "description": "Harvested roots.",
+        "categories": "Brassica napus subsp. rapifera|Taken with Nikon Coolpix 4300|Flickr images reviewed by File Upload Bot (Magnus Manske)|Rutabaga"
+      },
+      "alternatives": [
+        {
+          "file": "Carrot and rutabaga.jpg",
+          "score": 202,
+          "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/Carrot_and_rutabaga.jpg/1920px-Carrot_and_rutabaga.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        },
+        {
+          "file": "Rutabaga.jpg",
+          "score": 198,
+          "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/Rutabaga.jpg/1920px-Rutabaga.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        },
+        {
+          "file": "Rutabaga, variety nadmorska.JPG",
+          "score": 194,
+          "src": "https://upload.wikimedia.org/wikipedia/commons/a/a7/Rutabaga%2C_variety_nadmorska.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+        },
+        {
+          "file": "Rutabaga Bailleul jardin botanique.jpg",
+          "score": 170,
+          "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/Rutabaga_Bailleul_jardin_botanique.jpg/1920px-Rutabaga_Bailleul_jardin_botanique.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        }
+      ]
+    },
+    {
+      "order": 62,
+      "storyId": "shallots-4662",
+      "catalogId": "shallots",
+      "title": "Shallots",
+      "query": "shallot bulbs",
+      "selection": {
+        "rawScore": 90,
+        "score": 90,
+        "band": "Essential",
+        "priority": "must-know"
+      },
+      "file": "Shallots-Whole.jpg",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/Shallots-Whole.jpg/1920px-Shallots-Whole.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "mime": "image/jpeg",
+      "width": 3120,
+      "height": 1760,
+      "thumbWidth": 1600,
+      "thumbHeight": 903,
+      "score": 200,
+      "sharedAcrossProducts": false,
+      "match": "strict-identity-match",
+      "matchedTargets": [
+        "shallots",
+        "shallot",
+        "bulbs"
+      ],
+      "matchedModifiers": [],
+      "identityEvidence": [
+        "onion",
+        "onions",
+        "shallot",
+        "shallots"
+      ],
+      "sourceEvidence": {
+        "title": "Shallots-Whole.jpg",
+        "objectName": "Shallots-Whole",
+        "description": "Shallots, a smaller onion variant used for cooking.  These were bought in the American Northeast.",
+        "categories": "Shallot|Taken with Sony DSLR-A700|Onions|Food named after places|Evan Amos|Food on white background|Bulbs on white background"
+      },
+      "alternatives": [
+        {
+          "file": "Shallots - sliced and whole.jpg",
+          "score": 180,
+          "src": "https://upload.wikimedia.org/wikipedia/commons/2/22/Shallots_-_sliced_and_whole.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+        },
+        {
+          "file": "Fried shallots bawang goreng.JPG",
+          "score": 174,
+          "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/Fried_shallots_bawang_goreng.JPG/1920px-Fried_shallots_bawang_goreng.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        },
+        {
+          "file": "Sliced shallots for bawang goreng.JPG",
+          "score": 172,
+          "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/Sliced_shallots_for_bawang_goreng.JPG/1920px-Sliced_shallots_for_bawang_goreng.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        },
+        {
+          "file": "Cincalok, shallots, chilli.jpg",
+          "score": 170,
+          "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/Cincalok%2C_shallots%2C_chilli.jpg/1920px-Cincalok%2C_shallots%2C_chilli.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        }
+      ]
+    },
+    {
+      "order": 63,
+      "storyId": "butternut-squash-4759",
+      "catalogId": "squash-butternut",
+      "title": "Butternut squash",
+      "query": "butternut squash fruit",
+      "selection": {
+        "rawScore": 105,
+        "score": 100,
+        "band": "Essential",
+        "priority": "must-know"
+      },
+      "file": "Butternut Squash - geograph.org.uk - 1527245.jpg",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/3/31/Butternut_Squash_-_geograph.org.uk_-_1527245.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "mime": "image/jpeg",
+      "width": 640,
+      "height": 480,
+      "thumbWidth": 1600,
+      "thumbHeight": 1200,
+      "score": 202,
+      "sharedAcrossProducts": false,
+      "match": "strict-identity-match",
+      "matchedTargets": [
+        "butternut",
+        "squash",
+        "fruit"
+      ],
+      "matchedModifiers": [],
+      "identityEvidence": [
+        "squash",
+        "butternut",
+        "cucurbita"
+      ],
+      "sourceEvidence": {
+        "title": "Butternut Squash - geograph.org.uk - 1527245.jpg",
+        "objectName": "Butternut Squash - geograph.org.uk - 1527245",
+        "description": "Butternut Squash. Foot long autumn produce in the model vegetable garden.",
+        "categories": "RHS Wisley|Images from Geograph Britain and Ireland|Cucurbita moschata bell group|Information field template with formatting|Yellow fruit|Images by Colin Smith|United Kingdom photographs taken on 2009-10-04|Squashes in the United Kingdom"
+      },
+      "alternatives": []
+    },
+    {
+      "order": 64,
+      "storyId": "chayote-squash-4761",
+      "catalogId": "squash-chayote",
+      "title": "Chayote squash",
+      "query": "chayote squash fruit",
+      "selection": {
+        "rawScore": 105,
+        "score": 100,
+        "band": "Essential",
+        "priority": "must-know"
+      },
+      "file": "Sechium edule - White Chayote Squash.jpg",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Sechium_edule_-_White_Chayote_Squash.jpg/1920px-Sechium_edule_-_White_Chayote_Squash.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "mime": "image/jpeg",
+      "width": 4928,
+      "height": 3264,
+      "thumbWidth": 1600,
+      "thumbHeight": 1060,
+      "score": 208,
+      "sharedAcrossProducts": false,
+      "match": "strict-identity-match",
+      "matchedTargets": [
+        "chayote",
+        "squash"
+      ],
+      "matchedModifiers": [],
+      "identityEvidence": [
+        "squash",
+        "chayote"
+      ],
+      "sourceEvidence": {
+        "title": "Sechium edule - White Chayote Squash.jpg",
+        "objectName": "Sechium edule - White Chayote Squash",
+        "description": "<p>White Chayote Squash (Sechium edule)\nBerkeley Farmers' Market\n</p>\nBerkeley, CA",
+        "categories": "Sicyos edulis|Taken with Nikon D7000|Flickr images uploaded by Flickr upload bot"
+      },
+      "alternatives": [
+        {
+          "file": "Chayote squash - Flickr - debaird™.jpg",
+          "score": 206,
+          "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/Chayote_squash_-_Flickr_-_debaird%E2%84%A2.jpg/1920px-Chayote_squash_-_Flickr_-_debaird%E2%84%A2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        }
+      ]
+    },
+    {
+      "order": 65,
+      "storyId": "acorn-squash-4750",
+      "catalogId": "squash-pepper-acorn",
+      "title": "Acorn squash",
+      "query": "acorn squash fruit",
+      "selection": {
+        "rawScore": 105,
+        "score": 100,
+        "band": "Essential",
+        "priority": "must-know"
+      },
+      "file": "Starr-080914-9888-Cucurbita pepo-acorn squash fruit-Makawao-Maui (24899190526).jpg",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/Starr-080914-9888-Cucurbita_pepo-acorn_squash_fruit-Makawao-Maui_%2824899190526%29.jpg/1920px-Starr-080914-9888-Cucurbita_pepo-acorn_squash_fruit-Makawao-Maui_%2824899190526%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "mime": "image/jpeg",
+      "width": 2112,
+      "height": 2816,
+      "thumbWidth": 1600,
+      "thumbHeight": 2133,
+      "score": 238,
+      "sharedAcrossProducts": false,
+      "match": "strict-identity-match",
+      "matchedTargets": [
+        "acorn",
+        "squash",
+        "fruit"
+      ],
+      "matchedModifiers": [],
+      "identityEvidence": [
+        "pumpkin",
+        "squash",
+        "acorn",
+        "cucurbita"
+      ],
+      "sourceEvidence": {
+        "title": "Starr-080914-9888-Cucurbita pepo-acorn squash fruit-Makawao-Maui (24899190526).jpg",
+        "objectName": "Starr-080914-9888-Cucurbita pepo-acorn squash fruit-Makawao-Maui (24899190526)",
+        "description": "<ul><li><a rel=\"nofollow\" class=\"external text\" href=\"http://www.starrenvironmental.com/images/species/?q=Cucurbita+pepo\"><b><i>Cucurbita pepo</i> (Squash, pumpkin)</b></a></li></ul><b>\n</b><p>Acorn squash fruit at Makawao, Maui, Hawaii.\nSeptember 14, 2008\n</p><p><br>\n</p>\n<ul><li><a rel=\"nofollow\" class=\"external text\" href=\"http://www.starrenvironmental.com/images/search/?q=080914-9888\">#080914-9888</a></li></ul>\n<p><br>\n</p>\n<ul><li><a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/starr-environmental/\">Image Use Policy</a></li></ul>",
+        "categories": "Flora of Maui|Flickr images reviewed by FlickreviewR 2|Plant files uploaded by Tyler de Noche|Starr Environmental 2008|Starr Environmental 2003"
+      },
+      "alternatives": [
+        {
+          "file": "Starr-080812-9707-Cucurbita pepo-acorn squash fruit forming-Makawao-Maui (24629609970).jpg",
+          "score": 236,
+          "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Starr-080812-9707-Cucurbita_pepo-acorn_squash_fruit_forming-Makawao-Maui_%2824629609970%29.jpg/1920px-Starr-080812-9707-Cucurbita_pepo-acorn_squash_fruit_forming-Makawao-Maui_%2824629609970%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        },
+        {
+          "file": "Starr-080815-9766-Cucurbita pepo-acorn squash fruit forming-Makawao-Maui (24925252115).jpg",
+          "score": 234,
+          "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/Starr-080815-9766-Cucurbita_pepo-acorn_squash_fruit_forming-Makawao-Maui_%2824925252115%29.jpg/1920px-Starr-080815-9766-Cucurbita_pepo-acorn_squash_fruit_forming-Makawao-Maui_%2824925252115%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        },
+        {
+          "file": "Starr-080815-9767-Cucurbita pepo-acorn squash fruit forming-Makawao-Maui (24898965916).jpg",
+          "score": 232,
+          "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/Starr-080815-9767-Cucurbita_pepo-acorn_squash_fruit_forming-Makawao-Maui_%2824898965916%29.jpg/1920px-Starr-080815-9767-Cucurbita_pepo-acorn_squash_fruit_forming-Makawao-Maui_%2824898965916%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        },
+        {
+          "file": "Starr-080815-9768-Cucurbita pepo-acorn squash fruit forming-Makawao-Maui (24557631209).jpg",
+          "score": 230,
+          "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/Starr-080815-9768-Cucurbita_pepo-acorn_squash_fruit_forming-Makawao-Maui_%2824557631209%29.jpg/1920px-Starr-080815-9768-Cucurbita_pepo-acorn_squash_fruit_forming-Makawao-Maui_%2824557631209%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        }
+      ]
+    },
+    {
+      "order": 66,
+      "storyId": "spaghetti-squash-4776",
+      "catalogId": "squash-spaghetti",
+      "title": "Spaghetti squash",
+      "query": "spaghetti squash fruit",
+      "selection": {
+        "rawScore": 105,
+        "score": 100,
+        "band": "Essential",
+        "priority": "must-know"
+      },
+      "file": "Spaghetti Squash.JPG",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Spaghetti_Squash.JPG/1920px-Spaghetti_Squash.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "mime": "image/jpeg",
+      "width": 4000,
+      "height": 3000,
+      "thumbWidth": 1600,
+      "thumbHeight": 1200,
+      "score": 106,
+      "sharedAcrossProducts": false,
+      "match": "reviewed-override",
+      "matchedTargets": [
+        "spaghetti",
+        "squash"
+      ],
+      "matchedModifiers": [
+        "spaghetti"
+      ],
+      "identityEvidence": [
+        "squash",
+        "cucurbita"
+      ],
+      "sourceEvidence": {
+        "title": "Spaghetti Squash.JPG",
+        "objectName": "Spaghetti Squash",
+        "description": "uncooked spaghetti squash",
+        "categories": "Taken with Panasonic Lumix DMC-TZ10|Cucurbita pepo vegetable spaghetti group|Self-published work"
+      },
+      "alternatives": []
+    },
+    {
+      "order": 67,
+      "storyId": "field-tomato-4064",
+      "catalogId": "tomatoes-field",
+      "title": "Field tomato",
+      "query": "field tomatoes red fruit",
+      "selection": {
+        "rawScore": 105,
+        "score": 100,
+        "band": "Essential",
+        "priority": "must-know"
+      },
+      "file": "Healthy Red Tomatoes are Wet and Organic.png",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/Healthy_Red_Tomatoes_are_Wet_and_Organic.png/1920px-Healthy_Red_Tomatoes_are_Wet_and_Organic.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "mime": "image/png",
+      "width": 4096,
+      "height": 3084,
+      "thumbWidth": 1600,
+      "thumbHeight": 1205,
+      "score": 252,
+      "sharedAcrossProducts": false,
+      "match": "strict-identity-match",
+      "matchedTargets": [
+        "field",
+        "tomato",
+        "tomatoes",
+        "red",
+        "fruit"
+      ],
+      "matchedModifiers": [
+        "field"
+      ],
+      "identityEvidence": [
+        "tomato",
+        "tomatoes"
+      ],
+      "sourceEvidence": {
+        "title": "Healthy Red Tomatoes are Wet and Organic.png",
+        "objectName": "Healthy Red Tomatoes are Wet and Organic",
+        "description": "Free picture of healthy red tomatoes that are wet and organic. This tasty photo was created for you by  the organic fruit friend epSos.de and it can be used for free, if you link epSos.de as the original author of the image.\n<p>Remember the beautiful woman from TV. She used to eat red tomatoes and promised that it was healthy, while the red fruit was fresh and wet. Since that time epSos.de is programmed to like red fruits and vegetables on a warm wooden table. \n</p><p>Those attractive vegetables are tasty food and were grown for free, because the best fruits are always free and self-grown. This beautiful picture is a good reminder for the creative people who love to use the macro mode of their camera . The field of depth in a photo is dependent on the lens of the camera. One must have a very good lens to have professional looking pictures in macro mode.\n</p><p>Remember to eat healthy fruit that will make your health stronger. Put them in salad with tomatoes and other organic vegetable, because the natural and organic[ bio products are green for the planet.\n</p><p>The name a tomato occurs from ital. \"pomo d'oro\" — gold apple. Aztecs had the present name. Frenchmen altered it in фр. tomate (tomato).\n</p><p>Long time tomatoes were considered inedible and even as the toxicant. Tomato today is one of the most popular cultures thanks to the valuable nutritious and dietary qualities.\n</p><p>Mature fetuses of a tomato are rich of sugar and vitamin C. Fresh tomatoes and tomato juice are useful at cardiovascular diseases because of the big content in them of iron and a potassium.\n</p><p>The tomato has silnorazvity root system of rod type. Stalk at a tomato upright or polegayushchy, ветвящийся, height from 30 cm to 2 m and more. Tomato is a heat loving culture, optimum temperature for body height and development of plants is 22-25 °C.\n</p><p>The tomato badly transfers the increased humidity of air. Plants of a tomato are exacting to light. The tomato especially needs nitrogen in intensive body height of fetuses.\n</p><p>Crops of tomatoes make in hotbeds even in the winter, with such calculation that in a month after the 2nd sword-play it was possible to land them directly in soil.\n</p><p>Fetuses of a tomato use in nutrition fresh, boiled, fried, tinned. There is also a monument in Russia that is called «Glory to the tomato».\n</p>\nThank you for sharing this picture with your friends !",
+        "categories": "Tomatoes|Flickr images verified by UploadWizard|Files with coordinates missing SDC location of creation|1 row"
+      },
+      "alternatives": []
+    },
+    {
+      "order": 68,
+      "storyId": "heirloom-tomato-3423",
+      "catalogId": "tomatoes-heir-variety",
+      "title": "Heirloom tomato",
+      "query": "heirloom tomatoes fruit",
+      "selection": {
+        "rawScore": 105,
+        "score": 100,
+        "band": "Essential",
+        "priority": "must-know"
+      },
+      "file": "Organic heirloom tomato at the Jack London Square Farmers' Market 20150809-OC-LSC-0001 (21661742600).jpg",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/Organic_heirloom_tomato_at_the_Jack_London_Square_Farmers%27_Market_20150809-OC-LSC-0001_%2821661742600%29.jpg/1920px-Organic_heirloom_tomato_at_the_Jack_London_Square_Farmers%27_Market_20150809-OC-LSC-0001_%2821661742600%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "mime": "image/jpeg",
+      "width": 3001,
+      "height": 2382,
+      "thumbWidth": 1600,
+      "thumbHeight": 1270,
+      "score": 126,
+      "sharedAcrossProducts": false,
+      "match": "reviewed-override",
+      "matchedTargets": [
+        "heirloom",
+        "tomato",
+        "tomatoes"
+      ],
+      "matchedModifiers": [
+        "heirloom"
+      ],
+      "identityEvidence": [
+        "tomato",
+        "tomatoes"
+      ],
+      "sourceEvidence": {
+        "title": "Organic heirloom tomato at the Jack London Square Farmers' Market 20150809-OC-LSC-0001 (21661742600).jpg",
+        "objectName": "Organic heirloom tomato at the Jack London Square Farmers' Market 20150809-OC-LSC-0001 (21661742600)",
+        "description": "Organic heirloom tomato at the Jack London Square Farmers' Market in Oakland, CA, on Sunday, August 9, 2015. USDA photo by Lance Cheung.",
+        "categories": "Heirloom tomatoes|Jack London Square, Oakland, California|PD USDA|Flickr images missing SDC creator|Files with coordinates missing SDC location of creation|Flickr images reviewed by FlickreviewR 2"
+      },
+      "alternatives": []
+    },
+    {
+      "order": 69,
+      "storyId": "hothouse-tomato-4799",
+      "catalogId": "tomatoes-hothouse-big",
+      "title": "Hothouse tomato",
+      "query": "hothouse beefsteak tomato fruit",
+      "selection": {
+        "rawScore": 105,
+        "score": 100,
+        "band": "Essential",
+        "priority": "must-know"
+      },
+      "file": "Hothouse Tomatoes - Flickr - pinemikey.jpg",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/2/27/Hothouse_Tomatoes_-_Flickr_-_pinemikey.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "mime": "image/jpeg",
+      "width": 800,
+      "height": 600,
+      "thumbWidth": 1600,
+      "thumbHeight": 1200,
+      "score": 181,
+      "sharedAcrossProducts": false,
+      "match": "strict-identity-match",
+      "matchedTargets": [
+        "hothouse"
+      ],
+      "matchedModifiers": [
+        "hothouse"
+      ],
+      "identityEvidence": [
+        "tomatoes"
+      ],
+      "sourceEvidence": {
+        "title": "Hothouse Tomatoes - Flickr - pinemikey.jpg",
+        "objectName": "Hothouse Tomatoes - Flickr - pinemikey",
+        "description": "Hothouse Tomatoes",
+        "categories": "Tomatoes|Flickr images reviewed by FlickreviewR 2|Photographs by Michael Martin"
+      },
+      "alternatives": []
+    },
+    {
+      "order": 70,
+      "storyId": "on-the-vine-tomatoes-4664",
+      "catalogId": "tomatoes-on-the-vine-bulk-mesh",
+      "title": "On-the-vine tomatoes",
+      "query": "tomatoes on the vine cluster",
+      "selection": {
+        "rawScore": 105,
+        "score": 100,
+        "band": "Essential",
+        "priority": "must-know"
+      },
+      "file": "Cluster of Tomatoes on Vine.jpg",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Cluster_of_Tomatoes_on_Vine.jpg/1920px-Cluster_of_Tomatoes_on_Vine.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "mime": "image/jpeg",
+      "width": 3024,
+      "height": 4032,
+      "thumbWidth": 1600,
+      "thumbHeight": 2133,
+      "score": 148,
+      "sharedAcrossProducts": false,
+      "match": "reviewed-override",
+      "matchedTargets": [
+        "the",
+        "vine",
+        "tomatoes",
+        "cluster"
+      ],
+      "matchedModifiers": [
+        "vine"
+      ],
+      "identityEvidence": [
+        "tomatoes"
+      ],
+      "sourceEvidence": {
+        "title": "Cluster of Tomatoes on Vine.jpg",
+        "objectName": "Cluster of Tomatoes on Vine",
+        "description": "ACES | David Cline\nCluster of tomatoes on a vine grown in a small scale aquaponics system at the AU E.W. Shell Fisheries Research Center.",
+        "categories": "CC-Zero|Aquaculture in the United States|Flickr images reviewed by FlickreviewR 2"
+      },
+      "alternatives": []
+    },
+    {
+      "order": 71,
+      "storyId": "vine-ripe-tomato-3151",
+      "catalogId": "tomatoes-vine-ripe-big",
+      "title": "Vine-ripe tomato",
+      "query": "vine ripe tomato fruit",
+      "selection": {
+        "rawScore": 105,
+        "score": 100,
+        "band": "Essential",
+        "priority": "must-know"
+      },
+      "file": "Strauchtomaten.jpg",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/1/11/Strauchtomaten.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "mime": "image/jpeg",
+      "width": 1920,
+      "height": 1440,
+      "thumbWidth": 1600,
+      "thumbHeight": 1200,
+      "score": 5,
+      "sharedAcrossProducts": false,
+      "match": "reviewed-override",
+      "matchedTargets": [
+        "vine"
+      ],
+      "matchedModifiers": [
+        "vine"
+      ],
+      "identityEvidence": [
+        "tomatoes"
+      ],
+      "sourceEvidence": {
+        "title": "Strauchtomaten.jpg",
+        "objectName": "Strauchtomaten",
+        "description": "Vine tomatoes (vine-ripened tomatoes or tomatoes on the vine)",
+        "categories": "Self-published work|PD-self|6 of food|Tomatoes on white background"
+      },
+      "alternatives": []
+    },
+    {
+      "order": 72,
+      "storyId": "turmeric-root-58661",
+      "catalogId": "turmeric",
+      "title": "Turmeric root",
+      "query": "fresh turmeric root rhizomes",
+      "selection": {
+        "rawScore": 105,
+        "score": 100,
+        "band": "Essential",
+        "priority": "must-know"
+      },
+      "file": "Kurkuma.jpg",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/Kurkuma.jpg/1920px-Kurkuma.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "mime": "image/jpeg",
+      "width": 2000,
+      "height": 1333,
+      "thumbWidth": 1600,
+      "thumbHeight": 1066,
+      "score": 52,
+      "sharedAcrossProducts": false,
+      "match": "reviewed-override",
+      "matchedTargets": [
+        "turmeric",
+        "root"
+      ],
+      "matchedModifiers": [
+        "root"
+      ],
+      "identityEvidence": [
+        "turmeric",
+        "curcuma",
+        "kurkuma"
+      ],
+      "sourceEvidence": {
+        "title": "Kurkuma.jpg",
+        "objectName": "Kurkuma",
+        "description": "Turmeric root cut in half.",
+        "categories": "Taken with Canon EOS 600D|Roots|Zanzibar Island|Self-published work|Files with coordinates missing SDC location of creation|Unidentified Curcuma"
+      },
+      "alternatives": []
+    },
+    {
+      "order": 73,
+      "storyId": "yukon-gold-potato-4727",
+      "catalogId": "potatoes-yellow-yukon-gold-bulk-handwritten",
+      "title": "Yukon Gold potato",
+      "query": "Yukon Gold potatoes",
+      "selection": {
+        "rawScore": 105,
+        "score": 100,
+        "band": "Essential",
+        "priority": "must-know"
+      },
+      "file": "Yukon Gold Creamers (29019239791).jpg",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/4/41/Yukon_Gold_Creamers_%2829019239791%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "mime": "image/jpeg",
+      "width": 1600,
+      "height": 1200,
+      "thumbWidth": 1600,
+      "thumbHeight": 1200,
+      "score": 128,
+      "sharedAcrossProducts": false,
+      "match": "reviewed-override",
+      "matchedTargets": [
+        "yukon",
+        "gold",
+        "potato",
+        "potatoes"
+      ],
+      "matchedModifiers": [
+        "yukon",
+        "gold"
+      ],
+      "identityEvidence": [
+        "potato",
+        "potatoes"
+      ],
+      "sourceEvidence": {
+        "title": "Yukon Gold Creamers (29019239791).jpg",
+        "objectName": "Yukon Gold Creamers (29019239791)",
+        "description": "August 19th is National Potato Day!",
+        "categories": "Flickr images reviewed by FlickreviewR 2|Potatoes on white background"
+      },
+      "alternatives": []
+    },
+    {
+      "order": 74,
+      "storyId": "caribbean-sweet-potato-3288",
+      "catalogId": "potatoes-yams-caribbean-sweet",
+      "title": "Caribbean sweet potato",
+      "query": "Caribbean sweet potato boniato tuber",
+      "selection": {
+        "rawScore": 70,
+        "score": 70,
+        "band": "Common",
+        "priority": "common"
+      },
+      "file": "Root vegetable at Cuban street market.jpg",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/b/b5/Root_vegetable_at_Cuban_street_market.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "mime": "image/jpeg",
+      "width": 1600,
+      "height": 1200,
+      "thumbWidth": 1600,
+      "thumbHeight": 1200,
+      "score": 10,
+      "sharedAcrossProducts": false,
+      "match": "reviewed-override",
+      "matchedTargets": [
+        "boniato",
+        "batata"
+      ],
+      "matchedModifiers": [],
+      "identityEvidence": [
+        "potatoes",
+        "boniato"
+      ],
+      "sourceEvidence": {
+        "title": "Root vegetable at Cuban street market.jpg",
+        "objectName": "Root vegetable at Cuban street market",
+        "description": "These kind of root veges, \"Boniato\" (Ipomoea batata), is very common in Cuba, where <a href=\"https://en.wikipedia.org/wiki/potatoes\" class=\"extiw\" title=\"w:potatoes\">potatoes</a> are rather rare.",
+        "categories": "Ipomoea batatas|Root vegetables|Self-published work|PD-self"
+      },
+      "alternatives": []
+    },
+    {
+      "order": 75,
+      "storyId": "jamaican-sweet-potato-802",
+      "catalogId": "potatoes-yams-jamaican-sweet",
+      "title": "Jamaican sweet potato",
+      "query": "Jamaican sweet potato tuber",
+      "selection": {
+        "rawScore": 70,
+        "score": 70,
+        "band": "Common",
+        "priority": "common"
+      },
+      "file": "Sweet-potato.JPG",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/Sweet-potato.JPG/1920px-Sweet-potato.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "mime": "image/jpeg",
+      "width": 2304,
+      "height": 1728,
+      "thumbWidth": 1600,
+      "thumbHeight": 1200,
+      "score": 106,
+      "sharedAcrossProducts": false,
+      "match": "reviewed-override",
+      "matchedTargets": [
+        "sweet",
+        "potato"
+      ],
+      "matchedModifiers": [
+        "sweet"
+      ],
+      "identityEvidence": [
+        "potato",
+        "potatoes"
+      ],
+      "sourceEvidence": {
+        "title": "Sweet-potato.JPG",
+        "objectName": "Sweet-potato",
+        "description": "Süsskartoffel, Batate (Ipomoea batatas) mit weißem Fruchtfleisch",
+        "categories": "Sweet potatoes|Self-published work|Bilobed shapes|Grooves"
+      },
+      "alternatives": []
+    },
+    {
+      "order": 76,
+      "storyId": "white-long-yam-4726",
+      "catalogId": "potatoes-yams-white-long",
+      "title": "White long yam",
+      "query": "white yam long tuber",
+      "selection": {
+        "rawScore": 70,
+        "score": 70,
+        "band": "Common",
+        "priority": "common"
+      },
+      "file": "Own yam.jpg",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/1/14/Own_yam.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "mime": "image/jpeg",
+      "width": 640,
+      "height": 480,
+      "thumbWidth": 1600,
+      "thumbHeight": 1200,
+      "score": 211,
+      "sharedAcrossProducts": false,
+      "match": "strict-identity-match",
+      "matchedTargets": [
+        "white",
+        "yam",
+        "dioscorea",
+        "rotundata"
+      ],
+      "matchedModifiers": [
+        "white"
+      ],
+      "identityEvidence": [
+        "yam",
+        "dioscorea"
+      ],
+      "sourceEvidence": {
+        "title": "Own yam.jpg",
+        "objectName": "Own yam",
+        "description": "Photo of a White Yam",
+        "categories": "Dioscorea cayenensis subsp. rotundata|GFDL|Taken with LG enV3 VX9200|Root vegetables|Images of low quality|License migration redundant|Self-published work|Yam tubers"
+      },
+      "alternatives": []
+    },
+    {
+      "order": 77,
+      "storyId": "white-yam-3276",
+      "catalogId": "potatoes-yams-white-yam",
+      "title": "White yam",
+      "query": "white yam tuber Dioscorea",
+      "selection": {
+        "rawScore": 70,
+        "score": 70,
+        "band": "Common",
+        "priority": "common"
+      },
+      "file": "Yam Tubers stacked on a plastic table 01.jpg",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1e/Yam_Tubers_stacked_on_a_plastic_table_01.jpg/1920px-Yam_Tubers_stacked_on_a_plastic_table_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "mime": "image/jpeg",
+      "width": 5184,
+      "height": 3456,
+      "thumbWidth": 1600,
+      "thumbHeight": 1067,
+      "score": 155,
+      "sharedAcrossProducts": false,
+      "match": "strict-identity-match",
+      "matchedTargets": [
+        "white",
+        "yam"
+      ],
+      "matchedModifiers": [
+        "white"
+      ],
+      "identityEvidence": [
+        "yam"
+      ],
+      "sourceEvidence": {
+        "title": "Yam Tubers stacked on a plastic table 01.jpg",
+        "objectName": "Yam Tubers stacked on a plastic table 01",
+        "description": "Yam Tubers stacked on a plastic table",
+        "categories": "Self-published work|Uploaded via Campaign:wlafrica|White picnic tables|Agricultural products of Nigeria|Kaduna South LGA|Barnawa, Kaduna|Images from Wiki Loves Africa 2025|Images from Wiki Loves Africa 2025 to check|Images from Wiki Loves Africa 2025 in the Tyap community|Yam tubers|Plastic outdoor tables|Yam in Nigeria|Agriculture in Southern Kaduna|Images from Wiki Loves Africa 2025 Collaboration in Nigeria|Images from Wiki Loves Africa 2025 in Nigerian Communities|Markets in Kaduna"
+      },
+      "alternatives": [
+        {
+          "file": "Nurturing Yam Tubers for White Sand Planting.jpg",
+          "score": 153,
+          "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f3/Nurturing_Yam_Tubers_for_White_Sand_Planting.jpg/1920px-Nurturing_Yam_Tubers_for_White_Sand_Planting.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        },
+        {
+          "file": "Yam Tubers stacked on a plastic table 02.jpg",
+          "score": 153,
+          "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/Yam_Tubers_stacked_on_a_plastic_table_02.jpg/1920px-Yam_Tubers_stacked_on_a_plastic_table_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        },
+        {
+          "file": "Yam Tubers stacked on a plastic table 03.jpg",
+          "score": 151,
+          "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/Yam_Tubers_stacked_on_a_plastic_table_03.jpg/1920px-Yam_Tubers_stacked_on_a_plastic_table_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        },
+        {
+          "file": "Own yam.jpg",
+          "score": 111,
+          "src": "https://upload.wikimedia.org/wikipedia/commons/1/14/Own_yam.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+        }
+      ]
+    },
+    {
+      "order": 78,
+      "storyId": "yellow-yam-3275",
+      "catalogId": "potatoes-yams-yellow-yam",
+      "title": "Yellow yam",
+      "query": "yellow yam tuber Dioscorea cayenensis",
+      "selection": {
+        "rawScore": 70,
+        "score": 70,
+        "band": "Common",
+        "priority": "common"
+      },
+      "file": "Yellow Yam at Church Fruit Farm BK NYC.jpg",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/Yellow_Yam_at_Church_Fruit_Farm_BK_NYC.jpg/1920px-Yellow_Yam_at_Church_Fruit_Farm_BK_NYC.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "mime": "image/jpeg",
+      "width": 4032,
+      "height": 3024,
+      "thumbWidth": 1600,
+      "thumbHeight": 1200,
+      "score": 263,
+      "sharedAcrossProducts": false,
+      "match": "strict-identity-match",
+      "matchedTargets": [
+        "yellow",
+        "yam",
+        "dioscorea",
+        "cayenensis"
+      ],
+      "matchedModifiers": [
+        "yellow"
+      ],
+      "identityEvidence": [
+        "yam",
+        "dioscorea"
+      ],
+      "sourceEvidence": {
+        "title": "Yellow Yam at Church Fruit Farm BK NYC.jpg",
+        "objectName": "Yellow Yam at Church Fruit Farm BK NYC",
+        "description": "Yellow Yam at Church Fruit Farm BK NYC",
+        "categories": "Dioscorea cayenensis|Church Avenue (Brooklyn)|Self-published work|November 2023 in Brooklyn, New York City|New York City photographs taken on 2023-11-26|Files with coordinates missing SDC location of creation|2023 in Flatbush, Brooklyn|Food in Brooklyn, New York City|Shops in Brooklyn|Yam tubers|Food in the United States photographed in 2023"
+      },
+      "alternatives": [
+        {
+          "file": "Yellow yam at Asian supermarket in New Jersey.jpg",
+          "score": 255,
+          "src": "https://upload.wikimedia.org/wikipedia/commons/5/56/Yellow_yam_at_Asian_supermarket_in_New_Jersey.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+        }
+      ]
+    },
+    {
+      "order": 79,
+      "storyId": "grey-zucchini-4785",
+      "catalogId": "zucchini-grey",
+      "title": "Grey zucchini",
+      "query": "grey zucchini squash",
+      "selection": {
+        "rawScore": 105,
+        "score": 100,
+        "band": "Essential",
+        "priority": "must-know"
+      },
+      "file": "Cucurbita pepo Zapallito largo Argentina 2 - 'Zucchini Grey'.jpg",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Cucurbita_pepo_Zapallito_largo_Argentina_2_-_%27Zucchini_Grey%27.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "mime": "image/jpeg",
+      "width": 1792,
+      "height": 1200,
+      "thumbWidth": 1600,
+      "thumbHeight": 1071,
+      "score": 106,
+      "sharedAcrossProducts": false,
+      "match": "reviewed-override",
+      "matchedTargets": [
+        "grey",
+        "zucchini"
+      ],
+      "matchedModifiers": [
+        "grey"
+      ],
+      "identityEvidence": [
+        "zucchini",
+        "cucurbita"
+      ],
+      "sourceEvidence": {
+        "title": "Cucurbita pepo Zapallito largo Argentina 2 - 'Zucchini Grey'.jpg",
+        "objectName": "Cucurbita pepo Zapallito largo Argentina 2 - 'Zucchini Grey'",
+        "description": "Zapallito largo comprado en el mercado, nombre científico <i>Cucurbita pepo</i> 'Zucchini Grey', si bien se llama \"zucchini\" pertenece al grupo Vegetable Marrow (como definido en Paris 1986).\n<p>Compra en el primer mercado.\n</p>\nCiudad de Buenos Aires, diciembre 2013.",
+        "categories": "CC-Zero|Self-published work|Unripe fruits of Cucurbitaceae|Cucurbita pepo vegetable marrow group|Images with pens to indicate scale|Cucurbita pepo zapallo de angola (Argentina)"
+      },
+      "alternatives": []
+    },
+    {
+      "order": 80,
+      "storyId": "yellow-zucchini-4086",
+      "catalogId": "zucchini-yellow",
+      "title": "Yellow zucchini",
+      "query": "yellow zucchini squash",
+      "selection": {
+        "rawScore": 105,
+        "score": 100,
+        "band": "Essential",
+        "priority": "must-know"
+      },
+      "file": "Starr-110822-8270-Cucurbita pepo-summer squash yellow zucchini fruit-Hawea Pl Olinda-Maui (24735759729).jpg",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/13/Starr-110822-8270-Cucurbita_pepo-summer_squash_yellow_zucchini_fruit-Hawea_Pl_Olinda-Maui_%2824735759729%29.jpg/1920px-Starr-110822-8270-Cucurbita_pepo-summer_squash_yellow_zucchini_fruit-Hawea_Pl_Olinda-Maui_%2824735759729%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "mime": "image/jpeg",
+      "width": 2736,
+      "height": 3648,
+      "thumbWidth": 1600,
+      "thumbHeight": 2133,
+      "score": 136,
+      "sharedAcrossProducts": false,
+      "match": "reviewed-override",
+      "matchedTargets": [
+        "yellow",
+        "zucchini",
+        "squash"
+      ],
+      "matchedModifiers": [
+        "yellow"
+      ],
+      "identityEvidence": [
+        "pumpkin",
+        "squash",
+        "zucchini",
+        "cucurbita"
+      ],
+      "sourceEvidence": {
+        "title": "Starr-110822-8270-Cucurbita pepo-summer squash yellow zucchini fruit-Hawea Pl Olinda-Maui (24735759729).jpg",
+        "objectName": "Starr-110822-8270-Cucurbita pepo-summer squash yellow zucchini fruit-Hawea Pl Olinda-Maui (24735759729)",
+        "description": "<ul><li><a rel=\"nofollow\" class=\"external text\" href=\"http://www.starrenvironmental.com/images/species/?q=Cucurbita+pepo\"><b><i>Cucurbita pepo</i> (Squash, pumpkin)</b></a></li></ul><b>\n</b><p>Summer squash yellow zucchini fruit at Hawea Pl Olinda, Maui, Hawaii.\nAugust 22, 2011\n</p>\n<ul><li><a rel=\"nofollow\" class=\"external text\" href=\"http://www.starrenvironmental.com/images/search/?q=110822-8270\">#110822-8270</a></li></ul>\n<p><br>\n</p>\n<ul><li><a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/starr-environmental/\">Image Use Policy</a></li></ul>",
+        "categories": "Taken with Canon PowerShot SX10 IS|Cucurbita pepo pumpkin group|Flickr images reviewed by FlickreviewR 2|Plant files uploaded by Tyler de Noche|Starr Environmental 2011"
+      },
+      "alternatives": []
+    },
+    {
+      "order": 81,
+      "storyId": "hachiya-persimmon-4427",
+      "catalogId": "persimmons-hachiya-japanese-99038",
+      "title": "Hachiya persimmon",
+      "query": "Hachiya persimmon fruit",
+      "selection": {
+        "rawScore": 90,
+        "score": 90,
+        "band": "Essential",
+        "priority": "must-know"
+      },
+      "file": "Hachiya persimmons - Heart of the City Farmers' Market - San Francisco.jpg",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d4/Hachiya_persimmons_-_Heart_of_the_City_Farmers%27_Market_-_San_Francisco.jpg/1920px-Hachiya_persimmons_-_Heart_of_the_City_Farmers%27_Market_-_San_Francisco.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "mime": "image/jpeg",
+      "width": 3471,
+      "height": 2007,
+      "thumbWidth": 1600,
+      "thumbHeight": 925,
+      "score": 63,
+      "sharedAcrossProducts": false,
+      "match": "reviewed-override",
+      "matchedTargets": [
+        "hachiya",
+        "fruit"
+      ],
+      "matchedModifiers": [],
+      "identityEvidence": [
+        "persimmons",
+        "hachiya"
+      ],
+      "sourceEvidence": {
+        "title": "Hachiya persimmons - Heart of the City Farmers' Market - San Francisco.jpg",
+        "objectName": "Hachiya persimmons - Heart of the City Farmers' Market - San Francisco",
+        "description": "Hachiya persimmons - Heart of the City Farmers' Market - San Francisco, California, USA.",
+        "categories": "CC-Zero|Self-published work|Diospyros kaki (fruit)|Uploaded with Mobile/Android|Photographs taken on 2024-10-02|Food displayed for sale in San Francisco|Heart of the City Farmers' Market"
+      },
+      "alternatives": []
+    },
+    {
+      "order": 82,
+      "storyId": "prickly-pear-4255",
+      "catalogId": "prickly-pears-bulk",
+      "title": "Prickly pear",
+      "query": "prickly pear cactus fruit",
+      "selection": {
+        "rawScore": 105,
+        "score": 100,
+        "band": "Essential",
+        "priority": "must-know"
+      },
+      "file": "Prickly pears.jpg",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/Prickly_pears.jpg/1920px-Prickly_pears.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "mime": "image/jpeg",
+      "width": 3504,
+      "height": 2336,
+      "thumbWidth": 1600,
+      "thumbHeight": 1067,
+      "score": 88,
+      "sharedAcrossProducts": false,
+      "match": "reviewed-override",
+      "matchedTargets": [
+        "prickly",
+        "fruit"
+      ],
+      "matchedModifiers": [
+        "prickly"
+      ],
+      "identityEvidence": [
+        "pears"
+      ],
+      "sourceEvidence": {
+        "title": "Prickly pears.jpg",
+        "objectName": "Prickly pears",
+        "description": "Prickly Pears",
+        "categories": "July 2006|Self-published work|Picture of week on the Czech Wikipedia|Opuntia ficus-indica (fruit) as food|Photographs by Tomascastelazo"
+      },
+      "alternatives": []
+    },
+    {
+      "order": 83,
+      "storyId": "white-pummelo-4279",
+      "catalogId": "pummelo-white-chinese",
+      "title": "White pummelo",
+      "query": "white pomelo pummelo fruit",
+      "selection": {
+        "rawScore": 105,
+        "score": 100,
+        "band": "Essential",
+        "priority": "must-know"
+      },
+      "file": "Citrus Grandis - Honey White - original.jpg",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/Citrus_Grandis_-_Honey_White_-_original.jpg/1920px-Citrus_Grandis_-_Honey_White_-_original.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "mime": "image/jpeg",
+      "width": 2288,
+      "height": 1712,
+      "thumbWidth": 1600,
+      "thumbHeight": 1197,
+      "score": 106,
+      "sharedAcrossProducts": false,
+      "match": "reviewed-override",
+      "matchedTargets": [
+        "white",
+        "citrus"
+      ],
+      "matchedModifiers": [
+        "white"
+      ],
+      "identityEvidence": [
+        "citrus"
+      ],
+      "sourceEvidence": {
+        "title": "Citrus Grandis - Honey White - original.jpg",
+        "objectName": "Citrus Grandis - Honey White - original",
+        "description": "<p><i>Citrus Grandis</i> \"Honey White Brand\" or \"Khao Nam Phueng\" planted in Nakhon Chai Si, Nakhon Pathom province in Thailand.\n</p>\nส้มโอขาวน้ำผึ้ง ณ นครชัยศรี",
+        "categories": "GFDL|Taken with Olympus C-750UZ|CC-BY-SA-2.5,2.0,1.0|License migration redundant|Self-published work|Cross sections of pomelos"
+      },
+      "alternatives": []
+    },
+    {
+      "order": 84,
+      "storyId": "mandarin-tangerine-4055",
+      "catalogId": "tangerines-mandarin",
+      "title": "Mandarin tangerine",
+      "query": "mandarin orange tangerine fruit",
+      "selection": {
+        "rawScore": 105,
+        "score": 100,
+        "band": "Essential",
+        "priority": "must-know"
+      },
+      "file": "Mandarin Oranges (Citrus Reticulata).jpg",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/Mandarin_Oranges_%28Citrus_Reticulata%29.jpg/1920px-Mandarin_Oranges_%28Citrus_Reticulata%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "mime": "image/jpeg",
+      "width": 2986,
+      "height": 1991,
+      "thumbWidth": 1600,
+      "thumbHeight": 1067,
+      "score": 67,
+      "sharedAcrossProducts": false,
+      "match": "reviewed-override",
+      "matchedTargets": [
+        "mandarin",
+        "orange",
+        "fruit"
+      ],
+      "matchedModifiers": [],
+      "identityEvidence": [
+        "mandarin"
+      ],
+      "sourceEvidence": {
+        "title": "Mandarin Oranges (Citrus Reticulata).jpg",
+        "objectName": "Mandarin Oranges (Citrus Reticulata)",
+        "description": "Mandarin oranges (Citrus Reticulata).",
+        "categories": "Taken with Nikon D90|Location not applicable|Taken with AF-S DX NIKKOR 18-105 mm f/3.5-5.6G ED VR|Self-published work|Commons featured desktop backgrounds|Green and orange|Photographs by User:Jovianeye|Featured pictures of fruit|Featured pictures on Wikipedia, Persian|Featured pictures on Wikipedia, Malay|Mandarin oranges|Citrus reticulata (fruit)|Citrus fruits on white background"
+      },
+      "alternatives": []
+    },
+    {
+      "order": 85,
+      "storyId": "minneola-tangelo-4383",
+      "catalogId": "tangelos-minneola-handwritten",
+      "title": "Minneola tangelo",
+      "query": "Minneola tangelo fruit",
+      "selection": {
+        "rawScore": 105,
+        "score": 100,
+        "band": "Essential",
+        "priority": "must-know"
+      },
+      "file": "Minneola fruit.jpg",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/Minneola_fruit.jpg/1920px-Minneola_fruit.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "mime": "image/jpeg",
+      "width": 2208,
+      "height": 2436,
+      "thumbWidth": 1600,
+      "thumbHeight": 1765,
+      "score": 198,
+      "sharedAcrossProducts": false,
+      "match": "strict-identity-match",
+      "matchedTargets": [
+        "minneola",
+        "fruit"
+      ],
+      "matchedModifiers": [],
+      "identityEvidence": [
+        "minneola"
+      ],
+      "sourceEvidence": {
+        "title": "Minneola fruit.jpg",
+        "objectName": "Minneola fruit",
+        "description": "Minneola is a cross breed between manderins and grapefruits.",
+        "categories": "GFDL|Taken with Nikon D5000|License migration redundant|Self-published work|Orange objects|Images by Amada44|Citrus 'Minneola'|Citrus fruits on white background"
+      },
+      "alternatives": [
+        {
+          "file": "Minneola fruit 1.jpg",
+          "score": 196,
+          "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/Minneola_fruit_1.jpg/1920px-Minneola_fruit_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        },
+        {
+          "file": "Minneola fruit 2.jpg",
+          "score": 194,
+          "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/Minneola_fruit_2.jpg/1920px-Minneola_fruit_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        },
+        {
+          "file": "Minneola fruit 3.jpg",
+          "score": 192,
+          "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/Minneola_fruit_3.jpg/1920px-Minneola_fruit_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        },
+        {
+          "file": "Minneola.jpg",
+          "score": 166,
+          "src": "https://upload.wikimedia.org/wikipedia/commons/5/51/Minneola.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+        }
+      ]
+    },
+    {
+      "order": 86,
+      "storyId": "mini-seedless-watermelon-3421",
+      "catalogId": "watermelons-mini-seedless",
+      "title": "Mini seedless watermelon",
+      "query": "mini seedless watermelon fruit",
+      "selection": {
+        "rawScore": 105,
+        "score": 100,
+        "band": "Essential",
+        "priority": "must-know"
+      },
+      "file": "Watermelon seedless.jpg",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Watermelon_seedless.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "mime": "image/jpeg",
+      "width": 1377,
+      "height": 828,
+      "thumbWidth": 1600,
+      "thumbHeight": 962,
+      "score": 262,
+      "sharedAcrossProducts": false,
+      "match": "strict-identity-match",
+      "matchedTargets": [
+        "mini",
+        "seedless",
+        "watermelon"
+      ],
+      "matchedModifiers": [
+        "mini",
+        "seedless"
+      ],
+      "identityEvidence": [
+        "melons",
+        "watermelon",
+        "watermelons"
+      ],
+      "sourceEvidence": {
+        "title": "Watermelon seedless.jpg",
+        "objectName": "Watermelon seedless",
+        "description": "<p>Seedless watermelon<br>Purchased Feb. 2005 in Atlanta, GA, USA<br><br>The tag had the following information:\n</p>\n<ul><li>mini me (TM)</li>\n<li>AYACO FARMS</li>\n<li>PERSONAL SEEDLESS WATERMELON</li>\n<li>#3421</li>\n<li>PRODUCT OF NICARAGUA</li></ul>",
+        "categories": "Taken with Fujifilm FinePix A330|Agriculture in Nicaragua|Self-published work|PD-self|2 objects aside|Watermelons as food|Cross sections of melons|Parthenocarpy"
+      },
+      "alternatives": []
+    },
+    {
+      "order": 87,
+      "storyId": "seeded-jumbo-watermelon-4031",
+      "catalogId": "watermelons-red-seeded-jumbo",
+      "title": "Seeded jumbo watermelon",
+      "query": "large seeded watermelon fruit",
+      "selection": {
+        "rawScore": 105,
+        "score": 100,
+        "band": "Essential",
+        "priority": "must-know"
+      },
+      "file": "Crimson Sweet watermelon.jpg",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/Crimson_Sweet_watermelon.jpg/1920px-Crimson_Sweet_watermelon.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "mime": "image/jpeg",
+      "width": 2224,
+      "height": 2707,
+      "thumbWidth": 1600,
+      "thumbHeight": 1947,
+      "score": 55,
+      "sharedAcrossProducts": false,
+      "match": "reviewed-override",
+      "matchedTargets": [
+        "watermelon",
+        "fruit"
+      ],
+      "matchedModifiers": [],
+      "identityEvidence": [
+        "watermelon"
+      ],
+      "sourceEvidence": {
+        "title": "Crimson Sweet watermelon.jpg",
+        "objectName": "Crimson Sweet watermelon",
+        "description": "'Crimson Sweet' variety watermelon (<i>Citrullus lanatus</i>) that won 1st place in a produce contest at a state fair.",
+        "categories": "Citrullus lanatus (fruit)|Self-published work|Files with coordinates missing SDC location of creation"
+      },
+      "alternatives": []
+    },
+    {
+      "order": 88,
+      "storyId": "asian-yellow-pear-4407",
+      "catalogId": "pears-asian-yellow",
+      "title": "Asian yellow pear",
+      "query": "Asian yellow pear fruit",
+      "selection": {
+        "rawScore": 105,
+        "score": 100,
+        "band": "Essential",
+        "priority": "must-know"
+      },
+      "file": "Golden Asian Pear.png",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d8/Golden_Asian_Pear.png/1920px-Golden_Asian_Pear.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "mime": "image/png",
+      "width": 2517,
+      "height": 2532,
+      "thumbWidth": 1600,
+      "thumbHeight": 1610,
+      "score": 137,
+      "sharedAcrossProducts": false,
+      "match": "reviewed-override",
+      "matchedTargets": [
+        "asian",
+        "pear",
+        "fruit",
+        "pyrus",
+        "pyrifolia"
+      ],
+      "matchedModifiers": [
+        "asian"
+      ],
+      "identityEvidence": [
+        "pear",
+        "pyrus"
+      ],
+      "sourceEvidence": {
+        "title": "Golden Asian Pear.png",
+        "objectName": "Golden Asian Pear",
+        "description": "Known as: Asian pear, Persian pear, Japanese pear, Chinese pear, Korean pear, Taiwanese pear, apple pear, zodiac pear, three-halves pear, papple, naspati and sand pear.",
+        "categories": "CC-Zero|Self-published work|Pyrus pyrifolia (fruit)|Pomes on white background"
+      },
+      "alternatives": []
+    },
+    {
+      "order": 89,
+      "storyId": "forelle-pear-4418",
+      "catalogId": "pears-forelle",
+      "title": "Forelle pear",
+      "query": "Forelle pear fruit",
+      "selection": {
+        "rawScore": 105,
+        "score": 100,
+        "band": "Essential",
+        "priority": "must-know"
+      },
+      "file": "Forelle pear.jpg",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/Forelle_pear.jpg/1920px-Forelle_pear.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "mime": "image/jpeg",
+      "width": 3093,
+      "height": 3096,
+      "thumbWidth": 1600,
+      "thumbHeight": 1602,
+      "score": 253,
+      "sharedAcrossProducts": false,
+      "match": "strict-identity-match",
+      "matchedTargets": [
+        "forelle",
+        "pear",
+        "fruit"
+      ],
+      "matchedModifiers": [
+        "forelle"
+      ],
+      "identityEvidence": [
+        "pear"
+      ],
+      "sourceEvidence": {
+        "title": "Forelle pear.jpg",
+        "objectName": "Forelle pear",
+        "description": "Forelle pear.",
+        "categories": "Self-published work|Files uploaded by Rhododendrites (all)|Forelle (pear)|Files by Rhododendrites - 2016-12|Photographs taken by Rhododendrites - fruit"
+      },
+      "alternatives": [
+        {
+          "file": "Skin of a forelle pear.jpg",
+          "score": 245,
+          "src": "https://upload.wikimedia.org/wikipedia/commons/3/30/Skin_of_a_forelle_pear.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+        }
+      ]
+    },
+    {
+      "order": 90,
+      "storyId": "red-pear-4415",
+      "catalogId": "pears-red",
+      "title": "Red pear",
+      "query": "red pear fruit",
+      "selection": {
+        "rawScore": 105,
+        "score": 100,
+        "band": "Essential",
+        "priority": "must-know"
+      },
+      "file": "Rote Birne.jpg",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Rote_Birne.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "mime": "image/jpeg",
+      "width": 960,
+      "height": 1280,
+      "thumbWidth": 1600,
+      "thumbHeight": 2133,
+      "score": -1,
+      "sharedAcrossProducts": false,
+      "match": "reviewed-override",
+      "matchedTargets": [
+        "red",
+        "pear"
+      ],
+      "matchedModifiers": [
+        "red"
+      ],
+      "identityEvidence": [
+        "pear",
+        "pyrus"
+      ],
+      "sourceEvidence": {
+        "title": "Rote Birne.jpg",
+        "objectName": "Rote Birne",
+        "description": "A red pear from Argentina",
+        "categories": "Pyrus communis|Self-published work|PD-self"
+      },
+      "alternatives": []
+    },
+    {
+      "order": 91,
+      "storyId": "yali-pear-4890",
+      "catalogId": "pears-yali-ya",
+      "title": "Yali pear",
+      "query": "Yali pear fruit",
+      "selection": {
+        "rawScore": 70,
+        "score": 70,
+        "band": "Common",
+        "priority": "common"
+      },
+      "file": "Ya pears 20250509 182727.jpg",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Ya_pears_20250509_182727.jpg/1920px-Ya_pears_20250509_182727.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "mime": "image/jpeg",
+      "width": 4000,
+      "height": 3000,
+      "thumbWidth": 1600,
+      "thumbHeight": 1200,
+      "score": 37,
+      "sharedAcrossProducts": false,
+      "match": "reviewed-override",
+      "matchedTargets": [
+        "pyrus",
+        "bretschneideri"
+      ],
+      "matchedModifiers": [],
+      "identityEvidence": [
+        "pears",
+        "pyrus"
+      ],
+      "sourceEvidence": {
+        "title": "Ya pears 20250509 182727.jpg",
+        "objectName": "Ya pears 20250509 182727",
+        "description": "Ya pears (<i>Pyrus</i> × <i>bretschneideri</i>) from China for sale in Auckland, New Zealand",
+        "categories": "Pyrus bretschneideri|Self-published work|New Zealand photographs taken on 2025-05-09|May 2025 in Auckland"
+      },
+      "alternatives": []
+    },
+    {
+      "order": 92,
+      "storyId": "crimson-grapes-4499",
+      "catalogId": "grapes-crimson",
+      "title": "Crimson grapes",
+      "query": "Crimson seedless grapes fruit",
+      "selection": {
+        "rawScore": 105,
+        "score": 100,
+        "band": "Essential",
+        "priority": "must-know"
+      },
+      "file": "Crimson Seedless Grapes.jpg",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Crimson_Seedless_Grapes.jpg/1920px-Crimson_Seedless_Grapes.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "mime": "image/jpeg",
+      "width": 2000,
+      "height": 1500,
+      "thumbWidth": 1600,
+      "thumbHeight": 1200,
+      "score": 148,
+      "sharedAcrossProducts": false,
+      "match": "reviewed-override",
+      "matchedTargets": [
+        "crimson",
+        "grapes",
+        "seedless",
+        "fruit"
+      ],
+      "matchedModifiers": [
+        "crimson"
+      ],
+      "identityEvidence": [
+        "grapes"
+      ],
+      "sourceEvidence": {
+        "title": "Crimson Seedless Grapes.jpg",
+        "objectName": "Crimson Seedless Grapes",
+        "description": "Crimson Seedless Grapes\n<p>Crimson Seedless Grapes are a popular variety of red, seedless grapes known for their sweet and mildly tangy flavor. They are characterized by their elongated shape, vibrant pinkish-red color, and firm, juicy texture. Developed to meet consumer demand for seedless and easy-to-eat grapes, Crimson Seedless are widely cultivated and enjoyed globally.\n</p><p>These grapes are often consumed fresh as a healthy snack, added to fruit salads, or used as a garnish for desserts and cheese platters. They are also a good source of essential nutrients such as vitamins C and K, antioxidants, and dietary fiber.\n</p><p>Crimson Seedless Grapes have a long shelf life, making them a favorite in grocery stores and markets. They thrive in warm climates, and their cultivation is commonly associated with regions like California, South America, and parts of Europe.\n</p>\nHere in the Philippines it is possible to grow grapes including seedless varieties like Crimson Seedless, but it requires specific conditions and careful management due to the country's tropical climate.",
+        "categories": "CC-Zero|Grapes|Self-published work"
+      },
+      "alternatives": []
+    },
+    {
+      "order": 93,
+      "storyId": "italia-green-grapes-3043",
+      "catalogId": "grapes-italy-green",
+      "title": "Italia green grapes",
+      "query": "Italia grapes green fruit",
+      "selection": {
+        "rawScore": 105,
+        "score": 100,
+        "band": "Essential",
+        "priority": "must-know"
+      },
+      "file": "Raisin Italia.jpg",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/Raisin_Italia.jpg/1920px-Raisin_Italia.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "mime": "image/jpeg",
+      "width": 4000,
+      "height": 3000,
+      "thumbWidth": 1600,
+      "thumbHeight": 1200,
+      "score": 213,
+      "sharedAcrossProducts": false,
+      "match": "strict-identity-match",
+      "matchedTargets": [
+        "italia",
+        "grape",
+        "raisin"
+      ],
+      "matchedModifiers": [
+        "italia"
+      ],
+      "identityEvidence": [
+        "grape",
+        "raisin"
+      ],
+      "sourceEvidence": {
+        "title": "Raisin Italia.jpg",
+        "objectName": "Raisin Italia",
+        "description": "raisin variété Italia",
+        "categories": "Italia Grape|Taken with Kodak EasyShare Z950|Self-published work|Markets in Sault"
+      },
+      "alternatives": [
+        {
+          "file": "Raisin Italia - 1.jpg",
+          "score": 199,
+          "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/Raisin_Italia_-_1.jpg/1920px-Raisin_Italia_-_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        },
+        {
+          "file": "Raisin Italia - 2.jpg",
+          "score": 197,
+          "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/Raisin_Italia_-_2.jpg/1920px-Raisin_Italia_-_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        },
+        {
+          "file": "Raisin Italia - 3.jpg",
+          "score": 195,
+          "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/Raisin_Italia_-_3.jpg/1920px-Raisin_Italia_-_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        },
+        {
+          "file": "Raisin Italia - 4.jpg",
+          "score": 193,
+          "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/68/Raisin_Italia_-_4.jpg/1920px-Raisin_Italia_-_4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        }
+      ]
+    },
+    {
+      "order": 94,
+      "storyId": "ataulfo-mango-4961",
+      "catalogId": "mangos-ataulfo",
+      "title": "Ataulfo mango",
+      "query": "Ataulfo mango fruit",
+      "selection": {
+        "rawScore": 105,
+        "score": 100,
+        "band": "Essential",
+        "priority": "must-know"
+      },
+      "file": "Mango Ataulfo.jpg",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/Mango_Ataulfo.jpg/1920px-Mango_Ataulfo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "mime": "image/jpeg",
+      "width": 5848,
+      "height": 7797,
+      "thumbWidth": 1600,
+      "thumbHeight": 2133,
+      "score": 118,
+      "sharedAcrossProducts": false,
+      "match": "reviewed-override",
+      "matchedTargets": [
+        "ataulfo",
+        "mango",
+        "fruit"
+      ],
+      "matchedModifiers": [
+        "ataulfo"
+      ],
+      "identityEvidence": [
+        "mango",
+        "mangoes"
+      ],
+      "sourceEvidence": {
+        "title": "Mango Ataulfo.jpg",
+        "objectName": "Mango Ataulfo",
+        "description": "Mango Ataulfo, purchased at the Medellín Market in Mexico City",
+        "categories": "Self-published work|Mangifera indica (fruit)|Mangoes in Mexico|Pictures taken by User:El Mono Español"
+      },
+      "alternatives": []
+    },
+    {
+      "order": 95,
+      "storyId": "indian-mango-4314",
+      "catalogId": "mangos-indian",
+      "title": "Indian mango",
+      "query": "Indian mango fruit cultivar",
+      "selection": {
+        "rawScore": 70,
+        "score": 70,
+        "band": "Common",
+        "priority": "common"
+      },
+      "file": "Badami Indian Mango variety IMG 20230603 (1).jpg",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/Badami_Indian_Mango_variety_IMG_20230603_%281%29.jpg/1920px-Badami_Indian_Mango_variety_IMG_20230603_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "mime": "image/jpeg",
+      "width": 2296,
+      "height": 2206,
+      "thumbWidth": 1600,
+      "thumbHeight": 1537,
+      "score": 253,
+      "sharedAcrossProducts": false,
+      "match": "strict-identity-match",
+      "matchedTargets": [
+        "indian",
+        "mango",
+        "fruit"
+      ],
+      "matchedModifiers": [
+        "indian"
+      ],
+      "identityEvidence": [
+        "mango",
+        "mangoes"
+      ],
+      "sourceEvidence": {
+        "title": "Badami Indian Mango variety IMG 20230603 (1).jpg",
+        "objectName": "Badami Indian Mango variety IMG 20230603 (1)",
+        "description": "Mango Mangifera indica fruit variety in India. Photo taken in market at Mumbai, Maharashtra. Image by Raju Kasambe. Badami Indian Mango variety",
+        "categories": "Mangifera (cultivars)|Self-published work|Mangifera indica (fruit)|Files with coordinates missing SDC location of creation|Mangoes in India|Mangifera indica in India|Taken with Xiaomi Redmi Note 12 4G"
+      },
+      "alternatives": [
+        {
+          "file": "Badami Indian Mango variety IMG 20230603 (2).jpg",
+          "score": 251,
+          "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/Badami_Indian_Mango_variety_IMG_20230603_%282%29.jpg/1920px-Badami_Indian_Mango_variety_IMG_20230603_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        },
+        {
+          "file": "Badami Indian Mango variety IMG 20230603 (3).jpg",
+          "score": 249,
+          "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/Badami_Indian_Mango_variety_IMG_20230603_%283%29.jpg/1920px-Badami_Indian_Mango_variety_IMG_20230603_%283%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        }
+      ]
+    },
+    {
+      "order": 96,
+      "storyId": "yellow-mango-4312",
+      "catalogId": "mangos-yellow",
+      "title": "Yellow mango",
+      "query": "yellow mango fruit",
+      "selection": {
+        "rawScore": 105,
+        "score": 100,
+        "band": "Essential",
+        "priority": "must-know"
+      },
+      "file": "Perhentian Islands, Yellow mangoes, Malaysia.jpg",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ee/Perhentian_Islands%2C_Yellow_mangoes%2C_Malaysia.jpg/1920px-Perhentian_Islands%2C_Yellow_mangoes%2C_Malaysia.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "mime": "image/jpeg",
+      "width": 3984,
+      "height": 2656,
+      "thumbWidth": 1600,
+      "thumbHeight": 1067,
+      "score": 88,
+      "sharedAcrossProducts": false,
+      "match": "reviewed-override",
+      "matchedTargets": [
+        "yellow",
+        "fruit"
+      ],
+      "matchedModifiers": [
+        "yellow"
+      ],
+      "identityEvidence": [
+        "mangoes"
+      ],
+      "sourceEvidence": {
+        "title": "Perhentian Islands, Yellow mangoes, Malaysia.jpg",
+        "objectName": "Perhentian Islands, Yellow mangoes, Malaysia",
+        "description": "Yellow ripe mangoes. Pulau Perhentian Besar Island, Malaysia.",
+        "categories": "Photos by Vyacheslav Argenberg|Perhentian Islands|Self-published work|Yellow fruit|4 fruit|Mangoes in Malaysia|Ripe fruits|Photos by Vyacheslav Argenberg in 2008|Photos by Vyacheslav Argenberg in Malaysia"
+      },
+      "alternatives": []
+    },
+    {
+      "order": 97,
+      "storyId": "canary-melon-4317",
+      "catalogId": "melons-canary-yellow-honeydew",
+      "title": "Canary melon",
+      "query": "canary melon fruit",
+      "selection": {
+        "rawScore": 105,
+        "score": 100,
+        "band": "Essential",
+        "priority": "must-know"
+      },
+      "file": "Canary melon 2010.jpg",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Canary_melon_2010.jpg/1920px-Canary_melon_2010.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "mime": "image/jpeg",
+      "width": 4256,
+      "height": 2832,
+      "thumbWidth": 1600,
+      "thumbHeight": 1065,
+      "score": 233,
+      "sharedAcrossProducts": false,
+      "match": "strict-identity-match",
+      "matchedTargets": [
+        "canary",
+        "melon"
+      ],
+      "matchedModifiers": [
+        "canary"
+      ],
+      "identityEvidence": [
+        "melon",
+        "melons"
+      ],
+      "sourceEvidence": {
+        "title": "Canary melon 2010.jpg",
+        "objectName": "Canary melon 2010",
+        "description": "Canary melons cut and whole.",
+        "categories": "Taken with Nikon D3s|Cross sections of melons|Cucumis melo inodorus group"
+      },
+      "alternatives": [
+        {
+          "file": "Canary melon in a supermarket.jpg",
+          "score": 233,
+          "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Canary_melon_in_a_supermarket.jpg/1920px-Canary_melon_in_a_supermarket.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        },
+        {
+          "file": "Canary melon next to quarter.jpg",
+          "score": 227,
+          "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/Canary_melon_next_to_quarter.jpg/1920px-Canary_melon_next_to_quarter.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        },
+        {
+          "file": "Cantaloupe and canary melon.jpg",
+          "score": 223,
+          "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/Cantaloupe_and_canary_melon.jpg/1920px-Cantaloupe_and_canary_melon.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        },
+        {
+          "file": "Canary melon.jpg",
+          "score": 219,
+          "src": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Canary_melon.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+        }
+      ]
+    },
+    {
+      "order": 98,
+      "storyId": "hami-melon-3623",
+      "catalogId": "melons-hami-handwritten",
+      "title": "Hami melon",
+      "query": "Hami melon fruit",
+      "selection": {
+        "rawScore": 70,
+        "score": 70,
+        "band": "Common",
+        "priority": "common"
+      },
+      "file": "Hami melon.jpg",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Hami_melon.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "mime": "image/jpeg",
+      "width": 970,
+      "height": 1566,
+      "thumbWidth": 1600,
+      "thumbHeight": 2583,
+      "score": 217,
+      "sharedAcrossProducts": false,
+      "match": "strict-identity-match",
+      "matchedTargets": [
+        "hami",
+        "melon"
+      ],
+      "matchedModifiers": [
+        "hami"
+      ],
+      "identityEvidence": [
+        "melon",
+        "melons"
+      ],
+      "sourceEvidence": {
+        "title": "Hami melon.jpg",
+        "objectName": "Hami melon",
+        "description": "Hami melons as seen in an Asian supermarket in New Jersey.",
+        "categories": "Taken with Sony DSC-W530|CC-Zero|Self-published work|Melons in the United States"
+      },
+      "alternatives": [
+        {
+          "file": "Whole melon.jpg",
+          "score": 207,
+          "src": "https://upload.wikimedia.org/wikipedia/commons/8/88/Whole_melon.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+        },
+        {
+          "file": "Melon Sellers - panoramio.jpg",
+          "score": 193,
+          "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/Melon_Sellers_-_panoramio.jpg/1920px-Melon_Sellers_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        },
+        {
+          "file": "A hami melon for sale at a Publix market in Knoxville, Tennessee.jpg",
+          "score": 187,
+          "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/A_hami_melon_for_sale_at_a_Publix_market_in_Knoxville%2C_Tennessee.jpg/1920px-A_hami_melon_for_sale_at_a_Publix_market_in_Knoxville%2C_Tennessee.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        },
+        {
+          "file": "HAMI MELON INSIDE.jpg",
+          "score": 183,
+          "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/HAMI_MELON_INSIDE.jpg/1920px-HAMI_MELON_INSIDE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        }
+      ]
+    },
+    {
+      "order": 99,
+      "storyId": "santa-claus-melon-4336",
+      "catalogId": "melons-santa-claus-handwritten",
+      "title": "Santa Claus melon",
+      "query": "Santa Claus melon fruit Piel de Sapo",
+      "selection": {
+        "rawScore": 70,
+        "score": 70,
+        "band": "Common",
+        "priority": "common"
+      },
+      "file": "Piel de Sapo (Santa Claus melon) grown in Astrakhan, Russia - Sep 2025 02.jpg",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/Piel_de_Sapo_%28Santa_Claus_melon%29_grown_in_Astrakhan%2C_Russia_-_Sep_2025_02.jpg/1920px-Piel_de_Sapo_%28Santa_Claus_melon%29_grown_in_Astrakhan%2C_Russia_-_Sep_2025_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "mime": "image/jpeg",
+      "width": 2400,
+      "height": 1800,
+      "thumbWidth": 1600,
+      "thumbHeight": 1200,
+      "score": 376,
+      "sharedAcrossProducts": false,
+      "match": "strict-identity-match",
+      "matchedTargets": [
+        "santa",
+        "claus",
+        "melon",
+        "fruit",
+        "piel",
+        "sapo"
+      ],
+      "matchedModifiers": [
+        "santa",
+        "claus"
+      ],
+      "identityEvidence": [
+        "melon",
+        "melons"
+      ],
+      "sourceEvidence": {
+        "title": "Piel de Sapo (Santa Claus melon) grown in Astrakhan, Russia - Sep 2025 02.jpg",
+        "objectName": "Piel de Sapo (Santa Claus melon) grown in Astrakhan, Russia - Sep 2025 02",
+        "description": "Piel de Sapo (Santa Claus melon) grown in Astrkhan, Russia",
+        "categories": "CC-Zero|Santa Claus melon|Economy of Astrakhan Oblast|Self-published work|Fruit of Russia|Files with coordinates missing SDC location of creation|Melons in Russia|Private labels of Perekryostok|Moscow photographs taken on 2025-09-14|Photographs by Retired electrician/food"
+      },
+      "alternatives": []
+    },
+    {
+      "order": 100,
+      "storyId": "white-honeydew-melon-4329",
+      "catalogId": "melons-white-honeydew",
+      "title": "White honeydew melon",
+      "query": "white honeydew melon fruit",
+      "selection": {
+        "rawScore": 105,
+        "score": 100,
+        "band": "Essential",
+        "priority": "must-know"
+      },
+      "file": "Honeydew.jpg",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Honeydew.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "mime": "image/jpeg",
+      "width": 1024,
+      "height": 657,
+      "thumbWidth": 1600,
+      "thumbHeight": 1027,
+      "score": 197,
+      "sharedAcrossProducts": false,
+      "match": "strict-identity-match",
+      "matchedTargets": [
+        "white",
+        "honeydew",
+        "melon"
+      ],
+      "matchedModifiers": [
+        "white"
+      ],
+      "identityEvidence": [
+        "melon",
+        "melons",
+        "honeydew"
+      ],
+      "sourceEvidence": {
+        "title": "Honeydew.jpg",
+        "objectName": "Honeydew",
+        "description": "Studio shot of an organic Honeydew melon grown by delbosque farms USA",
+        "categories": "Honeydew melon|Self-published work|PD-self|Milong lunti|Cross sections of melons|Fruits of Cucurbitaceae on white background"
+      },
+      "alternatives": []
+    }
+  ]
+}

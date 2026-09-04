@@ -16,6 +16,7 @@ from PIL import Image, ImageDraw, ImageFont, ImageOps
 
 ROOT = Path(__file__).resolve().parents[1]
 OUTPUT = ROOT / "artifacts" / "media-review"
+PUBLIC_AUDIT = ROOT / "public" / "media-render-audit.json"
 
 
 def read_json(path: Path) -> Any:
@@ -142,6 +143,7 @@ def main() -> None:
     OUTPUT.mkdir(parents=True, exist_ok=True)
     summary = {"batches": [build_batch("04"), build_batch("05")]}
     (OUTPUT / "summary.json").write_text(json.dumps(summary, indent=2) + "\n", encoding="utf-8")
+    PUBLIC_AUDIT.write_text(json.dumps(summary, indent=2) + "\n", encoding="utf-8")
     print(json.dumps(summary, indent=2))
 
 

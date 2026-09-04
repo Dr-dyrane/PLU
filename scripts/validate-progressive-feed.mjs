@@ -60,12 +60,12 @@ assert.ok(
   globalStyles.includes('@import "./canon/catalog-controls.css"'),
   "Catalog-control CSS must load after the appearance layer.",
 );
-assert.ok(homePage.includes("mustKnow200"), "The home page must expose all 200 lessons.");
+assert.ok(homePage.includes("mustKnow300"), "The home page must expose all 300 lessons.");
 assert.ok(
   homePage.includes("homeStorySummaries"),
   "The home page must use lightweight story summaries rather than full lessons.",
 );
 
 console.log(
-  "Validated 18-at-a-time loading, image laziness, mobile scan grid, horizontal category scrolling, theme-safe selected controls, and the 200-product home feed.",
+  "Validated 18-at-a-time loading, image laziness, mobile scan grid, horizontal category scrolling, theme-safe selected controls, and the 300-product home feed.",
 );

@@ -1,1 +1,809 @@
-{"schemaVersion":"0.8.0","id":"batch-05-next-100","title":"Next 100","size":0,"strategy":"Ranked unused catalog rows with strict semantic image validation","items":[]}
+{
+  "schemaVersion": "0.8.0",
+  "id": "batch-05-next-100",
+  "title": "Next 100",
+  "size": 100,
+  "strategy": "Ranked unused catalog rows with strict semantic image validation",
+  "items": [
+    {
+      "order": 1,
+      "catalogId": "plums-plumcot",
+      "title": "Plumcot",
+      "code": "3126",
+      "family": "Plums",
+      "status": "ready"
+    },
+    {
+      "order": 2,
+      "catalogId": "swiss-chard-red",
+      "title": "Red Swiss chard",
+      "code": "4587",
+      "family": "Leafy Greens",
+      "status": "ready"
+    },
+    {
+      "order": 3,
+      "catalogId": "watercress-herbs",
+      "title": "Watercress",
+      "code": "4815",
+      "family": "Leafy Greens",
+      "status": "ready"
+    },
+    {
+      "order": 4,
+      "catalogId": "squash-long-opo",
+      "title": "Long / Opo squash",
+      "code": "3141",
+      "family": "Squash",
+      "status": "ready"
+    },
+    {
+      "order": 5,
+      "catalogId": "tangerines-honey",
+      "title": "Honey tangerine",
+      "code": "4453",
+      "family": "Citrus",
+      "status": "ready"
+    },
+    {
+      "order": 6,
+      "catalogId": "tangerines-mandora",
+      "title": "Mandora tangerine",
+      "code": "3031",
+      "family": "Citrus",
+      "status": "ready"
+    },
+    {
+      "order": 7,
+      "catalogId": "plums-june",
+      "title": "June plum",
+      "code": "3803",
+      "family": "Plums",
+      "status": "ready"
+    },
+    {
+      "order": 8,
+      "catalogId": "plums-yellow",
+      "title": "Yellow plum",
+      "code": "4441",
+      "family": "Plums",
+      "status": "ready"
+    },
+    {
+      "order": 9,
+      "catalogId": "pumpkins-pie",
+      "title": "Pie pumpkin",
+      "code": "3134",
+      "family": "Squash",
+      "status": "ready"
+    },
+    {
+      "order": 10,
+      "catalogId": "pumpkins-gourds",
+      "title": "Pumpkin gourds",
+      "code": "3135",
+      "family": "Squash",
+      "status": "ready"
+    },
+    {
+      "order": 11,
+      "catalogId": "pumpkins-regular",
+      "title": "Regular pumpkin",
+      "code": "4735",
+      "family": "Squash",
+      "status": "ready"
+    },
+    {
+      "order": 12,
+      "catalogId": "pumpkins-small",
+      "title": "Small pumpkin",
+      "code": "4737",
+      "family": "Squash",
+      "status": "ready"
+    },
+    {
+      "order": 13,
+      "catalogId": "sugar-cane",
+      "title": "Sugar Cane",
+      "code": "4790",
+      "family": "Stalk Vegetables",
+      "status": "ready"
+    },
+    {
+      "order": 14,
+      "catalogId": "granadilla",
+      "title": "Granadilla",
+      "code": "3038",
+      "family": "Tropical Fruit",
+      "status": "ready"
+    },
+    {
+      "order": 15,
+      "catalogId": "longan-fruit",
+      "title": "Longan Fruit",
+      "code": "4307",
+      "family": "Tropical Fruit",
+      "status": "ready"
+    },
+    {
+      "order": 16,
+      "catalogId": "eggplants-indian-baby",
+      "title": "Indian Baby eggplant",
+      "code": "4599",
+      "family": "Eggplants",
+      "status": "ready"
+    },
+    {
+      "order": 17,
+      "catalogId": "figgs-black",
+      "title": "Black fig",
+      "code": "4266",
+      "family": "Figs",
+      "status": "ready"
+    },
+    {
+      "order": 18,
+      "catalogId": "almonds-bulk-nuts",
+      "title": "Almonds",
+      "code": "4924",
+      "family": "Nuts",
+      "status": "ready"
+    },
+    {
+      "order": 19,
+      "catalogId": "chestnuts-bulk-nuts",
+      "title": "Chestnuts",
+      "code": "4927",
+      "family": "Nuts",
+      "status": "ready"
+    },
+    {
+      "order": 20,
+      "catalogId": "filberts-bulk-nuts",
+      "title": "Filberts",
+      "code": "4928",
+      "family": "Nuts",
+      "status": "ready"
+    },
+    {
+      "order": 21,
+      "catalogId": "drumstick",
+      "title": "Drumstick (moringa pod)",
+      "code": "7947",
+      "family": "Pod Vegetables",
+      "status": "ready"
+    },
+    {
+      "order": 22,
+      "catalogId": "quince",
+      "title": "Quince",
+      "code": "4447",
+      "family": "Quince",
+      "status": "ready"
+    },
+    {
+      "order": 23,
+      "catalogId": "malagna-root-cocoes",
+      "title": "Malagna Root (Cocoes)",
+      "code": "59977",
+      "family": "Roots",
+      "status": "ready"
+    },
+    {
+      "order": 24,
+      "catalogId": "atemoya",
+      "title": "Atemoya",
+      "code": "4220",
+      "family": "Tropical Fruit",
+      "status": "ready"
+    },
+    {
+      "order": 25,
+      "catalogId": "breadnut",
+      "title": "Breadnut",
+      "code": "3806",
+      "family": "Tropical Fruit",
+      "status": "ready"
+    },
+    {
+      "order": 26,
+      "catalogId": "chikoo-naseberry",
+      "title": "Chikoo / Naseberry",
+      "code": "3136",
+      "family": "Tropical Fruit",
+      "status": "ready"
+    },
+    {
+      "order": 27,
+      "catalogId": "coconuts-green-water",
+      "title": "Green Water coconut",
+      "code": "3636",
+      "family": "Tropical Fruit",
+      "status": "ready"
+    },
+    {
+      "order": 28,
+      "catalogId": "oranges-clementines",
+      "title": "Clementines orange",
+      "code": "70686",
+      "family": "Citrus",
+      "status": "ready"
+    },
+    {
+      "order": 29,
+      "catalogId": "eggplants-indian",
+      "title": "Indian eggplant",
+      "code": "58007",
+      "family": "Eggplants",
+      "status": "ready"
+    },
+    {
+      "order": 30,
+      "catalogId": "tinda",
+      "title": "Tinda",
+      "code": "11921",
+      "family": "Squash",
+      "status": "ready"
+    },
+    {
+      "order": 31,
+      "catalogId": "mangos-baby",
+      "title": "Baby mango",
+      "code": "19407",
+      "family": "Mangoes",
+      "status": "ready"
+    },
+    {
+      "order": 32,
+      "catalogId": "mangos-julie",
+      "title": "Julie mango",
+      "code": "58655",
+      "family": "Mangoes",
+      "status": "ready"
+    },
+    {
+      "order": 33,
+      "catalogId": "mangos-palmer",
+      "title": "Palmer mango",
+      "code": "12965",
+      "family": "Mangoes",
+      "status": "ready"
+    },
+    {
+      "order": 34,
+      "catalogId": "mangos-sweet",
+      "title": "Sweet mango",
+      "code": "10612",
+      "family": "Mangoes",
+      "status": "ready"
+    },
+    {
+      "order": 35,
+      "catalogId": "apples-jazz",
+      "title": "Jazz apple",
+      "code": "3294",
+      "family": "Apples",
+      "status": "ready"
+    },
+    {
+      "order": 36,
+      "catalogId": "bananas-organic",
+      "title": "Organic banana",
+      "code": "94011",
+      "family": "Bananas",
+      "status": "ready"
+    },
+    {
+      "order": 37,
+      "catalogId": "broccoli-organic",
+      "title": "Organic broccoli",
+      "code": "94060",
+      "family": "Broccoli",
+      "status": "ready"
+    },
+    {
+      "order": 38,
+      "catalogId": "lemons-large",
+      "title": "Large lemon",
+      "code": "4033",
+      "family": "Citrus",
+      "status": "ready"
+    },
+    {
+      "order": 39,
+      "catalogId": "grapefruit-red-large",
+      "title": "Red Large grapefruit",
+      "code": "4281",
+      "family": "Citrus",
+      "status": "ready"
+    },
+    {
+      "order": 40,
+      "catalogId": "carrots-red-handwritten",
+      "title": "Red carrot",
+      "code": "11931",
+      "family": "Carrots",
+      "status": "ready"
+    },
+    {
+      "order": 41,
+      "catalogId": "grapes",
+      "title": "Grapes",
+      "code": "3094",
+      "family": "Grapes",
+      "status": "ready"
+    },
+    {
+      "order": 42,
+      "catalogId": "plums-italian-prune",
+      "title": "Italian Prune plum",
+      "code": "4436",
+      "family": "Plums",
+      "status": "ready"
+    },
+    {
+      "order": 43,
+      "catalogId": "tamarillo-red",
+      "title": "Red tamarillo",
+      "code": "4793",
+      "family": "Tomatoes",
+      "status": "ready"
+    },
+    {
+      "order": 44,
+      "catalogId": "tomatillos",
+      "title": "Tomatillos",
+      "code": "4801",
+      "family": "Tomatoes",
+      "status": "ready"
+    },
+    {
+      "order": 45,
+      "catalogId": "bok-choy-baby-jr",
+      "title": "Baby Jr. bok choy",
+      "code": "4841",
+      "family": "Leafy Greens",
+      "status": "ready"
+    },
+    {
+      "order": 46,
+      "catalogId": "methi-leaf-fenugreek",
+      "title": "Methi Leaf (Fenugreek)",
+      "code": "4909",
+      "family": "Leafy Greens",
+      "status": "ready"
+    },
+    {
+      "order": 47,
+      "catalogId": "ong-choy",
+      "title": "Ong Choy",
+      "code": "3162",
+      "family": "Leafy Greens",
+      "status": "ready"
+    },
+    {
+      "order": 48,
+      "catalogId": "peas-sugar-pea-tips-ethnic-veg",
+      "title": "Sugar Pea Tips",
+      "code": "4676",
+      "family": "Leafy Greens",
+      "status": "ready"
+    },
+    {
+      "order": 49,
+      "catalogId": "yu-choy",
+      "title": "Yu Choy",
+      "code": "3164",
+      "family": "Leafy Greens",
+      "status": "ready"
+    },
+    {
+      "order": 50,
+      "catalogId": "onions-yellow-bulk",
+      "title": "Bulk yellow onion",
+      "code": "4163",
+      "family": "Alliums",
+      "status": "ready"
+    },
+    {
+      "order": 51,
+      "catalogId": "celery-root-celeriac",
+      "title": "Celeriac (celery root)",
+      "code": "4585",
+      "family": "Roots",
+      "status": "ready"
+    },
+    {
+      "order": 52,
+      "catalogId": "taro-root-medium",
+      "title": "Medium taro root",
+      "code": "4795",
+      "family": "Roots",
+      "status": "ready"
+    },
+    {
+      "order": 53,
+      "catalogId": "squash-banana",
+      "title": "Banana squash",
+      "code": "4757",
+      "family": "Squash",
+      "status": "ready"
+    },
+    {
+      "order": 54,
+      "catalogId": "squash-kabocha",
+      "title": "Kabocha squash",
+      "code": "4769",
+      "family": "Squash",
+      "status": "ready"
+    },
+    {
+      "order": 55,
+      "catalogId": "qua",
+      "title": "Qua",
+      "code": "4656",
+      "family": "Squash",
+      "status": "ready"
+    },
+    {
+      "order": 56,
+      "catalogId": "vegetable-marrow",
+      "title": "Vegetable Marrow",
+      "code": "3060",
+      "family": "Squash",
+      "status": "ready"
+    },
+    {
+      "order": 57,
+      "catalogId": "melons-cantaloupe-large",
+      "title": "Cantaloupe Large melon",
+      "code": "4049",
+      "family": "Melons",
+      "status": "ready"
+    },
+    {
+      "order": 58,
+      "catalogId": "melons-honeydew-large",
+      "title": "Honeydew Large melon",
+      "code": "4034",
+      "family": "Melons",
+      "status": "ready"
+    },
+    {
+      "order": 59,
+      "catalogId": "cucumber-organic",
+      "title": "Organic cucumber",
+      "code": "94593",
+      "family": "Cucumbers",
+      "status": "ready"
+    },
+    {
+      "order": 60,
+      "catalogId": "cabbage-taiwanese",
+      "title": "Taiwanese cabbage",
+      "code": "4846",
+      "family": "Cabbages",
+      "status": "ready"
+    },
+    {
+      "order": 61,
+      "catalogId": "corn-bicolour-bulk",
+      "title": "Bicolour corn",
+      "code": "4078",
+      "family": "Corn",
+      "status": "ready"
+    },
+    {
+      "order": 62,
+      "catalogId": "eggplant-thai",
+      "title": "Thai eggplant",
+      "code": "3090",
+      "family": "Eggplants",
+      "status": "ready"
+    },
+    {
+      "order": 63,
+      "catalogId": "mangoes-maya",
+      "title": "Maya mango",
+      "code": "8176",
+      "family": "Mangoes",
+      "status": "ready"
+    },
+    {
+      "order": 64,
+      "catalogId": "papaya-small",
+      "title": "Small papaya",
+      "code": "3111",
+      "family": "Papayas",
+      "status": "ready"
+    },
+    {
+      "order": 65,
+      "catalogId": "persimmons-sharon-fruit",
+      "title": "Sharon Fruit persimmon",
+      "code": "4429",
+      "family": "Persimmons",
+      "status": "ready"
+    },
+    {
+      "order": 66,
+      "catalogId": "pineapple-large",
+      "title": "Large pineapple",
+      "code": "4433",
+      "family": "Pineapples",
+      "status": "ready"
+    },
+    {
+      "order": 67,
+      "catalogId": "potato-white-baby-bulk",
+      "title": "White Baby potato",
+      "code": "4003",
+      "family": "Potatoes",
+      "status": "ready"
+    },
+    {
+      "order": 68,
+      "catalogId": "bean-sprouts",
+      "title": "Bean Sprouts",
+      "code": "4536",
+      "family": "Sprouts",
+      "status": "ready"
+    },
+    {
+      "order": 69,
+      "catalogId": "celery-sticks-singles",
+      "title": "Sticks / Singles celery",
+      "code": "4576",
+      "family": "Stalk Vegetables",
+      "status": "ready"
+    },
+    {
+      "order": 70,
+      "catalogId": "watermelon-red-seedless-cuts",
+      "title": "Red seedless watermelon cuts",
+      "code": "4346",
+      "family": "Watermelons",
+      "status": "ready"
+    },
+    {
+      "order": 71,
+      "catalogId": "peppers-thai-red-hot-bulk",
+      "title": "Thai Red Hot pepper",
+      "code": "11176",
+      "family": "Peppers",
+      "status": "ready"
+    },
+    {
+      "order": 72,
+      "catalogId": "a-choy",
+      "title": "A Choy",
+      "code": "68953",
+      "family": "Leafy Greens",
+      "status": "ready"
+    },
+    {
+      "order": 73,
+      "catalogId": "gai-choy",
+      "title": "Gai Choy",
+      "code": "68995",
+      "family": "Leafy Greens",
+      "status": "ready"
+    },
+    {
+      "order": 74,
+      "catalogId": "kale-red",
+      "title": "Red kale",
+      "code": "63845",
+      "family": "Leafy Greens",
+      "status": "ready"
+    },
+    {
+      "order": 75,
+      "catalogId": "chives-nira",
+      "title": "Nira chives",
+      "code": "69539",
+      "family": "Alliums",
+      "status": "ready"
+    },
+    {
+      "order": 76,
+      "catalogId": "arrow-head-tsee-goo",
+      "title": "Arrow Head (Tsee Goo)",
+      "code": "59949",
+      "family": "Roots",
+      "status": "ready"
+    },
+    {
+      "order": 77,
+      "catalogId": "arrow-root",
+      "title": "Arrow Root",
+      "code": "30661",
+      "family": "Roots",
+      "status": "ready"
+    },
+    {
+      "order": 78,
+      "catalogId": "lily-bulbs",
+      "title": "Lily Bulbs",
+      "code": "62771",
+      "family": "Roots",
+      "status": "ready"
+    },
+    {
+      "order": 79,
+      "catalogId": "water-chestnut",
+      "title": "Water Chestnut",
+      "code": "62795",
+      "family": "Roots",
+      "status": "ready"
+    },
+    {
+      "order": 80,
+      "catalogId": "squash-hairy-fuzzy-qua-mogwa",
+      "title": "Hairy / Fuzzy Qua squash",
+      "code": "377",
+      "family": "Squash",
+      "status": "ready"
+    },
+    {
+      "order": 81,
+      "catalogId": "karella-indian",
+      "title": "Indian karella",
+      "code": "64394",
+      "family": "Squash",
+      "status": "ready"
+    },
+    {
+      "order": 82,
+      "catalogId": "parval",
+      "title": "Parval",
+      "code": "71625",
+      "family": "Squash",
+      "status": "ready"
+    },
+    {
+      "order": 83,
+      "catalogId": "tindora",
+      "title": "Tindora",
+      "code": "71626",
+      "family": "Squash",
+      "status": "ready"
+    },
+    {
+      "order": 84,
+      "catalogId": "don-gua-winter-melon",
+      "title": "Don Gua (Winter Melon)",
+      "code": "668",
+      "family": "Melons",
+      "status": "ready"
+    },
+    {
+      "order": 85,
+      "catalogId": "guar",
+      "title": "Guar",
+      "code": "71615",
+      "family": "Beans",
+      "status": "ready"
+    },
+    {
+      "order": 86,
+      "catalogId": "endive-chicory",
+      "title": "Endive / Chicory",
+      "code": "159",
+      "family": "Lettuce",
+      "status": "ready"
+    },
+    {
+      "order": 87,
+      "catalogId": "sweet-potato-japanaese",
+      "title": "Japanaese sweet potato",
+      "code": "66634",
+      "family": "Potatoes",
+      "status": "ready"
+    },
+    {
+      "order": 88,
+      "catalogId": "bamboo-shoots",
+      "title": "Bamboo Shoots",
+      "code": "59989",
+      "family": "Stalk Vegetables",
+      "status": "ready"
+    },
+    {
+      "order": 89,
+      "catalogId": "celery-chinese",
+      "title": "Chinese celery",
+      "code": "69623",
+      "family": "Stalk Vegetables",
+      "status": "ready"
+    },
+    {
+      "order": 90,
+      "catalogId": "tamarind",
+      "title": "Tamarind",
+      "code": "63129",
+      "family": "Tropical Fruit",
+      "status": "ready"
+    },
+    {
+      "order": 91,
+      "catalogId": "yams-purple",
+      "title": "Purple yam",
+      "code": "10314",
+      "family": "Yams",
+      "status": "ready"
+    },
+    {
+      "order": 92,
+      "catalogId": "pomelo-red-handwritten",
+      "title": "Red pomelo",
+      "code": "3129",
+      "family": "Citrus",
+      "status": "ready"
+    },
+    {
+      "order": 93,
+      "catalogId": "pears-rocha-handwritten",
+      "title": "Rocha pear",
+      "code": "3024",
+      "family": "Pears",
+      "status": "ready"
+    },
+    {
+      "order": 94,
+      "catalogId": "broccolini-handwritten",
+      "title": "Broccolini",
+      "code": "3277",
+      "family": "Broccoli",
+      "status": "ready"
+    },
+    {
+      "order": 95,
+      "catalogId": "cucumbers-mini-handwritten",
+      "title": "Mini cucumber",
+      "code": "4488",
+      "family": "Cucumbers",
+      "status": "ready"
+    },
+    {
+      "order": 96,
+      "catalogId": "apples-royal-gala-organic",
+      "title": "Organic Royal Gala apple",
+      "code": "94133",
+      "family": "Apples",
+      "status": "ready"
+    },
+    {
+      "order": 97,
+      "catalogId": "pears-bartlett-organic",
+      "title": "Organic Bartlett pear",
+      "code": "94024",
+      "family": "Pears",
+      "status": "ready"
+    },
+    {
+      "order": 98,
+      "catalogId": "kale-organic",
+      "title": "Organic kale",
+      "code": "94627",
+      "family": "Leafy Greens",
+      "status": "ready"
+    },
+    {
+      "order": 99,
+      "catalogId": "plums-cherry-plum-handwritten",
+      "title": "Cherry Plum",
+      "code": "71942",
+      "family": "Plums",
+      "status": "ready"
+    },
+    {
+      "order": 100,
+      "catalogId": "cauliflower-organic",
+      "title": "Organic cauliflower",
+      "code": "94079",
+      "family": "Cauliflower",
+      "status": "ready"
+    }
+  ]
+}

@@ -48,6 +48,7 @@ const catalogById = new Map(catalog.map((record) => [record.id, record]));
 const storyByCatalogId = new Map(stories.map((story) => [story.catalogId, story]));
 const storyIds = new Set(stories.map((story) => story.id));
 const mappings = [];
+const checkoutCodes = [];
 
 assert.equal(storyIds.size, stories.length, "Story IDs must be unique.");
 assert.equal(storyByCatalogId.size, stories.length, "Story catalog IDs must be unique.");
@@ -85,6 +86,9 @@ for (const [index, batch] of batches.entries()) {
       item.code,
       `${batch.id}/${item.title}: story and batch codes differ.`,
     );
+    if (["batch-04-next-100", "batch-05-next-100"].includes(batch.id)) {
+      assert.equal(story.title, item.title, `${batch.id}/${item.title}: story and batch titles differ.`);
+    }
     assert.ok(
       typeof story.title === "string" && story.title.trim().length > 1,
       `${batch.id}/${item.title}: story title is required.`,
@@ -108,6 +112,7 @@ for (const [index, batch] of batches.entries()) {
     }
 
     mappings.push(`${item.catalogId}:${item.code}`);
+    checkoutCodes.push(String(item.code));
   }
 }
 
@@ -115,6 +120,11 @@ assert.equal(
   new Set(mappings).size,
   mappings.length,
   "Published batches may not duplicate exact product mappings.",
+);
+assert.equal(
+  new Set(checkoutCodes).size,
+  checkoutCodes.length,
+  "Published lessons may not reuse a primary checkout code.",
 );
 assert.equal(mappings.length, 300, "The published Must Know collection must contain 300 lessons.");
 assert.equal(stories.length, 300, "Every published mapping must have exactly one story or story seed.");

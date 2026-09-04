@@ -1,102 +1,1700 @@
 [
-  {"catalogId":"apples-ambrosia","title":"Ambrosia apple","code":"3438","family":"Apples","soldBy":"Weight","saleForm":"Loose","form":"Round striped apple","color":"Red and yellow","imageQuery":"Ambrosia apple cultivar fruit","cue":"Glossy red blush over a creamy yellow background.","group":"apples","sourcePages":[5],"flags":["sold-by-curated"]},
-  {"catalogId":"apples-chinese-fuji","title":"Chinese Fuji apple","code":"54131","family":"Apples","soldBy":"Weight","saleForm":"Loose","form":"Round striped apple","color":"Pink-red","imageQuery":"Fuji apple fruit","cue":"Dense pink-red striping over pale yellow skin.","group":"apples","sourcePages":[1]},
-  {"catalogId":"apples-golden","title":"Golden apple","code":"4021","family":"Apples","soldBy":"Weight","saleForm":"Loose","form":"Round golden apple","color":"Yellow-green","imageQuery":"yellow golden apple fruit","cue":"Plain yellow-green skin without heavy red striping.","group":"apples","sourcePages":[1]},
-  {"catalogId":"apples-pink-lady-cripps","title":"Pink Lady apple","code":"4128","family":"Apples","soldBy":"Weight","saleForm":"Loose","form":"Round crisp apple","color":"Pink-red","imageQuery":"Pink Lady Cripps apple fruit","cue":"Bright pink-red blush over a yellow-green background.","group":"apples","sourcePages":[5],"flags":["sold-by-curated"]},
-  {"catalogId":"apples-spartan-extra-fancy","title":"Spartan apple","code":"4177","family":"Apples","soldBy":"Weight","saleForm":"Loose","form":"Compact round apple","color":"Deep red","imageQuery":"Spartan apple cultivar fruit","cue":"Dark burgundy-red skin on a compact round apple.","group":"apples","sourcePages":[5],"flags":["sold-by-curated"]},
-  {"catalogId":"nectarines-white-flesh","title":"White nectarine","code":"4188","family":"Stone Fruit","soldBy":"Weight","saleForm":"Loose","form":"Round smooth stone fruit","color":"Cream and red","imageQuery":"white nectarine fruit","cue":"Pale cream skin with a red blush and no peach fuzz.","group":"stone-fruit","sourcePages":[2]},
-  {"catalogId":"basil-herbs","title":"Basil","code":"4885","family":"Herbs","soldBy":"Each","saleForm":"Bunch","form":"Broad oval herb leaves","color":"Green","imageQuery":"sweet basil leaves bunch","cue":"Smooth broad leaves with softly rounded points.","group":"herbs","sourcePages":[1]},
-  {"catalogId":"anise-fennel-herbs","title":"Anise fennel","code":"4515","family":"Herbs","soldBy":"Each","saleForm":"Single","form":"Layered bulb with feathery fronds","color":"White and green","imageQuery":"fennel bulb vegetable fronds","cue":"A layered white bulb topped by feathery green fronds.","group":"herbs","sourcePages":[1,4]},
-  {"catalogId":"artichokes-large","title":"Large artichoke","code":"4084","family":"Artichokes","soldBy":"Each","saleForm":"Single","form":"Layered round flower bud","color":"Green","imageQuery":"globe artichoke vegetable","cue":"Tight overlapping scales form a heavy round bud.","group":"brassicas","sourcePages":[4],"flags":["sold-by-curated"]},
-  {"catalogId":"bok-choy-baby-hai-tupak-choy","title":"Baby bok choy","code":"4544","family":"Leafy Greens","soldBy":"Weight","saleForm":"Loose","form":"Small spoon-leaf clusters","color":"Green and white","imageQuery":"baby bok choy vegetable","cue":"Small upright clusters with pale thick stems and spoon-shaped leaves.","group":"leafy-greens","sourcePages":[1,4]},
-  {"catalogId":"bok-choy-shanghai","title":"Shanghai bok choy","code":"3163","family":"Leafy Greens","soldBy":"Weight","saleForm":"Loose","form":"Compact spoon-leaf clusters","color":"Light green","imageQuery":"Shanghai bok choy vegetable","cue":"Compact pale-green stems blend into smooth rounded leaves.","group":"leafy-greens","sourcePages":[1,4]},
-  {"catalogId":"beans-long-chinese-dow-gok-bodie","title":"Chinese long beans","code":"4527","family":"Beans","soldBy":"Weight","saleForm":"Loose","form":"Very long slender pods","color":"Green","imageQuery":"yardlong beans vegetable","cue":"Extra-long flexible pods hang in thin rope-like lengths.","group":"beans-peas","sourcePages":[1,4]},
-  {"catalogId":"beans-yellow-wax","title":"Yellow wax beans","code":"4533","family":"Beans","soldBy":"Weight","saleForm":"Loose","form":"Slim straight pods","color":"Yellow","imageQuery":"yellow wax beans vegetable","cue":"Smooth pale-yellow pods with the same slim form as green beans.","group":"beans-peas","sourcePages":[1,4]},
-  {"catalogId":"beets-bunch","title":"Beet bunch","code":"4539","family":"Roots","soldBy":"Each","saleForm":"Bunch","form":"Round roots with leafy tops","color":"Red-purple","imageQuery":"beetroot bunch leaves","cue":"Round burgundy roots remain attached to red-veined leafy tops.","group":"roots","sourcePages":[1,4]},
-  {"catalogId":"bittermelon","title":"Bitter melon","code":"4857","family":"Squash","soldBy":"Weight","saleForm":"Loose","form":"Ridged oblong gourd","color":"Green","imageQuery":"bitter melon fruit vegetable","cue":"Deeply wrinkled ridges cover a narrow oblong gourd.","group":"squash","sourcePages":[1]},
-  {"catalogId":"breadfruit","title":"Breadfruit","code":"3805","family":"Tropical Fruit","soldBy":"Weight","saleForm":"Loose","form":"Large round textured fruit","color":"Green","imageQuery":"breadfruit fruit","cue":"A large round green fruit with a fine polygon-patterned skin.","group":"tropical-fruit","sourcePages":[1,4,5],"specialty":true},
-  {"catalogId":"cabbages-savoy","title":"Savoy cabbage","code":"745","family":"Cabbages","soldBy":"Weight","saleForm":"Head","form":"Round crinkled head","color":"Green","imageQuery":"Savoy cabbage head","cue":"Deeply crinkled leaves form a loose round cabbage head.","group":"brassicas","sourcePages":[1,4]},
-  {"catalogId":"cabbages-chinese-nappa-suey-choy","title":"Napa cabbage","code":"4552","family":"Cabbages","soldBy":"Weight","saleForm":"Head","form":"Tall oval leafy head","color":"Pale green","imageQuery":"napa cabbage head","cue":"A tall pale head with broad white ribs and ruffled leaves.","group":"brassicas","sourcePages":[1,4]},
-  {"catalogId":"carrots-bunch","title":"Carrot bunch","code":"4094","family":"Carrots","soldBy":"Each","saleForm":"Bunch","form":"Tapered roots with tops","color":"Orange","imageQuery":"carrots bunch leafy tops","cue":"Several tapered orange roots are tied with their green tops attached.","group":"roots","sourcePages":[1,4]},
-  {"catalogId":"carrots-jumbo","title":"Jumbo carrots","code":"3170","family":"Carrots","soldBy":"Weight","saleForm":"Loose","form":"Large tapered roots","color":"Orange","imageQuery":"large jumbo carrots vegetable","cue":"Thick oversized orange roots taper gradually to a point.","group":"roots","sourcePages":[1,4]},
-  {"catalogId":"cassava-root-yucca","title":"Cassava root","code":"4819","family":"Roots","soldBy":"Weight","saleForm":"Loose","form":"Long woody tuber","color":"Brown","imageQuery":"cassava roots tuber","cue":"Long heavy tubers have rough brown bark-like skin and white flesh.","group":"roots","sourcePages":[1,4]},
-  {"catalogId":"collard-greens","title":"Collard greens","code":"4614","family":"Leafy Greens","soldBy":"Each","saleForm":"Bunch","form":"Broad flat leaves","color":"Dark green","imageQuery":"collard greens leaves bunch","cue":"Large smooth dark leaves spread from sturdy pale-green stems.","group":"leafy-greens","sourcePages":[1,4]},
-  {"catalogId":"cucumbers-dill","title":"Dill cucumber","code":"4596","family":"Cucumbers","soldBy":"Weight","saleForm":"Loose","form":"Short bumpy cucumber","color":"Green","imageQuery":"pickling dill cucumber","cue":"Short firm cucumbers have bumpy skin and blunt ends.","group":"cucumbers","sourcePages":[1,4]},
-  {"catalogId":"dandelion","title":"Dandelion greens","code":"4615","family":"Leafy Greens","soldBy":"Each","saleForm":"Bunch","form":"Long jagged leaves","color":"Green","imageQuery":"dandelion greens edible leaves bunch","cue":"Long narrow leaves have sharp irregular teeth along both edges.","group":"leafy-greens","sourcePages":[1]},
-  {"catalogId":"dill-baby-dill-herbs","title":"Dill","code":"4891","family":"Herbs","soldBy":"Each","saleForm":"Bunch","form":"Fine feathery herb stems","color":"Green","imageQuery":"fresh dill herb bunch","cue":"Very fine threadlike leaves branch from soft green stems.","group":"herbs","sourcePages":[1,4]},
-  {"catalogId":"eddoes-taro-root-small","title":"Eddoes taro root","code":"4794","family":"Roots","soldBy":"Weight","saleForm":"Loose","form":"Small hairy oval corms","color":"Brown","imageQuery":"eddoe taro root corms","cue":"Small oval corms have rough ringed brown skin with fine root hairs.","group":"roots","sourcePages":[1,4],"specialty":true},
-  {"catalogId":"endive-belgium","title":"Belgian endive","code":"4543","family":"Leafy Greens","soldBy":"Each","saleForm":"Head","form":"Small tightly folded spear head","color":"Cream and pale green","imageQuery":"Belgian endive vegetable","cue":"Tightly folded cream leaves form a small pointed torpedo-shaped head.","group":"leafy-greens","sourcePages":[1,4]},
-  {"catalogId":"gai-lan-chinese-broccoli","title":"Gai lan","code":"3160","family":"Leafy Greens","soldBy":"Each","saleForm":"Bunch","form":"Thick stems with broad leaves","color":"Blue-green","imageQuery":"gai lan Chinese broccoli vegetable","cue":"Thick smooth stems carry broad blue-green leaves and tiny flower buds.","group":"leafy-greens","sourcePages":[4],"flags":["sold-by-curated"],"specialty":true},
-  {"catalogId":"horseradish","title":"Horseradish root","code":"4625","family":"Roots","soldBy":"Weight","saleForm":"Loose","form":"Long knobby root","color":"Cream-brown","imageQuery":"horseradish root vegetable","cue":"A long rough cream-colored root has branching knobs and tapered ends.","group":"roots","sourcePages":[2,4]},
-  {"catalogId":"jicama","title":"Jicama","code":"4626","family":"Roots","soldBy":"Weight","saleForm":"Loose","form":"Round flattened root","color":"Tan","imageQuery":"jicama root vegetable","cue":"A round flattened tan root has papery skin and crisp white flesh.","group":"roots","sourcePages":[4],"flags":["sold-by-curated"]},
-  {"catalogId":"kale-black","title":"Black kale","code":"4624","family":"Leafy Greens","soldBy":"Each","saleForm":"Bunch","form":"Long blistered leaves","color":"Dark blue-green","imageQuery":"lacinato black kale leaves","cue":"Long narrow blue-green leaves have a deeply blistered pebbled surface.","group":"leafy-greens","sourcePages":[4],"flags":["sold-by-curated"]},
-  {"catalogId":"kohlrabi-green","title":"Green kohlrabi","code":"4628","family":"Roots","soldBy":"Each","saleForm":"Single","form":"Round swollen stem with shoots","color":"Pale green","imageQuery":"green kohlrabi vegetable","cue":"A pale round swollen stem sprouts long leaf stalks from its sides.","group":"roots","sourcePages":[2]},
-  {"catalogId":"leeks-baby","title":"Baby leeks","code":"4630","family":"Alliums","soldBy":"Each","saleForm":"Bunch","form":"Thin layered stalks","color":"White and green","imageQuery":"baby leeks vegetable bunch","cue":"Slim white shafts transition into narrow flat green leaves.","group":"alliums","sourcePages":[2]},
-  {"catalogId":"leeks-regular","title":"Regular leeks","code":"4629","family":"Alliums","soldBy":"Each","saleForm":"Bunch","form":"Thick layered stalks","color":"White and dark green","imageQuery":"leek vegetable bunch","cue":"Thick white cylindrical shafts fan into broad dark-green leaves.","group":"alliums","sourcePages":[2,4]},
-  {"catalogId":"lettuce-boston-butter","title":"Boston butter lettuce","code":"4632","family":"Lettuce","soldBy":"Each","saleForm":"Head","form":"Soft round leafy head","color":"Light green","imageQuery":"butterhead Boston lettuce","cue":"Soft rounded leaves overlap into a loose tender cup-shaped head.","group":"leafy-greens","sourcePages":[2,4]},
-  {"catalogId":"lettuce-escarole","title":"Escarole","code":"4605","family":"Lettuce","soldBy":"Each","saleForm":"Head","form":"Broad ruffled leafy head","color":"Green and cream","imageQuery":"escarole lettuce head","cue":"Broad slightly ruffled leaves open from a pale compact center.","group":"leafy-greens","sourcePages":[1,4]},
-  {"catalogId":"lettuce-green-leaf","title":"Green leaf lettuce","code":"4076","family":"Lettuce","soldBy":"Each","saleForm":"Head","form":"Loose ruffled leaf head","color":"Green","imageQuery":"green leaf lettuce head","cue":"Open bright-green leaves have soft deeply ruffled edges.","group":"leafy-greens","sourcePages":[2,4]},
-  {"catalogId":"lettuce-red-leaf","title":"Red leaf lettuce","code":"4075","family":"Lettuce","soldBy":"Each","saleForm":"Head","form":"Loose ruffled leaf head","color":"Red-green","imageQuery":"red leaf lettuce head","cue":"Ruffled leaves fade from green centers to burgundy-red edges.","group":"leafy-greens","sourcePages":[2,4]},
-  {"catalogId":"lotus-root","title":"Lotus root","code":"3099","family":"Roots","soldBy":"Weight","saleForm":"Loose","form":"Segmented cylindrical rhizome","color":"Tan","imageQuery":"lotus root vegetable sliced","cue":"Tan cylindrical segments reveal a wheel of large round holes when cut.","group":"roots","sourcePages":[2,4],"specialty":true},
-  {"catalogId":"mint-bunch-herbs","title":"Mint bunch","code":"4896","family":"Herbs","soldBy":"Each","saleForm":"Bunch","form":"Small serrated herb leaves","color":"Green","imageQuery":"fresh mint leaves bunch","cue":"Small opposite leaves have crisp serrated edges and textured veins.","group":"herbs","sourcePages":[1,4]},
-  {"catalogId":"mushrooms-oyster-bulk-handwritten","title":"Oyster mushrooms","code":"4649","family":"Mushrooms","soldBy":"Weight","saleForm":"Loose","form":"Layered fan-shaped caps","color":"Cream-grey","imageQuery":"oyster mushrooms Pleurotus ostreatus","cue":"Thin fan-shaped caps overlap in clustered shelves from a short base.","group":"mushrooms","sourcePages":[2,4]},
-  {"catalogId":"onions-pickling","title":"Pickling onions","code":"4661","family":"Onions","soldBy":"Weight","saleForm":"Loose","form":"Small round bulbs","color":"White-tan","imageQuery":"pickling onions small bulbs","cue":"Very small round onion bulbs have pale papery skins.","group":"alliums","sourcePages":[4],"flags":["sold-by-curated"]},
-  {"catalogId":"onions-spanish","title":"Spanish onion","code":"4093","family":"Onions","soldBy":"Weight","saleForm":"Loose","form":"Large round bulb","color":"Yellow-brown","imageQuery":"Spanish onion bulb","cue":"A large round bulb has light golden-brown papery skin.","group":"alliums","sourcePages":[2]},
-  {"catalogId":"onions-sweet","title":"Sweet onion","code":"4159","family":"Onions","soldBy":"Weight","saleForm":"Loose","form":"Wide flattened bulb","color":"Pale yellow","imageQuery":"sweet onion bulb Vidalia","cue":"A broad slightly flattened bulb wears thin pale-gold skin.","group":"alliums","sourcePages":[2]},
-  {"catalogId":"onions-white-bulk","title":"White onion","code":"4663","family":"Onions","soldBy":"Weight","saleForm":"Loose","form":"Round papery bulb","color":"White","imageQuery":"white onion bulb","cue":"Bright white papery skin covers a firm round bulb.","group":"alliums","sourcePages":[2,4]},
-  {"catalogId":"parsley-herbs","title":"Curly parsley","code":"4899","family":"Herbs","soldBy":"Each","saleForm":"Bunch","form":"Tightly curled herb leaves","color":"Dark green","imageQuery":"curly parsley bunch","cue":"Dense dark-green leaves curl into many tight frilled clusters.","group":"herbs","sourcePages":[1]},
-  {"catalogId":"parsley-italian-herbs","title":"Italian parsley","code":"4901","family":"Herbs","soldBy":"Each","saleForm":"Bunch","form":"Flat pointed herb leaves","color":"Green","imageQuery":"flat leaf Italian parsley bunch","cue":"Flat triangular leaves have sharp lobes rather than tight curls.","group":"herbs","sourcePages":[4],"flags":["sold-by-curated"]},
-  {"catalogId":"parsley-root-herbs","title":"Parsley root","code":"4671","family":"Roots","soldBy":"Each","saleForm":"Bunch","form":"Pale tapered root with parsley tops","color":"Cream","imageQuery":"parsley root vegetable","cue":"A cream tapered root resembles a slender parsnip with parsley-like tops.","group":"roots","sourcePages":[1]},
-  {"catalogId":"peas-green-english-bulk","title":"Green peas","code":"4674","family":"Peas","soldBy":"Weight","saleForm":"Loose","form":"Plump rounded pods","color":"Green","imageQuery":"green English peas pods","cue":"Rounded green pods show distinct plump peas pressing against the shell.","group":"beans-peas","sourcePages":[2,4]},
-  {"catalogId":"peas-snow-bulk","title":"Snow peas","code":"4092","family":"Peas","soldBy":"Weight","saleForm":"Loose","form":"Flat thin pods","color":"Green","imageQuery":"snow peas pods","cue":"Very flat thin pods show only tiny undeveloped peas inside.","group":"beans-peas","sourcePages":[2]},
-  {"catalogId":"peas-sugar-snap-bulk","title":"Sugar snap peas","code":"4675","family":"Peas","soldBy":"Weight","saleForm":"Loose","form":"Plump crisp pods","color":"Bright green","imageQuery":"sugar snap peas pods","cue":"Thick crisp bright-green pods are plumper than snow peas.","group":"beans-peas","sourcePages":[2]},
-  {"catalogId":"peppers-green-finger-hot","title":"Green finger pepper","code":"4707","family":"Peppers","soldBy":"Weight","saleForm":"Loose","form":"Long narrow tapered pepper","color":"Green","imageQuery":"green finger chilli pepper","cue":"A long slim green pod tapers sharply to a pointed end.","group":"hot-peppers","sourcePages":[2,4]},
-  {"catalogId":"peppers-green-thai-chilli","title":"Green Thai chili","code":"58278","family":"Peppers","soldBy":"Weight","saleForm":"Loose","form":"Tiny narrow chili pods","color":"Green","imageQuery":"green Thai chili peppers","cue":"Small rigid green chilies are narrow, smooth, and sharply pointed.","group":"hot-peppers","sourcePages":[2,4],"specialty":true},
-  {"catalogId":"peppers-red-long","title":"Red long pepper","code":"4711","family":"Peppers","soldBy":"Weight","saleForm":"Loose","form":"Long curved tapered pepper","color":"Red","imageQuery":"long red chili pepper","cue":"A long red pod curves gently and narrows to a fine point.","group":"hot-peppers","sourcePages":[2]},
-  {"catalogId":"peppers-scotch-bonnet-handwritten","title":"Scotch bonnet pepper","code":"433","family":"Peppers","soldBy":"Weight","saleForm":"Loose","form":"Squat wrinkled bonnet pepper","color":"Red-orange","imageQuery":"Scotch bonnet pepper fruit","cue":"A squat wrinkled pod flares outward like a small bonnet.","group":"hot-peppers","sourcePages":[2,5]},
-  {"catalogId":"peppers-yellow-hot","title":"Yellow hot pepper","code":"4690","family":"Peppers","soldBy":"Weight","saleForm":"Loose","form":"Tapered chili pepper","color":"Yellow","imageQuery":"yellow chili pepper fruit","cue":"Bright yellow skin covers a slim tapered hot-pepper shape.","group":"hot-peppers","sourcePages":[2]},
-  {"catalogId":"radicchio","title":"Radicchio","code":"4738","family":"Leafy Greens","soldBy":"Weight","saleForm":"Head","form":"Compact round leafy head","color":"Purple-red and white","imageQuery":"radicchio head vegetable","cue":"Purple-red leaves with bold white veins form a compact round head.","group":"leafy-greens","sourcePages":[3,4]},
-  {"catalogId":"radishes-bunch","title":"Radish bunch","code":"4089","family":"Roots","soldBy":"Each","saleForm":"Bunch","form":"Small round roots with tops","color":"Red and white","imageQuery":"red radish bunch leaves","cue":"Small red round roots show white tips beneath fresh leafy tops.","group":"roots","sourcePages":[3]},
-  {"catalogId":"rapini-saag","title":"Rapini","code":"4547","family":"Leafy Greens","soldBy":"Each","saleForm":"Bunch","form":"Leafy stems with small florets","color":"Green","imageQuery":"rapini broccoli rabe bunch","cue":"Thin leafy stems carry small loose broccoli-like flower clusters.","group":"leafy-greens","sourcePages":[3,4]},
-  {"catalogId":"rhubarb","title":"Rhubarb","code":"4745","family":"Stalk Vegetables","soldBy":"Weight","saleForm":"Loose","form":"Long thick stalks","color":"Red-green","imageQuery":"rhubarb stalks vegetable","cue":"Long firm stalks range from green to vivid pink-red, with broad leaves removed.","group":"stalks","sourcePages":[4],"flags":["sold-by-curated"]},
-  {"catalogId":"rutabaga","title":"Rutabaga","code":"4747","family":"Roots","soldBy":"Weight","saleForm":"Loose","form":"Large round waxy root","color":"Tan and purple","imageQuery":"rutabaga swede root vegetable","cue":"A large round tan root has a purple shoulder and waxy-looking skin.","group":"roots","sourcePages":[3]},
-  {"catalogId":"shallots","title":"Shallots","code":"4662","family":"Alliums","soldBy":"Weight","saleForm":"Loose","form":"Small elongated bulbs","color":"Copper-purple","imageQuery":"shallot bulbs","cue":"Small elongated bulbs sit in coppery papery skins, often in clustered lobes.","group":"alliums","sourcePages":[4],"flags":["sold-by-curated"]},
-  {"catalogId":"squash-butternut","title":"Butternut squash","code":"4759","family":"Squash","soldBy":"Weight","saleForm":"Loose","form":"Bell-shaped long-neck squash","color":"Tan","imageQuery":"butternut squash fruit","cue":"A smooth tan squash has a long solid neck and bulbous seed end.","group":"squash","sourcePages":[3,4]},
-  {"catalogId":"squash-chayote","title":"Chayote squash","code":"4761","family":"Squash","soldBy":"Weight","saleForm":"Loose","form":"Pear-shaped folded squash","color":"Light green","imageQuery":"chayote squash fruit","cue":"A pale-green pear-shaped squash has a deep folded crease at one end.","group":"squash","sourcePages":[3,4]},
-  {"catalogId":"squash-pepper-acorn","title":"Acorn squash","code":"4750","family":"Squash","soldBy":"Weight","saleForm":"Loose","form":"Small deeply ribbed squash","color":"Dark green","imageQuery":"acorn squash fruit","cue":"Deep vertical ribs cover a compact dark-green acorn-shaped squash.","group":"squash","sourcePages":[3,4]},
-  {"catalogId":"squash-spaghetti","title":"Spaghetti squash","code":"4776","family":"Squash","soldBy":"Weight","saleForm":"Loose","form":"Oblong smooth squash","color":"Yellow","imageQuery":"spaghetti squash fruit","cue":"A smooth hard yellow rind surrounds an even oblong football shape.","group":"squash","sourcePages":[3,4]},
-  {"catalogId":"tomatoes-field","title":"Field tomato","code":"4064","family":"Tomatoes","soldBy":"Weight","saleForm":"Loose","form":"Round medium tomato","color":"Red","imageQuery":"field tomatoes red fruit","cue":"A classic round red tomato has smooth shoulders and no vine attached.","group":"tomatoes","sourcePages":[3]},
-  {"catalogId":"tomatoes-heir-variety","title":"Heirloom tomato","code":"3423","family":"Tomatoes","soldBy":"Weight","saleForm":"Loose","form":"Irregular ribbed tomato","color":"Mixed","imageQuery":"heirloom tomatoes fruit","cue":"Uneven lobes, ribs, and mixed colors distinguish heirloom varieties.","group":"tomatoes","sourcePages":[3]},
-  {"catalogId":"tomatoes-hothouse-big","title":"Hothouse tomato","code":"4799","family":"Tomatoes","soldBy":"Weight","saleForm":"Loose","form":"Large smooth round tomato","color":"Red","imageQuery":"hothouse beefsteak tomato fruit","cue":"A large polished red tomato has broad rounded shoulders.","group":"tomatoes","sourcePages":[3]},
-  {"catalogId":"tomatoes-on-the-vine-bulk-mesh","title":"On-the-vine tomatoes","code":"4664","family":"Tomatoes","soldBy":"Weight","saleForm":"Vine cluster","form":"Round tomatoes on a shared vine","color":"Red","imageQuery":"tomatoes on the vine cluster","cue":"Several even red tomatoes remain connected along one green branching vine.","group":"tomatoes","sourcePages":[3,4]},
-  {"catalogId":"tomatoes-vine-ripe-big","title":"Vine-ripe tomato","code":"3151","family":"Tomatoes","soldBy":"Weight","saleForm":"Loose","form":"Large round ripe tomato","color":"Red","imageQuery":"vine ripe tomato fruit","cue":"A ripe deep-red tomato is large and round but sold without a vine cluster.","group":"tomatoes","sourcePages":[3]},
-  {"catalogId":"turmeric","title":"Turmeric root","code":"58661","family":"Roots","soldBy":"Weight","saleForm":"Loose","form":"Small branched rhizomes","color":"Orange-brown","imageQuery":"fresh turmeric root rhizomes","cue":"Small knobby brown rhizomes reveal vivid orange flesh at cut ends.","group":"roots","sourcePages":[3]},
-  {"catalogId":"potatoes-yellow-yukon-gold-bulk-handwritten","title":"Yukon Gold potato","code":"4727","family":"Potatoes","soldBy":"Weight","saleForm":"Loose","form":"Round smooth potato","color":"Yellow-tan","imageQuery":"Yukon Gold potatoes","cue":"Smooth thin golden-tan skin covers a round to oval potato.","group":"potatoes-yams","sourcePages":[2,4]},
-  {"catalogId":"potatoes-yams-caribbean-sweet","title":"Caribbean sweet potato","code":"3288","family":"Potatoes","soldBy":"Weight","saleForm":"Loose","form":"Thick tapered sweet potato","color":"Red-brown","imageQuery":"Caribbean sweet potato boniato tuber","cue":"A thick tapered tuber has reddish-brown skin and pale flesh.","group":"potatoes-yams","sourcePages":[2],"specialty":true},
-  {"catalogId":"potatoes-yams-jamaican-sweet","title":"Jamaican sweet potato","code":"802","family":"Potatoes","soldBy":"Weight","saleForm":"Loose","form":"Irregular tapered sweet potato","color":"Purple-brown","imageQuery":"Jamaican sweet potato tuber","cue":"An irregular tapered tuber has rough purple-brown skin and pale flesh.","group":"potatoes-yams","sourcePages":[2],"specialty":true},
-  {"catalogId":"potatoes-yams-white-long","title":"White long yam","code":"4726","family":"Yams","soldBy":"Weight","saleForm":"Loose","form":"Long cylindrical tuber","color":"Brown","imageQuery":"white yam long tuber","cue":"A long heavy cylinder has rough brown bark-like skin and white flesh.","group":"potatoes-yams","sourcePages":[2],"specialty":true},
-  {"catalogId":"potatoes-yams-white-yam","title":"White yam","code":"3276","family":"Yams","soldBy":"Weight","saleForm":"Loose","form":"Large cylindrical tuber","color":"Brown","imageQuery":"white yam tuber Dioscorea","cue":"A heavy brown-skinned tuber reveals dry white flesh when cut.","group":"potatoes-yams","sourcePages":[2],"specialty":true},
-  {"catalogId":"potatoes-yams-yellow-yam","title":"Yellow yam","code":"3275","family":"Yams","soldBy":"Weight","saleForm":"Loose","form":"Large cylindrical tuber","color":"Brown and yellow","imageQuery":"yellow yam tuber Dioscorea cayenensis","cue":"Rough brown skin encloses noticeably yellow flesh.","group":"potatoes-yams","sourcePages":[2],"specialty":true},
-  {"catalogId":"zucchini-grey","title":"Grey zucchini","code":"4785","family":"Zucchini","soldBy":"Weight","saleForm":"Loose","form":"Short thick cylindrical squash","color":"Pale green-grey","imageQuery":"grey zucchini squash","cue":"A short thick squash has pale grey-green mottled skin and a rounded tip.","group":"squash","sourcePages":[3]},
-  {"catalogId":"zucchini-yellow","title":"Yellow zucchini","code":"4086","family":"Zucchini","soldBy":"Weight","saleForm":"Loose","form":"Straight cylindrical squash","color":"Yellow","imageQuery":"yellow zucchini squash","cue":"Smooth bright-yellow skin covers a straight slim zucchini form.","group":"squash","sourcePages":[3,4]},
-  {"catalogId":"persimmons-hachiya-japanese-99038","title":"Hachiya persimmon","code":"4427","family":"Tropical Fruit","soldBy":"Each","saleForm":"Single","form":"Tall acorn-shaped fruit","color":"Orange","imageQuery":"Hachiya persimmon fruit","cue":"A tall orange fruit narrows to a pointed base beneath a leafy cap.","group":"persimmons","sourcePages":[2,5]},
-  {"catalogId":"prickly-pears-bulk","title":"Prickly pear","code":"4255","family":"Tropical Fruit","soldBy":"Weight","saleForm":"Loose","form":"Oval cactus fruit","color":"Red-green","imageQuery":"prickly pear cactus fruit","cue":"An oval cactus fruit has smooth skin dotted with small areoles.","group":"tropical-fruit","sourcePages":[2,5]},
-  {"catalogId":"pummelo-white-chinese","title":"White pummelo","code":"4279","family":"Citrus","soldBy":"Each","saleForm":"Single","form":"Very large round citrus","color":"Pale green-yellow","imageQuery":"white pomelo pummelo fruit","cue":"A very large pale citrus fruit has a thick rind and broad rounded body.","group":"citrus","sourcePages":[1,5]},
-  {"catalogId":"tangerines-mandarin","title":"Mandarin tangerine","code":"4055","family":"Citrus","soldBy":"Weight","saleForm":"Loose","form":"Small flattened citrus","color":"Orange","imageQuery":"mandarin orange tangerine fruit","cue":"A small bright-orange citrus is slightly flattened with loose easy-peel skin.","group":"citrus","sourcePages":[3]},
-  {"catalogId":"tangelos-minneola-handwritten","title":"Minneola tangelo","code":"4383","family":"Citrus","soldBy":"Weight","saleForm":"Loose","form":"Round citrus with a neck","color":"Orange-red","imageQuery":"Minneola tangelo fruit","cue":"A round deep-orange citrus has a distinctive raised neck at the stem.","group":"citrus","sourcePages":[2,5]},
-  {"catalogId":"watermelons-mini-seedless","title":"Mini seedless watermelon","code":"3421","family":"Watermelons","soldBy":"Each","saleForm":"Single","form":"Small round melon","color":"Dark green","imageQuery":"mini seedless watermelon fruit","cue":"A compact nearly round watermelon has dark green striped skin.","group":"watermelons","sourcePages":[3,5]},
-  {"catalogId":"watermelons-red-seeded-jumbo","title":"Seeded jumbo watermelon","code":"4031","family":"Watermelons","soldBy":"Each","saleForm":"Single","form":"Large oblong melon","color":"Green","imageQuery":"large seeded watermelon fruit","cue":"A very large oblong watermelon contains visible black seeds in red flesh.","group":"watermelons","sourcePages":[3,5]},
-  {"catalogId":"pears-asian-yellow","title":"Asian yellow pear","code":"4407","family":"Pears","soldBy":"Weight","saleForm":"Loose","form":"Round apple-shaped pear","color":"Yellow","imageQuery":"Asian yellow pear fruit","cue":"A round apple-like pear has smooth yellow skin rather than brown russeting.","group":"pears","sourcePages":[2]},
-  {"catalogId":"pears-forelle","title":"Forelle pear","code":"4418","family":"Pears","soldBy":"Weight","saleForm":"Loose","form":"Small bell-shaped pear","color":"Yellow-green and red","imageQuery":"Forelle pear fruit","cue":"A small pear shows fine red freckles and blush over yellow-green skin.","group":"pears","sourcePages":[2]},
-  {"catalogId":"pears-red","title":"Red pear","code":"4415","family":"Pears","soldBy":"Weight","saleForm":"Loose","form":"Classic bell-shaped pear","color":"Red","imageQuery":"red pear fruit","cue":"Deep red skin covers a traditional narrow-necked pear silhouette.","group":"pears","sourcePages":[2]},
-  {"catalogId":"pears-yali-ya","title":"Yali pear","code":"4890","family":"Pears","soldBy":"Weight","saleForm":"Loose","form":"Long-necked Asian pear","color":"Pale yellow-green","imageQuery":"Yali pear fruit","cue":"A pale smooth pear has a long narrow neck and rounded lower body.","group":"pears","sourcePages":[2,5],"specialty":true},
-  {"catalogId":"grapes-crimson","title":"Crimson grapes","code":"4499","family":"Grapes","soldBy":"Weight","saleForm":"Loose","form":"Clusters of elongated berries","color":"Red","imageQuery":"Crimson seedless grapes fruit","cue":"Red berries are more elongated and evenly crimson than standard red seedless grapes.","group":"grapes","sourcePages":[1]},
-  {"catalogId":"grapes-italy-green","title":"Italia green grapes","code":"3043","family":"Grapes","soldBy":"Weight","saleForm":"Loose","form":"Clusters of large oval berries","color":"Green-gold","imageQuery":"Italia grapes green fruit","cue":"Large oval green-gold berries form loose heavy clusters.","group":"grapes","sourcePages":[1]},
-  {"catalogId":"mangos-ataulfo","title":"Ataulfo mango","code":"4961","family":"Mangoes","soldBy":"Each","saleForm":"Single","form":"Small curved mango","color":"Yellow","imageQuery":"Ataulfo mango fruit","cue":"A small slender mango curves gently and ripens to solid golden yellow.","group":"mangoes","sourcePages":[2]},
-  {"catalogId":"mangos-indian","title":"Indian mango","code":"4314","family":"Mangoes","soldBy":"Weight","saleForm":"Loose","form":"Oval tapered mango","color":"Yellow-red","imageQuery":"Indian mango fruit cultivar","cue":"An oval mango has a tapered beak and warm yellow skin with possible red blush.","group":"mangoes","sourcePages":[2],"specialty":true},
-  {"catalogId":"mangos-yellow","title":"Yellow mango","code":"4312","family":"Mangoes","soldBy":"Each","saleForm":"Single","form":"Oblong tapered mango","color":"Yellow","imageQuery":"yellow mango fruit","cue":"Smooth yellow skin covers an oblong mango with a gently pointed end.","group":"mangoes","sourcePages":[2]},
-  {"catalogId":"melons-canary-yellow-honeydew","title":"Canary melon","code":"4317","family":"Melons","soldBy":"Weight","saleForm":"Loose","form":"Long oval smooth melon","color":"Bright yellow","imageQuery":"canary melon fruit","cue":"A long oval melon has a vivid smooth yellow rind with no netting.","group":"melons","sourcePages":[2,5]},
-  {"catalogId":"melons-hami-handwritten","title":"Hami melon","code":"3623","family":"Melons","soldBy":"Weight","saleForm":"Loose","form":"Large oval lightly netted melon","color":"Yellow-green","imageQuery":"Hami melon fruit","cue":"A large oval melon has yellow-green skin with light netting and pale stripes.","group":"melons","sourcePages":[2,5],"specialty":true},
-  {"catalogId":"melons-santa-claus-handwritten","title":"Santa Claus melon","code":"4336","family":"Melons","soldBy":"Weight","saleForm":"Loose","form":"Long oval striped melon","color":"Green-yellow","imageQuery":"Santa Claus melon fruit Piel de Sapo","cue":"A long oval melon has mottled dark-green stripes over a yellow-green rind.","group":"melons","sourcePages":[2,5],"specialty":true},
-  {"catalogId":"melons-white-honeydew","title":"White honeydew melon","code":"4329","family":"Melons","soldBy":"Each","saleForm":"Single","form":"Round smooth melon","color":"Cream-white","imageQuery":"white honeydew melon fruit","cue":"A round melon has a smooth pale cream rind without cantaloupe netting.","group":"melons","sourcePages":[2]}
+  {
+    "catalogId": "apples-ambrosia",
+    "title": "Ambrosia apple",
+    "code": "3438",
+    "family": "Apples",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Round striped apple",
+    "color": "Red and yellow",
+    "imageQuery": "Ambrosia apple cultivar fruit",
+    "cue": "Glossy red blush over a creamy yellow background.",
+    "group": "apples",
+    "sourcePages": [
+      5
+    ],
+    "flags": [
+      "sold-by-curated"
+    ]
+  },
+  {
+    "catalogId": "apples-chinese-fuji",
+    "title": "Chinese Fuji apple",
+    "code": "54131",
+    "family": "Apples",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Round striped apple",
+    "color": "Pink-red",
+    "imageQuery": "Fuji apple fruit",
+    "cue": "Dense pink-red striping over pale yellow skin.",
+    "group": "apples",
+    "sourcePages": [
+      1
+    ]
+  },
+  {
+    "catalogId": "apples-golden",
+    "title": "Golden apple",
+    "code": "4021",
+    "family": "Apples",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Round golden apple",
+    "color": "Yellow-green",
+    "imageQuery": "yellow golden apple fruit",
+    "cue": "Plain yellow-green skin without heavy red striping.",
+    "group": "apples",
+    "sourcePages": [
+      1
+    ]
+  },
+  {
+    "catalogId": "apples-pink-lady-cripps",
+    "title": "Pink Lady apple",
+    "code": "4128",
+    "family": "Apples",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Round crisp apple",
+    "color": "Pink-red",
+    "imageQuery": "Pink Lady Cripps apple fruit",
+    "cue": "Bright pink-red blush over a yellow-green background.",
+    "group": "apples",
+    "sourcePages": [
+      5
+    ],
+    "flags": [
+      "sold-by-curated"
+    ]
+  },
+  {
+    "catalogId": "apples-spartan-extra-fancy",
+    "title": "Spartan apple",
+    "code": "4177",
+    "family": "Apples",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Compact round apple",
+    "color": "Deep red",
+    "imageQuery": "Spartan apple cultivar fruit",
+    "cue": "Dark burgundy-red skin on a compact round apple.",
+    "group": "apples",
+    "sourcePages": [
+      5
+    ],
+    "flags": [
+      "sold-by-curated"
+    ]
+  },
+  {
+    "catalogId": "nectarines-white-flesh",
+    "title": "White nectarine",
+    "code": "4188",
+    "family": "Stone Fruit",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Round smooth stone fruit",
+    "color": "Cream and red",
+    "imageQuery": "white nectarine fruit",
+    "cue": "Pale cream skin with a red blush and no peach fuzz.",
+    "group": "stone-fruit",
+    "sourcePages": [
+      2
+    ]
+  },
+  {
+    "catalogId": "basil-herbs",
+    "title": "Basil",
+    "code": "4885",
+    "family": "Herbs",
+    "soldBy": "Each",
+    "saleForm": "Bunch",
+    "form": "Broad oval herb leaves",
+    "color": "Green",
+    "imageQuery": "sweet basil leaves bunch",
+    "cue": "Smooth broad leaves with softly rounded points.",
+    "group": "herbs",
+    "sourcePages": [
+      1
+    ]
+  },
+  {
+    "catalogId": "anise-fennel-herbs",
+    "title": "Anise fennel",
+    "code": "4515",
+    "family": "Herbs",
+    "soldBy": "Each",
+    "saleForm": "Single",
+    "form": "Layered bulb with feathery fronds",
+    "color": "White and green",
+    "imageQuery": "fennel bulb vegetable fronds",
+    "cue": "A layered white bulb topped by feathery green fronds.",
+    "group": "herbs",
+    "sourcePages": [
+      1,
+      4
+    ]
+  },
+  {
+    "catalogId": "artichokes-large",
+    "title": "Large artichoke",
+    "code": "4084",
+    "family": "Artichokes",
+    "soldBy": "Each",
+    "saleForm": "Single",
+    "form": "Layered round flower bud",
+    "color": "Green",
+    "imageQuery": "globe artichoke vegetable",
+    "cue": "Tight overlapping scales form a heavy round bud.",
+    "group": "brassicas",
+    "sourcePages": [
+      4
+    ],
+    "flags": [
+      "sold-by-curated"
+    ]
+  },
+  {
+    "catalogId": "bok-choy-baby-hai-tupak-choy",
+    "title": "Baby bok choy",
+    "code": "4544",
+    "family": "Leafy Greens",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Small spoon-leaf clusters",
+    "color": "Green and white",
+    "imageQuery": "baby bok choy vegetable",
+    "cue": "Small upright clusters with pale thick stems and spoon-shaped leaves.",
+    "group": "leafy-greens",
+    "sourcePages": [
+      1,
+      4
+    ]
+  },
+  {
+    "catalogId": "bok-choy-shanghai",
+    "title": "Shanghai bok choy",
+    "code": "3163",
+    "family": "Leafy Greens",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Compact spoon-leaf clusters",
+    "color": "Light green",
+    "imageQuery": "Shanghai bok choy vegetable",
+    "cue": "Compact pale-green stems blend into smooth rounded leaves.",
+    "group": "leafy-greens",
+    "sourcePages": [
+      1,
+      4
+    ]
+  },
+  {
+    "catalogId": "beans-long-chinese-dow-gok-bodie",
+    "title": "Chinese long beans",
+    "code": "4527",
+    "family": "Beans",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Very long slender pods",
+    "color": "Green",
+    "imageQuery": "yardlong beans vegetable",
+    "cue": "Extra-long flexible pods hang in thin rope-like lengths.",
+    "group": "beans-peas",
+    "sourcePages": [
+      1,
+      4
+    ]
+  },
+  {
+    "catalogId": "beans-yellow-wax",
+    "title": "Yellow wax beans",
+    "code": "4533",
+    "family": "Beans",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Slim straight pods",
+    "color": "Yellow",
+    "imageQuery": "yellow wax beans vegetable",
+    "cue": "Smooth pale-yellow pods with the same slim form as green beans.",
+    "group": "beans-peas",
+    "sourcePages": [
+      1,
+      4
+    ]
+  },
+  {
+    "catalogId": "beets-bunch",
+    "title": "Beet bunch",
+    "code": "4539",
+    "family": "Roots",
+    "soldBy": "Each",
+    "saleForm": "Bunch",
+    "form": "Round roots with leafy tops",
+    "color": "Red-purple",
+    "imageQuery": "beetroot bunch leaves",
+    "cue": "Round burgundy roots remain attached to red-veined leafy tops.",
+    "group": "roots",
+    "sourcePages": [
+      1,
+      4
+    ]
+  },
+  {
+    "catalogId": "bittermelon",
+    "title": "Bitter melon",
+    "code": "4857",
+    "family": "Squash",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Ridged oblong gourd",
+    "color": "Green",
+    "imageQuery": "bitter melon fruit vegetable",
+    "cue": "Deeply wrinkled ridges cover a narrow oblong gourd.",
+    "group": "squash",
+    "sourcePages": [
+      1
+    ]
+  },
+  {
+    "catalogId": "breadfruit",
+    "title": "Breadfruit",
+    "code": "3805",
+    "family": "Tropical Fruit",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Large round textured fruit",
+    "color": "Green",
+    "imageQuery": "breadfruit fruit",
+    "cue": "A large round green fruit with a fine polygon-patterned skin.",
+    "group": "tropical-fruit",
+    "sourcePages": [
+      1,
+      4,
+      5
+    ],
+    "specialty": true
+  },
+  {
+    "catalogId": "cabbages-savoy",
+    "title": "Savoy cabbage",
+    "code": "745",
+    "family": "Cabbages",
+    "soldBy": "Weight",
+    "saleForm": "Head",
+    "form": "Round crinkled head",
+    "color": "Green",
+    "imageQuery": "Savoy cabbage head",
+    "cue": "Deeply crinkled leaves form a loose round cabbage head.",
+    "group": "brassicas",
+    "sourcePages": [
+      1,
+      4
+    ]
+  },
+  {
+    "catalogId": "cabbages-chinese-nappa-suey-choy",
+    "title": "Napa cabbage",
+    "code": "4552",
+    "family": "Cabbages",
+    "soldBy": "Weight",
+    "saleForm": "Head",
+    "form": "Tall oval leafy head",
+    "color": "Pale green",
+    "imageQuery": "napa cabbage head",
+    "cue": "A tall pale head with broad white ribs and ruffled leaves.",
+    "group": "brassicas",
+    "sourcePages": [
+      1,
+      4
+    ]
+  },
+  {
+    "catalogId": "carrots-bunch",
+    "title": "Carrot bunch",
+    "code": "4094",
+    "family": "Carrots",
+    "soldBy": "Each",
+    "saleForm": "Bunch",
+    "form": "Tapered roots with tops",
+    "color": "Orange",
+    "imageQuery": "carrots bunch leafy tops",
+    "cue": "Several tapered orange roots are tied with their green tops attached.",
+    "group": "roots",
+    "sourcePages": [
+      1,
+      4
+    ]
+  },
+  {
+    "catalogId": "carrots-jumbo",
+    "title": "Jumbo carrots",
+    "code": "3170",
+    "family": "Carrots",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Large tapered roots",
+    "color": "Orange",
+    "imageQuery": "Big Carrot-2356",
+    "cue": "Thick oversized orange roots taper gradually to a point.",
+    "group": "roots",
+    "sourcePages": [
+      1,
+      4
+    ]
+  },
+  {
+    "catalogId": "cassava-root-yucca",
+    "title": "Cassava root",
+    "code": "4819",
+    "family": "Roots",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Long woody tuber",
+    "color": "Brown",
+    "imageQuery": "cassava roots tuber",
+    "cue": "Long heavy tubers have rough brown bark-like skin and white flesh.",
+    "group": "roots",
+    "sourcePages": [
+      1,
+      4
+    ]
+  },
+  {
+    "catalogId": "collard-greens",
+    "title": "Collard greens",
+    "code": "4614",
+    "family": "Leafy Greens",
+    "soldBy": "Each",
+    "saleForm": "Bunch",
+    "form": "Broad flat leaves",
+    "color": "Dark green",
+    "imageQuery": "Collard green bunches",
+    "cue": "Large smooth dark leaves spread from sturdy pale-green stems.",
+    "group": "leafy-greens",
+    "sourcePages": [
+      1,
+      4
+    ]
+  },
+  {
+    "catalogId": "cucumbers-dill",
+    "title": "Dill cucumber",
+    "code": "4596",
+    "family": "Cucumbers",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Short bumpy cucumber",
+    "color": "Green",
+    "imageQuery": "pickling dill cucumber",
+    "cue": "Short firm cucumbers have bumpy skin and blunt ends.",
+    "group": "cucumbers",
+    "sourcePages": [
+      1,
+      4
+    ]
+  },
+  {
+    "catalogId": "dandelion",
+    "title": "Dandelion greens",
+    "code": "4615",
+    "family": "Leafy Greens",
+    "soldBy": "Each",
+    "saleForm": "Bunch",
+    "form": "Long jagged leaves",
+    "color": "Green",
+    "imageQuery": "Dandelion greens.jpg",
+    "cue": "Long narrow leaves have sharp irregular teeth along both edges.",
+    "group": "leafy-greens",
+    "sourcePages": [
+      1
+    ]
+  },
+  {
+    "catalogId": "dill-baby-dill-herbs",
+    "title": "Dill",
+    "code": "4891",
+    "family": "Herbs",
+    "soldBy": "Each",
+    "saleForm": "Bunch",
+    "form": "Fine feathery herb stems",
+    "color": "Green",
+    "imageQuery": "fresh dill herb bunch",
+    "cue": "Very fine threadlike leaves branch from soft green stems.",
+    "group": "herbs",
+    "sourcePages": [
+      1,
+      4
+    ]
+  },
+  {
+    "catalogId": "eddoes-taro-root-small",
+    "title": "Eddoes taro root",
+    "code": "4794",
+    "family": "Roots",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Small hairy oval corms",
+    "color": "Brown",
+    "imageQuery": "eddoe taro root corms",
+    "cue": "Small oval corms have rough ringed brown skin with fine root hairs.",
+    "group": "roots",
+    "sourcePages": [
+      1,
+      4
+    ],
+    "specialty": true
+  },
+  {
+    "catalogId": "endive-belgium",
+    "title": "Belgian endive",
+    "code": "4543",
+    "family": "Leafy Greens",
+    "soldBy": "Each",
+    "saleForm": "Head",
+    "form": "Small tightly folded spear head",
+    "color": "Cream and pale green",
+    "imageQuery": "Belgian endive vegetable",
+    "cue": "Tightly folded cream leaves form a small pointed torpedo-shaped head.",
+    "group": "leafy-greens",
+    "sourcePages": [
+      1,
+      4
+    ]
+  },
+  {
+    "catalogId": "gai-lan-chinese-broccoli",
+    "title": "Gai lan",
+    "code": "3160",
+    "family": "Leafy Greens",
+    "soldBy": "Each",
+    "saleForm": "Bunch",
+    "form": "Thick stems with broad leaves",
+    "color": "Blue-green",
+    "imageQuery": "gai lan Chinese broccoli vegetable",
+    "cue": "Thick smooth stems carry broad blue-green leaves and tiny flower buds.",
+    "group": "leafy-greens",
+    "sourcePages": [
+      4
+    ],
+    "flags": [
+      "sold-by-curated"
+    ],
+    "specialty": true
+  },
+  {
+    "catalogId": "horseradish",
+    "title": "Horseradish root",
+    "code": "4625",
+    "family": "Roots",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Long knobby root",
+    "color": "Cream-brown",
+    "imageQuery": "horseradish root vegetable",
+    "cue": "A long rough cream-colored root has branching knobs and tapered ends.",
+    "group": "roots",
+    "sourcePages": [
+      2,
+      4
+    ]
+  },
+  {
+    "catalogId": "jicama",
+    "title": "Jicama",
+    "code": "4626",
+    "family": "Roots",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Round flattened root",
+    "color": "Tan",
+    "imageQuery": "jicama root vegetable",
+    "cue": "A round flattened tan root has papery skin and crisp white flesh.",
+    "group": "roots",
+    "sourcePages": [
+      4
+    ],
+    "flags": [
+      "sold-by-curated"
+    ]
+  },
+  {
+    "catalogId": "kale-black",
+    "title": "Black kale",
+    "code": "4624",
+    "family": "Leafy Greens",
+    "soldBy": "Each",
+    "saleForm": "Bunch",
+    "form": "Long blistered leaves",
+    "color": "Dark blue-green",
+    "imageQuery": "lacinato black kale leaves",
+    "cue": "Long narrow blue-green leaves have a deeply blistered pebbled surface.",
+    "group": "leafy-greens",
+    "sourcePages": [
+      4
+    ],
+    "flags": [
+      "sold-by-curated"
+    ]
+  },
+  {
+    "catalogId": "kohlrabi-green",
+    "title": "Green kohlrabi",
+    "code": "4628",
+    "family": "Roots",
+    "soldBy": "Each",
+    "saleForm": "Single",
+    "form": "Round swollen stem with shoots",
+    "color": "Pale green",
+    "imageQuery": "green kohlrabi vegetable",
+    "cue": "A pale round swollen stem sprouts long leaf stalks from its sides.",
+    "group": "roots",
+    "sourcePages": [
+      2
+    ]
+  },
+  {
+    "catalogId": "leeks-baby",
+    "title": "Baby leeks",
+    "code": "4630",
+    "family": "Alliums",
+    "soldBy": "Each",
+    "saleForm": "Bunch",
+    "form": "Thin layered stalks",
+    "color": "White and green",
+    "imageQuery": "baby leeks vegetable bunch",
+    "cue": "Slim white shafts transition into narrow flat green leaves.",
+    "group": "alliums",
+    "sourcePages": [
+      2
+    ]
+  },
+  {
+    "catalogId": "leeks-regular",
+    "title": "Regular leeks",
+    "code": "4629",
+    "family": "Alliums",
+    "soldBy": "Each",
+    "saleForm": "Bunch",
+    "form": "Thick layered stalks",
+    "color": "White and dark green",
+    "imageQuery": "leek vegetable bunch",
+    "cue": "Thick white cylindrical shafts fan into broad dark-green leaves.",
+    "group": "alliums",
+    "sourcePages": [
+      2,
+      4
+    ]
+  },
+  {
+    "catalogId": "lettuce-boston-butter",
+    "title": "Boston butter lettuce",
+    "code": "4632",
+    "family": "Lettuce",
+    "soldBy": "Each",
+    "saleForm": "Head",
+    "form": "Soft round leafy head",
+    "color": "Light green",
+    "imageQuery": "butterhead Boston lettuce",
+    "cue": "Soft rounded leaves overlap into a loose tender cup-shaped head.",
+    "group": "leafy-greens",
+    "sourcePages": [
+      2,
+      4
+    ]
+  },
+  {
+    "catalogId": "lettuce-escarole",
+    "title": "Escarole",
+    "code": "4605",
+    "family": "Lettuce",
+    "soldBy": "Each",
+    "saleForm": "Head",
+    "form": "Broad ruffled leafy head",
+    "color": "Green and cream",
+    "imageQuery": "escarole lettuce head",
+    "cue": "Broad slightly ruffled leaves open from a pale compact center.",
+    "group": "leafy-greens",
+    "sourcePages": [
+      1,
+      4
+    ]
+  },
+  {
+    "catalogId": "lettuce-green-leaf",
+    "title": "Green leaf lettuce",
+    "code": "4076",
+    "family": "Lettuce",
+    "soldBy": "Each",
+    "saleForm": "Head",
+    "form": "Loose ruffled leaf head",
+    "color": "Green",
+    "imageQuery": "green leaf lettuce head",
+    "cue": "Open bright-green leaves have soft deeply ruffled edges.",
+    "group": "leafy-greens",
+    "sourcePages": [
+      2,
+      4
+    ]
+  },
+  {
+    "catalogId": "lettuce-red-leaf",
+    "title": "Red leaf lettuce",
+    "code": "4075",
+    "family": "Lettuce",
+    "soldBy": "Each",
+    "saleForm": "Head",
+    "form": "Loose ruffled leaf head",
+    "color": "Red-green",
+    "imageQuery": "red leaf lettuce head",
+    "cue": "Ruffled leaves fade from green centers to burgundy-red edges.",
+    "group": "leafy-greens",
+    "sourcePages": [
+      2,
+      4
+    ]
+  },
+  {
+    "catalogId": "lotus-root",
+    "title": "Lotus root",
+    "code": "3099",
+    "family": "Roots",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Segmented cylindrical rhizome",
+    "color": "Tan",
+    "imageQuery": "lotus root vegetable sliced",
+    "cue": "Tan cylindrical segments reveal a wheel of large round holes when cut.",
+    "group": "roots",
+    "sourcePages": [
+      2,
+      4
+    ],
+    "specialty": true
+  },
+  {
+    "catalogId": "mint-bunch-herbs",
+    "title": "Mint bunch",
+    "code": "4896",
+    "family": "Herbs",
+    "soldBy": "Each",
+    "saleForm": "Bunch",
+    "form": "Small serrated herb leaves",
+    "color": "Green",
+    "imageQuery": "fresh mint leaves bunch",
+    "cue": "Small opposite leaves have crisp serrated edges and textured veins.",
+    "group": "herbs",
+    "sourcePages": [
+      1,
+      4
+    ]
+  },
+  {
+    "catalogId": "mushrooms-oyster-bulk-handwritten",
+    "title": "Oyster mushrooms",
+    "code": "4649",
+    "family": "Mushrooms",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Layered fan-shaped caps",
+    "color": "Cream-grey",
+    "imageQuery": "oyster mushrooms Pleurotus ostreatus",
+    "cue": "Thin fan-shaped caps overlap in clustered shelves from a short base.",
+    "group": "mushrooms",
+    "sourcePages": [
+      2,
+      4
+    ]
+  },
+  {
+    "catalogId": "onions-pickling",
+    "title": "Pickling onions",
+    "code": "4661",
+    "family": "Onions",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Small round bulbs",
+    "color": "White-tan",
+    "imageQuery": "pickling onions small bulbs",
+    "cue": "Very small round onion bulbs have pale papery skins.",
+    "group": "alliums",
+    "sourcePages": [
+      4
+    ],
+    "flags": [
+      "sold-by-curated"
+    ]
+  },
+  {
+    "catalogId": "onions-spanish",
+    "title": "Spanish onion",
+    "code": "4093",
+    "family": "Onions",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Large round bulb",
+    "color": "Yellow-brown",
+    "imageQuery": "Spanish onion bulb",
+    "cue": "A large round bulb has light golden-brown papery skin.",
+    "group": "alliums",
+    "sourcePages": [
+      2
+    ]
+  },
+  {
+    "catalogId": "onions-sweet",
+    "title": "Sweet onion",
+    "code": "4159",
+    "family": "Onions",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Wide flattened bulb",
+    "color": "Pale yellow",
+    "imageQuery": "sweet onion bulb Vidalia",
+    "cue": "A broad slightly flattened bulb wears thin pale-gold skin.",
+    "group": "alliums",
+    "sourcePages": [
+      2
+    ]
+  },
+  {
+    "catalogId": "onions-white-bulk",
+    "title": "White onion",
+    "code": "4663",
+    "family": "Onions",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Round papery bulb",
+    "color": "White",
+    "imageQuery": "white onion bulb",
+    "cue": "Bright white papery skin covers a firm round bulb.",
+    "group": "alliums",
+    "sourcePages": [
+      2,
+      4
+    ]
+  },
+  {
+    "catalogId": "parsley-herbs",
+    "title": "Curly parsley",
+    "code": "4899",
+    "family": "Herbs",
+    "soldBy": "Each",
+    "saleForm": "Bunch",
+    "form": "Tightly curled herb leaves",
+    "color": "Dark green",
+    "imageQuery": "curly parsley bunch",
+    "cue": "Dense dark-green leaves curl into many tight frilled clusters.",
+    "group": "herbs",
+    "sourcePages": [
+      1
+    ]
+  },
+  {
+    "catalogId": "parsley-italian-herbs",
+    "title": "Italian parsley",
+    "code": "4901",
+    "family": "Herbs",
+    "soldBy": "Each",
+    "saleForm": "Bunch",
+    "form": "Flat pointed herb leaves",
+    "color": "Green",
+    "imageQuery": "flat leaf Italian parsley bunch",
+    "cue": "Flat triangular leaves have sharp lobes rather than tight curls.",
+    "group": "herbs",
+    "sourcePages": [
+      4
+    ],
+    "flags": [
+      "sold-by-curated"
+    ]
+  },
+  {
+    "catalogId": "parsley-root-herbs",
+    "title": "Parsley root",
+    "code": "4671",
+    "family": "Roots",
+    "soldBy": "Each",
+    "saleForm": "Bunch",
+    "form": "Pale tapered root with parsley tops",
+    "color": "Cream",
+    "imageQuery": "Petersilienwurzel parsley root",
+    "cue": "A cream tapered root resembles a slender parsnip with parsley-like tops.",
+    "group": "roots",
+    "sourcePages": [
+      1
+    ]
+  },
+  {
+    "catalogId": "peas-green-english-bulk",
+    "title": "Green peas",
+    "code": "4674",
+    "family": "Peas",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Plump rounded pods",
+    "color": "Green",
+    "imageQuery": "green English peas pods",
+    "cue": "Rounded green pods show distinct plump peas pressing against the shell.",
+    "group": "beans-peas",
+    "sourcePages": [
+      2,
+      4
+    ]
+  },
+  {
+    "catalogId": "peas-snow-bulk",
+    "title": "Snow peas",
+    "code": "4092",
+    "family": "Peas",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Flat thin pods",
+    "color": "Green",
+    "imageQuery": "snow peas pods",
+    "cue": "Very flat thin pods show only tiny undeveloped peas inside.",
+    "group": "beans-peas",
+    "sourcePages": [
+      2
+    ]
+  },
+  {
+    "catalogId": "peas-sugar-snap-bulk",
+    "title": "Sugar snap peas",
+    "code": "4675",
+    "family": "Peas",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Plump crisp pods",
+    "color": "Bright green",
+    "imageQuery": "sugar snap peas pods",
+    "cue": "Thick crisp bright-green pods are plumper than snow peas.",
+    "group": "beans-peas",
+    "sourcePages": [
+      2
+    ]
+  },
+  {
+    "catalogId": "peppers-green-finger-hot",
+    "title": "Green finger pepper",
+    "code": "4707",
+    "family": "Peppers",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Long narrow tapered pepper",
+    "color": "Green",
+    "imageQuery": "green finger chilli pepper",
+    "cue": "A long slim green pod tapers sharply to a pointed end.",
+    "group": "hot-peppers",
+    "sourcePages": [
+      2,
+      4
+    ]
+  },
+  {
+    "catalogId": "peppers-green-thai-chilli",
+    "title": "Green Thai chili",
+    "code": "58278",
+    "family": "Peppers",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Tiny narrow chili pods",
+    "color": "Green",
+    "imageQuery": "green Thai chili peppers",
+    "cue": "Small rigid green chilies are narrow, smooth, and sharply pointed.",
+    "group": "hot-peppers",
+    "sourcePages": [
+      2,
+      4
+    ],
+    "specialty": true
+  },
+  {
+    "catalogId": "peppers-red-long",
+    "title": "Red long pepper",
+    "code": "4711",
+    "family": "Peppers",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Long curved tapered pepper",
+    "color": "Red",
+    "imageQuery": "long red chili pepper",
+    "cue": "A long red pod curves gently and narrows to a fine point.",
+    "group": "hot-peppers",
+    "sourcePages": [
+      2
+    ]
+  },
+  {
+    "catalogId": "peppers-scotch-bonnet-handwritten",
+    "title": "Scotch bonnet pepper",
+    "code": "433",
+    "family": "Peppers",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Squat wrinkled bonnet pepper",
+    "color": "Red-orange",
+    "imageQuery": "Scotch bonnet pepper fruit",
+    "cue": "A squat wrinkled pod flares outward like a small bonnet.",
+    "group": "hot-peppers",
+    "sourcePages": [
+      2,
+      5
+    ]
+  },
+  {
+    "catalogId": "peppers-yellow-hot",
+    "title": "Yellow hot pepper",
+    "code": "4690",
+    "family": "Peppers",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Tapered chili pepper",
+    "color": "Yellow",
+    "imageQuery": "yellow chili pepper fruit",
+    "cue": "Bright yellow skin covers a slim tapered hot-pepper shape.",
+    "group": "hot-peppers",
+    "sourcePages": [
+      2
+    ]
+  },
+  {
+    "catalogId": "radicchio",
+    "title": "Radicchio",
+    "code": "4738",
+    "family": "Leafy Greens",
+    "soldBy": "Weight",
+    "saleForm": "Head",
+    "form": "Compact round leafy head",
+    "color": "Purple-red and white",
+    "imageQuery": "radicchio head vegetable",
+    "cue": "Purple-red leaves with bold white veins form a compact round head.",
+    "group": "leafy-greens",
+    "sourcePages": [
+      3,
+      4
+    ]
+  },
+  {
+    "catalogId": "radishes-bunch",
+    "title": "Radish bunch",
+    "code": "4089",
+    "family": "Roots",
+    "soldBy": "Each",
+    "saleForm": "Bunch",
+    "form": "Small round roots with tops",
+    "color": "Red and white",
+    "imageQuery": "red radish bunch leaves",
+    "cue": "Small red round roots show white tips beneath fresh leafy tops.",
+    "group": "roots",
+    "sourcePages": [
+      3
+    ]
+  },
+  {
+    "catalogId": "rapini-saag",
+    "title": "Rapini",
+    "code": "4547",
+    "family": "Leafy Greens",
+    "soldBy": "Each",
+    "saleForm": "Bunch",
+    "form": "Leafy stems with small florets",
+    "color": "Green",
+    "imageQuery": "rapini broccoli rabe bunch",
+    "cue": "Thin leafy stems carry small loose broccoli-like flower clusters.",
+    "group": "leafy-greens",
+    "sourcePages": [
+      3,
+      4
+    ]
+  },
+  {
+    "catalogId": "rhubarb",
+    "title": "Rhubarb",
+    "code": "4745",
+    "family": "Stalk Vegetables",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Long thick stalks",
+    "color": "Red-green",
+    "imageQuery": "rhubarb stalks vegetable",
+    "cue": "Long firm stalks range from green to vivid pink-red, with broad leaves removed.",
+    "group": "stalks",
+    "sourcePages": [
+      4
+    ],
+    "flags": [
+      "sold-by-curated"
+    ]
+  },
+  {
+    "catalogId": "rutabaga",
+    "title": "Rutabaga",
+    "code": "4747",
+    "family": "Roots",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Large round waxy root",
+    "color": "Tan and purple",
+    "imageQuery": "rutabaga swede root vegetable",
+    "cue": "A large round tan root has a purple shoulder and waxy-looking skin.",
+    "group": "roots",
+    "sourcePages": [
+      3
+    ]
+  },
+  {
+    "catalogId": "shallots",
+    "title": "Shallots",
+    "code": "4662",
+    "family": "Alliums",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Small elongated bulbs",
+    "color": "Copper-purple",
+    "imageQuery": "shallot bulbs",
+    "cue": "Small elongated bulbs sit in coppery papery skins, often in clustered lobes.",
+    "group": "alliums",
+    "sourcePages": [
+      4
+    ],
+    "flags": [
+      "sold-by-curated"
+    ]
+  },
+  {
+    "catalogId": "squash-butternut",
+    "title": "Butternut squash",
+    "code": "4759",
+    "family": "Squash",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Bell-shaped long-neck squash",
+    "color": "Tan",
+    "imageQuery": "butternut squash fruit",
+    "cue": "A smooth tan squash has a long solid neck and bulbous seed end.",
+    "group": "squash",
+    "sourcePages": [
+      3,
+      4
+    ]
+  },
+  {
+    "catalogId": "squash-chayote",
+    "title": "Chayote squash",
+    "code": "4761",
+    "family": "Squash",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Pear-shaped folded squash",
+    "color": "Light green",
+    "imageQuery": "chayote squash fruit",
+    "cue": "A pale-green pear-shaped squash has a deep folded crease at one end.",
+    "group": "squash",
+    "sourcePages": [
+      3,
+      4
+    ]
+  },
+  {
+    "catalogId": "squash-pepper-acorn",
+    "title": "Acorn squash",
+    "code": "4750",
+    "family": "Squash",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Small deeply ribbed squash",
+    "color": "Dark green",
+    "imageQuery": "acorn squash fruit",
+    "cue": "Deep vertical ribs cover a compact dark-green acorn-shaped squash.",
+    "group": "squash",
+    "sourcePages": [
+      3,
+      4
+    ]
+  },
+  {
+    "catalogId": "squash-spaghetti",
+    "title": "Spaghetti squash",
+    "code": "4776",
+    "family": "Squash",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Oblong smooth squash",
+    "color": "Yellow",
+    "imageQuery": "spaghetti squash fruit",
+    "cue": "A smooth hard yellow rind surrounds an even oblong football shape.",
+    "group": "squash",
+    "sourcePages": [
+      3,
+      4
+    ]
+  },
+  {
+    "catalogId": "tomatoes-field",
+    "title": "Field tomato",
+    "code": "4064",
+    "family": "Tomatoes",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Round medium tomato",
+    "color": "Red",
+    "imageQuery": "field tomatoes red fruit",
+    "cue": "A classic round red tomato has smooth shoulders and no vine attached.",
+    "group": "tomatoes",
+    "sourcePages": [
+      3
+    ]
+  },
+  {
+    "catalogId": "tomatoes-heir-variety",
+    "title": "Heirloom tomato",
+    "code": "3423",
+    "family": "Tomatoes",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Irregular ribbed tomato",
+    "color": "Mixed",
+    "imageQuery": "heirloom tomatoes fruit",
+    "cue": "Uneven lobes, ribs, and mixed colors distinguish heirloom varieties.",
+    "group": "tomatoes",
+    "sourcePages": [
+      3
+    ]
+  },
+  {
+    "catalogId": "tomatoes-hothouse-big",
+    "title": "Hothouse tomato",
+    "code": "4799",
+    "family": "Tomatoes",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Large smooth round tomato",
+    "color": "Red",
+    "imageQuery": "hothouse beefsteak tomato fruit",
+    "cue": "A large polished red tomato has broad rounded shoulders.",
+    "group": "tomatoes",
+    "sourcePages": [
+      3
+    ]
+  },
+  {
+    "catalogId": "tomatoes-on-the-vine-bulk-mesh",
+    "title": "On-the-vine tomatoes",
+    "code": "4664",
+    "family": "Tomatoes",
+    "soldBy": "Weight",
+    "saleForm": "Vine cluster",
+    "form": "Round tomatoes on a shared vine",
+    "color": "Red",
+    "imageQuery": "tomatoes on the vine cluster",
+    "cue": "Several even red tomatoes remain connected along one green branching vine.",
+    "group": "tomatoes",
+    "sourcePages": [
+      3,
+      4
+    ]
+  },
+  {
+    "catalogId": "tomatoes-vine-ripe-big",
+    "title": "Vine-ripe tomato",
+    "code": "3151",
+    "family": "Tomatoes",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Large round ripe tomato",
+    "color": "Red",
+    "imageQuery": "vine ripe tomato fruit",
+    "cue": "A ripe deep-red tomato is large and round but sold without a vine cluster.",
+    "group": "tomatoes",
+    "sourcePages": [
+      3
+    ]
+  },
+  {
+    "catalogId": "turmeric",
+    "title": "Turmeric root",
+    "code": "58661",
+    "family": "Roots",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Small branched rhizomes",
+    "color": "Orange-brown",
+    "imageQuery": "fresh turmeric root rhizomes",
+    "cue": "Small knobby brown rhizomes reveal vivid orange flesh at cut ends.",
+    "group": "roots",
+    "sourcePages": [
+      3
+    ]
+  },
+  {
+    "catalogId": "potatoes-yellow-yukon-gold-bulk-handwritten",
+    "title": "Yukon Gold potato",
+    "code": "4727",
+    "family": "Potatoes",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Round smooth potato",
+    "color": "Yellow-tan",
+    "imageQuery": "Yukon Gold potatoes",
+    "cue": "Smooth thin golden-tan skin covers a round to oval potato.",
+    "group": "potatoes-yams",
+    "sourcePages": [
+      2,
+      4
+    ]
+  },
+  {
+    "catalogId": "potatoes-yams-caribbean-sweet",
+    "title": "Caribbean sweet potato",
+    "code": "3288",
+    "family": "Potatoes",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Thick tapered sweet potato",
+    "color": "Red-brown",
+    "imageQuery": "Caribbean sweet potato boniato tuber",
+    "cue": "A thick tapered tuber has reddish-brown skin and pale flesh.",
+    "group": "potatoes-yams",
+    "sourcePages": [
+      2
+    ],
+    "specialty": true
+  },
+  {
+    "catalogId": "potatoes-yams-jamaican-sweet",
+    "title": "Jamaican sweet potato",
+    "code": "802",
+    "family": "Potatoes",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Irregular tapered sweet potato",
+    "color": "Purple-brown",
+    "imageQuery": "Jamaican sweet potato tuber",
+    "cue": "An irregular tapered tuber has rough purple-brown skin and pale flesh.",
+    "group": "potatoes-yams",
+    "sourcePages": [
+      2
+    ],
+    "specialty": true
+  },
+  {
+    "catalogId": "potatoes-yams-white-long",
+    "title": "White long yam",
+    "code": "4726",
+    "family": "Yams",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Long cylindrical tuber",
+    "color": "Brown",
+    "imageQuery": "white yam long tuber",
+    "cue": "A long heavy cylinder has rough brown bark-like skin and white flesh.",
+    "group": "potatoes-yams",
+    "sourcePages": [
+      2
+    ],
+    "specialty": true
+  },
+  {
+    "catalogId": "potatoes-yams-white-yam",
+    "title": "White yam",
+    "code": "3276",
+    "family": "Yams",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Large cylindrical tuber",
+    "color": "Brown",
+    "imageQuery": "white yam tuber Dioscorea",
+    "cue": "A heavy brown-skinned tuber reveals dry white flesh when cut.",
+    "group": "potatoes-yams",
+    "sourcePages": [
+      2
+    ],
+    "specialty": true
+  },
+  {
+    "catalogId": "potatoes-yams-yellow-yam",
+    "title": "Yellow yam",
+    "code": "3275",
+    "family": "Yams",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Large cylindrical tuber",
+    "color": "Brown and yellow",
+    "imageQuery": "yellow yam tuber Dioscorea cayenensis",
+    "cue": "Rough brown skin encloses noticeably yellow flesh.",
+    "group": "potatoes-yams",
+    "sourcePages": [
+      2
+    ],
+    "specialty": true
+  },
+  {
+    "catalogId": "zucchini-grey",
+    "title": "Grey zucchini",
+    "code": "4785",
+    "family": "Zucchini",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Short thick cylindrical squash",
+    "color": "Pale green-grey",
+    "imageQuery": "grey zucchini squash",
+    "cue": "A short thick squash has pale grey-green mottled skin and a rounded tip.",
+    "group": "squash",
+    "sourcePages": [
+      3
+    ]
+  },
+  {
+    "catalogId": "zucchini-yellow",
+    "title": "Yellow zucchini",
+    "code": "4086",
+    "family": "Zucchini",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Straight cylindrical squash",
+    "color": "Yellow",
+    "imageQuery": "yellow zucchini squash",
+    "cue": "Smooth bright-yellow skin covers a straight slim zucchini form.",
+    "group": "squash",
+    "sourcePages": [
+      3,
+      4
+    ]
+  },
+  {
+    "catalogId": "persimmons-hachiya-japanese-99038",
+    "title": "Hachiya persimmon",
+    "code": "4427",
+    "family": "Tropical Fruit",
+    "soldBy": "Each",
+    "saleForm": "Single",
+    "form": "Tall acorn-shaped fruit",
+    "color": "Orange",
+    "imageQuery": "Hachiya persimmon fruit",
+    "cue": "A tall orange fruit narrows to a pointed base beneath a leafy cap.",
+    "group": "persimmons",
+    "sourcePages": [
+      2,
+      5
+    ]
+  },
+  {
+    "catalogId": "prickly-pears-bulk",
+    "title": "Prickly pear",
+    "code": "4255",
+    "family": "Tropical Fruit",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Oval cactus fruit",
+    "color": "Red-green",
+    "imageQuery": "prickly pear cactus fruit",
+    "cue": "An oval cactus fruit has smooth skin dotted with small areoles.",
+    "group": "tropical-fruit",
+    "sourcePages": [
+      2,
+      5
+    ]
+  },
+  {
+    "catalogId": "pummelo-white-chinese",
+    "title": "White pummelo",
+    "code": "4279",
+    "family": "Citrus",
+    "soldBy": "Each",
+    "saleForm": "Single",
+    "form": "Very large round citrus",
+    "color": "Pale green-yellow",
+    "imageQuery": "white pomelo pummelo fruit",
+    "cue": "A very large pale citrus fruit has a thick rind and broad rounded body.",
+    "group": "citrus",
+    "sourcePages": [
+      1,
+      5
+    ]
+  },
+  {
+    "catalogId": "tangerines-mandarin",
+    "title": "Mandarin tangerine",
+    "code": "4055",
+    "family": "Citrus",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Small flattened citrus",
+    "color": "Orange",
+    "imageQuery": "mandarin orange tangerine fruit",
+    "cue": "A small bright-orange citrus is slightly flattened with loose easy-peel skin.",
+    "group": "citrus",
+    "sourcePages": [
+      3
+    ]
+  },
+  {
+    "catalogId": "tangelos-minneola-handwritten",
+    "title": "Minneola tangelo",
+    "code": "4383",
+    "family": "Citrus",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Round citrus with a neck",
+    "color": "Orange-red",
+    "imageQuery": "Minneola tangelo fruit",
+    "cue": "A round deep-orange citrus has a distinctive raised neck at the stem.",
+    "group": "citrus",
+    "sourcePages": [
+      2,
+      5
+    ]
+  },
+  {
+    "catalogId": "watermelons-mini-seedless",
+    "title": "Mini seedless watermelon",
+    "code": "3421",
+    "family": "Watermelons",
+    "soldBy": "Each",
+    "saleForm": "Single",
+    "form": "Small round melon",
+    "color": "Dark green",
+    "imageQuery": "mini seedless watermelon fruit",
+    "cue": "A compact nearly round watermelon has dark green striped skin.",
+    "group": "watermelons",
+    "sourcePages": [
+      3,
+      5
+    ]
+  },
+  {
+    "catalogId": "watermelons-red-seeded-jumbo",
+    "title": "Seeded jumbo watermelon",
+    "code": "4031",
+    "family": "Watermelons",
+    "soldBy": "Each",
+    "saleForm": "Single",
+    "form": "Large oblong melon",
+    "color": "Green",
+    "imageQuery": "large seeded watermelon fruit",
+    "cue": "A very large oblong watermelon contains visible black seeds in red flesh.",
+    "group": "watermelons",
+    "sourcePages": [
+      3,
+      5
+    ]
+  },
+  {
+    "catalogId": "pears-asian-yellow",
+    "title": "Asian yellow pear",
+    "code": "4407",
+    "family": "Pears",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Round apple-shaped pear",
+    "color": "Yellow",
+    "imageQuery": "Asian yellow pear fruit",
+    "cue": "A round apple-like pear has smooth yellow skin rather than brown russeting.",
+    "group": "pears",
+    "sourcePages": [
+      2
+    ]
+  },
+  {
+    "catalogId": "pears-forelle",
+    "title": "Forelle pear",
+    "code": "4418",
+    "family": "Pears",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Small bell-shaped pear",
+    "color": "Yellow-green and red",
+    "imageQuery": "Forelle pear fruit",
+    "cue": "A small pear shows fine red freckles and blush over yellow-green skin.",
+    "group": "pears",
+    "sourcePages": [
+      2
+    ]
+  },
+  {
+    "catalogId": "pears-red",
+    "title": "Red pear",
+    "code": "4415",
+    "family": "Pears",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Classic bell-shaped pear",
+    "color": "Red",
+    "imageQuery": "red pear fruit",
+    "cue": "Deep red skin covers a traditional narrow-necked pear silhouette.",
+    "group": "pears",
+    "sourcePages": [
+      2
+    ]
+  },
+  {
+    "catalogId": "pears-yali-ya",
+    "title": "Yali pear",
+    "code": "4890",
+    "family": "Pears",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Long-necked Asian pear",
+    "color": "Pale yellow-green",
+    "imageQuery": "Yali pear fruit",
+    "cue": "A pale smooth pear has a long narrow neck and rounded lower body.",
+    "group": "pears",
+    "sourcePages": [
+      2,
+      5
+    ],
+    "specialty": true
+  },
+  {
+    "catalogId": "grapes-crimson",
+    "title": "Crimson grapes",
+    "code": "4499",
+    "family": "Grapes",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Clusters of elongated berries",
+    "color": "Red",
+    "imageQuery": "Crimson seedless grapes fruit",
+    "cue": "Red berries are more elongated and evenly crimson than standard red seedless grapes.",
+    "group": "grapes",
+    "sourcePages": [
+      1
+    ]
+  },
+  {
+    "catalogId": "grapes-italy-green",
+    "title": "Italia green grapes",
+    "code": "3043",
+    "family": "Grapes",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Clusters of large oval berries",
+    "color": "Green-gold",
+    "imageQuery": "Italia grapes green fruit",
+    "cue": "Large oval green-gold berries form loose heavy clusters.",
+    "group": "grapes",
+    "sourcePages": [
+      1
+    ]
+  },
+  {
+    "catalogId": "mangos-ataulfo",
+    "title": "Ataulfo mango",
+    "code": "4961",
+    "family": "Mangoes",
+    "soldBy": "Each",
+    "saleForm": "Single",
+    "form": "Small curved mango",
+    "color": "Yellow",
+    "imageQuery": "Ataulfo mango fruit",
+    "cue": "A small slender mango curves gently and ripens to solid golden yellow.",
+    "group": "mangoes",
+    "sourcePages": [
+      2
+    ]
+  },
+  {
+    "catalogId": "mangos-indian",
+    "title": "Indian mango",
+    "code": "4314",
+    "family": "Mangoes",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Oval tapered mango",
+    "color": "Yellow-red",
+    "imageQuery": "Indian mango fruit cultivar",
+    "cue": "An oval mango has a tapered beak and warm yellow skin with possible red blush.",
+    "group": "mangoes",
+    "sourcePages": [
+      2
+    ],
+    "specialty": true
+  },
+  {
+    "catalogId": "mangos-yellow",
+    "title": "Yellow mango",
+    "code": "4312",
+    "family": "Mangoes",
+    "soldBy": "Each",
+    "saleForm": "Single",
+    "form": "Oblong tapered mango",
+    "color": "Yellow",
+    "imageQuery": "yellow mango fruit",
+    "cue": "Smooth yellow skin covers an oblong mango with a gently pointed end.",
+    "group": "mangoes",
+    "sourcePages": [
+      2
+    ]
+  },
+  {
+    "catalogId": "melons-canary-yellow-honeydew",
+    "title": "Canary melon",
+    "code": "4317",
+    "family": "Melons",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Long oval smooth melon",
+    "color": "Bright yellow",
+    "imageQuery": "canary melon fruit",
+    "cue": "A long oval melon has a vivid smooth yellow rind with no netting.",
+    "group": "melons",
+    "sourcePages": [
+      2,
+      5
+    ]
+  },
+  {
+    "catalogId": "melons-hami-handwritten",
+    "title": "Hami melon",
+    "code": "3623",
+    "family": "Melons",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Large oval lightly netted melon",
+    "color": "Yellow-green",
+    "imageQuery": "Hami melon fruit",
+    "cue": "A large oval melon has yellow-green skin with light netting and pale stripes.",
+    "group": "melons",
+    "sourcePages": [
+      2,
+      5
+    ],
+    "specialty": true
+  },
+  {
+    "catalogId": "melons-santa-claus-handwritten",
+    "title": "Santa Claus melon",
+    "code": "4336",
+    "family": "Melons",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Long oval striped melon",
+    "color": "Green-yellow",
+    "imageQuery": "Santa Claus melon fruit Piel de Sapo",
+    "cue": "A long oval melon has mottled dark-green stripes over a yellow-green rind.",
+    "group": "melons",
+    "sourcePages": [
+      2,
+      5
+    ],
+    "specialty": true
+  },
+  {
+    "catalogId": "melons-white-honeydew",
+    "title": "White honeydew melon",
+    "code": "4329",
+    "family": "Melons",
+    "soldBy": "Each",
+    "saleForm": "Single",
+    "form": "Round smooth melon",
+    "color": "Cream-white",
+    "imageQuery": "white honeydew melon fruit",
+    "cue": "A round melon has a smooth pale cream rind without cantaloupe netting.",
+    "group": "melons",
+    "sourcePages": [
+      2
+    ]
+  }
 ]

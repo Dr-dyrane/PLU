@@ -1,0 +1,18 @@
+{
+  "batches": [
+    {
+      "batch": "04",
+      "media": 100,
+      "decoded": 100,
+      "contactSheets": 5,
+      "failures": []
+    },
+    {
+      "batch": "05",
+      "media": 100,
+      "decoded": 100,
+      "contactSheets": 5,
+      "failures": []
+    }
+  ]
+}

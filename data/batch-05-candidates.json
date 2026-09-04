@@ -1,1 +1,2435 @@
-[]
+[
+  {
+    "catalogId": "plums-plumcot",
+    "title": "Plumcot",
+    "code": "3126",
+    "family": "Plums",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Smooth round stone fruit",
+    "color": "Purple-red",
+    "imageQuery": "Plumcot raw produce",
+    "cue": "Plumcot is identified by its purple-red appearance and smooth round stone fruit.",
+    "group": "plums",
+    "sourcePages": [
+      3,
+      5
+    ],
+    "candidateScore": 138,
+    "sourceItem": "Plums - Plumcot"
+  },
+  {
+    "catalogId": "swiss-chard-red",
+    "title": "Red Swiss chard",
+    "code": "4587",
+    "family": "Leafy Greens",
+    "soldBy": "Each",
+    "saleForm": "Single",
+    "form": "Broad leaves with thick ribbed stems",
+    "color": "Red",
+    "imageQuery": "Red Swiss chard raw produce",
+    "cue": "Red Swiss chard is identified by its red appearance and broad leaves with thick ribbed stems.",
+    "group": "leafy-greens",
+    "sourcePages": [
+      3,
+      4
+    ],
+    "candidateScore": 137,
+    "sourceItem": "Swiss Chard - Red"
+  },
+  {
+    "catalogId": "watercress-herbs",
+    "title": "Watercress",
+    "code": "4815",
+    "family": "Leafy Greens",
+    "soldBy": "Each",
+    "saleForm": "Single",
+    "form": "Small leafy stems",
+    "color": "Green",
+    "imageQuery": "Watercress raw produce",
+    "cue": "Watercress is identified by its green appearance and small leafy stems.",
+    "group": "leafy-greens",
+    "sourcePages": [
+      1,
+      4
+    ],
+    "candidateScore": 137,
+    "sourceItem": "Watercress - Herbs"
+  },
+  {
+    "catalogId": "squash-long-opo",
+    "title": "Long / Opo squash",
+    "code": "3141",
+    "family": "Squash",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Firm round or elongated squash",
+    "color": "Green-yellow",
+    "imageQuery": "Long / Opo squash raw produce",
+    "cue": "Long / Opo squash is identified by its green-yellow appearance and firm round or elongated squash.",
+    "group": "squash",
+    "sourcePages": [
+      3,
+      4
+    ],
+    "candidateScore": 136,
+    "sourceItem": "Squash - Long / Opo"
+  },
+  {
+    "catalogId": "tangerines-fall-glo",
+    "title": "Fall Glo tangerine",
+    "code": "3144",
+    "family": "Citrus",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Round citrus fruit",
+    "color": "Orange-yellow",
+    "imageQuery": "Fall Glo tangerine raw produce",
+    "cue": "Fall Glo tangerine is identified by its orange-yellow appearance and round citrus fruit.",
+    "group": "citrus",
+    "sourcePages": [
+      3
+    ],
+    "candidateScore": 134,
+    "sourceItem": "Tangerines - Fall Glo"
+  },
+  {
+    "catalogId": "tangerines-honey",
+    "title": "Honey tangerine",
+    "code": "4453",
+    "family": "Citrus",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Round citrus fruit",
+    "color": "Orange-yellow",
+    "imageQuery": "Honey tangerine raw produce",
+    "cue": "Honey tangerine is identified by its orange-yellow appearance and round citrus fruit.",
+    "group": "citrus",
+    "sourcePages": [
+      3
+    ],
+    "candidateScore": 134,
+    "sourceItem": "Tangerines - Honey"
+  },
+  {
+    "catalogId": "tangerines-mandora",
+    "title": "Mandora tangerine",
+    "code": "3031",
+    "family": "Citrus",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Round citrus fruit",
+    "color": "Orange-yellow",
+    "imageQuery": "Mandora tangerine raw produce",
+    "cue": "Mandora tangerine is identified by its orange-yellow appearance and round citrus fruit.",
+    "group": "citrus",
+    "sourcePages": [
+      3
+    ],
+    "candidateScore": 134,
+    "sourceItem": "Tangerines - Mandora"
+  },
+  {
+    "catalogId": "plums-june",
+    "title": "June plum",
+    "code": "3803",
+    "family": "Plums",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Smooth round stone fruit",
+    "color": "Purple-red",
+    "imageQuery": "June plum raw produce",
+    "cue": "June plum is identified by its purple-red appearance and smooth round stone fruit.",
+    "group": "plums",
+    "sourcePages": [
+      2
+    ],
+    "candidateScore": 132,
+    "sourceItem": "Plums - June"
+  },
+  {
+    "catalogId": "plums-yellow",
+    "title": "Yellow plum",
+    "code": "4441",
+    "family": "Plums",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Smooth round stone fruit",
+    "color": "Yellow",
+    "imageQuery": "Yellow plum raw produce",
+    "cue": "Yellow plum is identified by its yellow appearance and smooth round stone fruit.",
+    "group": "plums",
+    "sourcePages": [
+      2
+    ],
+    "candidateScore": 132,
+    "sourceItem": "Plums - Yellow"
+  },
+  {
+    "catalogId": "pumpkins-pie",
+    "title": "Pie pumpkin",
+    "code": "3134",
+    "family": "Squash",
+    "soldBy": "Each",
+    "saleForm": "Single",
+    "form": "Round ribbed gourd",
+    "color": "Green-orange",
+    "imageQuery": "Pie pumpkin raw produce",
+    "cue": "Pie pumpkin is identified by its green-orange appearance and round ribbed gourd.",
+    "group": "squash",
+    "sourcePages": [
+      3
+    ],
+    "candidateScore": 130,
+    "sourceItem": "Pumpkins - Pie"
+  },
+  {
+    "catalogId": "pumpkins-gourds",
+    "title": "Pumpkin gourds",
+    "code": "3135",
+    "family": "Squash",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Round ribbed gourd",
+    "color": "Green-orange",
+    "imageQuery": "Pumpkin gourds raw produce",
+    "cue": "Pumpkin gourds is identified by its green-orange appearance and round ribbed gourd.",
+    "group": "squash",
+    "sourcePages": [
+      3
+    ],
+    "candidateScore": 130,
+    "sourceItem": "Pumpkins - Gourds"
+  },
+  {
+    "catalogId": "pumpkins-regular",
+    "title": "Regular pumpkin",
+    "code": "4735",
+    "family": "Squash",
+    "soldBy": "Each",
+    "saleForm": "Single",
+    "form": "Round ribbed gourd",
+    "color": "Green-orange",
+    "imageQuery": "Regular pumpkin raw produce",
+    "cue": "Regular pumpkin is identified by its green-orange appearance and round ribbed gourd.",
+    "group": "squash",
+    "sourcePages": [
+      3
+    ],
+    "candidateScore": 130,
+    "sourceItem": "Pumpkins - Regular"
+  },
+  {
+    "catalogId": "pumpkins-small",
+    "title": "Small pumpkin",
+    "code": "4737",
+    "family": "Squash",
+    "soldBy": "Each",
+    "saleForm": "Single",
+    "form": "Round ribbed gourd",
+    "color": "Green-orange",
+    "imageQuery": "Small pumpkin raw produce",
+    "cue": "Small pumpkin is identified by its green-orange appearance and round ribbed gourd.",
+    "group": "squash",
+    "sourcePages": [
+      3
+    ],
+    "candidateScore": 130,
+    "sourceItem": "Pumpkins - Small"
+  },
+  {
+    "catalogId": "sugar-cane",
+    "title": "Sugar Cane",
+    "code": "4790",
+    "family": "Stalk Vegetables",
+    "soldBy": "Each",
+    "saleForm": "Single",
+    "form": "Long jointed cane stalk",
+    "color": "Green-purple",
+    "imageQuery": "Sugar Cane raw produce",
+    "cue": "Sugar Cane is identified by its green-purple appearance and long jointed cane stalk.",
+    "group": "stalk-vegetables",
+    "sourcePages": [
+      3,
+      4
+    ],
+    "candidateScore": 130,
+    "sourceItem": "Sugar Cane"
+  },
+  {
+    "catalogId": "granadilla",
+    "title": "Granadilla",
+    "code": "3038",
+    "family": "Tropical Fruit",
+    "soldBy": "Each",
+    "saleForm": "Single",
+    "form": "Round passion fruit",
+    "color": "Orange-yellow",
+    "imageQuery": "Granadilla raw produce",
+    "cue": "Granadilla is identified by its orange-yellow appearance and round passion fruit.",
+    "group": "tropical-fruit",
+    "sourcePages": [
+      1,
+      5
+    ],
+    "candidateScore": 130,
+    "sourceItem": "Granadilla"
+  },
+  {
+    "catalogId": "longan-fruit",
+    "title": "Longan Fruit",
+    "code": "4307",
+    "family": "Tropical Fruit",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Small round tropical fruit",
+    "color": "Red-brown",
+    "imageQuery": "Longan Fruit raw produce",
+    "cue": "Longan Fruit is identified by its red-brown appearance and small round tropical fruit.",
+    "group": "tropical-fruit",
+    "sourcePages": [
+      2,
+      5
+    ],
+    "candidateScore": 130,
+    "sourceItem": "Longan Fruit"
+  },
+  {
+    "catalogId": "eggplants-indian-baby",
+    "title": "Indian Baby eggplant",
+    "code": "4599",
+    "family": "Eggplants",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Smooth oval fruit",
+    "color": "Purple",
+    "imageQuery": "Indian Baby eggplant raw produce",
+    "cue": "Indian Baby eggplant is identified by its purple appearance and smooth oval fruit.",
+    "group": "eggplants",
+    "sourcePages": [
+      1
+    ],
+    "candidateScore": 124,
+    "sourceItem": "Eggplants - Indian Baby"
+  },
+  {
+    "catalogId": "figgs-black",
+    "title": "Black fig",
+    "code": "4266",
+    "family": "Figs",
+    "soldBy": "Each",
+    "saleForm": "Single",
+    "form": "Soft teardrop fruit",
+    "color": "Black",
+    "imageQuery": "Black fig raw produce",
+    "cue": "Black fig is identified by its black appearance and soft teardrop fruit.",
+    "group": "figs",
+    "sourcePages": [
+      1
+    ],
+    "candidateScore": 124,
+    "sourceItem": "Figgs - Black"
+  },
+  {
+    "catalogId": "almonds-bulk-nuts",
+    "title": "Almonds",
+    "code": "4924",
+    "family": "Nuts",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Loose whole nuts",
+    "color": "Brown",
+    "imageQuery": "Almonds raw produce",
+    "cue": "Almonds is identified by its brown appearance and loose whole nuts.",
+    "group": "nuts",
+    "sourcePages": [
+      2
+    ],
+    "candidateScore": 124,
+    "sourceItem": "Almonds (Bulk) - Nuts"
+  },
+  {
+    "catalogId": "chestnuts-bulk-nuts",
+    "title": "Chestnuts",
+    "code": "4927",
+    "family": "Nuts",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Loose whole nuts",
+    "color": "Brown",
+    "imageQuery": "Chestnuts raw produce",
+    "cue": "Chestnuts is identified by its brown appearance and loose whole nuts.",
+    "group": "nuts",
+    "sourcePages": [
+      2
+    ],
+    "candidateScore": 124,
+    "sourceItem": "Chestnuts (Bulk) - Nuts"
+  },
+  {
+    "catalogId": "filberts-bulk-nuts",
+    "title": "Filberts",
+    "code": "4928",
+    "family": "Nuts",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Loose whole nuts",
+    "color": "Brown",
+    "imageQuery": "Filberts raw produce",
+    "cue": "Filberts is identified by its brown appearance and loose whole nuts.",
+    "group": "nuts",
+    "sourcePages": [
+      2
+    ],
+    "candidateScore": 124,
+    "sourceItem": "Filberts (Bulk) - Nuts"
+  },
+  {
+    "catalogId": "papayas-meridol",
+    "title": "Meridol papaya",
+    "code": "3112",
+    "family": "Papayas",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Large oblong fruit",
+    "color": "Green-orange",
+    "imageQuery": "Meridol papaya raw produce",
+    "cue": "Meridol papaya is identified by its green-orange appearance and large oblong fruit.",
+    "group": "papayas",
+    "sourcePages": [
+      2
+    ],
+    "candidateScore": 124,
+    "sourceItem": "Papayas - Meridol"
+  },
+  {
+    "catalogId": "drumstick",
+    "title": "Drumstick (moringa pod)",
+    "code": "7947",
+    "family": "Pod Vegetables",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Long angular green pod",
+    "color": "Green",
+    "imageQuery": "Drumstick (moringa pod) raw produce",
+    "cue": "Drumstick (moringa pod) is identified by its green appearance and long angular green pod.",
+    "group": "pod-vegetables",
+    "sourcePages": [
+      1
+    ],
+    "candidateScore": 124,
+    "sourceItem": "Drumstick"
+  },
+  {
+    "catalogId": "quince",
+    "title": "Quince",
+    "code": "4447",
+    "family": "Quince",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Firm pear-shaped pome fruit",
+    "color": "Yellow",
+    "imageQuery": "Quince raw produce",
+    "cue": "Quince is identified by its yellow appearance and firm pear-shaped pome fruit.",
+    "group": "quince",
+    "sourcePages": [
+      3
+    ],
+    "candidateScore": 124,
+    "sourceItem": "Quince"
+  },
+  {
+    "catalogId": "malagna-root-cocoes",
+    "title": "Malagna Root (Cocoes)",
+    "code": "59977",
+    "family": "Roots",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Firm underground root or corm",
+    "color": "Brown-white",
+    "imageQuery": "Malagna Root (Cocoes) raw produce",
+    "cue": "Malagna Root (Cocoes) is identified by its brown-white appearance and firm underground root or corm.",
+    "group": "roots",
+    "sourcePages": [
+      1,
+      4
+    ],
+    "candidateScore": 124,
+    "sourceItem": "Malagna Root (Cocoes)"
+  },
+  {
+    "catalogId": "aloe",
+    "title": "Aloe",
+    "code": "3798",
+    "family": "Stalk Vegetables",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Thick tapered succulent leaves",
+    "color": "Green",
+    "imageQuery": "Aloe raw produce",
+    "cue": "Aloe is identified by its green appearance and thick tapered succulent leaves.",
+    "group": "stalk-vegetables",
+    "sourcePages": [
+      1
+    ],
+    "candidateScore": 124,
+    "sourceItem": "Aloe"
+  },
+  {
+    "catalogId": "atemoya",
+    "title": "Atemoya",
+    "code": "4220",
+    "family": "Tropical Fruit",
+    "soldBy": "Each",
+    "saleForm": "Single",
+    "form": "Distinct tropical fruit",
+    "color": "Mixed",
+    "imageQuery": "Atemoya raw produce",
+    "cue": "Atemoya is identified by its mixed appearance and distinct tropical fruit.",
+    "group": "tropical-fruit",
+    "sourcePages": [
+      3
+    ],
+    "candidateScore": 124,
+    "sourceItem": "Atemoya"
+  },
+  {
+    "catalogId": "breadnut",
+    "title": "Breadnut",
+    "code": "3806",
+    "family": "Tropical Fruit",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Distinct whole fruit",
+    "color": "Green-brown",
+    "imageQuery": "Breadnut raw produce",
+    "cue": "Breadnut is identified by its green-brown appearance and distinct whole fruit.",
+    "group": "tropical-fruit",
+    "sourcePages": [
+      1
+    ],
+    "candidateScore": 124,
+    "sourceItem": "Breadnut"
+  },
+  {
+    "catalogId": "chikoo-naseberry",
+    "title": "Chikoo / Naseberry",
+    "code": "3136",
+    "family": "Tropical Fruit",
+    "soldBy": "Each",
+    "saleForm": "Single",
+    "form": "Distinct whole fruit",
+    "color": "Green-brown",
+    "imageQuery": "Chikoo / Naseberry raw produce",
+    "cue": "Chikoo / Naseberry is identified by its green-brown appearance and distinct whole fruit.",
+    "group": "tropical-fruit",
+    "sourcePages": [
+      1
+    ],
+    "candidateScore": 124,
+    "sourceItem": "Chikoo / Naseberry"
+  },
+  {
+    "catalogId": "coconuts-green-water",
+    "title": "Green Water coconut",
+    "code": "3636",
+    "family": "Tropical Fruit",
+    "soldBy": "Each",
+    "saleForm": "Single",
+    "form": "Large round fibrous fruit",
+    "color": "Green",
+    "imageQuery": "Green Water coconut raw produce",
+    "cue": "Green Water coconut is identified by its green appearance and large round fibrous fruit.",
+    "group": "tropical-fruit",
+    "sourcePages": [
+      1
+    ],
+    "candidateScore": 124,
+    "sourceItem": "Coconuts - Green Water"
+  },
+  {
+    "catalogId": "watermelons-mickey-lee",
+    "title": "Mickey Lee watermelon",
+    "code": "4331",
+    "family": "Watermelons",
+    "soldBy": "Each",
+    "saleForm": "Single",
+    "form": "Large round or oval melon",
+    "color": "Green-red",
+    "imageQuery": "Mickey Lee watermelon raw produce",
+    "cue": "Mickey Lee watermelon is identified by its green-red appearance and large round or oval melon.",
+    "group": "watermelons",
+    "sourcePages": [
+      3
+    ],
+    "candidateScore": 124,
+    "sourceItem": "Watermelons - Mickey Lee"
+  },
+  {
+    "catalogId": "oranges-clementines",
+    "title": "Clementines orange",
+    "code": "70686",
+    "family": "Citrus",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Round citrus fruit",
+    "color": "Orange",
+    "imageQuery": "Clementines orange raw produce",
+    "cue": "Clementines orange is identified by its orange appearance and round citrus fruit.",
+    "group": "citrus",
+    "sourcePages": [
+      2
+    ],
+    "candidateScore": 122,
+    "sourceItem": "Oranges - Clementines"
+  },
+  {
+    "catalogId": "eggplants-indian",
+    "title": "Indian eggplant",
+    "code": "58007",
+    "family": "Eggplants",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Smooth oval fruit",
+    "color": "Purple",
+    "imageQuery": "Indian eggplant raw produce",
+    "cue": "Indian eggplant is identified by its purple appearance and smooth oval fruit.",
+    "group": "eggplants",
+    "sourcePages": [
+      1,
+      4
+    ],
+    "candidateScore": 118,
+    "sourceItem": "Eggplants - Indian"
+  },
+  {
+    "catalogId": "tinda",
+    "title": "Tinda",
+    "code": "11921",
+    "family": "Squash",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Firm gourd or squash",
+    "color": "Green-orange",
+    "imageQuery": "Tinda raw produce",
+    "cue": "Tinda is identified by its green-orange appearance and firm gourd or squash.",
+    "group": "squash",
+    "sourcePages": [
+      3
+    ],
+    "candidateScore": 118,
+    "sourceItem": "Tinda"
+  },
+  {
+    "catalogId": "mangos-baby",
+    "title": "Baby mango",
+    "code": "19407",
+    "family": "Mangoes",
+    "soldBy": "Each",
+    "saleForm": "Single",
+    "form": "Oval tapered fruit",
+    "color": "Yellow-red",
+    "imageQuery": "Baby mango raw produce",
+    "cue": "Baby mango is identified by its yellow-red appearance and oval tapered fruit.",
+    "group": "mangoes",
+    "sourcePages": [
+      2
+    ],
+    "candidateScore": 112,
+    "sourceItem": "Mangos - Baby"
+  },
+  {
+    "catalogId": "mangos-julie",
+    "title": "Julie mango",
+    "code": "58655",
+    "family": "Mangoes",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Oval tapered fruit",
+    "color": "Yellow-red",
+    "imageQuery": "Julie mango raw produce",
+    "cue": "Julie mango is identified by its yellow-red appearance and oval tapered fruit.",
+    "group": "mangoes",
+    "sourcePages": [
+      2
+    ],
+    "candidateScore": 112,
+    "sourceItem": "Mangos - Julie"
+  },
+  {
+    "catalogId": "mangos-palmer",
+    "title": "Palmer mango",
+    "code": "12965",
+    "family": "Mangoes",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Oval tapered fruit",
+    "color": "Yellow-red",
+    "imageQuery": "Palmer mango raw produce",
+    "cue": "Palmer mango is identified by its yellow-red appearance and oval tapered fruit.",
+    "group": "mangoes",
+    "sourcePages": [
+      2
+    ],
+    "candidateScore": 112,
+    "sourceItem": "Mangos - Palmer"
+  },
+  {
+    "catalogId": "mangos-sweet",
+    "title": "Sweet mango",
+    "code": "10612",
+    "family": "Mangoes",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Oval tapered fruit",
+    "color": "Yellow-red",
+    "imageQuery": "Sweet mango raw produce",
+    "cue": "Sweet mango is identified by its yellow-red appearance and oval tapered fruit.",
+    "group": "mangoes",
+    "sourcePages": [
+      2
+    ],
+    "candidateScore": 112,
+    "sourceItem": "Mangos - Sweet"
+  },
+  {
+    "catalogId": "tomatoes-on-the-vine-hh-organic",
+    "title": "Organic On The Vine HH tomato",
+    "code": "94664",
+    "family": "Tomatoes",
+    "soldBy": "Weight",
+    "saleForm": "Cluster",
+    "form": "Smooth round or oblong fruit",
+    "color": "Red",
+    "imageQuery": "Organic On The Vine HH tomato raw produce",
+    "cue": "Organic On The Vine HH tomato is identified by its red appearance and smooth round or oblong fruit.",
+    "group": "tomatoes",
+    "sourcePages": [
+      3,
+      4
+    ],
+    "candidateScore": 99,
+    "sourceItem": "Tomatoes - On The Vine HH (Organic)"
+  },
+  {
+    "catalogId": "apples-jazz",
+    "title": "Jazz apple",
+    "code": "3294",
+    "family": "Apples",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Round apple",
+    "color": "Mixed",
+    "imageQuery": "Jazz apple raw produce",
+    "cue": "Jazz apple is identified by its mixed appearance and round apple.",
+    "group": "apples",
+    "sourcePages": [
+      5
+    ],
+    "flags": [
+      "sold-by-curated"
+    ],
+    "candidateScore": 96,
+    "sourceItem": "Apples - Jazz"
+  },
+  {
+    "catalogId": "bananas-organic",
+    "title": "Organic banana",
+    "code": "94011",
+    "family": "Bananas",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Long curved fruit",
+    "color": "Yellow-green",
+    "imageQuery": "Organic banana raw produce",
+    "cue": "Organic banana is identified by its yellow-green appearance and long curved fruit.",
+    "group": "bananas",
+    "sourcePages": [
+      1,
+      5
+    ],
+    "candidateScore": 96,
+    "sourceItem": "Bananas - Organic"
+  },
+  {
+    "catalogId": "broccoli-organic",
+    "title": "Organic broccoli",
+    "code": "94060",
+    "family": "Broccoli",
+    "soldBy": "Each",
+    "saleForm": "Single",
+    "form": "Branching green florets",
+    "color": "Green",
+    "imageQuery": "Organic broccoli raw produce",
+    "cue": "Organic broccoli is identified by its green appearance and branching green florets.",
+    "group": "broccoli",
+    "sourcePages": [
+      1,
+      4
+    ],
+    "candidateScore": 96,
+    "sourceItem": "Broccoli - Organic"
+  },
+  {
+    "catalogId": "lemons-large",
+    "title": "Large lemon",
+    "code": "4033",
+    "family": "Citrus",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Round citrus fruit",
+    "color": "Orange-yellow",
+    "imageQuery": "Large lemon raw produce",
+    "cue": "Large lemon is identified by its orange-yellow appearance and round citrus fruit.",
+    "group": "citrus",
+    "sourcePages": [
+      5
+    ],
+    "flags": [
+      "sold-by-curated"
+    ],
+    "candidateScore": 96,
+    "sourceItem": "Lemons - Large"
+  },
+  {
+    "catalogId": "grapefruit-red-large",
+    "title": "Red Large grapefruit",
+    "code": "4281",
+    "family": "Citrus",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Round citrus fruit",
+    "color": "Red",
+    "imageQuery": "Red Large grapefruit raw produce",
+    "cue": "Red Large grapefruit is identified by its red appearance and round citrus fruit.",
+    "group": "citrus",
+    "sourcePages": [
+      5
+    ],
+    "flags": [
+      "sold-by-curated"
+    ],
+    "candidateScore": 96,
+    "sourceItem": "Grapefruit - Red Large"
+  },
+  {
+    "catalogId": "carrots-red-handwritten",
+    "title": "Red carrot",
+    "code": "11931",
+    "family": "Carrots",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Tapered root",
+    "color": "Red",
+    "imageQuery": "Red carrot raw produce",
+    "cue": "Red carrot is identified by its red appearance and tapered root.",
+    "group": "carrots",
+    "sourcePages": [
+      1,
+      4
+    ],
+    "flags": [
+      "handwritten"
+    ],
+    "candidateScore": 95,
+    "sourceItem": "Carrots - Red (handwritten)"
+  },
+  {
+    "catalogId": "grapes",
+    "title": "Grapes",
+    "code": "3094",
+    "family": "Grapes",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Clustered round berries",
+    "color": "Green-red",
+    "imageQuery": "Grapes raw produce",
+    "cue": "Grapes is identified by its green-red appearance and clustered round berries.",
+    "group": "grapes",
+    "sourcePages": [
+      5
+    ],
+    "flags": [
+      "sold-by-curated"
+    ],
+    "candidateScore": 94,
+    "sourceItem": "Grapes"
+  },
+  {
+    "catalogId": "pears-taylor-gold",
+    "title": "Taylor Gold pear",
+    "code": "4553",
+    "family": "Pears",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Bell-shaped fruit",
+    "color": "Gold",
+    "imageQuery": "Taylor Gold pear raw produce",
+    "cue": "Taylor Gold pear is identified by its gold appearance and bell-shaped fruit.",
+    "group": "pears",
+    "sourcePages": [
+      5
+    ],
+    "flags": [
+      "sold-by-curated"
+    ],
+    "candidateScore": 94,
+    "sourceItem": "Pears - Taylor Gold"
+  },
+  {
+    "catalogId": "peppers-green-hh-bulk",
+    "title": "Green HH pepper",
+    "code": "3120",
+    "family": "Peppers",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Hollow tapered fruit",
+    "color": "Green",
+    "imageQuery": "Green HH pepper raw produce",
+    "cue": "Green HH pepper is identified by its green appearance and hollow tapered fruit.",
+    "group": "peppers",
+    "sourcePages": [
+      4
+    ],
+    "flags": [
+      "sold-by-curated"
+    ],
+    "candidateScore": 94,
+    "sourceItem": "Peppers - Green HH (Bulk)"
+  },
+  {
+    "catalogId": "plums-italian-prune",
+    "title": "Italian Prune plum",
+    "code": "4436",
+    "family": "Plums",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Smooth round stone fruit",
+    "color": "Purple-red",
+    "imageQuery": "Italian Prune plum raw produce",
+    "cue": "Italian Prune plum is identified by its purple-red appearance and smooth round stone fruit.",
+    "group": "plums",
+    "sourcePages": [
+      5
+    ],
+    "flags": [
+      "sold-by-curated"
+    ],
+    "candidateScore": 94,
+    "sourceItem": "Plums - Italian Prune"
+  },
+  {
+    "catalogId": "tomato-hh-red-bulk",
+    "title": "HH Red tomato",
+    "code": "4798",
+    "family": "Tomatoes",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Smooth round or oblong fruit",
+    "color": "Red",
+    "imageQuery": "HH Red tomato raw produce",
+    "cue": "HH Red tomato is identified by its red appearance and smooth round or oblong fruit.",
+    "group": "tomatoes",
+    "sourcePages": [
+      4
+    ],
+    "flags": [
+      "sold-by-curated"
+    ],
+    "candidateScore": 94,
+    "sourceItem": "Tomato - HH Red (Bulk)"
+  },
+  {
+    "catalogId": "tamarillo-red",
+    "title": "Red tamarillo",
+    "code": "4793",
+    "family": "Tomatoes",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Smooth round or oval fruit",
+    "color": "Red",
+    "imageQuery": "Red tamarillo raw produce",
+    "cue": "Red tamarillo is identified by its red appearance and smooth round or oval fruit.",
+    "group": "tomatoes",
+    "sourcePages": [
+      5
+    ],
+    "flags": [
+      "sold-by-curated"
+    ],
+    "candidateScore": 94,
+    "sourceItem": "Tamarillo - Red"
+  },
+  {
+    "catalogId": "tomatillos",
+    "title": "Tomatillos",
+    "code": "4801",
+    "family": "Tomatoes",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Smooth round or oval fruit",
+    "color": "Red-green",
+    "imageQuery": "Tomatillos raw produce",
+    "cue": "Tomatillos is identified by its red-green appearance and smooth round or oval fruit.",
+    "group": "tomatoes",
+    "sourcePages": [
+      4
+    ],
+    "flags": [
+      "sold-by-curated"
+    ],
+    "candidateScore": 94,
+    "sourceItem": "Tomatillos"
+  },
+  {
+    "catalogId": "bok-choy-baby-jr",
+    "title": "Baby Jr. bok choy",
+    "code": "4841",
+    "family": "Leafy Greens",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Leafy stem cluster",
+    "color": "Green",
+    "imageQuery": "Baby Jr. bok choy raw produce",
+    "cue": "Baby Jr. bok choy is identified by its green appearance and leafy stem cluster.",
+    "group": "leafy-greens",
+    "sourcePages": [
+      4
+    ],
+    "flags": [
+      "sold-by-curated"
+    ],
+    "candidateScore": 93,
+    "sourceItem": "Bok Choy - Baby Jr."
+  },
+  {
+    "catalogId": "methi-leaf-fenugreek",
+    "title": "Methi Leaf (Fenugreek)",
+    "code": "4909",
+    "family": "Leafy Greens",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Broad leafy stems",
+    "color": "Green",
+    "imageQuery": "Methi Leaf (Fenugreek) raw produce",
+    "cue": "Methi Leaf (Fenugreek) is identified by its green appearance and broad leafy stems.",
+    "group": "leafy-greens",
+    "sourcePages": [
+      4
+    ],
+    "flags": [
+      "sold-by-curated"
+    ],
+    "candidateScore": 93,
+    "sourceItem": "Methi Leaf (Fenugreek)"
+  },
+  {
+    "catalogId": "ong-choy",
+    "title": "Ong Choy",
+    "code": "3162",
+    "family": "Leafy Greens",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Leafy stem cluster",
+    "color": "Green",
+    "imageQuery": "Ong Choy raw produce",
+    "cue": "Ong Choy is identified by its green appearance and leafy stem cluster.",
+    "group": "leafy-greens",
+    "sourcePages": [
+      4
+    ],
+    "flags": [
+      "sold-by-curated"
+    ],
+    "candidateScore": 93,
+    "sourceItem": "Ong Choy"
+  },
+  {
+    "catalogId": "peas-sugar-pea-tips-ethnic-veg",
+    "title": "Sugar Pea Tips",
+    "code": "4676",
+    "family": "Leafy Greens",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Tender leafy pea shoots",
+    "color": "Green",
+    "imageQuery": "Sugar Pea Tips raw produce",
+    "cue": "Sugar Pea Tips is identified by its green appearance and tender leafy pea shoots.",
+    "group": "leafy-greens",
+    "sourcePages": [
+      4
+    ],
+    "flags": [
+      "sold-by-curated"
+    ],
+    "candidateScore": 93,
+    "sourceItem": "Peas - Sugar Pea Tips (Ethnic Veg)"
+  },
+  {
+    "catalogId": "yu-choy",
+    "title": "Yu Choy",
+    "code": "3164",
+    "family": "Leafy Greens",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Broad leafy stems",
+    "color": "Green",
+    "imageQuery": "Yu Choy raw produce",
+    "cue": "Yu Choy is identified by its green appearance and broad leafy stems.",
+    "group": "leafy-greens",
+    "sourcePages": [
+      4
+    ],
+    "flags": [
+      "sold-by-curated"
+    ],
+    "candidateScore": 93,
+    "sourceItem": "Yu Choy"
+  },
+  {
+    "catalogId": "onions-yellow-bulk",
+    "title": "Bulk yellow onion",
+    "code": "4163",
+    "family": "Alliums",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Layered bulb or stalk",
+    "color": "Yellow",
+    "imageQuery": "Bulk yellow onion raw produce",
+    "cue": "Bulk yellow onion is identified by its yellow appearance and layered bulb or stalk.",
+    "group": "alliums",
+    "sourcePages": [
+      4
+    ],
+    "flags": [
+      "sold-by-curated"
+    ],
+    "candidateScore": 92,
+    "sourceItem": "Onions - Yellow (Bulk)"
+  },
+  {
+    "catalogId": "celery-root-celeriac",
+    "title": "Celeriac (celery root)",
+    "code": "4585",
+    "family": "Roots",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Large knobbly round root",
+    "color": "Cream-brown",
+    "imageQuery": "Celeriac (celery root) raw produce",
+    "cue": "Celeriac (celery root) is identified by its cream-brown appearance and large knobbly round root.",
+    "group": "roots",
+    "sourcePages": [
+      4
+    ],
+    "flags": [
+      "sold-by-curated"
+    ],
+    "candidateScore": 92,
+    "sourceItem": "Celery - Root (Celeriac)"
+  },
+  {
+    "catalogId": "taro-root-medium",
+    "title": "Medium taro root",
+    "code": "4795",
+    "family": "Roots",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Round hairy corm",
+    "color": "Brown",
+    "imageQuery": "Medium taro root raw produce",
+    "cue": "Medium taro root is identified by its brown appearance and round hairy corm.",
+    "group": "roots",
+    "sourcePages": [
+      4
+    ],
+    "flags": [
+      "sold-by-curated"
+    ],
+    "candidateScore": 92,
+    "sourceItem": "Taro Root - Medium"
+  },
+  {
+    "catalogId": "squash-banana",
+    "title": "Banana squash",
+    "code": "4757",
+    "family": "Squash",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Large elongated squash",
+    "color": "Pink-orange",
+    "imageQuery": "Banana squash raw produce",
+    "cue": "Banana squash is identified by its pink-orange appearance and large elongated squash.",
+    "group": "squash",
+    "sourcePages": [
+      4
+    ],
+    "flags": [
+      "sold-by-curated"
+    ],
+    "candidateScore": 92,
+    "sourceItem": "Squash - Banana"
+  },
+  {
+    "catalogId": "squash-kabocha",
+    "title": "Kabocha squash",
+    "code": "4769",
+    "family": "Squash",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Firm round or elongated squash",
+    "color": "Green-yellow",
+    "imageQuery": "Kabocha squash raw produce",
+    "cue": "Kabocha squash is identified by its green-yellow appearance and firm round or elongated squash.",
+    "group": "squash",
+    "sourcePages": [
+      4
+    ],
+    "flags": [
+      "sold-by-curated"
+    ],
+    "candidateScore": 92,
+    "sourceItem": "Squash - Kabocha"
+  },
+  {
+    "catalogId": "qua",
+    "title": "Qua",
+    "code": "4656",
+    "family": "Squash",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Firm gourd or squash",
+    "color": "Green-orange",
+    "imageQuery": "Qua raw produce",
+    "cue": "Qua is identified by its green-orange appearance and firm gourd or squash.",
+    "group": "squash",
+    "sourcePages": [
+      4
+    ],
+    "flags": [
+      "sold-by-curated"
+    ],
+    "candidateScore": 92,
+    "sourceItem": "Qua"
+  },
+  {
+    "catalogId": "vegetable-marrow",
+    "title": "Vegetable Marrow",
+    "code": "3060",
+    "family": "Squash",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Firm gourd or squash",
+    "color": "Green-orange",
+    "imageQuery": "Vegetable Marrow raw produce",
+    "cue": "Vegetable Marrow is identified by its green-orange appearance and firm gourd or squash.",
+    "group": "squash",
+    "sourcePages": [
+      4
+    ],
+    "flags": [
+      "sold-by-curated"
+    ],
+    "candidateScore": 92,
+    "sourceItem": "Vegetable Marrow"
+  },
+  {
+    "catalogId": "melons-cantaloupe-large",
+    "title": "Cantaloupe Large melon",
+    "code": "4049",
+    "family": "Melons",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Large round or oval melon",
+    "color": "Green-yellow",
+    "imageQuery": "Cantaloupe Large melon raw produce",
+    "cue": "Cantaloupe Large melon is identified by its green-yellow appearance and large round or oval melon.",
+    "group": "melons",
+    "sourcePages": [
+      5
+    ],
+    "flags": [
+      "sold-by-curated"
+    ],
+    "candidateScore": 91,
+    "sourceItem": "Melons - Cantaloupe Large"
+  },
+  {
+    "catalogId": "melons-goldendew",
+    "title": "Goldendew melon",
+    "code": "3100",
+    "family": "Melons",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Large round or oval melon",
+    "color": "Green-yellow",
+    "imageQuery": "Goldendew melon raw produce",
+    "cue": "Goldendew melon is identified by its green-yellow appearance and large round or oval melon.",
+    "group": "melons",
+    "sourcePages": [
+      5
+    ],
+    "flags": [
+      "sold-by-curated"
+    ],
+    "candidateScore": 91,
+    "sourceItem": "Melons - Goldendew"
+  },
+  {
+    "catalogId": "melons-honeydew-large",
+    "title": "Honeydew Large melon",
+    "code": "4034",
+    "family": "Melons",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Large round or oval melon",
+    "color": "Green-yellow",
+    "imageQuery": "Honeydew Large melon raw produce",
+    "cue": "Honeydew Large melon is identified by its green-yellow appearance and large round or oval melon.",
+    "group": "melons",
+    "sourcePages": [
+      5
+    ],
+    "flags": [
+      "sold-by-curated"
+    ],
+    "candidateScore": 91,
+    "sourceItem": "Melons - Honeydew Large"
+  },
+  {
+    "catalogId": "melons-honeykiss",
+    "title": "Honeykiss melon",
+    "code": "4375",
+    "family": "Melons",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Large round or oval melon",
+    "color": "Green-yellow",
+    "imageQuery": "Honeykiss melon raw produce",
+    "cue": "Honeykiss melon is identified by its green-yellow appearance and large round or oval melon.",
+    "group": "melons",
+    "sourcePages": [
+      5
+    ],
+    "flags": [
+      "sold-by-curated"
+    ],
+    "candidateScore": 91,
+    "sourceItem": "Melons - Honeykiss"
+  },
+  {
+    "catalogId": "cucumber-organic",
+    "title": "Organic cucumber",
+    "code": "94593",
+    "family": "Cucumbers",
+    "soldBy": "Each",
+    "saleForm": "Single",
+    "form": "Long cylindrical fruit",
+    "color": "Green",
+    "imageQuery": "Organic cucumber raw produce",
+    "cue": "Organic cucumber is identified by its green appearance and long cylindrical fruit.",
+    "group": "cucumbers",
+    "sourcePages": [
+      1
+    ],
+    "candidateScore": 90,
+    "sourceItem": "Cucumber - Organic"
+  },
+  {
+    "catalogId": "cabbage-taiwanese",
+    "title": "Taiwanese cabbage",
+    "code": "4846",
+    "family": "Cabbages",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Layered leafy head",
+    "color": "Green",
+    "imageQuery": "Taiwanese cabbage raw produce",
+    "cue": "Taiwanese cabbage is identified by its green appearance and layered leafy head.",
+    "group": "cabbages",
+    "sourcePages": [
+      4
+    ],
+    "flags": [
+      "sold-by-curated"
+    ],
+    "candidateScore": 86,
+    "sourceItem": "Cabbage - Taiwanese"
+  },
+  {
+    "catalogId": "corn-bicolour-bulk",
+    "title": "Bicolour corn",
+    "code": "4078",
+    "family": "Corn",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Long husked ear",
+    "color": "Yellow-green",
+    "imageQuery": "Bicolour corn raw produce",
+    "cue": "Bicolour corn is identified by its yellow-green appearance and long husked ear.",
+    "group": "corn",
+    "sourcePages": [
+      4
+    ],
+    "flags": [
+      "sold-by-curated"
+    ],
+    "candidateScore": 86,
+    "sourceItem": "Corn - Bicolour (Bulk)"
+  },
+  {
+    "catalogId": "eggplant-thai",
+    "title": "Thai eggplant",
+    "code": "3090",
+    "family": "Eggplants",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Smooth oval fruit",
+    "color": "Purple",
+    "imageQuery": "Thai eggplant raw produce",
+    "cue": "Thai eggplant is identified by its purple appearance and smooth oval fruit.",
+    "group": "eggplants",
+    "sourcePages": [
+      4
+    ],
+    "flags": [
+      "sold-by-curated"
+    ],
+    "candidateScore": 86,
+    "sourceItem": "Eggplant - Thai"
+  },
+  {
+    "catalogId": "mangoes-maya",
+    "title": "Maya mango",
+    "code": "8176",
+    "family": "Mangoes",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Oval tapered fruit",
+    "color": "Yellow-red",
+    "imageQuery": "Maya mango raw produce",
+    "cue": "Maya mango is identified by its yellow-red appearance and oval tapered fruit.",
+    "group": "mangoes",
+    "sourcePages": [
+      5
+    ],
+    "flags": [
+      "sold-by-curated"
+    ],
+    "candidateScore": 86,
+    "sourceItem": "Mangoes - Maya"
+  },
+  {
+    "catalogId": "papaya-small",
+    "title": "Small papaya",
+    "code": "3111",
+    "family": "Papayas",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Large oblong fruit",
+    "color": "Green-orange",
+    "imageQuery": "Small papaya raw produce",
+    "cue": "Small papaya is identified by its green-orange appearance and large oblong fruit.",
+    "group": "papayas",
+    "sourcePages": [
+      5
+    ],
+    "flags": [
+      "sold-by-curated"
+    ],
+    "candidateScore": 86,
+    "sourceItem": "Papaya - Small"
+  },
+  {
+    "catalogId": "persimmons-sharon-fruit",
+    "title": "Sharon Fruit persimmon",
+    "code": "4429",
+    "family": "Persimmons",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Round orange fruit with leafy cap",
+    "color": "Orange",
+    "imageQuery": "Sharon Fruit persimmon raw produce",
+    "cue": "Sharon Fruit persimmon is identified by its orange appearance and round orange fruit with leafy cap.",
+    "group": "persimmons",
+    "sourcePages": [
+      5
+    ],
+    "flags": [
+      "sold-by-curated"
+    ],
+    "candidateScore": 86,
+    "sourceItem": "Persimmons - Sharon Fruit"
+  },
+  {
+    "catalogId": "pineapple-large",
+    "title": "Large pineapple",
+    "code": "4433",
+    "family": "Pineapples",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Large textured fruit with crown",
+    "color": "Green-yellow",
+    "imageQuery": "Large pineapple raw produce",
+    "cue": "Large pineapple is identified by its green-yellow appearance and large textured fruit with crown.",
+    "group": "pineapples",
+    "sourcePages": [
+      5
+    ],
+    "flags": [
+      "sold-by-curated"
+    ],
+    "candidateScore": 86,
+    "sourceItem": "Pineapple - Large"
+  },
+  {
+    "catalogId": "potato-white-baby-bulk",
+    "title": "White Baby potato",
+    "code": "4003",
+    "family": "Potatoes",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Firm round or tapered tuber",
+    "color": "White",
+    "imageQuery": "White Baby potato raw produce",
+    "cue": "White Baby potato is identified by its white appearance and firm round or tapered tuber.",
+    "group": "potatoes",
+    "sourcePages": [
+      4
+    ],
+    "flags": [
+      "sold-by-curated"
+    ],
+    "candidateScore": 86,
+    "sourceItem": "Potato - White Baby (Bulk)"
+  },
+  {
+    "catalogId": "bean-sprouts",
+    "title": "Bean Sprouts",
+    "code": "4536",
+    "family": "Sprouts",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Tender sprouted stems",
+    "color": "White-yellow",
+    "imageQuery": "Bean Sprouts raw produce",
+    "cue": "Bean Sprouts is identified by its white-yellow appearance and tender sprouted stems.",
+    "group": "sprouts",
+    "sourcePages": [
+      4
+    ],
+    "flags": [
+      "sold-by-curated"
+    ],
+    "candidateScore": 86,
+    "sourceItem": "Bean Sprouts"
+  },
+  {
+    "catalogId": "celery-hearts",
+    "title": "Hearts celery",
+    "code": "4575",
+    "family": "Stalk Vegetables",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Crisp ribbed stalks",
+    "color": "Green",
+    "imageQuery": "Hearts celery raw produce",
+    "cue": "Hearts celery is identified by its green appearance and crisp ribbed stalks.",
+    "group": "stalk-vegetables",
+    "sourcePages": [
+      4
+    ],
+    "flags": [
+      "sold-by-curated"
+    ],
+    "candidateScore": 86,
+    "sourceItem": "Celery - Hearts"
+  },
+  {
+    "catalogId": "celery-sticks-singles",
+    "title": "Sticks / Singles celery",
+    "code": "4576",
+    "family": "Stalk Vegetables",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Crisp ribbed stalks",
+    "color": "Green",
+    "imageQuery": "Sticks / Singles celery raw produce",
+    "cue": "Sticks / Singles celery is identified by its green appearance and crisp ribbed stalks.",
+    "group": "stalk-vegetables",
+    "sourcePages": [
+      4
+    ],
+    "flags": [
+      "sold-by-curated"
+    ],
+    "candidateScore": 86,
+    "sourceItem": "Celery - Sticks / Singles"
+  },
+  {
+    "catalogId": "watermelon-red-seedless-cuts",
+    "title": "Red seedless watermelon cuts",
+    "code": "4346",
+    "family": "Watermelons",
+    "soldBy": "Weight",
+    "saleForm": "Cut",
+    "form": "Cut watermelon pieces",
+    "color": "Red",
+    "imageQuery": "Red seedless watermelon cuts raw produce",
+    "cue": "Red seedless watermelon cuts is identified by its red appearance and cut watermelon pieces.",
+    "group": "watermelons",
+    "sourcePages": [
+      5
+    ],
+    "flags": [
+      "sold-by-curated"
+    ],
+    "candidateScore": 86,
+    "sourceItem": "Watermelon - Red Seedless Cuts"
+  },
+  {
+    "catalogId": "peppers-thai-red-hot-bulk",
+    "title": "Thai Red Hot pepper",
+    "code": "11176",
+    "family": "Peppers",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Hollow tapered fruit",
+    "color": "Red",
+    "imageQuery": "Thai Red Hot pepper raw produce",
+    "cue": "Thai Red Hot pepper is identified by its red appearance and hollow tapered fruit.",
+    "group": "peppers",
+    "sourcePages": [
+      4
+    ],
+    "flags": [
+      "sold-by-curated"
+    ],
+    "candidateScore": 82,
+    "sourceItem": "Peppers - Thai Red Hot (Bulk)"
+  },
+  {
+    "catalogId": "tomato-fm-on-the-vine-bulk",
+    "title": "FM On The Vine tomato",
+    "code": "64664",
+    "family": "Tomatoes",
+    "soldBy": "Weight",
+    "saleForm": "Cluster",
+    "form": "Smooth round or oblong fruit",
+    "color": "Red",
+    "imageQuery": "FM On The Vine tomato raw produce",
+    "cue": "FM On The Vine tomato is identified by its red appearance and smooth round or oblong fruit.",
+    "group": "tomatoes",
+    "sourcePages": [
+      4
+    ],
+    "flags": [
+      "sold-by-curated"
+    ],
+    "candidateScore": 82,
+    "sourceItem": "Tomato - FM On The Vine (Bulk)"
+  },
+  {
+    "catalogId": "a-choy",
+    "title": "A Choy",
+    "code": "68953",
+    "family": "Leafy Greens",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Leafy stem cluster",
+    "color": "Green",
+    "imageQuery": "A Choy raw produce",
+    "cue": "A Choy is identified by its green appearance and leafy stem cluster.",
+    "group": "leafy-greens",
+    "sourcePages": [
+      4
+    ],
+    "flags": [
+      "sold-by-curated"
+    ],
+    "candidateScore": 81,
+    "sourceItem": "A Choy"
+  },
+  {
+    "catalogId": "gai-choy",
+    "title": "Gai Choy",
+    "code": "68995",
+    "family": "Leafy Greens",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Broad leafy stems",
+    "color": "Green",
+    "imageQuery": "Gai Choy raw produce",
+    "cue": "Gai Choy is identified by its green appearance and broad leafy stems.",
+    "group": "leafy-greens",
+    "sourcePages": [
+      4
+    ],
+    "flags": [
+      "sold-by-curated"
+    ],
+    "candidateScore": 81,
+    "sourceItem": "Gai Choy"
+  },
+  {
+    "catalogId": "yu-choy-jr",
+    "title": "Jr Yu choy",
+    "code": "10260",
+    "family": "Leafy Greens",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Broad leafy stems",
+    "color": "Green",
+    "imageQuery": "Jr Yu choy raw produce",
+    "cue": "Jr Yu choy is identified by its green appearance and broad leafy stems.",
+    "group": "leafy-greens",
+    "sourcePages": [
+      4
+    ],
+    "flags": [
+      "sold-by-curated"
+    ],
+    "candidateScore": 81,
+    "sourceItem": "Yu Choy - Jr"
+  },
+  {
+    "catalogId": "kale-red",
+    "title": "Red kale",
+    "code": "63845",
+    "family": "Leafy Greens",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Broad leafy stems",
+    "color": "Red",
+    "imageQuery": "Red kale raw produce",
+    "cue": "Red kale is identified by its red appearance and broad leafy stems.",
+    "group": "leafy-greens",
+    "sourcePages": [
+      4
+    ],
+    "flags": [
+      "sold-by-curated"
+    ],
+    "candidateScore": 81,
+    "sourceItem": "Kale - Red"
+  },
+  {
+    "catalogId": "bok-choy-shanghai-jr",
+    "title": "Shanghai Jr bok choy",
+    "code": "64388",
+    "family": "Leafy Greens",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Leafy stem cluster",
+    "color": "Green",
+    "imageQuery": "Shanghai Jr bok choy raw produce",
+    "cue": "Shanghai Jr bok choy is identified by its green appearance and leafy stem cluster.",
+    "group": "leafy-greens",
+    "sourcePages": [
+      4
+    ],
+    "flags": [
+      "sold-by-curated"
+    ],
+    "candidateScore": 81,
+    "sourceItem": "Bok Choy - Shanghai Jr"
+  },
+  {
+    "catalogId": "sher-li-hon",
+    "title": "Sher-Li-Hon",
+    "code": "69624",
+    "family": "Leafy Greens",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Broad leafy stems",
+    "color": "Green",
+    "imageQuery": "Sher-Li-Hon raw produce",
+    "cue": "Sher-Li-Hon is identified by its green appearance and broad leafy stems.",
+    "group": "leafy-greens",
+    "sourcePages": [
+      4
+    ],
+    "flags": [
+      "sold-by-curated"
+    ],
+    "candidateScore": 81,
+    "sourceItem": "Sher-Li-Hon"
+  },
+  {
+    "catalogId": "uchoy-sum",
+    "title": "Uchoy Sum",
+    "code": "64387",
+    "family": "Leafy Greens",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Broad leafy stems",
+    "color": "Green",
+    "imageQuery": "Uchoy Sum raw produce",
+    "cue": "Uchoy Sum is identified by its green appearance and broad leafy stems.",
+    "group": "leafy-greens",
+    "sourcePages": [
+      4
+    ],
+    "flags": [
+      "sold-by-curated"
+    ],
+    "candidateScore": 81,
+    "sourceItem": "Uchoy Sum"
+  },
+  {
+    "catalogId": "chives-nira",
+    "title": "Nira chives",
+    "code": "69539",
+    "family": "Alliums",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Thin hollow green stalks",
+    "color": "Green",
+    "imageQuery": "Nira chives raw produce",
+    "cue": "Nira chives is identified by its green appearance and thin hollow green stalks.",
+    "group": "alliums",
+    "sourcePages": [
+      4
+    ],
+    "flags": [
+      "sold-by-curated"
+    ],
+    "candidateScore": 80,
+    "sourceItem": "Chives - Nira"
+  },
+  {
+    "catalogId": "arrow-head-tsee-goo",
+    "title": "Arrow Head (Tsee Goo)",
+    "code": "59949",
+    "family": "Roots",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Firm underground root or corm",
+    "color": "Brown-white",
+    "imageQuery": "Arrow Head (Tsee Goo) raw produce",
+    "cue": "Arrow Head (Tsee Goo) is identified by its brown-white appearance and firm underground root or corm.",
+    "group": "roots",
+    "sourcePages": [
+      4
+    ],
+    "flags": [
+      "sold-by-curated"
+    ],
+    "candidateScore": 80,
+    "sourceItem": "Arrow Head (Tsee Goo)"
+  },
+  {
+    "catalogId": "arrow-root",
+    "title": "Arrow Root",
+    "code": "30661",
+    "family": "Roots",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Firm underground root or corm",
+    "color": "Brown-white",
+    "imageQuery": "Arrow Root raw produce",
+    "cue": "Arrow Root is identified by its brown-white appearance and firm underground root or corm.",
+    "group": "roots",
+    "sourcePages": [
+      4
+    ],
+    "flags": [
+      "sold-by-curated"
+    ],
+    "candidateScore": 80,
+    "sourceItem": "Arrow Root"
+  },
+  {
+    "catalogId": "lily-bulbs",
+    "title": "Lily Bulbs",
+    "code": "62771",
+    "family": "Roots",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Firm underground root or corm",
+    "color": "Brown-white",
+    "imageQuery": "Lily Bulbs raw produce",
+    "cue": "Lily Bulbs is identified by its brown-white appearance and firm underground root or corm.",
+    "group": "roots",
+    "sourcePages": [
+      4
+    ],
+    "flags": [
+      "sold-by-curated"
+    ],
+    "candidateScore": 80,
+    "sourceItem": "Lily Bulbs"
+  },
+  {
+    "catalogId": "water-chestnut",
+    "title": "Water Chestnut",
+    "code": "62795",
+    "family": "Roots",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Firm underground root or corm",
+    "color": "Brown-white",
+    "imageQuery": "Water Chestnut raw produce",
+    "cue": "Water Chestnut is identified by its brown-white appearance and firm underground root or corm.",
+    "group": "roots",
+    "sourcePages": [
+      4
+    ],
+    "flags": [
+      "sold-by-curated"
+    ],
+    "candidateScore": 80,
+    "sourceItem": "Water Chestnut"
+  },
+  {
+    "catalogId": "squash-hairy-fuzzy-qua-mogwa",
+    "title": "Hairy / Fuzzy Qua squash",
+    "code": "377",
+    "family": "Squash",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Firm gourd or squash",
+    "color": "Green-orange",
+    "imageQuery": "Hairy / Fuzzy Qua squash raw produce",
+    "cue": "Hairy / Fuzzy Qua squash is identified by its green-orange appearance and firm gourd or squash.",
+    "group": "squash",
+    "sourcePages": [
+      4
+    ],
+    "flags": [
+      "sold-by-curated"
+    ],
+    "candidateScore": 80,
+    "sourceItem": "Squash - Hairy / Fuzzy Qua (Mogwa)"
+  },
+  {
+    "catalogId": "karella-indian",
+    "title": "Indian karella",
+    "code": "64394",
+    "family": "Squash",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Firm gourd or squash",
+    "color": "Green-orange",
+    "imageQuery": "Indian karella raw produce",
+    "cue": "Indian karella is identified by its green-orange appearance and firm gourd or squash.",
+    "group": "squash",
+    "sourcePages": [
+      4
+    ],
+    "flags": [
+      "sold-by-curated"
+    ],
+    "candidateScore": 80,
+    "sourceItem": "Karella - Indian"
+  },
+  {
+    "catalogId": "parval",
+    "title": "Parval",
+    "code": "71625",
+    "family": "Squash",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Firm gourd or squash",
+    "color": "Green-orange",
+    "imageQuery": "Parval raw produce",
+    "cue": "Parval is identified by its green-orange appearance and firm gourd or squash.",
+    "group": "squash",
+    "sourcePages": [
+      4
+    ],
+    "flags": [
+      "sold-by-curated"
+    ],
+    "candidateScore": 80,
+    "sourceItem": "Parval"
+  },
+  {
+    "catalogId": "tindora",
+    "title": "Tindora",
+    "code": "71626",
+    "family": "Squash",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Firm gourd or squash",
+    "color": "Green-orange",
+    "imageQuery": "Tindora raw produce",
+    "cue": "Tindora is identified by its green-orange appearance and firm gourd or squash.",
+    "group": "squash",
+    "sourcePages": [
+      4
+    ],
+    "flags": [
+      "sold-by-curated"
+    ],
+    "candidateScore": 80,
+    "sourceItem": "Tindora"
+  },
+  {
+    "catalogId": "don-gua-winter-melon",
+    "title": "Don Gua (Winter Melon)",
+    "code": "668",
+    "family": "Melons",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Large round or oval melon",
+    "color": "Green-yellow",
+    "imageQuery": "Don Gua (Winter Melon) raw produce",
+    "cue": "Don Gua (Winter Melon) is identified by its green-yellow appearance and large round or oval melon.",
+    "group": "melons",
+    "sourcePages": [
+      4
+    ],
+    "flags": [
+      "sold-by-curated"
+    ],
+    "candidateScore": 79,
+    "sourceItem": "Don Gua (Winter Melon)"
+  },
+  {
+    "catalogId": "guar",
+    "title": "Guar",
+    "code": "71615",
+    "family": "Beans",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Slender green pods",
+    "color": "Green",
+    "imageQuery": "Guar raw produce",
+    "cue": "Guar is identified by its green appearance and slender green pods.",
+    "group": "beans",
+    "sourcePages": [
+      4
+    ],
+    "flags": [
+      "sold-by-curated"
+    ],
+    "candidateScore": 74,
+    "sourceItem": "Guar"
+  },
+  {
+    "catalogId": "endive-chicory",
+    "title": "Endive / Chicory",
+    "code": "159",
+    "family": "Lettuce",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Leafy head",
+    "color": "Green",
+    "imageQuery": "Endive / Chicory raw produce",
+    "cue": "Endive / Chicory is identified by its green appearance and leafy head.",
+    "group": "lettuce",
+    "sourcePages": [
+      4
+    ],
+    "flags": [
+      "sold-by-curated"
+    ],
+    "candidateScore": 74,
+    "sourceItem": "Endive / Chicory"
+  },
+  {
+    "catalogId": "persimmons-vanilla",
+    "title": "Vanilla persimmon",
+    "code": "69220",
+    "family": "Persimmons",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Round orange fruit with leafy cap",
+    "color": "Orange",
+    "imageQuery": "Vanilla persimmon raw produce",
+    "cue": "Vanilla persimmon is identified by its orange appearance and round orange fruit with leafy cap.",
+    "group": "persimmons",
+    "sourcePages": [
+      5
+    ],
+    "flags": [
+      "sold-by-curated"
+    ],
+    "candidateScore": 74,
+    "sourceItem": "Persimmons - Vanilla"
+  },
+  {
+    "catalogId": "sweet-potato-japanaese",
+    "title": "Japanaese sweet potato",
+    "code": "66634",
+    "family": "Potatoes",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Firm round or tapered tuber",
+    "color": "Brown",
+    "imageQuery": "Japanaese sweet potato raw produce",
+    "cue": "Japanaese sweet potato is identified by its brown appearance and firm round or tapered tuber.",
+    "group": "potatoes",
+    "sourcePages": [
+      4
+    ],
+    "flags": [
+      "sold-by-curated"
+    ],
+    "candidateScore": 74,
+    "sourceItem": "Sweet Potato - Japanaese"
+  },
+  {
+    "catalogId": "bamboo-shoots",
+    "title": "Bamboo Shoots",
+    "code": "59989",
+    "family": "Stalk Vegetables",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Layered tapered shoot",
+    "color": "Cream-green",
+    "imageQuery": "Bamboo Shoots raw produce",
+    "cue": "Bamboo Shoots is identified by its cream-green appearance and layered tapered shoot.",
+    "group": "stalk-vegetables",
+    "sourcePages": [
+      4
+    ],
+    "flags": [
+      "sold-by-curated"
+    ],
+    "candidateScore": 74,
+    "sourceItem": "Bamboo Shoots"
+  },
+  {
+    "catalogId": "celery-chinese",
+    "title": "Chinese celery",
+    "code": "69623",
+    "family": "Stalk Vegetables",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Crisp ribbed stalks",
+    "color": "Green",
+    "imageQuery": "Chinese celery raw produce",
+    "cue": "Chinese celery is identified by its green appearance and crisp ribbed stalks.",
+    "group": "stalk-vegetables",
+    "sourcePages": [
+      4
+    ],
+    "flags": [
+      "sold-by-curated"
+    ],
+    "candidateScore": 74,
+    "sourceItem": "Celery - Chinese"
+  },
+  {
+    "catalogId": "tamarind",
+    "title": "Tamarind",
+    "code": "63129",
+    "family": "Tropical Fruit",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Distinct whole fruit",
+    "color": "Green-brown",
+    "imageQuery": "Tamarind raw produce",
+    "cue": "Tamarind is identified by its green-brown appearance and distinct whole fruit.",
+    "group": "tropical-fruit",
+    "sourcePages": [
+      4
+    ],
+    "flags": [
+      "sold-by-curated"
+    ],
+    "candidateScore": 74,
+    "sourceItem": "Tamarind"
+  },
+  {
+    "catalogId": "yams-purple",
+    "title": "Purple yam",
+    "code": "10314",
+    "family": "Yams",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Long firm tuber",
+    "color": "Purple",
+    "imageQuery": "Purple yam raw produce",
+    "cue": "Purple yam is identified by its purple appearance and long firm tuber.",
+    "group": "yams",
+    "sourcePages": [
+      4
+    ],
+    "flags": [
+      "sold-by-curated"
+    ],
+    "candidateScore": 74,
+    "sourceItem": "Yams - Purple"
+  },
+  {
+    "catalogId": "pomelo-red-handwritten",
+    "title": "Red pomelo",
+    "code": "3129",
+    "family": "Citrus",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Round citrus fruit",
+    "color": "Red",
+    "imageQuery": "Red pomelo raw produce",
+    "cue": "Red pomelo is identified by its red appearance and round citrus fruit.",
+    "group": "citrus",
+    "sourcePages": [
+      5
+    ],
+    "flags": [
+      "handwritten",
+      "sold-by-curated"
+    ],
+    "candidateScore": 73,
+    "sourceItem": "Pomelo - Red (handwritten)"
+  },
+  {
+    "catalogId": "pears-rocha-handwritten",
+    "title": "Rocha pear",
+    "code": "3024",
+    "family": "Pears",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Bell-shaped fruit",
+    "color": "Green-yellow",
+    "imageQuery": "Rocha pear raw produce",
+    "cue": "Rocha pear is identified by its green-yellow appearance and bell-shaped fruit.",
+    "group": "pears",
+    "sourcePages": [
+      5
+    ],
+    "flags": [
+      "handwritten",
+      "sold-by-curated"
+    ],
+    "candidateScore": 71,
+    "sourceItem": "Pears - Rocha (handwritten)"
+  },
+  {
+    "catalogId": "broccolini-handwritten",
+    "title": "Broccolini",
+    "code": "3277",
+    "family": "Broccoli",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Branching green florets",
+    "color": "Green",
+    "imageQuery": "Broccolini raw produce",
+    "cue": "Broccolini is identified by its green appearance and branching green florets.",
+    "group": "broccoli",
+    "sourcePages": [
+      4
+    ],
+    "flags": [
+      "handwritten",
+      "sold-by-curated"
+    ],
+    "candidateScore": 63,
+    "sourceItem": "Broccolini (handwritten)"
+  },
+  {
+    "catalogId": "cucumbers-mini-handwritten",
+    "title": "Mini cucumber",
+    "code": "4488",
+    "family": "Cucumbers",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Long cylindrical fruit",
+    "color": "Green",
+    "imageQuery": "Mini cucumber raw produce",
+    "cue": "Mini cucumber is identified by its green appearance and long cylindrical fruit.",
+    "group": "cucumbers",
+    "sourcePages": [
+      4
+    ],
+    "flags": [
+      "handwritten",
+      "sold-by-curated"
+    ],
+    "candidateScore": 63,
+    "sourceItem": "Cucumbers - Mini (handwritten)"
+  },
+  {
+    "catalogId": "apples-royal-gala-organic",
+    "title": "Organic Royal Gala apple",
+    "code": "94133",
+    "family": "Apples",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Round apple",
+    "color": "Mixed",
+    "imageQuery": "Organic Royal Gala apple raw produce",
+    "cue": "Organic Royal Gala apple is identified by its mixed appearance and round apple.",
+    "group": "apples",
+    "sourcePages": [
+      5
+    ],
+    "flags": [
+      "sold-by-curated"
+    ],
+    "candidateScore": 62,
+    "sourceItem": "Apples - Royal Gala (Organic)"
+  },
+  {
+    "catalogId": "pears-bartlett-organic",
+    "title": "Organic Bartlett pear",
+    "code": "94024",
+    "family": "Pears",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Bell-shaped fruit",
+    "color": "Green-yellow",
+    "imageQuery": "Organic Bartlett pear raw produce",
+    "cue": "Organic Bartlett pear is identified by its green-yellow appearance and bell-shaped fruit.",
+    "group": "pears",
+    "sourcePages": [
+      5
+    ],
+    "flags": [
+      "sold-by-curated"
+    ],
+    "candidateScore": 60,
+    "sourceItem": "Pears - Bartlett (Organic)"
+  },
+  {
+    "catalogId": "tomato-hh-organic",
+    "title": "Organic HH tomato",
+    "code": "94798",
+    "family": "Tomatoes",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Smooth round or oblong fruit",
+    "color": "Red",
+    "imageQuery": "Organic HH tomato raw produce",
+    "cue": "Organic HH tomato is identified by its red appearance and smooth round or oblong fruit.",
+    "group": "tomatoes",
+    "sourcePages": [
+      4
+    ],
+    "flags": [
+      "sold-by-curated"
+    ],
+    "candidateScore": 60,
+    "sourceItem": "Tomato - HH (Organic)"
+  },
+  {
+    "catalogId": "kale-organic",
+    "title": "Organic kale",
+    "code": "94627",
+    "family": "Leafy Greens",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Broad leafy stems",
+    "color": "Green",
+    "imageQuery": "Organic kale raw produce",
+    "cue": "Organic kale is identified by its green appearance and broad leafy stems.",
+    "group": "leafy-greens",
+    "sourcePages": [
+      4
+    ],
+    "flags": [
+      "sold-by-curated"
+    ],
+    "candidateScore": 59,
+    "sourceItem": "Kale - Organic"
+  },
+  {
+    "catalogId": "plums-cherry-plum-handwritten",
+    "title": "Cherry Plum",
+    "code": "71942",
+    "family": "Plums",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Small round stone fruit",
+    "color": "Red-purple",
+    "imageQuery": "Cherry Plum raw produce",
+    "cue": "Cherry Plum is identified by its red-purple appearance and small round stone fruit.",
+    "group": "plums",
+    "sourcePages": [
+      5
+    ],
+    "flags": [
+      "handwritten",
+      "sold-by-curated"
+    ],
+    "candidateScore": 59,
+    "sourceItem": "Plums - Cherry Plum (handwritten)"
+  },
+  {
+    "catalogId": "melons-cantaloupe-organic",
+    "title": "Organic Cantaloupe melon",
+    "code": "94050",
+    "family": "Melons",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Large round or oval melon",
+    "color": "Green-yellow",
+    "imageQuery": "Organic Cantaloupe melon raw produce",
+    "cue": "Organic Cantaloupe melon is identified by its green-yellow appearance and large round or oval melon.",
+    "group": "melons",
+    "sourcePages": [
+      5
+    ],
+    "flags": [
+      "sold-by-curated"
+    ],
+    "candidateScore": 57,
+    "sourceItem": "Melons - Cantaloupe (Organic)"
+  },
+  {
+    "catalogId": "cauliflower-organic",
+    "title": "Organic cauliflower",
+    "code": "94079",
+    "family": "Cauliflower",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Dense rounded florets",
+    "color": "White",
+    "imageQuery": "Organic cauliflower raw produce",
+    "cue": "Organic cauliflower is identified by its white appearance and dense rounded florets.",
+    "group": "cauliflower",
+    "sourcePages": [
+      4
+    ],
+    "flags": [
+      "sold-by-curated"
+    ],
+    "candidateScore": 52,
+    "sourceItem": "Cauliflower - Organic"
+  },
+  {
+    "catalogId": "cherries-rwb-organic",
+    "title": "Organic RWB cherries",
+    "code": "94045",
+    "family": "Cherries",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Small round stone fruit",
+    "color": "Red",
+    "imageQuery": "Organic RWB cherries raw produce",
+    "cue": "Organic RWB cherries is identified by its red appearance and small round stone fruit.",
+    "group": "cherries",
+    "sourcePages": [
+      5
+    ],
+    "flags": [
+      "sold-by-curated"
+    ],
+    "candidateScore": 52,
+    "sourceItem": "Cherries - RWB (Organic)"
+  },
+  {
+    "catalogId": "lettuce-iceberg-organic",
+    "title": "Organic Iceberg lettuce",
+    "code": "94061",
+    "family": "Lettuce",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Leafy head",
+    "color": "Green",
+    "imageQuery": "Organic Iceberg lettuce raw produce",
+    "cue": "Organic Iceberg lettuce is identified by its green appearance and leafy head.",
+    "group": "lettuce",
+    "sourcePages": [
+      4
+    ],
+    "flags": [
+      "sold-by-curated"
+    ],
+    "candidateScore": 52,
+    "sourceItem": "Lettuce - Iceberg (Organic)"
+  }
+]

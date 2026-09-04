@@ -4,7 +4,19 @@ const overridesUrl = new URL("../data/batch-04-reviewed-overrides.json", import.
 const commonUrl = new URL("./batch04/common.mjs", import.meta.url);
 const mediaUrl = new URL("./batch04/media.mjs", import.meta.url);
 
-const overrides = JSON.parse(await readFile(overridesUrl, "utf8"));
+const overridesText = await readFile(overridesUrl, "utf8");
+const overrideKeys = [...overridesText.matchAll(/^\s*"([^"]+)"\s*:/gm)].map((match) => match[1]);
+const duplicateOverrideKeys = overrideKeys.filter(
+  (key, index) => overrideKeys.indexOf(key) !== index,
+);
+if (duplicateOverrideKeys.length > 0) {
+  throw new Error(
+    `Reviewed media overrides contain duplicate catalog IDs: ${[
+      ...new Set(duplicateOverrideKeys),
+    ].join(", ")}.`,
+  );
+}
+const overrides = JSON.parse(overridesText);
 let common = await readFile(commonUrl, "utf8");
 
 const overrideBlock = /export const mediaOverridesByCatalogId = \{[\s\S]*?\n\};\n\nexport const knownBadMediaFiles/;

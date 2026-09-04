@@ -71,12 +71,13 @@ Light mode is the first-visit default. The home footer provides a persistent App
 
 ```bash
 npm run generate:batch05
+python3 scripts/build-media-contact-sheets.py
 npm run audit:batch04-media
 npm run audit:batch05-media
 npm run typecheck
 npm run build
 ```
 
-The generated Batch 04 and Batch 05 data are committed so ordinary Vercel builds are deterministic and do not depend on live media search. The production build verifies 300 exact mappings, media coverage, semantic image identity, story uniqueness, visible classification labels, multi-family interaction, semantic appearance, native interaction safeguards, safe areas, touch targets, clean learner copy, and static rendering.
+The generated Batch 04 and Batch 05 data are committed so ordinary Vercel builds are deterministic and do not depend on live media search. Contact-sheet output is local review material under `artifacts/`; the committed `public/media-render-audit.json` records the decoded-image result. The production build verifies 300 exact mappings, media coverage, semantic image identity, story uniqueness, visible classification labels, multi-family interaction, semantic appearance, native interaction safeguards, safe areas, touch targets, clean learner copy, and static rendering.
 
 Node is pinned to `22.x`. No database, authentication, API, or environment variable is required.

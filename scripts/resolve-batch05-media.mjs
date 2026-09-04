@@ -197,7 +197,11 @@ for (const [candidateIndex, item] of candidates.entries()) {
       soldBy: item.soldBy,
       saleForm: item.saleForm,
       codeScope:
-        item.soldBy === "Weight" ? "primary-loose-produce" : "primary-each-produce",
+        item.saleForm === "Cut"
+          ? "primary-cut-produce"
+          : item.soldBy === "Weight"
+            ? "primary-loose-produce"
+            : "primary-each-produce",
     },
     photos,
     visualCues: [
