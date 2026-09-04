@@ -16,27 +16,17 @@ common = common.replace(
   `export const mediaOverridesByCatalogId = ${JSON.stringify(overrides, null, 2)};\n\nexport const knownBadMediaFiles`,
 );
 
-const strictOverrideGuard = `    if (!safety.safe) {
-      throw new Error(
-        \`Reviewed override \${overrideTitle} is unsafe for \${item.title}: \${safety.reasons.join(", ")}\`,
-      );
-    }`;
+if (!common.includes("const reviewedAliasOnly =")) {
+  const safetyGuard = /(\s+const safety = analyzeCandidate\(item, candidate, context\);\n)(\s*)if \(!safety\.safe\) \{/;
+  if (!safetyGuard.test(common)) {
+    throw new Error("Could not locate the reviewed-override safety guard.");
+  }
 
-const reviewedAliasGuard = `    const reviewedAliasOnly =
-      !safety.safe &&
-      safety.reasons.length === 1 &&
-      safety.reasons[0] === "missing-product-head";
-
-    if (!safety.safe && !reviewedAliasOnly) {
-      throw new Error(
-        \`Reviewed override \${overrideTitle} is unsafe for \${item.title}: \${safety.reasons.join(", ")}\`,
-      );
-    }`;
-
-if (!common.includes(strictOverrideGuard) && !common.includes(reviewedAliasGuard)) {
-  throw new Error("Could not locate the strict reviewed-override safety guard.");
+  common = common.replace(
+    safetyGuard,
+    `$1$2const reviewedAliasOnly =\n$2  !safety.safe &&\n$2  safety.reasons.length === 1 &&\n$2  safety.reasons[0] === "missing-product-head";\n\n$2if (!safety.safe && !reviewedAliasOnly) {`,
+  );
 }
-common = common.replace(strictOverrideGuard, reviewedAliasGuard);
 
 await writeFile(commonUrl, common, "utf8");
 console.log(
