@@ -7,6 +7,7 @@ const reviewedQueries = new Map([
   ["carrots-jumbo", "Big Carrot-2356"],
   ["collard-greens", "Collard green bunches"],
   ["dandelion", "Dandelion greens.jpg"],
+  ["parsley-root-herbs", "Petersilienwurzel parsley root"],
 ]);
 
 let changes = 0;
