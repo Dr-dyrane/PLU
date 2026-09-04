@@ -16,5 +16,29 @@ common = common.replace(
   `export const mediaOverridesByCatalogId = ${JSON.stringify(overrides, null, 2)};\n\nexport const knownBadMediaFiles`,
 );
 
+const strictOverrideGuard = `    if (!safety.safe) {
+      throw new Error(
+        \`Reviewed override \${overrideTitle} is unsafe for \${item.title}: \${safety.reasons.join(", ")}\`,
+      );
+    }`;
+
+const reviewedAliasGuard = `    const reviewedAliasOnly =
+      !safety.safe &&
+      safety.reasons.length === 1 &&
+      safety.reasons[0] === "missing-product-head";
+
+    if (!safety.safe && !reviewedAliasOnly) {
+      throw new Error(
+        \`Reviewed override \${overrideTitle} is unsafe for \${item.title}: \${safety.reasons.join(", ")}\`,
+      );
+    }`;
+
+if (!common.includes(strictOverrideGuard) && !common.includes(reviewedAliasGuard)) {
+  throw new Error("Could not locate the strict reviewed-override safety guard.");
+}
+common = common.replace(strictOverrideGuard, reviewedAliasGuard);
+
 await writeFile(commonUrl, common, "utf8");
-console.log(`Applied ${Object.keys(overrides).length} reviewed Batch 04 media overrides.`);
+console.log(
+  `Applied ${Object.keys(overrides).length} reviewed Batch 04 media overrides with alias-only review support.`,
+);
