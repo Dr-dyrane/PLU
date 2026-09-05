@@ -1,5 +1,6 @@
 import assert from "node:assert/strict";
 import { readFile, readdir } from "node:fs/promises";
+import { loadRecovery } from "./batch06-recovery.mjs";
 
 import {
   loadJsonRecords,
@@ -58,6 +59,7 @@ const catalog = (
   )
 ).flat();
 const catalogById = new Map(catalog.map((record) => [record.id, record]));
+const recoveryById = await loadRecovery(catalog);
 const knowledge06ById = new Map((knowledge06.items ?? []).map((item) => [item.catalogId, item]));
 const reviewedMedia06Ids = new Set((reviewedMedia06.items ?? []).map((review) => review.catalogId));
 for (const [catalogId, file] of Object.entries(mediaOverridesByCatalogId)) {
@@ -338,6 +340,36 @@ for (const mapping of mappingDecisions06.items) {
 }
 const ready06IdSet = new Set(ready06.map((item) => item.catalogId));
 const mapped06IdSet = new Set(mapped06.map((item) => item.catalogId));
+for (const recovery of recoveryById.values()) {
+  const label = `Batch 06 recovery/${recovery.catalogId}`;
+  assert.equal(ready06IdSet.has(recovery.catalogId), recovery.decision === "approved",
+    `${label}: publication must follow the committed evidence decision.`);
+  if (recovery.decision !== "approved") continue;
+  assert.deepEqual(reviewedMedia06ById.get(recovery.catalogId), recovery.mediaReview,
+    `${label}: published media must match the recovery evidence.`);
+  const knowledge = knowledge06ById.get(recovery.catalogId);
+  assert.equal(knowledge?.publishability?.blockers.length, 0, `${label}: unresolved blockers remain.`);
+  assert.equal(knowledge?.codeEvidence?.resolution, "catalog-supported", `${label}: code is unresolved.`);
+  if (recovery.clearsLegacyExclusion) {
+    assert.equal(knowledge?.identityEvidence?.adjudication?.reviewBasis, recovery.reviewBasis,
+      `${label}: legacy exclusion requires its explicit adjudication.`);
+  }
+  if (recovery.retailInterpretation) {
+    assert.equal(knowledge?.retailEvidence?.soldBy?.value, recovery.retailInterpretation.soldBy,
+      `${label}: reviewed checkout unit drifted.`);
+    assert.equal(knowledge?.retailEvidence?.saleForm?.value, recovery.retailInterpretation.saleForm,
+      `${label}: reviewed retail form drifted.`);
+  }
+  const seed = seed06.find((story) => story.catalogId === recovery.catalogId);
+  for (const role of ["hero", "alternate", "context"]) {
+    const roleReview = recovery.reviewedPhotos?.find((photo) => photo.role === role);
+    const photo = seed?.photos?.find((entry) => entry.role === role);
+    assert.equal(photo?.file, roleReview?.commonsFile ?? recovery.mediaReview.commonsFile,
+      `${label}: ${role} must use its reviewed photograph.`);
+    assert.equal(photo?.author, roleReview?.author ?? recovery.author, `${label}: ${role} attribution drifted.`);
+    assert.equal(photo?.license, roleReview?.license ?? recovery.license, `${label}: ${role} license drifted.`);
+  }
+}
 assertSameCatalogIds(
   mapped06.map((item) => item.catalogId),
   mappingDecisions06.items
@@ -383,7 +415,11 @@ for (const reuse of mediaReuse06.items) {
     `${label}: source/file relationship drifted.`,
   );
   const mapping = mappingDecisions06ById.get(reuse.catalogId);
-  if (mapping?.relationKind === "single") {
+  if (recoveryById.get(reuse.catalogId)?.decision === "approved") {
+    // Recovery preserves the older reuse decision as history and explicitly
+    // pins the newly reviewed publication above, including any replacement.
+    assert.ok(ready06IdSet.has(reuse.catalogId), `${label}: approved recovery must be ready.`);
+  } else if (mapping?.relationKind === "single") {
     assert.ok(ready06IdSet.has(reuse.catalogId), `${label}: reviewed single reuse must be ready.`);
     const targetReview = reviewedMedia06ById.get(reuse.catalogId);
     assert.ok(targetReview, `${label}: promoted target review is missing.`);

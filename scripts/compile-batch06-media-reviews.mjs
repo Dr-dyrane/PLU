@@ -1,7 +1,8 @@
 import assert from "node:assert/strict";
 import { writeFile } from "node:fs/promises";
 
-import { normalize, readJson } from "./batch04/common.mjs";
+import { loadJsonRecords, normalize, readJson } from "./batch04/common.mjs";
+import { loadRecovery } from "./batch06-recovery.mjs";
 
 const DISCOVERY_URL = new URL("../public/media-discovery-batch06.json", import.meta.url);
 const KNOWLEDGE_URL = new URL("../data/batch-06-knowledge.json", import.meta.url);
@@ -33,6 +34,9 @@ const discovery = await readJson(DISCOVERY_URL);
 const knowledge = await readJson(KNOWLEDGE_URL);
 const existingLedger = await readJson(REVIEWED_MEDIA_URL);
 const mediaReuse = await readJson(MEDIA_REUSE_URL);
+const recoveryById = await loadRecovery(await loadJsonRecords(new URL("../data/catalog/", import.meta.url)));
+const recoveries = [...recoveryById.values()].filter((item) => item.decision === "approved");
+const recoveryIds = new Set(recoveries.map((item) => item.catalogId));
 const lanes = (await Promise.all(REVIEW_LANE_URLS.map(readJson))).flat().map((decision) => ({
   ...decision,
   decision: decision.decision === "approve"
@@ -124,7 +128,7 @@ const foundation = existingLedger.items.filter((review) => FOUNDATION_IDS.has(re
 assert.equal(foundation.length, FOUNDATION_IDS.size, "The reviewed foundation set is incomplete.");
 const generated = [];
 for (const decision of decisions) {
-  if (decision.decision !== "approved" || FOUNDATION_IDS.has(decision.catalogId)) continue;
+  if (decision.decision !== "approved" || FOUNDATION_IDS.has(decision.catalogId) || recoveryIds.has(decision.catalogId)) continue;
   const discovered = discoveryById.get(decision.catalogId);
   const evidence = knowledgeById.get(decision.catalogId);
   assert.ok(discovered && evidence, `${decision.catalogId}: review evidence is missing.`);
@@ -192,6 +196,7 @@ for (const decision of decisions) {
 
 const reused = [];
 for (const reuse of mediaReuse.items) {
+  if (recoveryIds.has(reuse.catalogId)) continue;
   const evidence = knowledgeById.get(reuse.catalogId);
   assert.ok(evidence, `${reuse.catalogId}: media-reuse knowledge evidence is missing.`);
   if (
@@ -213,7 +218,12 @@ for (const reuse of mediaReuse.items) {
 }
 
 const sourceOrderById = new Map(knowledge.items.map((item) => [item.catalogId, item.sourceOrder]));
-const finalLedgerItems = [...foundation, ...generated, ...reused].sort(
+for (const recovery of recoveries) {
+  const evidence = knowledgeById.get(recovery.catalogId);
+  assert.equal(evidence?.publishability?.status, "ready", `${recovery.catalogId}: recovery has unresolved admission blockers.`);
+  assert.equal(evidence?.codeEvidence?.resolution, "catalog-supported", `${recovery.catalogId}: recovery cannot resolve a code conflict.`);
+}
+const finalLedgerItems = [...foundation, ...generated, ...reused, ...recoveries.map((item) => item.mediaReview)].sort(
   (left, right) => sourceOrderById.get(left.catalogId) - sourceOrderById.get(right.catalogId),
 );
 assert.equal(
@@ -235,6 +245,7 @@ const decisionDocument = {
     ).length,
     promotedFromReview: generated.length,
     promotedFromReuse: reused.length,
+    promotedFromRecovery: recoveries.length,
   },
   items: decisions,
 };

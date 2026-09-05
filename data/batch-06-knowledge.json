@@ -39,26 +39,26 @@
     },
     "media": {
       "not-applicable": 12,
-      "reviewed-candidate": 32,
-      "reviewed-reuse-candidate": 22,
-      "reviewed-source": 75,
-      "source-required": 34
+      "reviewed-candidate": 30,
+      "reviewed-reuse-candidate": 18,
+      "reviewed-source": 92,
+      "source-required": 23
     },
     "publishability": {
-      "blocked": 49,
+      "blocked": 43,
       "excluded": 12,
-      "mapped": 39,
-      "ready": 75
+      "mapped": 28,
+      "ready": 92
     },
     "nextActions": {
-      "adjudicate-source-identity": 26,
+      "adjudicate-source-identity": 20,
       "capture-checkout-code-evidence": 9,
       "keep-out-of-produce-lessons": 12,
-      "none": 75,
+      "none": 92,
       "reconcile-code-mapping": 32,
       "separate-store-barcode-from-plu": 1,
-      "source-and-review-recognition-media": 10,
-      "verify-retail-unit-and-code": 10
+      "source-and-review-recognition-media": 8,
+      "verify-retail-unit-and-code": 1
     }
   },
   "items": [
@@ -1487,36 +1487,36 @@
       "identityEvidence": {
         "status": "interpreted",
         "title": {
-          "value": "Lady Alice PC apple",
-          "basis": "taxonomy-helper",
+          "value": "Apples - Lady Alice PC",
+          "basis": "curated-knowledge",
           "sourceFields": [
             "catalog.item"
           ],
-          "confidence": "derived"
+          "confidence": "curated-interpretation"
         },
         "family": {
           "value": "Apples",
-          "basis": "taxonomy-helper",
+          "basis": "curated-knowledge",
           "sourceFields": [
             "catalog.item"
           ],
-          "confidence": "derived"
+          "confidence": "curated-interpretation"
         },
         "form": {
           "value": "Round apple",
-          "basis": "taxonomy-helper",
+          "basis": "curated-knowledge",
           "sourceFields": [
             "catalog.item"
           ],
-          "confidence": "derived"
+          "confidence": "curated-interpretation"
         },
         "color": {
-          "value": "Mixed",
-          "basis": "taxonomy-helper",
+          "value": "Red-pink and yellow",
+          "basis": "curated-knowledge",
           "sourceFields": [
             "catalog.item"
           ],
-          "confidence": "derived"
+          "confidence": "curated-interpretation"
         },
         "curationNote": null,
         "evidenceGaps": []
@@ -1567,15 +1567,31 @@
         ]
       },
       "mediaPlan": {
-        "status": "source-required",
-        "query": "Lady Alice PC apple Round apple",
+        "status": "reviewed-source",
+        "query": "Apples - Lady Alice PC Round apple",
         "target": {
-          "identity": "Lady Alice PC apple",
+          "identity": "Apples - Lady Alice PC",
           "visibleForm": "Round apple",
-          "color": "Mixed",
+          "color": "Red-pink and yellow",
           "retailForm": "Loose"
         },
-        "source": null,
+        "source": {
+          "provenance": "public/media-resolution-batch06.json",
+          "file": "Lady Alice apple from supermarket in Seattle.jpg",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/Lady_Alice_apple_from_supermarket_in_Seattle.jpg/1920px-Lady_Alice_apple_from_supermarket_in_Seattle.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "match": "reviewed-override",
+          "recognitionMode": "label-assisted",
+          "labelClaims": [
+            {
+              "value": "PC",
+              "basis": "workbook-label",
+              "sourceField": "catalog.item",
+              "sourcePages": [
+                5
+              ]
+            }
+          ]
+        },
         "acceptance": [
           "Metadata must identify the exact product or a reviewed synonym.",
           "Visible form and identity-bearing modifiers must match the learner title.",
@@ -1588,22 +1604,11 @@
         "reviewBasis": "The catalog records one checkout code for an interpreted in-scope produce identity."
       },
       "publishability": {
-        "status": "mapped",
-        "blockers": [
-          {
-            "domain": "retail",
-            "code": "retail-package-evidence-required",
-            "detail": "The named package, case, bin, quantity, or processed form needs exact retail evidence."
-          },
-          {
-            "domain": "media",
-            "code": "media-evidence-required",
-            "detail": "No human-reviewed recognition source is attached to this exact row."
-          }
-        ],
+        "status": "ready",
+        "blockers": [],
         "nextAction": {
-          "type": "verify-retail-unit-and-code",
-          "description": "Capture the exact package, case, bin, or quantity and verify that its code belongs to that retail unit."
+          "type": "none",
+          "description": "All current identity, code, retail, and media gates are satisfied."
         }
       }
     },
@@ -3058,40 +3063,45 @@
         }
       },
       "identityEvidence": {
-        "status": "source-review-required",
+        "status": "interpreted",
         "title": {
-          "value": "Organic asparagus",
-          "basis": "taxonomy-helper",
+          "value": "Asparagus - Organic",
+          "basis": "curated-knowledge",
           "sourceFields": [
             "catalog.item"
           ],
-          "confidence": "derived"
+          "confidence": "curated-interpretation"
         },
         "family": {
           "value": "Asparagus",
-          "basis": "taxonomy-helper",
+          "basis": "curated-knowledge",
           "sourceFields": [
             "catalog.item"
           ],
-          "confidence": "derived"
+          "confidence": "curated-interpretation"
         },
         "form": {
-          "value": "Long spear stalks",
-          "basis": "taxonomy-helper",
+          "value": "Long bundled spears with tapered tips",
+          "basis": "curated-knowledge",
           "sourceFields": [
             "catalog.item"
           ],
-          "confidence": "derived"
+          "confidence": "curated-interpretation"
         },
         "color": {
           "value": "Green",
-          "basis": "taxonomy-helper",
+          "basis": "curated-knowledge",
           "sourceFields": [
             "catalog.item"
           ],
-          "confidence": "derived"
+          "confidence": "curated-interpretation"
         },
         "curationNote": null,
+        "adjudication": {
+          "provenance": "data/batch-06-recovery-decisions.json",
+          "scope": "legacy-batch05-exclusion",
+          "reviewBasis": "Approve an explicit override of the legacy Batch 05 exclusion. Commit 2c0619c added this catalog ID to a catch-all exclusion set without a row-specific reason, while the workbook and normalized catalog independently preserve one exact unflagged label/code mapping. The reviewed photograph clearly shows green asparagus spears; Organic remains an exact workbook claim and is not inferred from pixels."
+        },
         "evidenceGaps": []
       },
       "codeEvidence": {
@@ -3138,20 +3148,30 @@
         "packageSignals": []
       },
       "mediaPlan": {
-        "status": "reviewed-candidate",
-        "query": "Organic asparagus Long spear stalks",
+        "status": "reviewed-source",
+        "query": "Asparagus - Organic Long bundled spears with tapered tips",
         "target": {
-          "identity": "Organic asparagus",
-          "visibleForm": "Long spear stalks",
+          "identity": "Asparagus - Organic",
+          "visibleForm": "Long bundled spears with tapered tips",
           "color": "Green",
           "retailForm": "Loose"
         },
         "source": {
-          "provenance": "data/batch-06-media-review-decisions.json",
+          "provenance": "public/media-resolution-batch06.json",
           "file": "HK CWB 銅鑼灣 Causeway Bay 軒尼詩道 500 Hennessy Road 希慎廣場 Hysan Place mall B2 basement shop MarketPlace by Jasons Supermarket October 2021 SS2 02.jpg",
           "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/HK_CWB_%E9%8A%85%E9%91%BC%E7%81%A3_Causeway_Bay_%E8%BB%92%E5%B0%BC%E8%A9%A9%E9%81%93_500_Hennessy_Road_%E5%B8%8C%E6%85%8E%E5%BB%A3%E5%A0%B4_Hysan_Place_mall_B2_basement_shop_MarketPlace_by_Jasons_Supermarket_October_2021_SS2_02.jpg/1920px-thumbnail.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-          "match": "pixel-reviewed-candidate",
-          "reviewReason": "Superior alternative showing many unmistakable raw green asparagus bundles; organic status remains workbook-only."
+          "match": "reviewed-override",
+          "recognitionMode": "label-assisted",
+          "labelClaims": [
+            {
+              "value": "Organic",
+              "basis": "workbook-label",
+              "sourceField": "catalog.item",
+              "sourcePages": [
+                4
+              ]
+            }
+          ]
         },
         "acceptance": [
           "Metadata must identify the exact product or a reviewed synonym.",
@@ -3161,22 +3181,11 @@
       },
       "mappingDecision": null,
       "publishability": {
-        "status": "blocked",
-        "blockers": [
-          {
-            "domain": "identity",
-            "code": "identity-source-review",
-            "detail": "Handwritten, obscured, or separately excluded source wording needs adjudication."
-          },
-          {
-            "domain": "identity",
-            "code": "identity-adjudication-required",
-            "detail": "This catalog identity is on the explicit source-review list."
-          }
-        ],
+        "status": "ready",
+        "blockers": [],
         "nextAction": {
-          "type": "adjudicate-source-identity",
-          "description": "Resolve the exact source wording and product identity before changing code or media state."
+          "type": "none",
+          "description": "All current identity, code, retail, and media gates are satisfied."
         }
       }
     },
@@ -4770,36 +4779,36 @@
       "identityEvidence": {
         "status": "interpreted",
         "title": {
-          "value": "Pint / 12oz berries",
-          "basis": "taxonomy-helper",
+          "value": "Blackberries - Pint / 12oz",
+          "basis": "curated-knowledge",
           "sourceFields": [
             "catalog.item"
           ],
-          "confidence": "derived"
+          "confidence": "curated-interpretation"
         },
         "family": {
           "value": "Berries",
-          "basis": "taxonomy-helper",
+          "basis": "curated-knowledge",
           "sourceFields": [
             "catalog.item"
           ],
-          "confidence": "derived"
+          "confidence": "curated-interpretation"
         },
         "form": {
-          "value": "Small soft berries",
-          "basis": "taxonomy-helper",
+          "value": "Small clustered drupelet berries",
+          "basis": "curated-knowledge",
           "sourceFields": [
             "catalog.item"
           ],
-          "confidence": "derived"
+          "confidence": "curated-interpretation"
         },
         "color": {
-          "value": "Mixed",
-          "basis": "taxonomy-helper",
+          "value": "Black",
+          "basis": "curated-knowledge",
           "sourceFields": [
             "catalog.item"
           ],
-          "confidence": "derived"
+          "confidence": "curated-interpretation"
         },
         "curationNote": null,
         "evidenceGaps": []
@@ -4829,16 +4838,16 @@
         "status": "package-evidence-required",
         "catalogSoldBy": null,
         "soldBy": {
-          "value": "Weight",
-          "basis": "sale-helper",
+          "value": "Each",
+          "basis": "curated-knowledge",
           "sourceFields": [
             "catalog.item"
           ],
           "confidence": "interpreted"
         },
         "saleForm": {
-          "value": "Loose",
-          "basis": "sale-helper",
+          "value": "Package",
+          "basis": "curated-knowledge",
           "sourceFields": [
             "catalog.item",
             "catalog.soldBy"
@@ -4848,18 +4857,46 @@
         "packageSignals": [
           "Pint",
           "12oz"
-        ]
+        ],
+        "interpretation": {
+          "provenance": "data/batch-06-recovery-decisions.json",
+          "reviewBasis": "The exact workbook label explicitly names this package or fixed quantity. Each refers to one catalog selling unit; the photograph does not establish its net weight, count, branding, or checkout code."
+        }
       },
       "mediaPlan": {
-        "status": "source-required",
-        "query": "Pint / 12oz berries Small soft berries",
+        "status": "reviewed-source",
+        "query": "Blackberries - Pint / 12oz Small clustered drupelet berries",
         "target": {
-          "identity": "Pint / 12oz berries",
-          "visibleForm": "Small soft berries",
-          "color": "Mixed",
-          "retailForm": "Loose"
+          "identity": "Blackberries - Pint / 12oz",
+          "visibleForm": "Small clustered drupelet berries",
+          "color": "Black",
+          "retailForm": "Package"
         },
-        "source": null,
+        "source": {
+          "provenance": "public/media-resolution-batch06.json",
+          "file": "Blackberry (Rubus fruticosus).jpg",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/Blackberry_%28Rubus_fruticosus%29.jpg/1920px-Blackberry_%28Rubus_fruticosus%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "match": "reviewed-override",
+          "recognitionMode": "label-assisted",
+          "labelClaims": [
+            {
+              "value": "Pint",
+              "basis": "workbook-label",
+              "sourceField": "catalog.item",
+              "sourcePages": [
+                5
+              ]
+            },
+            {
+              "value": "12oz",
+              "basis": "workbook-label",
+              "sourceField": "catalog.item",
+              "sourcePages": [
+                5
+              ]
+            }
+          ]
+        },
         "acceptance": [
           "Metadata must identify the exact product or a reviewed synonym.",
           "Visible form and identity-bearing modifiers must match the learner title.",
@@ -4872,22 +4909,11 @@
         "reviewBasis": "The catalog records one checkout code for an interpreted in-scope produce identity."
       },
       "publishability": {
-        "status": "mapped",
-        "blockers": [
-          {
-            "domain": "retail",
-            "code": "retail-package-evidence-required",
-            "detail": "The named package, case, bin, quantity, or processed form needs exact retail evidence."
-          },
-          {
-            "domain": "media",
-            "code": "media-evidence-required",
-            "detail": "No human-reviewed recognition source is attached to this exact row."
-          }
-        ],
+        "status": "ready",
+        "blockers": [],
         "nextAction": {
-          "type": "verify-retail-unit-and-code",
-          "description": "Capture the exact package, case, bin, or quantity and verify that its code belongs to that retail unit."
+          "type": "none",
+          "description": "All current identity, code, retail, and media gates are satisfied."
         }
       }
     },
@@ -7511,35 +7537,35 @@
         "status": "interpreted",
         "title": {
           "value": "Cucumbers - Dill (Case)",
-          "basis": "taxonomy-helper",
+          "basis": "curated-knowledge",
           "sourceFields": [
             "catalog.item"
           ],
-          "confidence": "derived"
+          "confidence": "curated-interpretation"
         },
         "family": {
           "value": "Cucumbers",
-          "basis": "taxonomy-helper",
+          "basis": "curated-knowledge",
           "sourceFields": [
             "catalog.item"
           ],
-          "confidence": "derived"
+          "confidence": "curated-interpretation"
         },
         "form": {
-          "value": "Long cylindrical fruit",
-          "basis": "taxonomy-helper",
+          "value": "Short bumpy whole cucumbers",
+          "basis": "curated-knowledge",
           "sourceFields": [
             "catalog.item"
           ],
-          "confidence": "derived"
+          "confidence": "curated-interpretation"
         },
         "color": {
           "value": "Green",
-          "basis": "taxonomy-helper",
+          "basis": "curated-knowledge",
           "sourceFields": [
             "catalog.item"
           ],
-          "confidence": "derived"
+          "confidence": "curated-interpretation"
         },
         "curationNote": null,
         "evidenceGaps": []
@@ -7569,16 +7595,16 @@
         "status": "package-evidence-required",
         "catalogSoldBy": null,
         "soldBy": {
-          "value": "Weight",
-          "basis": "sale-helper",
+          "value": "Each",
+          "basis": "curated-knowledge",
           "sourceFields": [
             "catalog.item"
           ],
           "confidence": "interpreted"
         },
         "saleForm": {
-          "value": "Loose",
-          "basis": "sale-helper",
+          "value": "Case",
+          "basis": "curated-knowledge",
           "sourceFields": [
             "catalog.item",
             "catalog.soldBy"
@@ -7587,18 +7613,46 @@
         },
         "packageSignals": [
           "Case"
-        ]
+        ],
+        "interpretation": {
+          "provenance": "data/batch-06-recovery-decisions.json",
+          "reviewBasis": "The exact workbook label explicitly names this case or fixed quantity. Each refers to one catalog selling unit; the photograph does not establish its net weight, count, branding, or checkout code."
+        }
       },
       "mediaPlan": {
-        "status": "source-required",
-        "query": "Cucumbers - Dill (Case) Long cylindrical fruit",
+        "status": "reviewed-source",
+        "query": "Cucumbers - Dill (Case) Short bumpy whole cucumbers",
         "target": {
           "identity": "Cucumbers - Dill (Case)",
-          "visibleForm": "Long cylindrical fruit",
+          "visibleForm": "Short bumpy whole cucumbers",
           "color": "Green",
-          "retailForm": "Loose"
+          "retailForm": "Case"
         },
-        "source": null,
+        "source": {
+          "provenance": "public/media-resolution-batch06.json",
+          "file": "PicklingCucumbers.jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/a/ac/PicklingCucumbers.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "match": "reviewed-override",
+          "recognitionMode": "label-assisted",
+          "labelClaims": [
+            {
+              "value": "Dill",
+              "basis": "workbook-label",
+              "sourceField": "catalog.item",
+              "sourcePages": [
+                4
+              ]
+            },
+            {
+              "value": "Case",
+              "basis": "workbook-label",
+              "sourceField": "catalog.item",
+              "sourcePages": [
+                4
+              ]
+            }
+          ]
+        },
         "acceptance": [
           "Metadata must identify the exact product or a reviewed synonym.",
           "Visible form and identity-bearing modifiers must match the learner title.",
@@ -7612,22 +7666,11 @@
         "lessonTitle": "Cucumbers - Dill (Case)"
       },
       "publishability": {
-        "status": "mapped",
-        "blockers": [
-          {
-            "domain": "retail",
-            "code": "retail-package-evidence-required",
-            "detail": "The named package, case, bin, quantity, or processed form needs exact retail evidence."
-          },
-          {
-            "domain": "media",
-            "code": "media-evidence-required",
-            "detail": "No human-reviewed recognition source is attached to this exact row."
-          }
-        ],
+        "status": "ready",
+        "blockers": [],
         "nextAction": {
-          "type": "verify-retail-unit-and-code",
-          "description": "Capture the exact package, case, bin, or quantity and verify that its code belongs to that retail unit."
+          "type": "none",
+          "description": "All current identity, code, retail, and media gates are satisfied."
         }
       }
     },
@@ -7660,40 +7703,45 @@
         }
       },
       "identityEvidence": {
-        "status": "source-review-required",
+        "status": "interpreted",
         "title": {
-          "value": "Dill Weed",
-          "basis": "taxonomy-helper",
+          "value": "Dill Weed (Pickling) - Herbs",
+          "basis": "curated-knowledge",
           "sourceFields": [
             "catalog.item"
           ],
-          "confidence": "derived"
+          "confidence": "curated-interpretation"
         },
         "family": {
           "value": "Herbs",
-          "basis": "taxonomy-helper",
+          "basis": "curated-knowledge",
           "sourceFields": [
             "catalog.item"
           ],
-          "confidence": "derived"
+          "confidence": "curated-interpretation"
         },
         "form": {
-          "value": "Leafy herb stems",
-          "basis": "taxonomy-helper",
+          "value": "Fine feathery fronds on slender stems",
+          "basis": "curated-knowledge",
           "sourceFields": [
             "catalog.item"
           ],
-          "confidence": "derived"
+          "confidence": "curated-interpretation"
         },
         "color": {
           "value": "Green",
-          "basis": "taxonomy-helper",
+          "basis": "curated-knowledge",
           "sourceFields": [
             "catalog.item"
           ],
-          "confidence": "derived"
+          "confidence": "curated-interpretation"
         },
         "curationNote": null,
+        "adjudication": {
+          "provenance": "data/batch-06-recovery-decisions.json",
+          "scope": "legacy-batch05-exclusion",
+          "reviewBasis": "Approve an explicit override of the legacy Batch 05 exclusion. Commit 2c0619c recorded no row-specific defect, and the workbook confirms one unflagged exact label/code mapping. The reviewed market photograph shows fresh dill fronds; Pickling is retained only as workbook listing language rather than a visible cultivar or preparation claim."
+        },
         "evidenceGaps": []
       },
       "codeEvidence": {
@@ -7740,20 +7788,30 @@
         "packageSignals": []
       },
       "mediaPlan": {
-        "status": "reviewed-candidate",
-        "query": "Dill Weed Leafy herb stems",
+        "status": "reviewed-source",
+        "query": "Dill Weed (Pickling) - Herbs Fine feathery fronds on slender stems",
         "target": {
-          "identity": "Dill Weed",
-          "visibleForm": "Leafy herb stems",
+          "identity": "Dill Weed (Pickling) - Herbs",
+          "visibleForm": "Fine feathery fronds on slender stems",
           "color": "Green",
           "retailForm": "Loose"
         },
         "source": {
-          "provenance": "data/batch-06-media-review-decisions.json",
+          "provenance": "public/media-resolution-batch06.json",
           "file": "Samara Market 04 Dill, lots of dill (4136882030).jpg",
           "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/Samara_Market_04_Dill%2C_lots_of_dill_%284136882030%29.jpg/1920px-Samara_Market_04_Dill%2C_lots_of_dill_%284136882030%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-          "match": "pixel-reviewed-candidate",
-          "reviewReason": "Superior alternative clearly shows abundant fresh green dill bunches at market; the primary is a landscape of the town Dill."
+          "match": "reviewed-override",
+          "recognitionMode": "label-assisted",
+          "labelClaims": [
+            {
+              "value": "Pickling",
+              "basis": "workbook-label",
+              "sourceField": "catalog.item",
+              "sourcePages": [
+                4
+              ]
+            }
+          ]
         },
         "acceptance": [
           "Metadata must identify the exact product or a reviewed synonym.",
@@ -7763,22 +7821,11 @@
       },
       "mappingDecision": null,
       "publishability": {
-        "status": "blocked",
-        "blockers": [
-          {
-            "domain": "identity",
-            "code": "identity-source-review",
-            "detail": "Handwritten, obscured, or separately excluded source wording needs adjudication."
-          },
-          {
-            "domain": "identity",
-            "code": "identity-adjudication-required",
-            "detail": "This catalog identity is on the explicit source-review list."
-          }
-        ],
+        "status": "ready",
+        "blockers": [],
         "nextAction": {
-          "type": "adjudicate-source-identity",
-          "description": "Resolve the exact source wording and product identity before changing code or media state."
+          "type": "none",
+          "description": "All current identity, code, retail, and media gates are satisfied."
         }
       }
     },
@@ -9519,40 +9566,45 @@
         }
       },
       "identityEvidence": {
-        "status": "source-review-required",
+        "status": "interpreted",
         "title": {
-          "value": "Bulk loose garlic",
-          "basis": "taxonomy-helper",
+          "value": "Garlic - Loose (Bulk)",
+          "basis": "curated-knowledge",
           "sourceFields": [
             "catalog.item"
           ],
-          "confidence": "derived"
+          "confidence": "curated-interpretation"
         },
         "family": {
           "value": "Alliums",
-          "basis": "taxonomy-helper",
+          "basis": "curated-knowledge",
           "sourceFields": [
             "catalog.item"
           ],
-          "confidence": "derived"
+          "confidence": "curated-interpretation"
         },
         "form": {
-          "value": "Segmented bulb",
-          "basis": "taxonomy-helper",
+          "value": "Papery divided bulbs and cloves",
+          "basis": "curated-knowledge",
           "sourceFields": [
             "catalog.item"
           ],
-          "confidence": "derived"
+          "confidence": "curated-interpretation"
         },
         "color": {
           "value": "White",
-          "basis": "taxonomy-helper",
+          "basis": "curated-knowledge",
           "sourceFields": [
             "catalog.item"
           ],
-          "confidence": "derived"
+          "confidence": "curated-interpretation"
         },
         "curationNote": null,
+        "adjudication": {
+          "provenance": "data/batch-06-recovery-decisions.json",
+          "scope": "legacy-batch05-exclusion",
+          "reviewBasis": "Approve an explicit override of the legacy Batch 05 exclusion. The workbook confirms the exact unflagged Loose (Bulk) listing at 4610. Reusing the established loose-garlic photograph is valid for visible identity, but it does not make the source lesson's 4608 equivalent to this target code; Bulk and 4610 remain exclusive to the target workbook row."
+        },
         "evidenceGaps": []
       },
       "codeEvidence": {
@@ -9599,21 +9651,20 @@
         "packageSignals": []
       },
       "mediaPlan": {
-        "status": "reviewed-reuse-candidate",
-        "query": "Bulk loose garlic Segmented bulb",
+        "status": "reviewed-source",
+        "query": "Garlic - Loose (Bulk) Papery divided bulbs and cloves",
         "target": {
-          "identity": "Bulk loose garlic",
-          "visibleForm": "Segmented bulb",
+          "identity": "Garlic - Loose (Bulk)",
+          "visibleForm": "Papery divided bulbs and cloves",
           "color": "White",
           "retailForm": "Loose"
         },
         "source": {
-          "provenance": "data/batch-06-media-reuse.json",
+          "provenance": "public/media-resolution-batch06.json",
           "file": "Garlic.jpg",
-          "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Garlic.jpg?width=1600",
-          "match": "reviewed-reuse-candidate",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/22/Garlic.jpg/1920px-Garlic.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "match": "reviewed-override",
           "recognitionMode": "label-assisted",
-          "reviewReason": "The published loose-garlic photograph is an exact visible match; Bulk describes the catalog sale presentation.",
           "labelClaims": [
             {
               "value": "Bulk",
@@ -9633,22 +9684,11 @@
       },
       "mappingDecision": null,
       "publishability": {
-        "status": "blocked",
-        "blockers": [
-          {
-            "domain": "identity",
-            "code": "identity-source-review",
-            "detail": "Handwritten, obscured, or separately excluded source wording needs adjudication."
-          },
-          {
-            "domain": "identity",
-            "code": "identity-adjudication-required",
-            "detail": "This catalog identity is on the explicit source-review list."
-          }
-        ],
+        "status": "ready",
+        "blockers": [],
         "nextAction": {
-          "type": "adjudicate-source-identity",
-          "description": "Resolve the exact source wording and product identity before changing code or media state."
+          "type": "none",
+          "description": "All current identity, code, retail, and media gates are satisfied."
         }
       }
     },
@@ -9683,36 +9723,36 @@
       "identityEvidence": {
         "status": "interpreted",
         "title": {
-          "value": "Peeled garlic",
-          "basis": "taxonomy-helper",
+          "value": "Garlic - Peeled 5lb",
+          "basis": "curated-knowledge",
           "sourceFields": [
             "catalog.item"
           ],
-          "confidence": "derived"
+          "confidence": "curated-interpretation"
         },
         "family": {
           "value": "Alliums",
-          "basis": "taxonomy-helper",
+          "basis": "curated-knowledge",
           "sourceFields": [
             "catalog.item"
           ],
-          "confidence": "derived"
+          "confidence": "curated-interpretation"
         },
         "form": {
-          "value": "Segmented bulb",
-          "basis": "taxonomy-helper",
+          "value": "Separated smooth cloves without papery skin",
+          "basis": "curated-knowledge",
           "sourceFields": [
             "catalog.item"
           ],
-          "confidence": "derived"
+          "confidence": "curated-interpretation"
         },
         "color": {
-          "value": "White",
-          "basis": "taxonomy-helper",
+          "value": "Cream-white",
+          "basis": "curated-knowledge",
           "sourceFields": [
             "catalog.item"
           ],
-          "confidence": "derived"
+          "confidence": "curated-interpretation"
         },
         "curationNote": null,
         "evidenceGaps": []
@@ -9742,16 +9782,16 @@
         "status": "package-evidence-required",
         "catalogSoldBy": null,
         "soldBy": {
-          "value": "Weight",
-          "basis": "sale-helper",
+          "value": "Each",
+          "basis": "curated-knowledge",
           "sourceFields": [
             "catalog.item"
           ],
           "confidence": "interpreted"
         },
         "saleForm": {
-          "value": "Loose",
-          "basis": "sale-helper",
+          "value": "Package",
+          "basis": "curated-knowledge",
           "sourceFields": [
             "catalog.item",
             "catalog.soldBy"
@@ -9760,18 +9800,38 @@
         },
         "packageSignals": [
           "5lb"
-        ]
+        ],
+        "interpretation": {
+          "provenance": "data/batch-06-recovery-decisions.json",
+          "reviewBasis": "The exact workbook label explicitly names this package or fixed quantity. Each refers to one catalog selling unit; the photograph does not establish its net weight, count, branding, or checkout code."
+        }
       },
       "mediaPlan": {
-        "status": "source-required",
-        "query": "Peeled garlic Segmented bulb",
+        "status": "reviewed-source",
+        "query": "Garlic - Peeled 5lb Separated smooth cloves without papery skin",
         "target": {
-          "identity": "Peeled garlic",
-          "visibleForm": "Segmented bulb",
-          "color": "White",
-          "retailForm": "Loose"
+          "identity": "Garlic - Peeled 5lb",
+          "visibleForm": "Separated smooth cloves without papery skin",
+          "color": "Cream-white",
+          "retailForm": "Package"
         },
-        "source": null,
+        "source": {
+          "provenance": "public/media-resolution-batch06.json",
+          "file": "Peeled garlic cloves.jpg",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Peeled_garlic_cloves.jpg/1920px-Peeled_garlic_cloves.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "match": "reviewed-override",
+          "recognitionMode": "label-assisted",
+          "labelClaims": [
+            {
+              "value": "5lb",
+              "basis": "workbook-label",
+              "sourceField": "catalog.item",
+              "sourcePages": [
+                4
+              ]
+            }
+          ]
+        },
         "acceptance": [
           "Metadata must identify the exact product or a reviewed synonym.",
           "Visible form and identity-bearing modifiers must match the learner title.",
@@ -9784,22 +9844,11 @@
         "reviewBasis": "The catalog records one checkout code for an interpreted in-scope produce identity."
       },
       "publishability": {
-        "status": "mapped",
-        "blockers": [
-          {
-            "domain": "retail",
-            "code": "retail-package-evidence-required",
-            "detail": "The named package, case, bin, quantity, or processed form needs exact retail evidence."
-          },
-          {
-            "domain": "media",
-            "code": "media-evidence-required",
-            "detail": "No human-reviewed recognition source is attached to this exact row."
-          }
-        ],
+        "status": "ready",
+        "blockers": [],
         "nextAction": {
-          "type": "verify-retail-unit-and-code",
-          "description": "Capture the exact package, case, bin, or quantity and verify that its code belongs to that retail unit."
+          "type": "none",
+          "description": "All current identity, code, retail, and media gates are satisfied."
         }
       }
     },
@@ -13652,40 +13701,45 @@
         }
       },
       "identityEvidence": {
-        "status": "source-review-required",
+        "status": "interpreted",
         "title": {
-          "value": "Methileaf",
-          "basis": "taxonomy-helper",
+          "value": "Methileaf - Herbs",
+          "basis": "curated-knowledge",
           "sourceFields": [
             "catalog.item"
           ],
-          "confidence": "derived"
+          "confidence": "curated-interpretation"
         },
         "family": {
           "value": "Leafy Greens",
-          "basis": "taxonomy-helper",
+          "basis": "curated-knowledge",
           "sourceFields": [
             "catalog.item"
           ],
-          "confidence": "derived"
+          "confidence": "curated-interpretation"
         },
         "form": {
-          "value": "Broad leafy stems",
-          "basis": "taxonomy-helper",
+          "value": "Small oval trifoliate leaflets on slender stems",
+          "basis": "curated-knowledge",
           "sourceFields": [
             "catalog.item"
           ],
-          "confidence": "derived"
+          "confidence": "curated-interpretation"
         },
         "color": {
           "value": "Green",
-          "basis": "taxonomy-helper",
+          "basis": "curated-knowledge",
           "sourceFields": [
             "catalog.item"
           ],
-          "confidence": "derived"
+          "confidence": "curated-interpretation"
         },
         "curationNote": null,
+        "adjudication": {
+          "provenance": "data/batch-06-recovery-decisions.json",
+          "scope": "legacy-batch05-exclusion",
+          "reviewBasis": "Approve an explicit override of the legacy Batch 05 exclusion. The workbook preserves Methileaf as one unflagged listing at 59994, and ICAR identifies Methi as Fenugreek, Trigonella foenum-graecum. The existing Methi Leaf photograph therefore supports visible identity, but its source code 4909 is not transferred or treated as equivalent to the target listing's 59994."
+        },
         "evidenceGaps": []
       },
       "codeEvidence": {
@@ -13732,21 +13786,30 @@
         "packageSignals": []
       },
       "mediaPlan": {
-        "status": "reviewed-reuse-candidate",
-        "query": "Methileaf Broad leafy stems",
+        "status": "reviewed-source",
+        "query": "Methileaf - Herbs Small oval trifoliate leaflets on slender stems",
         "target": {
-          "identity": "Methileaf",
-          "visibleForm": "Broad leafy stems",
+          "identity": "Methileaf - Herbs",
+          "visibleForm": "Small oval trifoliate leaflets on slender stems",
           "color": "Green",
           "retailForm": "Single"
         },
         "source": {
-          "provenance": "data/batch-06-media-reuse.json",
+          "provenance": "public/media-resolution-batch06.json",
           "file": "Methi leaves.jpg",
           "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/Methi_leaves.jpg/1920px-Methi_leaves.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-          "match": "reviewed-reuse-candidate",
-          "recognitionMode": "product-and-loose-form",
-          "reviewReason": "The published Methi Leaf (Fenugreek) photograph provides a direct synonym and loose-herb identity match for Methileaf."
+          "match": "reviewed-override",
+          "recognitionMode": "label-assisted",
+          "labelClaims": [
+            {
+              "value": "Herbs",
+              "basis": "workbook-label",
+              "sourceField": "catalog.item",
+              "sourcePages": [
+                1
+              ]
+            }
+          ]
         },
         "acceptance": [
           "Metadata must identify the exact product or a reviewed synonym.",
@@ -13756,22 +13819,11 @@
       },
       "mappingDecision": null,
       "publishability": {
-        "status": "blocked",
-        "blockers": [
-          {
-            "domain": "identity",
-            "code": "identity-source-review",
-            "detail": "Handwritten, obscured, or separately excluded source wording needs adjudication."
-          },
-          {
-            "domain": "identity",
-            "code": "identity-adjudication-required",
-            "detail": "This catalog identity is on the explicit source-review list."
-          }
-        ],
+        "status": "ready",
+        "blockers": [],
         "nextAction": {
-          "type": "adjudicate-source-identity",
-          "description": "Resolve the exact source wording and product identity before changing code or media state."
+          "type": "none",
+          "description": "All current identity, code, retail, and media gates are satisfied."
         }
       }
     },
@@ -13804,40 +13856,45 @@
         }
       },
       "identityEvidence": {
-        "status": "source-review-required",
+        "status": "interpreted",
         "title": {
-          "value": "Bulk white mushrooms",
-          "basis": "taxonomy-helper",
+          "value": "Mushrooms - White (Bulk, RCWC)",
+          "basis": "curated-knowledge",
           "sourceFields": [
             "catalog.item"
           ],
-          "confidence": "derived"
+          "confidence": "curated-interpretation"
         },
         "family": {
           "value": "Mushrooms",
-          "basis": "taxonomy-helper",
+          "basis": "curated-knowledge",
           "sourceFields": [
             "catalog.item"
           ],
-          "confidence": "derived"
+          "confidence": "curated-interpretation"
         },
         "form": {
-          "value": "Stemmed caps",
-          "basis": "taxonomy-helper",
+          "value": "Small round caps with short stems",
+          "basis": "curated-knowledge",
           "sourceFields": [
             "catalog.item"
           ],
-          "confidence": "derived"
+          "confidence": "curated-interpretation"
         },
         "color": {
           "value": "White",
-          "basis": "taxonomy-helper",
+          "basis": "curated-knowledge",
           "sourceFields": [
             "catalog.item"
           ],
-          "confidence": "derived"
+          "confidence": "curated-interpretation"
         },
         "curationNote": null,
+        "adjudication": {
+          "provenance": "data/batch-06-recovery-decisions.json",
+          "scope": "legacy-batch05-exclusion",
+          "reviewBasis": "Approve an explicit override of the legacy Batch 05 exclusion. The workbook confirms one exact unflagged White (Bulk, RCWC) listing at 1102, and the reused photograph and Commons metadata identify white button mushrooms. Bulk, RCWC, and 1102 remain target-specific; the source listing and its 4085 code are not treated as operationally equivalent."
+        },
         "evidenceGaps": []
       },
       "codeEvidence": {
@@ -13884,21 +13941,20 @@
         "packageSignals": []
       },
       "mediaPlan": {
-        "status": "reviewed-reuse-candidate",
-        "query": "Bulk white mushrooms Stemmed caps",
+        "status": "reviewed-source",
+        "query": "Mushrooms - White (Bulk, RCWC) Small round caps with short stems",
         "target": {
-          "identity": "Bulk white mushrooms",
-          "visibleForm": "Stemmed caps",
+          "identity": "Mushrooms - White (Bulk, RCWC)",
+          "visibleForm": "Small round caps with short stems",
           "color": "White",
           "retailForm": "Loose"
         },
         "source": {
-          "provenance": "data/batch-06-media-reuse.json",
+          "provenance": "public/media-resolution-batch06.json",
           "file": "1 - button mushrooms.jpg",
-          "url": "https://commons.wikimedia.org/wiki/Special:FilePath/1%20-%20button%20mushrooms.jpg?width=1600",
-          "match": "reviewed-reuse-candidate",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/3/3e/1_-_button_mushrooms.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "match": "reviewed-override",
           "recognitionMode": "label-assisted",
-          "reviewReason": "The existing white-button-mushroom image anchors product identity; Bulk and RCWC are preserved only as workbook wording.",
           "labelClaims": [
             {
               "value": "Bulk, RCWC",
@@ -13918,22 +13974,11 @@
       },
       "mappingDecision": null,
       "publishability": {
-        "status": "blocked",
-        "blockers": [
-          {
-            "domain": "identity",
-            "code": "identity-source-review",
-            "detail": "Handwritten, obscured, or separately excluded source wording needs adjudication."
-          },
-          {
-            "domain": "identity",
-            "code": "identity-adjudication-required",
-            "detail": "This catalog identity is on the explicit source-review list."
-          }
-        ],
+        "status": "ready",
+        "blockers": [],
         "nextAction": {
-          "type": "adjudicate-source-identity",
-          "description": "Resolve the exact source wording and product identity before changing code or media state."
+          "type": "none",
+          "description": "All current identity, code, retail, and media gates are satisfied."
         }
       }
     },
@@ -14482,7 +14527,7 @@
       "identityEvidence": {
         "status": "interpreted",
         "title": {
-          "value": "Green olives — case",
+          "value": "Olives - Green (Case)",
           "basis": "curated-knowledge",
           "sourceFields": [
             "catalog.item"
@@ -14498,7 +14543,7 @@
           "confidence": "curated-interpretation"
         },
         "form": {
-          "value": "Small oval stone fruits",
+          "value": "Small oval whole stone fruits",
           "basis": "curated-knowledge",
           "sourceFields": [
             "catalog.item"
@@ -14541,7 +14586,7 @@
         "status": "package-evidence-required",
         "catalogSoldBy": null,
         "soldBy": {
-          "value": "Case",
+          "value": "Each",
           "basis": "curated-knowledge",
           "sourceFields": [
             "catalog.item"
@@ -14559,18 +14604,38 @@
         },
         "packageSignals": [
           "Case"
-        ]
+        ],
+        "interpretation": {
+          "provenance": "data/batch-06-recovery-decisions.json",
+          "reviewBasis": "The exact workbook label explicitly names this case or fixed quantity. Each refers to one catalog selling unit; the photograph does not establish its net weight, count, branding, or checkout code."
+        }
       },
       "mediaPlan": {
-        "status": "source-required",
-        "query": "Green olives — case Small oval stone fruits",
+        "status": "reviewed-source",
+        "query": "Olives - Green (Case) Small oval whole stone fruits",
         "target": {
-          "identity": "Green olives — case",
-          "visibleForm": "Small oval stone fruits",
+          "identity": "Olives - Green (Case)",
+          "visibleForm": "Small oval whole stone fruits",
           "color": "Green",
           "retailForm": "Case"
         },
-        "source": null,
+        "source": {
+          "provenance": "public/media-resolution-batch06.json",
+          "file": "A crate of olives fresh from the tree (15299192895).jpg",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/A_crate_of_olives_fresh_from_the_tree_%2815299192895%29.jpg/1920px-A_crate_of_olives_fresh_from_the_tree_%2815299192895%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "match": "reviewed-override",
+          "recognitionMode": "label-assisted",
+          "labelClaims": [
+            {
+              "value": "Case",
+              "basis": "workbook-label",
+              "sourceField": "catalog.item",
+              "sourcePages": [
+                4
+              ]
+            }
+          ]
+        },
         "acceptance": [
           "Metadata must identify the exact product or a reviewed synonym.",
           "Visible form and identity-bearing modifiers must match the learner title.",
@@ -14583,22 +14648,11 @@
         "reviewBasis": "The catalog records one checkout code for an interpreted in-scope produce identity."
       },
       "publishability": {
-        "status": "mapped",
-        "blockers": [
-          {
-            "domain": "retail",
-            "code": "retail-package-evidence-required",
-            "detail": "The named package, case, bin, quantity, or processed form needs exact retail evidence."
-          },
-          {
-            "domain": "media",
-            "code": "media-evidence-required",
-            "detail": "No human-reviewed recognition source is attached to this exact row."
-          }
-        ],
+        "status": "ready",
+        "blockers": [],
         "nextAction": {
-          "type": "verify-retail-unit-and-code",
-          "description": "Capture the exact package, case, bin, or quantity and verify that its code belongs to that retail unit."
+          "type": "none",
+          "description": "All current identity, code, retail, and media gates are satisfied."
         }
       }
     },
@@ -20028,7 +20082,7 @@
       "identityEvidence": {
         "status": "interpreted",
         "title": {
-          "value": "Bulk pistachios",
+          "value": "Pistachios (Bulk) - Nuts",
           "basis": "curated-knowledge",
           "sourceFields": [
             "catalog.item"
@@ -20052,7 +20106,7 @@
           "confidence": "curated-interpretation"
         },
         "color": {
-          "value": "Beige and Green",
+          "value": "Beige with purple-brown kernels",
           "basis": "curated-knowledge",
           "sourceFields": [
             "catalog.item"
@@ -20106,15 +20160,31 @@
         "packageSignals": []
       },
       "mediaPlan": {
-        "status": "source-required",
-        "query": "Bulk pistachios Small nuts in split beige shells",
+        "status": "reviewed-source",
+        "query": "Pistachios (Bulk) - Nuts Small nuts in split beige shells",
         "target": {
-          "identity": "Bulk pistachios",
+          "identity": "Pistachios (Bulk) - Nuts",
           "visibleForm": "Small nuts in split beige shells",
-          "color": "Beige and Green",
+          "color": "Beige with purple-brown kernels",
           "retailForm": "Loose"
         },
-        "source": null,
+        "source": {
+          "provenance": "public/media-resolution-batch06.json",
+          "file": "Pistachio nuts from Iran.jpg",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/Pistachio_nuts_from_Iran.jpg/1920px-Pistachio_nuts_from_Iran.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "match": "reviewed-override",
+          "recognitionMode": "label-assisted",
+          "labelClaims": [
+            {
+              "value": "Bulk",
+              "basis": "workbook-label",
+              "sourceField": "catalog.item",
+              "sourcePages": [
+                5
+              ]
+            }
+          ]
+        },
         "acceptance": [
           "Metadata must identify the exact product or a reviewed synonym.",
           "Visible form and identity-bearing modifiers must match the learner title.",
@@ -20127,17 +20197,11 @@
         "reviewBasis": "The catalog records one checkout code for an interpreted in-scope produce identity."
       },
       "publishability": {
-        "status": "mapped",
-        "blockers": [
-          {
-            "domain": "media",
-            "code": "media-evidence-required",
-            "detail": "No human-reviewed recognition source is attached to this exact row."
-          }
-        ],
+        "status": "ready",
+        "blockers": [],
         "nextAction": {
-          "type": "source-and-review-recognition-media",
-          "description": "Find a rights-compatible image whose metadata and visible retail form match this exact identity, then review it before admission."
+          "type": "none",
+          "description": "All current identity, code, retail, and media gates are satisfied."
         }
       }
     },
@@ -22756,36 +22820,36 @@
       "identityEvidence": {
         "status": "interpreted",
         "title": {
-          "value": "Red Half Pint / 6oz berries",
-          "basis": "taxonomy-helper",
+          "value": "Raspberries - Red Half Pint / 6oz",
+          "basis": "curated-knowledge",
           "sourceFields": [
             "catalog.item"
           ],
-          "confidence": "derived"
+          "confidence": "curated-interpretation"
         },
         "family": {
           "value": "Berries",
-          "basis": "taxonomy-helper",
+          "basis": "curated-knowledge",
           "sourceFields": [
             "catalog.item"
           ],
-          "confidence": "derived"
+          "confidence": "curated-interpretation"
         },
         "form": {
-          "value": "Small soft berries",
-          "basis": "taxonomy-helper",
+          "value": "Soft clustered drupelet berries with hollow centers",
+          "basis": "curated-knowledge",
           "sourceFields": [
             "catalog.item"
           ],
-          "confidence": "derived"
+          "confidence": "curated-interpretation"
         },
         "color": {
           "value": "Red",
-          "basis": "taxonomy-helper",
+          "basis": "curated-knowledge",
           "sourceFields": [
             "catalog.item"
           ],
-          "confidence": "derived"
+          "confidence": "curated-interpretation"
         },
         "curationNote": null,
         "evidenceGaps": []
@@ -22815,16 +22879,16 @@
         "status": "package-evidence-required",
         "catalogSoldBy": null,
         "soldBy": {
-          "value": "Weight",
-          "basis": "sale-helper",
+          "value": "Each",
+          "basis": "curated-knowledge",
           "sourceFields": [
             "catalog.item"
           ],
           "confidence": "interpreted"
         },
         "saleForm": {
-          "value": "Loose",
-          "basis": "sale-helper",
+          "value": "Package",
+          "basis": "curated-knowledge",
           "sourceFields": [
             "catalog.item",
             "catalog.soldBy"
@@ -22834,18 +22898,46 @@
         "packageSignals": [
           "Pint",
           "6oz"
-        ]
+        ],
+        "interpretation": {
+          "provenance": "data/batch-06-recovery-decisions.json",
+          "reviewBasis": "The exact workbook label explicitly names this package or fixed quantity. Each refers to one catalog selling unit; the photograph does not establish its net weight, count, branding, or checkout code."
+        }
       },
       "mediaPlan": {
-        "status": "source-required",
-        "query": "Red Half Pint / 6oz berries Small soft berries",
+        "status": "reviewed-source",
+        "query": "Raspberries - Red Half Pint / 6oz Soft clustered drupelet berries with hollow centers",
         "target": {
-          "identity": "Red Half Pint / 6oz berries",
-          "visibleForm": "Small soft berries",
+          "identity": "Raspberries - Red Half Pint / 6oz",
+          "visibleForm": "Soft clustered drupelet berries with hollow centers",
           "color": "Red",
-          "retailForm": "Loose"
+          "retailForm": "Package"
         },
-        "source": null,
+        "source": {
+          "provenance": "public/media-resolution-batch06.json",
+          "file": "Raspberry - whole (Rubus idaeus).jpg",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Raspberry_-_whole_%28Rubus_idaeus%29.jpg/1920px-Raspberry_-_whole_%28Rubus_idaeus%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "match": "reviewed-override",
+          "recognitionMode": "label-assisted",
+          "labelClaims": [
+            {
+              "value": "Half Pint",
+              "basis": "workbook-label",
+              "sourceField": "catalog.item",
+              "sourcePages": [
+                5
+              ]
+            },
+            {
+              "value": "6oz",
+              "basis": "workbook-label",
+              "sourceField": "catalog.item",
+              "sourcePages": [
+                5
+              ]
+            }
+          ]
+        },
         "acceptance": [
           "Metadata must identify the exact product or a reviewed synonym.",
           "Visible form and identity-bearing modifiers must match the learner title.",
@@ -22858,22 +22950,11 @@
         "reviewBasis": "The catalog records one checkout code for an interpreted in-scope produce identity."
       },
       "publishability": {
-        "status": "mapped",
-        "blockers": [
-          {
-            "domain": "retail",
-            "code": "retail-package-evidence-required",
-            "detail": "The named package, case, bin, quantity, or processed form needs exact retail evidence."
-          },
-          {
-            "domain": "media",
-            "code": "media-evidence-required",
-            "detail": "No human-reviewed recognition source is attached to this exact row."
-          }
-        ],
+        "status": "ready",
+        "blockers": [],
         "nextAction": {
-          "type": "verify-retail-unit-and-code",
-          "description": "Capture the exact package, case, bin, or quantity and verify that its code belongs to that retail unit."
+          "type": "none",
+          "description": "All current identity, code, retail, and media gates are satisfied."
         }
       }
     },
@@ -22908,36 +22989,36 @@
       "identityEvidence": {
         "status": "interpreted",
         "title": {
-          "value": "Red Pint / 12oz berries",
-          "basis": "taxonomy-helper",
+          "value": "Raspberries - Red Pint / 12oz",
+          "basis": "curated-knowledge",
           "sourceFields": [
             "catalog.item"
           ],
-          "confidence": "derived"
+          "confidence": "curated-interpretation"
         },
         "family": {
           "value": "Berries",
-          "basis": "taxonomy-helper",
+          "basis": "curated-knowledge",
           "sourceFields": [
             "catalog.item"
           ],
-          "confidence": "derived"
+          "confidence": "curated-interpretation"
         },
         "form": {
-          "value": "Small soft berries",
-          "basis": "taxonomy-helper",
+          "value": "Soft clustered drupelet berries with hollow centers",
+          "basis": "curated-knowledge",
           "sourceFields": [
             "catalog.item"
           ],
-          "confidence": "derived"
+          "confidence": "curated-interpretation"
         },
         "color": {
           "value": "Red",
-          "basis": "taxonomy-helper",
+          "basis": "curated-knowledge",
           "sourceFields": [
             "catalog.item"
           ],
-          "confidence": "derived"
+          "confidence": "curated-interpretation"
         },
         "curationNote": null,
         "evidenceGaps": []
@@ -22967,16 +23048,16 @@
         "status": "package-evidence-required",
         "catalogSoldBy": null,
         "soldBy": {
-          "value": "Weight",
-          "basis": "sale-helper",
+          "value": "Each",
+          "basis": "curated-knowledge",
           "sourceFields": [
             "catalog.item"
           ],
           "confidence": "interpreted"
         },
         "saleForm": {
-          "value": "Loose",
-          "basis": "sale-helper",
+          "value": "Package",
+          "basis": "curated-knowledge",
           "sourceFields": [
             "catalog.item",
             "catalog.soldBy"
@@ -22986,18 +23067,46 @@
         "packageSignals": [
           "Pint",
           "12oz"
-        ]
+        ],
+        "interpretation": {
+          "provenance": "data/batch-06-recovery-decisions.json",
+          "reviewBasis": "The exact workbook label explicitly names this package or fixed quantity. Each refers to one catalog selling unit; the photograph does not establish its net weight, count, branding, or checkout code."
+        }
       },
       "mediaPlan": {
-        "status": "source-required",
-        "query": "Red Pint / 12oz berries Small soft berries",
+        "status": "reviewed-source",
+        "query": "Raspberries - Red Pint / 12oz Soft clustered drupelet berries with hollow centers",
         "target": {
-          "identity": "Red Pint / 12oz berries",
-          "visibleForm": "Small soft berries",
+          "identity": "Raspberries - Red Pint / 12oz",
+          "visibleForm": "Soft clustered drupelet berries with hollow centers",
           "color": "Red",
-          "retailForm": "Loose"
+          "retailForm": "Package"
         },
-        "source": null,
+        "source": {
+          "provenance": "public/media-resolution-batch06.json",
+          "file": "Raspberry - whole (Rubus idaeus).jpg",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Raspberry_-_whole_%28Rubus_idaeus%29.jpg/1920px-Raspberry_-_whole_%28Rubus_idaeus%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "match": "reviewed-override",
+          "recognitionMode": "label-assisted",
+          "labelClaims": [
+            {
+              "value": "Pint",
+              "basis": "workbook-label",
+              "sourceField": "catalog.item",
+              "sourcePages": [
+                5
+              ]
+            },
+            {
+              "value": "12oz",
+              "basis": "workbook-label",
+              "sourceField": "catalog.item",
+              "sourcePages": [
+                5
+              ]
+            }
+          ]
+        },
         "acceptance": [
           "Metadata must identify the exact product or a reviewed synonym.",
           "Visible form and identity-bearing modifiers must match the learner title.",
@@ -23010,22 +23119,11 @@
         "reviewBasis": "The catalog records one checkout code for an interpreted in-scope produce identity."
       },
       "publishability": {
-        "status": "mapped",
-        "blockers": [
-          {
-            "domain": "retail",
-            "code": "retail-package-evidence-required",
-            "detail": "The named package, case, bin, quantity, or processed form needs exact retail evidence."
-          },
-          {
-            "domain": "media",
-            "code": "media-evidence-required",
-            "detail": "No human-reviewed recognition source is attached to this exact row."
-          }
-        ],
+        "status": "ready",
+        "blockers": [],
         "nextAction": {
-          "type": "verify-retail-unit-and-code",
-          "description": "Capture the exact package, case, bin, or quantity and verify that its code belongs to that retail unit."
+          "type": "none",
+          "description": "All current identity, code, retail, and media gates are satisfied."
         }
       }
     },
@@ -23314,35 +23412,35 @@
         "status": "interpreted",
         "title": {
           "value": "Sher-Li-Hon",
-          "basis": "taxonomy-helper",
+          "basis": "curated-knowledge",
           "sourceFields": [
             "catalog.item"
           ],
-          "confidence": "derived"
+          "confidence": "curated-interpretation"
         },
         "family": {
           "value": "Leafy Greens",
-          "basis": "taxonomy-helper",
+          "basis": "curated-knowledge",
           "sourceFields": [
             "catalog.item"
           ],
-          "confidence": "derived"
+          "confidence": "curated-interpretation"
         },
         "form": {
-          "value": "Broad leafy stems",
-          "basis": "taxonomy-helper",
+          "value": "Broad serrated leaves and green stems",
+          "basis": "curated-knowledge",
           "sourceFields": [
             "catalog.item"
           ],
-          "confidence": "derived"
+          "confidence": "curated-interpretation"
         },
         "color": {
           "value": "Green",
-          "basis": "taxonomy-helper",
+          "basis": "curated-knowledge",
           "sourceFields": [
             "catalog.item"
           ],
-          "confidence": "derived"
+          "confidence": "curated-interpretation"
         },
         "curationNote": null,
         "evidenceGaps": []
@@ -23391,15 +23489,21 @@
         "packageSignals": []
       },
       "mediaPlan": {
-        "status": "source-required",
-        "query": "Sher-Li-Hon Broad leafy stems",
+        "status": "reviewed-source",
+        "query": "Sher-Li-Hon Broad serrated leaves and green stems",
         "target": {
           "identity": "Sher-Li-Hon",
-          "visibleForm": "Broad leafy stems",
+          "visibleForm": "Broad serrated leaves and green stems",
           "color": "Green",
           "retailForm": "Loose"
         },
-        "source": null,
+        "source": {
+          "provenance": "public/media-resolution-batch06.json",
+          "file": "Snow mustard Brassica juncea.jpg",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/Snow_mustard_Brassica_juncea.jpg/1920px-Snow_mustard_Brassica_juncea.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "match": "reviewed-override",
+          "recognitionMode": "product-and-loose-form"
+        },
         "acceptance": [
           "Metadata must identify the exact product or a reviewed synonym.",
           "Visible form and identity-bearing modifiers must match the learner title.",
@@ -23412,17 +23516,11 @@
         "reviewBasis": "The catalog records one checkout code for an interpreted in-scope produce identity."
       },
       "publishability": {
-        "status": "mapped",
-        "blockers": [
-          {
-            "domain": "media",
-            "code": "media-evidence-required",
-            "detail": "No human-reviewed recognition source is attached to this exact row."
-          }
-        ],
+        "status": "ready",
+        "blockers": [],
         "nextAction": {
-          "type": "source-and-review-recognition-media",
-          "description": "Find a rights-compatible image whose metadata and visible retail form match this exact identity, then review it before admission."
+          "type": "none",
+          "description": "All current identity, code, retail, and media gates are satisfied."
         }
       }
     },
@@ -23605,36 +23703,36 @@
       "identityEvidence": {
         "status": "interpreted",
         "title": {
-          "value": "Strawberries",
-          "basis": "taxonomy-helper",
+          "value": "Strawberries - 1lb",
+          "basis": "curated-knowledge",
           "sourceFields": [
             "catalog.item"
           ],
-          "confidence": "derived"
+          "confidence": "curated-interpretation"
         },
         "family": {
           "value": "Berries",
-          "basis": "taxonomy-helper",
+          "basis": "curated-knowledge",
           "sourceFields": [
             "catalog.item"
           ],
-          "confidence": "derived"
+          "confidence": "curated-interpretation"
         },
         "form": {
-          "value": "Small soft berries",
-          "basis": "taxonomy-helper",
+          "value": "Red seeded berries with leafy caps",
+          "basis": "curated-knowledge",
           "sourceFields": [
             "catalog.item"
           ],
-          "confidence": "derived"
+          "confidence": "curated-interpretation"
         },
         "color": {
-          "value": "Mixed",
-          "basis": "taxonomy-helper",
+          "value": "Red",
+          "basis": "curated-knowledge",
           "sourceFields": [
             "catalog.item"
           ],
-          "confidence": "derived"
+          "confidence": "curated-interpretation"
         },
         "curationNote": null,
         "evidenceGaps": []
@@ -23664,16 +23762,16 @@
         "status": "package-evidence-required",
         "catalogSoldBy": null,
         "soldBy": {
-          "value": "Weight",
-          "basis": "sale-helper",
+          "value": "Each",
+          "basis": "curated-knowledge",
           "sourceFields": [
             "catalog.item"
           ],
           "confidence": "interpreted"
         },
         "saleForm": {
-          "value": "Loose",
-          "basis": "sale-helper",
+          "value": "Package",
+          "basis": "curated-knowledge",
           "sourceFields": [
             "catalog.item",
             "catalog.soldBy"
@@ -23682,18 +23780,38 @@
         },
         "packageSignals": [
           "1lb"
-        ]
+        ],
+        "interpretation": {
+          "provenance": "data/batch-06-recovery-decisions.json",
+          "reviewBasis": "The exact workbook label explicitly names this package or fixed quantity. Each refers to one catalog selling unit; the photograph does not establish its net weight, count, branding, or checkout code."
+        }
       },
       "mediaPlan": {
-        "status": "source-required",
-        "query": "Strawberries Small soft berries",
+        "status": "reviewed-source",
+        "query": "Strawberries - 1lb Red seeded berries with leafy caps",
         "target": {
-          "identity": "Strawberries",
-          "visibleForm": "Small soft berries",
-          "color": "Mixed",
-          "retailForm": "Loose"
+          "identity": "Strawberries - 1lb",
+          "visibleForm": "Red seeded berries with leafy caps",
+          "color": "Red",
+          "retailForm": "Package"
         },
-        "source": null,
+        "source": {
+          "provenance": "public/media-resolution-batch06.json",
+          "file": "Garden strawberry (Fragaria × ananassa) single2.jpg",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/Garden_strawberry_%28Fragaria_%C3%97_ananassa%29_single2.jpg/1920px-Garden_strawberry_%28Fragaria_%C3%97_ananassa%29_single2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "match": "reviewed-override",
+          "recognitionMode": "label-assisted",
+          "labelClaims": [
+            {
+              "value": "1lb",
+              "basis": "workbook-label",
+              "sourceField": "catalog.item",
+              "sourcePages": [
+                5
+              ]
+            }
+          ]
+        },
         "acceptance": [
           "Metadata must identify the exact product or a reviewed synonym.",
           "Visible form and identity-bearing modifiers must match the learner title.",
@@ -23706,22 +23824,11 @@
         "reviewBasis": "The catalog records one checkout code for an interpreted in-scope produce identity."
       },
       "publishability": {
-        "status": "mapped",
-        "blockers": [
-          {
-            "domain": "retail",
-            "code": "retail-package-evidence-required",
-            "detail": "The named package, case, bin, quantity, or processed form needs exact retail evidence."
-          },
-          {
-            "domain": "media",
-            "code": "media-evidence-required",
-            "detail": "No human-reviewed recognition source is attached to this exact row."
-          }
-        ],
+        "status": "ready",
+        "blockers": [],
         "nextAction": {
-          "type": "verify-retail-unit-and-code",
-          "description": "Capture the exact package, case, bin, or quantity and verify that its code belongs to that retail unit."
+          "type": "none",
+          "description": "All current identity, code, retail, and media gates are satisfied."
         }
       }
     },
@@ -23756,36 +23863,36 @@
       "identityEvidence": {
         "status": "interpreted",
         "title": {
-          "value": "Strawberries",
-          "basis": "taxonomy-helper",
+          "value": "Strawberries - 2lb",
+          "basis": "curated-knowledge",
           "sourceFields": [
             "catalog.item"
           ],
-          "confidence": "derived"
+          "confidence": "curated-interpretation"
         },
         "family": {
           "value": "Berries",
-          "basis": "taxonomy-helper",
+          "basis": "curated-knowledge",
           "sourceFields": [
             "catalog.item"
           ],
-          "confidence": "derived"
+          "confidence": "curated-interpretation"
         },
         "form": {
-          "value": "Small soft berries",
-          "basis": "taxonomy-helper",
+          "value": "Red seeded berries with leafy caps",
+          "basis": "curated-knowledge",
           "sourceFields": [
             "catalog.item"
           ],
-          "confidence": "derived"
+          "confidence": "curated-interpretation"
         },
         "color": {
-          "value": "Mixed",
-          "basis": "taxonomy-helper",
+          "value": "Red",
+          "basis": "curated-knowledge",
           "sourceFields": [
             "catalog.item"
           ],
-          "confidence": "derived"
+          "confidence": "curated-interpretation"
         },
         "curationNote": null,
         "evidenceGaps": []
@@ -23815,16 +23922,16 @@
         "status": "package-evidence-required",
         "catalogSoldBy": null,
         "soldBy": {
-          "value": "Weight",
-          "basis": "sale-helper",
+          "value": "Each",
+          "basis": "curated-knowledge",
           "sourceFields": [
             "catalog.item"
           ],
           "confidence": "interpreted"
         },
         "saleForm": {
-          "value": "Loose",
-          "basis": "sale-helper",
+          "value": "Package",
+          "basis": "curated-knowledge",
           "sourceFields": [
             "catalog.item",
             "catalog.soldBy"
@@ -23833,18 +23940,38 @@
         },
         "packageSignals": [
           "2lb"
-        ]
+        ],
+        "interpretation": {
+          "provenance": "data/batch-06-recovery-decisions.json",
+          "reviewBasis": "The exact workbook label explicitly names this package or fixed quantity. Each refers to one catalog selling unit; the photograph does not establish its net weight, count, branding, or checkout code."
+        }
       },
       "mediaPlan": {
-        "status": "source-required",
-        "query": "Strawberries Small soft berries",
+        "status": "reviewed-source",
+        "query": "Strawberries - 2lb Red seeded berries with leafy caps",
         "target": {
-          "identity": "Strawberries",
-          "visibleForm": "Small soft berries",
-          "color": "Mixed",
-          "retailForm": "Loose"
+          "identity": "Strawberries - 2lb",
+          "visibleForm": "Red seeded berries with leafy caps",
+          "color": "Red",
+          "retailForm": "Package"
         },
-        "source": null,
+        "source": {
+          "provenance": "public/media-resolution-batch06.json",
+          "file": "Garden strawberry (Fragaria × ananassa) single2.jpg",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/Garden_strawberry_%28Fragaria_%C3%97_ananassa%29_single2.jpg/1920px-Garden_strawberry_%28Fragaria_%C3%97_ananassa%29_single2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "match": "reviewed-override",
+          "recognitionMode": "label-assisted",
+          "labelClaims": [
+            {
+              "value": "2lb",
+              "basis": "workbook-label",
+              "sourceField": "catalog.item",
+              "sourcePages": [
+                5
+              ]
+            }
+          ]
+        },
         "acceptance": [
           "Metadata must identify the exact product or a reviewed synonym.",
           "Visible form and identity-bearing modifiers must match the learner title.",
@@ -23857,22 +23984,11 @@
         "reviewBasis": "The catalog records one checkout code for an interpreted in-scope produce identity."
       },
       "publishability": {
-        "status": "mapped",
-        "blockers": [
-          {
-            "domain": "retail",
-            "code": "retail-package-evidence-required",
-            "detail": "The named package, case, bin, quantity, or processed form needs exact retail evidence."
-          },
-          {
-            "domain": "media",
-            "code": "media-evidence-required",
-            "detail": "No human-reviewed recognition source is attached to this exact row."
-          }
-        ],
+        "status": "ready",
+        "blockers": [],
         "nextAction": {
-          "type": "verify-retail-unit-and-code",
-          "description": "Capture the exact package, case, bin, or quantity and verify that its code belongs to that retail unit."
+          "type": "none",
+          "description": "All current identity, code, retail, and media gates are satisfied."
         }
       }
     },
@@ -25287,40 +25403,45 @@
         }
       },
       "identityEvidence": {
-        "status": "source-review-required",
+        "status": "interpreted",
         "title": {
-          "value": "Vine Ripe / Field tomato",
-          "basis": "taxonomy-helper",
+          "value": "Tomatoes - Vine Ripe / Field (Bulk)",
+          "basis": "curated-knowledge",
           "sourceFields": [
             "catalog.item"
           ],
-          "confidence": "derived"
+          "confidence": "curated-interpretation"
         },
         "family": {
           "value": "Tomatoes",
-          "basis": "taxonomy-helper",
+          "basis": "curated-knowledge",
           "sourceFields": [
             "catalog.item"
           ],
-          "confidence": "derived"
+          "confidence": "curated-interpretation"
         },
         "form": {
-          "value": "Smooth round or oblong fruit",
-          "basis": "taxonomy-helper",
+          "value": "Round ripe tomatoes attached along a vine",
+          "basis": "curated-knowledge",
           "sourceFields": [
             "catalog.item"
           ],
-          "confidence": "derived"
+          "confidence": "curated-interpretation"
         },
         "color": {
           "value": "Red",
-          "basis": "taxonomy-helper",
+          "basis": "curated-knowledge",
           "sourceFields": [
             "catalog.item"
           ],
-          "confidence": "derived"
+          "confidence": "curated-interpretation"
         },
         "curationNote": null,
+        "adjudication": {
+          "provenance": "data/batch-06-recovery-decisions.json",
+          "scope": "legacy-batch05-exclusion",
+          "reviewBasis": "Approve an explicit override of the legacy Batch 05 exclusion. The workbook confirms the exact unflagged Vine Ripe / Field (Bulk) listing at 3061 on pages 3 and 4. The reused photograph directly supports ripe red tomatoes on the vine; Field and Bulk are non-visible workbook qualifiers, and the source lesson's 3151 is not treated as equivalent to target code 3061."
+        },
         "evidenceGaps": []
       },
       "codeEvidence": {
@@ -25367,21 +25488,20 @@
         "packageSignals": []
       },
       "mediaPlan": {
-        "status": "reviewed-reuse-candidate",
-        "query": "Vine Ripe / Field tomato Smooth round or oblong fruit",
+        "status": "reviewed-source",
+        "query": "Tomatoes - Vine Ripe / Field (Bulk) Round ripe tomatoes attached along a vine",
         "target": {
-          "identity": "Vine Ripe / Field tomato",
-          "visibleForm": "Smooth round or oblong fruit",
+          "identity": "Tomatoes - Vine Ripe / Field (Bulk)",
+          "visibleForm": "Round ripe tomatoes attached along a vine",
           "color": "Red",
           "retailForm": "Loose"
         },
         "source": {
-          "provenance": "data/batch-06-media-reuse.json",
+          "provenance": "public/media-resolution-batch06.json",
           "file": "Strauchtomaten.jpg",
           "url": "https://upload.wikimedia.org/wikipedia/commons/1/11/Strauchtomaten.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-          "match": "reviewed-reuse-candidate",
+          "match": "reviewed-override",
           "recognitionMode": "label-assisted",
-          "reviewReason": "The reviewed vine-tomato image truthfully anchors the visible product; Field and Bulk remain exact workbook qualifiers.",
           "labelClaims": [
             {
               "value": "Field",
@@ -25411,22 +25531,11 @@
       },
       "mappingDecision": null,
       "publishability": {
-        "status": "blocked",
-        "blockers": [
-          {
-            "domain": "identity",
-            "code": "identity-source-review",
-            "detail": "Handwritten, obscured, or separately excluded source wording needs adjudication."
-          },
-          {
-            "domain": "identity",
-            "code": "identity-adjudication-required",
-            "detail": "This catalog identity is on the explicit source-review list."
-          }
-        ],
+        "status": "ready",
+        "blockers": [],
         "nextAction": {
-          "type": "adjudicate-source-identity",
-          "description": "Resolve the exact source wording and product identity before changing code or media state."
+          "type": "none",
+          "description": "All current identity, code, retail, and media gates are satisfied."
         }
       }
     },

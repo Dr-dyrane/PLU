@@ -1,0 +1,712 @@
+{
+  "schemaVersion": 1,
+  "batch": "06",
+  "reviewedOn": "2026-09-04",
+  "method": "Correct product-head queries, verify Commons author/license/description via imageinfo, download and decode candidates, inspect pixels, retain package claims from workbook. This lane never changes catalog codes.",
+  "scope": {
+    "targets": 10,
+    "approved": 9,
+    "unresolved": 1
+  },
+  "items": [
+    {
+      "catalogId": "blackberries-pint-12oz",
+      "code": "522",
+      "decision": "approved",
+      "commonsFile": "Blackberry (Rubus fruticosus).jpg",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/Blackberry_%28Rubus_fruticosus%29.jpg/960px-Blackberry_%28Rubus_fruticosus%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Blackberry_(Rubus_fruticosus).jpg",
+      "author": "Ivar Leidus",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "recognitionMode": "label-assisted",
+      "reviewBasis": "The corrected query restores Blackberries, which the earlier taxonomy query dropped. Commons metadata names Rubus fruticosus and the inspected photographs clearly show blackberries. Pint / 12oz remains a workbook quantity claim.",
+      "visibleIdentity": {
+        "label": "Blackberries",
+        "form": "Small clustered drupelet berries",
+        "color": "Black",
+        "cue": "Blackberries have glossy black clusters of rounded drupelets."
+      },
+      "labelClaims": [
+        {
+          "value": "Pint",
+          "basis": "workbook-label",
+          "sourceField": "catalog.item",
+          "sourcePages": [
+            5
+          ]
+        },
+        {
+          "value": "12oz",
+          "basis": "workbook-label",
+          "sourceField": "catalog.item",
+          "sourcePages": [
+            5
+          ]
+        }
+      ],
+      "queries": [
+        "blackberries fruit",
+        "intitle:Blackberries"
+      ],
+      "reviewedPhotos": [
+        {
+          "commonsFile": "Blackberry (Rubus fruticosus).jpg",
+          "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/Blackberry_%28Rubus_fruticosus%29.jpg/960px-Blackberry_%28Rubus_fruticosus%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Blackberry_(Rubus_fruticosus).jpg",
+          "author": "Ivar Leidus",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "role": "hero",
+          "reviewBasis": "Inspected 960px decode: one whole glossy black blackberry with rounded aggregate drupelets, against a neutral background."
+        },
+        {
+          "commonsFile": "Blackberries (Rubus fruticosus).jpg",
+          "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/Blackberries_%28Rubus_fruticosus%29.jpg/960px-Blackberries_%28Rubus_fruticosus%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Blackberries_(Rubus_fruticosus).jpg",
+          "author": "Ivar Leidus",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "role": "alternate",
+          "reviewBasis": "Inspected 960px decode: several whole blackberries piled together; distinct shot from the single-fruit hero."
+        },
+        {
+          "commonsFile": "Blackberries as food.jpg",
+          "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/Blackberries_as_food.jpg/960px-Blackberries_as_food.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Blackberries_as_food.jpg",
+          "author": "Novoklimov",
+          "license": "CC0",
+          "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+          "role": "context",
+          "reviewBasis": "Inspected 960px decode: whole dark blackberries visible in a transparent glass jar held outdoors; no other produce mixed in. Jar volume is not a catalog-size claim."
+        }
+      ],
+      "retailInterpretation": {
+        "soldBy": "Each",
+        "saleForm": "Package",
+        "reviewBasis": "The exact workbook label explicitly names this package or fixed quantity. Each refers to one catalog selling unit; the photograph does not establish its net weight, count, branding, or checkout code."
+      },
+      "roleReuseBasis": null,
+      "rejections": []
+    },
+    {
+      "catalogId": "celery-hearts",
+      "code": "4575",
+      "decision": "unresolved",
+      "reviewBasis": "Exact Commons searches did not yield a usable modern photograph of clipped celery hearts. The closest downloadable candidate is a 96px-wide whole leafy celery photograph; it neither meets image dimensions nor shows the required clipped form. Duda and Dole identify exact celery-heart products but reserve photo rights.",
+      "queries": [
+        "celery hearts",
+        "\"celery heart\"",
+        "celery trimmed",
+        "\"celery hearts\" filetype:bitmap",
+        "\"celery\" \"inner\"",
+        "\"celery\" \"packaged\"",
+        "\"celery\" \"bleached\"",
+        "\"celery hearts\" \"creative commons\"",
+        "\"celery hearts\" site.flickr.com"
+      ],
+      "identityEvidence": {
+        "label": "Celery hearts",
+        "form": "Clipped celery bunches",
+        "basis": "USDA Shipping Point and Market Inspection Instructions describes industry celery hearts as celery clipped to 7 to 10 inches, commonly film-bagged.",
+        "sourceUrl": "https://www.ams.usda.gov/sites/default/files/media/Celery_Inspection_Instructions%5B1%5D.pdf"
+      },
+      "rejections": [
+        {
+          "commonsFile": "Celery pose.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Celery_pose.jpg",
+          "reason": "Decoded and inspected: only 96x400 pixels, leafy whole celery, no verified hearts form; missing machine-readable author/source."
+        },
+        {
+          "sourceUrl": "https://www.dudafresh.com/products/organic-celery-hearts",
+          "reason": "Exact manufacturer identity reference but footer reserves all rights; no reusable image license found."
+        },
+        {
+          "sourceUrl": "https://dolefreshvegetables.com/produce/premium-celery-hearts",
+          "reason": "Exact manufacturer identity reference but footer reserves all rights; no reusable image license found."
+        }
+      ],
+      "nextAction": "Obtain one permission-cleared manufacturer photograph or original photograph of clipped celery hearts with source/rights record; keep the exact workbook code 4575."
+    },
+    {
+      "catalogId": "cucumbers-dill-case",
+      "code": "38595",
+      "decision": "approved",
+      "commonsFile": "PicklingCucumbers.jpg",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ac/PicklingCucumbers.jpg/960px-PicklingCucumbers.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:PicklingCucumbers.jpg",
+      "author": "The original Uploader was Gruepig at English Wikipedia",
+      "license": "Public domain",
+      "recognitionMode": "label-assisted",
+      "reviewBasis": "Inspected raw fresh pickling cucumbers in a basket; the filename, description, and pixels agree. Dill and Case remain exact workbook listing claims. The image does not claim dill seasoning, brining, a cultivar, case count, or case code equivalence.",
+      "visibleIdentity": {
+        "label": "Pickling cucumber",
+        "form": "Short bumpy whole cucumbers",
+        "color": "Green",
+        "cue": "Short green cucumbers with bumpy skin and blunt ends provide the recognition anchor."
+      },
+      "labelClaims": [
+        {
+          "value": "Dill",
+          "basis": "workbook-label",
+          "sourceField": "catalog.item",
+          "sourcePages": [
+            4
+          ]
+        },
+        {
+          "value": "Case",
+          "basis": "workbook-label",
+          "sourceField": "catalog.item",
+          "sourcePages": [
+            4
+          ]
+        }
+      ],
+      "queries": [
+        "pickling cucumbers",
+        "\"dill cucumbers\" fresh produce case"
+      ],
+      "reviewedPhotos": [
+        {
+          "commonsFile": "PicklingCucumbers.jpg",
+          "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ac/PicklingCucumbers.jpg/960px-PicklingCucumbers.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:PicklingCucumbers.jpg",
+          "author": "The original Uploader was Gruepig at English Wikipedia",
+          "license": "Public domain",
+          "role": "hero",
+          "reviewBasis": "Inspected 960px decode: basket filled with short whole green bumpy cucumbers, visibly raw and unprocessed."
+        },
+        {
+          "commonsFile": "Pickling cucumbers for sale in Kraków.jpg",
+          "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/Pickling_cucumbers_for_sale_in_Krak%C3%B3w.jpg/960px-Pickling_cucumbers_for_sale_in_Krak%C3%B3w.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pickling_cucumbers_for_sale_in_Krak%C3%B3w.jpg",
+          "author": "victorgrigas",
+          "license": "CC BY-SA 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+          "role": "context",
+          "reviewBasis": "Inspected 960px decode: abundant fresh short bumpy cucumbers at a market; longer cucumbers left and peppers above are contextual neighbors, with the short cucumbers dominating."
+        }
+      ],
+      "retailInterpretation": {
+        "soldBy": "Each",
+        "saleForm": "Case",
+        "reviewBasis": "The exact workbook label explicitly names this case or fixed quantity. Each refers to one catalog selling unit; the photograph does not establish its net weight, count, branding, or checkout code."
+      },
+      "roleReuseBasis": "Fewer than three distinct suitable photographs were verified. Reuse of the selected exact image across required roles must be explicitly identified; crops must not be described as independent photographs.",
+      "rejections": [
+        {
+          "commonsFile": "Tanunda Show 2008 dill cucumbers.jpg",
+          "reason": "Decoded and inspected: pickle-judging table with olive-green chopped and whole pickles on plates, not fresh raw cucumber recognition. This file is also used by the existing Dill cucumber lesson and merits a scoped correction."
+        },
+        {
+          "reason": "Prior discovery review rejected prepared cucumber cups, pickles and dip. Those rejections remain valid; this pass uses a new raw source."
+        }
+      ]
+    },
+    {
+      "catalogId": "garlic-peeled-5lb",
+      "code": "63608",
+      "decision": "approved",
+      "commonsFile": "Peeled garlic cloves.jpg",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Peeled_garlic_cloves.jpg/960px-Peeled_garlic_cloves.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Peeled_garlic_cloves.jpg",
+      "author": "Fumikas Sagisavas",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "recognitionMode": "label-assisted",
+      "reviewBasis": "Both CC0 photographs were decoded and inspected. They show separated peeled cloves with smooth exposed cream-white surfaces and no papery bulb wrapper. The old overripe candidate is replaced; 5lb remains a workbook package claim.",
+      "visibleIdentity": {
+        "label": "Peeled garlic",
+        "form": "Separated smooth cloves without papery skin",
+        "color": "Cream-white",
+        "cue": "Smooth cream-white teardrop cloves show peeled garlic with the papery skin removed."
+      },
+      "labelClaims": [
+        {
+          "value": "5lb",
+          "basis": "workbook-label",
+          "sourceField": "catalog.item",
+          "sourcePages": [
+            4
+          ]
+        }
+      ],
+      "queries": [
+        "peeled garlic cloves"
+      ],
+      "reviewedPhotos": [
+        {
+          "commonsFile": "Peeled garlic cloves.jpg",
+          "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Peeled_garlic_cloves.jpg/960px-Peeled_garlic_cloves.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Peeled_garlic_cloves.jpg",
+          "author": "Fumikas Sagisavas",
+          "license": "CC0",
+          "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+          "role": "hero",
+          "reviewBasis": "Inspected 960px decode: fresh-looking ivory peeled cloves, fully separated, smooth surfaces and natural root scars; no green sprouts."
+        },
+        {
+          "commonsFile": "Peeled garlic cloves🧄.jpg",
+          "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8c/Peeled_garlic_cloves%F0%9F%A7%84.jpg/960px-Peeled_garlic_cloves%F0%9F%A7%84.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Peeled_garlic_cloves%F0%9F%A7%84.jpg",
+          "author": "Fumikas Sagisavas",
+          "license": "CC0",
+          "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+          "role": "alternate",
+          "reviewBasis": "Inspected 960px decode: larger separate pile of peeled garlic cloves at a different scale and arrangement; some natural surface blemishes but no sprouting."
+        }
+      ],
+      "retailInterpretation": {
+        "soldBy": "Each",
+        "saleForm": "Package",
+        "reviewBasis": "The exact workbook label explicitly names this package or fixed quantity. Each refers to one catalog selling unit; the photograph does not establish its net weight, count, branding, or checkout code."
+      },
+      "roleReuseBasis": "Fewer than three distinct suitable photographs were verified. Reuse of the selected exact image across required roles must be explicitly identified; crops must not be described as independent photographs.",
+      "rejections": [
+        {
+          "commonsFile": "Overripe peeled garlic cloves.JPG",
+          "reason": "Prior reviewed rejection remains valid: overripe/sprouting cloves."
+        },
+        {
+          "commonsFile": "Waitrose ready peeled garlic cloves in a plastic pot.jpg",
+          "reason": "Decoded and inspected: brand label dominates and most cloves are obscured; unfamiliar competing retail package could imply the wrong 5lb unit."
+        }
+      ]
+    },
+    {
+      "catalogId": "olives-green-case",
+      "code": "54050",
+      "decision": "approved",
+      "commonsFile": "A crate of olives fresh from the tree (15299192895).jpg",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/A_crate_of_olives_fresh_from_the_tree_%2815299192895%29.jpg/960px-A_crate_of_olives_fresh_from_the_tree_%2815299192895%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:A_crate_of_olives_fresh_from_the_tree_(15299192895).jpg",
+      "author": "Maarten Heerlien from Voorschoten, The Netherlands",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "recognitionMode": "label-assisted",
+      "reviewBasis": "Inspected photograph shows a harvest crate filled overwhelmingly with smooth oval green olives, with a few naturally darker fruits. Metadata specifies olives fresh from the tree and category Green olives. Photo establishes identity and color; the workbook alone supplies the case listing and code.",
+      "visibleIdentity": {
+        "label": "Green olives",
+        "form": "Small oval whole stone fruits",
+        "color": "Green",
+        "cue": "Green olives appear as small oval fruits with smooth green skins."
+      },
+      "labelClaims": [
+        {
+          "value": "Case",
+          "basis": "workbook-label",
+          "sourceField": "catalog.item",
+          "sourcePages": [
+            4
+          ]
+        }
+      ],
+      "queries": [
+        "green olives fresh",
+        "\"green olives\"",
+        "\"fresh green olives\""
+      ],
+      "reviewedPhotos": [
+        {
+          "commonsFile": "A crate of olives fresh from the tree (15299192895).jpg",
+          "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/A_crate_of_olives_fresh_from_the_tree_%2815299192895%29.jpg/960px-A_crate_of_olives_fresh_from_the_tree_%2815299192895%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:A_crate_of_olives_fresh_from_the_tree_(15299192895).jpg",
+          "author": "Maarten Heerlien from Voorschoten, The Netherlands",
+          "license": "CC BY 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+          "role": "hero",
+          "reviewBasis": "Inspected 960px decode: dense crate of whole green olives with natural light and texture, a few purple ripening fruits. No pitting, stuffing, brining, or net case quantity is claimed."
+        }
+      ],
+      "retailInterpretation": {
+        "soldBy": "Each",
+        "saleForm": "Case",
+        "reviewBasis": "The exact workbook label explicitly names this case or fixed quantity. Each refers to one catalog selling unit; the photograph does not establish its net weight, count, branding, or checkout code."
+      },
+      "roleReuseBasis": "Fewer than three distinct suitable photographs were verified. Reuse of the selected exact image across required roles must be explicitly identified; crops must not be described as independent photographs.",
+      "rejections": []
+    },
+    {
+      "catalogId": "pistachios-bulk-nuts",
+      "code": "1400",
+      "decision": "approved",
+      "commonsFile": "Pistachio nuts from Iran.jpg",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/Pistachio_nuts_from_Iran.jpg/960px-Pistachio_nuts_from_Iran.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pistachio_nuts_from_Iran.jpg",
+      "author": "Amin",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "recognitionMode": "label-assisted",
+      "reviewBasis": "Inspected photograph shows in-shell pistachios in a box, with recognizable split beige shells and kernels. The source identifies Pistachio nuts from Iran; origin is not added to the lesson. Bulk remains a workbook sale-label claim.",
+      "visibleIdentity": {
+        "label": "Pistachios",
+        "form": "Small nuts in split beige shells",
+        "color": "Beige with purple-brown kernels",
+        "cue": "Split beige shells reveal purple-brown pistachio kernels."
+      },
+      "labelClaims": [
+        {
+          "value": "Bulk",
+          "basis": "workbook-label",
+          "sourceField": "catalog.item",
+          "sourcePages": [
+            5
+          ]
+        }
+      ],
+      "queries": [
+        "pistachios nuts"
+      ],
+      "reviewedPhotos": [
+        {
+          "commonsFile": "Pistachio nuts from Iran.jpg",
+          "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/Pistachio_nuts_from_Iran.jpg/960px-Pistachio_nuts_from_Iran.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pistachio_nuts_from_Iran.jpg",
+          "author": "Amin",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "role": "hero",
+          "reviewBasis": "Inspected 960px decode: intact pistachio nuts with split beige shells, textured outer surfaces and exposed purple-brown kernels."
+        }
+      ],
+      "roleReuseBasis": "Fewer than three distinct suitable photographs were verified. Reuse of the selected exact image across required roles must be explicitly identified; crops must not be described as independent photographs.",
+      "rejections": [
+        {
+          "commonsFile": "Pistachio Nuts (Unsplash).jpg",
+          "reason": "Decoded and inspected: shelled kernels rather than required split-shell form, subject occupies a small lower area; Commons also flags source review needed."
+        }
+      ]
+    },
+    {
+      "catalogId": "raspberries-red-half-pint-6oz",
+      "code": "7298",
+      "decision": "approved",
+      "commonsFile": "Raspberry - whole (Rubus idaeus).jpg",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Raspberry_-_whole_%28Rubus_idaeus%29.jpg/960px-Raspberry_-_whole_%28Rubus_idaeus%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Raspberry_-_whole_(Rubus_idaeus).jpg",
+      "author": "Ivar Leidus",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "recognitionMode": "label-assisted",
+      "reviewBasis": "The corrected query restores Raspberries, dropped by the earlier taxonomy query. Metadata and three inspected photographs show red Rubus idaeus fruit. Half Pint / 6oz stays a workbook quantity claim.",
+      "visibleIdentity": {
+        "label": "Red raspberries",
+        "form": "Soft clustered drupelet berries with hollow centers",
+        "color": "Red",
+        "cue": "Red raspberries form soft clusters of small drupelets around a hollow center."
+      },
+      "labelClaims": [
+        {
+          "value": "Half Pint",
+          "basis": "workbook-label",
+          "sourceField": "catalog.item",
+          "sourcePages": [
+            5
+          ]
+        },
+        {
+          "value": "6oz",
+          "basis": "workbook-label",
+          "sourceField": "catalog.item",
+          "sourcePages": [
+            5
+          ]
+        }
+      ],
+      "queries": [
+        "red raspberries"
+      ],
+      "reviewedPhotos": [
+        {
+          "commonsFile": "Raspberry - whole (Rubus idaeus).jpg",
+          "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Raspberry_-_whole_%28Rubus_idaeus%29.jpg/960px-Raspberry_-_whole_%28Rubus_idaeus%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Raspberry_-_whole_(Rubus_idaeus).jpg",
+          "author": "Ivar Leidus",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "role": "hero",
+          "reviewBasis": "Inspected 960px decode: single whole red raspberry with aggregate drupelets; neutral surface."
+        },
+        {
+          "commonsFile": "Raspberries (Rubus idaeus).jpg",
+          "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/Raspberries_%28Rubus_idaeus%29.jpg/960px-Raspberries_%28Rubus_idaeus%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Raspberries_(Rubus_idaeus).jpg",
+          "author": "Ivar Leidus",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "role": "alternate",
+          "reviewBasis": "Inspected 960px decode: pile of red raspberries, including visible hollow centers; no mixed berries."
+        },
+        {
+          "commonsFile": "Raspberries (Rubus Idaeus).jpg",
+          "src": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Raspberries_%28Rubus_Idaeus%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Raspberries_(Rubus_Idaeus).jpg",
+          "author": "Juhanson",
+          "license": "CC BY-SA 3.0",
+          "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+          "role": "context",
+          "reviewBasis": "Inspected 741x600 decode: ripe red raspberries on their plant, recognizable aggregate fruit and green leaves. Plant context is not a claim about the checkout package."
+        }
+      ],
+      "retailInterpretation": {
+        "soldBy": "Each",
+        "saleForm": "Package",
+        "reviewBasis": "The exact workbook label explicitly names this package or fixed quantity. Each refers to one catalog selling unit; the photograph does not establish its net weight, count, branding, or checkout code."
+      },
+      "roleReuseBasis": null,
+      "rejections": [],
+      "sharedMediaBasis": "Both workbook rows name red raspberries. The inspected files support the same visible berry identity; each lesson must show its own exact package label and code. No photograph establishes package weight."
+    },
+    {
+      "catalogId": "raspberries-red-pint-12oz",
+      "code": "4054",
+      "decision": "approved",
+      "commonsFile": "Raspberry - whole (Rubus idaeus).jpg",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Raspberry_-_whole_%28Rubus_idaeus%29.jpg/960px-Raspberry_-_whole_%28Rubus_idaeus%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Raspberry_-_whole_(Rubus_idaeus).jpg",
+      "author": "Ivar Leidus",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "recognitionMode": "label-assisted",
+      "reviewBasis": "The corrected query restores Raspberries, dropped by the earlier taxonomy query. The same reviewed red-raspberry identity images may be shared with the half-pint listing; Pint / 12oz and 4054 belong only to this workbook row.",
+      "visibleIdentity": {
+        "label": "Red raspberries",
+        "form": "Soft clustered drupelet berries with hollow centers",
+        "color": "Red",
+        "cue": "Red raspberries form soft clusters of small drupelets around a hollow center."
+      },
+      "labelClaims": [
+        {
+          "value": "Pint",
+          "basis": "workbook-label",
+          "sourceField": "catalog.item",
+          "sourcePages": [
+            5
+          ]
+        },
+        {
+          "value": "12oz",
+          "basis": "workbook-label",
+          "sourceField": "catalog.item",
+          "sourcePages": [
+            5
+          ]
+        }
+      ],
+      "queries": [
+        "red raspberries"
+      ],
+      "reviewedPhotos": [
+        {
+          "commonsFile": "Raspberry - whole (Rubus idaeus).jpg",
+          "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Raspberry_-_whole_%28Rubus_idaeus%29.jpg/960px-Raspberry_-_whole_%28Rubus_idaeus%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Raspberry_-_whole_(Rubus_idaeus).jpg",
+          "author": "Ivar Leidus",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "role": "hero",
+          "reviewBasis": "Inspected 960px decode: single whole red raspberry with aggregate drupelets; neutral surface."
+        },
+        {
+          "commonsFile": "Raspberries (Rubus idaeus).jpg",
+          "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/Raspberries_%28Rubus_idaeus%29.jpg/960px-Raspberries_%28Rubus_idaeus%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Raspberries_(Rubus_idaeus).jpg",
+          "author": "Ivar Leidus",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "role": "alternate",
+          "reviewBasis": "Inspected 960px decode: pile of red raspberries, including visible hollow centers; no mixed berries."
+        },
+        {
+          "commonsFile": "Raspberries (Rubus Idaeus).jpg",
+          "src": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Raspberries_%28Rubus_Idaeus%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Raspberries_(Rubus_Idaeus).jpg",
+          "author": "Juhanson",
+          "license": "CC BY-SA 3.0",
+          "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+          "role": "context",
+          "reviewBasis": "Inspected 741x600 decode: ripe red raspberries on their plant, recognizable aggregate fruit and green leaves. Plant context is not a claim about the checkout package."
+        }
+      ],
+      "retailInterpretation": {
+        "soldBy": "Each",
+        "saleForm": "Package",
+        "reviewBasis": "The exact workbook label explicitly names this package or fixed quantity. Each refers to one catalog selling unit; the photograph does not establish its net weight, count, branding, or checkout code."
+      },
+      "roleReuseBasis": null,
+      "rejections": [],
+      "sharedMediaBasis": "Both workbook rows name red raspberries. The inspected files support the same visible berry identity; each lesson must show its own exact package label and code. No photograph establishes package weight."
+    },
+    {
+      "catalogId": "strawberries-1lb",
+      "code": "42468",
+      "decision": "approved",
+      "commonsFile": "Garden strawberry (Fragaria × ananassa) single2.jpg",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/Garden_strawberry_%28Fragaria_%C3%97_ananassa%29_single2.jpg/960px-Garden_strawberry_%28Fragaria_%C3%97_ananassa%29_single2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Garden_strawberry_(Fragaria_%C3%97_ananassa)_single2.jpg",
+      "author": "Ivar Leidus",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "recognitionMode": "label-assisted",
+      "reviewBasis": "Three inspected photographs show strawberries as the sole produce target, replacing the mixed-berry discovery set. 1lb remains an explicit workbook package claim and is never inferred from basket size.",
+      "visibleIdentity": {
+        "label": "Strawberries",
+        "form": "Red seeded berries with leafy caps",
+        "color": "Red",
+        "cue": "Strawberries show small surface seeds and green leafy caps on red fruit."
+      },
+      "labelClaims": [
+        {
+          "value": "1lb",
+          "basis": "workbook-label",
+          "sourceField": "catalog.item",
+          "sourcePages": [
+            5
+          ]
+        }
+      ],
+      "queries": [
+        "strawberries fruit",
+        "intitle:Strawberries basket"
+      ],
+      "reviewedPhotos": [
+        {
+          "commonsFile": "Garden strawberry (Fragaria × ananassa) single2.jpg",
+          "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/Garden_strawberry_%28Fragaria_%C3%97_ananassa%29_single2.jpg/960px-Garden_strawberry_%28Fragaria_%C3%97_ananassa%29_single2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Garden_strawberry_(Fragaria_%C3%97_ananassa)_single2.jpg",
+          "author": "Ivar Leidus",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "role": "hero",
+          "reviewBasis": "Inspected 960px decode: whole red garden strawberry with external seeds and green calyx; neutral background."
+        },
+        {
+          "commonsFile": "Strawberries in basket 2018 G1.jpg",
+          "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/Strawberries_in_basket_2018_G1.jpg/960px-Strawberries_in_basket_2018_G1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Strawberries_in_basket_2018_G1.jpg",
+          "author": "George Chernilevsky",
+          "license": "Public domain",
+          "role": "alternate",
+          "reviewBasis": "Inspected 960px decode: basket filled only with whole red strawberries, green caps attached; distinct specimens and view."
+        },
+        {
+          "commonsFile": "Strawberries at a Farmers Market.jpg",
+          "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/Strawberries_at_a_Farmers_Market.jpg/960px-Strawberries_at_a_Farmers_Market.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Strawberries_at_a_Farmers_Market.jpg",
+          "author": "Alabama Extension",
+          "license": "CC0",
+          "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+          "role": "context",
+          "reviewBasis": "Inspected 960px decode: white market baskets filled only with strawberries, preserving market context without assigning any photographed basket the catalog weight."
+        }
+      ],
+      "retailInterpretation": {
+        "soldBy": "Each",
+        "saleForm": "Package",
+        "reviewBasis": "The exact workbook label explicitly names this package or fixed quantity. Each refers to one catalog selling unit; the photograph does not establish its net weight, count, branding, or checkout code."
+      },
+      "roleReuseBasis": null,
+      "rejections": [
+        {
+          "commonsFile": "Berries (2).jpg",
+          "reason": "Prior review rejected a mixed-berry target; replaced by a strawberry-only set."
+        },
+        {
+          "commonsFile": "Berries at Arles Market.jpg",
+          "reason": "Prior review rejected mixed berry types; no longer used for these two strawberry lessons."
+        },
+        {
+          "commonsFile": "Still life with strawberries in a crystal bowl.jpg",
+          "reason": "Decoded and inspected: real strawberries but dim staged light and a bitten fruit make the cleaner inspected strawberry sources preferable."
+        }
+      ],
+      "sharedMediaBasis": "The same strawberry identity is used for both workbook quantities. Shared photos teach fruit recognition; package weight and code are explicit row-specific workbook claims."
+    },
+    {
+      "catalogId": "strawberries-2lb",
+      "code": "36983",
+      "decision": "approved",
+      "commonsFile": "Garden strawberry (Fragaria × ananassa) single2.jpg",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/Garden_strawberry_%28Fragaria_%C3%97_ananassa%29_single2.jpg/960px-Garden_strawberry_%28Fragaria_%C3%97_ananassa%29_single2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Garden_strawberry_(Fragaria_%C3%97_ananassa)_single2.jpg",
+      "author": "Ivar Leidus",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "recognitionMode": "label-assisted",
+      "reviewBasis": "The reviewed strawberry image set is shared with the 1lb listing because the visible produce identity is the same. The 2lb quantity and 36983 code remain exclusive to this workbook row.",
+      "visibleIdentity": {
+        "label": "Strawberries",
+        "form": "Red seeded berries with leafy caps",
+        "color": "Red",
+        "cue": "Strawberries show small surface seeds and green leafy caps on red fruit."
+      },
+      "labelClaims": [
+        {
+          "value": "2lb",
+          "basis": "workbook-label",
+          "sourceField": "catalog.item",
+          "sourcePages": [
+            5
+          ]
+        }
+      ],
+      "queries": [
+        "strawberries fruit",
+        "intitle:Strawberries basket"
+      ],
+      "reviewedPhotos": [
+        {
+          "commonsFile": "Garden strawberry (Fragaria × ananassa) single2.jpg",
+          "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/Garden_strawberry_%28Fragaria_%C3%97_ananassa%29_single2.jpg/960px-Garden_strawberry_%28Fragaria_%C3%97_ananassa%29_single2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Garden_strawberry_(Fragaria_%C3%97_ananassa)_single2.jpg",
+          "author": "Ivar Leidus",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "role": "hero",
+          "reviewBasis": "Inspected 960px decode: whole red garden strawberry with external seeds and green calyx; neutral background."
+        },
+        {
+          "commonsFile": "Strawberries in basket 2018 G1.jpg",
+          "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/Strawberries_in_basket_2018_G1.jpg/960px-Strawberries_in_basket_2018_G1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Strawberries_in_basket_2018_G1.jpg",
+          "author": "George Chernilevsky",
+          "license": "Public domain",
+          "role": "alternate",
+          "reviewBasis": "Inspected 960px decode: basket filled only with whole red strawberries, green caps attached; distinct specimens and view."
+        },
+        {
+          "commonsFile": "Strawberries at a Farmers Market.jpg",
+          "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/Strawberries_at_a_Farmers_Market.jpg/960px-Strawberries_at_a_Farmers_Market.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Strawberries_at_a_Farmers_Market.jpg",
+          "author": "Alabama Extension",
+          "license": "CC0",
+          "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+          "role": "context",
+          "reviewBasis": "Inspected 960px decode: white market baskets filled only with strawberries, preserving market context without assigning any photographed basket the catalog weight."
+        }
+      ],
+      "retailInterpretation": {
+        "soldBy": "Each",
+        "saleForm": "Package",
+        "reviewBasis": "The exact workbook label explicitly names this package or fixed quantity. Each refers to one catalog selling unit; the photograph does not establish its net weight, count, branding, or checkout code."
+      },
+      "roleReuseBasis": null,
+      "rejections": [
+        {
+          "commonsFile": "Berries (2).jpg",
+          "reason": "Prior review rejected a mixed-berry target; replaced by a strawberry-only set."
+        },
+        {
+          "commonsFile": "Berries at Arles Market.jpg",
+          "reason": "Prior review rejected mixed berry types; no longer used for these two strawberry lessons."
+        },
+        {
+          "commonsFile": "Still life with strawberries in a crystal bowl.jpg",
+          "reason": "Decoded and inspected: real strawberries but dim staged light and a bitten fruit make the cleaner inspected strawberry sources preferable."
+        }
+      ],
+      "sharedMediaBasis": "The same strawberry identity is used for both workbook quantities. Shared photos teach fruit recognition; package weight and code are explicit row-specific workbook claims."
+    }
+  ]
+}

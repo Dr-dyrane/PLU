@@ -2,6 +2,7 @@ import assert from "node:assert/strict";
 import { readFile, writeFile } from "node:fs/promises";
 
 import { loadJsonRecords, normalize } from "./batch04/common.mjs";
+import { loadRecovery, recoveredMediaSource } from "./batch06-recovery.mjs";
 import {
   excludedCatalogIds,
   familyRuleFor,
@@ -184,6 +185,7 @@ for (const [catalogId, override] of Object.entries(overrides)) {
 }
 
 const catalog = await loadJsonRecords(new URL("../data/catalog/", import.meta.url));
+const recoveryById = await loadRecovery(catalog);
 const publishedStories = [
   ...(await loadJsonRecords(new URL("../data/stories/", import.meta.url))),
   ...(await loadJsonRecords(new URL("../data/story-batches/", import.meta.url))),
@@ -336,12 +338,14 @@ function reusedMediaSource(catalogId) {
 
 const items = remainder.map((record, sourceIndex) => {
   const override = overrides[record.id] ?? null;
+  const recovery = recoveryById.get(record.id);
+  const approvedRecovery = recovery?.decision === "approved" ? recovery : null;
   const mapping = mappingById.get(record.id) ?? null;
   const mediaReuse = reuseById.get(record.id) ?? null;
   const reviewedMedia = reviewedMediaById.get(record.id) ?? null;
-  const reviewedCandidateMedia = reusedMediaSource(record.id) ?? discoveredMediaSource(record.id);
+  const reviewedCandidateMedia = recoveredMediaSource(recovery) ?? reusedMediaSource(record.id) ?? discoveredMediaSource(record.id);
   const recognitionMode =
-    reviewedMedia?.mediaReview?.recognitionMode ?? mediaReuse?.recognitionMode ?? null;
+    approvedRecovery?.mediaReview.recognitionMode ?? reviewedMedia?.mediaReview?.recognitionMode ?? mediaReuse?.recognitionMode ?? null;
   const labelAssisted = recognitionMode === "label-assisted";
   const rule = familyRuleFor(record.item);
   const family = override?.family ?? rule?.family ?? null;
@@ -349,22 +353,24 @@ const items = remainder.map((record, sourceIndex) => {
     ? preserveSourceQualifiers(record.item, titleFor(record, rule)).replace(/\s+/g, " ").trim()
     : record.item;
   const title =
+    approvedRecovery?.lessonTitle ??
     reviewedMedia?.title ??
     mediaReuse?.lessonTitle ??
     mapping?.lessonTitle ??
     override?.title ??
     generatedTitle;
-  const form = override?.form ?? rule?.form ?? null;
-  const color = override?.color ?? (rule ? inferredColor(title, rule.color) : null);
-  const identityBasis = override ? "curated-knowledge" : rule ? "taxonomy-helper" : "catalog-label";
-  const identityConfidence = override ? "curated-interpretation" : rule ? "derived" : "unresolved";
+  const form = approvedRecovery?.mediaReview.visibleIdentity?.form ?? override?.form ?? rule?.form ?? null;
+  const color = approvedRecovery?.mediaReview.visibleIdentity?.color ?? override?.color ?? (rule ? inferredColor(title, rule.color) : null);
+  const identityBasis = approvedRecovery || override ? "curated-knowledge" : rule ? "taxonomy-helper" : "catalog-label";
+  const identityConfidence = approvedRecovery || override ? "curated-interpretation" : rule ? "derived" : "unresolved";
 
   const isOutsideScope = nonProduce.test(record.item) || outsideProduceScope.test(record.item);
   const scopeStatus = override?.scope ?? (isOutsideScope ? "out-of-scope" : rule ? "in-scope" : "needs-review");
   const scopeBasis = override ? "curated-knowledge" : isOutsideScope ? "scope-rule" : rule ? "taxonomy-helper" : "unresolved";
   const sourceFlags = record.flags ?? [];
+  const unresolvedLegacyExclusion = excludedCatalogIds.has(record.id) && !approvedRecovery?.clearsLegacyExclusion;
   const needsIdentityReview =
-    sourceFlags.some((flag) => identityReviewFlags.has(flag)) || excludedCatalogIds.has(record.id);
+    sourceFlags.some((flag) => identityReviewFlags.has(flag)) || unresolvedLegacyExclusion;
   const identityGaps = [
     !family && "family",
     !form && "form",
@@ -397,15 +403,15 @@ const items = remainder.map((record, sourceIndex) => {
 
   const signals = packageSignals(record.item);
   const helperSaleForm = saleFormFor(record.item, record.soldBy, family ?? "Source review");
-  const saleForm = override?.sale?.saleForm ?? helperSaleForm;
+  const saleForm = approvedRecovery?.retailInterpretation?.saleForm ?? override?.sale?.saleForm ?? helperSaleForm;
   const helperSoldBy = inferredSoldBy(record, saleForm);
-  const soldBy = override?.sale?.soldBy ?? helperSoldBy;
+  const soldBy = approvedRecovery?.retailInterpretation?.soldBy ?? override?.sale?.soldBy ?? helperSoldBy;
   const soldByBasis = record.soldBy
     ? "immutable-catalog"
-    : override?.sale?.soldBy
+    : approvedRecovery?.retailInterpretation?.soldBy || override?.sale?.soldBy
       ? "curated-knowledge"
       : "sale-helper";
-  const saleFormBasis = override?.sale?.saleForm ? "curated-knowledge" : "sale-helper";
+  const saleFormBasis = approvedRecovery?.retailInterpretation || override?.sale?.saleForm ? "curated-knowledge" : "sale-helper";
   const needsPackageEvidence = packageOrInventory.test(record.item) || /\b(?:frozen|preserved|salted)\b/i.test(record.item);
   const retailStatus = needsPackageEvidence
     ? "package-evidence-required"
@@ -435,7 +441,7 @@ const items = remainder.map((record, sourceIndex) => {
   if (scopeStatus === "in-scope" && needsIdentityReview) {
     blockers.push(blocker("identity", "identity-source-review", "Handwritten, obscured, or separately excluded source wording needs adjudication."));
   }
-  if (scopeStatus === "in-scope" && excludedCatalogIds.has(record.id)) {
+  if (scopeStatus === "in-scope" && unresolvedLegacyExclusion) {
     blockers.push(blocker("identity", "identity-adjudication-required", "This catalog identity is on the explicit source-review list."));
   }
   if (scopeStatus === "in-scope" && !codes.length) {
@@ -486,6 +492,13 @@ const items = remainder.map((record, sourceIndex) => {
       form: claim(form, identityBasis, ["catalog.item"], identityConfidence),
       color: claim(color, identityBasis, ["catalog.item"], identityConfidence),
       curationNote: override?.curationNote ?? null,
+      ...(approvedRecovery?.clearsLegacyExclusion ? {
+        adjudication: {
+          provenance: "data/batch-06-recovery-decisions.json",
+          scope: "legacy-batch05-exclusion",
+          reviewBasis: approvedRecovery.reviewBasis,
+        },
+      } : {}),
       evidenceGaps: identityGaps,
     },
     codeEvidence: {
@@ -507,6 +520,12 @@ const items = remainder.map((record, sourceIndex) => {
       soldBy: claim(soldBy, soldByBasis, record.soldBy ? ["catalog.soldBy"] : ["catalog.item"]),
       saleForm: claim(saleForm, saleFormBasis, ["catalog.item", "catalog.soldBy"]),
       packageSignals: signals,
+      ...(approvedRecovery?.retailInterpretation ? {
+        interpretation: {
+          provenance: "data/batch-06-recovery-decisions.json",
+          reviewBasis: approvedRecovery.retailInterpretation.reviewBasis,
+        },
+      } : {}),
     },
     mediaPlan: {
       status: mediaStatus,
@@ -577,7 +596,7 @@ for (const item of items) {
     assert.equal(item.codeEvidence.primaryCode, null, `${item.catalogId}: a missing code may not be invented.`);
   }
   const reviewedMedia = reviewedMediaById.get(item.catalogId);
-  const reviewedCandidateMedia = reusedMediaSource(item.catalogId) ?? discoveredMediaSource(item.catalogId);
+  const reviewedCandidateMedia = recoveredMediaSource(recoveryById.get(item.catalogId)) ?? reusedMediaSource(item.catalogId) ?? discoveredMediaSource(item.catalogId);
   if (!reviewedMedia && !reviewedCandidateMedia) {
     assert.equal(item.mediaPlan.source, null, `${item.catalogId}: an unreviewed media source may not be invented.`);
   } else {

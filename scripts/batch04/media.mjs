@@ -165,11 +165,12 @@ function analyzeCandidate(page, item, usedFiles, mode = "strict") {
   };
 }
 
-function reviewedIdentityEvidence(page, item) {
+function reviewedIdentityEvidence(page, item, phrases = []) {
   const sourceWords = new Set(words(candidateText(page)));
-  return (reviewedIdentityEvidenceByCatalogId[item.catalogId] ?? []).find((phrase) =>
-    words(phrase).every((token) => sourceWords.has(token)),
-  );
+  return [...(reviewedIdentityEvidenceByCatalogId[item.catalogId] ?? []), ...phrases].find((phrase) => {
+    const tokens = words(phrase);
+    return tokens.length > 0 && tokens.every((token) => sourceWords.has(token));
+  });
 }
 
 async function queryExactFile(file) {
@@ -238,13 +239,17 @@ function mediaResult(selected, alternatives, match, usedFiles) {
   };
 }
 
-export async function resolveImage(item, usedFiles, reviewedFile = null) {
+export async function resolveImage(item, usedFiles, reviewedFile = null, review = null) {
+  if (review) item = {
+    ...item,
+    imageQuery: [item.imageQuery, ...(review.contextTokens ?? []), ...(review.identityEvidence ?? [])].join(" "),
+  };
   const override = reviewedFile ?? mediaOverridesByCatalogId[item.catalogId];
   if (override) {
     const page = await queryExactFile(override);
     if (!page) throw new Error(`${item.title}: reviewed media override is missing (${override}).`);
     const analyzed = { page, ...analyzeCandidate(page, item, usedFiles, "family") };
-    const aliasEvidence = reviewedIdentityEvidence(page, item);
+    const aliasEvidence = reviewedIdentityEvidence(page, item, review?.identityEvidence);
     const reviewedAliasOnly = !analyzed.valid &&
       analyzed.reason === "missing-product-head" &&
       aliasEvidence;

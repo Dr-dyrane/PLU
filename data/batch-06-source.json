@@ -304,6 +304,52 @@
     }
   },
   {
+    "catalogId": "apples-lady-alice-pc",
+    "title": "Apples - Lady Alice PC",
+    "code": "3106",
+    "family": "Apples",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Round apple",
+    "color": "Red-pink and yellow",
+    "imageQuery": "Lady Alice apple raw produce",
+    "cue": "Look for a round apple with a red-pink blush over yellow skin and a shallow stem depression.",
+    "group": "apples",
+    "sourcePages": [
+      5
+    ],
+    "flags": [
+      "sold-by-curated",
+      "retail-form-specific"
+    ],
+    "sourceItem": "Apples - Lady Alice PC",
+    "sourceOrder": 10,
+    "mediaReview": {
+      "catalogId": "apples-lady-alice-pc",
+      "code": "3106",
+      "commonsFile": "Lady Alice apple from supermarket in Seattle.jpg",
+      "recognitionMode": "label-assisted",
+      "visibleIdentity": {
+        "label": "Lady Alice apple",
+        "form": "Round apple",
+        "color": "Red-pink and yellow",
+        "cue": "Look for a round apple with a red-pink blush over yellow skin and a shallow stem depression."
+      },
+      "sharedMediaBasis": "The reviewed photograph supplies the visible produce identity. Each catalog listing keeps its own code and workbook-only qualifiers.",
+      "reviewBasis": "Inspected the original 2448 by 3264 photograph. One unobstructed round apple is held in a hand; its red-pink blush, yellow background, stem depression, and pale speckling are clearly visible. Exact cultivar attribution comes from the photographer. No checkout number is visible. PC remains only the workbook qualifier, and the photographer's organic description is not transferred to the target catalog record. Only one distinct source photograph was found; any role reuse must remain explicit.",
+      "labelClaims": [
+        {
+          "value": "PC",
+          "basis": "workbook-label",
+          "sourceField": "catalog.item",
+          "sourcePages": [
+            5
+          ]
+        }
+      ]
+    }
+  },
+  {
     "catalogId": "apples-mcintosh-orchard-bin",
     "title": "Apples - McIntosh (Orchard Bin)",
     "code": "62010",
@@ -447,6 +493,51 @@
       ],
       "sharedMediaBasis": "The reviewed photograph anchors the visible produce identity; any store-only qualifier or retail-unit detail is read from the workbook label.",
       "reviewBasis": "Superior alternative showing actual red-green apples in a market basket instead of a distant orchard. Store-only or package qualifiers remain workbook-label claims and are not inferred from pixels."
+    }
+  },
+  {
+    "catalogId": "asparagus-organic",
+    "title": "Asparagus - Organic",
+    "code": "94080",
+    "family": "Asparagus",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Long bundled spears with tapered tips",
+    "color": "Green",
+    "imageQuery": "Asparagus raw produce",
+    "cue": "Long green spears with compact tapered tips identify asparagus.",
+    "group": "asparagus",
+    "sourcePages": [
+      4
+    ],
+    "flags": [
+      "sold-by-curated"
+    ],
+    "sourceItem": "Asparagus - Organic",
+    "sourceOrder": 20,
+    "mediaReview": {
+      "catalogId": "asparagus-organic",
+      "code": "94080",
+      "commonsFile": "HK CWB 銅鑼灣 Causeway Bay 軒尼詩道 500 Hennessy Road 希慎廣場 Hysan Place mall B2 basement shop MarketPlace by Jasons Supermarket October 2021 SS2 02.jpg",
+      "recognitionMode": "label-assisted",
+      "visibleIdentity": {
+        "label": "Asparagus",
+        "form": "Long bundled spears with tapered tips",
+        "color": "Green",
+        "cue": "Long green spears with compact tapered tips identify asparagus."
+      },
+      "sharedMediaBasis": "The reviewed photograph supplies the visible produce identity. Each catalog listing keeps its own code and workbook-only qualifiers.",
+      "reviewBasis": "Pixel review found many unmistakable raw green asparagus bundles. The image establishes asparagus identity only; Organic and code 94080 remain tied to the supplied workbook listing.",
+      "labelClaims": [
+        {
+          "value": "Organic",
+          "basis": "workbook-label",
+          "sourceField": "catalog.item",
+          "sourcePages": [
+            4
+          ]
+        }
+      ]
     }
   },
   {
@@ -688,6 +779,60 @@
       "reviewBasis": "The reviewed beet photograph shows the same raw roots; the 10lb retail quantity remains label-only.",
       "code": "6996",
       "reuseSourceCatalogId": "beets-loose-bulk"
+    }
+  },
+  {
+    "catalogId": "blackberries-pint-12oz",
+    "title": "Blackberries - Pint / 12oz",
+    "code": "522",
+    "family": "Berries",
+    "soldBy": "Each",
+    "saleForm": "Package",
+    "form": "Small clustered drupelet berries",
+    "color": "Black",
+    "imageQuery": "Blackberries raw produce",
+    "cue": "Blackberries have glossy black clusters of rounded drupelets.",
+    "group": "berries",
+    "sourcePages": [
+      5
+    ],
+    "flags": [
+      "sold-by-curated",
+      "retail-form-specific"
+    ],
+    "sourceItem": "Blackberries - Pint / 12oz",
+    "sourceOrder": 31,
+    "mediaReview": {
+      "catalogId": "blackberries-pint-12oz",
+      "code": "522",
+      "commonsFile": "Blackberry (Rubus fruticosus).jpg",
+      "recognitionMode": "label-assisted",
+      "visibleIdentity": {
+        "label": "Blackberries",
+        "form": "Small clustered drupelet berries",
+        "color": "Black",
+        "cue": "Blackberries have glossy black clusters of rounded drupelets."
+      },
+      "sharedMediaBasis": "The reviewed photograph supplies the visible produce identity. Each catalog listing keeps its own code and workbook-only qualifiers.",
+      "reviewBasis": "The corrected query restores Blackberries, which the earlier taxonomy query dropped. Commons metadata names Rubus fruticosus and the inspected photographs clearly show blackberries. Pint / 12oz remains a workbook quantity claim.",
+      "labelClaims": [
+        {
+          "value": "Pint",
+          "basis": "workbook-label",
+          "sourceField": "catalog.item",
+          "sourcePages": [
+            5
+          ]
+        },
+        {
+          "value": "12oz",
+          "basis": "workbook-label",
+          "sourceField": "catalog.item",
+          "sourcePages": [
+            5
+          ]
+        }
+      ]
     }
   },
   {
@@ -1191,6 +1336,105 @@
     }
   },
   {
+    "catalogId": "cucumbers-dill-case",
+    "title": "Cucumbers - Dill (Case)",
+    "code": "38595",
+    "family": "Cucumbers",
+    "soldBy": "Each",
+    "saleForm": "Case",
+    "form": "Short bumpy whole cucumbers",
+    "color": "Green",
+    "imageQuery": "Pickling cucumber raw produce",
+    "cue": "Short green cucumbers with bumpy skin and blunt ends provide the recognition anchor.",
+    "group": "cucumbers",
+    "sourcePages": [
+      4
+    ],
+    "flags": [
+      "sold-by-curated",
+      "retail-form-specific"
+    ],
+    "sourceItem": "Cucumbers - Dill (Case)",
+    "sourceOrder": 49,
+    "mediaReview": {
+      "catalogId": "cucumbers-dill-case",
+      "code": "38595",
+      "commonsFile": "PicklingCucumbers.jpg",
+      "recognitionMode": "label-assisted",
+      "visibleIdentity": {
+        "label": "Pickling cucumber",
+        "form": "Short bumpy whole cucumbers",
+        "color": "Green",
+        "cue": "Short green cucumbers with bumpy skin and blunt ends provide the recognition anchor."
+      },
+      "sharedMediaBasis": "The reviewed photograph supplies the visible produce identity. Each catalog listing keeps its own code and workbook-only qualifiers.",
+      "reviewBasis": "Inspected raw fresh pickling cucumbers in a basket; the filename, description, and pixels agree. Dill and Case remain exact workbook listing claims. The image does not claim dill seasoning, brining, a cultivar, case count, or case code equivalence.",
+      "labelClaims": [
+        {
+          "value": "Dill",
+          "basis": "workbook-label",
+          "sourceField": "catalog.item",
+          "sourcePages": [
+            4
+          ]
+        },
+        {
+          "value": "Case",
+          "basis": "workbook-label",
+          "sourceField": "catalog.item",
+          "sourcePages": [
+            4
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "catalogId": "dill-weed-pickling-herbs",
+    "title": "Dill Weed (Pickling) - Herbs",
+    "code": "4893",
+    "family": "Herbs",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Fine feathery fronds on slender stems",
+    "color": "Green",
+    "imageQuery": "Dill weed raw produce",
+    "cue": "Fine feathery green fronds on slender stems identify fresh dill weed.",
+    "group": "herbs",
+    "sourcePages": [
+      4
+    ],
+    "flags": [
+      "sold-by-curated"
+    ],
+    "sourceItem": "Dill Weed (Pickling) - Herbs",
+    "sourceOrder": 50,
+    "mediaReview": {
+      "catalogId": "dill-weed-pickling-herbs",
+      "code": "4893",
+      "commonsFile": "Samara Market 04 Dill, lots of dill (4136882030).jpg",
+      "recognitionMode": "label-assisted",
+      "visibleIdentity": {
+        "label": "Dill weed",
+        "form": "Fine feathery fronds on slender stems",
+        "color": "Green",
+        "cue": "Fine feathery green fronds on slender stems identify fresh dill weed."
+      },
+      "sharedMediaBasis": "The reviewed photograph supplies the visible produce identity. Each catalog listing keeps its own code and workbook-only qualifiers.",
+      "reviewBasis": "Pixel review confirmed abundant fresh green dill bunches at market. The photograph supports dill weed identity; Pickling and code 4893 remain exact workbook claims.",
+      "labelClaims": [
+        {
+          "value": "Pickling",
+          "basis": "workbook-label",
+          "sourceField": "catalog.item",
+          "sourcePages": [
+            4
+          ]
+        }
+      ]
+    }
+  },
+  {
     "catalogId": "eggplant-purple-case",
     "title": "Eggplant - Purple (Case)",
     "code": "63582",
@@ -1468,6 +1712,98 @@
       "reviewBasis": "The already-reviewed green-fig photograph shows the same fruit identity and color; Case stays workbook-only.",
       "code": "3536",
       "reuseSourceCatalogId": "figgs-green-case"
+    }
+  },
+  {
+    "catalogId": "garlic-loose-bulk",
+    "title": "Garlic - Loose (Bulk)",
+    "code": "4610",
+    "family": "Alliums",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Papery divided bulbs and cloves",
+    "color": "White",
+    "imageQuery": "Loose garlic raw produce",
+    "cue": "White papery bulbs divided into cloves identify loose garlic.",
+    "group": "alliums",
+    "sourcePages": [
+      4
+    ],
+    "flags": [
+      "sold-by-curated"
+    ],
+    "sourceItem": "Garlic - Loose (Bulk)",
+    "sourceOrder": 63,
+    "mediaReview": {
+      "catalogId": "garlic-loose-bulk",
+      "code": "4610",
+      "commonsFile": "Garlic.jpg",
+      "recognitionMode": "label-assisted",
+      "visibleIdentity": {
+        "label": "Loose garlic",
+        "form": "Papery divided bulbs and cloves",
+        "color": "White",
+        "cue": "White papery bulbs divided into cloves identify loose garlic."
+      },
+      "sharedMediaBasis": "The previously reviewed photograph supplies only the shared visible garlic identity. Source code 4608 is not transferred; target code 4610 and Bulk remain bound to this target workbook listing.",
+      "reviewBasis": "The photograph clearly shows whole garlic heads and separated cloves. It is an exact visible identity match for loose garlic, while Bulk is not claimed visible.",
+      "labelClaims": [
+        {
+          "value": "Bulk",
+          "basis": "workbook-label",
+          "sourceField": "catalog.item",
+          "sourcePages": [
+            4
+          ]
+        }
+      ],
+      "reuseSourceCatalogId": "garlic-loose"
+    }
+  },
+  {
+    "catalogId": "garlic-peeled-5lb",
+    "title": "Garlic - Peeled 5lb",
+    "code": "63608",
+    "family": "Alliums",
+    "soldBy": "Each",
+    "saleForm": "Package",
+    "form": "Separated smooth cloves without papery skin",
+    "color": "Cream-white",
+    "imageQuery": "Peeled garlic raw produce",
+    "cue": "Smooth cream-white teardrop cloves show peeled garlic with the papery skin removed.",
+    "group": "alliums",
+    "sourcePages": [
+      4
+    ],
+    "flags": [
+      "sold-by-curated",
+      "retail-form-specific"
+    ],
+    "sourceItem": "Garlic - Peeled 5lb",
+    "sourceOrder": 64,
+    "mediaReview": {
+      "catalogId": "garlic-peeled-5lb",
+      "code": "63608",
+      "commonsFile": "Peeled garlic cloves.jpg",
+      "recognitionMode": "label-assisted",
+      "visibleIdentity": {
+        "label": "Peeled garlic",
+        "form": "Separated smooth cloves without papery skin",
+        "color": "Cream-white",
+        "cue": "Smooth cream-white teardrop cloves show peeled garlic with the papery skin removed."
+      },
+      "sharedMediaBasis": "The reviewed photograph supplies the visible produce identity. Each catalog listing keeps its own code and workbook-only qualifiers.",
+      "reviewBasis": "Both CC0 photographs were decoded and inspected. They show separated peeled cloves with smooth exposed cream-white surfaces and no papery bulb wrapper. The old overripe candidate is replaced; 5lb remains a workbook package claim.",
+      "labelClaims": [
+        {
+          "value": "5lb",
+          "basis": "workbook-label",
+          "sourceField": "catalog.item",
+          "sourcePages": [
+            4
+          ]
+        }
+      ]
     }
   },
   {
@@ -2023,6 +2359,144 @@
       ],
       "sharedMediaBasis": "The market photograph anchors whole cantaloupe; Organic is read from the workbook label.",
       "reviewBasis": "The photograph and Commons description show whole cantaloupes at market. Organic status is not inferred from appearance."
+    }
+  },
+  {
+    "catalogId": "methileaf-herbs",
+    "title": "Methileaf - Herbs",
+    "code": "59994",
+    "family": "Leafy Greens",
+    "soldBy": "Each",
+    "saleForm": "Single",
+    "form": "Small oval trifoliate leaflets on slender stems",
+    "color": "Green",
+    "imageQuery": "Methileaf (fenugreek) raw produce",
+    "cue": "Clusters of three small oval green leaflets on slender stems identify fresh methi leaf.",
+    "group": "leafy-greens",
+    "sourcePages": [
+      1
+    ],
+    "sourceItem": "Methileaf - Herbs",
+    "sourceOrder": 90,
+    "mediaReview": {
+      "catalogId": "methileaf-herbs",
+      "code": "59994",
+      "commonsFile": "Methi leaves.jpg",
+      "recognitionMode": "label-assisted",
+      "visibleIdentity": {
+        "label": "Methileaf (fenugreek)",
+        "form": "Small oval trifoliate leaflets on slender stems",
+        "color": "Green",
+        "cue": "Clusters of three small oval green leaflets on slender stems identify fresh methi leaf."
+      },
+      "sharedMediaBasis": "The previously reviewed photograph and ICAR synonym evidence supply the shared visible methi/fenugreek leaf identity. Source code 4909 is not transferred; target code 59994 remains bound to the exact Methileaf workbook listing.",
+      "reviewBasis": "The photograph shows fresh Methi (Fenugreek) leaves and its Commons metadata names that identity directly. The visible form is recorded as small trifoliate leaflets rather than the earlier generic broad-leaf description.",
+      "reuseSourceCatalogId": "methi-leaf-fenugreek",
+      "labelClaims": [
+        {
+          "value": "Herbs",
+          "basis": "workbook-label",
+          "sourceField": "catalog.item",
+          "sourcePages": [
+            1
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "catalogId": "mushrooms-white-bulk-rcwc",
+    "title": "Mushrooms - White (Bulk, RCWC)",
+    "code": "1102",
+    "family": "Mushrooms",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Small round caps with short stems",
+    "color": "White",
+    "imageQuery": "White button mushrooms raw produce",
+    "cue": "Small white dome-shaped caps with short pale stems identify white button mushrooms.",
+    "group": "mushrooms",
+    "sourcePages": [
+      4
+    ],
+    "flags": [
+      "sold-by-curated"
+    ],
+    "sourceItem": "Mushrooms - White (Bulk, RCWC)",
+    "sourceOrder": 91,
+    "mediaReview": {
+      "catalogId": "mushrooms-white-bulk-rcwc",
+      "code": "1102",
+      "commonsFile": "1 - button mushrooms.jpg",
+      "recognitionMode": "label-assisted",
+      "visibleIdentity": {
+        "label": "White button mushrooms",
+        "form": "Small round caps with short stems",
+        "color": "White",
+        "cue": "Small white dome-shaped caps with short pale stems identify white button mushrooms."
+      },
+      "sharedMediaBasis": "The previously reviewed photograph supplies only the shared visible white-mushroom identity. Source code 4085 and its RCSS/EXFD wording are not transferred; target code 1102 and RCWC remain bound to this target workbook listing.",
+      "reviewBasis": "The photograph clearly shows white button mushrooms with round pale caps and short stems. Bulk and RCWC are preserved only as workbook claims.",
+      "labelClaims": [
+        {
+          "value": "Bulk, RCWC",
+          "basis": "workbook-label",
+          "sourceField": "catalog.item",
+          "sourcePages": [
+            4
+          ]
+        }
+      ],
+      "reuseSourceCatalogId": "mushrooms-white-bulk-rcss-exfd-4645-4653"
+    }
+  },
+  {
+    "catalogId": "olives-green-case",
+    "title": "Olives - Green (Case)",
+    "code": "54050",
+    "family": "Olives",
+    "soldBy": "Each",
+    "saleForm": "Case",
+    "form": "Small oval whole stone fruits",
+    "color": "Green",
+    "imageQuery": "Green olives raw produce",
+    "cue": "Green olives appear as small oval fruits with smooth green skins.",
+    "group": "olives",
+    "sourcePages": [
+      4
+    ],
+    "flags": [
+      "sold-by-curated",
+      "retail-form-specific"
+    ],
+    "sourceItem": "Olives - Green (Case)",
+    "sourceOrder": 96,
+    "mediaReview": {
+      "catalogId": "olives-green-case",
+      "code": "54050",
+      "commonsFile": "A crate of olives fresh from the tree (15299192895).jpg",
+      "recognitionMode": "label-assisted",
+      "visibleIdentity": {
+        "label": "Green olives",
+        "form": "Small oval whole stone fruits",
+        "color": "Green",
+        "cue": "Green olives appear as small oval fruits with smooth green skins."
+      },
+      "sharedMediaBasis": "The reviewed photograph supplies the visible produce identity. Each catalog listing keeps its own code and workbook-only qualifiers.",
+      "reviewBasis": "Inspected photograph shows a harvest crate filled overwhelmingly with smooth oval green olives, with a few naturally darker fruits. Metadata specifies olives fresh from the tree and category Green olives. Photo establishes identity and color; the workbook alone supplies the case listing and code.",
+      "labelClaims": [
+        {
+          "value": "Case",
+          "basis": "workbook-label",
+          "sourceField": "catalog.item",
+          "sourcePages": [
+            4
+          ]
+        }
+      ],
+      "contextTokens": [
+        "tree"
+      ]
     }
   },
   {
@@ -2831,6 +3305,51 @@
     }
   },
   {
+    "catalogId": "pistachios-bulk-nuts",
+    "title": "Pistachios (Bulk) - Nuts",
+    "code": "1400",
+    "family": "Nuts",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Small nuts in split beige shells",
+    "color": "Beige with purple-brown kernels",
+    "imageQuery": "Pistachios raw produce",
+    "cue": "Split beige shells reveal purple-brown pistachio kernels.",
+    "group": "nuts",
+    "sourcePages": [
+      5
+    ],
+    "flags": [
+      "sold-by-curated"
+    ],
+    "sourceItem": "Pistachios (Bulk) - Nuts",
+    "sourceOrder": 132,
+    "mediaReview": {
+      "catalogId": "pistachios-bulk-nuts",
+      "code": "1400",
+      "commonsFile": "Pistachio nuts from Iran.jpg",
+      "recognitionMode": "label-assisted",
+      "visibleIdentity": {
+        "label": "Pistachios",
+        "form": "Small nuts in split beige shells",
+        "color": "Beige with purple-brown kernels",
+        "cue": "Split beige shells reveal purple-brown pistachio kernels."
+      },
+      "sharedMediaBasis": "The reviewed photograph supplies the visible produce identity. Each catalog listing keeps its own code and workbook-only qualifiers.",
+      "reviewBasis": "Inspected photograph shows in-shell pistachios in a box, with recognizable split beige shells and kernels. The source identifies Pistachio nuts from Iran; origin is not added to the lesson. Bulk remains a workbook sale-label claim.",
+      "labelClaims": [
+        {
+          "value": "Bulk",
+          "basis": "workbook-label",
+          "sourceField": "catalog.item",
+          "sourcePages": [
+            5
+          ]
+        }
+      ]
+    }
+  },
+  {
     "catalogId": "plums-blue-1-5l",
     "title": "Plums - Blue 1.5L",
     "code": "6706",
@@ -3254,6 +3773,253 @@
     }
   },
   {
+    "catalogId": "raspberries-red-half-pint-6oz",
+    "title": "Raspberries - Red Half Pint / 6oz",
+    "code": "7298",
+    "family": "Berries",
+    "soldBy": "Each",
+    "saleForm": "Package",
+    "form": "Soft clustered drupelet berries with hollow centers",
+    "color": "Red",
+    "imageQuery": "Red raspberries raw produce",
+    "cue": "Red raspberries form soft clusters of small drupelets around a hollow center.",
+    "group": "berries",
+    "sourcePages": [
+      5
+    ],
+    "flags": [
+      "sold-by-curated",
+      "retail-form-specific"
+    ],
+    "sourceItem": "Raspberries - Red Half Pint / 6oz",
+    "sourceOrder": 150,
+    "mediaReview": {
+      "catalogId": "raspberries-red-half-pint-6oz",
+      "code": "7298",
+      "commonsFile": "Raspberry - whole (Rubus idaeus).jpg",
+      "recognitionMode": "label-assisted",
+      "visibleIdentity": {
+        "label": "Red raspberries",
+        "form": "Soft clustered drupelet berries with hollow centers",
+        "color": "Red",
+        "cue": "Red raspberries form soft clusters of small drupelets around a hollow center."
+      },
+      "sharedMediaBasis": "Both workbook rows name red raspberries. The inspected files support the same visible berry identity; each lesson must show its own exact package label and code. No photograph establishes package weight.",
+      "reviewBasis": "The corrected query restores Raspberries, dropped by the earlier taxonomy query. Metadata and three inspected photographs show red Rubus idaeus fruit. Half Pint / 6oz stays a workbook quantity claim.",
+      "labelClaims": [
+        {
+          "value": "Half Pint",
+          "basis": "workbook-label",
+          "sourceField": "catalog.item",
+          "sourcePages": [
+            5
+          ]
+        },
+        {
+          "value": "6oz",
+          "basis": "workbook-label",
+          "sourceField": "catalog.item",
+          "sourcePages": [
+            5
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "catalogId": "raspberries-red-pint-12oz",
+    "title": "Raspberries - Red Pint / 12oz",
+    "code": "4054",
+    "family": "Berries",
+    "soldBy": "Each",
+    "saleForm": "Package",
+    "form": "Soft clustered drupelet berries with hollow centers",
+    "color": "Red",
+    "imageQuery": "Red raspberries raw produce",
+    "cue": "Red raspberries form soft clusters of small drupelets around a hollow center.",
+    "group": "berries",
+    "sourcePages": [
+      5
+    ],
+    "flags": [
+      "sold-by-curated",
+      "retail-form-specific"
+    ],
+    "sourceItem": "Raspberries - Red Pint / 12oz",
+    "sourceOrder": 151,
+    "mediaReview": {
+      "catalogId": "raspberries-red-pint-12oz",
+      "code": "4054",
+      "commonsFile": "Raspberry - whole (Rubus idaeus).jpg",
+      "recognitionMode": "label-assisted",
+      "visibleIdentity": {
+        "label": "Red raspberries",
+        "form": "Soft clustered drupelet berries with hollow centers",
+        "color": "Red",
+        "cue": "Red raspberries form soft clusters of small drupelets around a hollow center."
+      },
+      "sharedMediaBasis": "Both workbook rows name red raspberries. The inspected files support the same visible berry identity; each lesson must show its own exact package label and code. No photograph establishes package weight.",
+      "reviewBasis": "The corrected query restores Raspberries, dropped by the earlier taxonomy query. The same reviewed red-raspberry identity images may be shared with the half-pint listing; Pint / 12oz and 4054 belong only to this workbook row.",
+      "labelClaims": [
+        {
+          "value": "Pint",
+          "basis": "workbook-label",
+          "sourceField": "catalog.item",
+          "sourcePages": [
+            5
+          ]
+        },
+        {
+          "value": "12oz",
+          "basis": "workbook-label",
+          "sourceField": "catalog.item",
+          "sourcePages": [
+            5
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "catalogId": "sher-li-hon",
+    "title": "Sher-Li-Hon",
+    "code": "69624",
+    "family": "Leafy Greens",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Broad serrated leaves and green stems",
+    "color": "Green",
+    "imageQuery": "Sher-Li-Hon snow mustard raw produce",
+    "cue": "Look for broad green leaves with serrated edges and pale ribs running into the stems.",
+    "group": "leafy-greens",
+    "sourcePages": [
+      4
+    ],
+    "flags": [
+      "sold-by-curated"
+    ],
+    "sourceItem": "Sher-Li-Hon",
+    "sourceOrder": 154,
+    "mediaReview": {
+      "catalogId": "sher-li-hon",
+      "code": "69624",
+      "commonsFile": "Snow mustard Brassica juncea.jpg",
+      "recognitionMode": "product-and-loose-form",
+      "visibleIdentity": {
+        "label": "Sher-Li-Hon snow mustard",
+        "form": "Broad serrated leaves and green stems",
+        "color": "Green",
+        "cue": "Look for broad green leaves with serrated edges and pale ribs running into the stems."
+      },
+      "sharedMediaBasis": "The reviewed photograph supplies the visible produce identity. Each catalog listing keeps its own code and workbook-only qualifiers.",
+      "reviewBasis": "Inspected the original 2268 by 4032 photograph. Raw green leaf blades, serrated margins, pale midribs, and attached stems are clearly visible. The exact name bridge is supplier Sher Li Hon/雪里紅, agricultural museum 雪里红/雪里蕻, then photographer snow mustard/雪里蕻. The photograph depicts a growing plant; it supports leaf and stem recognition, with no claim that a harvested bunch, retail unit, or package is shown. Only one distinct source photograph was found; any role reuse must remain explicit.",
+      "identityEvidence": [
+        "snow mustard"
+      ],
+      "contextTokens": [
+        "plant"
+      ]
+    }
+  },
+  {
+    "catalogId": "strawberries-1lb",
+    "title": "Strawberries - 1lb",
+    "code": "42468",
+    "family": "Berries",
+    "soldBy": "Each",
+    "saleForm": "Package",
+    "form": "Red seeded berries with leafy caps",
+    "color": "Red",
+    "imageQuery": "Strawberries raw produce",
+    "cue": "Strawberries show small surface seeds and green leafy caps on red fruit.",
+    "group": "berries",
+    "sourcePages": [
+      5
+    ],
+    "flags": [
+      "sold-by-curated",
+      "retail-form-specific"
+    ],
+    "sourceItem": "Strawberries - 1lb",
+    "sourceOrder": 156,
+    "mediaReview": {
+      "catalogId": "strawberries-1lb",
+      "code": "42468",
+      "commonsFile": "Garden strawberry (Fragaria × ananassa) single2.jpg",
+      "recognitionMode": "label-assisted",
+      "visibleIdentity": {
+        "label": "Strawberries",
+        "form": "Red seeded berries with leafy caps",
+        "color": "Red",
+        "cue": "Strawberries show small surface seeds and green leafy caps on red fruit."
+      },
+      "sharedMediaBasis": "The same strawberry identity is used for both workbook quantities. Shared photos teach fruit recognition; package weight and code are explicit row-specific workbook claims.",
+      "reviewBasis": "Three inspected photographs show strawberries as the sole produce target, replacing the mixed-berry discovery set. 1lb remains an explicit workbook package claim and is never inferred from basket size.",
+      "labelClaims": [
+        {
+          "value": "1lb",
+          "basis": "workbook-label",
+          "sourceField": "catalog.item",
+          "sourcePages": [
+            5
+          ]
+        }
+      ],
+      "contextTokens": [
+        "garden"
+      ]
+    }
+  },
+  {
+    "catalogId": "strawberries-2lb",
+    "title": "Strawberries - 2lb",
+    "code": "36983",
+    "family": "Berries",
+    "soldBy": "Each",
+    "saleForm": "Package",
+    "form": "Red seeded berries with leafy caps",
+    "color": "Red",
+    "imageQuery": "Strawberries raw produce",
+    "cue": "Strawberries show small surface seeds and green leafy caps on red fruit.",
+    "group": "berries",
+    "sourcePages": [
+      5
+    ],
+    "flags": [
+      "sold-by-curated",
+      "retail-form-specific"
+    ],
+    "sourceItem": "Strawberries - 2lb",
+    "sourceOrder": 157,
+    "mediaReview": {
+      "catalogId": "strawberries-2lb",
+      "code": "36983",
+      "commonsFile": "Garden strawberry (Fragaria × ananassa) single2.jpg",
+      "recognitionMode": "label-assisted",
+      "visibleIdentity": {
+        "label": "Strawberries",
+        "form": "Red seeded berries with leafy caps",
+        "color": "Red",
+        "cue": "Strawberries show small surface seeds and green leafy caps on red fruit."
+      },
+      "sharedMediaBasis": "The same strawberry identity is used for both workbook quantities. Shared photos teach fruit recognition; package weight and code are explicit row-specific workbook claims.",
+      "reviewBasis": "The reviewed strawberry image set is shared with the 1lb listing because the visible produce identity is the same. The 2lb quantity and 36983 code remain exclusive to this workbook row.",
+      "labelClaims": [
+        {
+          "value": "2lb",
+          "basis": "workbook-label",
+          "sourceField": "catalog.item",
+          "sourcePages": [
+            5
+          ]
+        }
+      ],
+      "contextTokens": [
+        "garden"
+      ]
+    }
+  },
+  {
     "catalogId": "tomato-fm-on-the-vine-bulk",
     "title": "Tomato - FM On The Vine (Bulk)",
     "code": "64664",
@@ -3511,6 +4277,60 @@
       ],
       "sharedMediaBasis": "The reviewed photograph anchors the visible produce identity; any store-only qualifier or retail-unit detail is read from the workbook label.",
       "reviewBasis": "Clean pile of oblong Roma or plum tomatoes; box qualifier remains workbook-only. Store-only or package qualifiers remain workbook-label claims and are not inferred from pixels."
+    }
+  },
+  {
+    "catalogId": "tomatoes-vine-ripe-field-bulk",
+    "title": "Tomatoes - Vine Ripe / Field (Bulk)",
+    "code": "3061",
+    "family": "Tomatoes",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Round ripe tomatoes attached along a vine",
+    "color": "Red",
+    "imageQuery": "Vine-ripe tomatoes raw produce",
+    "cue": "Round ripe red tomatoes attached along a vine identify vine-ripe tomatoes.",
+    "group": "tomatoes",
+    "sourcePages": [
+      3,
+      4
+    ],
+    "sourceItem": "Tomatoes - Vine Ripe / Field (Bulk)",
+    "sourceOrder": 167,
+    "mediaReview": {
+      "catalogId": "tomatoes-vine-ripe-field-bulk",
+      "code": "3061",
+      "commonsFile": "Strauchtomaten.jpg",
+      "recognitionMode": "label-assisted",
+      "visibleIdentity": {
+        "label": "Vine-ripe tomatoes",
+        "form": "Round ripe tomatoes attached along a vine",
+        "color": "Red",
+        "cue": "Round ripe red tomatoes attached along a vine identify vine-ripe tomatoes."
+      },
+      "sharedMediaBasis": "The previously reviewed photograph supplies only the visible vine-ripe tomato identity. Source code 3151 is not transferred; target code 3061 plus Field and Bulk remain bound to this target workbook listing.",
+      "reviewBasis": "The photograph and Commons metadata directly show vine-ripened red tomatoes. Field and Bulk are not asserted as visible.",
+      "labelClaims": [
+        {
+          "value": "Field",
+          "basis": "workbook-label",
+          "sourceField": "catalog.item",
+          "sourcePages": [
+            3,
+            4
+          ]
+        },
+        {
+          "value": "Bulk",
+          "basis": "workbook-label",
+          "sourceField": "catalog.item",
+          "sourcePages": [
+            3,
+            4
+          ]
+        }
+      ],
+      "reuseSourceCatalogId": "tomatoes-vine-ripe-big"
     }
   },
   {

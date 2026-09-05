@@ -8,7 +8,8 @@
     "rejected": 33,
     "codeSupportedApproved": 47,
     "promotedFromReview": 41,
-    "promotedFromReuse": 22
+    "promotedFromReuse": 22,
+    "promotedFromRecovery": 17
   },
   "items": [
     {

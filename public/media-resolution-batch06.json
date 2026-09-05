@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-09-04T23:35:42.745Z",
+  "generatedAt": "2026-09-05T00:51:26.555Z",
   "batch": "06",
   "strategy": "Resolve the human-reviewed subset of the complete catalog remainder, using label-assisted truth when store qualifiers are not visible in product pixels.",
-  "candidateCount": 75,
-  "sourceCount": 75,
+  "candidateCount": 92,
+  "sourceCount": 92,
   "media": [
     {
       "order": 1,
@@ -454,6 +454,73 @@
     {
       "order": 8,
       "candidateOrder": 8,
+      "storyId": "apples-lady-alice-pc-3106",
+      "catalogId": "apples-lady-alice-pc",
+      "title": "Apples - Lady Alice PC",
+      "query": "Lady Alice apple raw produce",
+      "selection": {
+        "rawScore": 90,
+        "score": 90,
+        "band": "Essential",
+        "priority": "must-know"
+      },
+      "mediaReview": {
+        "catalogId": "apples-lady-alice-pc",
+        "code": "3106",
+        "commonsFile": "Lady Alice apple from supermarket in Seattle.jpg",
+        "recognitionMode": "label-assisted",
+        "visibleIdentity": {
+          "label": "Lady Alice apple",
+          "form": "Round apple",
+          "color": "Red-pink and yellow",
+          "cue": "Look for a round apple with a red-pink blush over yellow skin and a shallow stem depression."
+        },
+        "sharedMediaBasis": "The reviewed photograph supplies the visible produce identity. Each catalog listing keeps its own code and workbook-only qualifiers.",
+        "reviewBasis": "Inspected the original 2448 by 3264 photograph. One unobstructed round apple is held in a hand; its red-pink blush, yellow background, stem depression, and pale speckling are clearly visible. Exact cultivar attribution comes from the photographer. No checkout number is visible. PC remains only the workbook qualifier, and the photographer's organic description is not transferred to the target catalog record. Only one distinct source photograph was found; any role reuse must remain explicit.",
+        "labelClaims": [
+          {
+            "value": "PC",
+            "basis": "workbook-label",
+            "sourceField": "catalog.item",
+            "sourcePages": [
+              5
+            ]
+          }
+        ]
+      },
+      "file": "Lady Alice apple from supermarket in Seattle.jpg",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/Lady_Alice_apple_from_supermarket_in_Seattle.jpg/1920px-Lady_Alice_apple_from_supermarket_in_Seattle.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "mime": "image/jpeg",
+      "width": 2448,
+      "height": 3264,
+      "thumbWidth": 1600,
+      "thumbHeight": 2133,
+      "score": 177,
+      "sharedAcrossProducts": false,
+      "match": "reviewed-override",
+      "matchedTargets": [
+        "lady",
+        "alice",
+        "apple"
+      ],
+      "matchedModifiers": [
+        "lady",
+        "alice"
+      ],
+      "identityEvidence": [
+        "apple"
+      ],
+      "sourceEvidence": {
+        "title": "Lady Alice apple from supermarket in Seattle.jpg",
+        "objectName": "Lady Alice apple from supermarket in Seattle",
+        "description": "An organic, US-grown Lady Alice apple from a Safeway supermarket in Seattle, WA",
+        "categories": "Lady Alice (apple)|Self-published work|Uploaded with Mobile/iOS|Files with coordinates missing SDC location of creation|United States photographs taken on 2015-03-15"
+      },
+      "alternatives": []
+    },
+    {
+      "order": 9,
+      "candidateOrder": 9,
       "storyId": "apples-mcintosh-orchard-bin-62010",
       "catalogId": "apples-mcintosh-orchard-bin",
       "title": "Apples - McIntosh (Orchard Bin)",
@@ -517,8 +584,8 @@
       "alternatives": []
     },
     {
-      "order": 9,
-      "candidateOrder": 9,
+      "order": 10,
+      "candidateOrder": 10,
       "storyId": "apples-spartan-orchard-run-bin-62013",
       "catalogId": "apples-spartan-orchard-run-bin",
       "title": "Apples - Spartan (Orchard Run Bin)",
@@ -589,8 +656,8 @@
       "alternatives": []
     },
     {
-      "order": 10,
-      "candidateOrder": 10,
+      "order": 11,
+      "candidateOrder": 11,
       "storyId": "apples-sunrise-orchard-run-62023",
       "catalogId": "apples-sunrise-orchard-run",
       "title": "Apples - Sunrise (Orchard Run)",
@@ -655,8 +722,73 @@
       "alternatives": []
     },
     {
-      "order": 11,
-      "candidateOrder": 11,
+      "order": 12,
+      "candidateOrder": 12,
+      "storyId": "asparagus-organic-94080",
+      "catalogId": "asparagus-organic",
+      "title": "Asparagus - Organic",
+      "query": "Asparagus raw produce",
+      "selection": {
+        "rawScore": 75,
+        "score": 75,
+        "band": "Common",
+        "priority": "common"
+      },
+      "mediaReview": {
+        "catalogId": "asparagus-organic",
+        "code": "94080",
+        "commonsFile": "HK CWB 銅鑼灣 Causeway Bay 軒尼詩道 500 Hennessy Road 希慎廣場 Hysan Place mall B2 basement shop MarketPlace by Jasons Supermarket October 2021 SS2 02.jpg",
+        "recognitionMode": "label-assisted",
+        "visibleIdentity": {
+          "label": "Asparagus",
+          "form": "Long bundled spears with tapered tips",
+          "color": "Green",
+          "cue": "Long green spears with compact tapered tips identify asparagus."
+        },
+        "sharedMediaBasis": "The reviewed photograph supplies the visible produce identity. Each catalog listing keeps its own code and workbook-only qualifiers.",
+        "reviewBasis": "Pixel review found many unmistakable raw green asparagus bundles. The image establishes asparagus identity only; Organic and code 94080 remain tied to the supplied workbook listing.",
+        "labelClaims": [
+          {
+            "value": "Organic",
+            "basis": "workbook-label",
+            "sourceField": "catalog.item",
+            "sourcePages": [
+              4
+            ]
+          }
+        ]
+      },
+      "file": "HK CWB 銅鑼灣 Causeway Bay 軒尼詩道 500 Hennessy Road 希慎廣場 Hysan Place mall B2 basement shop MarketPlace by Jasons Supermarket October 2021 SS2 02.jpg",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/HK_CWB_%E9%8A%85%E9%91%BC%E7%81%A3_Causeway_Bay_%E8%BB%92%E5%B0%BC%E8%A9%A9%E9%81%93_500_Hennessy_Road_%E5%B8%8C%E6%85%8E%E5%BB%A3%E5%A0%B4_Hysan_Place_mall_B2_basement_shop_MarketPlace_by_Jasons_Supermarket_October_2021_SS2_02.jpg/1920px-thumbnail.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "mime": "image/jpeg",
+      "width": 3096,
+      "height": 4128,
+      "thumbWidth": 1600,
+      "thumbHeight": 2133,
+      "score": 25,
+      "sharedAcrossProducts": false,
+      "match": "reviewed-override",
+      "matchedTargets": [
+        "asparagus",
+        "organic"
+      ],
+      "matchedModifiers": [
+        "organic"
+      ],
+      "identityEvidence": [
+        "asparagus"
+      ],
+      "sourceEvidence": {
+        "title": "HK CWB 銅鑼灣 Causeway Bay 軒尼詩道 500 Hennessy Road 希慎廣場 Hysan Place mall B2 basement shop MarketPlace by Jasons Supermarket October 2021 SS2 02.jpg",
+        "objectName": "HK CWB 銅鑼灣 Causeway Bay 軒尼詩道 500 Hennessy Road 希慎廣場 Hysan Place mall B2 basement shop MarketPlace by Jasons Supermarket October 2021 SS2 02",
+        "description": "HK CWB 銅鑼灣 Causeway Bay <a href=\"https://zh.wikipedia.org/wiki/%E8%BB%92%E5%B0%BC%E8%A9%A9%E9%81%93\" class=\"extiw\" title=\"zh:軒尼詩道\">zh:軒尼詩道</a> 500 Hennessy Road <a href=\"https://zh.wikipedia.org/wiki/%E5%B8%8C%E6%85%8E%E5%BB%A3%E5%A0%B4\" class=\"extiw\" title=\"zh:希慎廣場\">zh:希慎廣場</a> Hysan Place mall B2 basement shop MarketPlace by Jasons Supermarket in October 2021",
+        "categories": "Green asparagus|Self-published work|Hong Kong photographs taken on 2021-10-30|Organic food in Hong Kong|Files with coordinates missing SDC location of creation|October 2021 in Causeway Bay|Supermarkets in Causeway Bay|2021 in Hysan Place|Market Place by Jasons, Hysan Place|Market Place by Jasons in 2021"
+      },
+      "alternatives": []
+    },
+    {
+      "order": 13,
+      "candidateOrder": 13,
       "storyId": "avocado-organic-3ct-40719",
       "catalogId": "avocado-organic-3ct",
       "title": "Avocado - Organic 3ct",
@@ -728,8 +860,8 @@
       "alternatives": []
     },
     {
-      "order": 12,
-      "candidateOrder": 12,
+      "order": 14,
+      "candidateOrder": 14,
       "storyId": "bananas-case-6794",
       "catalogId": "bananas-case",
       "title": "Bananas (Case)",
@@ -792,8 +924,8 @@
       "alternatives": []
     },
     {
-      "order": 13,
-      "candidateOrder": 13,
+      "order": 15,
+      "candidateOrder": 15,
       "storyId": "bean-sprouts-case-63604",
       "catalogId": "bean-sprouts-case",
       "title": "Bean Sprouts (Case)",
@@ -857,8 +989,8 @@
       "alternatives": []
     },
     {
-      "order": 14,
-      "candidateOrder": 14,
+      "order": 16,
+      "candidateOrder": 16,
       "storyId": "beans-green-case-6820",
       "catalogId": "beans-green-case",
       "title": "Beans - Green (Case)",
@@ -924,8 +1056,8 @@
       "alternatives": []
     },
     {
-      "order": 15,
-      "candidateOrder": 15,
+      "order": 17,
+      "candidateOrder": 17,
       "storyId": "beets-10lb-6996",
       "catalogId": "beets-10lb",
       "title": "Beets - 10lb",
@@ -988,8 +1120,78 @@
       "alternatives": []
     },
     {
-      "order": 16,
-      "candidateOrder": 16,
+      "order": 18,
+      "candidateOrder": 18,
+      "storyId": "blackberries-pint-12oz-522",
+      "catalogId": "blackberries-pint-12oz",
+      "title": "Blackberries - Pint / 12oz",
+      "query": "Blackberries raw produce",
+      "selection": {
+        "rawScore": 90,
+        "score": 90,
+        "band": "Essential",
+        "priority": "must-know"
+      },
+      "mediaReview": {
+        "catalogId": "blackberries-pint-12oz",
+        "code": "522",
+        "commonsFile": "Blackberry (Rubus fruticosus).jpg",
+        "recognitionMode": "label-assisted",
+        "visibleIdentity": {
+          "label": "Blackberries",
+          "form": "Small clustered drupelet berries",
+          "color": "Black",
+          "cue": "Blackberries have glossy black clusters of rounded drupelets."
+        },
+        "sharedMediaBasis": "The reviewed photograph supplies the visible produce identity. Each catalog listing keeps its own code and workbook-only qualifiers.",
+        "reviewBasis": "The corrected query restores Blackberries, which the earlier taxonomy query dropped. Commons metadata names Rubus fruticosus and the inspected photographs clearly show blackberries. Pint / 12oz remains a workbook quantity claim.",
+        "labelClaims": [
+          {
+            "value": "Pint",
+            "basis": "workbook-label",
+            "sourceField": "catalog.item",
+            "sourcePages": [
+              5
+            ]
+          },
+          {
+            "value": "12oz",
+            "basis": "workbook-label",
+            "sourceField": "catalog.item",
+            "sourcePages": [
+              5
+            ]
+          }
+        ]
+      },
+      "file": "Blackberry (Rubus fruticosus).jpg",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/Blackberry_%28Rubus_fruticosus%29.jpg/1920px-Blackberry_%28Rubus_fruticosus%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "mime": "image/jpeg",
+      "width": 6000,
+      "height": 4000,
+      "thumbWidth": 1600,
+      "thumbHeight": 1067,
+      "score": 5,
+      "sharedAcrossProducts": false,
+      "match": "reviewed-override",
+      "matchedTargets": [
+        "blackberries"
+      ],
+      "matchedModifiers": [
+        "blackberries"
+      ],
+      "identityEvidence": [],
+      "sourceEvidence": {
+        "title": "Blackberry (Rubus fruticosus).jpg",
+        "objectName": "Blackberry (Rubus fruticosus)",
+        "description": "Blackberry (<i>Rubus fruticosus</i>)",
+        "categories": "Self-published work|Featured pictures on Wikipedia, English|Featured pictures by iifar|Blackberries as food|Focus stacking images of fruits|Uploads by iifar|Focus stacked image|Drupes on white background"
+      },
+      "alternatives": []
+    },
+    {
+      "order": 19,
+      "candidateOrder": 19,
       "storyId": "blueberries-2lb-39583",
       "catalogId": "blueberries-2lb",
       "title": "Blueberries - 2lb",
@@ -1050,8 +1252,8 @@
       "alternatives": []
     },
     {
-      "order": 17,
-      "candidateOrder": 17,
+      "order": 20,
+      "candidateOrder": 20,
       "storyId": "blueberries-full-pint-12oz-424",
       "catalogId": "blueberries-full-pint-12oz",
       "title": "Blueberries - Full Pint / 12oz",
@@ -1121,8 +1323,8 @@
       "alternatives": []
     },
     {
-      "order": 18,
-      "candidateOrder": 18,
+      "order": 21,
+      "candidateOrder": 21,
       "storyId": "blueberries-half-pint-6oz-71305",
       "catalogId": "blueberries-half-pint-6oz",
       "title": "Blueberries - Half Pint / 6oz",
@@ -1192,8 +1394,8 @@
       "alternatives": []
     },
     {
-      "order": 19,
-      "candidateOrder": 19,
+      "order": 22,
+      "candidateOrder": 22,
       "storyId": "bok-choy-shanghai-jr-64388",
       "catalogId": "bok-choy-shanghai-jr",
       "title": "Bok Choy - Shanghai Jr",
@@ -1259,8 +1461,8 @@
       "alternatives": []
     },
     {
-      "order": 20,
-      "candidateOrder": 20,
+      "order": 23,
+      "candidateOrder": 23,
       "storyId": "carrots-jumbo-case-63559",
       "catalogId": "carrots-jumbo-case",
       "title": "Carrots - Jumbo (Case)",
@@ -1324,8 +1526,8 @@
       "alternatives": []
     },
     {
-      "order": 21,
-      "candidateOrder": 21,
+      "order": 24,
+      "candidateOrder": 24,
       "storyId": "cherries-rwb-organic-94045",
       "catalogId": "cherries-rwb-organic",
       "title": "Cherries - RWB (Organic)",
@@ -1395,8 +1597,8 @@
       "alternatives": []
     },
     {
-      "order": 22,
-      "candidateOrder": 22,
+      "order": 25,
+      "candidateOrder": 25,
       "storyId": "citrus-bulk-unlabelled-row-1st-0240",
       "catalogId": "citrus-bulk-unlabelled-row-1st",
       "title": "Citrus - Bulk (unlabelled row, 1st)",
@@ -1466,8 +1668,8 @@
       "alternatives": []
     },
     {
-      "order": 23,
-      "candidateOrder": 23,
+      "order": 26,
+      "candidateOrder": 26,
       "storyId": "citrus-bulk-unlabelled-row-2nd-3029",
       "catalogId": "citrus-bulk-unlabelled-row-2nd",
       "title": "Citrus - Bulk (unlabelled row, 2nd)",
@@ -1537,8 +1739,8 @@
       "alternatives": []
     },
     {
-      "order": 24,
-      "candidateOrder": 24,
+      "order": 27,
+      "candidateOrder": 27,
       "storyId": "clementines-3lb-1835",
       "catalogId": "clementines-3lb",
       "title": "Clementines - 3lb",
@@ -1599,8 +1801,8 @@
       "alternatives": []
     },
     {
-      "order": 25,
-      "candidateOrder": 25,
+      "order": 28,
+      "candidateOrder": 28,
       "storyId": "corn-tray-of-5-5438",
       "catalogId": "corn-tray-of-5",
       "title": "Corn - Tray of 5",
@@ -1666,8 +1868,141 @@
       "alternatives": []
     },
     {
-      "order": 26,
-      "candidateOrder": 26,
+      "order": 29,
+      "candidateOrder": 29,
+      "storyId": "cucumbers-dill-case-38595",
+      "catalogId": "cucumbers-dill-case",
+      "title": "Cucumbers - Dill (Case)",
+      "query": "Pickling cucumber raw produce",
+      "selection": {
+        "rawScore": 75,
+        "score": 75,
+        "band": "Common",
+        "priority": "common"
+      },
+      "mediaReview": {
+        "catalogId": "cucumbers-dill-case",
+        "code": "38595",
+        "commonsFile": "PicklingCucumbers.jpg",
+        "recognitionMode": "label-assisted",
+        "visibleIdentity": {
+          "label": "Pickling cucumber",
+          "form": "Short bumpy whole cucumbers",
+          "color": "Green",
+          "cue": "Short green cucumbers with bumpy skin and blunt ends provide the recognition anchor."
+        },
+        "sharedMediaBasis": "The reviewed photograph supplies the visible produce identity. Each catalog listing keeps its own code and workbook-only qualifiers.",
+        "reviewBasis": "Inspected raw fresh pickling cucumbers in a basket; the filename, description, and pixels agree. Dill and Case remain exact workbook listing claims. The image does not claim dill seasoning, brining, a cultivar, case count, or case code equivalence.",
+        "labelClaims": [
+          {
+            "value": "Dill",
+            "basis": "workbook-label",
+            "sourceField": "catalog.item",
+            "sourcePages": [
+              4
+            ]
+          },
+          {
+            "value": "Case",
+            "basis": "workbook-label",
+            "sourceField": "catalog.item",
+            "sourcePages": [
+              4
+            ]
+          }
+        ]
+      },
+      "file": "PicklingCucumbers.jpg",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/a/ac/PicklingCucumbers.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "mime": "image/jpeg",
+      "width": 1024,
+      "height": 768,
+      "thumbWidth": 1600,
+      "thumbHeight": 1200,
+      "score": -4,
+      "sharedAcrossProducts": false,
+      "match": "reviewed-override",
+      "matchedTargets": [
+        "cucumbers",
+        "pickling"
+      ],
+      "matchedModifiers": [],
+      "identityEvidence": [
+        "cucumbers"
+      ],
+      "sourceEvidence": {
+        "title": "PicklingCucumbers.jpg",
+        "objectName": "PicklingCucumbers",
+        "description": "<p>Basket of fresh pickling cucumbers (2005).\nPicture taken by <a href=\"https://en.wikipedia.org/wiki/User:Gruepig\" class=\"extiw\" title=\"en:User:Gruepig\">Gruepig</a> (from the English Wikipedia).\n</p>\nReleased in the public domain by its author.",
+        "categories": "Cucumbers|Taken with Canon Digital IXUS v|PD-user|Baskets|Gherkins|Unknown date|Pickled gherkins"
+      },
+      "alternatives": []
+    },
+    {
+      "order": 30,
+      "candidateOrder": 30,
+      "storyId": "dill-weed-pickling-herbs-4893",
+      "catalogId": "dill-weed-pickling-herbs",
+      "title": "Dill Weed (Pickling) - Herbs",
+      "query": "Dill weed raw produce",
+      "selection": {
+        "rawScore": 75,
+        "score": 75,
+        "band": "Common",
+        "priority": "common"
+      },
+      "mediaReview": {
+        "catalogId": "dill-weed-pickling-herbs",
+        "code": "4893",
+        "commonsFile": "Samara Market 04 Dill, lots of dill (4136882030).jpg",
+        "recognitionMode": "label-assisted",
+        "visibleIdentity": {
+          "label": "Dill weed",
+          "form": "Fine feathery fronds on slender stems",
+          "color": "Green",
+          "cue": "Fine feathery green fronds on slender stems identify fresh dill weed."
+        },
+        "sharedMediaBasis": "The reviewed photograph supplies the visible produce identity. Each catalog listing keeps its own code and workbook-only qualifiers.",
+        "reviewBasis": "Pixel review confirmed abundant fresh green dill bunches at market. The photograph supports dill weed identity; Pickling and code 4893 remain exact workbook claims.",
+        "labelClaims": [
+          {
+            "value": "Pickling",
+            "basis": "workbook-label",
+            "sourceField": "catalog.item",
+            "sourcePages": [
+              4
+            ]
+          }
+        ]
+      },
+      "file": "Samara Market 04 Dill, lots of dill (4136882030).jpg",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/Samara_Market_04_Dill%2C_lots_of_dill_%284136882030%29.jpg/1920px-Samara_Market_04_Dill%2C_lots_of_dill_%284136882030%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "mime": "image/jpeg",
+      "width": 2736,
+      "height": 3648,
+      "thumbWidth": 1600,
+      "thumbHeight": 2133,
+      "score": 51,
+      "sharedAcrossProducts": false,
+      "match": "reviewed-override",
+      "matchedTargets": [
+        "dill"
+      ],
+      "matchedModifiers": [],
+      "identityEvidence": [
+        "dill"
+      ],
+      "sourceEvidence": {
+        "title": "Samara Market 04 Dill, lots of dill (4136882030).jpg",
+        "objectName": "Samara Market 04 Dill, lots of dill (4136882030)",
+        "description": "Samara Market 04 Dill, lots of dill",
+        "categories": "Taken with Panasonic Lumix DMC-FZ28|Flickr images reviewed by File Upload Bot (Magnus Manske)|Food markets in Russia|Dill spice|Photographs by Michael Clarke|Markets in Samara"
+      },
+      "alternatives": []
+    },
+    {
+      "order": 31,
+      "candidateOrder": 31,
       "storyId": "eggplant-purple-case-63582",
       "catalogId": "eggplant-purple-case",
       "title": "Eggplant - Purple (Case)",
@@ -1731,8 +2066,8 @@
       "alternatives": []
     },
     {
-      "order": 27,
-      "candidateOrder": 27,
+      "order": 32,
+      "candidateOrder": 32,
       "storyId": "figgs-black-case-2110",
       "catalogId": "figgs-black-case",
       "title": "Figgs - Black (Case)",
@@ -1799,8 +2134,8 @@
       "alternatives": []
     },
     {
-      "order": 28,
-      "candidateOrder": 28,
+      "order": 33,
+      "candidateOrder": 33,
       "storyId": "figgs-green-case-6799",
       "catalogId": "figgs-green-case",
       "title": "Figgs - Green (Case)",
@@ -1868,8 +2203,8 @@
       "alternatives": []
     },
     {
-      "order": 29,
-      "candidateOrder": 29,
+      "order": 34,
+      "candidateOrder": 34,
       "storyId": "figs-black-case-13491",
       "catalogId": "figs-black-case",
       "title": "Figs - Black (Case)",
@@ -1937,8 +2272,8 @@
       "alternatives": []
     },
     {
-      "order": 30,
-      "candidateOrder": 30,
+      "order": 35,
+      "candidateOrder": 35,
       "storyId": "figs-black-227g-pint-58206",
       "catalogId": "figs-black-227g-pint",
       "title": "Figs - Black 227g (Pint)",
@@ -2005,8 +2340,8 @@
       "alternatives": []
     },
     {
-      "order": 31,
-      "candidateOrder": 31,
+      "order": 36,
+      "candidateOrder": 36,
       "storyId": "figs-green-case-3536",
       "catalogId": "figs-green-case",
       "title": "Figs - Green (Case)",
@@ -2073,8 +2408,136 @@
       "alternatives": []
     },
     {
-      "order": 32,
-      "candidateOrder": 32,
+      "order": 37,
+      "candidateOrder": 37,
+      "storyId": "garlic-loose-bulk-4610",
+      "catalogId": "garlic-loose-bulk",
+      "title": "Garlic - Loose (Bulk)",
+      "query": "Loose garlic raw produce",
+      "selection": {
+        "rawScore": 90,
+        "score": 90,
+        "band": "Essential",
+        "priority": "must-know"
+      },
+      "mediaReview": {
+        "catalogId": "garlic-loose-bulk",
+        "code": "4610",
+        "commonsFile": "Garlic.jpg",
+        "recognitionMode": "label-assisted",
+        "visibleIdentity": {
+          "label": "Loose garlic",
+          "form": "Papery divided bulbs and cloves",
+          "color": "White",
+          "cue": "White papery bulbs divided into cloves identify loose garlic."
+        },
+        "sharedMediaBasis": "The previously reviewed photograph supplies only the shared visible garlic identity. Source code 4608 is not transferred; target code 4610 and Bulk remain bound to this target workbook listing.",
+        "reviewBasis": "The photograph clearly shows whole garlic heads and separated cloves. It is an exact visible identity match for loose garlic, while Bulk is not claimed visible.",
+        "labelClaims": [
+          {
+            "value": "Bulk",
+            "basis": "workbook-label",
+            "sourceField": "catalog.item",
+            "sourcePages": [
+              4
+            ]
+          }
+        ],
+        "reuseSourceCatalogId": "garlic-loose"
+      },
+      "file": "Garlic.jpg",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/22/Garlic.jpg/1920px-Garlic.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "mime": "image/jpeg",
+      "width": 2193,
+      "height": 1530,
+      "thumbWidth": 1600,
+      "thumbHeight": 1116,
+      "score": -57,
+      "sharedAcrossProducts": true,
+      "match": "reviewed-override",
+      "matchedTargets": [
+        "garlic"
+      ],
+      "matchedModifiers": [],
+      "identityEvidence": [
+        "garlic"
+      ],
+      "sourceEvidence": {
+        "title": "Garlic.jpg",
+        "objectName": "Garlic",
+        "description": "This is one full head of garlic beside another with removed cloves (one clove of garlic has been peeled)",
+        "categories": "Allium sativum|Garlic|GFDL|Taken with Canon PowerShot G3|License migration completed|Vector version available"
+      },
+      "alternatives": []
+    },
+    {
+      "order": 38,
+      "candidateOrder": 38,
+      "storyId": "garlic-peeled-5lb-63608",
+      "catalogId": "garlic-peeled-5lb",
+      "title": "Garlic - Peeled 5lb",
+      "query": "Peeled garlic raw produce",
+      "selection": {
+        "rawScore": 90,
+        "score": 90,
+        "band": "Essential",
+        "priority": "must-know"
+      },
+      "mediaReview": {
+        "catalogId": "garlic-peeled-5lb",
+        "code": "63608",
+        "commonsFile": "Peeled garlic cloves.jpg",
+        "recognitionMode": "label-assisted",
+        "visibleIdentity": {
+          "label": "Peeled garlic",
+          "form": "Separated smooth cloves without papery skin",
+          "color": "Cream-white",
+          "cue": "Smooth cream-white teardrop cloves show peeled garlic with the papery skin removed."
+        },
+        "sharedMediaBasis": "The reviewed photograph supplies the visible produce identity. Each catalog listing keeps its own code and workbook-only qualifiers.",
+        "reviewBasis": "Both CC0 photographs were decoded and inspected. They show separated peeled cloves with smooth exposed cream-white surfaces and no papery bulb wrapper. The old overripe candidate is replaced; 5lb remains a workbook package claim.",
+        "labelClaims": [
+          {
+            "value": "5lb",
+            "basis": "workbook-label",
+            "sourceField": "catalog.item",
+            "sourcePages": [
+              4
+            ]
+          }
+        ]
+      },
+      "file": "Peeled garlic cloves.jpg",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Peeled_garlic_cloves.jpg/1920px-Peeled_garlic_cloves.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "mime": "image/jpeg",
+      "width": 3000,
+      "height": 3000,
+      "thumbWidth": 1600,
+      "thumbHeight": 1600,
+      "score": 106,
+      "sharedAcrossProducts": false,
+      "match": "reviewed-override",
+      "matchedTargets": [
+        "garlic",
+        "peeled"
+      ],
+      "matchedModifiers": [
+        "peeled"
+      ],
+      "identityEvidence": [
+        "garlic"
+      ],
+      "sourceEvidence": {
+        "title": "Peeled garlic cloves.jpg",
+        "objectName": "Peeled garlic cloves",
+        "description": "Peeled garlic cloves",
+        "categories": "CC-Zero|Self-published work|Files with coordinates missing SDC location of creation|Garlic textures"
+      },
+      "alternatives": []
+    },
+    {
+      "order": 39,
+      "candidateOrder": 39,
       "storyId": "garlic-1kg-bagged-9578",
       "catalogId": "garlic-1kg-bagged",
       "title": "Garlic 1kg (bagged)",
@@ -2145,8 +2608,8 @@
       "alternatives": []
     },
     {
-      "order": 33,
-      "candidateOrder": 33,
+      "order": 40,
+      "candidateOrder": 40,
       "storyId": "grapes-green-seedless-2lb-84022",
       "catalogId": "grapes-green-seedless-2lb",
       "title": "Grapes - Green (Seedless) 2lb",
@@ -2210,8 +2673,8 @@
       "alternatives": []
     },
     {
-      "order": 34,
-      "candidateOrder": 34,
+      "order": 41,
+      "candidateOrder": 41,
       "storyId": "grapes-red-seedless-2lb-84636",
       "catalogId": "grapes-red-seedless-2lb",
       "title": "Grapes - Red (Seedless) 2lb",
@@ -2275,8 +2738,8 @@
       "alternatives": []
     },
     {
-      "order": 35,
-      "candidateOrder": 35,
+      "order": 42,
+      "candidateOrder": 42,
       "storyId": "kiwi-1kg-1465",
       "catalogId": "kiwi-1kg",
       "title": "Kiwi - 1kg",
@@ -2337,8 +2800,8 @@
       "alternatives": []
     },
     {
-      "order": 36,
-      "candidateOrder": 36,
+      "order": 43,
+      "candidateOrder": 43,
       "storyId": "lettuce-boston-dome-3557",
       "catalogId": "lettuce-boston-dome",
       "title": "Lettuce - Boston (Dome)",
@@ -2403,8 +2866,8 @@
       "alternatives": []
     },
     {
-      "order": 37,
-      "candidateOrder": 37,
+      "order": 44,
+      "candidateOrder": 44,
       "storyId": "lettuce-iceberg-organic-94061",
       "catalogId": "lettuce-iceberg-organic",
       "title": "Lettuce - Iceberg (Organic)",
@@ -2468,8 +2931,8 @@
       "alternatives": []
     },
     {
-      "order": 38,
-      "candidateOrder": 38,
+      "order": 45,
+      "candidateOrder": 45,
       "storyId": "limes-key-1lb-3653",
       "catalogId": "limes-key-1lb",
       "title": "Limes - Key 1lb",
@@ -2534,8 +2997,8 @@
       "alternatives": []
     },
     {
-      "order": 39,
-      "candidateOrder": 39,
+      "order": 46,
+      "candidateOrder": 46,
       "storyId": "mangoes-case-10lb-62464",
       "catalogId": "mangoes-case-10lb",
       "title": "Mangoes - Case 10lb",
@@ -2605,8 +3068,8 @@
       "alternatives": []
     },
     {
-      "order": 40,
-      "candidateOrder": 40,
+      "order": 47,
+      "candidateOrder": 47,
       "storyId": "mangos-ataulfo-case-1043",
       "catalogId": "mangos-ataulfo-case",
       "title": "Mangos - Ataulfo (Case)",
@@ -2673,8 +3136,8 @@
       "alternatives": []
     },
     {
-      "order": 41,
-      "candidateOrder": 41,
+      "order": 48,
+      "candidateOrder": 48,
       "storyId": "mangos-east-indian-case-12966",
       "catalogId": "mangos-east-indian-case",
       "title": "Mangos - East Indian (Case)",
@@ -2740,8 +3203,8 @@
       "alternatives": []
     },
     {
-      "order": 42,
-      "candidateOrder": 42,
+      "order": 49,
+      "candidateOrder": 49,
       "storyId": "melons-bitter-fu-qua-4783",
       "catalogId": "melons-bitter-fu-qua",
       "title": "Melons - Bitter (Fu Qua)",
@@ -2795,8 +3258,8 @@
       "alternatives": []
     },
     {
-      "order": 43,
-      "candidateOrder": 43,
+      "order": 50,
+      "candidateOrder": 50,
       "storyId": "melons-cantaloupe-organic-94050",
       "catalogId": "melons-cantaloupe-organic",
       "title": "Melons - Cantaloupe (Organic)",
@@ -2855,8 +3318,207 @@
       "alternatives": []
     },
     {
-      "order": 44,
-      "candidateOrder": 44,
+      "order": 51,
+      "candidateOrder": 51,
+      "storyId": "methileaf-herbs-59994",
+      "catalogId": "methileaf-herbs",
+      "title": "Methileaf - Herbs",
+      "query": "Methileaf (fenugreek) raw produce",
+      "selection": {
+        "rawScore": 105,
+        "score": 100,
+        "band": "Essential",
+        "priority": "must-know"
+      },
+      "mediaReview": {
+        "catalogId": "methileaf-herbs",
+        "code": "59994",
+        "commonsFile": "Methi leaves.jpg",
+        "recognitionMode": "label-assisted",
+        "visibleIdentity": {
+          "label": "Methileaf (fenugreek)",
+          "form": "Small oval trifoliate leaflets on slender stems",
+          "color": "Green",
+          "cue": "Clusters of three small oval green leaflets on slender stems identify fresh methi leaf."
+        },
+        "sharedMediaBasis": "The previously reviewed photograph and ICAR synonym evidence supply the shared visible methi/fenugreek leaf identity. Source code 4909 is not transferred; target code 59994 remains bound to the exact Methileaf workbook listing.",
+        "reviewBasis": "The photograph shows fresh Methi (Fenugreek) leaves and its Commons metadata names that identity directly. The visible form is recorded as small trifoliate leaflets rather than the earlier generic broad-leaf description.",
+        "reuseSourceCatalogId": "methi-leaf-fenugreek",
+        "labelClaims": [
+          {
+            "value": "Herbs",
+            "basis": "workbook-label",
+            "sourceField": "catalog.item",
+            "sourcePages": [
+              1
+            ]
+          }
+        ]
+      },
+      "file": "Methi leaves.jpg",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/Methi_leaves.jpg/1920px-Methi_leaves.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "mime": "image/jpeg",
+      "width": 3456,
+      "height": 2592,
+      "thumbWidth": 1600,
+      "thumbHeight": 1200,
+      "score": -75,
+      "sharedAcrossProducts": true,
+      "match": "reviewed-override",
+      "matchedTargets": [
+        "fenugreek"
+      ],
+      "matchedModifiers": [],
+      "identityEvidence": [
+        "fenugreek",
+        "methi"
+      ],
+      "sourceEvidence": {
+        "title": "Methi leaves.jpg",
+        "objectName": "Methi leaves",
+        "description": "Methi (Fenugreek) leaves",
+        "categories": "Trigonella foenum-graecum|Self-published work|Fenugreek greens in India"
+      },
+      "alternatives": []
+    },
+    {
+      "order": 52,
+      "candidateOrder": 52,
+      "storyId": "mushrooms-white-bulk-rcwc-1102",
+      "catalogId": "mushrooms-white-bulk-rcwc",
+      "title": "Mushrooms - White (Bulk, RCWC)",
+      "query": "White button mushrooms raw produce",
+      "selection": {
+        "rawScore": 75,
+        "score": 75,
+        "band": "Common",
+        "priority": "common"
+      },
+      "mediaReview": {
+        "catalogId": "mushrooms-white-bulk-rcwc",
+        "code": "1102",
+        "commonsFile": "1 - button mushrooms.jpg",
+        "recognitionMode": "label-assisted",
+        "visibleIdentity": {
+          "label": "White button mushrooms",
+          "form": "Small round caps with short stems",
+          "color": "White",
+          "cue": "Small white dome-shaped caps with short pale stems identify white button mushrooms."
+        },
+        "sharedMediaBasis": "The previously reviewed photograph supplies only the shared visible white-mushroom identity. Source code 4085 and its RCSS/EXFD wording are not transferred; target code 1102 and RCWC remain bound to this target workbook listing.",
+        "reviewBasis": "The photograph clearly shows white button mushrooms with round pale caps and short stems. Bulk and RCWC are preserved only as workbook claims.",
+        "labelClaims": [
+          {
+            "value": "Bulk, RCWC",
+            "basis": "workbook-label",
+            "sourceField": "catalog.item",
+            "sourcePages": [
+              4
+            ]
+          }
+        ],
+        "reuseSourceCatalogId": "mushrooms-white-bulk-rcss-exfd-4645-4653"
+      },
+      "file": "1 - button mushrooms.jpg",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/3/3e/1_-_button_mushrooms.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "mime": "image/jpeg",
+      "width": 384,
+      "height": 512,
+      "thumbWidth": 1600,
+      "thumbHeight": 2133,
+      "score": -18,
+      "sharedAcrossProducts": true,
+      "match": "reviewed-override",
+      "matchedTargets": [
+        "mushrooms",
+        "white",
+        "button"
+      ],
+      "matchedModifiers": [
+        "white"
+      ],
+      "identityEvidence": [
+        "mushrooms"
+      ],
+      "sourceEvidence": {
+        "title": "1 - button mushrooms.jpg",
+        "objectName": "1 - button mushrooms",
+        "description": "white mushrooms/button mushrooms/champignon mushrooms (Agaricus bosporus)",
+        "categories": "Self-published work|Agaricus bisporus (cultivated)"
+      },
+      "alternatives": []
+    },
+    {
+      "order": 53,
+      "candidateOrder": 53,
+      "storyId": "olives-green-case-54050",
+      "catalogId": "olives-green-case",
+      "title": "Olives - Green (Case)",
+      "query": "Green olives raw produce",
+      "selection": {
+        "rawScore": 75,
+        "score": 75,
+        "band": "Common",
+        "priority": "common"
+      },
+      "mediaReview": {
+        "catalogId": "olives-green-case",
+        "code": "54050",
+        "commonsFile": "A crate of olives fresh from the tree (15299192895).jpg",
+        "recognitionMode": "label-assisted",
+        "visibleIdentity": {
+          "label": "Green olives",
+          "form": "Small oval whole stone fruits",
+          "color": "Green",
+          "cue": "Green olives appear as small oval fruits with smooth green skins."
+        },
+        "sharedMediaBasis": "The reviewed photograph supplies the visible produce identity. Each catalog listing keeps its own code and workbook-only qualifiers.",
+        "reviewBasis": "Inspected photograph shows a harvest crate filled overwhelmingly with smooth oval green olives, with a few naturally darker fruits. Metadata specifies olives fresh from the tree and category Green olives. Photo establishes identity and color; the workbook alone supplies the case listing and code.",
+        "labelClaims": [
+          {
+            "value": "Case",
+            "basis": "workbook-label",
+            "sourceField": "catalog.item",
+            "sourcePages": [
+              4
+            ]
+          }
+        ],
+        "contextTokens": [
+          "tree"
+        ]
+      },
+      "file": "A crate of olives fresh from the tree (15299192895).jpg",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/A_crate_of_olives_fresh_from_the_tree_%2815299192895%29.jpg/1920px-A_crate_of_olives_fresh_from_the_tree_%2815299192895%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "mime": "image/jpeg",
+      "width": 4912,
+      "height": 7360,
+      "thumbWidth": 1600,
+      "thumbHeight": 2397,
+      "score": 98,
+      "sharedAcrossProducts": false,
+      "match": "reviewed-override",
+      "matchedTargets": [
+        "olives",
+        "green",
+        "tree"
+      ],
+      "matchedModifiers": [
+        "olives",
+        "green"
+      ],
+      "identityEvidence": [],
+      "sourceEvidence": {
+        "title": "A crate of olives fresh from the tree (15299192895).jpg",
+        "objectName": "A crate of olives fresh from the tree (15299192895)",
+        "description": "A crate of olives fresh from the tree",
+        "categories": "Files with coordinates missing SDC location of creation|Flickr images reviewed by FlickreviewR 2|Green olives|Photographs by Maarten Heerlien"
+      },
+      "alternatives": []
+    },
+    {
+      "order": 54,
+      "candidateOrder": 54,
       "storyId": "onions-red-10lb-3506",
       "catalogId": "onions-red-10lb",
       "title": "Onions - Red 10lb",
@@ -2921,8 +3583,8 @@
       "alternatives": []
     },
     {
-      "order": 45,
-      "candidateOrder": 45,
+      "order": 55,
+      "candidateOrder": 55,
       "storyId": "onions-yellow-3lb-bag-59662",
       "catalogId": "onions-yellow-3lb-bag",
       "title": "Onions - Yellow 3lb (Bag)",
@@ -2997,8 +3659,8 @@
       "alternatives": []
     },
     {
-      "order": 46,
-      "candidateOrder": 46,
+      "order": 56,
+      "candidateOrder": 56,
       "storyId": "onions-yellow-jumbo-2-case-63555",
       "catalogId": "onions-yellow-jumbo-2-case",
       "title": "Onions - Yellow Jumbo #2 (Case)",
@@ -3073,8 +3735,8 @@
       "alternatives": []
     },
     {
-      "order": 47,
-      "candidateOrder": 47,
+      "order": 57,
+      "candidateOrder": 57,
       "storyId": "onions-yellow-organic-2lb-62810",
       "catalogId": "onions-yellow-organic-2lb",
       "title": "Onions - Yellow Organic 2lb",
@@ -3149,8 +3811,8 @@
       "alternatives": []
     },
     {
-      "order": 48,
-      "candidateOrder": 48,
+      "order": 58,
+      "candidateOrder": 58,
       "storyId": "peaches-case-68599",
       "catalogId": "peaches-case",
       "title": "Peaches (Case)",
@@ -3211,8 +3873,8 @@
       "alternatives": []
     },
     {
-      "order": 49,
-      "candidateOrder": 49,
+      "order": 59,
+      "candidateOrder": 59,
       "storyId": "peaches-3l-6992",
       "catalogId": "peaches-3l",
       "title": "Peaches - 3L",
@@ -3273,8 +3935,8 @@
       "alternatives": []
     },
     {
-      "order": 50,
-      "candidateOrder": 50,
+      "order": 60,
+      "candidateOrder": 60,
       "storyId": "peaches-freestone-case-13241",
       "catalogId": "peaches-freestone-case",
       "title": "Peaches - Freestone (Case)",
@@ -3344,8 +4006,8 @@
       "alternatives": []
     },
     {
-      "order": 51,
-      "candidateOrder": 51,
+      "order": 61,
+      "candidateOrder": 61,
       "storyId": "peaches-tree-ripe-case-6808",
       "catalogId": "peaches-tree-ripe-case",
       "title": "Peaches - Tree Ripe (Case)",
@@ -3408,8 +4070,8 @@
       "alternatives": []
     },
     {
-      "order": 52,
-      "candidateOrder": 52,
+      "order": 62,
+      "candidateOrder": 62,
       "storyId": "pears-bartlett-3lb-organic-63486",
       "catalogId": "pears-bartlett-3lb-organic",
       "title": "Pears - Bartlett 3lb (Organic)",
@@ -3484,8 +4146,8 @@
       "alternatives": []
     },
     {
-      "order": 53,
-      "candidateOrder": 53,
+      "order": 63,
+      "candidateOrder": 63,
       "storyId": "pears-bartlett-5lb-bag-63487",
       "catalogId": "pears-bartlett-5lb-bag",
       "title": "Pears - Bartlett 5lb (Bag)",
@@ -3559,8 +4221,8 @@
       "alternatives": []
     },
     {
-      "order": 54,
-      "candidateOrder": 54,
+      "order": 64,
+      "candidateOrder": 64,
       "storyId": "peppers-assorted-bin-8170",
       "catalogId": "peppers-assorted-bin",
       "title": "Peppers - Assorted (Bin)",
@@ -3625,8 +4287,8 @@
       "alternatives": []
     },
     {
-      "order": 55,
-      "candidateOrder": 55,
+      "order": 65,
+      "candidateOrder": 65,
       "storyId": "peppers-green-case-63866",
       "catalogId": "peppers-green-case",
       "title": "Peppers - Green (Case)",
@@ -3691,8 +4353,8 @@
       "alternatives": []
     },
     {
-      "order": 56,
-      "candidateOrder": 56,
+      "order": 66,
+      "candidateOrder": 66,
       "storyId": "peppers-green-4ct-bag-3014",
       "catalogId": "peppers-green-4ct-bag",
       "title": "Peppers - Green 4ct (Bag)",
@@ -3765,8 +4427,8 @@
       "alternatives": []
     },
     {
-      "order": 57,
-      "candidateOrder": 57,
+      "order": 67,
+      "candidateOrder": 67,
       "storyId": "peppers-green-hh-bulk-3120",
       "catalogId": "peppers-green-hh-bulk",
       "title": "Peppers - Green HH (Bulk)",
@@ -3833,8 +4495,8 @@
       "alternatives": []
     },
     {
-      "order": 58,
-      "candidateOrder": 58,
+      "order": 68,
+      "candidateOrder": 68,
       "storyId": "peppers-red-4ct-bag-64116",
       "catalogId": "peppers-red-4ct-bag",
       "title": "Peppers - Red 4ct (Bag)",
@@ -3907,8 +4569,8 @@
       "alternatives": []
     },
     {
-      "order": 59,
-      "candidateOrder": 59,
+      "order": 69,
+      "candidateOrder": 69,
       "storyId": "persimmons-hachiya-case-36308",
       "catalogId": "persimmons-hachiya-case",
       "title": "Persimmons - Hachiya (Case)",
@@ -3971,8 +4633,70 @@
       "alternatives": []
     },
     {
-      "order": 60,
-      "candidateOrder": 60,
+      "order": 70,
+      "candidateOrder": 70,
+      "storyId": "pistachios-bulk-nuts-1400",
+      "catalogId": "pistachios-bulk-nuts",
+      "title": "Pistachios (Bulk) - Nuts",
+      "query": "Pistachios raw produce",
+      "selection": {
+        "rawScore": 75,
+        "score": 75,
+        "band": "Common",
+        "priority": "common"
+      },
+      "mediaReview": {
+        "catalogId": "pistachios-bulk-nuts",
+        "code": "1400",
+        "commonsFile": "Pistachio nuts from Iran.jpg",
+        "recognitionMode": "label-assisted",
+        "visibleIdentity": {
+          "label": "Pistachios",
+          "form": "Small nuts in split beige shells",
+          "color": "Beige with purple-brown kernels",
+          "cue": "Split beige shells reveal purple-brown pistachio kernels."
+        },
+        "sharedMediaBasis": "The reviewed photograph supplies the visible produce identity. Each catalog listing keeps its own code and workbook-only qualifiers.",
+        "reviewBasis": "Inspected photograph shows in-shell pistachios in a box, with recognizable split beige shells and kernels. The source identifies Pistachio nuts from Iran; origin is not added to the lesson. Bulk remains a workbook sale-label claim.",
+        "labelClaims": [
+          {
+            "value": "Bulk",
+            "basis": "workbook-label",
+            "sourceField": "catalog.item",
+            "sourcePages": [
+              5
+            ]
+          }
+        ]
+      },
+      "file": "Pistachio nuts from Iran.jpg",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/Pistachio_nuts_from_Iran.jpg/1920px-Pistachio_nuts_from_Iran.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "mime": "image/jpeg",
+      "width": 3024,
+      "height": 4032,
+      "thumbWidth": 1600,
+      "thumbHeight": 2133,
+      "score": 41,
+      "sharedAcrossProducts": false,
+      "match": "reviewed-override",
+      "matchedTargets": [
+        "nuts"
+      ],
+      "matchedModifiers": [
+        "nuts"
+      ],
+      "identityEvidence": [],
+      "sourceEvidence": {
+        "title": "Pistachio nuts from Iran.jpg",
+        "objectName": "Pistachio nuts from Iran",
+        "description": "Pistachio nuts from Iran",
+        "categories": "Pistachio nuts|Self-published work|Files with coordinates missing SDC location of creation (52° N, 4° E)|Pistachio nuts in Iran"
+      },
+      "alternatives": []
+    },
+    {
+      "order": 71,
+      "candidateOrder": 71,
       "storyId": "plums-blue-1-6706",
       "catalogId": "plums-blue-1-5l",
       "title": "Plums - Blue 1.5L",
@@ -4037,8 +4761,8 @@
       "alternatives": []
     },
     {
-      "order": 61,
-      "candidateOrder": 61,
+      "order": 72,
+      "candidateOrder": 72,
       "storyId": "plums-yellow-1-1383",
       "catalogId": "plums-yellow-1-5l",
       "title": "Plums - Yellow 1.5L",
@@ -4103,8 +4827,8 @@
       "alternatives": []
     },
     {
-      "order": 62,
-      "candidateOrder": 62,
+      "order": 73,
+      "candidateOrder": 73,
       "storyId": "potato-red-10lb-2674",
       "catalogId": "potato-red-10lb",
       "title": "Potato - Red 10lb",
@@ -4169,8 +4893,8 @@
       "alternatives": []
     },
     {
-      "order": 63,
-      "candidateOrder": 63,
+      "order": 74,
+      "candidateOrder": 74,
       "storyId": "potato-red-20lb-2116",
       "catalogId": "potato-red-20lb",
       "title": "Potato - Red 20lb",
@@ -4235,8 +4959,8 @@
       "alternatives": []
     },
     {
-      "order": 64,
-      "candidateOrder": 64,
+      "order": 75,
+      "candidateOrder": 75,
       "storyId": "potato-russet-white-20lb-62006",
       "catalogId": "potato-russet-white-20lb",
       "title": "Potato - Russet / White 20lb",
@@ -4303,8 +5027,8 @@
       "alternatives": []
     },
     {
-      "order": 65,
-      "candidateOrder": 65,
+      "order": 76,
+      "candidateOrder": 76,
       "storyId": "potato-russet-10lb-171",
       "catalogId": "potato-russet-10lb",
       "title": "Potato - Russet 10lb",
@@ -4368,8 +5092,8 @@
       "alternatives": []
     },
     {
-      "order": 66,
-      "candidateOrder": 66,
+      "order": 77,
+      "candidateOrder": 77,
       "storyId": "potato-white-10lb-41",
       "catalogId": "potato-white-10lb",
       "title": "Potato - White 10lb",
@@ -4433,8 +5157,8 @@
       "alternatives": []
     },
     {
-      "order": 67,
-      "candidateOrder": 67,
+      "order": 78,
+      "candidateOrder": 78,
       "storyId": "potato-yellow-10lb-1093",
       "catalogId": "potato-yellow-10lb",
       "title": "Potato - Yellow 10lb",
@@ -4497,8 +5221,8 @@
       "alternatives": []
     },
     {
-      "order": 68,
-      "candidateOrder": 68,
+      "order": 79,
+      "candidateOrder": 79,
       "storyId": "prickly-pears-tray-case-6798",
       "catalogId": "prickly-pears-tray-case",
       "title": "Prickly Pears (Tray / Case)",
@@ -4564,8 +5288,329 @@
       "alternatives": []
     },
     {
-      "order": 69,
-      "candidateOrder": 69,
+      "order": 80,
+      "candidateOrder": 80,
+      "storyId": "raspberries-red-half-pint-6oz-7298",
+      "catalogId": "raspberries-red-half-pint-6oz",
+      "title": "Raspberries - Red Half Pint / 6oz",
+      "query": "Red raspberries raw produce",
+      "selection": {
+        "rawScore": 90,
+        "score": 90,
+        "band": "Essential",
+        "priority": "must-know"
+      },
+      "mediaReview": {
+        "catalogId": "raspberries-red-half-pint-6oz",
+        "code": "7298",
+        "commonsFile": "Raspberry - whole (Rubus idaeus).jpg",
+        "recognitionMode": "label-assisted",
+        "visibleIdentity": {
+          "label": "Red raspberries",
+          "form": "Soft clustered drupelet berries with hollow centers",
+          "color": "Red",
+          "cue": "Red raspberries form soft clusters of small drupelets around a hollow center."
+        },
+        "sharedMediaBasis": "Both workbook rows name red raspberries. The inspected files support the same visible berry identity; each lesson must show its own exact package label and code. No photograph establishes package weight.",
+        "reviewBasis": "The corrected query restores Raspberries, dropped by the earlier taxonomy query. Metadata and three inspected photographs show red Rubus idaeus fruit. Half Pint / 6oz stays a workbook quantity claim.",
+        "labelClaims": [
+          {
+            "value": "Half Pint",
+            "basis": "workbook-label",
+            "sourceField": "catalog.item",
+            "sourcePages": [
+              5
+            ]
+          },
+          {
+            "value": "6oz",
+            "basis": "workbook-label",
+            "sourceField": "catalog.item",
+            "sourcePages": [
+              5
+            ]
+          }
+        ]
+      },
+      "file": "Raspberry - whole (Rubus idaeus).jpg",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Raspberry_-_whole_%28Rubus_idaeus%29.jpg/1920px-Raspberry_-_whole_%28Rubus_idaeus%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "mime": "image/jpeg",
+      "width": 5766,
+      "height": 3840,
+      "thumbWidth": 1600,
+      "thumbHeight": 1066,
+      "score": -14,
+      "sharedAcrossProducts": false,
+      "match": "reviewed-override",
+      "matchedTargets": [],
+      "matchedModifiers": [],
+      "identityEvidence": [],
+      "sourceEvidence": {
+        "title": "Raspberry - whole (Rubus idaeus).jpg",
+        "objectName": "Raspberry - whole (Rubus idaeus)",
+        "description": "Raspberry, length about 20 mm",
+        "categories": "Rubus idaeus (cultivars)|Self-published work|Featured pictures on Wikipedia, English|Featured pictures of fruit|Featured pictures by iifar|Photographs taken on 2020-11-28|Bokeh photographs of food|Food on gray background|Raspberry textures|Focus stacking images of fruits|Uploads by iifar|Focus stacked image"
+      },
+      "alternatives": []
+    },
+    {
+      "order": 81,
+      "candidateOrder": 81,
+      "storyId": "raspberries-red-pint-12oz-4054",
+      "catalogId": "raspberries-red-pint-12oz",
+      "title": "Raspberries - Red Pint / 12oz",
+      "query": "Red raspberries raw produce",
+      "selection": {
+        "rawScore": 90,
+        "score": 90,
+        "band": "Essential",
+        "priority": "must-know"
+      },
+      "mediaReview": {
+        "catalogId": "raspberries-red-pint-12oz",
+        "code": "4054",
+        "commonsFile": "Raspberry - whole (Rubus idaeus).jpg",
+        "recognitionMode": "label-assisted",
+        "visibleIdentity": {
+          "label": "Red raspberries",
+          "form": "Soft clustered drupelet berries with hollow centers",
+          "color": "Red",
+          "cue": "Red raspberries form soft clusters of small drupelets around a hollow center."
+        },
+        "sharedMediaBasis": "Both workbook rows name red raspberries. The inspected files support the same visible berry identity; each lesson must show its own exact package label and code. No photograph establishes package weight.",
+        "reviewBasis": "The corrected query restores Raspberries, dropped by the earlier taxonomy query. The same reviewed red-raspberry identity images may be shared with the half-pint listing; Pint / 12oz and 4054 belong only to this workbook row.",
+        "labelClaims": [
+          {
+            "value": "Pint",
+            "basis": "workbook-label",
+            "sourceField": "catalog.item",
+            "sourcePages": [
+              5
+            ]
+          },
+          {
+            "value": "12oz",
+            "basis": "workbook-label",
+            "sourceField": "catalog.item",
+            "sourcePages": [
+              5
+            ]
+          }
+        ]
+      },
+      "file": "Raspberry - whole (Rubus idaeus).jpg",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Raspberry_-_whole_%28Rubus_idaeus%29.jpg/1920px-Raspberry_-_whole_%28Rubus_idaeus%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "mime": "image/jpeg",
+      "width": 5766,
+      "height": 3840,
+      "thumbWidth": 1600,
+      "thumbHeight": 1066,
+      "score": -114,
+      "sharedAcrossProducts": true,
+      "match": "reviewed-override",
+      "matchedTargets": [],
+      "matchedModifiers": [],
+      "identityEvidence": [],
+      "sourceEvidence": {
+        "title": "Raspberry - whole (Rubus idaeus).jpg",
+        "objectName": "Raspberry - whole (Rubus idaeus)",
+        "description": "Raspberry, length about 20 mm",
+        "categories": "Rubus idaeus (cultivars)|Self-published work|Featured pictures on Wikipedia, English|Featured pictures of fruit|Featured pictures by iifar|Photographs taken on 2020-11-28|Bokeh photographs of food|Food on gray background|Raspberry textures|Focus stacking images of fruits|Uploads by iifar|Focus stacked image"
+      },
+      "alternatives": []
+    },
+    {
+      "order": 82,
+      "candidateOrder": 82,
+      "storyId": "sher-li-hon-69624",
+      "catalogId": "sher-li-hon",
+      "title": "Sher-Li-Hon",
+      "query": "Sher-Li-Hon snow mustard raw produce",
+      "selection": {
+        "rawScore": 90,
+        "score": 90,
+        "band": "Essential",
+        "priority": "must-know"
+      },
+      "mediaReview": {
+        "catalogId": "sher-li-hon",
+        "code": "69624",
+        "commonsFile": "Snow mustard Brassica juncea.jpg",
+        "recognitionMode": "product-and-loose-form",
+        "visibleIdentity": {
+          "label": "Sher-Li-Hon snow mustard",
+          "form": "Broad serrated leaves and green stems",
+          "color": "Green",
+          "cue": "Look for broad green leaves with serrated edges and pale ribs running into the stems."
+        },
+        "sharedMediaBasis": "The reviewed photograph supplies the visible produce identity. Each catalog listing keeps its own code and workbook-only qualifiers.",
+        "reviewBasis": "Inspected the original 2268 by 4032 photograph. Raw green leaf blades, serrated margins, pale midribs, and attached stems are clearly visible. The exact name bridge is supplier Sher Li Hon/雪里紅, agricultural museum 雪里红/雪里蕻, then photographer snow mustard/雪里蕻. The photograph depicts a growing plant; it supports leaf and stem recognition, with no claim that a harvested bunch, retail unit, or package is shown. Only one distinct source photograph was found; any role reuse must remain explicit.",
+        "identityEvidence": [
+          "snow mustard"
+        ],
+        "contextTokens": [
+          "plant"
+        ]
+      },
+      "file": "Snow mustard Brassica juncea.jpg",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/Snow_mustard_Brassica_juncea.jpg/1920px-Snow_mustard_Brassica_juncea.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "mime": "image/jpeg",
+      "width": 2268,
+      "height": 4032,
+      "thumbWidth": 1600,
+      "thumbHeight": 2844,
+      "score": 38,
+      "sharedAcrossProducts": false,
+      "match": "reviewed-override",
+      "matchedTargets": [
+        "snow",
+        "mustard"
+      ],
+      "matchedModifiers": [],
+      "identityEvidence": [],
+      "sourceEvidence": {
+        "title": "Snow mustard Brassica juncea.jpg",
+        "objectName": "Snow mustard Brassica juncea",
+        "description": "Brassica juncea  snow mustard (雪里蕻)",
+        "categories": "Brassica juncea|Self-published work|Files with coordinates missing SDC location of creation"
+      },
+      "alternatives": []
+    },
+    {
+      "order": 83,
+      "candidateOrder": 83,
+      "storyId": "strawberries-1lb-42468",
+      "catalogId": "strawberries-1lb",
+      "title": "Strawberries - 1lb",
+      "query": "Strawberries raw produce",
+      "selection": {
+        "rawScore": 90,
+        "score": 90,
+        "band": "Essential",
+        "priority": "must-know"
+      },
+      "mediaReview": {
+        "catalogId": "strawberries-1lb",
+        "code": "42468",
+        "commonsFile": "Garden strawberry (Fragaria × ananassa) single2.jpg",
+        "recognitionMode": "label-assisted",
+        "visibleIdentity": {
+          "label": "Strawberries",
+          "form": "Red seeded berries with leafy caps",
+          "color": "Red",
+          "cue": "Strawberries show small surface seeds and green leafy caps on red fruit."
+        },
+        "sharedMediaBasis": "The same strawberry identity is used for both workbook quantities. Shared photos teach fruit recognition; package weight and code are explicit row-specific workbook claims.",
+        "reviewBasis": "Three inspected photographs show strawberries as the sole produce target, replacing the mixed-berry discovery set. 1lb remains an explicit workbook package claim and is never inferred from basket size.",
+        "labelClaims": [
+          {
+            "value": "1lb",
+            "basis": "workbook-label",
+            "sourceField": "catalog.item",
+            "sourcePages": [
+              5
+            ]
+          }
+        ],
+        "contextTokens": [
+          "garden"
+        ]
+      },
+      "file": "Garden strawberry (Fragaria × ananassa) single2.jpg",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/Garden_strawberry_%28Fragaria_%C3%97_ananassa%29_single2.jpg/1920px-Garden_strawberry_%28Fragaria_%C3%97_ananassa%29_single2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "mime": "image/jpeg",
+      "width": 8256,
+      "height": 5504,
+      "thumbWidth": 1600,
+      "thumbHeight": 1067,
+      "score": 35,
+      "sharedAcrossProducts": false,
+      "match": "reviewed-override",
+      "matchedTargets": [
+        "strawberries",
+        "garden"
+      ],
+      "matchedModifiers": [
+        "strawberries"
+      ],
+      "identityEvidence": [],
+      "sourceEvidence": {
+        "title": "Garden strawberry (Fragaria × ananassa) single2.jpg",
+        "objectName": "Garden strawberry (Fragaria × ananassa) single2",
+        "description": "Garden <a href=\"https://en.wikipedia.org/wiki/Strawberry\" class=\"extiw\" title=\"en:Strawberry\">Strawberry</a>. Grown in Spain",
+        "categories": "Self-published work|Featured pictures on Wikipedia, English|Featured pictures on Wikipedia, Persian|Featured pictures by iifar|Fruits on gray background|Photographs taken on 2022-01-26|Single strawberries|Focus stacking images of fruits|Uploads by iifar|Focus stacked image"
+      },
+      "alternatives": []
+    },
+    {
+      "order": 84,
+      "candidateOrder": 84,
+      "storyId": "strawberries-2lb-36983",
+      "catalogId": "strawberries-2lb",
+      "title": "Strawberries - 2lb",
+      "query": "Strawberries raw produce",
+      "selection": {
+        "rawScore": 90,
+        "score": 90,
+        "band": "Essential",
+        "priority": "must-know"
+      },
+      "mediaReview": {
+        "catalogId": "strawberries-2lb",
+        "code": "36983",
+        "commonsFile": "Garden strawberry (Fragaria × ananassa) single2.jpg",
+        "recognitionMode": "label-assisted",
+        "visibleIdentity": {
+          "label": "Strawberries",
+          "form": "Red seeded berries with leafy caps",
+          "color": "Red",
+          "cue": "Strawberries show small surface seeds and green leafy caps on red fruit."
+        },
+        "sharedMediaBasis": "The same strawberry identity is used for both workbook quantities. Shared photos teach fruit recognition; package weight and code are explicit row-specific workbook claims.",
+        "reviewBasis": "The reviewed strawberry image set is shared with the 1lb listing because the visible produce identity is the same. The 2lb quantity and 36983 code remain exclusive to this workbook row.",
+        "labelClaims": [
+          {
+            "value": "2lb",
+            "basis": "workbook-label",
+            "sourceField": "catalog.item",
+            "sourcePages": [
+              5
+            ]
+          }
+        ],
+        "contextTokens": [
+          "garden"
+        ]
+      },
+      "file": "Garden strawberry (Fragaria × ananassa) single2.jpg",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/Garden_strawberry_%28Fragaria_%C3%97_ananassa%29_single2.jpg/1920px-Garden_strawberry_%28Fragaria_%C3%97_ananassa%29_single2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "mime": "image/jpeg",
+      "width": 8256,
+      "height": 5504,
+      "thumbWidth": 1600,
+      "thumbHeight": 1067,
+      "score": -65,
+      "sharedAcrossProducts": true,
+      "match": "reviewed-override",
+      "matchedTargets": [
+        "strawberries",
+        "garden"
+      ],
+      "matchedModifiers": [
+        "strawberries"
+      ],
+      "identityEvidence": [],
+      "sourceEvidence": {
+        "title": "Garden strawberry (Fragaria × ananassa) single2.jpg",
+        "objectName": "Garden strawberry (Fragaria × ananassa) single2",
+        "description": "Garden <a href=\"https://en.wikipedia.org/wiki/Strawberry\" class=\"extiw\" title=\"en:Strawberry\">Strawberry</a>. Grown in Spain",
+        "categories": "Self-published work|Featured pictures on Wikipedia, English|Featured pictures on Wikipedia, Persian|Featured pictures by iifar|Fruits on gray background|Photographs taken on 2022-01-26|Single strawberries|Focus stacking images of fruits|Uploads by iifar|Focus stacked image"
+      },
+      "alternatives": []
+    },
+    {
+      "order": 85,
+      "candidateOrder": 85,
       "storyId": "tomato-fm-on-the-vine-bulk-64664",
       "catalogId": "tomato-fm-on-the-vine-bulk",
       "title": "Tomato - FM On The Vine (Bulk)",
@@ -4630,8 +5675,8 @@
       "alternatives": []
     },
     {
-      "order": 70,
-      "candidateOrder": 70,
+      "order": 86,
+      "candidateOrder": 86,
       "storyId": "tomato-hh-organic-94798",
       "catalogId": "tomato-hh-organic",
       "title": "Tomato - HH (Organic)",
@@ -4701,8 +5746,8 @@
       "alternatives": []
     },
     {
-      "order": 71,
-      "candidateOrder": 71,
+      "order": 87,
+      "candidateOrder": 87,
       "storyId": "tomato-hh-red-bulk-4798",
       "catalogId": "tomato-hh-red-bulk",
       "title": "Tomato - HH Red (Bulk)",
@@ -4773,8 +5818,8 @@
       "alternatives": []
     },
     {
-      "order": 72,
-      "candidateOrder": 72,
+      "order": 88,
+      "candidateOrder": 88,
       "storyId": "tomatoes-on-the-vine-hh-organic-94664",
       "catalogId": "tomatoes-on-the-vine-hh-organic",
       "title": "Tomatoes - On The Vine HH (Organic)",
@@ -4849,8 +5894,8 @@
       "alternatives": []
     },
     {
-      "order": 73,
-      "candidateOrder": 73,
+      "order": 89,
+      "candidateOrder": 89,
       "storyId": "tomatoes-roma-plum-box-half-bushel-70755",
       "catalogId": "tomatoes-roma-plum-box-half-bushel",
       "title": "Tomatoes - Roma / Plum (Box, Half Bushel)",
@@ -4926,8 +5971,84 @@
       "alternatives": []
     },
     {
-      "order": 74,
-      "candidateOrder": 74,
+      "order": 90,
+      "candidateOrder": 90,
+      "storyId": "tomatoes-vine-ripe-field-bulk-3061",
+      "catalogId": "tomatoes-vine-ripe-field-bulk",
+      "title": "Tomatoes - Vine Ripe / Field (Bulk)",
+      "query": "Vine-ripe tomatoes raw produce",
+      "selection": {
+        "rawScore": 105,
+        "score": 100,
+        "band": "Essential",
+        "priority": "must-know"
+      },
+      "mediaReview": {
+        "catalogId": "tomatoes-vine-ripe-field-bulk",
+        "code": "3061",
+        "commonsFile": "Strauchtomaten.jpg",
+        "recognitionMode": "label-assisted",
+        "visibleIdentity": {
+          "label": "Vine-ripe tomatoes",
+          "form": "Round ripe tomatoes attached along a vine",
+          "color": "Red",
+          "cue": "Round ripe red tomatoes attached along a vine identify vine-ripe tomatoes."
+        },
+        "sharedMediaBasis": "The previously reviewed photograph supplies only the visible vine-ripe tomato identity. Source code 3151 is not transferred; target code 3061 plus Field and Bulk remain bound to this target workbook listing.",
+        "reviewBasis": "The photograph and Commons metadata directly show vine-ripened red tomatoes. Field and Bulk are not asserted as visible.",
+        "labelClaims": [
+          {
+            "value": "Field",
+            "basis": "workbook-label",
+            "sourceField": "catalog.item",
+            "sourcePages": [
+              3,
+              4
+            ]
+          },
+          {
+            "value": "Bulk",
+            "basis": "workbook-label",
+            "sourceField": "catalog.item",
+            "sourcePages": [
+              3,
+              4
+            ]
+          }
+        ],
+        "reuseSourceCatalogId": "tomatoes-vine-ripe-big"
+      },
+      "file": "Strauchtomaten.jpg",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/1/11/Strauchtomaten.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "mime": "image/jpeg",
+      "width": 1920,
+      "height": 1440,
+      "thumbWidth": 1600,
+      "thumbHeight": 1200,
+      "score": -83,
+      "sharedAcrossProducts": true,
+      "match": "reviewed-override",
+      "matchedTargets": [
+        "tomatoes",
+        "vine"
+      ],
+      "matchedModifiers": [
+        "vine"
+      ],
+      "identityEvidence": [
+        "tomatoes"
+      ],
+      "sourceEvidence": {
+        "title": "Strauchtomaten.jpg",
+        "objectName": "Strauchtomaten",
+        "description": "Vine tomatoes (vine-ripened tomatoes or tomatoes on the vine)",
+        "categories": "Self-published work|PD-self|6 of food|Tomatoes on white background"
+      },
+      "alternatives": []
+    },
+    {
+      "order": 91,
+      "candidateOrder": 91,
       "storyId": "uchoy-sum-64387",
       "catalogId": "uchoy-sum",
       "title": "Uchoy Sum",
@@ -4978,8 +6099,8 @@
       "alternatives": []
     },
     {
-      "order": 75,
-      "candidateOrder": 75,
+      "order": 92,
+      "candidateOrder": 92,
       "storyId": "yu-choy-jr-10260",
       "catalogId": "yu-choy-jr",
       "title": "Yu Choy - Jr",
@@ -5051,17 +6172,7 @@
       "status": "mapped",
       "mappingKind": "same-label-different-codes",
       "mappingReason": "The exact catalog label carries multiple recorded checkout codes; preserve the complete mapping without selecting a synthetic primary code.",
-      "order": 76
-    },
-    {
-      "catalogId": "apples-lady-alice-pc",
-      "title": "Apples - Lady Alice PC",
-      "code": "3106",
-      "family": "Apples",
-      "status": "mapped",
-      "mappingKind": "single",
-      "mappingReason": "The catalog records one checkout code for an interpreted in-scope produce identity.",
-      "order": 77
+      "order": 93
     },
     {
       "catalogId": "apples-red-delicious-2",
@@ -5071,7 +6182,7 @@
       "status": "mapped",
       "mappingKind": "same-label-different-codes",
       "mappingReason": "The exact catalog label appears with another recorded checkout code; preserve both source mappings instead of treating one as a replacement.",
-      "order": 78
+      "order": 94
     },
     {
       "catalogId": "apples-royal-gala-2",
@@ -5081,7 +6192,7 @@
       "status": "mapped",
       "mappingKind": "same-label-different-codes",
       "mappingReason": "The exact catalog label appears with another recorded checkout code; preserve both source mappings instead of treating one as a replacement.",
-      "order": 79
+      "order": 95
     },
     {
       "catalogId": "apricots-2",
@@ -5091,17 +6202,7 @@
       "status": "mapped",
       "mappingKind": "same-label-different-codes",
       "mappingReason": "The exact catalog label appears with another recorded checkout code; preserve both source mappings instead of treating one as a replacement.",
-      "order": 80
-    },
-    {
-      "catalogId": "blackberries-pint-12oz",
-      "title": "Blackberries - Pint / 12oz",
-      "code": "522",
-      "family": "Berries",
-      "status": "mapped",
-      "mappingKind": "single",
-      "mappingReason": "The catalog records one checkout code for an interpreted in-scope produce identity.",
-      "order": 81
+      "order": 96
     },
     {
       "catalogId": "carrots-chinese-jumbo",
@@ -5111,7 +6212,7 @@
       "status": "mapped",
       "mappingKind": "shared-code",
       "mappingReason": "The catalog-supported code is also recorded for a compatible carrot identity; preserve the exact label and declare the reuse.",
-      "order": 82
+      "order": 97
     },
     {
       "catalogId": "celery-hearts",
@@ -5121,7 +6222,7 @@
       "status": "mapped",
       "mappingKind": "single",
       "mappingReason": "The catalog records one checkout code for an interpreted in-scope produce identity.",
-      "order": 83
+      "order": 98
     },
     {
       "catalogId": "cherimoya",
@@ -5131,7 +6232,7 @@
       "status": "mapped",
       "mappingKind": "same-label-different-codes",
       "mappingReason": "The exact catalog label appears with multiple recorded checkout codes across source rows; preserve every source mapping.",
-      "order": 84
+      "order": 99
     },
     {
       "catalogId": "cherimoya-2",
@@ -5141,27 +6242,7 @@
       "status": "mapped",
       "mappingKind": "same-label-different-codes",
       "mappingReason": "The exact catalog label appears with multiple recorded checkout codes across source rows; preserve every source mapping.",
-      "order": 85
-    },
-    {
-      "catalogId": "cucumbers-dill-case",
-      "title": "Cucumbers - Dill (Case)",
-      "code": "38595",
-      "family": "Cucumbers",
-      "status": "mapped",
-      "mappingKind": "single",
-      "mappingReason": "The catalog records one checkout code; the exact catalog label preserves the case distinction from the existing lesson title.",
-      "order": 86
-    },
-    {
-      "catalogId": "garlic-peeled-5lb",
-      "title": "Garlic - Peeled 5lb",
-      "code": "63608",
-      "family": "Alliums",
-      "status": "mapped",
-      "mappingKind": "single",
-      "mappingReason": "The catalog records one checkout code for an interpreted in-scope produce identity.",
-      "order": 87
+      "order": 100
     },
     {
       "catalogId": "grapefruit-bin",
@@ -5171,7 +6252,7 @@
       "status": "mapped",
       "mappingKind": "shared-code",
       "mappingReason": "The catalog-supported code is also recorded for a compatible grapefruit identity; preserve the exact label and declare the reuse.",
-      "order": 88
+      "order": 101
     },
     {
       "catalogId": "mangoes",
@@ -5181,7 +6262,7 @@
       "status": "mapped",
       "mappingKind": "shared-code",
       "mappingReason": "The catalog-supported code is also recorded for a compatible mango identity; preserve the exact label and declare the reuse.",
-      "order": 89
+      "order": 102
     },
     {
       "catalogId": "mangos-red-case",
@@ -5191,7 +6272,7 @@
       "status": "mapped",
       "mappingKind": "same-label-different-codes",
       "mappingReason": "The exact catalog label carries multiple recorded checkout codes; preserve the complete mapping without selecting a synthetic primary code.",
-      "order": 90
+      "order": 103
     },
     {
       "catalogId": "melons-goldendew",
@@ -5201,7 +6282,7 @@
       "status": "mapped",
       "mappingKind": "single",
       "mappingReason": "The catalog records one checkout code for an interpreted in-scope produce identity.",
-      "order": 91
+      "order": 104
     },
     {
       "catalogId": "melons-honeykiss",
@@ -5211,17 +6292,7 @@
       "status": "mapped",
       "mappingKind": "single",
       "mappingReason": "The catalog records one checkout code for an interpreted in-scope produce identity.",
-      "order": 92
-    },
-    {
-      "catalogId": "olives-green-case",
-      "title": "Olives - Green (Case)",
-      "code": "54050",
-      "family": "Olives",
-      "status": "mapped",
-      "mappingKind": "single",
-      "mappingReason": "The catalog records one checkout code for an interpreted in-scope produce identity.",
-      "order": 93
+      "order": 105
     },
     {
       "catalogId": "oranges-navel-large",
@@ -5231,7 +6302,7 @@
       "status": "mapped",
       "mappingKind": "shared-code",
       "mappingReason": "The catalog-supported code is also recorded for a compatible navel orange identity; preserve the exact size label and declare the reuse.",
-      "order": 94
+      "order": 106
     },
     {
       "catalogId": "oranges-navel-medium",
@@ -5241,7 +6312,7 @@
       "status": "mapped",
       "mappingKind": "shared-code",
       "mappingReason": "The catalog-supported code is also recorded for a compatible navel orange identity; preserve the exact size label and declare the reuse.",
-      "order": 95
+      "order": 107
     },
     {
       "catalogId": "papayas-meridol",
@@ -5251,7 +6322,7 @@
       "status": "mapped",
       "mappingKind": "single",
       "mappingReason": "The catalog records one checkout code for an interpreted in-scope produce identity.",
-      "order": 96
+      "order": 108
     },
     {
       "catalogId": "parsley-curley-herbs",
@@ -5261,7 +6332,7 @@
       "status": "mapped",
       "mappingKind": "shared-code",
       "mappingReason": "The catalog-supported code is also recorded for a compatible parsley identity; preserve the exact label and declare the reuse.",
-      "order": 97
+      "order": 109
     },
     {
       "catalogId": "pears-asian-yellow-2",
@@ -5271,7 +6342,7 @@
       "status": "mapped",
       "mappingKind": "same-label-different-codes",
       "mappingReason": "The exact catalog label appears with another recorded checkout code; preserve both source mappings instead of treating one as a replacement.",
-      "order": 98
+      "order": 110
     },
     {
       "catalogId": "pears-bosc-large",
@@ -5281,7 +6352,7 @@
       "status": "mapped",
       "mappingKind": "shared-code",
       "mappingReason": "The catalog-supported code is also recorded for a compatible Bosc pear identity; preserve the exact size label and declare the reuse.",
-      "order": 99
+      "order": 111
     },
     {
       "catalogId": "pears-forelle-2",
@@ -5291,7 +6362,7 @@
       "status": "mapped",
       "mappingKind": "same-label-different-codes",
       "mappingReason": "The exact catalog label appears with another recorded checkout code; preserve both source mappings instead of treating one as a replacement.",
-      "order": 100
+      "order": 112
     },
     {
       "catalogId": "pears-taylor-gold",
@@ -5301,7 +6372,7 @@
       "status": "mapped",
       "mappingKind": "single",
       "mappingReason": "The catalog records one checkout code for an interpreted in-scope produce identity.",
-      "order": 101
+      "order": 113
     },
     {
       "catalogId": "persimmons-vanilla",
@@ -5311,7 +6382,7 @@
       "status": "mapped",
       "mappingKind": "single",
       "mappingReason": "The catalog records one checkout code for an interpreted in-scope produce identity.",
-      "order": 102
+      "order": 114
     },
     {
       "catalogId": "persimmons-vanilla-case",
@@ -5321,17 +6392,7 @@
       "status": "mapped",
       "mappingKind": "single",
       "mappingReason": "The catalog records one checkout code for an interpreted in-scope produce identity.",
-      "order": 103
-    },
-    {
-      "catalogId": "pistachios-bulk-nuts",
-      "title": "Pistachios (Bulk) - Nuts",
-      "code": "1400",
-      "family": "Nuts",
-      "status": "mapped",
-      "mappingKind": "single",
-      "mappingReason": "The catalog records one checkout code for an interpreted in-scope produce identity.",
-      "order": 104
+      "order": 115
     },
     {
       "catalogId": "pumpkins-large",
@@ -5341,7 +6402,7 @@
       "status": "mapped",
       "mappingKind": "same-label-different-codes",
       "mappingReason": "The exact catalog label appears with multiple recorded checkout codes across source rows; preserve every source mapping.",
-      "order": 105
+      "order": 116
     },
     {
       "catalogId": "pumpkins-large-2",
@@ -5351,57 +6412,7 @@
       "status": "mapped",
       "mappingKind": "same-label-different-codes",
       "mappingReason": "The exact catalog label appears with multiple recorded checkout codes across source rows; preserve every source mapping.",
-      "order": 106
-    },
-    {
-      "catalogId": "raspberries-red-half-pint-6oz",
-      "title": "Raspberries - Red Half Pint / 6oz",
-      "code": "7298",
-      "family": "Berries",
-      "status": "mapped",
-      "mappingKind": "single",
-      "mappingReason": "The catalog records one checkout code for an interpreted in-scope produce identity.",
-      "order": 107
-    },
-    {
-      "catalogId": "raspberries-red-pint-12oz",
-      "title": "Raspberries - Red Pint / 12oz",
-      "code": "4054",
-      "family": "Berries",
-      "status": "mapped",
-      "mappingKind": "single",
-      "mappingReason": "The catalog records one checkout code for an interpreted in-scope produce identity.",
-      "order": 108
-    },
-    {
-      "catalogId": "sher-li-hon",
-      "title": "Sher-Li-Hon",
-      "code": "69624",
-      "family": "Leafy Greens",
-      "status": "mapped",
-      "mappingKind": "single",
-      "mappingReason": "The catalog records one checkout code for an interpreted in-scope produce identity.",
-      "order": 109
-    },
-    {
-      "catalogId": "strawberries-1lb",
-      "title": "Strawberries - 1lb",
-      "code": "42468",
-      "family": "Berries",
-      "status": "mapped",
-      "mappingKind": "single",
-      "mappingReason": "The catalog records one checkout code for an interpreted in-scope produce identity.",
-      "order": 110
-    },
-    {
-      "catalogId": "strawberries-2lb",
-      "title": "Strawberries - 2lb",
-      "code": "36983",
-      "family": "Berries",
-      "status": "mapped",
-      "mappingKind": "single",
-      "mappingReason": "The catalog records one checkout code for an interpreted in-scope produce identity.",
-      "order": 111
+      "order": 117
     },
     {
       "catalogId": "tangerines-fall-glo",
@@ -5411,7 +6422,7 @@
       "status": "mapped",
       "mappingKind": "single",
       "mappingReason": "The catalog records one checkout code for an interpreted in-scope produce identity.",
-      "order": 112
+      "order": 118
     },
     {
       "catalogId": "watermelons-mickey-lee",
@@ -5421,7 +6432,7 @@
       "status": "mapped",
       "mappingKind": "single",
       "mappingReason": "The catalog records one checkout code for an interpreted in-scope produce identity.",
-      "order": 113
+      "order": 119
     },
     {
       "catalogId": "yams-white",
@@ -5431,12 +6442,12 @@
       "status": "mapped",
       "mappingKind": "shared-code",
       "mappingReason": "The catalog-supported code is also recorded for a compatible white yam identity; preserve the exact label and declare the reuse.",
-      "order": 114
+      "order": 120
     }
   ],
   "queued": [
     {
-      "order": 115,
+      "order": 121,
       "catalogId": "aloe-vera-handwritten",
       "title": "Aloe Vera (handwritten)",
       "code": "Code needed",
@@ -5449,7 +6460,7 @@
       ]
     },
     {
-      "order": 116,
+      "order": 122,
       "catalogId": "apples-large-extra-fancy-first-word-obscured",
       "title": "Apples - Large Extra Fancy (first word obscured)",
       "code": "4129",
@@ -5462,7 +6473,7 @@
       ]
     },
     {
-      "order": 117,
+      "order": 123,
       "catalogId": "apples-mcintosh-extra-fancy",
       "title": "Apples - McIntosh Extra Fancy",
       "code": "4019",
@@ -5474,7 +6485,7 @@
       ]
     },
     {
-      "order": 118,
+      "order": 124,
       "catalogId": "artichokes-small-handwritten",
       "title": "Artichokes - Small (handwritten)",
       "code": "4516",
@@ -5488,19 +6499,7 @@
       ]
     },
     {
-      "order": 119,
-      "catalogId": "asparagus-organic",
-      "title": "Asparagus - Organic",
-      "code": "94080",
-      "family": "Asparagus",
-      "status": "queued",
-      "queueReason": "Source identity needs manual adjudication",
-      "queueReasonCodes": [
-        "source-identity-review"
-      ]
-    },
-    {
-      "order": 120,
+      "order": 125,
       "catalogId": "avocado-5ct-bag-handwritten",
       "title": "Avocado - 5ct (Bag) (handwritten)",
       "code": "9523",
@@ -5514,7 +6513,7 @@
       ]
     },
     {
-      "order": 121,
+      "order": 126,
       "catalogId": "avocado-caribbean",
       "title": "Avocado - Caribbean",
       "code": "58559",
@@ -5526,7 +6525,7 @@
       ]
     },
     {
-      "order": 122,
+      "order": 127,
       "catalogId": "bananas-baby-bananas-mini-4186",
       "title": "Bananas - Baby Bananas Mini 4186",
       "code": "4234",
@@ -5539,7 +6538,7 @@
       ]
     },
     {
-      "order": 123,
+      "order": 128,
       "catalogId": "bananas-red",
       "title": "Bananas - Red",
       "code": "4234",
@@ -5551,7 +6550,7 @@
       ]
     },
     {
-      "order": 124,
+      "order": 129,
       "catalogId": "bartlett-orchard-run-first-word-obscured",
       "title": "Bartlett - Orchard Run (first word obscured)",
       "code": "64037",
@@ -5565,7 +6564,7 @@
       ]
     },
     {
-      "order": 125,
+      "order": 130,
       "catalogId": "cabbage-sour",
       "title": "Cabbage - Sour",
       "code": "62380",
@@ -5577,7 +6576,7 @@
       ]
     },
     {
-      "order": 126,
+      "order": 131,
       "catalogId": "cherries-white-ranier-264497",
       "title": "Cherries - White Ranier (264497)",
       "code": "4260",
@@ -5589,19 +6588,7 @@
       ]
     },
     {
-      "order": 127,
-      "catalogId": "dill-weed-pickling-herbs",
-      "title": "Dill Weed (Pickling) - Herbs",
-      "code": "4893",
-      "family": "Herbs",
-      "status": "queued",
-      "queueReason": "Source identity needs manual adjudication",
-      "queueReasonCodes": [
-        "source-identity-review"
-      ]
-    },
-    {
-      "order": 128,
+      "order": 132,
       "catalogId": "durian-frozen",
       "title": "Durian (Frozen)",
       "code": "Code needed",
@@ -5615,7 +6602,7 @@
       ]
     },
     {
-      "order": 129,
+      "order": 133,
       "catalogId": "eddoes-handwritten",
       "title": "Eddoes (handwritten)",
       "code": "Code needed",
@@ -5629,7 +6616,7 @@
       ]
     },
     {
-      "order": 130,
+      "order": 134,
       "catalogId": "fennel-anise",
       "title": "Fennel / Anise",
       "code": "4516",
@@ -5641,19 +6628,7 @@
       ]
     },
     {
-      "order": 131,
-      "catalogId": "garlic-loose-bulk",
-      "title": "Garlic - Loose (Bulk)",
-      "code": "4610",
-      "family": "Alliums",
-      "status": "queued",
-      "queueReason": "Source identity needs manual adjudication",
-      "queueReasonCodes": [
-        "source-identity-review"
-      ]
-    },
-    {
-      "order": 132,
+      "order": 135,
       "catalogId": "gourds-ornamental",
       "title": "Gourds - Ornamental",
       "code": "Code needed",
@@ -5667,7 +6642,7 @@
       ]
     },
     {
-      "order": 133,
+      "order": 136,
       "catalogId": "jackfruit-cut-handwritten",
       "title": "Jackfruit - Cut (handwritten)",
       "code": "Code needed",
@@ -5681,7 +6656,7 @@
       ]
     },
     {
-      "order": 134,
+      "order": 137,
       "catalogId": "jicama-roots",
       "title": "Jicama (Roots)",
       "code": "Code needed",
@@ -5695,7 +6670,7 @@
       ]
     },
     {
-      "order": 135,
+      "order": 138,
       "catalogId": "kohlrabi-note-on-sheet-kohlrabi-1692-handwritten",
       "title": "Kohlrabi (note on sheet: 'Kohlrabi = 1692') (handwritten)",
       "code": "1692",
@@ -5708,7 +6683,7 @@
       ]
     },
     {
-      "order": 136,
+      "order": 139,
       "catalogId": "mangoes-ataulfo-case-handwritten",
       "title": "Mangoes - Ataulfo (Case) (handwritten)",
       "code": "2145",
@@ -5722,7 +6697,7 @@
       ]
     },
     {
-      "order": 137,
+      "order": 140,
       "catalogId": "mangoes-red-case-handwritten",
       "title": "Mangoes - Red (Case) (handwritten)",
       "code": "2146",
@@ -5737,7 +6712,7 @@
       ]
     },
     {
-      "order": 138,
+      "order": 141,
       "catalogId": "mangos-spice",
       "title": "Mangos - Spice",
       "code": "58654",
@@ -5749,31 +6724,7 @@
       ]
     },
     {
-      "order": 139,
-      "catalogId": "methileaf-herbs",
-      "title": "Methileaf - Herbs",
-      "code": "59994",
-      "family": "Leafy Greens",
-      "status": "queued",
-      "queueReason": "Source identity needs manual adjudication",
-      "queueReasonCodes": [
-        "source-identity-review"
-      ]
-    },
-    {
-      "order": 140,
-      "catalogId": "mushrooms-white-bulk-rcwc",
-      "title": "Mushrooms - White (Bulk, RCWC)",
-      "code": "1102",
-      "family": "Mushrooms",
-      "status": "queued",
-      "queueReason": "Source identity needs manual adjudication",
-      "queueReasonCodes": [
-        "source-identity-review"
-      ]
-    },
-    {
-      "order": 141,
+      "order": 142,
       "catalogId": "nappa-baby-4540-bag",
       "title": "Nappa - Baby 4540 (Bag)",
       "code": "62527",
@@ -5786,7 +6737,7 @@
       ]
     },
     {
-      "order": 142,
+      "order": 143,
       "catalogId": "onions-1381-label-as-printed",
       "title": "Onions - 1381 (label as printed)",
       "code": "2525",
@@ -5799,7 +6750,7 @@
       ]
     },
     {
-      "order": 143,
+      "order": 144,
       "catalogId": "onions-medium-50lb-724-58312",
       "title": "Onions - Medium 50lb 724 / 58312",
       "code": "63430",
@@ -5812,7 +6763,7 @@
       ]
     },
     {
-      "order": 144,
+      "order": 145,
       "catalogId": "onions-sweet-4166-59914",
       "title": "Onions - Sweet 4166 / 59914",
       "code": "4159",
@@ -5827,7 +6778,7 @@
       ]
     },
     {
-      "order": 145,
+      "order": 146,
       "catalogId": "onions-yellow-25lb-334",
       "title": "Onions - Yellow 25lb 334",
       "code": "62782",
@@ -5841,7 +6792,7 @@
       ]
     },
     {
-      "order": 146,
+      "order": 147,
       "catalogId": "parsnips-2lb",
       "title": "Parsnips - 2lb",
       "code": "Code needed",
@@ -5856,7 +6807,7 @@
       ]
     },
     {
-      "order": 147,
+      "order": 148,
       "catalogId": "parsnips-bulk-4672",
       "title": "Parsnips - Bulk 4672",
       "code": "Code needed",
@@ -5871,7 +6822,7 @@
       ]
     },
     {
-      "order": 148,
+      "order": 149,
       "catalogId": "pears-red-4415",
       "title": "Pears - Red 4415",
       "code": "3118",
@@ -5884,7 +6835,7 @@
       ]
     },
     {
-      "order": 149,
+      "order": 150,
       "catalogId": "peppers-red-long-handwritten",
       "title": "Peppers - Red Long (handwritten)",
       "code": "4711",
@@ -5899,7 +6850,7 @@
       ]
     },
     {
-      "order": 150,
+      "order": 151,
       "catalogId": "plumcots-handwritten",
       "title": "Plumcots (handwritten)",
       "code": "5127",
@@ -5912,7 +6863,7 @@
       ]
     },
     {
-      "order": 151,
+      "order": 152,
       "catalogId": "potato-sweet-jamaican-handwritten",
       "title": "Potato - Sweet Jamaican (handwritten)",
       "code": "Code needed",
@@ -5925,7 +6876,7 @@
       ]
     },
     {
-      "order": 152,
+      "order": 153,
       "catalogId": "pumpkins-jamaican",
       "title": "Pumpkins - Jamaican",
       "code": "434",
@@ -5937,7 +6888,7 @@
       ]
     },
     {
-      "order": 153,
+      "order": 154,
       "catalogId": "pumpkins-small-pie-4737",
       "title": "Pumpkins - Small Pie 4737",
       "code": "Code needed",
@@ -5951,7 +6902,7 @@
       ]
     },
     {
-      "order": 154,
+      "order": 155,
       "catalogId": "pumpkins-white",
       "title": "Pumpkins - White",
       "code": "Code needed",
@@ -5964,7 +6915,7 @@
       ]
     },
     {
-      "order": 155,
+      "order": 156,
       "catalogId": "radish-bunch",
       "title": "Radish - Bunch",
       "code": "4019",
@@ -5976,7 +6927,7 @@
       ]
     },
     {
-      "order": 156,
+      "order": 157,
       "catalogId": "rutabagas",
       "title": "Rutabagas",
       "code": "Code needed",
@@ -5989,7 +6940,7 @@
       ]
     },
     {
-      "order": 157,
+      "order": 158,
       "catalogId": "squash-buttercup",
       "title": "Squash - Buttercup",
       "code": "4758",
@@ -6001,7 +6952,7 @@
       ]
     },
     {
-      "order": 158,
+      "order": 159,
       "catalogId": "sweet-potatoes-white",
       "title": "Sweet Potatoes - White",
       "code": "9925",
@@ -6013,7 +6964,7 @@
       ]
     },
     {
-      "order": 159,
+      "order": 160,
       "catalogId": "sweet-sop",
       "title": "Sweet Sop",
       "code": "2569710",
@@ -6026,7 +6977,7 @@
       ]
     },
     {
-      "order": 160,
+      "order": 161,
       "catalogId": "tomato-heirloom-handwritten",
       "title": "Tomato - Heirloom (handwritten)",
       "code": "Code needed",
@@ -6037,18 +6988,6 @@
         "missing-code",
         "uncertain-source",
         "duplicate-lesson-title"
-      ]
-    },
-    {
-      "order": 161,
-      "catalogId": "tomatoes-vine-ripe-field-bulk",
-      "title": "Tomatoes - Vine Ripe / Field (Bulk)",
-      "code": "3061",
-      "family": "Tomatoes",
-      "status": "queued",
-      "queueReason": "Source identity needs manual adjudication",
-      "queueReasonCodes": [
-        "source-identity-review"
       ]
     },
     {

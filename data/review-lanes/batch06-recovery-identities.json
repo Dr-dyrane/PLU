@@ -1,0 +1,366 @@
+{
+  "schemaVersion": 1,
+  "items": [
+    {
+      "catalogId": "asparagus-organic",
+      "decision": "approved",
+      "code": "94080",
+      "sourceItem": "Asparagus - Organic",
+      "sourcePages": [
+        4
+      ],
+      "flags": [],
+      "reviewBasis": "Approve an explicit override of the legacy Batch 05 exclusion. Commit 2c0619c added this catalog ID to a catch-all exclusion set without a row-specific reason, while the workbook and normalized catalog independently preserve one exact unflagged label/code mapping. The reviewed photograph clearly shows green asparagus spears; Organic remains an exact workbook claim and is not inferred from pixels.",
+      "identitySources": [
+        {
+          "type": "workbook",
+          "source": "PLU_Codes 2.xlsx",
+          "locator": "PLU Codes!A49:D49",
+          "supports": "Exact label Asparagus - Organic, code 94080, source page 4."
+        },
+        {
+          "type": "catalog",
+          "source": "data/catalog/01.json",
+          "locator": "asparagus-organic",
+          "supports": "The normalized row preserves the same label and single numeric code with no flags."
+        },
+        {
+          "type": "media-metadata",
+          "source": "https://commons.wikimedia.org/wiki/File:HK_CWB_%E9%8A%85%E9%91%BC%E7%81%A3_Causeway_Bay_%E8%BB%92%E5%B0%BC%E8%A9%A9%E9%81%93_500_Hennessy_Road_%E5%B8%8C%E6%85%8E%E5%BB%A3%E5%A0%B4_Hysan_Place_mall_B2_basement_shop_MarketPlace_by_Jasons_Supermarket_October_2021_SS2_02.jpg",
+          "supports": "Commons categorizes the photograph as green asparagus and organic food in Hong Kong; pixel review confirmed raw green asparagus bundles."
+        }
+      ],
+      "media": {
+        "kind": "reviewed-candidate",
+        "commonsFile": "HK CWB 銅鑼灣 Causeway Bay 軒尼詩道 500 Hennessy Road 希慎廣場 Hysan Place mall B2 basement shop MarketPlace by Jasons Supermarket October 2021 SS2 02.jpg",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/HK_CWB_%E9%8A%85%E9%91%BC%E7%81%A3_Causeway_Bay_%E8%BB%92%E5%B0%BC%E8%A9%A9%E9%81%93_500_Hennessy_Road_%E5%B8%8C%E6%85%8E%E5%BB%A3%E5%A0%B4_Hysan_Place_mall_B2_basement_shop_MarketPlace_by_Jasons_Supermarket_October_2021_SS2_02.jpg/1920px-thumbnail.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:HK_CWB_%E9%8A%85%E9%91%BC%E7%81%A3_Causeway_Bay_%E8%BB%92%E5%B0%BC%E8%A9%A9%E9%81%93_500_Hennessy_Road_%E5%B8%8C%E6%85%8E%E5%BB%A3%E5%A0%B4_Hysan_Place_mall_B2_basement_shop_MarketPlace_by_Jasons_Supermarket_October_2021_SS2_02.jpg",
+        "author": "Hooemz Ming Shum",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "recognitionMode": "label-assisted",
+        "visibleIdentity": {
+          "label": "Asparagus",
+          "form": "Long bundled spears with tapered tips",
+          "color": "Green",
+          "cue": "Long green spears with compact tapered tips identify asparagus."
+        },
+        "labelClaims": [
+          {
+            "value": "Organic",
+            "basis": "workbook-label",
+            "sourceField": "catalog.item",
+            "sourcePages": [
+              4
+            ]
+          }
+        ],
+        "reviewBasis": "Pixel review found many unmistakable raw green asparagus bundles. The image establishes asparagus identity only; Organic and code 94080 remain tied to the supplied workbook listing."
+      }
+    },
+    {
+      "catalogId": "dill-weed-pickling-herbs",
+      "decision": "approved",
+      "code": "4893",
+      "sourceItem": "Dill Weed (Pickling) - Herbs",
+      "sourcePages": [
+        4
+      ],
+      "flags": [],
+      "reviewBasis": "Approve an explicit override of the legacy Batch 05 exclusion. Commit 2c0619c recorded no row-specific defect, and the workbook confirms one unflagged exact label/code mapping. The reviewed market photograph shows fresh dill fronds; Pickling is retained only as workbook listing language rather than a visible cultivar or preparation claim.",
+      "identitySources": [
+        {
+          "type": "workbook",
+          "source": "PLU_Codes 2.xlsx",
+          "locator": "PLU Codes!A139:D139",
+          "supports": "Exact label Dill Weed (Pickling) - Herbs, code 4893, source page 4."
+        },
+        {
+          "type": "catalog",
+          "source": "data/catalog/03.json",
+          "locator": "dill-weed-pickling-herbs",
+          "supports": "The normalized row preserves the same label and single numeric code with no flags."
+        },
+        {
+          "type": "media-metadata",
+          "source": "https://commons.wikimedia.org/wiki/File:Samara_Market_04_Dill%2C_lots_of_dill_(4136882030).jpg",
+          "supports": "Commons identifies the subject as dill at Samara Market and categorizes it as dill spice; pixel review confirmed abundant fresh green dill."
+        }
+      ],
+      "media": {
+        "kind": "reviewed-candidate",
+        "commonsFile": "Samara Market 04 Dill, lots of dill (4136882030).jpg",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/Samara_Market_04_Dill%2C_lots_of_dill_%284136882030%29.jpg/1920px-Samara_Market_04_Dill%2C_lots_of_dill_%284136882030%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Samara_Market_04_Dill%2C_lots_of_dill_(4136882030).jpg",
+        "author": "michael clarke stuff",
+        "license": "CC BY-SA 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+        "recognitionMode": "label-assisted",
+        "visibleIdentity": {
+          "label": "Dill weed",
+          "form": "Fine feathery fronds on slender stems",
+          "color": "Green",
+          "cue": "Fine feathery green fronds on slender stems identify fresh dill weed."
+        },
+        "labelClaims": [
+          {
+            "value": "Pickling",
+            "basis": "workbook-label",
+            "sourceField": "catalog.item",
+            "sourcePages": [
+              4
+            ]
+          }
+        ],
+        "reviewBasis": "Pixel review confirmed abundant fresh green dill bunches at market. The photograph supports dill weed identity; Pickling and code 4893 remain exact workbook claims."
+      }
+    },
+    {
+      "catalogId": "garlic-loose-bulk",
+      "decision": "approved",
+      "code": "4610",
+      "sourceItem": "Garlic - Loose (Bulk)",
+      "sourcePages": [
+        4
+      ],
+      "flags": [],
+      "reviewBasis": "Approve an explicit override of the legacy Batch 05 exclusion. The workbook confirms the exact unflagged Loose (Bulk) listing at 4610. Reusing the established loose-garlic photograph is valid for visible identity, but it does not make the source lesson's 4608 equivalent to this target code; Bulk and 4610 remain exclusive to the target workbook row.",
+      "identitySources": [
+        {
+          "type": "workbook",
+          "source": "PLU_Codes 2.xlsx",
+          "locator": "PLU Codes!A169:D169",
+          "supports": "Exact label Garlic - Loose (Bulk), code 4610, source page 4."
+        },
+        {
+          "type": "catalog",
+          "source": "data/catalog/04.json",
+          "locator": "garlic-loose-bulk",
+          "supports": "The normalized row preserves the same label and single numeric code with no flags."
+        },
+        {
+          "type": "media-metadata",
+          "source": "https://commons.wikimedia.org/wiki/File:Garlic.jpg",
+          "supports": "Commons describes one full garlic head beside another with removed cloves and identifies Allium sativum."
+        }
+      ],
+      "media": {
+        "kind": "reviewed-reuse",
+        "sourceCatalogId": "garlic-loose",
+        "sourceCode": "4608",
+        "commonsFile": "Garlic.jpg",
+        "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Garlic.jpg?width=1600",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Garlic.jpg",
+        "author": "Donovan Govan",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+        "recognitionMode": "label-assisted",
+        "visibleIdentity": {
+          "label": "Loose garlic",
+          "form": "Papery divided bulbs and cloves",
+          "color": "White",
+          "cue": "White papery bulbs divided into cloves identify loose garlic."
+        },
+        "labelClaims": [
+          {
+            "value": "Bulk",
+            "basis": "workbook-label",
+            "sourceField": "catalog.item",
+            "sourcePages": [
+              4
+            ]
+          }
+        ],
+        "sharedMediaBasis": "The previously reviewed photograph supplies only the shared visible garlic identity. Source code 4608 is not transferred; target code 4610 and Bulk remain bound to this target workbook listing.",
+        "reviewBasis": "The photograph clearly shows whole garlic heads and separated cloves. It is an exact visible identity match for loose garlic, while Bulk is not claimed visible."
+      }
+    },
+    {
+      "catalogId": "methileaf-herbs",
+      "decision": "approved",
+      "code": "59994",
+      "sourceItem": "Methileaf - Herbs",
+      "sourcePages": [
+        1
+      ],
+      "flags": [],
+      "reviewBasis": "Approve an explicit override of the legacy Batch 05 exclusion. The workbook preserves Methileaf as one unflagged listing at 59994, and ICAR identifies Methi as Fenugreek, Trigonella foenum-graecum. The existing Methi Leaf photograph therefore supports visible identity, but its source code 4909 is not transferred or treated as equivalent to the target listing's 59994.",
+      "identitySources": [
+        {
+          "type": "workbook",
+          "source": "PLU_Codes 2.xlsx",
+          "locator": "PLU Codes!A251:D251",
+          "supports": "Exact label Methileaf - Herbs, code 59994, sold by Each, source page 1."
+        },
+        {
+          "type": "catalog",
+          "source": "data/catalog/05.json",
+          "locator": "methileaf-herbs",
+          "supports": "The normalized row preserves the same label, single numeric code, selling unit, and no flags."
+        },
+        {
+          "type": "primary-authority",
+          "source": "https://icar.gov.in/sites/default/files/2022-06/Geographical-Indications-of-Plant-Species-in-ITKs-in-Agriculture.pdf",
+          "locator": "Methi entry",
+          "supports": "The Indian Council of Agricultural Research explicitly gives the English name Methi: Fenugreek and botanical name Trigonella foenum-graecum."
+        },
+        {
+          "type": "media-metadata",
+          "source": "https://commons.wikimedia.org/wiki/File:Methi_leaves.jpg",
+          "supports": "Commons describes the image as Methi (Fenugreek) leaves and categorizes it under Trigonella foenum-graecum."
+        }
+      ],
+      "media": {
+        "kind": "reviewed-reuse",
+        "sourceCatalogId": "methi-leaf-fenugreek",
+        "sourceCode": "4909",
+        "commonsFile": "Methi leaves.jpg",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/Methi_leaves.jpg/1920px-Methi_leaves.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Methi_leaves.jpg",
+        "author": "Katyare",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "recognitionMode": "product-and-loose-form",
+        "visibleIdentity": {
+          "label": "Methi leaf (fenugreek)",
+          "form": "Small oval trifoliate leaflets on slender stems",
+          "color": "Green",
+          "cue": "Clusters of three small oval green leaflets on slender stems identify fresh methi leaf."
+        },
+        "labelClaims": [],
+        "sharedMediaBasis": "The previously reviewed photograph and ICAR synonym evidence supply the shared visible methi/fenugreek leaf identity. Source code 4909 is not transferred; target code 59994 remains bound to the exact Methileaf workbook listing.",
+        "reviewBasis": "The photograph shows fresh Methi (Fenugreek) leaves and its Commons metadata names that identity directly. The visible form is recorded as small trifoliate leaflets rather than the earlier generic broad-leaf description."
+      }
+    },
+    {
+      "catalogId": "mushrooms-white-bulk-rcwc",
+      "decision": "approved",
+      "code": "1102",
+      "sourceItem": "Mushrooms - White (Bulk, RCWC)",
+      "sourcePages": [
+        4
+      ],
+      "flags": [],
+      "reviewBasis": "Approve an explicit override of the legacy Batch 05 exclusion. The workbook confirms one exact unflagged White (Bulk, RCWC) listing at 1102, and the reused photograph and Commons metadata identify white button mushrooms. Bulk, RCWC, and 1102 remain target-specific; the source listing and its 4085 code are not treated as operationally equivalent.",
+      "identitySources": [
+        {
+          "type": "workbook",
+          "source": "PLU_Codes 2.xlsx",
+          "locator": "PLU Codes!A258:D258",
+          "supports": "Exact label Mushrooms - White (Bulk, RCWC), code 1102, source page 4."
+        },
+        {
+          "type": "catalog",
+          "source": "data/catalog/06.json",
+          "locator": "mushrooms-white-bulk-rcwc",
+          "supports": "The normalized row preserves the same label and single numeric code with no flags."
+        },
+        {
+          "type": "media-metadata",
+          "source": "https://commons.wikimedia.org/wiki/File:1_-_button_mushrooms.jpg",
+          "supports": "Commons describes white, button, or champignon mushrooms and categorizes the photograph as cultivated Agaricus bisporus."
+        }
+      ],
+      "media": {
+        "kind": "reviewed-reuse",
+        "sourceCatalogId": "mushrooms-white-bulk-rcss-exfd-4645-4653",
+        "sourceCode": "4085",
+        "commonsFile": "1 - button mushrooms.jpg",
+        "src": "https://commons.wikimedia.org/wiki/Special:FilePath/1%20-%20button%20mushrooms.jpg?width=1600",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:1_-_button_mushrooms.jpg",
+        "author": "Susan Slater",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "recognitionMode": "label-assisted",
+        "visibleIdentity": {
+          "label": "White button mushrooms",
+          "form": "Small round caps with short stems",
+          "color": "White",
+          "cue": "Small white dome-shaped caps with short pale stems identify white button mushrooms."
+        },
+        "labelClaims": [
+          {
+            "value": "Bulk, RCWC",
+            "basis": "workbook-label",
+            "sourceField": "catalog.item",
+            "sourcePages": [
+              4
+            ]
+          }
+        ],
+        "sharedMediaBasis": "The previously reviewed photograph supplies only the shared visible white-mushroom identity. Source code 4085 and its RCSS/EXFD wording are not transferred; target code 1102 and RCWC remain bound to this target workbook listing.",
+        "reviewBasis": "The photograph clearly shows white button mushrooms with round pale caps and short stems. Bulk and RCWC are preserved only as workbook claims."
+      }
+    },
+    {
+      "catalogId": "tomatoes-vine-ripe-field-bulk",
+      "decision": "approved",
+      "code": "3061",
+      "sourceItem": "Tomatoes - Vine Ripe / Field (Bulk)",
+      "sourcePages": [
+        3,
+        4
+      ],
+      "flags": [],
+      "reviewBasis": "Approve an explicit override of the legacy Batch 05 exclusion. The workbook confirms the exact unflagged Vine Ripe / Field (Bulk) listing at 3061 on pages 3 and 4. The reused photograph directly supports ripe red tomatoes on the vine; Field and Bulk are non-visible workbook qualifiers, and the source lesson's 3151 is not treated as equivalent to target code 3061.",
+      "identitySources": [
+        {
+          "type": "workbook",
+          "source": "PLU_Codes 2.xlsx",
+          "locator": "PLU Codes!A457:D457",
+          "supports": "Exact label Tomatoes - Vine Ripe / Field (Bulk), code 3061, sold by Weight, source pages 3 and 4."
+        },
+        {
+          "type": "catalog",
+          "source": "data/catalog/10.json",
+          "locator": "tomatoes-vine-ripe-field-bulk",
+          "supports": "The normalized row preserves the same label, single numeric code, selling unit, and no flags."
+        },
+        {
+          "type": "media-metadata",
+          "source": "https://commons.wikimedia.org/wiki/File:Strauchtomaten.jpg",
+          "supports": "Commons describes the photograph as vine tomatoes, vine-ripened tomatoes, or tomatoes on the vine."
+        }
+      ],
+      "media": {
+        "kind": "reviewed-reuse",
+        "sourceCatalogId": "tomatoes-vine-ripe-big",
+        "sourceCode": "3151",
+        "commonsFile": "Strauchtomaten.jpg",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/1/11/Strauchtomaten.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Strauchtomaten.jpg",
+        "author": "Garitzko",
+        "license": "Public domain (PD-self)",
+        "recognitionMode": "label-assisted",
+        "visibleIdentity": {
+          "label": "Vine-ripe tomatoes",
+          "form": "Round ripe tomatoes attached along a vine",
+          "color": "Red",
+          "cue": "Round ripe red tomatoes attached along a vine identify vine-ripe tomatoes."
+        },
+        "labelClaims": [
+          {
+            "value": "Field",
+            "basis": "workbook-label",
+            "sourceField": "catalog.item",
+            "sourcePages": [
+              3,
+              4
+            ]
+          },
+          {
+            "value": "Bulk",
+            "basis": "workbook-label",
+            "sourceField": "catalog.item",
+            "sourcePages": [
+              3,
+              4
+            ]
+          }
+        ],
+        "sharedMediaBasis": "The previously reviewed photograph supplies only the visible vine-ripe tomato identity. Source code 3151 is not transferred; target code 3061 plus Field and Bulk remain bound to this target workbook listing.",
+        "reviewBasis": "The photograph and Commons metadata directly show vine-ripened red tomatoes. Field and Bulk are not asserted as visible."
+      }
+    }
+  ]
+}

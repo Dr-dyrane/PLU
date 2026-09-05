@@ -97,13 +97,13 @@ function validateMediaItem(item, label, { requireExactIdentity = false, review =
   }
 
   const target = new Set(
-    review?.recognitionMode === "label-assisted"
+    [...(review?.contextTokens ?? []), ...(review?.recognitionMode === "label-assisted"
       ? Object.values(review.visibleIdentity).flatMap(words)
       : [
           ...words(item.title),
           ...words(item.query),
           ...(queryAliasesByCatalogId[item.catalogId] ?? []).flatMap(words),
-        ],
+        ])],
   );
   for (const token of softBlockedTokens) {
     assert.ok(
@@ -144,9 +144,10 @@ function validateMediaItem(item, label, { requireExactIdentity = false, review =
         : item,
     );
     const headMatches = head.filter((token) => sourceTokens.has(token));
-    const explicitEvidence = (reviewedIdentityEvidenceByCatalogId[item.catalogId] ?? []).find(
-      (phrase) => words(phrase).every((token) => sourceTokens.has(token)),
-    );
+    const explicitEvidence = [...(reviewedIdentityEvidenceByCatalogId[item.catalogId] ?? []), ...(review?.identityEvidence ?? [])].find((phrase) => {
+      const tokens = words(phrase);
+      return tokens.length > 0 && tokens.every((token) => sourceTokens.has(token));
+    });
     assert.ok(
       headMatches.length > 0 || explicitEvidence,
       `${label}: reviewed override has no committed product identity evidence.`,

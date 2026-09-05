@@ -150,6 +150,28 @@
     "sourceOrder": 9
   },
   {
+    "catalogId": "apples-lady-alice-pc",
+    "title": "Apples - Lady Alice PC",
+    "code": "3106",
+    "family": "Apples",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Round apple",
+    "color": "Red-pink and yellow",
+    "imageQuery": "Lady Alice apple raw produce",
+    "cue": "Look for a round apple with a red-pink blush over yellow skin and a shallow stem depression.",
+    "group": "apples",
+    "sourcePages": [
+      5
+    ],
+    "flags": [
+      "sold-by-curated",
+      "retail-form-specific"
+    ],
+    "sourceItem": "Apples - Lady Alice PC",
+    "sourceOrder": 10
+  },
+  {
     "catalogId": "apples-mcintosh-orchard-bin",
     "title": "Apples - McIntosh (Orchard Bin)",
     "code": "62010",
@@ -214,6 +236,27 @@
     ],
     "sourceItem": "Apples - Sunrise (Orchard Run)",
     "sourceOrder": 17
+  },
+  {
+    "catalogId": "asparagus-organic",
+    "title": "Asparagus - Organic",
+    "code": "94080",
+    "family": "Asparagus",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Long bundled spears with tapered tips",
+    "color": "Green",
+    "imageQuery": "Asparagus raw produce",
+    "cue": "Long green spears with compact tapered tips identify asparagus.",
+    "group": "asparagus",
+    "sourcePages": [
+      4
+    ],
+    "flags": [
+      "sold-by-curated"
+    ],
+    "sourceItem": "Asparagus - Organic",
+    "sourceOrder": 20
   },
   {
     "catalogId": "avocado-organic-3ct",
@@ -324,6 +367,28 @@
     ],
     "sourceItem": "Beets - 10lb",
     "sourceOrder": 30
+  },
+  {
+    "catalogId": "blackberries-pint-12oz",
+    "title": "Blackberries - Pint / 12oz",
+    "code": "522",
+    "family": "Berries",
+    "soldBy": "Each",
+    "saleForm": "Package",
+    "form": "Small clustered drupelet berries",
+    "color": "Black",
+    "imageQuery": "Blackberries raw produce",
+    "cue": "Blackberries have glossy black clusters of rounded drupelets.",
+    "group": "berries",
+    "sourcePages": [
+      5
+    ],
+    "flags": [
+      "sold-by-curated",
+      "retail-form-specific"
+    ],
+    "sourceItem": "Blackberries - Pint / 12oz",
+    "sourceOrder": 31
   },
   {
     "catalogId": "blueberries-2lb",
@@ -542,6 +607,49 @@
     "sourceOrder": 47
   },
   {
+    "catalogId": "cucumbers-dill-case",
+    "title": "Cucumbers - Dill (Case)",
+    "code": "38595",
+    "family": "Cucumbers",
+    "soldBy": "Each",
+    "saleForm": "Case",
+    "form": "Short bumpy whole cucumbers",
+    "color": "Green",
+    "imageQuery": "Pickling cucumber raw produce",
+    "cue": "Short green cucumbers with bumpy skin and blunt ends provide the recognition anchor.",
+    "group": "cucumbers",
+    "sourcePages": [
+      4
+    ],
+    "flags": [
+      "sold-by-curated",
+      "retail-form-specific"
+    ],
+    "sourceItem": "Cucumbers - Dill (Case)",
+    "sourceOrder": 49
+  },
+  {
+    "catalogId": "dill-weed-pickling-herbs",
+    "title": "Dill Weed (Pickling) - Herbs",
+    "code": "4893",
+    "family": "Herbs",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Fine feathery fronds on slender stems",
+    "color": "Green",
+    "imageQuery": "Dill weed raw produce",
+    "cue": "Fine feathery green fronds on slender stems identify fresh dill weed.",
+    "group": "herbs",
+    "sourcePages": [
+      4
+    ],
+    "flags": [
+      "sold-by-curated"
+    ],
+    "sourceItem": "Dill Weed (Pickling) - Herbs",
+    "sourceOrder": 50
+  },
+  {
     "catalogId": "eggplant-purple-case",
     "title": "Eggplant - Purple (Case)",
     "code": "63582",
@@ -670,6 +778,49 @@
     ],
     "sourceItem": "Figs - Green (Case)",
     "sourceOrder": 62
+  },
+  {
+    "catalogId": "garlic-loose-bulk",
+    "title": "Garlic - Loose (Bulk)",
+    "code": "4610",
+    "family": "Alliums",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Papery divided bulbs and cloves",
+    "color": "White",
+    "imageQuery": "Loose garlic raw produce",
+    "cue": "White papery bulbs divided into cloves identify loose garlic.",
+    "group": "alliums",
+    "sourcePages": [
+      4
+    ],
+    "flags": [
+      "sold-by-curated"
+    ],
+    "sourceItem": "Garlic - Loose (Bulk)",
+    "sourceOrder": 63
+  },
+  {
+    "catalogId": "garlic-peeled-5lb",
+    "title": "Garlic - Peeled 5lb",
+    "code": "63608",
+    "family": "Alliums",
+    "soldBy": "Each",
+    "saleForm": "Package",
+    "form": "Separated smooth cloves without papery skin",
+    "color": "Cream-white",
+    "imageQuery": "Peeled garlic raw produce",
+    "cue": "Smooth cream-white teardrop cloves show peeled garlic with the papery skin removed.",
+    "group": "alliums",
+    "sourcePages": [
+      4
+    ],
+    "flags": [
+      "sold-by-curated",
+      "retail-form-specific"
+    ],
+    "sourceItem": "Garlic - Peeled 5lb",
+    "sourceOrder": 64
   },
   {
     "catalogId": "garlic-1kg-bagged",
@@ -927,6 +1078,67 @@
     ],
     "sourceItem": "Melons - Cantaloupe (Organic)",
     "sourceOrder": 87
+  },
+  {
+    "catalogId": "methileaf-herbs",
+    "title": "Methileaf - Herbs",
+    "code": "59994",
+    "family": "Leafy Greens",
+    "soldBy": "Each",
+    "saleForm": "Single",
+    "form": "Small oval trifoliate leaflets on slender stems",
+    "color": "Green",
+    "imageQuery": "Methileaf (fenugreek) raw produce",
+    "cue": "Clusters of three small oval green leaflets on slender stems identify fresh methi leaf.",
+    "group": "leafy-greens",
+    "sourcePages": [
+      1
+    ],
+    "sourceItem": "Methileaf - Herbs",
+    "sourceOrder": 90
+  },
+  {
+    "catalogId": "mushrooms-white-bulk-rcwc",
+    "title": "Mushrooms - White (Bulk, RCWC)",
+    "code": "1102",
+    "family": "Mushrooms",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Small round caps with short stems",
+    "color": "White",
+    "imageQuery": "White button mushrooms raw produce",
+    "cue": "Small white dome-shaped caps with short pale stems identify white button mushrooms.",
+    "group": "mushrooms",
+    "sourcePages": [
+      4
+    ],
+    "flags": [
+      "sold-by-curated"
+    ],
+    "sourceItem": "Mushrooms - White (Bulk, RCWC)",
+    "sourceOrder": 91
+  },
+  {
+    "catalogId": "olives-green-case",
+    "title": "Olives - Green (Case)",
+    "code": "54050",
+    "family": "Olives",
+    "soldBy": "Each",
+    "saleForm": "Case",
+    "form": "Small oval whole stone fruits",
+    "color": "Green",
+    "imageQuery": "Green olives raw produce",
+    "cue": "Green olives appear as small oval fruits with smooth green skins.",
+    "group": "olives",
+    "sourcePages": [
+      4
+    ],
+    "flags": [
+      "sold-by-curated",
+      "retail-form-specific"
+    ],
+    "sourceItem": "Olives - Green (Case)",
+    "sourceOrder": 96
   },
   {
     "catalogId": "onions-red-10lb",
@@ -1280,6 +1492,27 @@
     "sourceOrder": 129
   },
   {
+    "catalogId": "pistachios-bulk-nuts",
+    "title": "Pistachios (Bulk) - Nuts",
+    "code": "1400",
+    "family": "Nuts",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Small nuts in split beige shells",
+    "color": "Beige with purple-brown kernels",
+    "imageQuery": "Pistachios raw produce",
+    "cue": "Split beige shells reveal purple-brown pistachio kernels.",
+    "group": "nuts",
+    "sourcePages": [
+      5
+    ],
+    "flags": [
+      "sold-by-curated"
+    ],
+    "sourceItem": "Pistachios (Bulk) - Nuts",
+    "sourceOrder": 132
+  },
+  {
     "catalogId": "plums-blue-1-5l",
     "title": "Plums - Blue 1.5L",
     "code": "6706",
@@ -1478,6 +1711,115 @@
     "sourceOrder": 143
   },
   {
+    "catalogId": "raspberries-red-half-pint-6oz",
+    "title": "Raspberries - Red Half Pint / 6oz",
+    "code": "7298",
+    "family": "Berries",
+    "soldBy": "Each",
+    "saleForm": "Package",
+    "form": "Soft clustered drupelet berries with hollow centers",
+    "color": "Red",
+    "imageQuery": "Red raspberries raw produce",
+    "cue": "Red raspberries form soft clusters of small drupelets around a hollow center.",
+    "group": "berries",
+    "sourcePages": [
+      5
+    ],
+    "flags": [
+      "sold-by-curated",
+      "retail-form-specific"
+    ],
+    "sourceItem": "Raspberries - Red Half Pint / 6oz",
+    "sourceOrder": 150
+  },
+  {
+    "catalogId": "raspberries-red-pint-12oz",
+    "title": "Raspberries - Red Pint / 12oz",
+    "code": "4054",
+    "family": "Berries",
+    "soldBy": "Each",
+    "saleForm": "Package",
+    "form": "Soft clustered drupelet berries with hollow centers",
+    "color": "Red",
+    "imageQuery": "Red raspberries raw produce",
+    "cue": "Red raspberries form soft clusters of small drupelets around a hollow center.",
+    "group": "berries",
+    "sourcePages": [
+      5
+    ],
+    "flags": [
+      "sold-by-curated",
+      "retail-form-specific"
+    ],
+    "sourceItem": "Raspberries - Red Pint / 12oz",
+    "sourceOrder": 151
+  },
+  {
+    "catalogId": "sher-li-hon",
+    "title": "Sher-Li-Hon",
+    "code": "69624",
+    "family": "Leafy Greens",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Broad serrated leaves and green stems",
+    "color": "Green",
+    "imageQuery": "Sher-Li-Hon snow mustard raw produce",
+    "cue": "Look for broad green leaves with serrated edges and pale ribs running into the stems.",
+    "group": "leafy-greens",
+    "sourcePages": [
+      4
+    ],
+    "flags": [
+      "sold-by-curated"
+    ],
+    "sourceItem": "Sher-Li-Hon",
+    "sourceOrder": 154
+  },
+  {
+    "catalogId": "strawberries-1lb",
+    "title": "Strawberries - 1lb",
+    "code": "42468",
+    "family": "Berries",
+    "soldBy": "Each",
+    "saleForm": "Package",
+    "form": "Red seeded berries with leafy caps",
+    "color": "Red",
+    "imageQuery": "Strawberries raw produce",
+    "cue": "Strawberries show small surface seeds and green leafy caps on red fruit.",
+    "group": "berries",
+    "sourcePages": [
+      5
+    ],
+    "flags": [
+      "sold-by-curated",
+      "retail-form-specific"
+    ],
+    "sourceItem": "Strawberries - 1lb",
+    "sourceOrder": 156
+  },
+  {
+    "catalogId": "strawberries-2lb",
+    "title": "Strawberries - 2lb",
+    "code": "36983",
+    "family": "Berries",
+    "soldBy": "Each",
+    "saleForm": "Package",
+    "form": "Red seeded berries with leafy caps",
+    "color": "Red",
+    "imageQuery": "Strawberries raw produce",
+    "cue": "Strawberries show small surface seeds and green leafy caps on red fruit.",
+    "group": "berries",
+    "sourcePages": [
+      5
+    ],
+    "flags": [
+      "sold-by-curated",
+      "retail-form-specific"
+    ],
+    "sourceItem": "Strawberries - 2lb",
+    "sourceOrder": 157
+  },
+  {
     "catalogId": "tomato-fm-on-the-vine-bulk",
     "title": "Tomato - FM On The Vine (Bulk)",
     "code": "64664",
@@ -1580,6 +1922,25 @@
     ],
     "sourceItem": "Tomatoes - Roma / Plum (Box, Half Bushel)",
     "sourceOrder": 166
+  },
+  {
+    "catalogId": "tomatoes-vine-ripe-field-bulk",
+    "title": "Tomatoes - Vine Ripe / Field (Bulk)",
+    "code": "3061",
+    "family": "Tomatoes",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Round ripe tomatoes attached along a vine",
+    "color": "Red",
+    "imageQuery": "Vine-ripe tomatoes raw produce",
+    "cue": "Round ripe red tomatoes attached along a vine identify vine-ripe tomatoes.",
+    "group": "tomatoes",
+    "sourcePages": [
+      3,
+      4
+    ],
+    "sourceItem": "Tomatoes - Vine Ripe / Field (Bulk)",
+    "sourceOrder": 167
   },
   {
     "catalogId": "uchoy-sum",

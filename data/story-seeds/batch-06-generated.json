@@ -72,8 +72,8 @@
           "label": "Apples"
         },
         {
-          "id": "avocados",
-          "label": "Avocados"
+          "id": "asparagus",
+          "label": "Asparagus"
         }
       ],
       "formAnswer": "thick-tapered-succulent-leaves",
@@ -202,8 +202,8 @@
           "label": "Stalk Vegetables"
         },
         {
-          "id": "avocados",
-          "label": "Avocados"
+          "id": "asparagus",
+          "label": "Asparagus"
         }
       ],
       "formAnswer": "round-apple",
@@ -349,8 +349,8 @@
           "label": "Stalk Vegetables"
         },
         {
-          "id": "avocados",
-          "label": "Avocados"
+          "id": "asparagus",
+          "label": "Asparagus"
         }
       ],
       "formAnswer": "round-apple",
@@ -496,8 +496,8 @@
           "label": "Stalk Vegetables"
         },
         {
-          "id": "avocados",
-          "label": "Avocados"
+          "id": "asparagus",
+          "label": "Asparagus"
         }
       ],
       "formAnswer": "round-apple",
@@ -643,8 +643,8 @@
           "label": "Stalk Vegetables"
         },
         {
-          "id": "avocados",
-          "label": "Avocados"
+          "id": "asparagus",
+          "label": "Asparagus"
         }
       ],
       "formAnswer": "round-apple",
@@ -789,8 +789,8 @@
           "label": "Stalk Vegetables"
         },
         {
-          "id": "avocados",
-          "label": "Avocados"
+          "id": "asparagus",
+          "label": "Asparagus"
         }
       ],
       "formAnswer": "round-golden-apple",
@@ -936,8 +936,8 @@
           "label": "Stalk Vegetables"
         },
         {
-          "id": "avocados",
-          "label": "Avocados"
+          "id": "asparagus",
+          "label": "Asparagus"
         }
       ],
       "formAnswer": "round-apple",
@@ -1004,6 +1004,158 @@
         "catalog-remainder-essential",
         "media-reviewed-override",
         "media-shared-reviewed",
+        "media-label-assisted",
+        "qualifier-workbook-label"
+      ],
+      "confidence": "verified-from-supplied-material"
+    }
+  },
+  {
+    "schemaVersion": "0.9.0",
+    "id": "apples-lady-alice-pc-3106",
+    "catalogId": "apples-lady-alice-pc",
+    "title": "Apples - Lady Alice PC",
+    "shortTitle": "Apples - Lady Alice PC",
+    "family": "Apples",
+    "priority": "must-know",
+    "selection": {
+      "rawScore": 90,
+      "score": 90,
+      "band": "Essential",
+      "priority": "must-know"
+    },
+    "identity": {
+      "family": "Apples",
+      "form": "Round apple",
+      "color": "Red-pink and yellow",
+      "variant": "Apples - Lady Alice PC"
+    },
+    "checkout": {
+      "code": "3106",
+      "soldBy": "Weight",
+      "saleForm": "Loose",
+      "codeScope": "catalog-listed-retail-unit"
+    },
+    "photos": [
+      {
+        "id": "apples-lady-alice-pc-3106-hero",
+        "file": "Lady Alice apple from supermarket in Seattle.jpg",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/Lady_Alice_apple_from_supermarket_in_Seattle.jpg/1920px-Lady_Alice_apple_from_supermarket_in_Seattle.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Lady Alice apple reference photograph showing look for a round apple with a red-pink blush over yellow skin and a shallow stem depression.",
+        "role": "hero",
+        "focus": "50% 50%",
+        "author": "ragesoss",
+        "license": "CC BY-SA 3.0"
+      },
+      {
+        "id": "apples-lady-alice-pc-3106-alternate",
+        "file": "Lady Alice apple from supermarket in Seattle.jpg",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/Lady_Alice_apple_from_supermarket_in_Seattle.jpg/1920px-Lady_Alice_apple_from_supermarket_in_Seattle.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Alternate crop of Lady Alice apple highlighting its round apple",
+        "role": "alternate",
+        "focus": "38% 50%",
+        "reuseOf": "Lady Alice apple from supermarket in Seattle.jpg",
+        "fallbackReason": "One verified exact-item photograph is reused with a different crop so no unverified image can publish.",
+        "author": "ragesoss",
+        "license": "CC BY-SA 3.0"
+      },
+      {
+        "id": "apples-lady-alice-pc-3106-context",
+        "file": "Lady Alice apple from supermarket in Seattle.jpg",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/Lady_Alice_apple_from_supermarket_in_Seattle.jpg/1920px-Lady_Alice_apple_from_supermarket_in_Seattle.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Lady Alice apple produce reference emphasizing its red-pink and yellow appearance",
+        "role": "context",
+        "focus": "62% 50%",
+        "reuseOf": "Lady Alice apple from supermarket in Seattle.jpg",
+        "fallbackReason": "One verified exact-item photograph is reused with a different crop so no unverified image can publish.",
+        "author": "ragesoss",
+        "license": "CC BY-SA 3.0"
+      }
+    ],
+    "visualCues": [
+      "Look for a round apple with a red-pink blush over yellow skin and a shallow stem depression.",
+      "The visible color is red-pink and yellow; PC is from the workbook label, not appearance.",
+      "Match the store label to Apples - Lady Alice PC before using 3106."
+    ],
+    "classification": {
+      "familyAnswer": "apples",
+      "familyChoices": [
+        {
+          "id": "apples",
+          "label": "Apples"
+        },
+        {
+          "id": "stalk-vegetables",
+          "label": "Stalk Vegetables"
+        },
+        {
+          "id": "asparagus",
+          "label": "Asparagus"
+        }
+      ],
+      "formAnswer": "round-apple",
+      "formChoices": [
+        {
+          "id": "round-apple",
+          "label": "Red-pink and yellow · Round apple"
+        },
+        {
+          "id": "confusion-apples-ambrosia-bin",
+          "label": "Apples - Ambrosia (Bin)"
+        },
+        {
+          "id": "confusion-apples-ambrosia-pc",
+          "label": "Apples - Ambrosia PC"
+        }
+      ]
+    },
+    "variants": [],
+    "relations": [
+      {
+        "kind": "exception",
+        "title": "The store label selects this listing",
+        "copy": "The photograph teaches Lady Alice apple. PC is copied from the workbook label and is not inferred from appearance."
+      },
+      {
+        "kind": "exception",
+        "title": "The code follows the exact listing",
+        "copy": "Use 3106 only after the label matches Apples - Lady Alice PC."
+      }
+    ],
+    "similarItems": [
+      {
+        "name": "Apples - Ambrosia (Bin)",
+        "code": "25040",
+        "cue": "The reviewed photograph clearly shows apples - ambrosia in round apple form.",
+        "color": "#4F8B58"
+      },
+      {
+        "name": "Apples - Ambrosia PC",
+        "code": "64749",
+        "cue": "Round apples with a mixed red-yellow blush anchor the Ambrosia identity.",
+        "color": "#C25D52"
+      },
+      {
+        "name": "Apples - Gala (Orchard Run)",
+        "code": "62021",
+        "cue": "The reviewed photograph clearly shows apples - gala in round apple form.",
+        "color": "#D1A23B"
+      }
+    ],
+    "source": {
+      "primaryPages": [
+        5
+      ],
+      "relatedPages": [
+        5
+      ],
+      "checkedOnReference": true,
+      "flags": [
+        "sold-by-curated",
+        "retail-form-specific",
+        "batch-06",
+        "catalog-remainder-essential",
+        "media-reviewed-override",
         "media-label-assisted",
         "qualifier-workbook-label"
       ],
@@ -1083,8 +1235,8 @@
           "label": "Stalk Vegetables"
         },
         {
-          "id": "avocados",
-          "label": "Avocados"
+          "id": "asparagus",
+          "label": "Asparagus"
         }
       ],
       "formAnswer": "round-apple",
@@ -1230,8 +1382,8 @@
           "label": "Stalk Vegetables"
         },
         {
-          "id": "avocados",
-          "label": "Avocados"
+          "id": "asparagus",
+          "label": "Asparagus"
         }
       ],
       "formAnswer": "round-apple",
@@ -1376,8 +1528,8 @@
           "label": "Stalk Vegetables"
         },
         {
-          "id": "avocados",
-          "label": "Avocados"
+          "id": "asparagus",
+          "label": "Asparagus"
         }
       ],
       "formAnswer": "round-apple",
@@ -1442,6 +1594,157 @@
         "retail-form-specific",
         "batch-06",
         "catalog-remainder-essential",
+        "media-reviewed-override",
+        "media-label-assisted",
+        "qualifier-workbook-label"
+      ],
+      "confidence": "verified-from-supplied-material"
+    }
+  },
+  {
+    "schemaVersion": "0.9.0",
+    "id": "asparagus-organic-94080",
+    "catalogId": "asparagus-organic",
+    "title": "Asparagus - Organic",
+    "shortTitle": "Asparagus - Organic",
+    "family": "Asparagus",
+    "priority": "common",
+    "selection": {
+      "rawScore": 75,
+      "score": 75,
+      "band": "Common",
+      "priority": "common"
+    },
+    "identity": {
+      "family": "Asparagus",
+      "form": "Long bundled spears with tapered tips",
+      "color": "Green",
+      "variant": "Asparagus - Organic"
+    },
+    "checkout": {
+      "code": "94080",
+      "soldBy": "Weight",
+      "saleForm": "Loose",
+      "codeScope": "catalog-listed-retail-unit"
+    },
+    "photos": [
+      {
+        "id": "asparagus-organic-94080-hero",
+        "file": "HK CWB 銅鑼灣 Causeway Bay 軒尼詩道 500 Hennessy Road 希慎廣場 Hysan Place mall B2 basement shop MarketPlace by Jasons Supermarket October 2021 SS2 02.jpg",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/HK_CWB_%E9%8A%85%E9%91%BC%E7%81%A3_Causeway_Bay_%E8%BB%92%E5%B0%BC%E8%A9%A9%E9%81%93_500_Hennessy_Road_%E5%B8%8C%E6%85%8E%E5%BB%A3%E5%A0%B4_Hysan_Place_mall_B2_basement_shop_MarketPlace_by_Jasons_Supermarket_October_2021_SS2_02.jpg/1920px-thumbnail.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Asparagus reference photograph showing long green spears with compact tapered tips identify asparagus.",
+        "role": "hero",
+        "focus": "50% 50%",
+        "author": "Hooemz Ming Shum",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "id": "asparagus-organic-94080-alternate",
+        "file": "HK CWB 銅鑼灣 Causeway Bay 軒尼詩道 500 Hennessy Road 希慎廣場 Hysan Place mall B2 basement shop MarketPlace by Jasons Supermarket October 2021 SS2 02.jpg",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/HK_CWB_%E9%8A%85%E9%91%BC%E7%81%A3_Causeway_Bay_%E8%BB%92%E5%B0%BC%E8%A9%A9%E9%81%93_500_Hennessy_Road_%E5%B8%8C%E6%85%8E%E5%BB%A3%E5%A0%B4_Hysan_Place_mall_B2_basement_shop_MarketPlace_by_Jasons_Supermarket_October_2021_SS2_02.jpg/1920px-thumbnail.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Alternate crop of Asparagus highlighting its long bundled spears with tapered tips",
+        "role": "alternate",
+        "focus": "38% 50%",
+        "reuseOf": "HK CWB 銅鑼灣 Causeway Bay 軒尼詩道 500 Hennessy Road 希慎廣場 Hysan Place mall B2 basement shop MarketPlace by Jasons Supermarket October 2021 SS2 02.jpg",
+        "fallbackReason": "One verified exact-item photograph is reused with a different crop so no unverified image can publish.",
+        "author": "Hooemz Ming Shum",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "id": "asparagus-organic-94080-context",
+        "file": "HK CWB 銅鑼灣 Causeway Bay 軒尼詩道 500 Hennessy Road 希慎廣場 Hysan Place mall B2 basement shop MarketPlace by Jasons Supermarket October 2021 SS2 02.jpg",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/HK_CWB_%E9%8A%85%E9%91%BC%E7%81%A3_Causeway_Bay_%E8%BB%92%E5%B0%BC%E8%A9%A9%E9%81%93_500_Hennessy_Road_%E5%B8%8C%E6%85%8E%E5%BB%A3%E5%A0%B4_Hysan_Place_mall_B2_basement_shop_MarketPlace_by_Jasons_Supermarket_October_2021_SS2_02.jpg/1920px-thumbnail.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Asparagus produce reference emphasizing its green appearance",
+        "role": "context",
+        "focus": "62% 50%",
+        "reuseOf": "HK CWB 銅鑼灣 Causeway Bay 軒尼詩道 500 Hennessy Road 希慎廣場 Hysan Place mall B2 basement shop MarketPlace by Jasons Supermarket October 2021 SS2 02.jpg",
+        "fallbackReason": "One verified exact-item photograph is reused with a different crop so no unverified image can publish.",
+        "author": "Hooemz Ming Shum",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "visualCues": [
+      "Long green spears with compact tapered tips identify asparagus.",
+      "The visible color is green; Organic is from the workbook label, not appearance.",
+      "Match the store label to Asparagus - Organic before using 94080."
+    ],
+    "classification": {
+      "familyAnswer": "asparagus",
+      "familyChoices": [
+        {
+          "id": "asparagus",
+          "label": "Asparagus"
+        },
+        {
+          "id": "stalk-vegetables",
+          "label": "Stalk Vegetables"
+        },
+        {
+          "id": "apples",
+          "label": "Apples"
+        }
+      ],
+      "formAnswer": "long-bundled-spears-with-tapered-tips",
+      "formChoices": [
+        {
+          "id": "long-bundled-spears-with-tapered-tips",
+          "label": "Green · Long bundled spears with tapered tips"
+        },
+        {
+          "id": "confusion-asparagus-green",
+          "label": "Green asparagus"
+        },
+        {
+          "id": "confusion-aloe",
+          "label": "Aloe"
+        }
+      ]
+    },
+    "variants": [],
+    "relations": [
+      {
+        "kind": "exception",
+        "title": "The store label selects this listing",
+        "copy": "The photograph teaches Asparagus. Organic is copied from the workbook label and is not inferred from appearance."
+      },
+      {
+        "kind": "exception",
+        "title": "The code follows the exact listing",
+        "copy": "Use 94080 only after the label matches Asparagus - Organic."
+      }
+    ],
+    "similarItems": [
+      {
+        "name": "Green asparagus",
+        "code": "4080",
+        "cue": "Long straight green spears of similar thickness",
+        "color": "#4F8B58"
+      },
+      {
+        "name": "Aloe",
+        "code": "3798",
+        "cue": "Aloe is identified by its green appearance and thick tapered succulent leaves.",
+        "color": "#C25D52"
+      },
+      {
+        "name": "Bean Sprouts (Case)",
+        "code": "63604",
+        "cue": "The reviewed photograph clearly shows bean sprouts in tender sprouted stems form.",
+        "color": "#D1A23B"
+      }
+    ],
+    "source": {
+      "primaryPages": [
+        4
+      ],
+      "relatedPages": [
+        4
+      ],
+      "checkedOnReference": true,
+      "flags": [
+        "sold-by-curated",
+        "batch-06",
+        "catalog-remainder-common",
         "media-reviewed-override",
         "media-label-assisted",
         "qualifier-workbook-label"
@@ -1861,9 +2164,9 @@
         "color": "#C25D52"
       },
       {
-        "name": "Beans - Green (Case)",
-        "code": "6820",
-        "cue": "Long slender green pods with pointed ends identify green beans.",
+        "name": "Asparagus - Organic",
+        "code": "94080",
+        "cue": "Long green spears with compact tapered tips identify asparagus.",
         "color": "#D1A23B"
       }
     ],
@@ -2183,6 +2486,154 @@
   },
   {
     "schemaVersion": "0.9.0",
+    "id": "blackberries-pint-12oz-522",
+    "catalogId": "blackberries-pint-12oz",
+    "title": "Blackberries - Pint / 12oz",
+    "shortTitle": "Blackberries - Pint / 12oz",
+    "family": "Berries",
+    "priority": "must-know",
+    "selection": {
+      "rawScore": 90,
+      "score": 90,
+      "band": "Essential",
+      "priority": "must-know"
+    },
+    "identity": {
+      "family": "Berries",
+      "form": "Small clustered drupelet berries",
+      "color": "Black",
+      "variant": "Blackberries - Pint / 12oz"
+    },
+    "checkout": {
+      "code": "522",
+      "soldBy": "Each",
+      "saleForm": "Package",
+      "codeScope": "catalog-listed-retail-unit"
+    },
+    "photos": [
+      {
+        "id": "blackberries-pint-12oz-522-hero",
+        "file": "Blackberry (Rubus fruticosus).jpg",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/Blackberry_%28Rubus_fruticosus%29.jpg/1920px-Blackberry_%28Rubus_fruticosus%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Blackberries reference photograph showing blackberries have glossy black clusters of rounded drupelets.",
+        "role": "hero",
+        "focus": "50% 50%",
+        "author": "Ivar Leidus",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "id": "blackberries-pint-12oz-522-alternate",
+        "file": "Blackberries (Rubus fruticosus).jpg",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/Blackberries_%28Rubus_fruticosus%29.jpg/1920px-Blackberries_%28Rubus_fruticosus%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Alternate photograph of Blackberries highlighting its small clustered drupelet berries",
+        "role": "alternate",
+        "focus": "50% 50%",
+        "author": "Ivar Leidus",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "id": "blackberries-pint-12oz-522-context",
+        "file": "Blackberries as food.jpg",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/3/3f/Blackberries_as_food.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "alt": "Blackberries produce reference emphasizing its black appearance",
+        "role": "context",
+        "focus": "50% 50%",
+        "author": "Novoklimov",
+        "license": "CC0"
+      }
+    ],
+    "visualCues": [
+      "Blackberries have glossy black clusters of rounded drupelets.",
+      "The visible color is black; Pint and 12oz are from the workbook label, not appearance.",
+      "Match the store label to Blackberries - Pint / 12oz before using 522."
+    ],
+    "classification": {
+      "familyAnswer": "berries",
+      "familyChoices": [
+        {
+          "id": "berries",
+          "label": "Berries"
+        },
+        {
+          "id": "stalk-vegetables",
+          "label": "Stalk Vegetables"
+        },
+        {
+          "id": "apples",
+          "label": "Apples"
+        }
+      ],
+      "formAnswer": "small-clustered-drupelet-berries",
+      "formChoices": [
+        {
+          "id": "small-clustered-drupelet-berries",
+          "label": "Black · Small clustered drupelet berries"
+        },
+        {
+          "id": "confusion-blueberries-2lb",
+          "label": "Blueberries - 2lb"
+        },
+        {
+          "id": "confusion-blueberries-full-pint-12oz",
+          "label": "Blueberries - Full Pint / 12oz"
+        }
+      ]
+    },
+    "variants": [],
+    "relations": [
+      {
+        "kind": "exception",
+        "title": "The store label selects this listing",
+        "copy": "The photograph teaches Blackberries. Pint and 12oz are copied from the workbook label and are not inferred from appearance."
+      },
+      {
+        "kind": "exception",
+        "title": "The code follows the exact listing",
+        "copy": "Use 522 only after the label matches Blackberries - Pint / 12oz."
+      }
+    ],
+    "similarItems": [
+      {
+        "name": "Blueberries - 2lb",
+        "code": "39583",
+        "cue": "The reviewed photograph clearly shows blueberries in small soft berries form.",
+        "color": "#4F8B58"
+      },
+      {
+        "name": "Blueberries - Full Pint / 12oz",
+        "code": "424",
+        "cue": "Small round blue-purple berries with pale bloom identify blueberries.",
+        "color": "#C25D52"
+      },
+      {
+        "name": "Blueberries - Half Pint / 6oz",
+        "code": "71305",
+        "cue": "Small round blue-purple berries with pale bloom identify blueberries.",
+        "color": "#D1A23B"
+      }
+    ],
+    "source": {
+      "primaryPages": [
+        5
+      ],
+      "relatedPages": [
+        5
+      ],
+      "checkedOnReference": true,
+      "flags": [
+        "sold-by-curated",
+        "retail-form-specific",
+        "batch-06",
+        "catalog-remainder-essential",
+        "media-reviewed-override",
+        "media-label-assisted",
+        "qualifier-workbook-label"
+      ],
+      "confidence": "verified-from-supplied-material"
+    }
+  },
+  {
+    "schemaVersion": "0.9.0",
     "id": "blueberries-2lb-39583",
     "catalogId": "blueberries-2lb",
     "title": "Blueberries - 2lb",
@@ -2265,12 +2716,12 @@
           "label": "Mixed · Small soft berries"
         },
         {
-          "id": "confusion-blueberries-full-pint-12oz",
-          "label": "Blueberries - Full Pint / 12oz"
+          "id": "confusion-blackberries-pint-12oz",
+          "label": "Blackberries - Pint / 12oz"
         },
         {
-          "id": "confusion-blueberries-half-pint-6oz",
-          "label": "Blueberries - Half Pint / 6oz"
+          "id": "confusion-blueberries-full-pint-12oz",
+          "label": "Blueberries - Full Pint / 12oz"
         }
       ]
     },
@@ -2289,21 +2740,21 @@
     ],
     "similarItems": [
       {
+        "name": "Blackberries - Pint / 12oz",
+        "code": "522",
+        "cue": "Blackberries have glossy black clusters of rounded drupelets.",
+        "color": "#4F8B58"
+      },
+      {
         "name": "Blueberries - Full Pint / 12oz",
         "code": "424",
         "cue": "Small round blue-purple berries with pale bloom identify blueberries.",
-        "color": "#4F8B58"
+        "color": "#C25D52"
       },
       {
         "name": "Blueberries - Half Pint / 6oz",
         "code": "71305",
         "cue": "Small round blue-purple berries with pale bloom identify blueberries.",
-        "color": "#C25D52"
-      },
-      {
-        "name": "Apples - Ambrosia (Bin)",
-        "code": "25040",
-        "cue": "The reviewed photograph clearly shows apples - ambrosia in round apple form.",
         "color": "#D1A23B"
       }
     ],
@@ -2412,12 +2863,12 @@
           "label": "Blue-purple · Small soft berries"
         },
         {
-          "id": "confusion-blueberries-2lb",
-          "label": "Blueberries - 2lb"
+          "id": "confusion-blackberries-pint-12oz",
+          "label": "Blackberries - Pint / 12oz"
         },
         {
-          "id": "confusion-blueberries-half-pint-6oz",
-          "label": "Blueberries - Half Pint / 6oz"
+          "id": "confusion-blueberries-2lb",
+          "label": "Blueberries - 2lb"
         }
       ]
     },
@@ -2436,21 +2887,21 @@
     ],
     "similarItems": [
       {
+        "name": "Blackberries - Pint / 12oz",
+        "code": "522",
+        "cue": "Blackberries have glossy black clusters of rounded drupelets.",
+        "color": "#4F8B58"
+      },
+      {
         "name": "Blueberries - 2lb",
         "code": "39583",
         "cue": "The reviewed photograph clearly shows blueberries in small soft berries form.",
-        "color": "#4F8B58"
+        "color": "#C25D52"
       },
       {
         "name": "Blueberries - Half Pint / 6oz",
         "code": "71305",
         "cue": "Small round blue-purple berries with pale bloom identify blueberries.",
-        "color": "#C25D52"
-      },
-      {
-        "name": "Apples - Ambrosia (Bin)",
-        "code": "25040",
-        "cue": "The reviewed photograph clearly shows apples - ambrosia in round apple form.",
         "color": "#D1A23B"
       }
     ],
@@ -2559,12 +3010,12 @@
           "label": "Blue-purple · Small soft berries"
         },
         {
-          "id": "confusion-blueberries-2lb",
-          "label": "Blueberries - 2lb"
+          "id": "confusion-blackberries-pint-12oz",
+          "label": "Blackberries - Pint / 12oz"
         },
         {
-          "id": "confusion-blueberries-full-pint-12oz",
-          "label": "Blueberries - Full Pint / 12oz"
+          "id": "confusion-blueberries-2lb",
+          "label": "Blueberries - 2lb"
         }
       ]
     },
@@ -2583,21 +3034,21 @@
     ],
     "similarItems": [
       {
+        "name": "Blackberries - Pint / 12oz",
+        "code": "522",
+        "cue": "Blackberries have glossy black clusters of rounded drupelets.",
+        "color": "#4F8B58"
+      },
+      {
         "name": "Blueberries - 2lb",
         "code": "39583",
         "cue": "The reviewed photograph clearly shows blueberries in small soft berries form.",
-        "color": "#4F8B58"
+        "color": "#C25D52"
       },
       {
         "name": "Blueberries - Full Pint / 12oz",
         "code": "424",
         "cue": "Small round blue-purple berries with pale bloom identify blueberries.",
-        "color": "#C25D52"
-      },
-      {
-        "name": "Apples - Ambrosia (Bin)",
-        "code": "25040",
-        "cue": "The reviewed photograph clearly shows apples - ambrosia in round apple form.",
         "color": "#D1A23B"
       }
     ],
@@ -2706,12 +3157,12 @@
           "label": "Pale Green and Green · Pale thick stalks with spoon-shaped green leaves"
         },
         {
-          "id": "confusion-uchoy-sum",
-          "label": "Uchoy Sum"
+          "id": "confusion-methileaf-herbs",
+          "label": "Methileaf - Herbs"
         },
         {
-          "id": "confusion-yu-choy-jr",
-          "label": "Yu Choy - Jr"
+          "id": "confusion-sher-li-hon",
+          "label": "Sher-Li-Hon"
         }
       ]
     },
@@ -2730,21 +3181,21 @@
     ],
     "similarItems": [
       {
-        "name": "Uchoy Sum",
-        "code": "64387",
-        "cue": "Uchoy Sum is identified by its green appearance and broad leafy stems.",
+        "name": "Methileaf - Herbs",
+        "code": "59994",
+        "cue": "Clusters of three small oval green leaflets on slender stems identify fresh methi leaf.",
         "color": "#4F8B58"
       },
       {
-        "name": "Yu Choy - Jr",
-        "code": "10260",
-        "cue": "Green leafy stems and small yellow flowers identify the yu choy or choi sum form.",
+        "name": "Sher-Li-Hon",
+        "code": "69624",
+        "cue": "Look for broad green leaves with serrated edges and pale ribs running into the stems.",
         "color": "#C25D52"
       },
       {
-        "name": "Bok choy",
-        "code": "4545",
-        "cue": "Cluster of broad green leaves rising from thick white stalks",
+        "name": "Uchoy Sum",
+        "code": "64387",
+        "cue": "Uchoy Sum is identified by its green appearance and broad leafy stems.",
         "color": "#D1A23B"
       }
     ],
@@ -3648,6 +4099,307 @@
   },
   {
     "schemaVersion": "0.9.0",
+    "id": "cucumbers-dill-case-38595",
+    "catalogId": "cucumbers-dill-case",
+    "title": "Cucumbers - Dill (Case)",
+    "shortTitle": "Cucumbers - Dill (Case)",
+    "family": "Cucumbers",
+    "priority": "common",
+    "selection": {
+      "rawScore": 75,
+      "score": 75,
+      "band": "Common",
+      "priority": "common"
+    },
+    "identity": {
+      "family": "Cucumbers",
+      "form": "Short bumpy whole cucumbers",
+      "color": "Green",
+      "variant": "Cucumbers - Dill (Case)"
+    },
+    "checkout": {
+      "code": "38595",
+      "soldBy": "Each",
+      "saleForm": "Case",
+      "codeScope": "catalog-listed-retail-unit"
+    },
+    "photos": [
+      {
+        "id": "cucumbers-dill-case-38595-hero",
+        "file": "PicklingCucumbers.jpg",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/a/ac/PicklingCucumbers.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "alt": "Pickling cucumber reference photograph showing short green cucumbers with bumpy skin and blunt ends provide the recognition anchor.",
+        "role": "hero",
+        "focus": "50% 50%",
+        "author": "The original Uploader was Gruepig at English Wikipedia",
+        "license": "Public domain"
+      },
+      {
+        "id": "cucumbers-dill-case-38595-alternate",
+        "file": "PicklingCucumbers.jpg",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/a/ac/PicklingCucumbers.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "alt": "Alternate crop of Pickling cucumber highlighting its short bumpy whole cucumbers",
+        "role": "alternate",
+        "focus": "38% 50%",
+        "reuseOf": "PicklingCucumbers.jpg",
+        "fallbackReason": "One verified exact-item photograph is reused with a different crop so no unverified image can publish.",
+        "author": "The original Uploader was Gruepig at English Wikipedia",
+        "license": "Public domain"
+      },
+      {
+        "id": "cucumbers-dill-case-38595-context",
+        "file": "Pickling cucumbers for sale in Kraków.jpg",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/Pickling_cucumbers_for_sale_in_Krak%C3%B3w.jpg/1920px-Pickling_cucumbers_for_sale_in_Krak%C3%B3w.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Pickling cucumber produce reference emphasizing its green appearance",
+        "role": "context",
+        "focus": "50% 50%",
+        "author": "victorgrigas",
+        "license": "CC BY-SA 3.0"
+      }
+    ],
+    "visualCues": [
+      "Short green cucumbers with bumpy skin and blunt ends provide the recognition anchor.",
+      "The visible color is green; Dill and Case are from the workbook label, not appearance.",
+      "Match the store label to Cucumbers - Dill (Case) before using 38595."
+    ],
+    "classification": {
+      "familyAnswer": "cucumbers",
+      "familyChoices": [
+        {
+          "id": "cucumbers",
+          "label": "Cucumbers"
+        },
+        {
+          "id": "stalk-vegetables",
+          "label": "Stalk Vegetables"
+        },
+        {
+          "id": "apples",
+          "label": "Apples"
+        }
+      ],
+      "formAnswer": "short-bumpy-whole-cucumbers",
+      "formChoices": [
+        {
+          "id": "short-bumpy-whole-cucumbers",
+          "label": "Green · Short bumpy whole cucumbers"
+        },
+        {
+          "id": "confusion-cucumbers-english",
+          "label": "English cucumber"
+        },
+        {
+          "id": "confusion-cucumbers-field",
+          "label": "Field cucumber"
+        }
+      ]
+    },
+    "variants": [],
+    "relations": [
+      {
+        "kind": "exception",
+        "title": "The store label selects this listing",
+        "copy": "The photograph teaches Pickling cucumber. Dill and Case are copied from the workbook label and are not inferred from appearance."
+      },
+      {
+        "kind": "exception",
+        "title": "The code follows the exact listing",
+        "copy": "Use 38595 only after the label matches Cucumbers - Dill (Case)."
+      }
+    ],
+    "similarItems": [
+      {
+        "name": "English cucumber",
+        "code": "4593",
+        "cue": "Very long narrow cucumber with nearly parallel sides",
+        "color": "#4F8B58"
+      },
+      {
+        "name": "Field cucumber",
+        "code": "4062",
+        "cue": "Shorter and thicker than an English cucumber",
+        "color": "#C25D52"
+      },
+      {
+        "name": "Dill cucumber",
+        "code": "4596",
+        "cue": "Short firm cucumbers have bumpy skin and blunt ends.",
+        "color": "#D1A23B"
+      }
+    ],
+    "source": {
+      "primaryPages": [
+        4
+      ],
+      "relatedPages": [
+        4
+      ],
+      "checkedOnReference": true,
+      "flags": [
+        "sold-by-curated",
+        "retail-form-specific",
+        "batch-06",
+        "catalog-remainder-common",
+        "media-reviewed-override",
+        "media-label-assisted",
+        "qualifier-workbook-label"
+      ],
+      "confidence": "verified-from-supplied-material"
+    }
+  },
+  {
+    "schemaVersion": "0.9.0",
+    "id": "dill-weed-pickling-herbs-4893",
+    "catalogId": "dill-weed-pickling-herbs",
+    "title": "Dill Weed (Pickling) - Herbs",
+    "shortTitle": "Dill Weed (Pickling) - Herbs",
+    "family": "Herbs",
+    "priority": "common",
+    "selection": {
+      "rawScore": 75,
+      "score": 75,
+      "band": "Common",
+      "priority": "common"
+    },
+    "identity": {
+      "family": "Herbs",
+      "form": "Fine feathery fronds on slender stems",
+      "color": "Green",
+      "variant": "Dill Weed (Pickling) - Herbs"
+    },
+    "checkout": {
+      "code": "4893",
+      "soldBy": "Weight",
+      "saleForm": "Loose",
+      "codeScope": "catalog-listed-retail-unit"
+    },
+    "photos": [
+      {
+        "id": "dill-weed-pickling-herbs-4893-hero",
+        "file": "Samara Market 04 Dill, lots of dill (4136882030).jpg",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/Samara_Market_04_Dill%2C_lots_of_dill_%284136882030%29.jpg/1920px-Samara_Market_04_Dill%2C_lots_of_dill_%284136882030%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Dill weed reference photograph showing fine feathery green fronds on slender stems identify fresh dill weed.",
+        "role": "hero",
+        "focus": "50% 50%",
+        "author": "michael clarke stuff",
+        "license": "CC BY-SA 2.0"
+      },
+      {
+        "id": "dill-weed-pickling-herbs-4893-alternate",
+        "file": "Samara Market 04 Dill, lots of dill (4136882030).jpg",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/Samara_Market_04_Dill%2C_lots_of_dill_%284136882030%29.jpg/1920px-Samara_Market_04_Dill%2C_lots_of_dill_%284136882030%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Alternate crop of Dill weed highlighting its fine feathery fronds on slender stems",
+        "role": "alternate",
+        "focus": "38% 50%",
+        "reuseOf": "Samara Market 04 Dill, lots of dill (4136882030).jpg",
+        "fallbackReason": "One verified exact-item photograph is reused with a different crop so no unverified image can publish.",
+        "author": "michael clarke stuff",
+        "license": "CC BY-SA 2.0"
+      },
+      {
+        "id": "dill-weed-pickling-herbs-4893-context",
+        "file": "Samara Market 04 Dill, lots of dill (4136882030).jpg",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/Samara_Market_04_Dill%2C_lots_of_dill_%284136882030%29.jpg/1920px-Samara_Market_04_Dill%2C_lots_of_dill_%284136882030%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Dill weed produce reference emphasizing its green appearance",
+        "role": "context",
+        "focus": "62% 50%",
+        "reuseOf": "Samara Market 04 Dill, lots of dill (4136882030).jpg",
+        "fallbackReason": "One verified exact-item photograph is reused with a different crop so no unverified image can publish.",
+        "author": "michael clarke stuff",
+        "license": "CC BY-SA 2.0"
+      }
+    ],
+    "visualCues": [
+      "Fine feathery green fronds on slender stems identify fresh dill weed.",
+      "The visible color is green; Pickling is from the workbook label, not appearance.",
+      "Match the store label to Dill Weed (Pickling) - Herbs before using 4893."
+    ],
+    "classification": {
+      "familyAnswer": "herbs",
+      "familyChoices": [
+        {
+          "id": "herbs",
+          "label": "Herbs"
+        },
+        {
+          "id": "stalk-vegetables",
+          "label": "Stalk Vegetables"
+        },
+        {
+          "id": "apples",
+          "label": "Apples"
+        }
+      ],
+      "formAnswer": "fine-feathery-fronds-on-slender-stems",
+      "formChoices": [
+        {
+          "id": "fine-feathery-fronds-on-slender-stems",
+          "label": "Green · Fine feathery fronds on slender stems"
+        },
+        {
+          "id": "confusion-cilantro-coriander-herbs",
+          "label": "Cilantro"
+        },
+        {
+          "id": "confusion-basil-herbs",
+          "label": "Basil"
+        }
+      ]
+    },
+    "variants": [],
+    "relations": [
+      {
+        "kind": "exception",
+        "title": "The store label selects this listing",
+        "copy": "The photograph teaches Dill weed. Pickling is copied from the workbook label and is not inferred from appearance."
+      },
+      {
+        "kind": "exception",
+        "title": "The code follows the exact listing",
+        "copy": "Use 4893 only after the label matches Dill Weed (Pickling) - Herbs."
+      }
+    ],
+    "similarItems": [
+      {
+        "name": "Cilantro",
+        "code": "4889",
+        "cue": "Delicate flat leaves with rounded, scalloped lobes",
+        "color": "#4F8B58"
+      },
+      {
+        "name": "Basil",
+        "code": "4885",
+        "cue": "Smooth broad leaves with softly rounded points.",
+        "color": "#C25D52"
+      },
+      {
+        "name": "Anise fennel",
+        "code": "4515",
+        "cue": "A layered white bulb topped by feathery green fronds.",
+        "color": "#D1A23B"
+      }
+    ],
+    "source": {
+      "primaryPages": [
+        4
+      ],
+      "relatedPages": [
+        4
+      ],
+      "checkedOnReference": true,
+      "flags": [
+        "sold-by-curated",
+        "batch-06",
+        "catalog-remainder-common",
+        "media-reviewed-override",
+        "media-label-assisted",
+        "qualifier-workbook-label"
+      ],
+      "confidence": "verified-from-supplied-material"
+    }
+  },
+  {
+    "schemaVersion": "0.9.0",
     "id": "eggplant-purple-case-63582",
     "catalogId": "eggplant-purple-case",
     "title": "Eggplant - Purple (Case)",
@@ -4527,6 +5279,308 @@
   },
   {
     "schemaVersion": "0.9.0",
+    "id": "garlic-loose-bulk-4610",
+    "catalogId": "garlic-loose-bulk",
+    "title": "Garlic - Loose (Bulk)",
+    "shortTitle": "Garlic - Loose (Bulk)",
+    "family": "Alliums",
+    "priority": "must-know",
+    "selection": {
+      "rawScore": 90,
+      "score": 90,
+      "band": "Essential",
+      "priority": "must-know"
+    },
+    "identity": {
+      "family": "Alliums",
+      "form": "Papery divided bulbs and cloves",
+      "color": "White",
+      "variant": "Garlic - Loose (Bulk)"
+    },
+    "checkout": {
+      "code": "4610",
+      "soldBy": "Weight",
+      "saleForm": "Loose",
+      "codeScope": "catalog-listed-retail-unit"
+    },
+    "photos": [
+      {
+        "id": "garlic-loose-bulk-4610-hero",
+        "file": "Garlic.jpg",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/22/Garlic.jpg/1920px-Garlic.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Loose garlic reference photograph showing white papery bulbs divided into cloves identify loose garlic.",
+        "role": "hero",
+        "focus": "50% 50%",
+        "author": "Donovan Govan",
+        "license": "CC BY-SA 3.0"
+      },
+      {
+        "id": "garlic-loose-bulk-4610-alternate",
+        "file": "Garlic.jpg",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/22/Garlic.jpg/1920px-Garlic.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Alternate crop of Loose garlic highlighting its papery divided bulbs and cloves",
+        "role": "alternate",
+        "focus": "38% 50%",
+        "reuseOf": "Garlic.jpg",
+        "fallbackReason": "One verified exact-item photograph is reused with a different crop so no unverified image can publish.",
+        "author": "Donovan Govan",
+        "license": "CC BY-SA 3.0"
+      },
+      {
+        "id": "garlic-loose-bulk-4610-context",
+        "file": "Garlic.jpg",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/22/Garlic.jpg/1920px-Garlic.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Loose garlic produce reference emphasizing its white appearance",
+        "role": "context",
+        "focus": "62% 50%",
+        "reuseOf": "Garlic.jpg",
+        "fallbackReason": "One verified exact-item photograph is reused with a different crop so no unverified image can publish.",
+        "author": "Donovan Govan",
+        "license": "CC BY-SA 3.0"
+      }
+    ],
+    "visualCues": [
+      "White papery bulbs divided into cloves identify loose garlic.",
+      "The visible color is white; Bulk is from the workbook label, not appearance.",
+      "Match the store label to Garlic - Loose (Bulk) before using 4610."
+    ],
+    "classification": {
+      "familyAnswer": "alliums",
+      "familyChoices": [
+        {
+          "id": "alliums",
+          "label": "Alliums"
+        },
+        {
+          "id": "stalk-vegetables",
+          "label": "Stalk Vegetables"
+        },
+        {
+          "id": "apples",
+          "label": "Apples"
+        }
+      ],
+      "formAnswer": "papery-divided-bulbs-and-cloves",
+      "formChoices": [
+        {
+          "id": "papery-divided-bulbs-and-cloves",
+          "label": "White · Papery divided bulbs and cloves"
+        },
+        {
+          "id": "confusion-garlic-peeled-5lb",
+          "label": "Garlic - Peeled 5lb"
+        },
+        {
+          "id": "confusion-garlic-1kg-bagged",
+          "label": "Garlic 1kg (bagged)"
+        }
+      ]
+    },
+    "variants": [],
+    "relations": [
+      {
+        "kind": "exception",
+        "title": "The store label selects this listing",
+        "copy": "The photograph teaches Loose garlic. Bulk is copied from the workbook label and is not inferred from appearance."
+      },
+      {
+        "kind": "exception",
+        "title": "The code follows the exact listing",
+        "copy": "Use 4610 only after the label matches Garlic - Loose (Bulk)."
+      }
+    ],
+    "similarItems": [
+      {
+        "name": "Garlic - Peeled 5lb",
+        "code": "63608",
+        "cue": "Smooth cream-white teardrop cloves show peeled garlic with the papery skin removed.",
+        "color": "#4F8B58"
+      },
+      {
+        "name": "Garlic 1kg (bagged)",
+        "code": "9578",
+        "cue": "The reviewed photograph clearly shows garlic in segmented bulb form.",
+        "color": "#C25D52"
+      },
+      {
+        "name": "Onions - Red 10lb",
+        "code": "3506",
+        "cue": "The reviewed photograph clearly shows onions - red in layered bulb or stalk form.",
+        "color": "#D1A23B"
+      }
+    ],
+    "source": {
+      "primaryPages": [
+        4
+      ],
+      "relatedPages": [
+        4
+      ],
+      "checkedOnReference": true,
+      "flags": [
+        "sold-by-curated",
+        "batch-06",
+        "catalog-remainder-essential",
+        "media-reviewed-override",
+        "media-shared-reviewed",
+        "media-label-assisted",
+        "qualifier-workbook-label"
+      ],
+      "confidence": "verified-from-supplied-material"
+    }
+  },
+  {
+    "schemaVersion": "0.9.0",
+    "id": "garlic-peeled-5lb-63608",
+    "catalogId": "garlic-peeled-5lb",
+    "title": "Garlic - Peeled 5lb",
+    "shortTitle": "Garlic - Peeled 5lb",
+    "family": "Alliums",
+    "priority": "must-know",
+    "selection": {
+      "rawScore": 90,
+      "score": 90,
+      "band": "Essential",
+      "priority": "must-know"
+    },
+    "identity": {
+      "family": "Alliums",
+      "form": "Separated smooth cloves without papery skin",
+      "color": "Cream-white",
+      "variant": "Garlic - Peeled 5lb"
+    },
+    "checkout": {
+      "code": "63608",
+      "soldBy": "Each",
+      "saleForm": "Package",
+      "codeScope": "catalog-listed-retail-unit"
+    },
+    "photos": [
+      {
+        "id": "garlic-peeled-5lb-63608-hero",
+        "file": "Peeled garlic cloves.jpg",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Peeled_garlic_cloves.jpg/1920px-Peeled_garlic_cloves.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Peeled garlic reference photograph showing smooth cream-white teardrop cloves show peeled garlic with the papery skin removed.",
+        "role": "hero",
+        "focus": "50% 50%",
+        "author": "Fumikas Sagisavas",
+        "license": "CC0"
+      },
+      {
+        "id": "garlic-peeled-5lb-63608-alternate",
+        "file": "Peeled garlic cloves🧄.jpg",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8c/Peeled_garlic_cloves%F0%9F%A7%84.jpg/1920px-Peeled_garlic_cloves%F0%9F%A7%84.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Alternate photograph of Peeled garlic highlighting its separated smooth cloves without papery skin",
+        "role": "alternate",
+        "focus": "50% 50%",
+        "author": "Fumikas Sagisavas",
+        "license": "CC0"
+      },
+      {
+        "id": "garlic-peeled-5lb-63608-context",
+        "file": "Peeled garlic cloves.jpg",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Peeled_garlic_cloves.jpg/1920px-Peeled_garlic_cloves.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Peeled garlic produce reference emphasizing its cream-white appearance",
+        "role": "context",
+        "focus": "62% 50%",
+        "reuseOf": "Peeled garlic cloves.jpg",
+        "fallbackReason": "One verified exact-item photograph is reused with a different crop so no unverified image can publish.",
+        "author": "Fumikas Sagisavas",
+        "license": "CC0"
+      }
+    ],
+    "visualCues": [
+      "Smooth cream-white teardrop cloves show peeled garlic with the papery skin removed.",
+      "The visible color is cream-white; 5lb is from the workbook label, not appearance.",
+      "Match the store label to Garlic - Peeled 5lb before using 63608."
+    ],
+    "classification": {
+      "familyAnswer": "alliums",
+      "familyChoices": [
+        {
+          "id": "alliums",
+          "label": "Alliums"
+        },
+        {
+          "id": "stalk-vegetables",
+          "label": "Stalk Vegetables"
+        },
+        {
+          "id": "apples",
+          "label": "Apples"
+        }
+      ],
+      "formAnswer": "separated-smooth-cloves-without-papery-skin",
+      "formChoices": [
+        {
+          "id": "separated-smooth-cloves-without-papery-skin",
+          "label": "Cream-white · Separated smooth cloves without papery skin"
+        },
+        {
+          "id": "confusion-garlic-loose-bulk",
+          "label": "Garlic - Loose (Bulk)"
+        },
+        {
+          "id": "confusion-garlic-1kg-bagged",
+          "label": "Garlic 1kg (bagged)"
+        }
+      ]
+    },
+    "variants": [],
+    "relations": [
+      {
+        "kind": "exception",
+        "title": "The store label selects this listing",
+        "copy": "The photograph teaches Peeled garlic. 5lb is copied from the workbook label and is not inferred from appearance."
+      },
+      {
+        "kind": "exception",
+        "title": "The code follows the exact listing",
+        "copy": "Use 63608 only after the label matches Garlic - Peeled 5lb."
+      }
+    ],
+    "similarItems": [
+      {
+        "name": "Garlic - Loose (Bulk)",
+        "code": "4610",
+        "cue": "White papery bulbs divided into cloves identify loose garlic.",
+        "color": "#4F8B58"
+      },
+      {
+        "name": "Garlic 1kg (bagged)",
+        "code": "9578",
+        "cue": "The reviewed photograph clearly shows garlic in segmented bulb form.",
+        "color": "#C25D52"
+      },
+      {
+        "name": "Onions - Red 10lb",
+        "code": "3506",
+        "cue": "The reviewed photograph clearly shows onions - red in layered bulb or stalk form.",
+        "color": "#D1A23B"
+      }
+    ],
+    "source": {
+      "primaryPages": [
+        4
+      ],
+      "relatedPages": [
+        4
+      ],
+      "checkedOnReference": true,
+      "flags": [
+        "sold-by-curated",
+        "retail-form-specific",
+        "batch-06",
+        "catalog-remainder-essential",
+        "media-reviewed-override",
+        "media-label-assisted",
+        "qualifier-workbook-label"
+      ],
+      "confidence": "verified-from-supplied-material"
+    }
+  },
+  {
+    "schemaVersion": "0.9.0",
     "id": "garlic-1kg-bagged-9578",
     "catalogId": "garlic-1kg-bagged",
     "title": "Garlic 1kg (bagged)",
@@ -4609,12 +5663,12 @@
           "label": "White · Segmented bulb"
         },
         {
-          "id": "confusion-onions-red-10lb",
-          "label": "Onions - Red 10lb"
+          "id": "confusion-garlic-loose-bulk",
+          "label": "Garlic - Loose (Bulk)"
         },
         {
-          "id": "confusion-onions-yellow-3lb-bag",
-          "label": "Onions - Yellow 3lb (Bag)"
+          "id": "confusion-garlic-peeled-5lb",
+          "label": "Garlic - Peeled 5lb"
         }
       ]
     },
@@ -4633,21 +5687,21 @@
     ],
     "similarItems": [
       {
-        "name": "Onions - Red 10lb",
-        "code": "3506",
-        "cue": "The reviewed photograph clearly shows onions - red in layered bulb or stalk form.",
+        "name": "Garlic - Loose (Bulk)",
+        "code": "4610",
+        "cue": "White papery bulbs divided into cloves identify loose garlic.",
         "color": "#4F8B58"
       },
       {
-        "name": "Onions - Yellow 3lb (Bag)",
-        "code": "59662",
-        "cue": "The reviewed photograph clearly shows onions - yellow in layered bulb or stalk form.",
+        "name": "Garlic - Peeled 5lb",
+        "code": "63608",
+        "cue": "Smooth cream-white teardrop cloves show peeled garlic with the papery skin removed.",
         "color": "#C25D52"
       },
       {
-        "name": "Onions - Yellow Jumbo #2 (Case)",
-        "code": "63555",
-        "cue": "Round yellow-brown papery layered bulbs identify yellow onions.",
+        "name": "Onions - Red 10lb",
+        "code": "3506",
+        "cue": "The reviewed photograph clearly shows onions - red in layered bulb or stalk form.",
         "color": "#D1A23B"
       }
     ],
@@ -6265,6 +7319,461 @@
   },
   {
     "schemaVersion": "0.9.0",
+    "id": "methileaf-herbs-59994",
+    "catalogId": "methileaf-herbs",
+    "title": "Methileaf - Herbs",
+    "shortTitle": "Methileaf - Herbs",
+    "family": "Leafy Greens",
+    "priority": "must-know",
+    "selection": {
+      "rawScore": 105,
+      "score": 100,
+      "band": "Essential",
+      "priority": "must-know"
+    },
+    "identity": {
+      "family": "Leafy Greens",
+      "form": "Small oval trifoliate leaflets on slender stems",
+      "color": "Green",
+      "variant": "Methileaf - Herbs"
+    },
+    "checkout": {
+      "code": "59994",
+      "soldBy": "Each",
+      "saleForm": "Single",
+      "codeScope": "catalog-listed-retail-unit"
+    },
+    "photos": [
+      {
+        "id": "methileaf-herbs-59994-hero",
+        "file": "Methi leaves.jpg",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/Methi_leaves.jpg/1920px-Methi_leaves.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Methileaf (fenugreek) reference photograph showing clusters of three small oval green leaflets on slender stems identify fresh methi leaf.",
+        "role": "hero",
+        "focus": "50% 50%",
+        "author": "Katyare",
+        "license": "CC BY-SA 3.0"
+      },
+      {
+        "id": "methileaf-herbs-59994-alternate",
+        "file": "Methi leaves.jpg",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/Methi_leaves.jpg/1920px-Methi_leaves.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Alternate crop of Methileaf (fenugreek) highlighting its small oval trifoliate leaflets on slender stems",
+        "role": "alternate",
+        "focus": "38% 50%",
+        "reuseOf": "Methi leaves.jpg",
+        "fallbackReason": "One verified exact-item photograph is reused with a different crop so no unverified image can publish.",
+        "author": "Katyare",
+        "license": "CC BY-SA 3.0"
+      },
+      {
+        "id": "methileaf-herbs-59994-context",
+        "file": "Methi leaves.jpg",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/Methi_leaves.jpg/1920px-Methi_leaves.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Methileaf (fenugreek) produce reference emphasizing its green appearance",
+        "role": "context",
+        "focus": "62% 50%",
+        "reuseOf": "Methi leaves.jpg",
+        "fallbackReason": "One verified exact-item photograph is reused with a different crop so no unverified image can publish.",
+        "author": "Katyare",
+        "license": "CC BY-SA 3.0"
+      }
+    ],
+    "visualCues": [
+      "Clusters of three small oval green leaflets on slender stems identify fresh methi leaf.",
+      "The visible color is green; Herbs is from the workbook label, not appearance.",
+      "Match the store label to Methileaf - Herbs before using 59994."
+    ],
+    "classification": {
+      "familyAnswer": "leafy-greens",
+      "familyChoices": [
+        {
+          "id": "leafy-greens",
+          "label": "Leafy Greens"
+        },
+        {
+          "id": "stalk-vegetables",
+          "label": "Stalk Vegetables"
+        },
+        {
+          "id": "apples",
+          "label": "Apples"
+        }
+      ],
+      "formAnswer": "small-oval-trifoliate-leaflets-on-slender-stems",
+      "formChoices": [
+        {
+          "id": "small-oval-trifoliate-leaflets-on-slender-stems",
+          "label": "Green · Small oval trifoliate leaflets on slender stems"
+        },
+        {
+          "id": "confusion-bok-choy-shanghai-jr",
+          "label": "Bok Choy - Shanghai Jr"
+        },
+        {
+          "id": "confusion-sher-li-hon",
+          "label": "Sher-Li-Hon"
+        }
+      ]
+    },
+    "variants": [],
+    "relations": [
+      {
+        "kind": "exception",
+        "title": "The store label selects this listing",
+        "copy": "The photograph teaches Methileaf (fenugreek). Herbs is copied from the workbook label and is not inferred from appearance."
+      },
+      {
+        "kind": "exception",
+        "title": "The code follows the exact listing",
+        "copy": "Use 59994 only after the label matches Methileaf - Herbs."
+      }
+    ],
+    "similarItems": [
+      {
+        "name": "Bok Choy - Shanghai Jr",
+        "code": "64388",
+        "cue": "Pale thick stalks and smooth spoon-shaped green leaves identify Shanghai bok choy.",
+        "color": "#4F8B58"
+      },
+      {
+        "name": "Sher-Li-Hon",
+        "code": "69624",
+        "cue": "Look for broad green leaves with serrated edges and pale ribs running into the stems.",
+        "color": "#C25D52"
+      },
+      {
+        "name": "Uchoy Sum",
+        "code": "64387",
+        "cue": "Uchoy Sum is identified by its green appearance and broad leafy stems.",
+        "color": "#D1A23B"
+      }
+    ],
+    "source": {
+      "primaryPages": [
+        1
+      ],
+      "relatedPages": [
+        1
+      ],
+      "checkedOnReference": true,
+      "flags": [
+        "batch-06",
+        "catalog-remainder-essential",
+        "media-reviewed-override",
+        "media-shared-reviewed",
+        "media-label-assisted",
+        "qualifier-workbook-label"
+      ],
+      "confidence": "verified-from-supplied-material"
+    }
+  },
+  {
+    "schemaVersion": "0.9.0",
+    "id": "mushrooms-white-bulk-rcwc-1102",
+    "catalogId": "mushrooms-white-bulk-rcwc",
+    "title": "Mushrooms - White (Bulk, RCWC)",
+    "shortTitle": "Mushrooms - White (Bulk, RCWC)",
+    "family": "Mushrooms",
+    "priority": "common",
+    "selection": {
+      "rawScore": 75,
+      "score": 75,
+      "band": "Common",
+      "priority": "common"
+    },
+    "identity": {
+      "family": "Mushrooms",
+      "form": "Small round caps with short stems",
+      "color": "White",
+      "variant": "Mushrooms - White (Bulk, RCWC)"
+    },
+    "checkout": {
+      "code": "1102",
+      "soldBy": "Weight",
+      "saleForm": "Loose",
+      "codeScope": "catalog-listed-retail-unit"
+    },
+    "photos": [
+      {
+        "id": "mushrooms-white-bulk-rcwc-1102-hero",
+        "file": "1 - button mushrooms.jpg",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/3/3e/1_-_button_mushrooms.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "alt": "White button mushrooms reference photograph showing small white dome-shaped caps with short pale stems identify white button mushrooms.",
+        "role": "hero",
+        "focus": "50% 50%",
+        "author": "Susan Slater",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "id": "mushrooms-white-bulk-rcwc-1102-alternate",
+        "file": "1 - button mushrooms.jpg",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/3/3e/1_-_button_mushrooms.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "alt": "Alternate crop of White button mushrooms highlighting its small round caps with short stems",
+        "role": "alternate",
+        "focus": "38% 50%",
+        "reuseOf": "1 - button mushrooms.jpg",
+        "fallbackReason": "One verified exact-item photograph is reused with a different crop so no unverified image can publish.",
+        "author": "Susan Slater",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "id": "mushrooms-white-bulk-rcwc-1102-context",
+        "file": "1 - button mushrooms.jpg",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/3/3e/1_-_button_mushrooms.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "alt": "White button mushrooms produce reference emphasizing its white appearance",
+        "role": "context",
+        "focus": "62% 50%",
+        "reuseOf": "1 - button mushrooms.jpg",
+        "fallbackReason": "One verified exact-item photograph is reused with a different crop so no unverified image can publish.",
+        "author": "Susan Slater",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "visualCues": [
+      "Small white dome-shaped caps with short pale stems identify white button mushrooms.",
+      "The visible color is white; Bulk, RCWC is from the workbook label, not appearance.",
+      "Match the store label to Mushrooms - White (Bulk, RCWC) before using 1102."
+    ],
+    "classification": {
+      "familyAnswer": "mushrooms",
+      "familyChoices": [
+        {
+          "id": "mushrooms",
+          "label": "Mushrooms"
+        },
+        {
+          "id": "stalk-vegetables",
+          "label": "Stalk Vegetables"
+        },
+        {
+          "id": "apples",
+          "label": "Apples"
+        }
+      ],
+      "formAnswer": "small-round-caps-with-short-stems",
+      "formChoices": [
+        {
+          "id": "small-round-caps-with-short-stems",
+          "label": "White · Small round caps with short stems"
+        },
+        {
+          "id": "confusion-mushrooms-white-bulk-rcss-exfd-4645-4653",
+          "label": "White mushrooms"
+        },
+        {
+          "id": "confusion-mushrooms-cremini-brown-bulk",
+          "label": "Cremini mushrooms"
+        }
+      ]
+    },
+    "variants": [],
+    "relations": [
+      {
+        "kind": "exception",
+        "title": "The store label selects this listing",
+        "copy": "The photograph teaches White button mushrooms. Bulk, RCWC is copied from the workbook label and is not inferred from appearance."
+      },
+      {
+        "kind": "exception",
+        "title": "The code follows the exact listing",
+        "copy": "Use 1102 only after the label matches Mushrooms - White (Bulk, RCWC)."
+      }
+    ],
+    "similarItems": [
+      {
+        "name": "White mushrooms",
+        "code": "4085",
+        "cue": "Small white or cream dome-shaped caps",
+        "color": "#4F8B58"
+      },
+      {
+        "name": "Cremini mushrooms",
+        "code": "4648",
+        "cue": "Small-to-medium dome-shaped brown caps",
+        "color": "#C25D52"
+      },
+      {
+        "name": "Portobello mushrooms",
+        "code": "4650",
+        "cue": "Very large broad brown cap",
+        "color": "#D1A23B"
+      }
+    ],
+    "source": {
+      "primaryPages": [
+        4
+      ],
+      "relatedPages": [
+        4
+      ],
+      "checkedOnReference": true,
+      "flags": [
+        "sold-by-curated",
+        "batch-06",
+        "catalog-remainder-common",
+        "media-reviewed-override",
+        "media-shared-reviewed",
+        "media-label-assisted",
+        "qualifier-workbook-label"
+      ],
+      "confidence": "verified-from-supplied-material"
+    }
+  },
+  {
+    "schemaVersion": "0.9.0",
+    "id": "olives-green-case-54050",
+    "catalogId": "olives-green-case",
+    "title": "Olives - Green (Case)",
+    "shortTitle": "Olives - Green (Case)",
+    "family": "Olives",
+    "priority": "common",
+    "selection": {
+      "rawScore": 75,
+      "score": 75,
+      "band": "Common",
+      "priority": "common"
+    },
+    "identity": {
+      "family": "Olives",
+      "form": "Small oval whole stone fruits",
+      "color": "Green",
+      "variant": "Olives - Green (Case)"
+    },
+    "checkout": {
+      "code": "54050",
+      "soldBy": "Each",
+      "saleForm": "Case",
+      "codeScope": "catalog-listed-retail-unit"
+    },
+    "photos": [
+      {
+        "id": "olives-green-case-54050-hero",
+        "file": "A crate of olives fresh from the tree (15299192895).jpg",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/A_crate_of_olives_fresh_from_the_tree_%2815299192895%29.jpg/1920px-A_crate_of_olives_fresh_from_the_tree_%2815299192895%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Green olives reference photograph showing green olives appear as small oval fruits with smooth green skins.",
+        "role": "hero",
+        "focus": "50% 50%",
+        "author": "Maarten Heerlien from Voorschoten, The Netherlands",
+        "license": "CC BY 2.0"
+      },
+      {
+        "id": "olives-green-case-54050-alternate",
+        "file": "A crate of olives fresh from the tree (15299192895).jpg",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/A_crate_of_olives_fresh_from_the_tree_%2815299192895%29.jpg/1920px-A_crate_of_olives_fresh_from_the_tree_%2815299192895%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Alternate crop of Green olives highlighting its small oval whole stone fruits",
+        "role": "alternate",
+        "focus": "38% 50%",
+        "reuseOf": "A crate of olives fresh from the tree (15299192895).jpg",
+        "fallbackReason": "One verified exact-item photograph is reused with a different crop so no unverified image can publish.",
+        "author": "Maarten Heerlien from Voorschoten, The Netherlands",
+        "license": "CC BY 2.0"
+      },
+      {
+        "id": "olives-green-case-54050-context",
+        "file": "A crate of olives fresh from the tree (15299192895).jpg",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/A_crate_of_olives_fresh_from_the_tree_%2815299192895%29.jpg/1920px-A_crate_of_olives_fresh_from_the_tree_%2815299192895%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Green olives produce reference emphasizing its green appearance",
+        "role": "context",
+        "focus": "62% 50%",
+        "reuseOf": "A crate of olives fresh from the tree (15299192895).jpg",
+        "fallbackReason": "One verified exact-item photograph is reused with a different crop so no unverified image can publish.",
+        "author": "Maarten Heerlien from Voorschoten, The Netherlands",
+        "license": "CC BY 2.0"
+      }
+    ],
+    "visualCues": [
+      "Green olives appear as small oval fruits with smooth green skins.",
+      "The visible color is green; Case is from the workbook label, not appearance.",
+      "Match the store label to Olives - Green (Case) before using 54050."
+    ],
+    "classification": {
+      "familyAnswer": "olives",
+      "familyChoices": [
+        {
+          "id": "olives",
+          "label": "Olives"
+        },
+        {
+          "id": "stalk-vegetables",
+          "label": "Stalk Vegetables"
+        },
+        {
+          "id": "apples",
+          "label": "Apples"
+        }
+      ],
+      "formAnswer": "small-oval-whole-stone-fruits",
+      "formChoices": [
+        {
+          "id": "small-oval-whole-stone-fruits",
+          "label": "Green · Small oval whole stone fruits"
+        },
+        {
+          "id": "confusion-aloe",
+          "label": "Aloe"
+        },
+        {
+          "id": "confusion-asparagus-organic",
+          "label": "Asparagus - Organic"
+        }
+      ]
+    },
+    "variants": [],
+    "relations": [
+      {
+        "kind": "exception",
+        "title": "The store label selects this listing",
+        "copy": "The photograph teaches Green olives. Case is copied from the workbook label and is not inferred from appearance."
+      },
+      {
+        "kind": "exception",
+        "title": "The code follows the exact listing",
+        "copy": "Use 54050 only after the label matches Olives - Green (Case)."
+      }
+    ],
+    "similarItems": [
+      {
+        "name": "Aloe",
+        "code": "3798",
+        "cue": "Aloe is identified by its green appearance and thick tapered succulent leaves.",
+        "color": "#4F8B58"
+      },
+      {
+        "name": "Asparagus - Organic",
+        "code": "94080",
+        "cue": "Long green spears with compact tapered tips identify asparagus.",
+        "color": "#C25D52"
+      },
+      {
+        "name": "Bean Sprouts (Case)",
+        "code": "63604",
+        "cue": "The reviewed photograph clearly shows bean sprouts in tender sprouted stems form.",
+        "color": "#D1A23B"
+      }
+    ],
+    "source": {
+      "primaryPages": [
+        4
+      ],
+      "relatedPages": [
+        4
+      ],
+      "checkedOnReference": true,
+      "flags": [
+        "sold-by-curated",
+        "retail-form-specific",
+        "batch-06",
+        "catalog-remainder-common",
+        "media-reviewed-override",
+        "media-label-assisted",
+        "qualifier-workbook-label"
+      ],
+      "confidence": "verified-from-supplied-material"
+    }
+  },
+  {
+    "schemaVersion": "0.9.0",
     "id": "onions-red-10lb-3506",
     "catalogId": "onions-red-10lb",
     "title": "Onions - Red 10lb",
@@ -6347,12 +7856,12 @@
           "label": "Red · Layered bulb or stalk"
         },
         {
-          "id": "confusion-garlic-1kg-bagged",
-          "label": "Garlic 1kg (bagged)"
+          "id": "confusion-garlic-loose-bulk",
+          "label": "Garlic - Loose (Bulk)"
         },
         {
-          "id": "confusion-onions-yellow-3lb-bag",
-          "label": "Onions - Yellow 3lb (Bag)"
+          "id": "confusion-garlic-peeled-5lb",
+          "label": "Garlic - Peeled 5lb"
         }
       ]
     },
@@ -6371,21 +7880,21 @@
     ],
     "similarItems": [
       {
-        "name": "Garlic 1kg (bagged)",
-        "code": "9578",
-        "cue": "The reviewed photograph clearly shows garlic in segmented bulb form.",
+        "name": "Garlic - Loose (Bulk)",
+        "code": "4610",
+        "cue": "White papery bulbs divided into cloves identify loose garlic.",
         "color": "#4F8B58"
       },
       {
-        "name": "Onions - Yellow 3lb (Bag)",
-        "code": "59662",
-        "cue": "The reviewed photograph clearly shows onions - yellow in layered bulb or stalk form.",
+        "name": "Garlic - Peeled 5lb",
+        "code": "63608",
+        "cue": "Smooth cream-white teardrop cloves show peeled garlic with the papery skin removed.",
         "color": "#C25D52"
       },
       {
-        "name": "Onions - Yellow Jumbo #2 (Case)",
-        "code": "63555",
-        "cue": "Round yellow-brown papery layered bulbs identify yellow onions.",
+        "name": "Garlic 1kg (bagged)",
+        "code": "9578",
+        "cue": "The reviewed photograph clearly shows garlic in segmented bulb form.",
         "color": "#D1A23B"
       }
     ],
@@ -6493,12 +8002,12 @@
           "label": "Yellow · Layered bulb or stalk"
         },
         {
-          "id": "confusion-garlic-1kg-bagged",
-          "label": "Garlic 1kg (bagged)"
+          "id": "confusion-garlic-loose-bulk",
+          "label": "Garlic - Loose (Bulk)"
         },
         {
-          "id": "confusion-onions-red-10lb",
-          "label": "Onions - Red 10lb"
+          "id": "confusion-garlic-peeled-5lb",
+          "label": "Garlic - Peeled 5lb"
         }
       ]
     },
@@ -6517,21 +8026,21 @@
     ],
     "similarItems": [
       {
-        "name": "Garlic 1kg (bagged)",
-        "code": "9578",
-        "cue": "The reviewed photograph clearly shows garlic in segmented bulb form.",
+        "name": "Garlic - Loose (Bulk)",
+        "code": "4610",
+        "cue": "White papery bulbs divided into cloves identify loose garlic.",
         "color": "#4F8B58"
       },
       {
-        "name": "Onions - Red 10lb",
-        "code": "3506",
-        "cue": "The reviewed photograph clearly shows onions - red in layered bulb or stalk form.",
+        "name": "Garlic - Peeled 5lb",
+        "code": "63608",
+        "cue": "Smooth cream-white teardrop cloves show peeled garlic with the papery skin removed.",
         "color": "#C25D52"
       },
       {
-        "name": "Onions - Yellow Jumbo #2 (Case)",
-        "code": "63555",
-        "cue": "Round yellow-brown papery layered bulbs identify yellow onions.",
+        "name": "Garlic 1kg (bagged)",
+        "code": "9578",
+        "cue": "The reviewed photograph clearly shows garlic in segmented bulb form.",
         "color": "#D1A23B"
       }
     ],
@@ -6640,12 +8149,12 @@
           "label": "Yellow · Round layered bulb"
         },
         {
-          "id": "confusion-garlic-1kg-bagged",
-          "label": "Garlic 1kg (bagged)"
+          "id": "confusion-garlic-loose-bulk",
+          "label": "Garlic - Loose (Bulk)"
         },
         {
-          "id": "confusion-onions-red-10lb",
-          "label": "Onions - Red 10lb"
+          "id": "confusion-garlic-peeled-5lb",
+          "label": "Garlic - Peeled 5lb"
         }
       ]
     },
@@ -6664,21 +8173,21 @@
     ],
     "similarItems": [
       {
-        "name": "Garlic 1kg (bagged)",
-        "code": "9578",
-        "cue": "The reviewed photograph clearly shows garlic in segmented bulb form.",
+        "name": "Garlic - Loose (Bulk)",
+        "code": "4610",
+        "cue": "White papery bulbs divided into cloves identify loose garlic.",
         "color": "#4F8B58"
       },
       {
-        "name": "Onions - Red 10lb",
-        "code": "3506",
-        "cue": "The reviewed photograph clearly shows onions - red in layered bulb or stalk form.",
+        "name": "Garlic - Peeled 5lb",
+        "code": "63608",
+        "cue": "Smooth cream-white teardrop cloves show peeled garlic with the papery skin removed.",
         "color": "#C25D52"
       },
       {
-        "name": "Onions - Yellow 3lb (Bag)",
-        "code": "59662",
-        "cue": "The reviewed photograph clearly shows onions - yellow in layered bulb or stalk form.",
+        "name": "Garlic 1kg (bagged)",
+        "code": "9578",
+        "cue": "The reviewed photograph clearly shows garlic in segmented bulb form.",
         "color": "#D1A23B"
       }
     ],
@@ -6787,12 +8296,12 @@
           "label": "Yellow · Layered bulb or stalk"
         },
         {
-          "id": "confusion-garlic-1kg-bagged",
-          "label": "Garlic 1kg (bagged)"
+          "id": "confusion-garlic-loose-bulk",
+          "label": "Garlic - Loose (Bulk)"
         },
         {
-          "id": "confusion-onions-red-10lb",
-          "label": "Onions - Red 10lb"
+          "id": "confusion-garlic-peeled-5lb",
+          "label": "Garlic - Peeled 5lb"
         }
       ]
     },
@@ -6811,21 +8320,21 @@
     ],
     "similarItems": [
       {
-        "name": "Garlic 1kg (bagged)",
-        "code": "9578",
-        "cue": "The reviewed photograph clearly shows garlic in segmented bulb form.",
+        "name": "Garlic - Loose (Bulk)",
+        "code": "4610",
+        "cue": "White papery bulbs divided into cloves identify loose garlic.",
         "color": "#4F8B58"
       },
       {
-        "name": "Onions - Red 10lb",
-        "code": "3506",
-        "cue": "The reviewed photograph clearly shows onions - red in layered bulb or stalk form.",
+        "name": "Garlic - Peeled 5lb",
+        "code": "63608",
+        "cue": "Smooth cream-white teardrop cloves show peeled garlic with the papery skin removed.",
         "color": "#C25D52"
       },
       {
-        "name": "Onions - Yellow 3lb (Bag)",
-        "code": "59662",
-        "cue": "The reviewed photograph clearly shows onions - yellow in layered bulb or stalk form.",
+        "name": "Garlic 1kg (bagged)",
+        "code": "9578",
+        "cue": "The reviewed photograph clearly shows garlic in segmented bulb form.",
         "color": "#D1A23B"
       }
     ],
@@ -8609,6 +10118,157 @@
   },
   {
     "schemaVersion": "0.9.0",
+    "id": "pistachios-bulk-nuts-1400",
+    "catalogId": "pistachios-bulk-nuts",
+    "title": "Pistachios (Bulk) - Nuts",
+    "shortTitle": "Pistachios (Bulk) - Nuts",
+    "family": "Nuts",
+    "priority": "common",
+    "selection": {
+      "rawScore": 75,
+      "score": 75,
+      "band": "Common",
+      "priority": "common"
+    },
+    "identity": {
+      "family": "Nuts",
+      "form": "Small nuts in split beige shells",
+      "color": "Beige with purple-brown kernels",
+      "variant": "Pistachios (Bulk) - Nuts"
+    },
+    "checkout": {
+      "code": "1400",
+      "soldBy": "Weight",
+      "saleForm": "Loose",
+      "codeScope": "catalog-listed-retail-unit"
+    },
+    "photos": [
+      {
+        "id": "pistachios-bulk-nuts-1400-hero",
+        "file": "Pistachio nuts from Iran.jpg",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/Pistachio_nuts_from_Iran.jpg/1920px-Pistachio_nuts_from_Iran.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Pistachios reference photograph showing split beige shells reveal purple-brown pistachio kernels.",
+        "role": "hero",
+        "focus": "50% 50%",
+        "author": "Amin",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "id": "pistachios-bulk-nuts-1400-alternate",
+        "file": "Pistachio nuts from Iran.jpg",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/Pistachio_nuts_from_Iran.jpg/1920px-Pistachio_nuts_from_Iran.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Alternate crop of Pistachios highlighting its small nuts in split beige shells",
+        "role": "alternate",
+        "focus": "38% 50%",
+        "reuseOf": "Pistachio nuts from Iran.jpg",
+        "fallbackReason": "One verified exact-item photograph is reused with a different crop so no unverified image can publish.",
+        "author": "Amin",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "id": "pistachios-bulk-nuts-1400-context",
+        "file": "Pistachio nuts from Iran.jpg",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/Pistachio_nuts_from_Iran.jpg/1920px-Pistachio_nuts_from_Iran.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Pistachios produce reference emphasizing its beige with purple-brown kernels appearance",
+        "role": "context",
+        "focus": "62% 50%",
+        "reuseOf": "Pistachio nuts from Iran.jpg",
+        "fallbackReason": "One verified exact-item photograph is reused with a different crop so no unverified image can publish.",
+        "author": "Amin",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "visualCues": [
+      "Split beige shells reveal purple-brown pistachio kernels.",
+      "The visible color is beige with purple-brown kernels; Bulk is from the workbook label, not appearance.",
+      "Match the store label to Pistachios (Bulk) - Nuts before using 1400."
+    ],
+    "classification": {
+      "familyAnswer": "nuts",
+      "familyChoices": [
+        {
+          "id": "nuts",
+          "label": "Nuts"
+        },
+        {
+          "id": "stalk-vegetables",
+          "label": "Stalk Vegetables"
+        },
+        {
+          "id": "apples",
+          "label": "Apples"
+        }
+      ],
+      "formAnswer": "small-nuts-in-split-beige-shells",
+      "formChoices": [
+        {
+          "id": "small-nuts-in-split-beige-shells",
+          "label": "Beige with purple-brown kernels · Small nuts in split beige shells"
+        },
+        {
+          "id": "confusion-almonds-bulk-nuts",
+          "label": "Almonds"
+        },
+        {
+          "id": "confusion-chestnuts-bulk-nuts",
+          "label": "Chestnuts"
+        }
+      ]
+    },
+    "variants": [],
+    "relations": [
+      {
+        "kind": "exception",
+        "title": "The store label selects this listing",
+        "copy": "The photograph teaches Pistachios. Bulk is copied from the workbook label and is not inferred from appearance."
+      },
+      {
+        "kind": "exception",
+        "title": "The code follows the exact listing",
+        "copy": "Use 1400 only after the label matches Pistachios (Bulk) - Nuts."
+      }
+    ],
+    "similarItems": [
+      {
+        "name": "Almonds",
+        "code": "4924",
+        "cue": "Almonds is identified by its brown appearance and loose whole nuts.",
+        "color": "#4F8B58"
+      },
+      {
+        "name": "Chestnuts",
+        "code": "4927",
+        "cue": "Chestnuts is identified by its brown appearance and loose whole nuts.",
+        "color": "#C25D52"
+      },
+      {
+        "name": "Filberts",
+        "code": "4928",
+        "cue": "Filberts is identified by its brown appearance and loose whole nuts.",
+        "color": "#D1A23B"
+      }
+    ],
+    "source": {
+      "primaryPages": [
+        5
+      ],
+      "relatedPages": [
+        5
+      ],
+      "checkedOnReference": true,
+      "flags": [
+        "sold-by-curated",
+        "batch-06",
+        "catalog-remainder-common",
+        "media-reviewed-override",
+        "media-label-assisted",
+        "qualifier-workbook-label"
+      ],
+      "confidence": "verified-from-supplied-material"
+    }
+  },
+  {
+    "schemaVersion": "0.9.0",
     "id": "plums-blue-1-6706",
     "catalogId": "plums-blue-1-5l",
     "title": "Plums - Blue 1.5L",
@@ -9930,6 +11590,739 @@
   },
   {
     "schemaVersion": "0.9.0",
+    "id": "raspberries-red-half-pint-6oz-7298",
+    "catalogId": "raspberries-red-half-pint-6oz",
+    "title": "Raspberries - Red Half Pint / 6oz",
+    "shortTitle": "Raspberries - Red Half Pint / 6oz",
+    "family": "Berries",
+    "priority": "must-know",
+    "selection": {
+      "rawScore": 90,
+      "score": 90,
+      "band": "Essential",
+      "priority": "must-know"
+    },
+    "identity": {
+      "family": "Berries",
+      "form": "Soft clustered drupelet berries with hollow centers",
+      "color": "Red",
+      "variant": "Raspberries - Red Half Pint / 6oz"
+    },
+    "checkout": {
+      "code": "7298",
+      "soldBy": "Each",
+      "saleForm": "Package",
+      "codeScope": "catalog-listed-retail-unit"
+    },
+    "photos": [
+      {
+        "id": "raspberries-red-half-pint-6oz-7298-hero",
+        "file": "Raspberry - whole (Rubus idaeus).jpg",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Raspberry_-_whole_%28Rubus_idaeus%29.jpg/1920px-Raspberry_-_whole_%28Rubus_idaeus%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Red raspberries reference photograph showing red raspberries form soft clusters of small drupelets around a hollow center.",
+        "role": "hero",
+        "focus": "50% 50%",
+        "author": "Ivar Leidus",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "id": "raspberries-red-half-pint-6oz-7298-alternate",
+        "file": "Raspberries (Rubus idaeus).jpg",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/Raspberries_%28Rubus_idaeus%29.jpg/1920px-Raspberries_%28Rubus_idaeus%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Alternate photograph of Red raspberries highlighting its soft clustered drupelet berries with hollow centers",
+        "role": "alternate",
+        "focus": "50% 50%",
+        "author": "Ivar Leidus",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "id": "raspberries-red-half-pint-6oz-7298-context",
+        "file": "Raspberries (Rubus Idaeus).jpg",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Raspberries_%28Rubus_Idaeus%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "alt": "Red raspberries produce reference emphasizing its red appearance",
+        "role": "context",
+        "focus": "50% 50%",
+        "author": "Juhanson",
+        "license": "CC BY-SA 3.0"
+      }
+    ],
+    "visualCues": [
+      "Red raspberries form soft clusters of small drupelets around a hollow center.",
+      "The visible color is red; Half Pint and 6oz are from the workbook label, not appearance.",
+      "Match the store label to Raspberries - Red Half Pint / 6oz before using 7298."
+    ],
+    "classification": {
+      "familyAnswer": "berries",
+      "familyChoices": [
+        {
+          "id": "berries",
+          "label": "Berries"
+        },
+        {
+          "id": "stalk-vegetables",
+          "label": "Stalk Vegetables"
+        },
+        {
+          "id": "apples",
+          "label": "Apples"
+        }
+      ],
+      "formAnswer": "soft-clustered-drupelet-berries-with-hollow-centers",
+      "formChoices": [
+        {
+          "id": "soft-clustered-drupelet-berries-with-hollow-centers",
+          "label": "Red · Soft clustered drupelet berries with hollow centers"
+        },
+        {
+          "id": "confusion-blackberries-pint-12oz",
+          "label": "Blackberries - Pint / 12oz"
+        },
+        {
+          "id": "confusion-blueberries-2lb",
+          "label": "Blueberries - 2lb"
+        }
+      ]
+    },
+    "variants": [],
+    "relations": [
+      {
+        "kind": "exception",
+        "title": "The store label selects this listing",
+        "copy": "The photograph teaches Red raspberries. Half Pint and 6oz are copied from the workbook label and are not inferred from appearance."
+      },
+      {
+        "kind": "exception",
+        "title": "The code follows the exact listing",
+        "copy": "Use 7298 only after the label matches Raspberries - Red Half Pint / 6oz."
+      }
+    ],
+    "similarItems": [
+      {
+        "name": "Blackberries - Pint / 12oz",
+        "code": "522",
+        "cue": "Blackberries have glossy black clusters of rounded drupelets.",
+        "color": "#4F8B58"
+      },
+      {
+        "name": "Blueberries - 2lb",
+        "code": "39583",
+        "cue": "The reviewed photograph clearly shows blueberries in small soft berries form.",
+        "color": "#C25D52"
+      },
+      {
+        "name": "Blueberries - Full Pint / 12oz",
+        "code": "424",
+        "cue": "Small round blue-purple berries with pale bloom identify blueberries.",
+        "color": "#D1A23B"
+      }
+    ],
+    "source": {
+      "primaryPages": [
+        5
+      ],
+      "relatedPages": [
+        5
+      ],
+      "checkedOnReference": true,
+      "flags": [
+        "sold-by-curated",
+        "retail-form-specific",
+        "batch-06",
+        "catalog-remainder-essential",
+        "media-reviewed-override",
+        "media-shared-reviewed",
+        "media-label-assisted",
+        "qualifier-workbook-label"
+      ],
+      "confidence": "verified-from-supplied-material"
+    }
+  },
+  {
+    "schemaVersion": "0.9.0",
+    "id": "raspberries-red-pint-12oz-4054",
+    "catalogId": "raspberries-red-pint-12oz",
+    "title": "Raspberries - Red Pint / 12oz",
+    "shortTitle": "Raspberries - Red Pint / 12oz",
+    "family": "Berries",
+    "priority": "must-know",
+    "selection": {
+      "rawScore": 90,
+      "score": 90,
+      "band": "Essential",
+      "priority": "must-know"
+    },
+    "identity": {
+      "family": "Berries",
+      "form": "Soft clustered drupelet berries with hollow centers",
+      "color": "Red",
+      "variant": "Raspberries - Red Pint / 12oz"
+    },
+    "checkout": {
+      "code": "4054",
+      "soldBy": "Each",
+      "saleForm": "Package",
+      "codeScope": "catalog-listed-retail-unit"
+    },
+    "photos": [
+      {
+        "id": "raspberries-red-pint-12oz-4054-hero",
+        "file": "Raspberry - whole (Rubus idaeus).jpg",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Raspberry_-_whole_%28Rubus_idaeus%29.jpg/1920px-Raspberry_-_whole_%28Rubus_idaeus%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Red raspberries reference photograph showing red raspberries form soft clusters of small drupelets around a hollow center.",
+        "role": "hero",
+        "focus": "50% 50%",
+        "author": "Ivar Leidus",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "id": "raspberries-red-pint-12oz-4054-alternate",
+        "file": "Raspberries (Rubus idaeus).jpg",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/Raspberries_%28Rubus_idaeus%29.jpg/1920px-Raspberries_%28Rubus_idaeus%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Alternate photograph of Red raspberries highlighting its soft clustered drupelet berries with hollow centers",
+        "role": "alternate",
+        "focus": "50% 50%",
+        "author": "Ivar Leidus",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "id": "raspberries-red-pint-12oz-4054-context",
+        "file": "Raspberries (Rubus Idaeus).jpg",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Raspberries_%28Rubus_Idaeus%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "alt": "Red raspberries produce reference emphasizing its red appearance",
+        "role": "context",
+        "focus": "50% 50%",
+        "author": "Juhanson",
+        "license": "CC BY-SA 3.0"
+      }
+    ],
+    "visualCues": [
+      "Red raspberries form soft clusters of small drupelets around a hollow center.",
+      "The visible color is red; Pint and 12oz are from the workbook label, not appearance.",
+      "Match the store label to Raspberries - Red Pint / 12oz before using 4054."
+    ],
+    "classification": {
+      "familyAnswer": "berries",
+      "familyChoices": [
+        {
+          "id": "berries",
+          "label": "Berries"
+        },
+        {
+          "id": "stalk-vegetables",
+          "label": "Stalk Vegetables"
+        },
+        {
+          "id": "apples",
+          "label": "Apples"
+        }
+      ],
+      "formAnswer": "soft-clustered-drupelet-berries-with-hollow-centers",
+      "formChoices": [
+        {
+          "id": "soft-clustered-drupelet-berries-with-hollow-centers",
+          "label": "Red · Soft clustered drupelet berries with hollow centers"
+        },
+        {
+          "id": "confusion-blackberries-pint-12oz",
+          "label": "Blackberries - Pint / 12oz"
+        },
+        {
+          "id": "confusion-blueberries-2lb",
+          "label": "Blueberries - 2lb"
+        }
+      ]
+    },
+    "variants": [],
+    "relations": [
+      {
+        "kind": "exception",
+        "title": "The store label selects this listing",
+        "copy": "The photograph teaches Red raspberries. Pint and 12oz are copied from the workbook label and are not inferred from appearance."
+      },
+      {
+        "kind": "exception",
+        "title": "The code follows the exact listing",
+        "copy": "Use 4054 only after the label matches Raspberries - Red Pint / 12oz."
+      }
+    ],
+    "similarItems": [
+      {
+        "name": "Blackberries - Pint / 12oz",
+        "code": "522",
+        "cue": "Blackberries have glossy black clusters of rounded drupelets.",
+        "color": "#4F8B58"
+      },
+      {
+        "name": "Blueberries - 2lb",
+        "code": "39583",
+        "cue": "The reviewed photograph clearly shows blueberries in small soft berries form.",
+        "color": "#C25D52"
+      },
+      {
+        "name": "Blueberries - Full Pint / 12oz",
+        "code": "424",
+        "cue": "Small round blue-purple berries with pale bloom identify blueberries.",
+        "color": "#D1A23B"
+      }
+    ],
+    "source": {
+      "primaryPages": [
+        5
+      ],
+      "relatedPages": [
+        5
+      ],
+      "checkedOnReference": true,
+      "flags": [
+        "sold-by-curated",
+        "retail-form-specific",
+        "batch-06",
+        "catalog-remainder-essential",
+        "media-reviewed-override",
+        "media-shared-reviewed",
+        "media-label-assisted",
+        "qualifier-workbook-label"
+      ],
+      "confidence": "verified-from-supplied-material"
+    }
+  },
+  {
+    "schemaVersion": "0.9.0",
+    "id": "sher-li-hon-69624",
+    "catalogId": "sher-li-hon",
+    "title": "Sher-Li-Hon",
+    "shortTitle": "Sher-Li-Hon",
+    "family": "Leafy Greens",
+    "priority": "must-know",
+    "selection": {
+      "rawScore": 90,
+      "score": 90,
+      "band": "Essential",
+      "priority": "must-know"
+    },
+    "identity": {
+      "family": "Leafy Greens",
+      "form": "Broad serrated leaves and green stems",
+      "color": "Green",
+      "variant": "Sher-Li-Hon"
+    },
+    "checkout": {
+      "code": "69624",
+      "soldBy": "Weight",
+      "saleForm": "Loose",
+      "codeScope": "primary-loose-produce"
+    },
+    "photos": [
+      {
+        "id": "sher-li-hon-69624-hero",
+        "file": "Snow mustard Brassica juncea.jpg",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/Snow_mustard_Brassica_juncea.jpg/1920px-Snow_mustard_Brassica_juncea.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Sher-Li-Hon reference photograph showing look for broad green leaves with serrated edges and pale ribs running into the stems.",
+        "role": "hero",
+        "focus": "50% 50%",
+        "author": "Cs california",
+        "license": "CC BY 4.0"
+      },
+      {
+        "id": "sher-li-hon-69624-alternate",
+        "file": "Snow mustard Brassica juncea.jpg",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/Snow_mustard_Brassica_juncea.jpg/1920px-Snow_mustard_Brassica_juncea.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Alternate crop of Sher-Li-Hon highlighting its broad serrated leaves and green stems",
+        "role": "alternate",
+        "focus": "38% 50%",
+        "reuseOf": "Snow mustard Brassica juncea.jpg",
+        "fallbackReason": "One verified exact-item photograph is reused with a different crop so no unverified image can publish.",
+        "author": "Cs california",
+        "license": "CC BY 4.0"
+      },
+      {
+        "id": "sher-li-hon-69624-context",
+        "file": "Snow mustard Brassica juncea.jpg",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/Snow_mustard_Brassica_juncea.jpg/1920px-Snow_mustard_Brassica_juncea.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Sher-Li-Hon produce reference emphasizing its green appearance",
+        "role": "context",
+        "focus": "62% 50%",
+        "reuseOf": "Snow mustard Brassica juncea.jpg",
+        "fallbackReason": "One verified exact-item photograph is reused with a different crop so no unverified image can publish.",
+        "author": "Cs california",
+        "license": "CC BY 4.0"
+      }
+    ],
+    "visualCues": [
+      "Look for broad green leaves with serrated edges and pale ribs running into the stems.",
+      "Look for the green color together with the broad serrated leaves and green stems.",
+      "Keep it separate from nearby leafy greens by checking shape, color, and sale form."
+    ],
+    "classification": {
+      "familyAnswer": "leafy-greens",
+      "familyChoices": [
+        {
+          "id": "leafy-greens",
+          "label": "Leafy Greens"
+        },
+        {
+          "id": "stalk-vegetables",
+          "label": "Stalk Vegetables"
+        },
+        {
+          "id": "apples",
+          "label": "Apples"
+        }
+      ],
+      "formAnswer": "broad-serrated-leaves-and-green-stems",
+      "formChoices": [
+        {
+          "id": "broad-serrated-leaves-and-green-stems",
+          "label": "Green · Broad serrated leaves and green stems"
+        },
+        {
+          "id": "confusion-bok-choy-shanghai-jr",
+          "label": "Bok Choy - Shanghai Jr"
+        },
+        {
+          "id": "confusion-methileaf-herbs",
+          "label": "Methileaf - Herbs"
+        }
+      ]
+    },
+    "variants": [],
+    "similarItems": [
+      {
+        "name": "Bok Choy - Shanghai Jr",
+        "code": "64388",
+        "cue": "Pale thick stalks and smooth spoon-shaped green leaves identify Shanghai bok choy.",
+        "color": "#4F8B58"
+      },
+      {
+        "name": "Methileaf - Herbs",
+        "code": "59994",
+        "cue": "Clusters of three small oval green leaflets on slender stems identify fresh methi leaf.",
+        "color": "#C25D52"
+      },
+      {
+        "name": "Uchoy Sum",
+        "code": "64387",
+        "cue": "Uchoy Sum is identified by its green appearance and broad leafy stems.",
+        "color": "#D1A23B"
+      }
+    ],
+    "source": {
+      "primaryPages": [
+        4
+      ],
+      "relatedPages": [
+        4
+      ],
+      "checkedOnReference": true,
+      "flags": [
+        "sold-by-curated",
+        "batch-06",
+        "catalog-remainder-essential",
+        "media-reviewed-override"
+      ],
+      "confidence": "verified-from-supplied-material"
+    }
+  },
+  {
+    "schemaVersion": "0.9.0",
+    "id": "strawberries-1lb-42468",
+    "catalogId": "strawberries-1lb",
+    "title": "Strawberries - 1lb",
+    "shortTitle": "Strawberries - 1lb",
+    "family": "Berries",
+    "priority": "must-know",
+    "selection": {
+      "rawScore": 90,
+      "score": 90,
+      "band": "Essential",
+      "priority": "must-know"
+    },
+    "identity": {
+      "family": "Berries",
+      "form": "Red seeded berries with leafy caps",
+      "color": "Red",
+      "variant": "Strawberries - 1lb"
+    },
+    "checkout": {
+      "code": "42468",
+      "soldBy": "Each",
+      "saleForm": "Package",
+      "codeScope": "catalog-listed-retail-unit"
+    },
+    "photos": [
+      {
+        "id": "strawberries-1lb-42468-hero",
+        "file": "Garden strawberry (Fragaria × ananassa) single2.jpg",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/Garden_strawberry_%28Fragaria_%C3%97_ananassa%29_single2.jpg/1920px-Garden_strawberry_%28Fragaria_%C3%97_ananassa%29_single2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Strawberries reference photograph showing strawberries show small surface seeds and green leafy caps on red fruit.",
+        "role": "hero",
+        "focus": "50% 50%",
+        "author": "Ivar Leidus",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "id": "strawberries-1lb-42468-alternate",
+        "file": "Strawberries in basket 2018 G1.jpg",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/Strawberries_in_basket_2018_G1.jpg/1920px-Strawberries_in_basket_2018_G1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Alternate photograph of Strawberries highlighting its red seeded berries with leafy caps",
+        "role": "alternate",
+        "focus": "50% 50%",
+        "author": "George Chernilevsky",
+        "license": "Public domain"
+      },
+      {
+        "id": "strawberries-1lb-42468-context",
+        "file": "Strawberries at a Farmers Market.jpg",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/Strawberries_at_a_Farmers_Market.jpg/1920px-Strawberries_at_a_Farmers_Market.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Strawberries produce reference emphasizing its red appearance",
+        "role": "context",
+        "focus": "50% 50%",
+        "author": "Alabama Extension",
+        "license": "CC0"
+      }
+    ],
+    "visualCues": [
+      "Strawberries show small surface seeds and green leafy caps on red fruit.",
+      "The visible color is red; 1lb is from the workbook label, not appearance.",
+      "Match the store label to Strawberries - 1lb before using 42468."
+    ],
+    "classification": {
+      "familyAnswer": "berries",
+      "familyChoices": [
+        {
+          "id": "berries",
+          "label": "Berries"
+        },
+        {
+          "id": "stalk-vegetables",
+          "label": "Stalk Vegetables"
+        },
+        {
+          "id": "apples",
+          "label": "Apples"
+        }
+      ],
+      "formAnswer": "red-seeded-berries-with-leafy-caps",
+      "formChoices": [
+        {
+          "id": "red-seeded-berries-with-leafy-caps",
+          "label": "Red · Red seeded berries with leafy caps"
+        },
+        {
+          "id": "confusion-blackberries-pint-12oz",
+          "label": "Blackberries - Pint / 12oz"
+        },
+        {
+          "id": "confusion-blueberries-2lb",
+          "label": "Blueberries - 2lb"
+        }
+      ]
+    },
+    "variants": [],
+    "relations": [
+      {
+        "kind": "exception",
+        "title": "The store label selects this listing",
+        "copy": "The photograph teaches Strawberries. 1lb is copied from the workbook label and is not inferred from appearance."
+      },
+      {
+        "kind": "exception",
+        "title": "The code follows the exact listing",
+        "copy": "Use 42468 only after the label matches Strawberries - 1lb."
+      }
+    ],
+    "similarItems": [
+      {
+        "name": "Blackberries - Pint / 12oz",
+        "code": "522",
+        "cue": "Blackberries have glossy black clusters of rounded drupelets.",
+        "color": "#4F8B58"
+      },
+      {
+        "name": "Blueberries - 2lb",
+        "code": "39583",
+        "cue": "The reviewed photograph clearly shows blueberries in small soft berries form.",
+        "color": "#C25D52"
+      },
+      {
+        "name": "Blueberries - Full Pint / 12oz",
+        "code": "424",
+        "cue": "Small round blue-purple berries with pale bloom identify blueberries.",
+        "color": "#D1A23B"
+      }
+    ],
+    "source": {
+      "primaryPages": [
+        5
+      ],
+      "relatedPages": [
+        5
+      ],
+      "checkedOnReference": true,
+      "flags": [
+        "sold-by-curated",
+        "retail-form-specific",
+        "batch-06",
+        "catalog-remainder-essential",
+        "media-reviewed-override",
+        "media-shared-reviewed",
+        "media-label-assisted",
+        "qualifier-workbook-label"
+      ],
+      "confidence": "verified-from-supplied-material"
+    }
+  },
+  {
+    "schemaVersion": "0.9.0",
+    "id": "strawberries-2lb-36983",
+    "catalogId": "strawberries-2lb",
+    "title": "Strawberries - 2lb",
+    "shortTitle": "Strawberries - 2lb",
+    "family": "Berries",
+    "priority": "must-know",
+    "selection": {
+      "rawScore": 90,
+      "score": 90,
+      "band": "Essential",
+      "priority": "must-know"
+    },
+    "identity": {
+      "family": "Berries",
+      "form": "Red seeded berries with leafy caps",
+      "color": "Red",
+      "variant": "Strawberries - 2lb"
+    },
+    "checkout": {
+      "code": "36983",
+      "soldBy": "Each",
+      "saleForm": "Package",
+      "codeScope": "catalog-listed-retail-unit"
+    },
+    "photos": [
+      {
+        "id": "strawberries-2lb-36983-hero",
+        "file": "Garden strawberry (Fragaria × ananassa) single2.jpg",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/Garden_strawberry_%28Fragaria_%C3%97_ananassa%29_single2.jpg/1920px-Garden_strawberry_%28Fragaria_%C3%97_ananassa%29_single2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Strawberries reference photograph showing strawberries show small surface seeds and green leafy caps on red fruit.",
+        "role": "hero",
+        "focus": "50% 50%",
+        "author": "Ivar Leidus",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "id": "strawberries-2lb-36983-alternate",
+        "file": "Strawberries in basket 2018 G1.jpg",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/Strawberries_in_basket_2018_G1.jpg/1920px-Strawberries_in_basket_2018_G1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Alternate photograph of Strawberries highlighting its red seeded berries with leafy caps",
+        "role": "alternate",
+        "focus": "50% 50%",
+        "author": "George Chernilevsky",
+        "license": "Public domain"
+      },
+      {
+        "id": "strawberries-2lb-36983-context",
+        "file": "Strawberries at a Farmers Market.jpg",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/Strawberries_at_a_Farmers_Market.jpg/1920px-Strawberries_at_a_Farmers_Market.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Strawberries produce reference emphasizing its red appearance",
+        "role": "context",
+        "focus": "50% 50%",
+        "author": "Alabama Extension",
+        "license": "CC0"
+      }
+    ],
+    "visualCues": [
+      "Strawberries show small surface seeds and green leafy caps on red fruit.",
+      "The visible color is red; 2lb is from the workbook label, not appearance.",
+      "Match the store label to Strawberries - 2lb before using 36983."
+    ],
+    "classification": {
+      "familyAnswer": "berries",
+      "familyChoices": [
+        {
+          "id": "berries",
+          "label": "Berries"
+        },
+        {
+          "id": "stalk-vegetables",
+          "label": "Stalk Vegetables"
+        },
+        {
+          "id": "apples",
+          "label": "Apples"
+        }
+      ],
+      "formAnswer": "red-seeded-berries-with-leafy-caps",
+      "formChoices": [
+        {
+          "id": "red-seeded-berries-with-leafy-caps",
+          "label": "Red · Red seeded berries with leafy caps"
+        },
+        {
+          "id": "confusion-blackberries-pint-12oz",
+          "label": "Blackberries - Pint / 12oz"
+        },
+        {
+          "id": "confusion-blueberries-2lb",
+          "label": "Blueberries - 2lb"
+        }
+      ]
+    },
+    "variants": [],
+    "relations": [
+      {
+        "kind": "exception",
+        "title": "The store label selects this listing",
+        "copy": "The photograph teaches Strawberries. 2lb is copied from the workbook label and is not inferred from appearance."
+      },
+      {
+        "kind": "exception",
+        "title": "The code follows the exact listing",
+        "copy": "Use 36983 only after the label matches Strawberries - 2lb."
+      }
+    ],
+    "similarItems": [
+      {
+        "name": "Blackberries - Pint / 12oz",
+        "code": "522",
+        "cue": "Blackberries have glossy black clusters of rounded drupelets.",
+        "color": "#4F8B58"
+      },
+      {
+        "name": "Blueberries - 2lb",
+        "code": "39583",
+        "cue": "The reviewed photograph clearly shows blueberries in small soft berries form.",
+        "color": "#C25D52"
+      },
+      {
+        "name": "Blueberries - Full Pint / 12oz",
+        "code": "424",
+        "cue": "Small round blue-purple berries with pale bloom identify blueberries.",
+        "color": "#D1A23B"
+      }
+    ],
+    "source": {
+      "primaryPages": [
+        5
+      ],
+      "relatedPages": [
+        5
+      ],
+      "checkedOnReference": true,
+      "flags": [
+        "sold-by-curated",
+        "retail-form-specific",
+        "batch-06",
+        "catalog-remainder-essential",
+        "media-reviewed-override",
+        "media-shared-reviewed",
+        "media-label-assisted",
+        "qualifier-workbook-label"
+      ],
+      "confidence": "verified-from-supplied-material"
+    }
+  },
+  {
+    "schemaVersion": "0.9.0",
     "id": "tomato-fm-on-the-vine-bulk-64664",
     "catalogId": "tomato-fm-on-the-vine-bulk",
     "title": "Tomato - FM On The Vine (Bulk)",
@@ -10661,6 +13054,159 @@
   },
   {
     "schemaVersion": "0.9.0",
+    "id": "tomatoes-vine-ripe-field-bulk-3061",
+    "catalogId": "tomatoes-vine-ripe-field-bulk",
+    "title": "Tomatoes - Vine Ripe / Field (Bulk)",
+    "shortTitle": "Tomatoes - Vine Ripe / Field (Bulk)",
+    "family": "Tomatoes",
+    "priority": "must-know",
+    "selection": {
+      "rawScore": 105,
+      "score": 100,
+      "band": "Essential",
+      "priority": "must-know"
+    },
+    "identity": {
+      "family": "Tomatoes",
+      "form": "Round ripe tomatoes attached along a vine",
+      "color": "Red",
+      "variant": "Tomatoes - Vine Ripe / Field (Bulk)"
+    },
+    "checkout": {
+      "code": "3061",
+      "soldBy": "Weight",
+      "saleForm": "Loose",
+      "codeScope": "catalog-listed-retail-unit"
+    },
+    "photos": [
+      {
+        "id": "tomatoes-vine-ripe-field-bulk-3061-hero",
+        "file": "Strauchtomaten.jpg",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/1/11/Strauchtomaten.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "alt": "Vine-ripe tomatoes reference photograph showing round ripe red tomatoes attached along a vine identify vine-ripe tomatoes.",
+        "role": "hero",
+        "focus": "50% 50%",
+        "author": "Garitzko",
+        "license": "Public domain (PD-self)"
+      },
+      {
+        "id": "tomatoes-vine-ripe-field-bulk-3061-alternate",
+        "file": "Strauchtomaten.jpg",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/1/11/Strauchtomaten.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "alt": "Alternate crop of Vine-ripe tomatoes highlighting its round ripe tomatoes attached along a vine",
+        "role": "alternate",
+        "focus": "38% 50%",
+        "reuseOf": "Strauchtomaten.jpg",
+        "fallbackReason": "One verified exact-item photograph is reused with a different crop so no unverified image can publish.",
+        "author": "Garitzko",
+        "license": "Public domain (PD-self)"
+      },
+      {
+        "id": "tomatoes-vine-ripe-field-bulk-3061-context",
+        "file": "Strauchtomaten.jpg",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/1/11/Strauchtomaten.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "alt": "Vine-ripe tomatoes produce reference emphasizing its red appearance",
+        "role": "context",
+        "focus": "62% 50%",
+        "reuseOf": "Strauchtomaten.jpg",
+        "fallbackReason": "One verified exact-item photograph is reused with a different crop so no unverified image can publish.",
+        "author": "Garitzko",
+        "license": "Public domain (PD-self)"
+      }
+    ],
+    "visualCues": [
+      "Round ripe red tomatoes attached along a vine identify vine-ripe tomatoes.",
+      "The visible color is red; Field and Bulk are from the workbook label, not appearance.",
+      "Match the store label to Tomatoes - Vine Ripe / Field (Bulk) before using 3061."
+    ],
+    "classification": {
+      "familyAnswer": "tomatoes",
+      "familyChoices": [
+        {
+          "id": "tomatoes",
+          "label": "Tomatoes"
+        },
+        {
+          "id": "stalk-vegetables",
+          "label": "Stalk Vegetables"
+        },
+        {
+          "id": "apples",
+          "label": "Apples"
+        }
+      ],
+      "formAnswer": "round-ripe-tomatoes-attached-along-a-vine",
+      "formChoices": [
+        {
+          "id": "round-ripe-tomatoes-attached-along-a-vine",
+          "label": "Red · Round ripe tomatoes attached along a vine"
+        },
+        {
+          "id": "confusion-tomato-fm-on-the-vine-bulk",
+          "label": "Tomato - FM On The Vine (Bulk)"
+        },
+        {
+          "id": "confusion-tomato-hh-organic",
+          "label": "Tomato - HH (Organic)"
+        }
+      ]
+    },
+    "variants": [],
+    "relations": [
+      {
+        "kind": "exception",
+        "title": "The store label selects this listing",
+        "copy": "The photograph teaches Vine-ripe tomatoes. Field and Bulk are copied from the workbook label and are not inferred from appearance."
+      },
+      {
+        "kind": "exception",
+        "title": "The code follows the exact listing",
+        "copy": "Use 3061 only after the label matches Tomatoes - Vine Ripe / Field (Bulk)."
+      }
+    ],
+    "similarItems": [
+      {
+        "name": "Tomato - FM On The Vine (Bulk)",
+        "code": "64664",
+        "cue": "A red tomato cluster remains visibly attached to its vine.",
+        "color": "#4F8B58"
+      },
+      {
+        "name": "Tomato - HH (Organic)",
+        "code": "94798",
+        "cue": "Smooth round red tomatoes are shown together as loose hothouse produce.",
+        "color": "#C25D52"
+      },
+      {
+        "name": "Tomato - HH Red (Bulk)",
+        "code": "4798",
+        "cue": "Smooth round red tomatoes are clearly visible in loose whole form.",
+        "color": "#D1A23B"
+      }
+    ],
+    "source": {
+      "primaryPages": [
+        3,
+        4
+      ],
+      "relatedPages": [
+        3,
+        4
+      ],
+      "checkedOnReference": true,
+      "flags": [
+        "batch-06",
+        "catalog-remainder-essential",
+        "media-reviewed-override",
+        "media-shared-reviewed",
+        "media-label-assisted",
+        "qualifier-workbook-label"
+      ],
+      "confidence": "verified-from-supplied-material"
+    }
+  },
+  {
+    "schemaVersion": "0.9.0",
     "id": "uchoy-sum-64387",
     "catalogId": "uchoy-sum",
     "title": "Uchoy Sum",
@@ -10747,8 +13293,8 @@
           "label": "Bok Choy - Shanghai Jr"
         },
         {
-          "id": "confusion-yu-choy-jr",
-          "label": "Yu Choy - Jr"
+          "id": "confusion-methileaf-herbs",
+          "label": "Methileaf - Herbs"
         }
       ]
     },
@@ -10761,15 +13307,15 @@
         "color": "#4F8B58"
       },
       {
-        "name": "Yu Choy - Jr",
-        "code": "10260",
-        "cue": "Green leafy stems and small yellow flowers identify the yu choy or choi sum form.",
+        "name": "Methileaf - Herbs",
+        "code": "59994",
+        "cue": "Clusters of three small oval green leaflets on slender stems identify fresh methi leaf.",
         "color": "#C25D52"
       },
       {
-        "name": "Bok choy",
-        "code": "4545",
-        "cue": "Cluster of broad green leaves rising from thick white stalks",
+        "name": "Sher-Li-Hon",
+        "code": "69624",
+        "cue": "Look for broad green leaves with serrated edges and pale ribs running into the stems.",
         "color": "#D1A23B"
       }
     ],
@@ -10879,8 +13425,8 @@
           "label": "Bok Choy - Shanghai Jr"
         },
         {
-          "id": "confusion-uchoy-sum",
-          "label": "Uchoy Sum"
+          "id": "confusion-methileaf-herbs",
+          "label": "Methileaf - Herbs"
         }
       ]
     },
@@ -10905,15 +13451,15 @@
         "color": "#4F8B58"
       },
       {
-        "name": "Uchoy Sum",
-        "code": "64387",
-        "cue": "Uchoy Sum is identified by its green appearance and broad leafy stems.",
+        "name": "Methileaf - Herbs",
+        "code": "59994",
+        "cue": "Clusters of three small oval green leaflets on slender stems identify fresh methi leaf.",
         "color": "#C25D52"
       },
       {
-        "name": "Bok choy",
-        "code": "4545",
-        "cue": "Cluster of broad green leaves rising from thick white stalks",
+        "name": "Sher-Li-Hon",
+        "code": "69624",
+        "cue": "Look for broad green leaves with serrated edges and pale ribs running into the stems.",
         "color": "#D1A23B"
       }
     ],

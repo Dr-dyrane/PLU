@@ -145,11 +145,9 @@
     "sourcePages": [
       5
     ],
-    "decision": "mapped",
-    "mappingKind": "single",
+    "decision": "candidate",
     "reasonCodes": [],
-    "reason": "The catalog records one checkout code for an interpreted in-scope produce identity.",
-    "flags": []
+    "reason": "Passed exact-code and loose-produce admission; media review required."
   },
   {
     "sourceOrder": 11,
@@ -310,12 +308,9 @@
     "sourcePages": [
       4
     ],
-    "decision": "queued",
-    "reasonCodes": [
-      "source-identity-review"
-    ],
-    "reason": "Source identity needs manual adjudication",
-    "flags": []
+    "decision": "candidate",
+    "reasonCodes": [],
+    "reason": "Passed exact-code and loose-produce admission; media review required."
   },
   {
     "sourceOrder": 21,
@@ -491,11 +486,9 @@
     "sourcePages": [
       5
     ],
-    "decision": "mapped",
-    "mappingKind": "single",
+    "decision": "candidate",
     "reasonCodes": [],
-    "reason": "The catalog records one checkout code for an interpreted in-scope produce identity.",
-    "flags": []
+    "reason": "Passed exact-code and loose-produce admission; media review required."
   },
   {
     "sourceOrder": 32,
@@ -762,11 +755,9 @@
     "sourcePages": [
       4
     ],
-    "decision": "mapped",
-    "mappingKind": "single",
+    "decision": "candidate",
     "reasonCodes": [],
-    "reason": "The catalog records one checkout code; the exact catalog label preserves the case distinction from the existing lesson title.",
-    "flags": []
+    "reason": "Passed exact-code and loose-produce admission; media review required."
   },
   {
     "sourceOrder": 50,
@@ -778,12 +769,9 @@
     "sourcePages": [
       4
     ],
-    "decision": "queued",
-    "reasonCodes": [
-      "source-identity-review"
-    ],
-    "reason": "Source identity needs manual adjudication",
-    "flags": []
+    "decision": "candidate",
+    "reasonCodes": [],
+    "reason": "Passed exact-code and loose-produce admission; media review required."
   },
   {
     "sourceOrder": 51,
@@ -990,12 +978,9 @@
     "sourcePages": [
       4
     ],
-    "decision": "queued",
-    "reasonCodes": [
-      "source-identity-review"
-    ],
-    "reason": "Source identity needs manual adjudication",
-    "flags": []
+    "decision": "candidate",
+    "reasonCodes": [],
+    "reason": "Passed exact-code and loose-produce admission; media review required."
   },
   {
     "sourceOrder": 64,
@@ -1007,11 +992,9 @@
     "sourcePages": [
       4
     ],
-    "decision": "mapped",
-    "mappingKind": "single",
+    "decision": "candidate",
     "reasonCodes": [],
-    "reason": "The catalog records one checkout code for an interpreted in-scope produce identity.",
-    "flags": []
+    "reason": "Passed exact-code and loose-produce admission; media review required."
   },
   {
     "sourceOrder": 65,
@@ -1434,12 +1417,9 @@
     "sourcePages": [
       1
     ],
-    "decision": "queued",
-    "reasonCodes": [
-      "source-identity-review"
-    ],
-    "reason": "Source identity needs manual adjudication",
-    "flags": []
+    "decision": "candidate",
+    "reasonCodes": [],
+    "reason": "Passed exact-code and loose-produce admission; media review required."
   },
   {
     "sourceOrder": 91,
@@ -1451,12 +1431,9 @@
     "sourcePages": [
       4
     ],
-    "decision": "queued",
-    "reasonCodes": [
-      "source-identity-review"
-    ],
-    "reason": "Source identity needs manual adjudication",
-    "flags": []
+    "decision": "candidate",
+    "reasonCodes": [],
+    "reason": "Passed exact-code and loose-produce admission; media review required."
   },
   {
     "sourceOrder": 92,
@@ -1537,11 +1514,9 @@
     "sourcePages": [
       4
     ],
-    "decision": "mapped",
-    "mappingKind": "single",
+    "decision": "candidate",
     "reasonCodes": [],
-    "reason": "The catalog records one checkout code for an interpreted in-scope produce identity.",
-    "flags": []
+    "reason": "Passed exact-code and loose-produce admission; media review required."
   },
   {
     "sourceOrder": 97,
@@ -2114,11 +2089,9 @@
     "sourcePages": [
       5
     ],
-    "decision": "mapped",
-    "mappingKind": "single",
+    "decision": "candidate",
     "reasonCodes": [],
-    "reason": "The catalog records one checkout code for an interpreted in-scope produce identity.",
-    "flags": []
+    "reason": "Passed exact-code and loose-produce admission; media review required."
   },
   {
     "sourceOrder": 133,
@@ -2405,11 +2378,9 @@
     "sourcePages": [
       5
     ],
-    "decision": "mapped",
-    "mappingKind": "single",
+    "decision": "candidate",
     "reasonCodes": [],
-    "reason": "The catalog records one checkout code for an interpreted in-scope produce identity.",
-    "flags": []
+    "reason": "Passed exact-code and loose-produce admission; media review required."
   },
   {
     "sourceOrder": 151,
@@ -2421,11 +2392,9 @@
     "sourcePages": [
       5
     ],
-    "decision": "mapped",
-    "mappingKind": "single",
+    "decision": "candidate",
     "reasonCodes": [],
-    "reason": "The catalog records one checkout code for an interpreted in-scope produce identity.",
-    "flags": []
+    "reason": "Passed exact-code and loose-produce admission; media review required."
   },
   {
     "sourceOrder": 152,
@@ -2474,11 +2443,9 @@
     "sourcePages": [
       4
     ],
-    "decision": "mapped",
-    "mappingKind": "single",
+    "decision": "candidate",
     "reasonCodes": [],
-    "reason": "The catalog records one checkout code for an interpreted in-scope produce identity.",
-    "flags": []
+    "reason": "Passed exact-code and loose-produce admission; media review required."
   },
   {
     "sourceOrder": 155,
@@ -2507,11 +2474,9 @@
     "sourcePages": [
       5
     ],
-    "decision": "mapped",
-    "mappingKind": "single",
+    "decision": "candidate",
     "reasonCodes": [],
-    "reason": "The catalog records one checkout code for an interpreted in-scope produce identity.",
-    "flags": []
+    "reason": "Passed exact-code and loose-produce admission; media review required."
   },
   {
     "sourceOrder": 157,
@@ -2523,11 +2488,9 @@
     "sourcePages": [
       5
     ],
-    "decision": "mapped",
-    "mappingKind": "single",
+    "decision": "candidate",
     "reasonCodes": [],
-    "reason": "The catalog records one checkout code for an interpreted in-scope produce identity.",
-    "flags": []
+    "reason": "Passed exact-code and loose-produce admission; media review required."
   },
   {
     "sourceOrder": 158,
@@ -2687,12 +2650,9 @@
       3,
       4
     ],
-    "decision": "queued",
-    "reasonCodes": [
-      "source-identity-review"
-    ],
-    "reason": "Source identity needs manual adjudication",
-    "flags": []
+    "decision": "candidate",
+    "reasonCodes": [],
+    "reason": "Passed exact-code and loose-produce admission; media review required."
   },
   {
     "sourceOrder": 168,

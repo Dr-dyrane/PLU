@@ -10,6 +10,7 @@ import {
   words,
 } from "./batch04/common.mjs";
 import { resolveImage } from "./batch04/media.mjs";
+import { loadRecovery } from "./batch06-recovery.mjs";
 import {
   calculateSelection,
   chooseFamilyChoices,
@@ -48,6 +49,7 @@ if (
 }
 
 const catalog = await loadJsonRecords(new URL("../data/catalog/", import.meta.url));
+const recoveryById = await loadRecovery(catalog);
 const catalogById = new Map(catalog.map((record) => [record.id, record]));
 const existingStories = [
   ...(await loadJsonRecords(new URL("../data/stories/", import.meta.url))),
@@ -281,7 +283,7 @@ for (const [candidateIndex, item] of candidates.entries()) {
 
   let media;
   try {
-    media = await resolveImage(item, usedFiles, reviewedMapping.commonsFile);
+    media = await resolveImage(item, usedFiles, reviewedMapping.commonsFile, reviewedMapping);
   } catch (error) {
     report.rejected.push({
       candidateOrder: candidateIndex + 1,
@@ -346,9 +348,27 @@ for (const [candidateIndex, item] of candidates.entries()) {
       ...(labelAssisted ? ["media-label-assisted", "qualifier-workbook-label"] : []),
     ]),
   ];
-  const photos = ["hero", "alternate", "context"].map((role, photoIndex) =>
-    photoRole(storyId, visualItem, media, role, photoIndex),
-  );
+  const recovery = recoveryById.get(item.catalogId);
+  const photos = [];
+  for (const [photoIndex, role] of ["hero", "alternate", "context"].entries()) {
+    const roleReview = recovery?.reviewedPhotos?.find((photo) => photo.role === role);
+    const distinct = roleReview && roleReview.commonsFile !== media.file;
+    const roleMedia = distinct
+      ? await resolveImage(item, new Set(usedFiles), roleReview.commonsFile, reviewedMapping)
+      : media;
+    const photo = photoRole(storyId, visualItem, roleMedia, role, photoIndex);
+    if (distinct) {
+      delete photo.reuseOf;
+      delete photo.fallbackReason;
+      photo.focus = "50% 50%";
+      if (role === "alternate") photo.alt = `Alternate photograph of ${visibleIdentity.label} highlighting its ${visibleIdentity.form.toLowerCase()}`;
+    }
+    if (recovery?.decision === "approved") {
+      photo.author = roleReview?.author ?? recovery.author;
+      photo.license = roleReview?.license ?? recovery.license;
+    }
+    photos.push(photo);
+  }
   const labelClaimNames = labelAssisted
     ? reviewedMapping.labelClaims.map((claim) => claim.value).join(" and ")
     : "";
