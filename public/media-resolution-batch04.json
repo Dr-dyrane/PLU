@@ -1043,40 +1043,38 @@
         "band": "Essential",
         "priority": "must-know"
       },
-      "file": "Tanunda Show 2008 dill cucumbers.jpg",
-      "src": "https://upload.wikimedia.org/wikipedia/commons/5/5d/Tanunda_Show_2008_dill_cucumbers.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "file": "PicklingCucumbers.jpg",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/a/ac/PicklingCucumbers.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
       "mime": "image/jpeg",
-      "width": 640,
-      "height": 480,
+      "width": 1024,
+      "height": 768,
       "thumbWidth": 1600,
       "thumbHeight": 1200,
-      "score": 199,
+      "score": -16,
       "sharedAcrossProducts": false,
-      "match": "strict-identity-match",
+      "match": "reviewed-override",
       "matchedTargets": [
-        "dill",
-        "cucumber"
+        "pickling"
       ],
-      "matchedModifiers": [
-        "dill"
-      ],
+      "matchedModifiers": [],
       "identityEvidence": [
-        "cucumber",
         "cucumbers"
       ],
       "sourceEvidence": {
-        "title": "Tanunda Show 2008 dill cucumbers.jpg",
-        "objectName": "Tanunda Show 2008 dill cucumbers",
-        "description": "Entries in the South Australian Dill Cucumber Championships at the 2008 Tanunda Show",
-        "categories": "GFDL|Taken with Panasonic Lumix DMC-FZ20|License migration redundant|Self-published work|Photographs by Fairv8|Dill pickles|Tanunda Show"
+        "title": "PicklingCucumbers.jpg",
+        "objectName": "PicklingCucumbers",
+        "description": "<p>Basket of fresh pickling cucumbers (2005).\nPicture taken by <a href=\"https://en.wikipedia.org/wiki/User:Gruepig\" class=\"extiw\" title=\"en:User:Gruepig\">Gruepig</a> (from the English Wikipedia).\n</p>\nReleased in the public domain by its author.",
+        "categories": "Cucumbers|Taken with Canon Digital IXUS v|PD-user|Baskets|Gherkins|Unknown date|Pickled gherkins"
       },
-      "alternatives": [
-        {
-          "file": "Pickled cucumber.jpg",
-          "score": 187,
-          "src": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Pickled_cucumber.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
-        }
-      ]
+      "alternatives": [],
+      "sourceReview": {
+        "catalogId": "cucumbers-dill",
+        "code": "4596",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:PicklingCucumbers.jpg",
+        "author": "The original Uploader was Gruepig at English Wikipedia",
+        "license": "Public domain",
+        "reviewBasis": "Pixel review confirms short, whole, raw green cucumbers in a basket. This replaces the plated pickles in Tanunda Show 2008 dill cucumbers.jpg. The photograph supports the raw produce identity, not a case quantity or code; loose Weight code 4596 remains the exact workbook mapping."
+      }
     },
     {
       "order": 24,

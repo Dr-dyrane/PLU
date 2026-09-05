@@ -21,6 +21,10 @@ Every normalized source row has one explicit runtime disposition:
 
 Only `ready` rows compile to `ProductStory` and `/learn/` routes. Mapped, queued, and excluded rows remain searchable reference records and cannot affect learned progress.
 
+Nineteen explicitly reviewed `mapped` rows also have `/relationships/[catalogId]/` source-row lessons. These teach the exact label, source pages, and complete recorded code set without establishing a primary or current checkout code. Same-label and shared-code neighbors retain their complete source arrays and uncertainty flags. Relationship recall requires every recorded code, preserves leading zeros, and rejects partial sets and duplicates. A separate checkout guard prevents photo-only or interchangeable-label conclusions.
+
+`data/batch-06-relationship-decisions.json` is the evidence ledger; `npm run prepare:relationships` materializes reviewed source photographs and immutable mappings into `data/relationship-lessons.json`. The build validates the exact nineteen targets and their neighbors. Home receives lightweight summaries only. Completion uses `plu:relationship:<catalogId>` and is displayed as “Mapping studied,” never mixed with `plu:complete:<storyId>` mastery. The 28 mapped records therefore comprise 19 studyable relationships and 9 awaiting media, not 28 new checkout-ready lessons.
+
 ## Mnemonic compiler
 
 The deterministic rule is:

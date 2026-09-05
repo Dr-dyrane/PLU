@@ -15,7 +15,7 @@ import {
 } from "lucide-react";
 
 export type SoldFilter = "all" | "weight" | "each";
-export type LearningFilter = "all" | "ready" | "learned" | "mapped" | "queued" | "excluded";
+export type LearningFilter = "all" | "ready" | "learned" | "relationships" | "mapped" | "queued" | "excluded";
 
 const soldOptions: Array<{
   value: SoldFilter;
@@ -37,10 +37,11 @@ const learningOptions: Array<{
   { value: "all", label: "Entire catalog", detail: "Lessons, mappings, and review", icon: Layers3 },
   { value: "ready", label: "Ready to learn", detail: "Available, not completed", icon: Sparkles },
   { value: "learned", label: "Learned", detail: "Completed on this device", icon: Check },
+  { value: "relationships", label: "Code relationships", detail: "Source-row recall, not checkout mastery", icon: BookOpenCheck },
   {
     value: "mapped",
-    label: "Mapped reference",
-    detail: "Exact catalog data, not a quiz lesson",
+    label: "Awaiting recognition media",
+    detail: "Exact codes, photographs still unresolved",
     icon: BookOpenCheck,
   },
   {

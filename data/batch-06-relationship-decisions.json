@@ -1,0 +1,1429 @@
+{
+  "schemaVersion": 1,
+  "batch": "06",
+  "method": "Audit the exact nineteen mapped code relationships against immutable normalized catalog rows and approved media/reuse ledgers. Add source-context relationship study without claiming an unambiguous current checkout code.",
+  "policy": {
+    "catalogAuthority": "data/catalog/*.json",
+    "scope": "Only these nineteen mapped targets; no queued neighbor is promoted.",
+    "neighborRule": "Include every other normalized catalog row with the same exact case-insensitive label or at least one exact shared code. Preserve full arrays, flags, source pages, and current manifest status.",
+    "singleCodeRule": "Quiz the exact recorded code only with the original source label and page visible.",
+    "multipleCodeRule": "Require the complete unordered recorded-code set. Neither code order nor a single member establishes a primary or universally correct checkout code.",
+    "completionRule": "Track relationship-study completion separately from ready-lesson recall and learned progress. All targets remain mapped.",
+    "mediaRule": "Reuse only the pinned reviewed file. Catalog grade, package, and source-page claims are not inferred from pixels; preserve source/author/license when materializing media.",
+    "verificationBoundary": "Catalog and review-ledger integrity verified locally; this ledger does not certify current store checkout rules or fresh remote asset availability."
+  },
+  "items": [
+    {
+      "catalogId": "apples-gala",
+      "relationKind": "same-label-different-codes",
+      "sourceItem": "Apples - Gala",
+      "codeText": "4132, 4133, 4135",
+      "codes": [
+        "4132",
+        "4133",
+        "4135"
+      ],
+      "sourcePages": [
+        1
+      ],
+      "soldBy": "Weight",
+      "flags": [],
+      "relatedCatalogIds": [
+        "apples-royal-gala-2"
+      ],
+      "relatedRecords": [
+        {
+          "catalogId": "apples-royal-gala-2",
+          "sourceItem": "Apples - Royal Gala",
+          "codeText": "4132",
+          "codes": [
+            "4132"
+          ],
+          "sourcePages": [
+            5
+          ],
+          "soldBy": "Weight",
+          "flags": [],
+          "status": "mapped",
+          "relationToTarget": [
+            "shared-code"
+          ],
+          "sharedCodes": [
+            "4132"
+          ]
+        }
+      ],
+      "reviewBasis": "The page 1 Gala row records three codes without a per-code distinction. Its 4132 also occurs on the page 5 Royal Gala row. Preserve all three Gala codes and the neighbor; do not choose a primary code or infer size classes.",
+      "checkoutCaveat": "This is recall of one supplied workbook row, not a universal checkout instruction. The photo does not select among competing codes; confirm the current store label before checkout.",
+      "learningContract": {
+        "mode": "source-row-code-set",
+        "prompt": "Which complete set of codes is recorded for “Apples - Gala” on source page 1?",
+        "answerCodes": [
+          "4132",
+          "4133",
+          "4135"
+        ],
+        "answerPolicy": "complete-unordered-set",
+        "sourceContextRequired": true,
+        "checkoutSelectionResolved": false,
+        "completionKind": "relationship-study"
+      },
+      "mediaEvidence": {
+        "status": "reviewed-candidate",
+        "commonsFile": "2015-02-xx Gala (apple).jpg",
+        "reviewLedger": "data/batch-06-media-review-decisions.json",
+        "reviewBasis": "Superior alternative with an isolated, clearly visible red-yellow Gala-compatible apple.",
+        "sourceCatalogId": null,
+        "recognitionMode": "product-and-loose-form",
+        "visibleIdentity": {
+          "label": "Gala apple",
+          "form": "Round apple",
+          "color": "Red and yellow",
+          "cue": "The reviewed photo shows a whole red-yellow Gala apple."
+        },
+        "labelClaims": [],
+        "sourceUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/2015-02-xx_Gala_%28apple%29.jpg/1920px-2015-02-xx_Gala_%28apple%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "publicationState": "not-published-for-target"
+      }
+    },
+    {
+      "catalogId": "apples-red-delicious-2",
+      "relationKind": "same-label-different-codes",
+      "sourceItem": "Apples - Red Delicious",
+      "codeText": "3284",
+      "codes": [
+        "3284"
+      ],
+      "sourcePages": [
+        5
+      ],
+      "soldBy": "Weight",
+      "flags": [],
+      "relatedCatalogIds": [
+        "apples-red-delicious"
+      ],
+      "relatedRecords": [
+        {
+          "catalogId": "apples-red-delicious",
+          "sourceItem": "Apples - Red Delicious",
+          "codeText": "4167",
+          "codes": [
+            "4167"
+          ],
+          "sourcePages": [
+            1
+          ],
+          "soldBy": "Weight",
+          "flags": [],
+          "status": "ready",
+          "relationToTarget": [
+            "same-label"
+          ],
+          "sharedCodes": []
+        }
+      ],
+      "reviewBasis": "Red Delicious is 3284 on page 5 and 4167 on page 1. Both rows say Weight and neither provides a distinguishing size or grade. A page-scoped source recall is defensible; a photo-only checkout choice is not.",
+      "checkoutCaveat": "This is recall of one supplied workbook row, not a universal checkout instruction. The photo does not select among competing codes; confirm the current store label before checkout.",
+      "learningContract": {
+        "mode": "source-row-single-code",
+        "prompt": "Which code is recorded for “Apples - Red Delicious” on source page 5?",
+        "answerCodes": [
+          "3284"
+        ],
+        "answerPolicy": "exact-single",
+        "sourceContextRequired": true,
+        "checkoutSelectionResolved": false,
+        "completionKind": "relationship-study"
+      },
+      "mediaEvidence": {
+        "status": "reviewed-candidate",
+        "commonsFile": "Red delicious red chief apple.JPG",
+        "reviewLedger": "data/batch-06-media-review-decisions.json",
+        "reviewBasis": "Two unobstructed deep-red apples with compatible identity and color.",
+        "sourceCatalogId": null,
+        "recognitionMode": "product-and-loose-form",
+        "visibleIdentity": {
+          "label": "Red Delicious apple",
+          "form": "Whole apples",
+          "color": "Deep red",
+          "cue": "The reviewed photo shows two whole deep-red Red Delicious apples."
+        },
+        "labelClaims": [],
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Red_delicious_red_chief_apple.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "publicationState": "not-published-for-target"
+      }
+    },
+    {
+      "catalogId": "apples-royal-gala-2",
+      "relationKind": "same-label-different-codes",
+      "sourceItem": "Apples - Royal Gala",
+      "codeText": "4132",
+      "codes": [
+        "4132"
+      ],
+      "sourcePages": [
+        5
+      ],
+      "soldBy": "Weight",
+      "flags": [],
+      "relatedCatalogIds": [
+        "apples-gala",
+        "apples-royal-gala"
+      ],
+      "relatedRecords": [
+        {
+          "catalogId": "apples-gala",
+          "sourceItem": "Apples - Gala",
+          "codeText": "4132, 4133, 4135",
+          "codes": [
+            "4132",
+            "4133",
+            "4135"
+          ],
+          "sourcePages": [
+            1
+          ],
+          "soldBy": "Weight",
+          "flags": [],
+          "status": "mapped",
+          "relationToTarget": [
+            "shared-code"
+          ],
+          "sharedCodes": [
+            "4132"
+          ]
+        },
+        {
+          "catalogId": "apples-royal-gala",
+          "sourceItem": "Apples - Royal Gala",
+          "codeText": "4173",
+          "codes": [
+            "4173"
+          ],
+          "sourcePages": [
+            1
+          ],
+          "soldBy": "Weight",
+          "flags": [],
+          "status": "ready",
+          "relationToTarget": [
+            "same-label"
+          ],
+          "sharedCodes": []
+        }
+      ],
+      "reviewBasis": "Royal Gala is 4132 on page 5 and 4173 on page 1. The page 1 Gala row also contains 4132 among three codes. These are exact source relationships, not proof that Gala and Royal Gala are interchangeable.",
+      "checkoutCaveat": "This is recall of one supplied workbook row, not a universal checkout instruction. The photo does not select among competing codes; confirm the current store label before checkout.",
+      "learningContract": {
+        "mode": "source-row-single-code",
+        "prompt": "Which code is recorded for “Apples - Royal Gala” on source page 5?",
+        "answerCodes": [
+          "4132"
+        ],
+        "answerPolicy": "exact-single",
+        "sourceContextRequired": true,
+        "checkoutSelectionResolved": false,
+        "completionKind": "relationship-study"
+      },
+      "mediaEvidence": {
+        "status": "reviewed-candidate",
+        "commonsFile": "Royal Gala apple.jpg",
+        "reviewLedger": "data/batch-06-media-review-decisions.json",
+        "reviewBasis": "Clear isolated red-yellow apple with no competing subjects.",
+        "sourceCatalogId": null,
+        "recognitionMode": "product-and-loose-form",
+        "visibleIdentity": {
+          "label": "Royal Gala apple",
+          "form": "Round apple",
+          "color": "Red and yellow",
+          "cue": "The reviewed photo shows a whole red-yellow Royal Gala apple."
+        },
+        "labelClaims": [],
+        "sourceUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/Royal_Gala_apple.jpg/1920px-Royal_Gala_apple.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "publicationState": "not-published-for-target"
+      }
+    },
+    {
+      "catalogId": "apricots-2",
+      "relationKind": "same-label-different-codes",
+      "sourceItem": "Apricots",
+      "codeText": "3302",
+      "codes": [
+        "3302"
+      ],
+      "sourcePages": [
+        5
+      ],
+      "soldBy": "Weight",
+      "flags": [],
+      "relatedCatalogIds": [
+        "apricots"
+      ],
+      "relatedRecords": [
+        {
+          "catalogId": "apricots",
+          "sourceItem": "Apricots",
+          "codeText": "4218",
+          "codes": [
+            "4218"
+          ],
+          "sourcePages": [
+            1
+          ],
+          "soldBy": "Weight",
+          "flags": [],
+          "status": "ready",
+          "relationToTarget": [
+            "same-label"
+          ],
+          "sharedCodes": []
+        }
+      ],
+      "reviewBasis": "Apricots is 3302 on page 5 and 4218 on page 1. Both rows say Weight and no distinguishing size or grade is recorded. Preserve both mappings with their pages.",
+      "checkoutCaveat": "This is recall of one supplied workbook row, not a universal checkout instruction. The photo does not select among competing codes; confirm the current store label before checkout.",
+      "learningContract": {
+        "mode": "source-row-single-code",
+        "prompt": "Which code is recorded for “Apricots” on source page 5?",
+        "answerCodes": [
+          "3302"
+        ],
+        "answerPolicy": "exact-single",
+        "sourceContextRequired": true,
+        "checkoutSelectionResolved": false,
+        "completionKind": "relationship-study"
+      },
+      "mediaEvidence": {
+        "status": "reviewed-candidate",
+        "commonsFile": "Apricots real2.jpg",
+        "reviewLedger": "data/batch-06-media-review-decisions.json",
+        "reviewBasis": "Clear close-up of multiple whole orange apricots.",
+        "sourceCatalogId": null,
+        "recognitionMode": "product-and-loose-form",
+        "visibleIdentity": {
+          "label": "Apricots",
+          "form": "Small round stone fruit",
+          "color": "Orange",
+          "cue": "The reviewed photo shows several whole orange apricots."
+        },
+        "labelClaims": [],
+        "sourceUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/Apricots_real2.jpg/1920px-Apricots_real2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "publicationState": "not-published-for-target"
+      }
+    },
+    {
+      "catalogId": "cherimoya",
+      "relationKind": "same-label-different-codes",
+      "sourceItem": "Cherimoya",
+      "codeText": "4257",
+      "codes": [
+        "4257"
+      ],
+      "sourcePages": [
+        1
+      ],
+      "soldBy": "Each",
+      "flags": [],
+      "relatedCatalogIds": [
+        "cherimoya-2"
+      ],
+      "relatedRecords": [
+        {
+          "catalogId": "cherimoya-2",
+          "sourceItem": "Cherimoya",
+          "codeText": "13276",
+          "codes": [
+            "13276"
+          ],
+          "sourcePages": [
+            5
+          ],
+          "soldBy": "Each",
+          "flags": [],
+          "status": "mapped",
+          "relationToTarget": [
+            "same-label"
+          ],
+          "sharedCodes": []
+        }
+      ],
+      "reviewBasis": "Cherimoya is 4257 on page 1 and 13276 on page 5. Both rows say Each; the workbook does not say one replaces the other.",
+      "checkoutCaveat": "This is recall of one supplied workbook row, not a universal checkout instruction. The photo does not select among competing codes; confirm the current store label before checkout.",
+      "learningContract": {
+        "mode": "source-row-single-code",
+        "prompt": "Which code is recorded for “Cherimoya” on source page 1?",
+        "answerCodes": [
+          "4257"
+        ],
+        "answerPolicy": "exact-single",
+        "sourceContextRequired": true,
+        "checkoutSelectionResolved": false,
+        "completionKind": "relationship-study"
+      },
+      "mediaEvidence": {
+        "status": "reviewed-candidate",
+        "commonsFile": "Cherimoya fruit basket 1.jpg",
+        "reviewLedger": "data/batch-06-media-review-decisions.json",
+        "reviewBasis": "Superior alternative showing a basket of clearly visible whole knobbly cherimoya fruit.",
+        "sourceCatalogId": null,
+        "recognitionMode": "product-and-loose-form",
+        "visibleIdentity": {
+          "label": "Cherimoya",
+          "form": "Knobbly whole fruit",
+          "color": "Green",
+          "cue": "The reviewed photo shows whole knobbly cherimoyas in a basket."
+        },
+        "labelClaims": [],
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Cherimoya_fruit_basket_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "publicationState": "not-published-for-target"
+      }
+    },
+    {
+      "catalogId": "cherimoya-2",
+      "relationKind": "same-label-different-codes",
+      "sourceItem": "Cherimoya",
+      "codeText": "13276",
+      "codes": [
+        "13276"
+      ],
+      "sourcePages": [
+        5
+      ],
+      "soldBy": "Each",
+      "flags": [],
+      "relatedCatalogIds": [
+        "cherimoya"
+      ],
+      "relatedRecords": [
+        {
+          "catalogId": "cherimoya",
+          "sourceItem": "Cherimoya",
+          "codeText": "4257",
+          "codes": [
+            "4257"
+          ],
+          "sourcePages": [
+            1
+          ],
+          "soldBy": "Each",
+          "flags": [],
+          "status": "mapped",
+          "relationToTarget": [
+            "same-label"
+          ],
+          "sharedCodes": []
+        }
+      ],
+      "reviewBasis": "Cherimoya is 13276 on page 5 and 4257 on page 1. Both rows say Each; the workbook does not say one replaces the other.",
+      "checkoutCaveat": "This is recall of one supplied workbook row, not a universal checkout instruction. The photo does not select among competing codes; confirm the current store label before checkout.",
+      "learningContract": {
+        "mode": "source-row-single-code",
+        "prompt": "Which code is recorded for “Cherimoya” on source page 5?",
+        "answerCodes": [
+          "13276"
+        ],
+        "answerPolicy": "exact-single",
+        "sourceContextRequired": true,
+        "checkoutSelectionResolved": false,
+        "completionKind": "relationship-study"
+      },
+      "mediaEvidence": {
+        "status": "reviewed-candidate",
+        "commonsFile": "Cherimoya fruit basket 1.jpg",
+        "reviewLedger": "data/batch-06-media-review-decisions.json",
+        "reviewBasis": "Strongest available view, clearly showing whole cherimoyas in a basket.",
+        "sourceCatalogId": null,
+        "recognitionMode": "product-and-loose-form",
+        "visibleIdentity": {
+          "label": "Cherimoya",
+          "form": "Knobbly whole fruit",
+          "color": "Green",
+          "cue": "The reviewed photo shows whole knobbly cherimoyas in a basket."
+        },
+        "labelClaims": [],
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Cherimoya_fruit_basket_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "publicationState": "not-published-for-target"
+      }
+    },
+    {
+      "catalogId": "mangos-red-case",
+      "relationKind": "same-label-different-codes",
+      "sourceItem": "Mangos - Red (Case)",
+      "codeText": "2146, 13493",
+      "codes": [
+        "2146",
+        "13493"
+      ],
+      "sourcePages": [
+        2
+      ],
+      "soldBy": "Each",
+      "flags": [],
+      "relatedCatalogIds": [
+        "mangoes-red-case-handwritten"
+      ],
+      "relatedRecords": [
+        {
+          "catalogId": "mangoes-red-case-handwritten",
+          "sourceItem": "Mangoes - Red (Case) (handwritten)",
+          "codeText": "2146",
+          "codes": [
+            "2146"
+          ],
+          "sourcePages": [
+            5
+          ],
+          "soldBy": null,
+          "flags": [
+            "handwritten"
+          ],
+          "status": "queued",
+          "relationToTarget": [
+            "shared-code"
+          ],
+          "sharedCodes": [
+            "2146"
+          ]
+        }
+      ],
+      "reviewBasis": "The page 2 Mangos - Red (Case) row records both 2146 and 13493 without a selection rule. The handwritten page 5 neighbor records 2146 but remains queued and cannot settle that rule. Study the complete two-code set.",
+      "checkoutCaveat": "This is recall of one supplied workbook row, not a universal checkout instruction. The photo does not select among competing codes; confirm the current store label before checkout. The handwritten neighbor remains unverified; 2146 alone is not the full answer for this row.",
+      "learningContract": {
+        "mode": "source-row-code-set",
+        "prompt": "Which complete set of codes is recorded for “Mangos - Red (Case)” on source page 2?",
+        "answerCodes": [
+          "2146",
+          "13493"
+        ],
+        "answerPolicy": "complete-unordered-set",
+        "sourceContextRequired": true,
+        "checkoutSelectionResolved": false,
+        "completionKind": "relationship-study"
+      },
+      "mediaEvidence": {
+        "status": "reviewed-candidate",
+        "commonsFile": "HK food red fruit 芒果 mango March 2021 SS2 03.jpg",
+        "reviewLedger": "data/batch-06-media-review-decisions.json",
+        "reviewBasis": "Isolated whole red mango with the correct color and form.",
+        "sourceCatalogId": null,
+        "recognitionMode": "label-assisted",
+        "visibleIdentity": {
+          "label": "Red mango",
+          "form": "Oval tapered whole fruit",
+          "color": "Red",
+          "cue": "The reviewed photo shows one whole red mango; it does not establish a case quantity."
+        },
+        "labelClaims": [
+          {
+            "value": "Case",
+            "basis": "workbook-label",
+            "sourceField": "catalog.item",
+            "sourcePages": [
+              2
+            ]
+          }
+        ],
+        "sourceUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/HK_food_red_fruit_%E8%8A%92%E6%9E%9C_mango_March_2021_SS2_03.jpg/1920px-HK_food_red_fruit_%E8%8A%92%E6%9E%9C_mango_March_2021_SS2_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "publicationState": "not-published-for-target"
+      }
+    },
+    {
+      "catalogId": "pears-asian-yellow-2",
+      "relationKind": "same-label-different-codes",
+      "sourceItem": "Pears - Asian Yellow",
+      "codeText": "4406",
+      "codes": [
+        "4406"
+      ],
+      "sourcePages": [
+        5
+      ],
+      "soldBy": "Weight",
+      "flags": [],
+      "relatedCatalogIds": [
+        "pears-asian-yellow"
+      ],
+      "relatedRecords": [
+        {
+          "catalogId": "pears-asian-yellow",
+          "sourceItem": "Pears - Asian Yellow",
+          "codeText": "4407",
+          "codes": [
+            "4407"
+          ],
+          "sourcePages": [
+            2
+          ],
+          "soldBy": "Weight",
+          "flags": [],
+          "status": "ready",
+          "relationToTarget": [
+            "same-label"
+          ],
+          "sharedCodes": []
+        }
+      ],
+      "reviewBasis": "Asian Yellow pear is 4406 on page 5 and 4407 on page 2. Both rows say Weight; no per-code variety, size, or grade distinction is supplied.",
+      "checkoutCaveat": "This is recall of one supplied workbook row, not a universal checkout instruction. The photo does not select among competing codes; confirm the current store label before checkout.",
+      "learningContract": {
+        "mode": "source-row-single-code",
+        "prompt": "Which code is recorded for “Pears - Asian Yellow” on source page 5?",
+        "answerCodes": [
+          "4406"
+        ],
+        "answerPolicy": "exact-single",
+        "sourceContextRequired": true,
+        "checkoutSelectionResolved": false,
+        "completionKind": "relationship-study"
+      },
+      "mediaEvidence": {
+        "status": "reviewed-reuse-candidate",
+        "commonsFile": "Golden Asian Pear.png",
+        "reviewLedger": "data/batch-06-media-reuse.json",
+        "reviewBasis": "The published Asian yellow pear image is an exact visible identity and color match.",
+        "sourceCatalogId": "pears-asian-yellow",
+        "recognitionMode": "product-and-loose-form",
+        "visibleIdentity": {
+          "label": "Asian yellow pear",
+          "form": "Round apple-shaped pear",
+          "color": "Yellow",
+          "cue": "A round apple-shaped yellow pear identifies the Asian yellow type."
+        },
+        "labelClaims": [],
+        "sourceUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d8/Golden_Asian_Pear.png/1920px-Golden_Asian_Pear.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "publicationState": "not-published-for-target"
+      }
+    },
+    {
+      "catalogId": "pears-forelle-2",
+      "relationKind": "same-label-different-codes",
+      "sourceItem": "Pears - Forelle",
+      "codeText": "3019",
+      "codes": [
+        "3019"
+      ],
+      "sourcePages": [
+        5
+      ],
+      "soldBy": "Weight",
+      "flags": [],
+      "relatedCatalogIds": [
+        "pears-forelle"
+      ],
+      "relatedRecords": [
+        {
+          "catalogId": "pears-forelle",
+          "sourceItem": "Pears - Forelle",
+          "codeText": "4418",
+          "codes": [
+            "4418"
+          ],
+          "sourcePages": [
+            2
+          ],
+          "soldBy": "Weight",
+          "flags": [],
+          "status": "ready",
+          "relationToTarget": [
+            "same-label"
+          ],
+          "sharedCodes": []
+        }
+      ],
+      "reviewBasis": "Forelle pear is 3019 on page 5 and 4418 on page 2. Both rows say Weight; the photo identifies Forelle but cannot select the current checkout code.",
+      "checkoutCaveat": "This is recall of one supplied workbook row, not a universal checkout instruction. The photo does not select among competing codes; confirm the current store label before checkout.",
+      "learningContract": {
+        "mode": "source-row-single-code",
+        "prompt": "Which code is recorded for “Pears - Forelle” on source page 5?",
+        "answerCodes": [
+          "3019"
+        ],
+        "answerPolicy": "exact-single",
+        "sourceContextRequired": true,
+        "checkoutSelectionResolved": false,
+        "completionKind": "relationship-study"
+      },
+      "mediaEvidence": {
+        "status": "reviewed-candidate",
+        "commonsFile": "Forelle pear 01.jpg",
+        "reviewLedger": "data/batch-06-media-review-decisions.json",
+        "reviewBasis": "Clear whole Forelle pear with expected speckled green-yellow and red skin.",
+        "sourceCatalogId": null,
+        "recognitionMode": "product-and-loose-form",
+        "visibleIdentity": {
+          "label": "Forelle pear",
+          "form": "Whole pear",
+          "color": "Green-yellow and red",
+          "cue": "The reviewed photo shows a whole speckled Forelle pear."
+        },
+        "labelClaims": [],
+        "sourceUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8e/Forelle_pear_01.jpg/1920px-Forelle_pear_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "publicationState": "not-published-for-target"
+      }
+    },
+    {
+      "catalogId": "pumpkins-large",
+      "relationKind": "same-label-different-codes",
+      "sourceItem": "Pumpkins - Large",
+      "codeText": "3130",
+      "codes": [
+        "3130"
+      ],
+      "sourcePages": [
+        3
+      ],
+      "soldBy": "Each",
+      "flags": [],
+      "relatedCatalogIds": [
+        "pumpkins-large-2"
+      ],
+      "relatedRecords": [
+        {
+          "catalogId": "pumpkins-large-2",
+          "sourceItem": "Pumpkins - Large",
+          "codeText": "4736",
+          "codes": [
+            "4736"
+          ],
+          "sourcePages": [
+            4
+          ],
+          "soldBy": "Each",
+          "flags": [],
+          "status": "mapped",
+          "relationToTarget": [
+            "same-label"
+          ],
+          "sharedCodes": []
+        }
+      ],
+      "reviewBasis": "Pumpkins - Large is 3130 on page 3 and 4736 on page 4. Both rows say Each and carry the same Large label; no replacement or size threshold is recorded.",
+      "checkoutCaveat": "This is recall of one supplied workbook row, not a universal checkout instruction. The photo does not select among competing codes; confirm the current store label before checkout.",
+      "learningContract": {
+        "mode": "source-row-single-code",
+        "prompt": "Which code is recorded for “Pumpkins - Large” on source page 3?",
+        "answerCodes": [
+          "3130"
+        ],
+        "answerPolicy": "exact-single",
+        "sourceContextRequired": true,
+        "checkoutSelectionResolved": false,
+        "completionKind": "relationship-study"
+      },
+      "mediaEvidence": {
+        "status": "reviewed-candidate",
+        "commonsFile": "Cucurbita 2011 G1 Large.jpg",
+        "reviewLedger": "data/batch-06-media-review-decisions.json",
+        "reviewBasis": "Group of unmistakable large round pumpkins; primary was a butternut or crookneck squash.",
+        "sourceCatalogId": null,
+        "recognitionMode": "label-assisted",
+        "visibleIdentity": {
+          "label": "Pumpkins",
+          "form": "Round ribbed gourds",
+          "color": "Orange",
+          "cue": "The reviewed photo shows whole round pumpkins; the store's Large grade comes from the source label."
+        },
+        "labelClaims": [
+          {
+            "value": "Large",
+            "basis": "workbook-label",
+            "sourceField": "catalog.item",
+            "sourcePages": [
+              3
+            ]
+          }
+        ],
+        "sourceUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/Cucurbita_2011_G1_Large.jpg/1920px-Cucurbita_2011_G1_Large.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "publicationState": "not-published-for-target"
+      }
+    },
+    {
+      "catalogId": "pumpkins-large-2",
+      "relationKind": "same-label-different-codes",
+      "sourceItem": "Pumpkins - Large",
+      "codeText": "4736",
+      "codes": [
+        "4736"
+      ],
+      "sourcePages": [
+        4
+      ],
+      "soldBy": "Each",
+      "flags": [],
+      "relatedCatalogIds": [
+        "pumpkins-large"
+      ],
+      "relatedRecords": [
+        {
+          "catalogId": "pumpkins-large",
+          "sourceItem": "Pumpkins - Large",
+          "codeText": "3130",
+          "codes": [
+            "3130"
+          ],
+          "sourcePages": [
+            3
+          ],
+          "soldBy": "Each",
+          "flags": [],
+          "status": "mapped",
+          "relationToTarget": [
+            "same-label"
+          ],
+          "sharedCodes": []
+        }
+      ],
+      "reviewBasis": "Pumpkins - Large is 4736 on page 4 and 3130 on page 3. Both rows say Each and carry the same Large label; no replacement or size threshold is recorded.",
+      "checkoutCaveat": "This is recall of one supplied workbook row, not a universal checkout instruction. The photo does not select among competing codes; confirm the current store label before checkout.",
+      "learningContract": {
+        "mode": "source-row-single-code",
+        "prompt": "Which code is recorded for “Pumpkins - Large” on source page 4?",
+        "answerCodes": [
+          "4736"
+        ],
+        "answerPolicy": "exact-single",
+        "sourceContextRequired": true,
+        "checkoutSelectionResolved": false,
+        "completionKind": "relationship-study"
+      },
+      "mediaEvidence": {
+        "status": "reviewed-candidate",
+        "commonsFile": "Cucurbita 2011 G1 Large.jpg",
+        "reviewLedger": "data/batch-06-media-review-decisions.json",
+        "reviewBasis": "Whole large round pumpkins are clearly visible.",
+        "sourceCatalogId": null,
+        "recognitionMode": "label-assisted",
+        "visibleIdentity": {
+          "label": "Pumpkins",
+          "form": "Round ribbed gourds",
+          "color": "Orange",
+          "cue": "The reviewed photo shows whole round pumpkins; the store's Large grade comes from the source label."
+        },
+        "labelClaims": [
+          {
+            "value": "Large",
+            "basis": "workbook-label",
+            "sourceField": "catalog.item",
+            "sourcePages": [
+              4
+            ]
+          }
+        ],
+        "sourceUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/Cucurbita_2011_G1_Large.jpg/1920px-Cucurbita_2011_G1_Large.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "publicationState": "not-published-for-target"
+      }
+    },
+    {
+      "catalogId": "carrots-chinese-jumbo",
+      "relationKind": "shared-code",
+      "sourceItem": "Carrots - Chinese Jumbo",
+      "codeText": "10387",
+      "codes": [
+        "10387"
+      ],
+      "sourcePages": [
+        4
+      ],
+      "soldBy": null,
+      "flags": [],
+      "relatedCatalogIds": [
+        "carrots-jumbo"
+      ],
+      "relatedRecords": [
+        {
+          "catalogId": "carrots-jumbo",
+          "sourceItem": "Carrots - Jumbo",
+          "codeText": "3170, 10387",
+          "codes": [
+            "3170",
+            "10387"
+          ],
+          "sourcePages": [
+            1,
+            4
+          ],
+          "soldBy": "Weight",
+          "flags": [],
+          "status": "ready",
+          "relationToTarget": [
+            "shared-code"
+          ],
+          "sharedCodes": [
+            "10387"
+          ]
+        }
+      ],
+      "reviewBasis": "The Chinese Jumbo row records 10387 on page 4. The broader Jumbo row records both 3170 and 10387 across pages 1 and 4. Chinese is source-label context; the shared code does not establish that every Jumbo carrot uses 10387.",
+      "checkoutCaveat": "This is recall of one supplied workbook row, not a universal checkout instruction. The photo does not select among competing codes; confirm the current store label before checkout.",
+      "learningContract": {
+        "mode": "source-row-single-code",
+        "prompt": "Which code is recorded for “Carrots - Chinese Jumbo” on source page 4?",
+        "answerCodes": [
+          "10387"
+        ],
+        "answerPolicy": "exact-single",
+        "sourceContextRequired": true,
+        "checkoutSelectionResolved": false,
+        "completionKind": "relationship-study"
+      },
+      "mediaEvidence": {
+        "status": "reviewed-reuse-candidate",
+        "commonsFile": "Big Carrot-2356.jpg",
+        "reviewLedger": "data/batch-06-media-reuse.json",
+        "reviewBasis": "The reviewed image truthfully shows a jumbo carrot; Chinese is preserved as an exact catalog modifier rather than inferred visually.",
+        "sourceCatalogId": "carrots-jumbo",
+        "recognitionMode": "label-assisted",
+        "visibleIdentity": {
+          "label": "Jumbo carrot",
+          "form": "Large tapered root",
+          "color": "Orange",
+          "cue": "A large orange tapered root anchors the jumbo-carrot identity."
+        },
+        "labelClaims": [
+          {
+            "value": "Chinese",
+            "basis": "workbook-label",
+            "sourceField": "catalog.item",
+            "sourcePages": [
+              4
+            ]
+          }
+        ],
+        "sourceUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/Big_Carrot-2356.jpg/1920px-Big_Carrot-2356.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "publicationState": "not-published-for-target"
+      }
+    },
+    {
+      "catalogId": "grapefruit-bin",
+      "relationKind": "shared-code",
+      "sourceItem": "Grapefruit (Bin)",
+      "codeText": "4027",
+      "codes": [
+        "4027"
+      ],
+      "sourcePages": [
+        5
+      ],
+      "soldBy": null,
+      "flags": [],
+      "relatedCatalogIds": [
+        "grapefruit-red"
+      ],
+      "relatedRecords": [
+        {
+          "catalogId": "grapefruit-red",
+          "sourceItem": "Grapefruit - Red",
+          "codeText": "4027, 4285",
+          "codes": [
+            "4027",
+            "4285"
+          ],
+          "sourcePages": [
+            1
+          ],
+          "soldBy": "Each",
+          "flags": [],
+          "status": "ready",
+          "relationToTarget": [
+            "shared-code"
+          ],
+          "sharedCodes": [
+            "4027"
+          ]
+        }
+      ],
+      "reviewBasis": "The page 5 Grapefruit (Bin) row records 4027. The narrower Red grapefruit row on page 1 records 4027 and 4285. Sharing 4027 does not establish red flesh or a sale unit for the broader Bin row.",
+      "checkoutCaveat": "This is recall of one supplied workbook row, not a universal checkout instruction. The photo does not select among competing codes; confirm the current store label before checkout.",
+      "learningContract": {
+        "mode": "source-row-single-code",
+        "prompt": "Which code is recorded for “Grapefruit (Bin)” on source page 5?",
+        "answerCodes": [
+          "4027"
+        ],
+        "answerPolicy": "exact-single",
+        "sourceContextRequired": true,
+        "checkoutSelectionResolved": false,
+        "completionKind": "relationship-study"
+      },
+      "mediaEvidence": {
+        "status": "reviewed-candidate",
+        "commonsFile": "Citrus paradisi (Grapefruit, pink).jpg",
+        "reviewLedger": "data/batch-06-media-review-decisions.json",
+        "reviewBasis": "Clean image shows whole and cut round grapefruit with unmistakable pink flesh.",
+        "sourceCatalogId": null,
+        "recognitionMode": "label-assisted",
+        "visibleIdentity": {
+          "label": "Grapefruit",
+          "form": "Whole and cut round citrus",
+          "color": "Yellow rind and pink flesh",
+          "cue": "The reviewed photo shows grapefruit; Bin is a workbook qualifier, not a visible checkout unit."
+        },
+        "labelClaims": [
+          {
+            "value": "Bin",
+            "basis": "workbook-label",
+            "sourceField": "catalog.item",
+            "sourcePages": [
+              5
+            ]
+          }
+        ],
+        "sourceUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/Citrus_paradisi_%28Grapefruit%2C_pink%29.jpg/1920px-Citrus_paradisi_%28Grapefruit%2C_pink%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "publicationState": "not-published-for-target"
+      }
+    },
+    {
+      "catalogId": "mangoes",
+      "relationKind": "shared-code",
+      "sourceItem": "Mangoes",
+      "codeText": "4051",
+      "codes": [
+        "4051"
+      ],
+      "sourcePages": [
+        5
+      ],
+      "soldBy": null,
+      "flags": [],
+      "relatedCatalogIds": [
+        "mangos-red"
+      ],
+      "relatedRecords": [
+        {
+          "catalogId": "mangos-red",
+          "sourceItem": "Mangos - Red",
+          "codeText": "4051, 4959",
+          "codes": [
+            "4051",
+            "4959"
+          ],
+          "sourcePages": [
+            2
+          ],
+          "soldBy": "Each",
+          "flags": [],
+          "status": "ready",
+          "relationToTarget": [
+            "shared-code"
+          ],
+          "sharedCodes": [
+            "4051"
+          ]
+        }
+      ],
+      "reviewBasis": "The page 5 Mangoes row records 4051, also present with 4959 on the page 2 Mangos - Red row. A broad mango label and a red-mango label remain separate source contexts; the photo or shared number cannot collapse them.",
+      "checkoutCaveat": "This is recall of one supplied workbook row, not a universal checkout instruction. The photo does not select among competing codes; confirm the current store label before checkout.",
+      "learningContract": {
+        "mode": "source-row-single-code",
+        "prompt": "Which code is recorded for “Mangoes” on source page 5?",
+        "answerCodes": [
+          "4051"
+        ],
+        "answerPolicy": "exact-single",
+        "sourceContextRequired": true,
+        "checkoutSelectionResolved": false,
+        "completionKind": "relationship-study"
+      },
+      "mediaEvidence": {
+        "status": "reviewed-reuse-candidate",
+        "commonsFile": "Alphonso mango.jpg",
+        "reviewLedger": "data/batch-06-media-reuse.json",
+        "reviewBasis": "The reviewed whole-mango photograph safely supports the broader Mangoes catalog label without importing its source lesson's case quantity.",
+        "sourceCatalogId": "mangoes-case-10lb",
+        "recognitionMode": "product-and-loose-form",
+        "visibleIdentity": {
+          "label": "Mangoes",
+          "form": "Oval tapered fruit",
+          "color": "Yellow-red",
+          "cue": "Whole yellow-red oval fruit with a tapered end provides the generic mango anchor."
+        },
+        "labelClaims": [],
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Alphonso_mango.jpg?width=1600",
+        "publicationState": "not-published-for-target"
+      }
+    },
+    {
+      "catalogId": "oranges-navel-large",
+      "relationKind": "shared-code",
+      "sourceItem": "Oranges - Navel Large",
+      "codeText": "4012",
+      "codes": [
+        "4012"
+      ],
+      "sourcePages": [
+        5
+      ],
+      "soldBy": null,
+      "flags": [],
+      "relatedCatalogIds": [
+        "oranges-navel"
+      ],
+      "relatedRecords": [
+        {
+          "catalogId": "oranges-navel",
+          "sourceItem": "Oranges - Navel",
+          "codeText": "4012, 3107",
+          "codes": [
+            "4012",
+            "3107"
+          ],
+          "sourcePages": [
+            2
+          ],
+          "soldBy": "Weight",
+          "flags": [],
+          "status": "ready",
+          "relationToTarget": [
+            "shared-code"
+          ],
+          "sharedCodes": [
+            "4012"
+          ]
+        }
+      ],
+      "reviewBasis": "The page 5 Navel Large row records 4012. The broader page 2 Navel row records both 4012 and 3107. Preserve the Large label and both broader-row codes; the source does not define size thresholds.",
+      "checkoutCaveat": "This is recall of one supplied workbook row, not a universal checkout instruction. The photo does not select among competing codes; confirm the current store label before checkout.",
+      "learningContract": {
+        "mode": "source-row-single-code",
+        "prompt": "Which code is recorded for “Oranges - Navel Large” on source page 5?",
+        "answerCodes": [
+          "4012"
+        ],
+        "answerPolicy": "exact-single",
+        "sourceContextRequired": true,
+        "checkoutSelectionResolved": false,
+        "completionKind": "relationship-study"
+      },
+      "mediaEvidence": {
+        "status": "reviewed-reuse-candidate",
+        "commonsFile": "Navel orange.jpg",
+        "reviewLedger": "data/batch-06-media-reuse.json",
+        "reviewBasis": "The published navel-orange photograph anchors the exact citrus identity; Large stays a catalog size claim.",
+        "sourceCatalogId": "oranges-navel",
+        "recognitionMode": "label-assisted",
+        "visibleIdentity": {
+          "label": "Navel orange",
+          "form": "Round citrus with navel",
+          "color": "Orange",
+          "cue": "A round orange fruit with the small navel formation identifies a navel orange."
+        },
+        "labelClaims": [
+          {
+            "value": "Large",
+            "basis": "workbook-label",
+            "sourceField": "catalog.item",
+            "sourcePages": [
+              5
+            ]
+          }
+        ],
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Navel%20orange.jpg?width=1600",
+        "publicationState": "not-published-for-target"
+      }
+    },
+    {
+      "catalogId": "oranges-navel-medium",
+      "relationKind": "shared-code",
+      "sourceItem": "Oranges - Navel Medium",
+      "codeText": "3107",
+      "codes": [
+        "3107"
+      ],
+      "sourcePages": [
+        5
+      ],
+      "soldBy": null,
+      "flags": [],
+      "relatedCatalogIds": [
+        "oranges-navel"
+      ],
+      "relatedRecords": [
+        {
+          "catalogId": "oranges-navel",
+          "sourceItem": "Oranges - Navel",
+          "codeText": "4012, 3107",
+          "codes": [
+            "4012",
+            "3107"
+          ],
+          "sourcePages": [
+            2
+          ],
+          "soldBy": "Weight",
+          "flags": [],
+          "status": "ready",
+          "relationToTarget": [
+            "shared-code"
+          ],
+          "sharedCodes": [
+            "3107"
+          ]
+        }
+      ],
+      "reviewBasis": "The page 5 Navel Medium row records 3107. The broader page 2 Navel row records both 4012 and 3107. Preserve the Medium label and both broader-row codes; the source does not define size thresholds.",
+      "checkoutCaveat": "This is recall of one supplied workbook row, not a universal checkout instruction. The photo does not select among competing codes; confirm the current store label before checkout.",
+      "learningContract": {
+        "mode": "source-row-single-code",
+        "prompt": "Which code is recorded for “Oranges - Navel Medium” on source page 5?",
+        "answerCodes": [
+          "3107"
+        ],
+        "answerPolicy": "exact-single",
+        "sourceContextRequired": true,
+        "checkoutSelectionResolved": false,
+        "completionKind": "relationship-study"
+      },
+      "mediaEvidence": {
+        "status": "reviewed-candidate",
+        "commonsFile": "Navel orange1.jpg",
+        "reviewLedger": "data/batch-06-media-review-decisions.json",
+        "reviewBasis": "Isolated whole navel orange with the correct color and form.",
+        "sourceCatalogId": null,
+        "recognitionMode": "label-assisted",
+        "visibleIdentity": {
+          "label": "Navel orange",
+          "form": "Whole round citrus",
+          "color": "Orange",
+          "cue": "The reviewed photo shows a whole navel orange; Medium is a source-label size grade."
+        },
+        "labelClaims": [
+          {
+            "value": "Medium",
+            "basis": "workbook-label",
+            "sourceField": "catalog.item",
+            "sourcePages": [
+              5
+            ]
+          }
+        ],
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/6/63/Navel_orange1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "publicationState": "not-published-for-target"
+      }
+    },
+    {
+      "catalogId": "parsley-curley-herbs",
+      "relationKind": "shared-code",
+      "sourceItem": "Parsley (Curley) - Herbs",
+      "codeText": "4899",
+      "codes": [
+        "4899"
+      ],
+      "sourcePages": [
+        4
+      ],
+      "soldBy": null,
+      "flags": [],
+      "relatedCatalogIds": [
+        "parsley-herbs"
+      ],
+      "relatedRecords": [
+        {
+          "catalogId": "parsley-herbs",
+          "sourceItem": "Parsley - Herbs",
+          "codeText": "4899, 4901",
+          "codes": [
+            "4899",
+            "4901"
+          ],
+          "sourcePages": [
+            1
+          ],
+          "soldBy": "Each",
+          "flags": [],
+          "status": "ready",
+          "relationToTarget": [
+            "shared-code"
+          ],
+          "sharedCodes": [
+            "4899"
+          ]
+        }
+      ],
+      "reviewBasis": "The page 4 Curley parsley row records 4899, also present with 4901 on the broader page 1 Parsley row. Curley is the workbook spelling; the reviewed curly-leaf photo supports that identity without transferring the broader row's sold-by field.",
+      "checkoutCaveat": "This is recall of one supplied workbook row, not a universal checkout instruction. The photo does not select among competing codes; confirm the current store label before checkout.",
+      "learningContract": {
+        "mode": "source-row-single-code",
+        "prompt": "Which code is recorded for “Parsley (Curley) - Herbs” on source page 4?",
+        "answerCodes": [
+          "4899"
+        ],
+        "answerPolicy": "exact-single",
+        "sourceContextRequired": true,
+        "checkoutSelectionResolved": false,
+        "completionKind": "relationship-study"
+      },
+      "mediaEvidence": {
+        "status": "reviewed-reuse-candidate",
+        "commonsFile": "Organic curly parsley.jpg",
+        "reviewLedger": "data/batch-06-media-reuse.json",
+        "reviewBasis": "The existing curly-parsley photograph matches the catalog's Curley spelling variant and raw herb form without importing the source file's organic context.",
+        "sourceCatalogId": "parsley-herbs",
+        "recognitionMode": "product-and-loose-form",
+        "visibleIdentity": {
+          "label": "Curly parsley",
+          "form": "Tightly curled herb leaves",
+          "color": "Dark green",
+          "cue": "Tightly curled dark-green leaves identify curly parsley."
+        },
+        "labelClaims": [],
+        "sourceUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/Organic_curly_parsley.jpg/1920px-Organic_curly_parsley.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "publicationState": "not-published-for-target"
+      }
+    },
+    {
+      "catalogId": "pears-bosc-large",
+      "relationKind": "shared-code",
+      "sourceItem": "Pears - Bosc Large",
+      "codeText": "4026",
+      "codes": [
+        "4026"
+      ],
+      "sourcePages": [
+        5
+      ],
+      "soldBy": null,
+      "flags": [],
+      "relatedCatalogIds": [
+        "pears-bosc"
+      ],
+      "relatedRecords": [
+        {
+          "catalogId": "pears-bosc",
+          "sourceItem": "Pears - Bosc",
+          "codeText": "4413, 4026",
+          "codes": [
+            "4413",
+            "4026"
+          ],
+          "sourcePages": [
+            2
+          ],
+          "soldBy": "Weight",
+          "flags": [],
+          "status": "ready",
+          "relationToTarget": [
+            "shared-code"
+          ],
+          "sharedCodes": [
+            "4026"
+          ]
+        }
+      ],
+      "reviewBasis": "The page 5 Bosc Large row records 4026. The broader page 2 Bosc row records both 4413 and 4026. The photo supports Bosc identity, but Large and the code assignment remain source-label claims.",
+      "checkoutCaveat": "This is recall of one supplied workbook row, not a universal checkout instruction. The photo does not select among competing codes; confirm the current store label before checkout.",
+      "learningContract": {
+        "mode": "source-row-single-code",
+        "prompt": "Which code is recorded for “Pears - Bosc Large” on source page 5?",
+        "answerCodes": [
+          "4026"
+        ],
+        "answerPolicy": "exact-single",
+        "sourceContextRequired": true,
+        "checkoutSelectionResolved": false,
+        "completionKind": "relationship-study"
+      },
+      "mediaEvidence": {
+        "status": "reviewed-reuse-candidate",
+        "commonsFile": "Bosc pear.jpg",
+        "reviewLedger": "data/batch-06-media-reuse.json",
+        "reviewBasis": "A fresh pixel review of the replacement Bosc pear.jpg confirms a whole raw brown-russet pear with an elongated neck and stem. The old reuse-ledger filename is retained as history in replacementReview; Large remains a catalog-only size qualifier.",
+        "replacementReview": {
+          "replacesCommonsFile": "Bosc Pear.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bosc_pear.jpg",
+          "author": "Rhododendrites",
+          "license": "CC BY-SA 4.0",
+          "reviewBasis": "The exact Commons file page identifies a Bosc pear, credits Rhododendrites, and licenses the photograph CC BY-SA 4.0. Pixel inspection of its original 2989 by 3461 JPEG shows one unobstructed whole raw pear with brown russet skin, an elongated neck, and an intact stem on a plain background; there is no packaging, cooked preparation, or visible checkout code. The photograph does not prove the store's Large grade."
+        },
+        "sourceCatalogId": "pears-bosc",
+        "recognitionMode": "label-assisted",
+        "visibleIdentity": {
+          "label": "Bosc pear",
+          "form": "Long-necked russet pear",
+          "color": "Brown",
+          "cue": "A long-necked brown russet pear identifies Bosc."
+        },
+        "labelClaims": [
+          {
+            "value": "Large",
+            "basis": "workbook-label",
+            "sourceField": "catalog.item",
+            "sourcePages": [
+              5
+            ]
+          }
+        ],
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Bosc_pear.jpg",
+        "publicationState": "not-published-for-target"
+      }
+    },
+    {
+      "catalogId": "yams-white",
+      "relationKind": "shared-code",
+      "sourceItem": "Yams - White",
+      "codeText": "807",
+      "codes": [
+        "807"
+      ],
+      "sourcePages": [
+        4
+      ],
+      "soldBy": null,
+      "flags": [],
+      "relatedCatalogIds": [
+        "potatoes-yams-white-yam"
+      ],
+      "relatedRecords": [
+        {
+          "catalogId": "potatoes-yams-white-yam",
+          "sourceItem": "Potatoes & Yams - White Yam",
+          "codeText": "3276, 807",
+          "codes": [
+            "3276",
+            "807"
+          ],
+          "sourcePages": [
+            2
+          ],
+          "soldBy": "Weight",
+          "flags": [],
+          "status": "ready",
+          "relationToTarget": [
+            "shared-code"
+          ],
+          "sharedCodes": [
+            "807"
+          ]
+        }
+      ],
+      "reviewBasis": "The page 4 Yams - White row records 807, also present with 3276 on the page 2 Potatoes & Yams - White Yam row. Preserve each exact label and full code set; white names the yam type rather than a visible brown-skin color.",
+      "checkoutCaveat": "This is recall of one supplied workbook row, not a universal checkout instruction. The photo does not select among competing codes; confirm the current store label before checkout.",
+      "learningContract": {
+        "mode": "source-row-single-code",
+        "prompt": "Which code is recorded for “Yams - White” on source page 4?",
+        "answerCodes": [
+          "807"
+        ],
+        "answerPolicy": "exact-single",
+        "sourceContextRequired": true,
+        "checkoutSelectionResolved": false,
+        "completionKind": "relationship-study"
+      },
+      "mediaEvidence": {
+        "status": "reviewed-reuse-candidate",
+        "commonsFile": "Yam Tubers stacked on a plastic table 01.jpg",
+        "reviewLedger": "data/batch-06-media-reuse.json",
+        "reviewBasis": "The published white-yam photograph is an exact product and whole-tuber match; white names the yam type rather than visible outer skin.",
+        "sourceCatalogId": "potatoes-yams-white-yam",
+        "recognitionMode": "product-and-loose-form",
+        "visibleIdentity": {
+          "label": "White yam",
+          "form": "Large cylindrical tuber",
+          "color": "Brown",
+          "cue": "Large cylindrical brown-skinned tubers provide the visible anchor for white yam."
+        },
+        "labelClaims": [],
+        "sourceUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1e/Yam_Tubers_stacked_on_a_plastic_table_01.jpg/1920px-Yam_Tubers_stacked_on_a_plastic_table_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "publicationState": "not-published-for-target"
+      }
+    }
+  ]
+}

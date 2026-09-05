@@ -3,7 +3,8 @@
   "version": "0.8.1",
   "private": true,
   "scripts": {
-    "prepare:data": "node scripts/verify-generated-data.mjs",
+    "prepare:data": "node scripts/verify-generated-data.mjs && node scripts/validate-relationship-lessons.mjs",
+    "prepare:relationships": "node scripts/prepare-relationship-lessons.mjs",
     "prepare:batch05": "node scripts/prepare-batch05-candidates.mjs",
     "prepare:batch06": "node scripts/prepare-batch06-remainder.mjs",
     "discover:batch06-media": "node scripts/discover-batch06-media.mjs",

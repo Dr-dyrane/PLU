@@ -9,6 +9,7 @@ import {
   sleep,
 } from "./batch04/common.mjs";
 import { resolveImage } from "./batch04/media.mjs";
+import { applyDillMediaReview } from "./batch04/dill-media-review.mjs";
 import {
   calculateSelection,
   chooseFamilyChoices,
@@ -131,6 +132,7 @@ for (const [index, item] of source.entries()) {
   const photos = ["hero", "alternate", "context"].map((role, photoIndex) =>
     photoRole(storyId, item, media, role, photoIndex),
   );
+  applyDillMediaReview(item, media, photos);
 
   seeds.push({
     schemaVersion: "0.7.2",

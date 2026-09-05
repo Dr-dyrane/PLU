@@ -2920,31 +2920,37 @@
     "photos": [
       {
         "id": "dill-cucumber-4596-hero",
-        "file": "Tanunda Show 2008 dill cucumbers.jpg",
-        "src": "https://upload.wikimedia.org/wikipedia/commons/5/5d/Tanunda_Show_2008_dill_cucumbers.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "file": "PicklingCucumbers.jpg",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/a/ac/PicklingCucumbers.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
         "alt": "Dill cucumber reference photograph showing short firm cucumbers have bumpy skin and blunt ends.",
         "role": "hero",
-        "focus": "50% 50%"
+        "focus": "50% 50%",
+        "author": "The original Uploader was Gruepig at English Wikipedia",
+        "license": "Public domain"
       },
       {
         "id": "dill-cucumber-4596-alternate",
-        "file": "Tanunda Show 2008 dill cucumbers.jpg",
-        "src": "https://upload.wikimedia.org/wikipedia/commons/5/5d/Tanunda_Show_2008_dill_cucumbers.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "file": "PicklingCucumbers.jpg",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/a/ac/PicklingCucumbers.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
         "alt": "Alternate crop of Dill cucumber highlighting its short bumpy cucumber",
         "role": "alternate",
         "focus": "38% 50%",
-        "reuseOf": "Tanunda Show 2008 dill cucumbers.jpg",
-        "fallbackReason": "One verified exact-item photograph is reused with a different crop so no unverified image can publish."
+        "reuseOf": "PicklingCucumbers.jpg",
+        "fallbackReason": "One verified exact-item photograph is reused with a different crop so no unverified image can publish.",
+        "author": "The original Uploader was Gruepig at English Wikipedia",
+        "license": "Public domain"
       },
       {
         "id": "dill-cucumber-4596-context",
-        "file": "Tanunda Show 2008 dill cucumbers.jpg",
-        "src": "https://upload.wikimedia.org/wikipedia/commons/5/5d/Tanunda_Show_2008_dill_cucumbers.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "file": "PicklingCucumbers.jpg",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/a/ac/PicklingCucumbers.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
         "alt": "Dill cucumber produce reference emphasizing its green appearance",
         "role": "context",
         "focus": "62% 50%",
-        "reuseOf": "Tanunda Show 2008 dill cucumbers.jpg",
-        "fallbackReason": "One verified exact-item photograph is reused with a different crop so no unverified image can publish."
+        "reuseOf": "PicklingCucumbers.jpg",
+        "fallbackReason": "One verified exact-item photograph is reused with a different crop so no unverified image can publish.",
+        "author": "The original Uploader was Gruepig at English Wikipedia",
+        "license": "Public domain"
       }
     ],
     "visualCues": [
@@ -3018,7 +3024,7 @@
       "flags": [
         "batch-04",
         "must-know-essential",
-        "media-strict-identity-match"
+        "media-reviewed-override"
       ],
       "confidence": "verified-from-supplied-material"
     }

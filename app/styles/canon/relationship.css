@@ -1,0 +1,89 @@
+/* Source-row study reuses the fixed canon stage without inheriting ready mastery. */
+.relationshipApp {
+  --accent: var(--home-accent);
+  --accent-strong: var(--home-accent-strong);
+  --accent-rgb: var(--home-accent-rgb);
+  --accent-on-photo: #7ce7a0;
+}
+.relationshipApp .topbar > :first-child { min-width: 0; }
+.relationshipApp .photoCaption h1 { font-size: clamp(29px, 3.7vw, 52px); overflow-wrap: anywhere; }
+.relationshipApp .factChips { flex-wrap: wrap; }
+.relationshipApp .factChip { max-width: 100%; white-space: normal; line-height: 1.3; }
+.relationshipApp .lessonScroller { padding: clamp(22px, 2.8vw, 42px); align-items: flex-start; }
+.relationshipApp .lessonView { margin-block: auto; }
+.relationshipApp .lessonView h2 { max-width: 18ch; font-size: clamp(29px, 3.2vw, 43px); }
+.relationshipApp .lessonView h2:focus { outline: none; }
+.relationshipCard:has(.relationshipChoices) { grid-template-rows: minmax(0, 1fr); }
+.relationshipLead { color: var(--muted); font-size: 15px; line-height: 1.5; margin: 18px 0; }
+.relationshipLead strong { color: var(--text); }
+.relationshipTarget { padding: 18px; border-radius: var(--radius-md); background: var(--soft); }
+.relationshipTarget > strong, .relationshipMembers strong { display: block; font-size: 17px; line-height: 1.35; }
+.relationshipTarget > span, .relationshipMembers li > span { display: block; color: var(--muted); font-size: 12px; margin-top: 6px; line-height: 1.5; }
+.relationshipCodes { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0 4px; }
+.relationshipCodes code { padding: 8px 13px; border-radius: 11px; color: var(--green); background: var(--success-soft); font-size: clamp(23px, 2.5vw, 32px); font-weight: 800; letter-spacing: .04em; font-variant-numeric: tabular-nums; }
+.relationshipTarget small, .relationshipMembers small { display: block; margin-top: 10px; color: var(--muted); font-size: 12px; line-height: 1.5; }
+.relationshipNote { margin: 15px 0; font-size: 13px; line-height: 1.5; color: var(--muted); }
+.relationshipDetails { border-top: 1px solid var(--hairline); margin-top: 8px; }
+.relationshipDetails summary { min-height: 48px; padding: 13px 3px; cursor: pointer; font-size: 13px; font-weight: 700; color: var(--text); line-height: 1.5; }
+.relationshipDetails summary:focus-visible, .relationshipSource a:focus-visible, .relationshipRecall input:focus-visible { outline: 3px solid rgba(var(--accent-rgb), .5); outline-offset: 3px; }
+.relationshipMembers { padding: 0; margin: 0 0 15px; list-style: none; display: grid; gap: 9px; }
+.relationshipMembers li { padding: 14px; background: var(--soft); border-radius: 14px; }
+.relationshipMembers strong { font-size: 14px; }
+.relationshipMembers .relationshipCodes code { font-size: 20px; }
+.relationshipSource { padding: 0 3px 12px; color: var(--muted); font-size: 12px; line-height: 1.65; overflow-wrap: anywhere; }
+.relationshipSource p { margin: 8px 0; }
+.relationshipSource a { display: inline-block; padding-block: 11px; color: var(--blue); min-height: 44px; }
+.relationshipRecall { margin: 22px 0; }
+.relationshipRecall label { display: block; font-size: 14px; font-weight: 700; line-height: 1.5; margin-bottom: 9px; }
+.relationshipRecall input { display: block; width: 100%; min-height: 58px; border: 1px solid var(--hairline); border-radius: 15px; padding: 10px 14px; background: var(--field); color: var(--text); font-size: 24px; font-variant-numeric: tabular-nums; letter-spacing: .03em; }
+.relationshipRecall input[aria-invalid="true"] { border-color: var(--red); }
+.relationshipRecall > p, .relationshipQuiet { color: var(--muted); font-size: 12px; line-height: 1.5; }
+.relationshipError, .relationshipRecall > .relationshipError { color: var(--red); font-size: 13px; line-height: 1.5; }
+.relationshipRepair { margin: 20px 0; padding: 16px; border-radius: 17px; background: var(--warning-soft); font-size: 14px; line-height: 1.5; }
+.relationshipRepair p { margin: 6px 0; }
+.relationshipQuiet { margin: 17px 0 0; }
+.relationshipChoices { margin-top: 20px; }
+.relationshipChoices .choiceButton { min-height: 70px; padding: 15px; }
+.relationshipChoices .choiceButton > svg { width: 24px; height: 24px; flex-shrink: 0; fill: none; stroke: var(--accent); }
+.relationshipChoices .choiceCopy b { line-height: 1.45; }
+.relationshipCaveat { display: flex; gap: 10px; align-items: flex-start; padding: 14px; border-radius: 14px; margin-top: 20px; color: var(--text); background: var(--warning-soft); font-size: 13px; line-height: 1.5; }
+.relationshipCaveat svg { width: 21px; height: 21px; flex-shrink: 0; stroke: var(--amber); }
+.relationshipSuccess { width: 46px; height: 46px; display: grid; place-items: center; border-radius: 50%; background: var(--success-soft); color: var(--green); margin-top: 20px; }
+.relationshipPersistence { padding: 12px; border-radius: 12px; background: var(--warning-soft); font-size: 12px; line-height: 1.5; color: var(--amber); }
+.relationshipApp .primaryAction { display: flex; align-items: center; justify-content: center; gap: 9px; }
+.relationshipApp .primaryAction svg, .relationshipApp .headerButton svg { width: 18px; height: 18px; fill: none; }
+.relationshipApp .actionDock { padding-inline: clamp(18px, 2.8vw, 42px); }
+.relationshipApp .actionDock.two { grid-template-columns: 1fr 1fr; }
+.relationshipSrOnly { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; border: 0; }
+
+@media (max-width: 980px) {
+  .relationshipApp .workspace { grid-template-rows: minmax(140px, 28%) minmax(0, 1fr); }
+  .relationshipApp .photoCaption { left: 16px; right: 16px; bottom: 13px; }
+  .relationshipApp .photoCaption h1 { font-size: clamp(22px, 5.8vw, 31px); margin-bottom: 8px; }
+  .relationshipApp .factChip { min-height: 27px; padding: 5px 9px; font-size: 10px; }
+  .relationshipApp .mediaBadgeRow { top: 11px; left: 13px; }
+  .relationshipApp .badge { min-height: 24px; font-size: 8px; }
+  .relationshipApp .lessonScroller { padding: 18px; }
+  .relationshipApp .lessonView h2 { font-size: clamp(25px, 6.3vw, 32px); }
+  .relationshipLead { font-size: 13px; margin: 13px 0; }
+  .relationshipTarget { padding: 13px; }
+  .relationshipTarget > strong { font-size: 15px; }
+  .relationshipCodes { margin-top: 9px; }
+  .relationshipCodes code { font-size: 24px; padding: 7px 12px; }
+  .relationshipNote { font-size: 12px; margin: 12px 0; }
+  .relationshipApp .actionDock { padding-inline: 16px; }
+  .relationshipApp .primaryAction, .relationshipApp .secondaryAction { min-height: 48px; padding: 8px 12px; }
+  .relationshipChoices { margin-top: 15px; }
+  .relationshipChoices .choiceButton { min-height: 58px; padding: 11px; gap: 11px; }
+  .relationshipChoices .choiceCopy b { font-size: 13px; }
+}
+
+@media (max-height: 720px) and (max-width: 980px) {
+  .relationshipApp .workspace { grid-template-rows: minmax(125px, 26%) minmax(0, 1fr); }
+  .relationshipApp .photoCaption h1 { font-size: 21px; }
+  .relationshipApp .familyLabel { font-size: 8px; }
+  .relationshipApp .lessonScroller { padding: 14px; }
+  .relationshipApp .mediaBadgeRow { top: 8px; }
+  .relationshipApp .badge { min-height: 21px; }
+  .relationshipApp .photoCaption { bottom: 10px; }
+}

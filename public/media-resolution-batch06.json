@@ -1920,7 +1920,7 @@
       "thumbWidth": 1600,
       "thumbHeight": 1200,
       "score": -4,
-      "sharedAcrossProducts": false,
+      "sharedAcrossProducts": true,
       "match": "reviewed-override",
       "matchedTargets": [
         "cucumbers",

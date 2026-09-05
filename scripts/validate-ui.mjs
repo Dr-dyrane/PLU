@@ -1,5 +1,6 @@
 import assert from "node:assert/strict";
 import { readFile, stat } from "node:fs/promises";
+import "./test-relationship-recall.mjs";
 
 const lesson = await readFile(new URL("../components/canon/PluLesson.tsx", import.meta.url), "utf8");
 const productSheet = await readFile(new URL("../components/canon/ProductSheet.tsx", import.meta.url), "utf8");
@@ -61,7 +62,11 @@ for (const required of [
   "batchCategoryRail",
   "HomeFilterSheet",
   "Needs source review",
-  "Mapped, not quizzed",
+  "Code relationships",
+  "Awaiting recognition media",
+  'learning === "relationships"',
+  "isSavedRelationshipStudy",
+  "!ready.length && !relationshipRecords.length && !mapped.length",
   "Catalog only",
   'learning === "mapped"',
   'learning === "excluded"',
@@ -98,7 +103,7 @@ for (const required of ["Back to products", "router.back()", 'href="/"']) {
   assert.ok(routeShell.includes(required), `Lesson navigation is missing ${required}.`);
 }
 
-for (const required of ["aria-modal", "Escape", "How it is sold", "Learning", "Mapped reference", "Catalog only"]) {
+for (const required of ["aria-modal", "Escape", "How it is sold", "Learning", "Code relationships", "Awaiting recognition media", "Catalog only"]) {
   assert.ok(homeFilters.includes(required), `Filter sheet is missing ${required}.`);
 }
 
