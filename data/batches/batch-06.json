@@ -103,6 +103,14 @@
     },
     {
       "order": 13,
+      "catalogId": "avocado-caribbean",
+      "title": "Avocado - Caribbean",
+      "code": "58559",
+      "family": "Avocados",
+      "status": "ready"
+    },
+    {
+      "order": 14,
       "catalogId": "avocado-organic-3ct",
       "title": "Avocado - Organic 3ct",
       "code": "40719",
@@ -110,7 +118,7 @@
       "status": "ready"
     },
     {
-      "order": 14,
+      "order": 15,
       "catalogId": "bananas-case",
       "title": "Bananas (Case)",
       "code": "6794",
@@ -118,7 +126,7 @@
       "status": "ready"
     },
     {
-      "order": 15,
+      "order": 16,
       "catalogId": "bean-sprouts-case",
       "title": "Bean Sprouts (Case)",
       "code": "63604",
@@ -126,7 +134,7 @@
       "status": "ready"
     },
     {
-      "order": 16,
+      "order": 17,
       "catalogId": "beans-green-case",
       "title": "Beans - Green (Case)",
       "code": "6820",
@@ -134,7 +142,7 @@
       "status": "ready"
     },
     {
-      "order": 17,
+      "order": 18,
       "catalogId": "beets-10lb",
       "title": "Beets - 10lb",
       "code": "6996",
@@ -142,7 +150,7 @@
       "status": "ready"
     },
     {
-      "order": 18,
+      "order": 19,
       "catalogId": "blackberries-pint-12oz",
       "title": "Blackberries - Pint / 12oz",
       "code": "522",
@@ -150,7 +158,7 @@
       "status": "ready"
     },
     {
-      "order": 19,
+      "order": 20,
       "catalogId": "blueberries-2lb",
       "title": "Blueberries - 2lb",
       "code": "39583",
@@ -158,7 +166,7 @@
       "status": "ready"
     },
     {
-      "order": 20,
+      "order": 21,
       "catalogId": "blueberries-full-pint-12oz",
       "title": "Blueberries - Full Pint / 12oz",
       "code": "424",
@@ -166,7 +174,7 @@
       "status": "ready"
     },
     {
-      "order": 21,
+      "order": 22,
       "catalogId": "blueberries-half-pint-6oz",
       "title": "Blueberries - Half Pint / 6oz",
       "code": "71305",
@@ -174,7 +182,7 @@
       "status": "ready"
     },
     {
-      "order": 22,
+      "order": 23,
       "catalogId": "bok-choy-shanghai-jr",
       "title": "Bok Choy - Shanghai Jr",
       "code": "64388",
@@ -182,7 +190,7 @@
       "status": "ready"
     },
     {
-      "order": 23,
+      "order": 24,
       "catalogId": "carrots-jumbo-case",
       "title": "Carrots - Jumbo (Case)",
       "code": "63559",
@@ -190,7 +198,7 @@
       "status": "ready"
     },
     {
-      "order": 24,
+      "order": 25,
       "catalogId": "cherries-rwb-organic",
       "title": "Cherries - RWB (Organic)",
       "code": "94045",
@@ -198,7 +206,7 @@
       "status": "ready"
     },
     {
-      "order": 25,
+      "order": 26,
       "catalogId": "citrus-bulk-unlabelled-row-1st",
       "title": "Citrus - Bulk (unlabelled row, 1st)",
       "code": "0240",
@@ -206,7 +214,7 @@
       "status": "ready"
     },
     {
-      "order": 26,
+      "order": 27,
       "catalogId": "citrus-bulk-unlabelled-row-2nd",
       "title": "Citrus - Bulk (unlabelled row, 2nd)",
       "code": "3029",
@@ -214,7 +222,7 @@
       "status": "ready"
     },
     {
-      "order": 27,
+      "order": 28,
       "catalogId": "clementines-3lb",
       "title": "Clementines - 3lb",
       "code": "1835",
@@ -222,7 +230,7 @@
       "status": "ready"
     },
     {
-      "order": 28,
+      "order": 29,
       "catalogId": "corn-tray-of-5",
       "title": "Corn - Tray of 5",
       "code": "5438",
@@ -230,7 +238,7 @@
       "status": "ready"
     },
     {
-      "order": 29,
+      "order": 30,
       "catalogId": "cucumbers-dill-case",
       "title": "Cucumbers - Dill (Case)",
       "code": "38595",
@@ -238,7 +246,7 @@
       "status": "ready"
     },
     {
-      "order": 30,
+      "order": 31,
       "catalogId": "dill-weed-pickling-herbs",
       "title": "Dill Weed (Pickling) - Herbs",
       "code": "4893",
@@ -246,7 +254,7 @@
       "status": "ready"
     },
     {
-      "order": 31,
+      "order": 32,
       "catalogId": "eggplant-purple-case",
       "title": "Eggplant - Purple (Case)",
       "code": "63582",
@@ -254,7 +262,7 @@
       "status": "ready"
     },
     {
-      "order": 32,
+      "order": 33,
       "catalogId": "figgs-black-case",
       "title": "Figgs - Black (Case)",
       "code": "2110",
@@ -262,7 +270,7 @@
       "status": "ready"
     },
     {
-      "order": 33,
+      "order": 34,
       "catalogId": "figgs-green-case",
       "title": "Figgs - Green (Case)",
       "code": "6799",
@@ -270,7 +278,7 @@
       "status": "ready"
     },
     {
-      "order": 34,
+      "order": 35,
       "catalogId": "figs-black-case",
       "title": "Figs - Black (Case)",
       "code": "13491",
@@ -278,7 +286,7 @@
       "status": "ready"
     },
     {
-      "order": 35,
+      "order": 36,
       "catalogId": "figs-black-227g-pint",
       "title": "Figs - Black 227g (Pint)",
       "code": "58206",
@@ -286,7 +294,7 @@
       "status": "ready"
     },
     {
-      "order": 36,
+      "order": 37,
       "catalogId": "figs-green-case",
       "title": "Figs - Green (Case)",
       "code": "3536",
@@ -294,7 +302,7 @@
       "status": "ready"
     },
     {
-      "order": 37,
+      "order": 38,
       "catalogId": "garlic-loose-bulk",
       "title": "Garlic - Loose (Bulk)",
       "code": "4610",
@@ -302,7 +310,7 @@
       "status": "ready"
     },
     {
-      "order": 38,
+      "order": 39,
       "catalogId": "garlic-peeled-5lb",
       "title": "Garlic - Peeled 5lb",
       "code": "63608",
@@ -310,7 +318,7 @@
       "status": "ready"
     },
     {
-      "order": 39,
+      "order": 40,
       "catalogId": "garlic-1kg-bagged",
       "title": "Garlic 1kg (bagged)",
       "code": "9578",
@@ -318,7 +326,7 @@
       "status": "ready"
     },
     {
-      "order": 40,
+      "order": 41,
       "catalogId": "grapes-green-seedless-2lb",
       "title": "Grapes - Green (Seedless) 2lb",
       "code": "84022",
@@ -326,7 +334,7 @@
       "status": "ready"
     },
     {
-      "order": 41,
+      "order": 42,
       "catalogId": "grapes-red-seedless-2lb",
       "title": "Grapes - Red (Seedless) 2lb",
       "code": "84636",
@@ -334,7 +342,7 @@
       "status": "ready"
     },
     {
-      "order": 42,
+      "order": 43,
       "catalogId": "kiwi-1kg",
       "title": "Kiwi - 1kg",
       "code": "1465",
@@ -342,7 +350,7 @@
       "status": "ready"
     },
     {
-      "order": 43,
+      "order": 44,
       "catalogId": "lettuce-boston-dome",
       "title": "Lettuce - Boston (Dome)",
       "code": "3557",
@@ -350,7 +358,7 @@
       "status": "ready"
     },
     {
-      "order": 44,
+      "order": 45,
       "catalogId": "lettuce-iceberg-organic",
       "title": "Lettuce - Iceberg (Organic)",
       "code": "94061",
@@ -358,7 +366,7 @@
       "status": "ready"
     },
     {
-      "order": 45,
+      "order": 46,
       "catalogId": "limes-key-1lb",
       "title": "Limes - Key 1lb",
       "code": "3653",
@@ -366,7 +374,7 @@
       "status": "ready"
     },
     {
-      "order": 46,
+      "order": 47,
       "catalogId": "mangoes-case-10lb",
       "title": "Mangoes - Case 10lb",
       "code": "62464",
@@ -374,7 +382,7 @@
       "status": "ready"
     },
     {
-      "order": 47,
+      "order": 48,
       "catalogId": "mangos-ataulfo-case",
       "title": "Mangos - Ataulfo (Case)",
       "code": "1043",
@@ -382,7 +390,7 @@
       "status": "ready"
     },
     {
-      "order": 48,
+      "order": 49,
       "catalogId": "mangos-east-indian-case",
       "title": "Mangos - East Indian (Case)",
       "code": "12966",
@@ -390,7 +398,7 @@
       "status": "ready"
     },
     {
-      "order": 49,
+      "order": 50,
       "catalogId": "melons-bitter-fu-qua",
       "title": "Melons - Bitter (Fu Qua)",
       "code": "4783",
@@ -398,7 +406,7 @@
       "status": "ready"
     },
     {
-      "order": 50,
+      "order": 51,
       "catalogId": "melons-cantaloupe-organic",
       "title": "Melons - Cantaloupe (Organic)",
       "code": "94050",
@@ -406,7 +414,7 @@
       "status": "ready"
     },
     {
-      "order": 51,
+      "order": 52,
       "catalogId": "methileaf-herbs",
       "title": "Methileaf - Herbs",
       "code": "59994",
@@ -414,7 +422,7 @@
       "status": "ready"
     },
     {
-      "order": 52,
+      "order": 53,
       "catalogId": "mushrooms-white-bulk-rcwc",
       "title": "Mushrooms - White (Bulk, RCWC)",
       "code": "1102",
@@ -422,7 +430,7 @@
       "status": "ready"
     },
     {
-      "order": 53,
+      "order": 54,
       "catalogId": "olives-green-case",
       "title": "Olives - Green (Case)",
       "code": "54050",
@@ -430,7 +438,7 @@
       "status": "ready"
     },
     {
-      "order": 54,
+      "order": 55,
       "catalogId": "onions-red-10lb",
       "title": "Onions - Red 10lb",
       "code": "3506",
@@ -438,7 +446,7 @@
       "status": "ready"
     },
     {
-      "order": 55,
+      "order": 56,
       "catalogId": "onions-yellow-3lb-bag",
       "title": "Onions - Yellow 3lb (Bag)",
       "code": "59662",
@@ -446,7 +454,7 @@
       "status": "ready"
     },
     {
-      "order": 56,
+      "order": 57,
       "catalogId": "onions-yellow-jumbo-2-case",
       "title": "Onions - Yellow Jumbo #2 (Case)",
       "code": "63555",
@@ -454,7 +462,7 @@
       "status": "ready"
     },
     {
-      "order": 57,
+      "order": 58,
       "catalogId": "onions-yellow-organic-2lb",
       "title": "Onions - Yellow Organic 2lb",
       "code": "62810",
@@ -462,7 +470,7 @@
       "status": "ready"
     },
     {
-      "order": 58,
+      "order": 59,
       "catalogId": "peaches-case",
       "title": "Peaches (Case)",
       "code": "68599",
@@ -470,7 +478,7 @@
       "status": "ready"
     },
     {
-      "order": 59,
+      "order": 60,
       "catalogId": "peaches-3l",
       "title": "Peaches - 3L",
       "code": "6992",
@@ -478,7 +486,7 @@
       "status": "ready"
     },
     {
-      "order": 60,
+      "order": 61,
       "catalogId": "peaches-freestone-case",
       "title": "Peaches - Freestone (Case)",
       "code": "13241",
@@ -486,7 +494,7 @@
       "status": "ready"
     },
     {
-      "order": 61,
+      "order": 62,
       "catalogId": "peaches-tree-ripe-case",
       "title": "Peaches - Tree Ripe (Case)",
       "code": "6808",
@@ -494,7 +502,7 @@
       "status": "ready"
     },
     {
-      "order": 62,
+      "order": 63,
       "catalogId": "pears-bartlett-3lb-organic",
       "title": "Pears - Bartlett 3lb (Organic)",
       "code": "63486",
@@ -502,7 +510,7 @@
       "status": "ready"
     },
     {
-      "order": 63,
+      "order": 64,
       "catalogId": "pears-bartlett-5lb-bag",
       "title": "Pears - Bartlett 5lb (Bag)",
       "code": "63487",
@@ -510,7 +518,7 @@
       "status": "ready"
     },
     {
-      "order": 64,
+      "order": 65,
       "catalogId": "peppers-assorted-bin",
       "title": "Peppers - Assorted (Bin)",
       "code": "8170",
@@ -518,7 +526,7 @@
       "status": "ready"
     },
     {
-      "order": 65,
+      "order": 66,
       "catalogId": "peppers-green-case",
       "title": "Peppers - Green (Case)",
       "code": "63866",
@@ -526,7 +534,7 @@
       "status": "ready"
     },
     {
-      "order": 66,
+      "order": 67,
       "catalogId": "peppers-green-4ct-bag",
       "title": "Peppers - Green 4ct (Bag)",
       "code": "3014",
@@ -534,7 +542,7 @@
       "status": "ready"
     },
     {
-      "order": 67,
+      "order": 68,
       "catalogId": "peppers-green-hh-bulk",
       "title": "Peppers - Green HH (Bulk)",
       "code": "3120",
@@ -542,7 +550,7 @@
       "status": "ready"
     },
     {
-      "order": 68,
+      "order": 69,
       "catalogId": "peppers-red-4ct-bag",
       "title": "Peppers - Red 4ct (Bag)",
       "code": "64116",
@@ -550,7 +558,7 @@
       "status": "ready"
     },
     {
-      "order": 69,
+      "order": 70,
       "catalogId": "persimmons-hachiya-case",
       "title": "Persimmons - Hachiya (Case)",
       "code": "36308",
@@ -558,7 +566,7 @@
       "status": "ready"
     },
     {
-      "order": 70,
+      "order": 71,
       "catalogId": "pistachios-bulk-nuts",
       "title": "Pistachios (Bulk) - Nuts",
       "code": "1400",
@@ -566,7 +574,7 @@
       "status": "ready"
     },
     {
-      "order": 71,
+      "order": 72,
       "catalogId": "plums-blue-1-5l",
       "title": "Plums - Blue 1.5L",
       "code": "6706",
@@ -574,7 +582,7 @@
       "status": "ready"
     },
     {
-      "order": 72,
+      "order": 73,
       "catalogId": "plums-yellow-1-5l",
       "title": "Plums - Yellow 1.5L",
       "code": "1383",
@@ -582,7 +590,7 @@
       "status": "ready"
     },
     {
-      "order": 73,
+      "order": 74,
       "catalogId": "potato-red-10lb",
       "title": "Potato - Red 10lb",
       "code": "2674",
@@ -590,7 +598,7 @@
       "status": "ready"
     },
     {
-      "order": 74,
+      "order": 75,
       "catalogId": "potato-red-20lb",
       "title": "Potato - Red 20lb",
       "code": "2116",
@@ -598,7 +606,7 @@
       "status": "ready"
     },
     {
-      "order": 75,
+      "order": 76,
       "catalogId": "potato-russet-white-20lb",
       "title": "Potato - Russet / White 20lb",
       "code": "62006",
@@ -606,7 +614,7 @@
       "status": "ready"
     },
     {
-      "order": 76,
+      "order": 77,
       "catalogId": "potato-russet-10lb",
       "title": "Potato - Russet 10lb",
       "code": "171",
@@ -614,7 +622,7 @@
       "status": "ready"
     },
     {
-      "order": 77,
+      "order": 78,
       "catalogId": "potato-white-10lb",
       "title": "Potato - White 10lb",
       "code": "41",
@@ -622,7 +630,7 @@
       "status": "ready"
     },
     {
-      "order": 78,
+      "order": 79,
       "catalogId": "potato-yellow-10lb",
       "title": "Potato - Yellow 10lb",
       "code": "1093",
@@ -630,7 +638,7 @@
       "status": "ready"
     },
     {
-      "order": 79,
+      "order": 80,
       "catalogId": "prickly-pears-tray-case",
       "title": "Prickly Pears (Tray / Case)",
       "code": "6798",
@@ -638,7 +646,7 @@
       "status": "ready"
     },
     {
-      "order": 80,
+      "order": 81,
       "catalogId": "raspberries-red-half-pint-6oz",
       "title": "Raspberries - Red Half Pint / 6oz",
       "code": "7298",
@@ -646,7 +654,7 @@
       "status": "ready"
     },
     {
-      "order": 81,
+      "order": 82,
       "catalogId": "raspberries-red-pint-12oz",
       "title": "Raspberries - Red Pint / 12oz",
       "code": "4054",
@@ -654,7 +662,7 @@
       "status": "ready"
     },
     {
-      "order": 82,
+      "order": 83,
       "catalogId": "sher-li-hon",
       "title": "Sher-Li-Hon",
       "code": "69624",
@@ -662,7 +670,7 @@
       "status": "ready"
     },
     {
-      "order": 83,
+      "order": 84,
       "catalogId": "strawberries-1lb",
       "title": "Strawberries - 1lb",
       "code": "42468",
@@ -670,7 +678,7 @@
       "status": "ready"
     },
     {
-      "order": 84,
+      "order": 85,
       "catalogId": "strawberries-2lb",
       "title": "Strawberries - 2lb",
       "code": "36983",
@@ -678,7 +686,7 @@
       "status": "ready"
     },
     {
-      "order": 85,
+      "order": 86,
       "catalogId": "sweet-potatoes-white",
       "title": "Sweet Potatoes - White",
       "code": "9925",
@@ -686,7 +694,7 @@
       "status": "ready"
     },
     {
-      "order": 86,
+      "order": 87,
       "catalogId": "tomato-fm-on-the-vine-bulk",
       "title": "Tomato - FM On The Vine (Bulk)",
       "code": "64664",
@@ -694,7 +702,7 @@
       "status": "ready"
     },
     {
-      "order": 87,
+      "order": 88,
       "catalogId": "tomato-hh-organic",
       "title": "Tomato - HH (Organic)",
       "code": "94798",
@@ -702,7 +710,7 @@
       "status": "ready"
     },
     {
-      "order": 88,
+      "order": 89,
       "catalogId": "tomato-hh-red-bulk",
       "title": "Tomato - HH Red (Bulk)",
       "code": "4798",
@@ -710,7 +718,7 @@
       "status": "ready"
     },
     {
-      "order": 89,
+      "order": 90,
       "catalogId": "tomatoes-on-the-vine-hh-organic",
       "title": "Tomatoes - On The Vine HH (Organic)",
       "code": "94664",
@@ -718,7 +726,7 @@
       "status": "ready"
     },
     {
-      "order": 90,
+      "order": 91,
       "catalogId": "tomatoes-roma-plum-box-half-bushel",
       "title": "Tomatoes - Roma / Plum (Box, Half Bushel)",
       "code": "70755",
@@ -726,7 +734,7 @@
       "status": "ready"
     },
     {
-      "order": 91,
+      "order": 92,
       "catalogId": "tomatoes-vine-ripe-field-bulk",
       "title": "Tomatoes - Vine Ripe / Field (Bulk)",
       "code": "3061",
@@ -734,7 +742,7 @@
       "status": "ready"
     },
     {
-      "order": 92,
+      "order": 93,
       "catalogId": "uchoy-sum",
       "title": "Uchoy Sum",
       "code": "64387",
@@ -742,7 +750,7 @@
       "status": "ready"
     },
     {
-      "order": 93,
+      "order": 94,
       "catalogId": "yu-choy-jr",
       "title": "Yu Choy - Jr",
       "code": "10260",
@@ -757,7 +765,7 @@
       "status": "mapped",
       "mappingKind": "same-label-different-codes",
       "mappingReason": "The exact catalog label carries multiple recorded checkout codes; preserve the complete mapping without selecting a synthetic primary code.",
-      "order": 94
+      "order": 95
     },
     {
       "catalogId": "apples-red-delicious-2",
@@ -767,7 +775,7 @@
       "status": "mapped",
       "mappingKind": "same-label-different-codes",
       "mappingReason": "The exact catalog label appears with another recorded checkout code; preserve both source mappings instead of treating one as a replacement.",
-      "order": 95
+      "order": 96
     },
     {
       "catalogId": "apples-royal-gala-2",
@@ -777,7 +785,7 @@
       "status": "mapped",
       "mappingKind": "same-label-different-codes",
       "mappingReason": "The exact catalog label appears with another recorded checkout code; preserve both source mappings instead of treating one as a replacement.",
-      "order": 96
+      "order": 97
     },
     {
       "catalogId": "apricots-2",
@@ -787,7 +795,7 @@
       "status": "mapped",
       "mappingKind": "same-label-different-codes",
       "mappingReason": "The exact catalog label appears with another recorded checkout code; preserve both source mappings instead of treating one as a replacement.",
-      "order": 97
+      "order": 98
     },
     {
       "catalogId": "carrots-chinese-jumbo",
@@ -797,7 +805,7 @@
       "status": "mapped",
       "mappingKind": "shared-code",
       "mappingReason": "The catalog-supported code is also recorded for a compatible carrot identity; preserve the exact label and declare the reuse.",
-      "order": 98
+      "order": 99
     },
     {
       "catalogId": "celery-hearts",
@@ -807,7 +815,7 @@
       "status": "mapped",
       "mappingKind": "single",
       "mappingReason": "The catalog records one checkout code for an interpreted in-scope produce identity.",
-      "order": 99
+      "order": 100
     },
     {
       "catalogId": "cherimoya",
@@ -817,7 +825,7 @@
       "status": "mapped",
       "mappingKind": "same-label-different-codes",
       "mappingReason": "The exact catalog label appears with multiple recorded checkout codes across source rows; preserve every source mapping.",
-      "order": 100
+      "order": 101
     },
     {
       "catalogId": "cherimoya-2",
@@ -827,7 +835,7 @@
       "status": "mapped",
       "mappingKind": "same-label-different-codes",
       "mappingReason": "The exact catalog label appears with multiple recorded checkout codes across source rows; preserve every source mapping.",
-      "order": 101
+      "order": 102
     },
     {
       "catalogId": "grapefruit-bin",
@@ -837,7 +845,7 @@
       "status": "mapped",
       "mappingKind": "shared-code",
       "mappingReason": "The catalog-supported code is also recorded for a compatible grapefruit identity; preserve the exact label and declare the reuse.",
-      "order": 102
+      "order": 103
     },
     {
       "catalogId": "mangoes",
@@ -847,7 +855,7 @@
       "status": "mapped",
       "mappingKind": "shared-code",
       "mappingReason": "The catalog-supported code is also recorded for a compatible mango identity; preserve the exact label and declare the reuse.",
-      "order": 103
+      "order": 104
     },
     {
       "catalogId": "mangos-red-case",
@@ -857,7 +865,7 @@
       "status": "mapped",
       "mappingKind": "same-label-different-codes",
       "mappingReason": "The exact catalog label carries multiple recorded checkout codes; preserve the complete mapping without selecting a synthetic primary code.",
-      "order": 104
+      "order": 105
     },
     {
       "catalogId": "melons-goldendew",
@@ -867,7 +875,7 @@
       "status": "mapped",
       "mappingKind": "single",
       "mappingReason": "The catalog records one checkout code for an interpreted in-scope produce identity.",
-      "order": 105
+      "order": 106
     },
     {
       "catalogId": "melons-honeykiss",
@@ -877,7 +885,7 @@
       "status": "mapped",
       "mappingKind": "single",
       "mappingReason": "The catalog records one checkout code for an interpreted in-scope produce identity.",
-      "order": 106
+      "order": 107
     },
     {
       "catalogId": "oranges-navel-large",
@@ -887,7 +895,7 @@
       "status": "mapped",
       "mappingKind": "shared-code",
       "mappingReason": "The catalog-supported code is also recorded for a compatible navel orange identity; preserve the exact size label and declare the reuse.",
-      "order": 107
+      "order": 108
     },
     {
       "catalogId": "oranges-navel-medium",
@@ -897,7 +905,7 @@
       "status": "mapped",
       "mappingKind": "shared-code",
       "mappingReason": "The catalog-supported code is also recorded for a compatible navel orange identity; preserve the exact size label and declare the reuse.",
-      "order": 108
+      "order": 109
     },
     {
       "catalogId": "papayas-meridol",
@@ -907,7 +915,7 @@
       "status": "mapped",
       "mappingKind": "single",
       "mappingReason": "The catalog records one checkout code for an interpreted in-scope produce identity.",
-      "order": 109
+      "order": 110
     },
     {
       "catalogId": "parsley-curley-herbs",
@@ -917,7 +925,7 @@
       "status": "mapped",
       "mappingKind": "shared-code",
       "mappingReason": "The catalog-supported code is also recorded for a compatible parsley identity; preserve the exact label and declare the reuse.",
-      "order": 110
+      "order": 111
     },
     {
       "catalogId": "pears-asian-yellow-2",
@@ -927,7 +935,7 @@
       "status": "mapped",
       "mappingKind": "same-label-different-codes",
       "mappingReason": "The exact catalog label appears with another recorded checkout code; preserve both source mappings instead of treating one as a replacement.",
-      "order": 111
+      "order": 112
     },
     {
       "catalogId": "pears-bosc-large",
@@ -937,7 +945,7 @@
       "status": "mapped",
       "mappingKind": "shared-code",
       "mappingReason": "The catalog-supported code is also recorded for a compatible Bosc pear identity; preserve the exact size label and declare the reuse.",
-      "order": 112
+      "order": 113
     },
     {
       "catalogId": "pears-forelle-2",
@@ -947,7 +955,7 @@
       "status": "mapped",
       "mappingKind": "same-label-different-codes",
       "mappingReason": "The exact catalog label appears with another recorded checkout code; preserve both source mappings instead of treating one as a replacement.",
-      "order": 113
+      "order": 114
     },
     {
       "catalogId": "pears-taylor-gold",
@@ -957,7 +965,7 @@
       "status": "mapped",
       "mappingKind": "single",
       "mappingReason": "The catalog records one checkout code for an interpreted in-scope produce identity.",
-      "order": 114
+      "order": 115
     },
     {
       "catalogId": "persimmons-vanilla",
@@ -967,7 +975,7 @@
       "status": "mapped",
       "mappingKind": "single",
       "mappingReason": "The catalog records one checkout code for an interpreted in-scope produce identity.",
-      "order": 115
+      "order": 116
     },
     {
       "catalogId": "persimmons-vanilla-case",
@@ -977,7 +985,7 @@
       "status": "mapped",
       "mappingKind": "single",
       "mappingReason": "The catalog records one checkout code for an interpreted in-scope produce identity.",
-      "order": 116
+      "order": 117
     },
     {
       "catalogId": "pumpkins-large",
@@ -987,7 +995,7 @@
       "status": "mapped",
       "mappingKind": "same-label-different-codes",
       "mappingReason": "The exact catalog label appears with multiple recorded checkout codes across source rows; preserve every source mapping.",
-      "order": 117
+      "order": 118
     },
     {
       "catalogId": "pumpkins-large-2",
@@ -997,7 +1005,7 @@
       "status": "mapped",
       "mappingKind": "same-label-different-codes",
       "mappingReason": "The exact catalog label appears with multiple recorded checkout codes across source rows; preserve every source mapping.",
-      "order": 118
+      "order": 119
     },
     {
       "catalogId": "tangerines-fall-glo",
@@ -1007,7 +1015,7 @@
       "status": "mapped",
       "mappingKind": "single",
       "mappingReason": "The catalog records one checkout code for an interpreted in-scope produce identity.",
-      "order": 119
+      "order": 120
     },
     {
       "catalogId": "watermelons-mickey-lee",
@@ -1017,7 +1025,7 @@
       "status": "mapped",
       "mappingKind": "single",
       "mappingReason": "The catalog records one checkout code for an interpreted in-scope produce identity.",
-      "order": 120
+      "order": 121
     },
     {
       "catalogId": "yams-white",
@@ -1027,7 +1035,7 @@
       "status": "mapped",
       "mappingKind": "shared-code",
       "mappingReason": "The catalog-supported code is also recorded for a compatible white yam identity; preserve the exact label and declare the reuse.",
-      "order": 121
+      "order": 122
     },
     {
       "catalogId": "aloe-vera-handwritten",
@@ -1040,7 +1048,7 @@
         "missing-code",
         "uncertain-source"
       ],
-      "order": 122
+      "order": 123
     },
     {
       "catalogId": "apples-large-extra-fancy-first-word-obscured",
@@ -1053,7 +1061,7 @@
         "uncertain-source",
         "conflicting-code"
       ],
-      "order": 123
+      "order": 124
     },
     {
       "catalogId": "apples-mcintosh-extra-fancy",
@@ -1065,7 +1073,7 @@
       "queueReasonCodes": [
         "conflicting-code"
       ],
-      "order": 124
+      "order": 125
     },
     {
       "catalogId": "artichokes-small-handwritten",
@@ -1079,7 +1087,7 @@
         "conflicting-code",
         "unclassified-product"
       ],
-      "order": 125
+      "order": 126
     },
     {
       "catalogId": "avocado-5ct-bag-handwritten",
@@ -1092,18 +1100,6 @@
         "uncertain-source",
         "package-evidence-required",
         "duplicate-lesson-title"
-      ],
-      "order": 126
-    },
-    {
-      "catalogId": "avocado-caribbean",
-      "title": "Avocado - Caribbean",
-      "code": "58559",
-      "family": "Avocados",
-      "status": "queued",
-      "queueReason": "Source identity needs manual adjudication",
-      "queueReasonCodes": [
-        "source-identity-review"
       ],
       "order": 127
     },

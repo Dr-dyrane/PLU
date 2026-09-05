@@ -2,8 +2,63 @@
   "schemaVersion": 1,
   "batch": "06",
   "reviewedOn": "2026-09-04",
-  "method": "Exact workbook listings and codes, explicit adjudication of seven legacy exclusions, and direct pixel review of twenty original media cases plus the White sweet potato follow-up. Unresolved cases remain unpublishable; supplier references do not grant photo rights.",
+  "method": "Exact workbook listings and codes, explicit adjudication of eight legacy exclusions, and direct pixel review of twenty original media cases plus the White sweet potato and Caribbean avocado follow-ups. Unresolved cases remain unpublishable; supplier references do not grant photo rights.",
   "items": [
+    {
+      "catalogId": "avocado-caribbean",
+      "sourceItem": "Avocado - Caribbean",
+      "code": "58559",
+      "sourcePages": [5],
+      "decision": "approved",
+      "reviewBasis": "Clear only this unflagged row's inherited Batch 05 selection exclusion. PLU Codes!A53:D53 records Avocado - Caribbean, code 58559, a blank sold-by cell, and source page 5. The photographer identifies Dominican avocados, while a tropical grower corroborates Caribbean as category language for tropical avocados including Dominican examples. This supports an attributed regional example, not a claim about the workbook product's cultivar, origin, supplier, or brand. Caribbean stays label-assisted and code 58559 remains solely workbook-backed. Weight/Loose remains the existing interpretation, not a verified store unit.",
+      "evidenceFile": "data/review-lanes/batch06-caribbean-avocado.json",
+      "identitySources": [
+        {
+          "type": "workbook",
+          "source": "PLU_Codes 2.xlsx",
+          "locator": "PLU Codes!A53:D53",
+          "supports": "Avocado - Caribbean; code 58559; blank sold-by cell; source page 5."
+        },
+        {
+          "type": "media-metadata",
+          "source": "https://commons.wikimedia.org/wiki/File:Aguacates_Dominicanos.jpg",
+          "supports": "Photographer-identified Dominican avocados, categorized under agriculture in the Dominican Republic. Franchesca TS owns and licenses the image CC BY-SA 4.0. No named cultivar is established."
+        },
+        {
+          "type": "producer-reference",
+          "source": "https://www.brookstropicals.com/items/i-am-a-title-04",
+          "supports": "The producer uses Caribbean avocado for its tropical avocado category and lists Florida/Dominican origins. This corroborates category terminology only. Its brand and external codes are not applied to the workbook row."
+        }
+      ],
+      "src": "https://upload.wikimedia.org/wikipedia/commons/5/58/Aguacates_Dominicanos.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Aguacates_Dominicanos.jpg",
+      "author": "Franchesca TS",
+      "license": "CC BY-SA 4.0",
+      "lessonTitle": "Caribbean avocado",
+      "clearsLegacyExclusion": true,
+      "mediaReview": {
+        "catalogId": "avocado-caribbean",
+        "code": "58559",
+        "commonsFile": "Aguacates Dominicanos.jpg",
+        "recognitionMode": "label-assisted",
+        "visibleIdentity": {
+          "label": "Avocado",
+          "form": "Whole round-to-pear-shaped fruit",
+          "color": "Green",
+          "cue": "Whole green avocados vary from round to pear-shaped here. Their appearance does not establish a cultivar or store origin."
+        },
+        "labelClaims": [
+          {
+            "value": "Caribbean",
+            "basis": "workbook-label",
+            "sourceField": "catalog.item",
+            "sourcePages": [5]
+          }
+        ],
+        "sharedMediaBasis": "This photographer-identified regional example supplies avocado recognition only. The workbook Caribbean listing retains its own code; no photo, brand, supplier, or external PLU determines it.",
+        "reviewBasis": "Pixel review shows five whole raw green avocados, round-to-pear-shaped with ordinary surface blemishes, and no retail label, cultivar mark, brand, or checkout code. The title identifies Dominican avocados; the workbook's Caribbean qualifier must be read from its label and cannot be diagnosed from green skin."
+      }
+    },
     {
       "catalogId": "sweet-potatoes-white",
       "sourceItem": "Sweet Potatoes - White",

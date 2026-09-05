@@ -1754,17 +1754,168 @@
   },
   {
     "schemaVersion": "0.9.0",
+    "id": "avocado-caribbean-58559",
+    "catalogId": "avocado-caribbean",
+    "title": "Avocado - Caribbean",
+    "shortTitle": "Avocado - Caribbean",
+    "family": "Avocados",
+    "priority": "must-know",
+    "selection": {
+      "rawScore": 90,
+      "score": 90,
+      "band": "Essential",
+      "priority": "must-know"
+    },
+    "identity": {
+      "family": "Avocados",
+      "form": "Whole round-to-pear-shaped fruit",
+      "color": "Green",
+      "variant": "Avocado - Caribbean"
+    },
+    "checkout": {
+      "code": "58559",
+      "soldBy": "Weight",
+      "saleForm": "Loose",
+      "codeScope": "catalog-listed-retail-unit"
+    },
+    "photos": [
+      {
+        "id": "avocado-caribbean-58559-hero",
+        "file": "Aguacates Dominicanos.jpg",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/5/58/Aguacates_Dominicanos.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "alt": "Avocado reference photograph showing whole green avocados vary from round to pear-shaped here. their appearance does not establish a cultivar or store origin.",
+        "role": "hero",
+        "focus": "50% 50%",
+        "author": "Franchesca TS",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "id": "avocado-caribbean-58559-alternate",
+        "file": "Aguacates Dominicanos.jpg",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/5/58/Aguacates_Dominicanos.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "alt": "Alternate crop of Avocado highlighting its whole round-to-pear-shaped fruit",
+        "role": "alternate",
+        "focus": "38% 50%",
+        "reuseOf": "Aguacates Dominicanos.jpg",
+        "fallbackReason": "One verified exact-item photograph is reused with a different crop so no unverified image can publish.",
+        "author": "Franchesca TS",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "id": "avocado-caribbean-58559-context",
+        "file": "Aguacates Dominicanos.jpg",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/5/58/Aguacates_Dominicanos.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "alt": "Avocado produce reference emphasizing its green appearance",
+        "role": "context",
+        "focus": "62% 50%",
+        "reuseOf": "Aguacates Dominicanos.jpg",
+        "fallbackReason": "One verified exact-item photograph is reused with a different crop so no unverified image can publish.",
+        "author": "Franchesca TS",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "visualCues": [
+      "Whole green avocados vary from round to pear-shaped here. Their appearance does not establish a cultivar or store origin.",
+      "The visible color is green; Caribbean is from the workbook label, not appearance.",
+      "Match the store label to Avocado - Caribbean before using 58559."
+    ],
+    "classification": {
+      "familyAnswer": "avocados",
+      "familyChoices": [
+        {
+          "id": "avocados",
+          "label": "Avocados"
+        },
+        {
+          "id": "stalk-vegetables",
+          "label": "Stalk Vegetables"
+        },
+        {
+          "id": "apples",
+          "label": "Apples"
+        }
+      ],
+      "formAnswer": "whole-round-to-pear-shaped-fruit",
+      "formChoices": [
+        {
+          "id": "whole-round-to-pear-shaped-fruit",
+          "label": "Green · Whole round-to-pear-shaped fruit"
+        },
+        {
+          "id": "confusion-avocado-organic-3ct",
+          "label": "Avocado - Organic 3ct"
+        },
+        {
+          "id": "confusion-avocado",
+          "label": "Avocado"
+        }
+      ]
+    },
+    "variants": [],
+    "relations": [
+      {
+        "kind": "exception",
+        "title": "The store label selects this listing",
+        "copy": "The photograph teaches Avocado. Caribbean is copied from the workbook label and is not inferred from appearance."
+      },
+      {
+        "kind": "exception",
+        "title": "The code follows the exact listing",
+        "copy": "Use 58559 only after the label matches Avocado - Caribbean."
+      }
+    ],
+    "similarItems": [
+      {
+        "name": "Avocado - Organic 3ct",
+        "code": "40719",
+        "cue": "The reviewed photograph clearly shows avocado in pear-shaped fruit form.",
+        "color": "#4F8B58"
+      },
+      {
+        "name": "Avocado",
+        "code": "4046",
+        "cue": "Oval-to-pear body with one narrower end",
+        "color": "#C25D52"
+      },
+      {
+        "name": "Large avocado",
+        "code": "4771",
+        "cue": "Noticeably larger than the regular avocado listing",
+        "color": "#D1A23B"
+      }
+    ],
+    "source": {
+      "primaryPages": [
+        5
+      ],
+      "relatedPages": [
+        5
+      ],
+      "checkedOnReference": true,
+      "flags": [
+        "sold-by-curated",
+        "batch-06",
+        "catalog-remainder-essential",
+        "media-reviewed-override",
+        "media-label-assisted",
+        "qualifier-workbook-label"
+      ],
+      "confidence": "verified-from-supplied-material"
+    }
+  },
+  {
+    "schemaVersion": "0.9.0",
     "id": "avocado-organic-3ct-40719",
     "catalogId": "avocado-organic-3ct",
     "title": "Avocado - Organic 3ct",
     "shortTitle": "Avocado - Organic 3ct",
     "family": "Avocados",
-    "priority": "common",
+    "priority": "must-know",
     "selection": {
-      "rawScore": 75,
-      "score": 75,
-      "band": "Common",
-      "priority": "common"
+      "rawScore": 90,
+      "score": 90,
+      "band": "Essential",
+      "priority": "must-know"
     },
     "identity": {
       "family": "Avocados",
@@ -1836,12 +1987,12 @@
           "label": "Green · Pear-shaped fruit"
         },
         {
-          "id": "confusion-avocado",
-          "label": "Avocado"
+          "id": "confusion-avocado-caribbean",
+          "label": "Avocado - Caribbean"
         },
         {
-          "id": "confusion-avocado-large",
-          "label": "Large avocado"
+          "id": "confusion-avocado",
+          "label": "Avocado"
         }
       ]
     },
@@ -1860,21 +2011,21 @@
     ],
     "similarItems": [
       {
+        "name": "Avocado - Caribbean",
+        "code": "58559",
+        "cue": "Whole green avocados vary from round to pear-shaped here. Their appearance does not establish a cultivar or store origin.",
+        "color": "#4F8B58"
+      },
+      {
         "name": "Avocado",
         "code": "4046",
         "cue": "Oval-to-pear body with one narrower end",
-        "color": "#4F8B58"
+        "color": "#C25D52"
       },
       {
         "name": "Large avocado",
         "code": "4771",
         "cue": "Noticeably larger than the regular avocado listing",
-        "color": "#C25D52"
-      },
-      {
-        "name": "Apples - Ambrosia (Bin)",
-        "code": "25040",
-        "cue": "The reviewed photograph clearly shows apples - ambrosia in round apple form.",
         "color": "#D1A23B"
       }
     ],
@@ -1890,7 +2041,7 @@
         "sold-by-curated",
         "retail-form-specific",
         "batch-06",
-        "catalog-remainder-common",
+        "catalog-remainder-essential",
         "media-reviewed-override",
         "media-label-assisted",
         "qualifier-workbook-label"

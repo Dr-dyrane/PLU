@@ -41,20 +41,20 @@
       "not-applicable": 12,
       "reviewed-candidate": 30,
       "reviewed-reuse-candidate": 18,
-      "reviewed-source": 93,
-      "source-required": 22
+      "reviewed-source": 94,
+      "source-required": 21
     },
     "publishability": {
-      "blocked": 42,
+      "blocked": 41,
       "excluded": 12,
       "mapped": 28,
-      "ready": 93
+      "ready": 94
     },
     "nextActions": {
-      "adjudicate-source-identity": 19,
+      "adjudicate-source-identity": 18,
       "capture-checkout-code-evidence": 9,
       "keep-out-of-produce-lessons": 12,
-      "none": 93,
+      "none": 94,
       "reconcile-code-mapping": 32,
       "separate-store-barcode-from-plu": 1,
       "source-and-review-recognition-media": 8,
@@ -3379,40 +3379,45 @@
         }
       },
       "identityEvidence": {
-        "status": "source-review-required",
+        "status": "interpreted",
         "title": {
           "value": "Caribbean avocado",
-          "basis": "taxonomy-helper",
+          "basis": "curated-knowledge",
           "sourceFields": [
             "catalog.item"
           ],
-          "confidence": "derived"
+          "confidence": "curated-interpretation"
         },
         "family": {
           "value": "Avocados",
-          "basis": "taxonomy-helper",
+          "basis": "curated-knowledge",
           "sourceFields": [
             "catalog.item"
           ],
-          "confidence": "derived"
+          "confidence": "curated-interpretation"
         },
         "form": {
-          "value": "Pear-shaped fruit",
-          "basis": "taxonomy-helper",
+          "value": "Whole round-to-pear-shaped fruit",
+          "basis": "curated-knowledge",
           "sourceFields": [
             "catalog.item"
           ],
-          "confidence": "derived"
+          "confidence": "curated-interpretation"
         },
         "color": {
           "value": "Green",
-          "basis": "taxonomy-helper",
+          "basis": "curated-knowledge",
           "sourceFields": [
             "catalog.item"
           ],
-          "confidence": "derived"
+          "confidence": "curated-interpretation"
         },
         "curationNote": null,
+        "adjudication": {
+          "provenance": "data/batch-06-recovery-decisions.json",
+          "scope": "legacy-batch05-exclusion",
+          "reviewBasis": "Clear only this unflagged row's inherited Batch 05 selection exclusion. PLU Codes!A53:D53 records Avocado - Caribbean, code 58559, a blank sold-by cell, and source page 5. The photographer identifies Dominican avocados, while a tropical grower corroborates Caribbean as category language for tropical avocados including Dominican examples. This supports an attributed regional example, not a claim about the workbook product's cultivar, origin, supplier, or brand. Caribbean stays label-assisted and code 58559 remains solely workbook-backed. Weight/Loose remains the existing interpretation, not a verified store unit."
+        },
         "evidenceGaps": []
       },
       "codeEvidence": {
@@ -3459,15 +3464,31 @@
         "packageSignals": []
       },
       "mediaPlan": {
-        "status": "source-required",
-        "query": "Caribbean avocado Pear-shaped fruit",
+        "status": "reviewed-source",
+        "query": "Caribbean avocado Whole round-to-pear-shaped fruit",
         "target": {
           "identity": "Caribbean avocado",
-          "visibleForm": "Pear-shaped fruit",
+          "visibleForm": "Whole round-to-pear-shaped fruit",
           "color": "Green",
           "retailForm": "Loose"
         },
-        "source": null,
+        "source": {
+          "provenance": "public/media-resolution-batch06.json",
+          "file": "Aguacates Dominicanos.jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/5/58/Aguacates_Dominicanos.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "match": "reviewed-override",
+          "recognitionMode": "label-assisted",
+          "labelClaims": [
+            {
+              "value": "Caribbean",
+              "basis": "workbook-label",
+              "sourceField": "catalog.item",
+              "sourcePages": [
+                5
+              ]
+            }
+          ]
+        },
         "acceptance": [
           "Metadata must identify the exact product or a reviewed synonym.",
           "Visible form and identity-bearing modifiers must match the learner title.",
@@ -3476,27 +3497,11 @@
       },
       "mappingDecision": null,
       "publishability": {
-        "status": "blocked",
-        "blockers": [
-          {
-            "domain": "identity",
-            "code": "identity-source-review",
-            "detail": "Handwritten, obscured, or separately excluded source wording needs adjudication."
-          },
-          {
-            "domain": "identity",
-            "code": "identity-adjudication-required",
-            "detail": "This catalog identity is on the explicit source-review list."
-          },
-          {
-            "domain": "media",
-            "code": "media-evidence-required",
-            "detail": "No human-reviewed recognition source is attached to this exact row."
-          }
-        ],
+        "status": "ready",
+        "blockers": [],
         "nextAction": {
-          "type": "adjudicate-source-identity",
-          "description": "Resolve the exact source wording and product identity before changing code or media state."
+          "type": "none",
+          "description": "All current identity, code, retail, and media gates are satisfied."
         }
       }
     },

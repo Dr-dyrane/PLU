@@ -343,12 +343,9 @@
     "sourcePages": [
       5
     ],
-    "decision": "queued",
-    "reasonCodes": [
-      "source-identity-review"
-    ],
-    "reason": "Source identity needs manual adjudication",
-    "flags": []
+    "decision": "candidate",
+    "reasonCodes": [],
+    "reason": "Passed exact-code and loose-produce admission; media review required."
   },
   {
     "sourceOrder": 23,

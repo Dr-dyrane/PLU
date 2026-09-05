@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "reviewedOn": "2026-09-04",
+  "catalogId": "avocado-caribbean",
+  "decision": "approved-label-assisted",
+  "sourceEvidence": {
+    "workbook": "PLU_Codes 2.xlsx",
+    "locator": "PLU Codes!A53:D53",
+    "item": "Avocado - Caribbean",
+    "code": "58559",
+    "soldBy": null,
+    "sourcePages": [5],
+    "flags": []
+  },
+  "photo": {
+    "commonsFile": "Aguacates Dominicanos.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Aguacates_Dominicanos.jpg",
+    "author": "Franchesca TS",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "width": 780,
+    "height": 1040,
+    "sha1": "34811b0a3ac49f32c42820b611f58c68c693f9ca",
+    "metadataIdentity": "Photographer-identified Dominican avocados; agriculture in the Dominican Republic category.",
+    "pixelReview": "Five whole raw green avocados, round-to-pear-shaped, some ordinary surface blemishes. No cut fruit, prepared dish, brand, cultivar label, or checkout code.",
+    "limits": "Regional example only. The photograph does not establish the workbook product's cultivar, origin, supplier, brand, or checkout unit. Caribbean remains label-assisted. One source reused for hero/alternate/context is the explicit seed fallback, not three distinct photographs."
+  },
+  "categoryEvidence": {
+    "sourceUrl": "https://www.brookstropicals.com/items/i-am-a-title-04",
+    "supports": "The producer describes its tropical avocado as Caribbean and lists Florida/Dominican origins.",
+    "limits": "Category terminology only. No producer image, SlimCado brand, external checkout code, nutritional claim, or supplier identity is imported."
+  },
+  "admissionBoundary": "Clear only avocado-caribbean's old selection exclusion. Preserve the immutable workbook row, all handwritten/obscured source gates, independent code-conflict gates, and missing-code records. The source sold-by cell stays null; Weight/Loose remains the existing interpreted learning value."
+}

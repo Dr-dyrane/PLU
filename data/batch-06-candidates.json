@@ -259,6 +259,27 @@
     "sourceOrder": 20
   },
   {
+    "catalogId": "avocado-caribbean",
+    "title": "Avocado - Caribbean",
+    "code": "58559",
+    "family": "Avocados",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Whole round-to-pear-shaped fruit",
+    "color": "Green",
+    "imageQuery": "Avocado raw produce",
+    "cue": "Whole green avocados vary from round to pear-shaped here. Their appearance does not establish a cultivar or store origin.",
+    "group": "avocados",
+    "sourcePages": [
+      5
+    ],
+    "flags": [
+      "sold-by-curated"
+    ],
+    "sourceItem": "Avocado - Caribbean",
+    "sourceOrder": 22
+  },
+  {
     "catalogId": "avocado-organic-3ct",
     "title": "Avocado - Organic 3ct",
     "code": "40719",

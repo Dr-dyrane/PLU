@@ -541,6 +541,51 @@
     }
   },
   {
+    "catalogId": "avocado-caribbean",
+    "title": "Avocado - Caribbean",
+    "code": "58559",
+    "family": "Avocados",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Whole round-to-pear-shaped fruit",
+    "color": "Green",
+    "imageQuery": "Avocado raw produce",
+    "cue": "Whole green avocados vary from round to pear-shaped here. Their appearance does not establish a cultivar or store origin.",
+    "group": "avocados",
+    "sourcePages": [
+      5
+    ],
+    "flags": [
+      "sold-by-curated"
+    ],
+    "sourceItem": "Avocado - Caribbean",
+    "sourceOrder": 22,
+    "mediaReview": {
+      "catalogId": "avocado-caribbean",
+      "code": "58559",
+      "commonsFile": "Aguacates Dominicanos.jpg",
+      "recognitionMode": "label-assisted",
+      "visibleIdentity": {
+        "label": "Avocado",
+        "form": "Whole round-to-pear-shaped fruit",
+        "color": "Green",
+        "cue": "Whole green avocados vary from round to pear-shaped here. Their appearance does not establish a cultivar or store origin."
+      },
+      "labelClaims": [
+        {
+          "value": "Caribbean",
+          "basis": "workbook-label",
+          "sourceField": "catalog.item",
+          "sourcePages": [
+            5
+          ]
+        }
+      ],
+      "sharedMediaBasis": "This photographer-identified regional example supplies avocado recognition only. The workbook Caribbean listing retains its own code; no photo, brand, supplier, or external PLU determines it.",
+      "reviewBasis": "Pixel review shows five whole raw green avocados, round-to-pear-shaped with ordinary surface blemishes, and no retail label, cultivar mark, brand, or checkout code. The title identifies Dominican avocados; the workbook's Caribbean qualifier must be read from its label and cannot be diagnosed from green skin."
+    }
+  },
+  {
     "catalogId": "avocado-organic-3ct",
     "title": "Avocado - Organic 3ct",
     "code": "40719",

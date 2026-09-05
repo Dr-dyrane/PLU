@@ -5,7 +5,7 @@ import { words } from "./batch04/common.mjs";
 export const legacyRecoveryIds = new Set([
   "asparagus-organic", "dill-weed-pickling-herbs", "garlic-loose-bulk",
   "methileaf-herbs", "mushrooms-white-bulk-rcwc", "tomatoes-vine-ripe-field-bulk",
-  "sweet-potatoes-white",
+  "sweet-potatoes-white", "avocado-caribbean",
 ]);
 export const recoveryIds = new Set([
   ...legacyRecoveryIds,
@@ -24,7 +24,7 @@ export function validateRecovery(document, catalog) {
   assert.equal(document.batch, "06", "Recovery belongs to Batch 06.");
   assert.ok(Array.isArray(document.items), "Recovery decisions are missing.");
   assert.deepEqual(document.items.map((item) => item.catalogId).sort(), [...recoveryIds].sort(),
-    "Recovery must account for the exact seven exclusions and twenty media cases.");
+    "Recovery must account for the exact eight exclusions and twenty media cases.");
   const catalogById = new Map(catalog.map((record) => [record.id, record]));
   for (const item of document.items) {
     const record = catalogById.get(item.catalogId);
@@ -44,7 +44,7 @@ export function validateRecovery(document, catalog) {
     assert.ok(!record.flags?.some((flag) => ["handwritten", "obscured-label"].includes(flag)),
       `${label}: original source uncertainty cannot be cleared by this recovery pass.`);
     assert.equal(Boolean(item.clearsLegacyExclusion), legacyRecoveryIds.has(item.catalogId),
-      `${label}: only the seven reviewed legacy exclusions can be cleared.`);
+      `${label}: only the eight reviewed legacy exclusions can be cleared.`);
     assert.ok(item.mediaReview?.commonsFile && item.src && item.sourceUrl && item.license && item.author,
       `${label}: approved recovery requires reviewed photo provenance and rights.`);
     assert.match(item.src, /^https:\/\/(?:upload|thumb)\.wikimedia\.org\//,
