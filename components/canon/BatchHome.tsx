@@ -25,6 +25,7 @@ import {
   type SoldFilter,
 } from "@/components/canon/HomeFilterSheet";
 import { productTheme } from "@/lib/ui/product-theme";
+import { ReviewedPhoto } from "@/components/canon/ReviewedPhoto";
 import { isSavedRelationshipStudy } from "@/lib/trace/relationship-recall";
 import type { BatchItem, BatchStorySummary, ProductBatch } from "@/types/batch";
 
@@ -439,8 +440,8 @@ export function BatchHome({ batch, stories, relationships = NO_RELATIONSHIPS }: 
                     href={`/learn/${story.id}/`}
                     key={item.catalogId}
                   >
-                    <img
-                      src={story.hero.src}
+                    <ReviewedPhoto
+                      photo={story.hero}
                       alt=""
                       aria-hidden="true"
                       loading={index < 6 ? "eager" : "lazy"}

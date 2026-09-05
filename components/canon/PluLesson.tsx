@@ -5,6 +5,7 @@ import { Fragment, useCallback, useEffect, useMemo, useRef, useState } from "rea
 import { ChoiceVisual, Icon, friendlyQuestion } from "@/components/canon/Icon";
 import { CodeSlots, NumberPad, chunkIndexForPosition, chunkStart } from "@/components/canon/Keypad";
 import { ProductSheet } from "@/components/canon/ProductSheet";
+import { ReviewedPhoto } from "@/components/canon/ReviewedPhoto";
 import { compileCheckoutPath, firstDifferentDigit, toneForDigit } from "@/lib/trace/code-path";
 import type { ProductPhotoRole, ProductStory } from "@/types/trace";
 
@@ -230,7 +231,7 @@ export function PluLesson({ story }: { story: ProductStory }) {
             <div className="photoStack">
               {(["hero", "alternate", "context"] as ProductPhotoRole[]).map((role) => {
                 const photo = photoFor(story, role);
-                return <img className={`productPhoto${activeRole === role ? " active" : ""}`} data-role={role} src={photo.src} alt={photo.alt} style={{ objectPosition: photo.focus ?? "50% 50%" }} key={role} />;
+                return <ReviewedPhoto photo={photo} className={`productPhoto${activeRole === role ? " active" : ""}`} data-role={role} style={{ objectPosition: photo.focus ?? "50% 50%" }} key={role} />;
               })}
               <div className="photoWash" aria-hidden="true" />
             </div>

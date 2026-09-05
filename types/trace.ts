@@ -32,12 +32,22 @@ export interface ProductPhotoSource {
   url: string;
 }
 
+export interface ProductPhotoViewport {
+  x: number;
+  y: number;
+  width: number;
+  height: number;
+  sourceWidth: number;
+  sourceHeight: number;
+}
+
 export interface ProductPhoto {
   id: string;
   src: string;
   alt: string;
   role: ProductPhotoRole;
   focus?: string;
+  viewport?: ProductPhotoViewport;
   source: ProductPhotoSource;
 }
 

@@ -3,6 +3,7 @@ import { readFile, writeFile } from "node:fs/promises";
 
 import { loadJsonRecords, normalize } from "./batch04/common.mjs";
 import { loadRecovery, recoveredMediaSource } from "./batch06-recovery.mjs";
+import { loadQueuedMedia } from "./batch06-queued-media.mjs";
 import {
   excludedCatalogIds,
   familyRuleFor,
@@ -186,6 +187,7 @@ for (const [catalogId, override] of Object.entries(overrides)) {
 
 const catalog = await loadJsonRecords(new URL("../data/catalog/", import.meta.url));
 const recoveryById = await loadRecovery(catalog);
+const queuedMediaById = await loadQueuedMedia(catalog);
 const publishedStories = [
   ...(await loadJsonRecords(new URL("../data/stories/", import.meta.url))),
   ...(await loadJsonRecords(new URL("../data/story-batches/", import.meta.url))),
@@ -343,7 +345,7 @@ const items = remainder.map((record, sourceIndex) => {
   const mapping = mappingById.get(record.id) ?? null;
   const mediaReuse = reuseById.get(record.id) ?? null;
   const reviewedMedia = reviewedMediaById.get(record.id) ?? null;
-  const reviewedCandidateMedia = recoveredMediaSource(recovery) ?? reusedMediaSource(record.id) ?? discoveredMediaSource(record.id);
+  const reviewedCandidateMedia = recoveredMediaSource(recovery) ?? queuedMediaById.get(record.id) ?? reusedMediaSource(record.id) ?? discoveredMediaSource(record.id);
   const recognitionMode =
     approvedRecovery?.mediaReview.recognitionMode ?? reviewedMedia?.mediaReview?.recognitionMode ?? mediaReuse?.recognitionMode ?? null;
   const labelAssisted = recognitionMode === "label-assisted";
@@ -451,7 +453,7 @@ const items = remainder.map((record, sourceIndex) => {
     blockers.push(blocker("code", "multiple-source-codes", "The source label does not resolve to one unambiguous code."));
   }
   if (scopeStatus === "in-scope" && storeBarcode) {
-    blockers.push(blocker("code", "store-barcode-not-plu", "The catalog marks this value as a long store barcode."));
+    blockers.push(blocker("code", "store-barcode-not-plu", "The source has a long or flagged store code whose checkout role is not confirmed."));
   }
   if (scopeStatus === "in-scope" && (conflictingCatalogIds.length || alreadyPublishedAs.length)) {
     blockers.push(blocker("code", "conflicting-code-mapping", "The same code is attached to another catalog identity or published lesson."));
@@ -596,7 +598,7 @@ for (const item of items) {
     assert.equal(item.codeEvidence.primaryCode, null, `${item.catalogId}: a missing code may not be invented.`);
   }
   const reviewedMedia = reviewedMediaById.get(item.catalogId);
-  const reviewedCandidateMedia = recoveredMediaSource(recoveryById.get(item.catalogId)) ?? reusedMediaSource(item.catalogId) ?? discoveredMediaSource(item.catalogId);
+  const reviewedCandidateMedia = recoveredMediaSource(recoveryById.get(item.catalogId)) ?? queuedMediaById.get(item.catalogId) ?? reusedMediaSource(item.catalogId) ?? discoveredMediaSource(item.catalogId);
   if (!reviewedMedia && !reviewedCandidateMedia) {
     assert.equal(item.mediaPlan.source, null, `${item.catalogId}: an unreviewed media source may not be invented.`);
   } else {

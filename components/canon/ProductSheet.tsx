@@ -76,6 +76,7 @@ export function ProductSheet({
     ? story.similarItems
     : [story.nearestConfusion];
   const saleIcon = story.checkout.soldBy === "Weight" ? "scale" : "each";
+  const reviewedPanel = story.photos.find((photo) => photo.viewport);
 
   return (
     <div className="sheetOverlay">
@@ -166,6 +167,18 @@ export function ProductSheet({
                   <small>{story.checkout.soldBy === "Weight" ? "Place it on the scale" : "Count one item"}</small>
                 </span>
               </article>
+              {reviewedPanel && (
+                <article className="storyCard">
+                  <span className="storyIcon"><Icon name="bookmark" /></span>
+                  <span>
+                    <b>Photograph source</b>
+                    <small>{reviewedPanel.source.author}</small>
+                    <small><a href={reviewedPanel.source.url} target="_blank" rel="noreferrer">{reviewedPanel.source.label}</a></small>
+                    <small><a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noreferrer">{reviewedPanel.source.license}</a></small>
+                    <small>Only the reviewed cultivar panel is shown. Its unchanged source is reused across lesson stages; these are not three independent photographs.</small>
+                  </span>
+                </article>
+              )}
             </div>
           )}
           {tab === "checkout" && (

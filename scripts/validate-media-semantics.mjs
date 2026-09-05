@@ -1,5 +1,6 @@
 import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
+import { vanigliaPhoto } from "./batch06-external-photo.mjs";
 
 import {
   allowedMime,
@@ -73,10 +74,15 @@ function validateMediaItem(item, label, { requireExactIdentity = false, review =
   assert.ok(!knownBadMediaFiles.has(item.file), `${label}: known incorrect image is still selected: ${item.file}`);
   assert.ok(allowedMime.has(item.mime), `${label}: unsupported image type ${item.mime}.`);
   assert.ok(Number(item.width) >= 360 && Number(item.height) >= 300, `${label}: source image is too small.`);
-  assert.ok(
-    typeof item.src === "string" && /^https:\/\/(upload|thumb)\.wikimedia\.org\//.test(item.src),
-    `${label}: image must resolve through Wikimedia's image host.`,
-  );
+  if (["persimmons-vanilla", "persimmons-vanilla-case"].includes(item.catalogId)) {
+    assert.equal(item.src, vanigliaPhoto.src, `${label}: only the exact reviewed research source is allowed.`);
+    assert.equal(item.file, vanigliaPhoto.src);
+    assert.equal(item.sourceSha256, vanigliaPhoto.sha256);
+    assert.deepEqual(item.viewport, vanigliaPhoto.viewport);
+  } else {
+    assert.ok(typeof item.src === "string" && /^https:\/\/(upload|thumb)\.wikimedia\.org\//.test(item.src),
+      `${label}: image must resolve through Wikimedia's image host.`);
+  }
 
   const filenameTokens = new Set(words(item.file));
   const sourceTokens = new Set(words(Object.values(item.sourceEvidence ?? {}).join(" ")));

@@ -4,6 +4,7 @@ import type {
   CodeRelation,
   NearestConfusion,
   ProductPhotoRole,
+  ProductPhotoViewport,
   ProductPriority,
   ProductStory,
   ProductStorySource,
@@ -19,6 +20,9 @@ type StorySeedPhoto = {
   focus?: string;
   author?: string;
   license?: string;
+  viewport?: ProductPhotoViewport;
+  sourceLabel?: string;
+  sourceUrl?: string;
 };
 
 type StorySeedClassification = {
@@ -87,13 +91,14 @@ function compilePhoto(photo: StorySeedPhoto) {
     alt: photo.alt,
     role: photo.role,
     focus: photo.focus ?? "50% 50%",
+    ...(photo.viewport ? { viewport: photo.viewport } : {}),
     source: {
-      label: "Wikimedia Commons",
+      label: photo.sourceLabel ?? "Wikimedia Commons",
       author: photo.author ?? "Wikimedia Commons contributor",
       license: photo.license ?? "See source page",
-      url: photo.file.startsWith("https://")
+      url: photo.sourceUrl ?? (photo.file.startsWith("https://")
         ? photo.file
-        : commonsSource(photo.file),
+        : commonsSource(photo.file)),
     },
   };
 }

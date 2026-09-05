@@ -1,0 +1,1668 @@
+{
+  "schemaVersion": 1,
+  "batch": "06",
+  "reviewedAt": "2026-09-04",
+  "scope": "All 41 source-review rows at main 8df106dc4cb32fb288e68d5143ad80c202cafb05. This is source/code evidence review, not a publishing ledger.",
+  "authority": "Exact catalog codes remain unchanged. Workbook transcription, generated mnemonics, Git copies, public PLUs, and recognition photographs are not independent proof of an obscured, handwritten, conflicting, missing, or unclassified store mapping.",
+  "summary": {
+    "rowsReviewed": 41,
+    "exactWorkbookMatches": 41,
+    "cleanCodeRowsAwaitingSeparateIdentityMedia": 3,
+    "rowsStillRequiringSourceOrCodeKindEvidence": 38,
+    "newCodeCorrectionsSupported": 0
+  },
+  "sourceChecks": [
+    {
+      "source": "/Users/dyrane/Downloads/PLU_Codes 2.xlsx",
+      "sha256": "11e6608c3bfa4a6d20b3724349aa81d427dcf10b35b39ca1fbaa5af17d3868b7",
+      "method": "Read-only openpyxl extraction using the bundled runtime; exact source label matched uniquely for all 41 rows.",
+      "result": "All 41 A:D ranges match the immutable catalog. The archive has no xl/media entries. Mnemonic column is derivative and was not treated as corroboration."
+    },
+    {
+      "source": "Git refs and reflogs in /Users/dyrane/Documents/ChatGPT/plu",
+      "method": "git rev-list --objects --reflog --all; git log --all -- data/catalog source; git rev-parse --is-shallow-repository",
+      "result": "Repository is not shallow. No workbook, zip, PDF, HEIC, JPG, or PNG source assets were found among reachable/reflog object paths. source/ contains only README.md. Catalog history is initial generation 4f31365 followed by JSON syntax repair f004c7b, not corrected source mappings."
+    },
+    {
+      "source": "/Users/dyrane/Downloads/PLU_local_worktree_unpushed_snapshot",
+      "method": "Bounded filename inventory and source directory read.",
+      "result": "source/ contains only README.md. No workbook, original reference photographs, PDF, or source zip was found in the supplied snapshot filename inventory."
+    },
+    {
+      "source": "source/README.md",
+      "result": "The initial and current provenance note says the original workbook and five reference photographs remained in the former sandbox source pack. A statement that images existed is not access to them."
+    },
+    {
+      "source": "GitHub release assets",
+      "result": "The worker's gh CLI had no authentication. Root subsequently read the public GitHub releases API for Dr-dyrane/PLU: HTTP 200 with an empty release array. There are no published release assets to recover from that endpoint."
+    },
+    {
+      "source": "Connected Google Drive",
+      "method": "Metadata-only name searches for PLU across documents, images and folders; then produce, Codes and code list across documents and images.",
+      "result": "No matching named files or folders. Broad text matches were unrelated and were not fetched. This is not an exhaustive search of unnamed personal photographs."
+    }
+  ],
+  "sourceCaptureRequest": "Supply the original five numbered PLU reference photographs, especially pages 4 and 5, or a current store/register/scale export binding each exact product and retail unit to its entered or scanned code. For obscured and handwritten labels, include the whole line and surrounding column headings. For Sweet Sop, identify what 2569710 does at checkout.",
+  "items": [
+    {
+      "catalogId": "aloe-vera-handwritten",
+      "sourceItem": "Aloe Vera (handwritten)",
+      "codeText": "?",
+      "codes": [
+        "?"
+      ],
+      "sourcePages": [
+        5
+      ],
+      "soldBy": null,
+      "flags": [
+        "unverified-code",
+        "handwritten"
+      ],
+      "workbookEvidence": {
+        "file": "PLU_Codes 2.xlsx",
+        "sheet": "PLU Codes",
+        "range": "A8:D8",
+        "values": [
+          "Aloe Vera (handwritten)",
+          "?",
+          null,
+          "5"
+        ],
+        "finding": "Exact workbook transcription matches catalog; no independent source image was available in this lane."
+      },
+      "disposition": "source-required",
+      "unresolvedGates": [
+        "identity-source-review",
+        "missing-checkout-code"
+      ],
+      "conflictingMappings": [],
+      "competingLabelNumbers": [],
+      "requiredEvidence": "Provide the page 5 handwritten Aloe Vera line with its missing code legible, or a current store record for that exact Aloe Vera listing. The separate Aloe 3798 row is not authority for this row.",
+      "proposedCodeCorrection": null
+    },
+    {
+      "catalogId": "apples-large-extra-fancy-first-word-obscured",
+      "sourceItem": "Apples - Large Extra Fancy (first word obscured)",
+      "codeText": "4129",
+      "codes": [
+        "4129"
+      ],
+      "sourcePages": [
+        5
+      ],
+      "soldBy": null,
+      "flags": [
+        "obscured-label"
+      ],
+      "workbookEvidence": {
+        "file": "PLU_Codes 2.xlsx",
+        "sheet": "PLU Codes",
+        "range": "A29:D29",
+        "values": [
+          "Apples - Large Extra Fancy (first word obscured)",
+          "4129",
+          null,
+          "5"
+        ],
+        "finding": "Exact workbook transcription matches catalog; no independent source image was available in this lane."
+      },
+      "disposition": "source-required",
+      "unresolvedGates": [
+        "identity-source-review",
+        "conflicting-code-mapping",
+        "media-evidence-required"
+      ],
+      "conflictingMappings": [
+        {
+          "catalogId": "apples-fuji",
+          "item": "Apples - Fuji",
+          "codes": [
+            "4129",
+            "4131"
+          ],
+          "sourcePages": [
+            1
+          ],
+          "workbookRange": "PLU Codes!A17:D17"
+        }
+      ],
+      "competingLabelNumbers": [],
+      "requiredEvidence": "Provide page 5 with the obscured first word visible and reconcile 4129 against the separate Fuji apple row. Do not infer Fuji solely from the shared number.",
+      "proposedCodeCorrection": null
+    },
+    {
+      "catalogId": "apples-mcintosh-extra-fancy",
+      "sourceItem": "Apples - McIntosh Extra Fancy",
+      "codeText": "4019",
+      "codes": [
+        "4019"
+      ],
+      "sourcePages": [
+        5
+      ],
+      "soldBy": null,
+      "flags": [],
+      "workbookEvidence": {
+        "file": "PLU_Codes 2.xlsx",
+        "sheet": "PLU Codes",
+        "range": "A32:D32",
+        "values": [
+          "Apples - McIntosh Extra Fancy",
+          "4019",
+          null,
+          "5"
+        ],
+        "finding": "Exact workbook transcription matches catalog; no independent source image was available in this lane."
+      },
+      "disposition": "source-required",
+      "unresolvedGates": [
+        "conflicting-code-mapping"
+      ],
+      "conflictingMappings": [
+        {
+          "catalogId": "radish-bunch",
+          "item": "Radish - Bunch",
+          "codes": [
+            "4019"
+          ],
+          "sourcePages": [
+            4
+          ],
+          "workbookRange": "PLU Codes!A401:D401"
+        }
+      ],
+      "competingLabelNumbers": [],
+      "requiredEvidence": "Reconcile the page 5 McIntosh Extra Fancy 4019 line against page 4 Radish - Bunch 4019 using the original sheets or current checkout records. Workbook repetition does not establish which mapping is intended.",
+      "proposedCodeCorrection": null
+    },
+    {
+      "catalogId": "artichokes-small-handwritten",
+      "sourceItem": "Artichokes - Small (handwritten)",
+      "codeText": "4516",
+      "codes": [
+        "4516"
+      ],
+      "sourcePages": [
+        1,
+        4
+      ],
+      "soldBy": "Each",
+      "flags": [
+        "handwritten"
+      ],
+      "workbookEvidence": {
+        "file": "PLU_Codes 2.xlsx",
+        "sheet": "PLU Codes",
+        "range": "A47:D47",
+        "values": [
+          "Artichokes - Small (handwritten)",
+          "4516",
+          "Each",
+          "1, 4"
+        ],
+        "finding": "Exact workbook transcription matches catalog; no independent source image was available in this lane."
+      },
+      "disposition": "source-required",
+      "unresolvedGates": [
+        "identity-source-review",
+        "conflicting-code-mapping"
+      ],
+      "conflictingMappings": [
+        {
+          "catalogId": "fennel-anise",
+          "item": "Fennel / Anise",
+          "codes": [
+            "4516"
+          ],
+          "sourcePages": [
+            4
+          ],
+          "workbookRange": "PLU Codes!A158:D158"
+        }
+      ],
+      "competingLabelNumbers": [],
+      "requiredEvidence": "Read the original handwritten Small artichoke line on pages 1 and 4 and reconcile 4516 against Fennel / Anise. Preserve the source Each unit.",
+      "proposedCodeCorrection": null
+    },
+    {
+      "catalogId": "avocado-5ct-bag-handwritten",
+      "sourceItem": "Avocado - 5ct (Bag) (handwritten)",
+      "codeText": "9523",
+      "codes": [
+        "9523"
+      ],
+      "sourcePages": [
+        5
+      ],
+      "soldBy": null,
+      "flags": [
+        "handwritten"
+      ],
+      "workbookEvidence": {
+        "file": "PLU_Codes 2.xlsx",
+        "sheet": "PLU Codes",
+        "range": "A52:D52",
+        "values": [
+          "Avocado - 5ct (Bag) (handwritten)",
+          "9523",
+          null,
+          "5"
+        ],
+        "finding": "Exact workbook transcription matches catalog; no independent source image was available in this lane."
+      },
+      "disposition": "source-required",
+      "unresolvedGates": [
+        "identity-source-review",
+        "retail-package-evidence-required",
+        "duplicate-lesson-title"
+      ],
+      "conflictingMappings": [],
+      "competingLabelNumbers": [],
+      "requiredEvidence": "Confirm the page 5 handwritten five-count avocado bag label and 9523 together. A register or package record must identify the five-count sale unit; loose avocado imagery cannot confirm bag identity.",
+      "proposedCodeCorrection": null
+    },
+    {
+      "catalogId": "bananas-baby-bananas-mini-4186",
+      "sourceItem": "Bananas - Baby Bananas Mini 4186",
+      "codeText": "4234",
+      "codes": [
+        "4234"
+      ],
+      "sourcePages": [
+        5
+      ],
+      "soldBy": null,
+      "flags": [],
+      "workbookEvidence": {
+        "file": "PLU_Codes 2.xlsx",
+        "sheet": "PLU Codes",
+        "range": "A58:D58",
+        "values": [
+          "Bananas - Baby Bananas Mini 4186",
+          "4234",
+          null,
+          "5"
+        ],
+        "finding": "Exact workbook transcription matches catalog; no independent source image was available in this lane."
+      },
+      "disposition": "source-required",
+      "unresolvedGates": [
+        "conflicting-code-mapping",
+        "competing-label-number",
+        "media-evidence-required"
+      ],
+      "conflictingMappings": [
+        {
+          "catalogId": "bananas-red",
+          "item": "Bananas - Red",
+          "codes": [
+            "4234"
+          ],
+          "sourcePages": [
+            5
+          ],
+          "workbookRange": "PLU Codes!A61:D61"
+        }
+      ],
+      "competingLabelNumbers": [
+        "4186"
+      ],
+      "requiredEvidence": "Read the original page 5 row and classify label number 4186 versus B-cell 4234, which is also assigned to Red bananas. Do not choose the public or more plausible number.",
+      "proposedCodeCorrection": null
+    },
+    {
+      "catalogId": "bananas-red",
+      "sourceItem": "Bananas - Red",
+      "codeText": "4234",
+      "codes": [
+        "4234"
+      ],
+      "sourcePages": [
+        5
+      ],
+      "soldBy": null,
+      "flags": [],
+      "workbookEvidence": {
+        "file": "PLU_Codes 2.xlsx",
+        "sheet": "PLU Codes",
+        "range": "A61:D61",
+        "values": [
+          "Bananas - Red",
+          "4234",
+          null,
+          "5"
+        ],
+        "finding": "Exact workbook transcription matches catalog; no independent source image was available in this lane."
+      },
+      "disposition": "source-required",
+      "unresolvedGates": [
+        "conflicting-code-mapping"
+      ],
+      "conflictingMappings": [
+        {
+          "catalogId": "bananas-baby-bananas-mini-4186",
+          "item": "Bananas - Baby Bananas Mini 4186",
+          "codes": [
+            "4234"
+          ],
+          "sourcePages": [
+            5
+          ],
+          "workbookRange": "PLU Codes!A58:D58"
+        }
+      ],
+      "competingLabelNumbers": [],
+      "requiredEvidence": "Confirm page 5 Red bananas 4234 independently of the Baby Bananas Mini row, which also carries 4234 and a label number 4186.",
+      "proposedCodeCorrection": null
+    },
+    {
+      "catalogId": "bartlett-orchard-run-first-word-obscured",
+      "sourceItem": "Bartlett - Orchard Run (first word obscured)",
+      "codeText": "64037",
+      "codes": [
+        "64037"
+      ],
+      "sourcePages": [
+        5
+      ],
+      "soldBy": null,
+      "flags": [
+        "obscured-label"
+      ],
+      "workbookEvidence": {
+        "file": "PLU_Codes 2.xlsx",
+        "sheet": "PLU Codes",
+        "range": "A63:D63",
+        "values": [
+          "Bartlett - Orchard Run (first word obscured)",
+          "64037",
+          null,
+          "5"
+        ],
+        "finding": "Exact workbook transcription matches catalog; no independent source image was available in this lane."
+      },
+      "disposition": "source-required",
+      "unresolvedGates": [
+        "identity-source-review"
+      ],
+      "conflictingMappings": [],
+      "competingLabelNumbers": [],
+      "requiredEvidence": "Provide page 5 with the obscured first word legible and bound to 64037. Bartlett fruit imagery cannot restore the missing source identity.",
+      "proposedCodeCorrection": null
+    },
+    {
+      "catalogId": "cabbage-sour",
+      "sourceItem": "Cabbage - Sour",
+      "codeText": "62380",
+      "codes": [
+        "62380"
+      ],
+      "sourcePages": [
+        4
+      ],
+      "soldBy": null,
+      "flags": [],
+      "workbookEvidence": {
+        "file": "PLU_Codes 2.xlsx",
+        "sheet": "PLU Codes",
+        "range": "A90:D90",
+        "values": [
+          "Cabbage - Sour",
+          "62380",
+          null,
+          "4"
+        ],
+        "finding": "Exact workbook transcription matches catalog; no independent source image was available in this lane."
+      },
+      "disposition": "code-source-confirmed-awaiting-identity-media",
+      "unresolvedGates": [
+        "identity-source-review",
+        "identity-adjudication-required",
+        "media-evidence-required"
+      ],
+      "conflictingMappings": [],
+      "competingLabelNumbers": [],
+      "requiredEvidence": "Code evidence is clean: the unflagged workbook row records 62380 with no competing label number or catalog collision. Identity, finished-product form, media rights, and sale-unit interpretation remain separate gates owned by the identity/media lane.",
+      "proposedCodeCorrection": null
+    },
+    {
+      "catalogId": "cherries-white-ranier-264497",
+      "sourceItem": "Cherries - White Ranier (264497)",
+      "codeText": "4260",
+      "codes": [
+        "4260"
+      ],
+      "sourcePages": [
+        5
+      ],
+      "soldBy": null,
+      "flags": [],
+      "workbookEvidence": {
+        "file": "PLU_Codes 2.xlsx",
+        "sheet": "PLU Codes",
+        "range": "A114:D114",
+        "values": [
+          "Cherries - White Ranier (264497)",
+          "4260",
+          null,
+          "5"
+        ],
+        "finding": "Exact workbook transcription matches catalog; no independent source image was available in this lane."
+      },
+      "disposition": "source-required",
+      "unresolvedGates": [
+        "competing-label-number",
+        "media-evidence-required"
+      ],
+      "conflictingMappings": [],
+      "competingLabelNumbers": [
+        "264497"
+      ],
+      "requiredEvidence": "Read page 5 to classify parenthetical 264497 versus B-cell 4260 for the exact White Ranier listing. Neither number may be silently discarded.",
+      "proposedCodeCorrection": null
+    },
+    {
+      "catalogId": "durian-frozen",
+      "sourceItem": "Durian (Frozen)",
+      "codeText": "?",
+      "codes": [
+        "?"
+      ],
+      "sourcePages": [
+        5
+      ],
+      "soldBy": null,
+      "flags": [
+        "unverified-code"
+      ],
+      "workbookEvidence": {
+        "file": "PLU_Codes 2.xlsx",
+        "sheet": "PLU Codes",
+        "range": "A147:D147",
+        "values": [
+          "Durian (Frozen)",
+          "?",
+          null,
+          "5"
+        ],
+        "finding": "Exact workbook transcription matches catalog; no independent source image was available in this lane."
+      },
+      "disposition": "source-required",
+      "unresolvedGates": [
+        "missing-checkout-code",
+        "retail-package-evidence-required",
+        "media-evidence-required"
+      ],
+      "conflictingMappings": [],
+      "competingLabelNumbers": [],
+      "requiredEvidence": "Capture an exact store/register/package code for Frozen durian and identify the sold unit. The workbook has no code; a fresh whole-durian code is not transferable.",
+      "proposedCodeCorrection": null
+    },
+    {
+      "catalogId": "eddoes-handwritten",
+      "sourceItem": "Eddoes (handwritten)",
+      "codeText": "?",
+      "codes": [
+        "?"
+      ],
+      "sourcePages": [
+        4
+      ],
+      "soldBy": null,
+      "flags": [
+        "unverified-code",
+        "handwritten"
+      ],
+      "workbookEvidence": {
+        "file": "PLU_Codes 2.xlsx",
+        "sheet": "PLU Codes",
+        "range": "A148:D148",
+        "values": [
+          "Eddoes (handwritten)",
+          "?",
+          null,
+          "4"
+        ],
+        "finding": "Exact workbook transcription matches catalog; no independent source image was available in this lane."
+      },
+      "disposition": "source-required",
+      "unresolvedGates": [
+        "identity-source-review",
+        "missing-checkout-code"
+      ],
+      "conflictingMappings": [],
+      "competingLabelNumbers": [],
+      "requiredEvidence": "Provide the page 4 handwritten Eddoes line with an assigned code or a current exact store record. Other eddoe/taro entries and public PLUs do not fill the missing cell.",
+      "proposedCodeCorrection": null
+    },
+    {
+      "catalogId": "fennel-anise",
+      "sourceItem": "Fennel / Anise",
+      "codeText": "4516",
+      "codes": [
+        "4516"
+      ],
+      "sourcePages": [
+        4
+      ],
+      "soldBy": null,
+      "flags": [],
+      "workbookEvidence": {
+        "file": "PLU_Codes 2.xlsx",
+        "sheet": "PLU Codes",
+        "range": "A158:D158",
+        "values": [
+          "Fennel / Anise",
+          "4516",
+          null,
+          "4"
+        ],
+        "finding": "Exact workbook transcription matches catalog; no independent source image was available in this lane."
+      },
+      "disposition": "source-required",
+      "unresolvedGates": [
+        "conflicting-code-mapping"
+      ],
+      "conflictingMappings": [
+        {
+          "catalogId": "artichokes-small-handwritten",
+          "item": "Artichokes - Small (handwritten)",
+          "codes": [
+            "4516"
+          ],
+          "sourcePages": [
+            1,
+            4
+          ],
+          "workbookRange": "PLU Codes!A47:D47"
+        }
+      ],
+      "competingLabelNumbers": [],
+      "requiredEvidence": "Confirm page 4 Fennel / Anise 4516 and reconcile the same code on handwritten Small artichokes (pages 1 and 4). Generic anise/fennel terminology cannot settle this mapping.",
+      "proposedCodeCorrection": null
+    },
+    {
+      "catalogId": "gourds-ornamental",
+      "sourceItem": "Gourds - Ornamental",
+      "codeText": "?",
+      "codes": [
+        "?"
+      ],
+      "sourcePages": [
+        4
+      ],
+      "soldBy": null,
+      "flags": [
+        "unverified-code"
+      ],
+      "workbookEvidence": {
+        "file": "PLU_Codes 2.xlsx",
+        "sheet": "PLU Codes",
+        "range": "A173:D173",
+        "values": [
+          "Gourds - Ornamental",
+          "?",
+          null,
+          "4"
+        ],
+        "finding": "Exact workbook transcription matches catalog; no independent source image was available in this lane."
+      },
+      "disposition": "source-required",
+      "unresolvedGates": [
+        "missing-checkout-code"
+      ],
+      "conflictingMappings": [],
+      "competingLabelNumbers": [],
+      "requiredEvidence": "Capture an assigned code for the page 4 Ornamental gourds listing from the original sheet or a current exact store record. The workbook contains only a question mark.",
+      "proposedCodeCorrection": null
+    },
+    {
+      "catalogId": "jackfruit-cut-handwritten",
+      "sourceItem": "Jackfruit - Cut (handwritten)",
+      "codeText": "?",
+      "codes": [
+        "?"
+      ],
+      "sourcePages": [
+        5
+      ],
+      "soldBy": null,
+      "flags": [
+        "unverified-code",
+        "handwritten"
+      ],
+      "workbookEvidence": {
+        "file": "PLU_Codes 2.xlsx",
+        "sheet": "PLU Codes",
+        "range": "A191:D191",
+        "values": [
+          "Jackfruit - Cut (handwritten)",
+          "?",
+          null,
+          "5"
+        ],
+        "finding": "Exact workbook transcription matches catalog; no independent source image was available in this lane."
+      },
+      "disposition": "source-required",
+      "unresolvedGates": [
+        "identity-source-review",
+        "missing-checkout-code",
+        "media-evidence-required"
+      ],
+      "conflictingMappings": [],
+      "competingLabelNumbers": [],
+      "requiredEvidence": "Provide the handwritten page 5 Cut jackfruit line with a legible assigned code and exact cut/sale form, or a current equivalent store record. Whole jackfruit codes are not substitutes.",
+      "proposedCodeCorrection": null
+    },
+    {
+      "catalogId": "jicama-roots",
+      "sourceItem": "Jicama (Roots)",
+      "codeText": "?",
+      "codes": [
+        "?"
+      ],
+      "sourcePages": [
+        4
+      ],
+      "soldBy": null,
+      "flags": [
+        "unverified-code"
+      ],
+      "workbookEvidence": {
+        "file": "PLU_Codes 2.xlsx",
+        "sheet": "PLU Codes",
+        "range": "A193:D193",
+        "values": [
+          "Jicama (Roots)",
+          "?",
+          null,
+          "4"
+        ],
+        "finding": "Exact workbook transcription matches catalog; no independent source image was available in this lane."
+      },
+      "disposition": "source-required",
+      "unresolvedGates": [
+        "missing-checkout-code",
+        "duplicate-lesson-title"
+      ],
+      "conflictingMappings": [],
+      "competingLabelNumbers": [],
+      "requiredEvidence": "Capture an assigned code for page 4 Jicama (Roots). A different Jicama row or already-published lesson does not establish this missing mapping.",
+      "proposedCodeCorrection": null
+    },
+    {
+      "catalogId": "kohlrabi-note-on-sheet-kohlrabi-1692-handwritten",
+      "sourceItem": "Kohlrabi (note on sheet: 'Kohlrabi = 1692') (handwritten)",
+      "codeText": "1692",
+      "codes": [
+        "1692"
+      ],
+      "sourcePages": [
+        2,
+        4
+      ],
+      "soldBy": "Weight",
+      "flags": [
+        "handwritten"
+      ],
+      "workbookEvidence": {
+        "file": "PLU_Codes 2.xlsx",
+        "sheet": "PLU Codes",
+        "range": "A201:D201",
+        "values": [
+          "Kohlrabi (note on sheet: 'Kohlrabi = 1692') (handwritten)",
+          "1692",
+          "Weight",
+          "2, 4"
+        ],
+        "finding": "Exact workbook transcription matches catalog; no independent source image was available in this lane."
+      },
+      "disposition": "source-required",
+      "unresolvedGates": [
+        "identity-source-review",
+        "identity-adjudication-required"
+      ],
+      "conflictingMappings": [],
+      "competingLabelNumbers": [],
+      "requiredEvidence": "Inspect the handwritten note on pages 2 and 4 that is transcribed as Kohlrabi = 1692. The duplicate appearance of 1692 in the workbook label and code cell is one transcription, not independent corroboration.",
+      "proposedCodeCorrection": null
+    },
+    {
+      "catalogId": "mangoes-ataulfo-case-handwritten",
+      "sourceItem": "Mangoes - Ataulfo (Case) (handwritten)",
+      "codeText": "2145",
+      "codes": [
+        "2145"
+      ],
+      "sourcePages": [
+        5
+      ],
+      "soldBy": null,
+      "flags": [
+        "handwritten"
+      ],
+      "workbookEvidence": {
+        "file": "PLU_Codes 2.xlsx",
+        "sheet": "PLU Codes",
+        "range": "A223:D223",
+        "values": [
+          "Mangoes - Ataulfo (Case) (handwritten)",
+          "2145",
+          null,
+          "5"
+        ],
+        "finding": "Exact workbook transcription matches catalog; no independent source image was available in this lane."
+      },
+      "disposition": "source-required",
+      "unresolvedGates": [
+        "identity-source-review"
+      ],
+      "conflictingMappings": [],
+      "competingLabelNumbers": [],
+      "requiredEvidence": "Confirm the original page 5 handwritten Ataulfo case label and 2145 together, including case sale identity. The source qualifier may remain label-assisted after that check.",
+      "proposedCodeCorrection": null
+    },
+    {
+      "catalogId": "mangoes-red-case-handwritten",
+      "sourceItem": "Mangoes - Red (Case) (handwritten)",
+      "codeText": "2146",
+      "codes": [
+        "2146"
+      ],
+      "sourcePages": [
+        5
+      ],
+      "soldBy": null,
+      "flags": [
+        "handwritten"
+      ],
+      "workbookEvidence": {
+        "file": "PLU_Codes 2.xlsx",
+        "sheet": "PLU Codes",
+        "range": "A226:D226",
+        "values": [
+          "Mangoes - Red (Case) (handwritten)",
+          "2146",
+          null,
+          "5"
+        ],
+        "finding": "Exact workbook transcription matches catalog; no independent source image was available in this lane."
+      },
+      "disposition": "source-required",
+      "unresolvedGates": [
+        "identity-source-review",
+        "conflicting-code-mapping",
+        "retail-package-evidence-required",
+        "duplicate-lesson-title"
+      ],
+      "conflictingMappings": [
+        {
+          "catalogId": "mangos-red-case",
+          "item": "Mangos - Red (Case)",
+          "codes": [
+            "2146",
+            "13493"
+          ],
+          "sourcePages": [
+            2
+          ],
+          "workbookRange": "PLU Codes!A235:D235"
+        }
+      ],
+      "competingLabelNumbers": [],
+      "requiredEvidence": "Confirm the handwritten page 5 Red mango case 2146 line and reconcile it against the other Red mango case source row whose full code set includes 2146 and 13493. Do not promote the handwritten neighbor from the existing mapping lesson.",
+      "proposedCodeCorrection": null
+    },
+    {
+      "catalogId": "mangos-spice",
+      "sourceItem": "Mangos - Spice",
+      "codeText": "58654",
+      "codes": [
+        "58654"
+      ],
+      "sourcePages": [
+        2
+      ],
+      "soldBy": "Weight",
+      "flags": [],
+      "workbookEvidence": {
+        "file": "PLU_Codes 2.xlsx",
+        "sheet": "PLU Codes",
+        "range": "A236:D236",
+        "values": [
+          "Mangos - Spice",
+          "58654",
+          "Weight",
+          "2"
+        ],
+        "finding": "Exact workbook transcription matches catalog; no independent source image was available in this lane."
+      },
+      "disposition": "code-source-confirmed-awaiting-identity-media",
+      "unresolvedGates": [
+        "identity-source-review",
+        "identity-adjudication-required",
+        "media-evidence-required"
+      ],
+      "conflictingMappings": [],
+      "competingLabelNumbers": [],
+      "requiredEvidence": "Code evidence is clean: the unflagged workbook row records 58654, Weight, page 2 without competing label numbers or catalog collision. Exact Spice identity and usable recognition media remain separate gates owned by the identity/media lane.",
+      "proposedCodeCorrection": null
+    },
+    {
+      "catalogId": "nappa-baby-4540-bag",
+      "sourceItem": "Nappa - Baby 4540 (Bag)",
+      "codeText": "62527",
+      "codes": [
+        "62527"
+      ],
+      "sourcePages": [
+        4
+      ],
+      "soldBy": null,
+      "flags": [],
+      "workbookEvidence": {
+        "file": "PLU_Codes 2.xlsx",
+        "sheet": "PLU Codes",
+        "range": "A259:D259",
+        "values": [
+          "Nappa - Baby 4540 (Bag)",
+          "62527",
+          null,
+          "4"
+        ],
+        "finding": "Exact workbook transcription matches catalog; no independent source image was available in this lane."
+      },
+      "disposition": "source-required",
+      "unresolvedGates": [
+        "competing-label-number",
+        "retail-package-evidence-required"
+      ],
+      "conflictingMappings": [],
+      "competingLabelNumbers": [
+        "4540"
+      ],
+      "requiredEvidence": "Read page 4 to classify label number 4540 versus B-cell 62527 and verify the Baby Nappa bag sale unit. Loose baby cabbage imagery cannot decide the bag checkout mapping.",
+      "proposedCodeCorrection": null
+    },
+    {
+      "catalogId": "onions-1381-label-as-printed",
+      "sourceItem": "Onions - 1381 (label as printed)",
+      "codeText": "2525",
+      "codes": [
+        "2525"
+      ],
+      "sourcePages": [
+        4
+      ],
+      "soldBy": null,
+      "flags": [],
+      "workbookEvidence": {
+        "file": "PLU_Codes 2.xlsx",
+        "sheet": "PLU Codes",
+        "range": "A269:D269",
+        "values": [
+          "Onions - 1381 (label as printed)",
+          "2525",
+          null,
+          "4"
+        ],
+        "finding": "Exact workbook transcription matches catalog; no independent source image was available in this lane."
+      },
+      "disposition": "source-required",
+      "unresolvedGates": [
+        "competing-label-number"
+      ],
+      "conflictingMappings": [],
+      "competingLabelNumbers": [
+        "1381"
+      ],
+      "requiredEvidence": "Read page 4 to classify the printed label number 1381 versus B-cell 2525, preserving the exact onion identity. Neither field alone adjudicates the other.",
+      "proposedCodeCorrection": null
+    },
+    {
+      "catalogId": "onions-medium-50lb-724-58312",
+      "sourceItem": "Onions - Medium 50lb 724 / 58312",
+      "codeText": "63430",
+      "codes": [
+        "63430"
+      ],
+      "sourcePages": [
+        4
+      ],
+      "soldBy": null,
+      "flags": [],
+      "workbookEvidence": {
+        "file": "PLU_Codes 2.xlsx",
+        "sheet": "PLU Codes",
+        "range": "A271:D271",
+        "values": [
+          "Onions - Medium 50lb 724 / 58312",
+          "63430",
+          null,
+          "4"
+        ],
+        "finding": "Exact workbook transcription matches catalog; no independent source image was available in this lane."
+      },
+      "disposition": "source-required",
+      "unresolvedGates": [
+        "competing-label-number",
+        "retail-package-evidence-required",
+        "media-evidence-required"
+      ],
+      "conflictingMappings": [],
+      "competingLabelNumbers": [
+        "724",
+        "58312"
+      ],
+      "requiredEvidence": "Read page 4 and a current package/register record to classify 724, 58312, and B-cell 63430 for the exact Medium 50lb onion package.",
+      "proposedCodeCorrection": null
+    },
+    {
+      "catalogId": "onions-sweet-4166-59914",
+      "sourceItem": "Onions - Sweet 4166 / 59914",
+      "codeText": "4159",
+      "codes": [
+        "4159"
+      ],
+      "sourcePages": [
+        4
+      ],
+      "soldBy": null,
+      "flags": [],
+      "workbookEvidence": {
+        "file": "PLU_Codes 2.xlsx",
+        "sheet": "PLU Codes",
+        "range": "A277:D277",
+        "values": [
+          "Onions - Sweet 4166 / 59914",
+          "4159",
+          null,
+          "4"
+        ],
+        "finding": "Exact workbook transcription matches catalog; no independent source image was available in this lane."
+      },
+      "disposition": "source-required",
+      "unresolvedGates": [
+        "conflicting-code-mapping",
+        "competing-label-number",
+        "duplicate-lesson-title"
+      ],
+      "conflictingMappings": [
+        {
+          "catalogId": "onions-sweet",
+          "item": "Onions - Sweet",
+          "codes": [
+            "4159",
+            "4161",
+            "4166"
+          ],
+          "sourcePages": [
+            2
+          ],
+          "workbookRange": "PLU Codes!A276:D276"
+        }
+      ],
+      "competingLabelNumbers": [
+        "4166",
+        "59914"
+      ],
+      "requiredEvidence": "Reconcile page 4 label numbers 4166 and 59914 with B-cell 4159 and the other Sweet onion row carrying 4159. Preserve all recorded numbers until the original source establishes their roles.",
+      "proposedCodeCorrection": null
+    },
+    {
+      "catalogId": "onions-yellow-25lb-334",
+      "sourceItem": "Onions - Yellow 25lb 334",
+      "codeText": "62782",
+      "codes": [
+        "62782"
+      ],
+      "sourcePages": [
+        4
+      ],
+      "soldBy": null,
+      "flags": [],
+      "workbookEvidence": {
+        "file": "PLU_Codes 2.xlsx",
+        "sheet": "PLU Codes",
+        "range": "A281:D281",
+        "values": [
+          "Onions - Yellow 25lb 334",
+          "62782",
+          null,
+          "4"
+        ],
+        "finding": "Exact workbook transcription matches catalog; no independent source image was available in this lane."
+      },
+      "disposition": "source-required",
+      "unresolvedGates": [
+        "competing-label-number",
+        "retail-package-evidence-required",
+        "duplicate-lesson-title"
+      ],
+      "conflictingMappings": [],
+      "competingLabelNumbers": [
+        "334"
+      ],
+      "requiredEvidence": "Read page 4 to classify label number 334 versus B-cell 62782 and verify the exact Yellow 25lb onion package sale unit.",
+      "proposedCodeCorrection": null
+    },
+    {
+      "catalogId": "parsnips-2lb",
+      "sourceItem": "Parsnips - 2lb",
+      "codeText": "?",
+      "codes": [
+        "?"
+      ],
+      "sourcePages": [
+        4
+      ],
+      "soldBy": null,
+      "flags": [
+        "unverified-code"
+      ],
+      "workbookEvidence": {
+        "file": "PLU_Codes 2.xlsx",
+        "sheet": "PLU Codes",
+        "range": "A297:D297",
+        "values": [
+          "Parsnips - 2lb",
+          "?",
+          null,
+          "4"
+        ],
+        "finding": "Exact workbook transcription matches catalog; no independent source image was available in this lane."
+      },
+      "disposition": "source-required",
+      "unresolvedGates": [
+        "missing-checkout-code",
+        "retail-package-evidence-required",
+        "duplicate-lesson-title"
+      ],
+      "conflictingMappings": [],
+      "competingLabelNumbers": [],
+      "requiredEvidence": "Capture the assigned code and package sale unit for page 4 Parsnips - 2lb. Do not reuse loose or bulk parsnip codes for the missing package code.",
+      "proposedCodeCorrection": null
+    },
+    {
+      "catalogId": "parsnips-bulk-4672",
+      "sourceItem": "Parsnips - Bulk 4672",
+      "codeText": "?",
+      "codes": [
+        "?"
+      ],
+      "sourcePages": [
+        4
+      ],
+      "soldBy": null,
+      "flags": [
+        "unverified-code"
+      ],
+      "workbookEvidence": {
+        "file": "PLU_Codes 2.xlsx",
+        "sheet": "PLU Codes",
+        "range": "A298:D298",
+        "values": [
+          "Parsnips - Bulk 4672",
+          "?",
+          null,
+          "4"
+        ],
+        "finding": "Exact workbook transcription matches catalog; no independent source image was available in this lane."
+      },
+      "disposition": "source-required",
+      "unresolvedGates": [
+        "missing-checkout-code",
+        "competing-label-number",
+        "duplicate-lesson-title"
+      ],
+      "conflictingMappings": [],
+      "competingLabelNumbers": [
+        "4672"
+      ],
+      "requiredEvidence": "Inspect page 4 to confirm what label number 4672 means for Bulk parsnips, whose B-cell is a question mark. A number embedded in a label is not automatically an adjudicated checkout value.",
+      "proposedCodeCorrection": null
+    },
+    {
+      "catalogId": "pears-red-4415",
+      "sourceItem": "Pears - Red 4415",
+      "codeText": "3118",
+      "codes": [
+        "3118"
+      ],
+      "sourcePages": [
+        5
+      ],
+      "soldBy": null,
+      "flags": [],
+      "workbookEvidence": {
+        "file": "PLU_Codes 2.xlsx",
+        "sheet": "PLU Codes",
+        "range": "A321:D321",
+        "values": [
+          "Pears - Red 4415",
+          "3118",
+          null,
+          "5"
+        ],
+        "finding": "Exact workbook transcription matches catalog; no independent source image was available in this lane."
+      },
+      "disposition": "source-required",
+      "unresolvedGates": [
+        "competing-label-number",
+        "duplicate-lesson-title"
+      ],
+      "conflictingMappings": [],
+      "competingLabelNumbers": [
+        "4415"
+      ],
+      "requiredEvidence": "Read page 5 to classify label number 4415 versus B-cell 3118 for the exact Red pear listing. Other Red pear entries cannot select one without source evidence.",
+      "proposedCodeCorrection": null
+    },
+    {
+      "catalogId": "peppers-red-long-handwritten",
+      "sourceItem": "Peppers - Red Long (handwritten)",
+      "codeText": "4711",
+      "codes": [
+        "4711"
+      ],
+      "sourcePages": [
+        4
+      ],
+      "soldBy": null,
+      "flags": [
+        "handwritten"
+      ],
+      "workbookEvidence": {
+        "file": "PLU_Codes 2.xlsx",
+        "sheet": "PLU Codes",
+        "range": "A342:D342",
+        "values": [
+          "Peppers - Red Long (handwritten)",
+          "4711",
+          null,
+          "4"
+        ],
+        "finding": "Exact workbook transcription matches catalog; no independent source image was available in this lane."
+      },
+      "disposition": "source-required",
+      "unresolvedGates": [
+        "identity-source-review",
+        "conflicting-code-mapping",
+        "duplicate-lesson-title"
+      ],
+      "conflictingMappings": [
+        {
+          "catalogId": "peppers-red-long",
+          "item": "Peppers - Red Long",
+          "codes": [
+            "2579",
+            "4711"
+          ],
+          "sourcePages": [
+            2
+          ],
+          "workbookRange": "PLU Codes!A341:D341"
+        }
+      ],
+      "competingLabelNumbers": [],
+      "requiredEvidence": "Inspect the page 4 handwritten Red Long pepper 4711 line and reconcile it against the separately recorded Red Long pepper row. Shared wording and a shared number are not independent confirmation of the handwriting.",
+      "proposedCodeCorrection": null
+    },
+    {
+      "catalogId": "plumcots-handwritten",
+      "sourceItem": "Plumcots (handwritten)",
+      "codeText": "5127",
+      "codes": [
+        "5127"
+      ],
+      "sourcePages": [
+        5
+      ],
+      "soldBy": null,
+      "flags": [
+        "handwritten"
+      ],
+      "workbookEvidence": {
+        "file": "PLU_Codes 2.xlsx",
+        "sheet": "PLU Codes",
+        "range": "A356:D356",
+        "values": [
+          "Plumcots (handwritten)",
+          "5127",
+          null,
+          "5"
+        ],
+        "finding": "Exact workbook transcription matches catalog; no independent source image was available in this lane."
+      },
+      "disposition": "source-required",
+      "unresolvedGates": [
+        "identity-source-review",
+        "identity-adjudication-required"
+      ],
+      "conflictingMappings": [],
+      "competingLabelNumbers": [],
+      "requiredEvidence": "Inspect page 5 to confirm the handwritten Plumcots identity and 5127 mapping. A plumcot/pluot synonym or recognition photograph cannot independently validate the handwritten code.",
+      "proposedCodeCorrection": null
+    },
+    {
+      "catalogId": "potato-sweet-jamaican-handwritten",
+      "sourceItem": "Potato - Sweet Jamaican (handwritten)",
+      "codeText": "?",
+      "codes": [
+        "?"
+      ],
+      "sourcePages": [
+        4
+      ],
+      "soldBy": null,
+      "flags": [
+        "unverified-code",
+        "handwritten"
+      ],
+      "workbookEvidence": {
+        "file": "PLU_Codes 2.xlsx",
+        "sheet": "PLU Codes",
+        "range": "A372:D372",
+        "values": [
+          "Potato - Sweet Jamaican (handwritten)",
+          "?",
+          null,
+          "4"
+        ],
+        "finding": "Exact workbook transcription matches catalog; no independent source image was available in this lane."
+      },
+      "disposition": "source-required",
+      "unresolvedGates": [
+        "identity-source-review",
+        "missing-checkout-code"
+      ],
+      "conflictingMappings": [],
+      "competingLabelNumbers": [],
+      "requiredEvidence": "Provide the page 4 handwritten Sweet Jamaican potato line with a code or a current exact store record. The White sweet potato 9925 recovery does not fill this separate missing code.",
+      "proposedCodeCorrection": null
+    },
+    {
+      "catalogId": "pumpkins-jamaican",
+      "sourceItem": "Pumpkins - Jamaican",
+      "codeText": "434",
+      "codes": [
+        "434"
+      ],
+      "sourcePages": [
+        3
+      ],
+      "soldBy": "Weight",
+      "flags": [],
+      "workbookEvidence": {
+        "file": "PLU_Codes 2.xlsx",
+        "sheet": "PLU Codes",
+        "range": "A390:D390",
+        "values": [
+          "Pumpkins - Jamaican",
+          "434",
+          "Weight",
+          "3"
+        ],
+        "finding": "Exact workbook transcription matches catalog; no independent source image was available in this lane."
+      },
+      "disposition": "code-source-confirmed-awaiting-identity-media",
+      "unresolvedGates": [
+        "identity-source-review",
+        "identity-adjudication-required",
+        "media-evidence-required"
+      ],
+      "conflictingMappings": [],
+      "competingLabelNumbers": [],
+      "requiredEvidence": "Code evidence is clean: the unflagged workbook row records 434, Weight, page 3 without competing label numbers or catalog collision. Exact Jamaican product identity and usable recognition media remain separate gates owned by the identity/media lane.",
+      "proposedCodeCorrection": null
+    },
+    {
+      "catalogId": "pumpkins-small-pie-4737",
+      "sourceItem": "Pumpkins - Small Pie 4737",
+      "codeText": "?",
+      "codes": [
+        "?"
+      ],
+      "sourcePages": [
+        4
+      ],
+      "soldBy": null,
+      "flags": [
+        "unverified-code"
+      ],
+      "workbookEvidence": {
+        "file": "PLU_Codes 2.xlsx",
+        "sheet": "PLU Codes",
+        "range": "A396:D396",
+        "values": [
+          "Pumpkins - Small Pie 4737",
+          "?",
+          null,
+          "4"
+        ],
+        "finding": "Exact workbook transcription matches catalog; no independent source image was available in this lane."
+      },
+      "disposition": "source-required",
+      "unresolvedGates": [
+        "missing-checkout-code",
+        "competing-label-number"
+      ],
+      "conflictingMappings": [],
+      "competingLabelNumbers": [
+        "4737"
+      ],
+      "requiredEvidence": "Inspect page 4 to classify label number 4737 for Small Pie pumpkins, whose B-cell is a question mark. Do not promote the embedded number without an exact source or current store mapping.",
+      "proposedCodeCorrection": null
+    },
+    {
+      "catalogId": "pumpkins-white",
+      "sourceItem": "Pumpkins - White",
+      "codeText": "?",
+      "codes": [
+        "?"
+      ],
+      "sourcePages": [
+        4
+      ],
+      "soldBy": null,
+      "flags": [
+        "unverified-code"
+      ],
+      "workbookEvidence": {
+        "file": "PLU_Codes 2.xlsx",
+        "sheet": "PLU Codes",
+        "range": "A397:D397",
+        "values": [
+          "Pumpkins - White",
+          "?",
+          null,
+          "4"
+        ],
+        "finding": "Exact workbook transcription matches catalog; no independent source image was available in this lane."
+      },
+      "disposition": "source-required",
+      "unresolvedGates": [
+        "missing-checkout-code"
+      ],
+      "conflictingMappings": [],
+      "competingLabelNumbers": [],
+      "requiredEvidence": "Capture an assigned code for page 4 White pumpkins from the original sheet or current exact store record. Other pumpkin codes are not interchangeable.",
+      "proposedCodeCorrection": null
+    },
+    {
+      "catalogId": "radish-bunch",
+      "sourceItem": "Radish - Bunch",
+      "codeText": "4019",
+      "codes": [
+        "4019"
+      ],
+      "sourcePages": [
+        4
+      ],
+      "soldBy": null,
+      "flags": [],
+      "workbookEvidence": {
+        "file": "PLU_Codes 2.xlsx",
+        "sheet": "PLU Codes",
+        "range": "A401:D401",
+        "values": [
+          "Radish - Bunch",
+          "4019",
+          null,
+          "4"
+        ],
+        "finding": "Exact workbook transcription matches catalog; no independent source image was available in this lane."
+      },
+      "disposition": "source-required",
+      "unresolvedGates": [
+        "conflicting-code-mapping"
+      ],
+      "conflictingMappings": [
+        {
+          "catalogId": "apples-mcintosh-extra-fancy",
+          "item": "Apples - McIntosh Extra Fancy",
+          "codes": [
+            "4019"
+          ],
+          "sourcePages": [
+            5
+          ],
+          "workbookRange": "PLU Codes!A32:D32"
+        }
+      ],
+      "competingLabelNumbers": [],
+      "requiredEvidence": "Reconcile the page 4 Radish - Bunch 4019 line against page 5 McIntosh Extra Fancy apple 4019 using original or current checkout evidence. Do not select the likely public PLU by plausibility.",
+      "proposedCodeCorrection": null
+    },
+    {
+      "catalogId": "rutabagas",
+      "sourceItem": "Rutabagas",
+      "codeText": "?",
+      "codes": [
+        "?"
+      ],
+      "sourcePages": [
+        4
+      ],
+      "soldBy": null,
+      "flags": [
+        "unverified-code"
+      ],
+      "workbookEvidence": {
+        "file": "PLU_Codes 2.xlsx",
+        "sheet": "PLU Codes",
+        "range": "A410:D410",
+        "values": [
+          "Rutabagas",
+          "?",
+          null,
+          "4"
+        ],
+        "finding": "Exact workbook transcription matches catalog; no independent source image was available in this lane."
+      },
+      "disposition": "source-required",
+      "unresolvedGates": [
+        "missing-checkout-code"
+      ],
+      "conflictingMappings": [],
+      "competingLabelNumbers": [],
+      "requiredEvidence": "Capture an assigned code for the page 4 Rutabagas listing from an original or current exact store record. The known rutabaga identity and reviewed photo do not supply the missing number.",
+      "proposedCodeCorrection": null
+    },
+    {
+      "catalogId": "squash-buttercup",
+      "sourceItem": "Squash - Buttercup",
+      "codeText": "4758",
+      "codes": [
+        "4758"
+      ],
+      "sourcePages": [
+        4
+      ],
+      "soldBy": null,
+      "flags": [],
+      "workbookEvidence": {
+        "file": "PLU_Codes 2.xlsx",
+        "sheet": "PLU Codes",
+        "range": "A417:D417",
+        "values": [
+          "Squash - Buttercup",
+          "4758",
+          null,
+          "4"
+        ],
+        "finding": "Exact workbook transcription matches catalog; no independent source image was available in this lane."
+      },
+      "disposition": "source-required",
+      "unresolvedGates": [
+        "conflicting-code-mapping"
+      ],
+      "conflictingMappings": [
+        {
+          "catalogId": "squash-butternut",
+          "item": "Squash - Butternut",
+          "codes": [
+            "4758",
+            "4759"
+          ],
+          "sourcePages": [
+            3,
+            4
+          ],
+          "workbookRange": "PLU Codes!A418:D418"
+        }
+      ],
+      "competingLabelNumbers": [],
+      "requiredEvidence": "Reconcile page 4 Buttercup 4758 with the separate Butternut squash row carrying 4758. Similar names or public conventions cannot prove a transcription correction.",
+      "proposedCodeCorrection": null
+    },
+    {
+      "catalogId": "sweet-sop",
+      "sourceItem": "Sweet Sop",
+      "codeText": "2569710",
+      "codes": [
+        "2569710"
+      ],
+      "sourcePages": [
+        3
+      ],
+      "soldBy": "Weight",
+      "flags": [
+        "barcode-or-long-store-code"
+      ],
+      "workbookEvidence": {
+        "file": "PLU_Codes 2.xlsx",
+        "sheet": "PLU Codes",
+        "range": "A431:D431",
+        "values": [
+          "Sweet Sop",
+          "2569710",
+          "Weight",
+          "3"
+        ],
+        "finding": "Exact workbook transcription matches catalog; no independent source image was available in this lane."
+      },
+      "disposition": "source-required",
+      "unresolvedGates": [
+        "store-barcode-not-plu",
+        "media-evidence-required"
+      ],
+      "conflictingMappings": [],
+      "competingLabelNumbers": [],
+      "requiredEvidence": "Confirm whether page 3 value 2569710 is entered as a learner-facing internal lookup code, scanned as a barcode, or references another store identifier. The seven-digit length and source flag alone do not establish its code kind.",
+      "proposedCodeCorrection": null
+    },
+    {
+      "catalogId": "tomato-heirloom-handwritten",
+      "sourceItem": "Tomato - Heirloom (handwritten)",
+      "codeText": "?",
+      "codes": [
+        "?"
+      ],
+      "sourcePages": [
+        4
+      ],
+      "soldBy": null,
+      "flags": [
+        "unverified-code",
+        "handwritten"
+      ],
+      "workbookEvidence": {
+        "file": "PLU_Codes 2.xlsx",
+        "sheet": "PLU Codes",
+        "range": "A446:D446",
+        "values": [
+          "Tomato - Heirloom (handwritten)",
+          "?",
+          null,
+          "4"
+        ],
+        "finding": "Exact workbook transcription matches catalog; no independent source image was available in this lane."
+      },
+      "disposition": "source-required",
+      "unresolvedGates": [
+        "identity-source-review",
+        "missing-checkout-code",
+        "duplicate-lesson-title"
+      ],
+      "conflictingMappings": [],
+      "competingLabelNumbers": [],
+      "requiredEvidence": "Provide the handwritten page 4 Heirloom tomato line with an assigned code or a current exact store record. Existing heirloom lessons do not establish this row's missing code.",
+      "proposedCodeCorrection": null
+    },
+    {
+      "catalogId": "turnip-purple-top-white",
+      "sourceItem": "Turnip - Purple Top (White)",
+      "codeText": "?",
+      "codes": [
+        "?"
+      ],
+      "sourcePages": [
+        4
+      ],
+      "soldBy": null,
+      "flags": [
+        "unverified-code"
+      ],
+      "workbookEvidence": {
+        "file": "PLU_Codes 2.xlsx",
+        "sheet": "PLU Codes",
+        "range": "A459:D459",
+        "values": [
+          "Turnip - Purple Top (White)",
+          "?",
+          null,
+          "4"
+        ],
+        "finding": "Exact workbook transcription matches catalog; no independent source image was available in this lane."
+      },
+      "disposition": "source-required",
+      "unresolvedGates": [
+        "missing-checkout-code",
+        "media-evidence-required"
+      ],
+      "conflictingMappings": [],
+      "competingLabelNumbers": [],
+      "requiredEvidence": "Capture an assigned code for the exact page 4 Purple Top (White) turnip listing. A botanical identity or other turnip code does not resolve the missing cell.",
+      "proposedCodeCorrection": null
+    },
+    {
+      "catalogId": "walnuts-bulk-nuts-handwritten",
+      "sourceItem": "Walnuts (Bulk) - Nuts (handwritten)",
+      "codeText": "4943",
+      "codes": [
+        "4943"
+      ],
+      "sourcePages": [
+        2,
+        5
+      ],
+      "soldBy": "Weight",
+      "flags": [
+        "handwritten"
+      ],
+      "workbookEvidence": {
+        "file": "PLU_Codes 2.xlsx",
+        "sheet": "PLU Codes",
+        "range": "A463:D463",
+        "values": [
+          "Walnuts (Bulk) - Nuts (handwritten)",
+          "4943",
+          "Weight",
+          "2, 5"
+        ],
+        "finding": "Exact workbook transcription matches catalog; no independent source image was available in this lane."
+      },
+      "disposition": "source-required",
+      "unresolvedGates": [
+        "identity-source-review",
+        "media-evidence-required"
+      ],
+      "conflictingMappings": [],
+      "competingLabelNumbers": [],
+      "requiredEvidence": "Inspect the handwritten Bulk walnuts line on pages 2 and 5 to confirm 4943 and the exact in-shell or shelled sale identity. Preserve Weight; public walnut imagery cannot validate the handwritten mapping.",
+      "proposedCodeCorrection": null
+    }
+  ]
+}

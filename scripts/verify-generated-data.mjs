@@ -1,6 +1,7 @@
 import assert from "node:assert/strict";
 import { readFile, readdir } from "node:fs/promises";
 import { loadRecovery } from "./batch06-recovery.mjs";
+import { loadQueuedMedia } from "./batch06-queued-media.mjs";
 
 import {
   loadJsonRecords,
@@ -61,6 +62,13 @@ const catalog = (
 const catalogById = new Map(catalog.map((record) => [record.id, record]));
 const recoveryById = await loadRecovery(catalog);
 const knowledge06ById = new Map((knowledge06.items ?? []).map((item) => [item.catalogId, item]));
+for (const [catalogId, photoEvidence] of await loadQueuedMedia(catalog)) {
+  const evidence = knowledge06ById.get(catalogId);
+  assert.equal(evidence?.publishability?.status, "blocked", `${catalogId}: a photo cannot clear source/code gates.`);
+  assert.ok(evidence.publishability.blockers.some((item) => item.domain !== "media"));
+  assert.deepEqual(evidence.mediaPlan.source, photoEvidence, `${catalogId}: reviewed candidate evidence drifted.`);
+  assert.ok(!seed06.some((item) => item.catalogId === catalogId), `${catalogId}: queued media cannot publish a lesson.`);
+}
 const reviewedMedia06Ids = new Set((reviewedMedia06.items ?? []).map((review) => review.catalogId));
 for (const [catalogId, file] of Object.entries(mediaOverridesByCatalogId)) {
   assert.ok(catalogById.has(catalogId), `Reviewed media override has an unknown catalog ID: ${catalogId}.`);
@@ -368,6 +376,14 @@ for (const recovery of recoveryById.values()) {
       `${label}: ${role} must use its reviewed photograph.`);
     assert.equal(photo?.author, roleReview?.author ?? recovery.author, `${label}: ${role} attribution drifted.`);
     assert.equal(photo?.license, roleReview?.license ?? recovery.license, `${label}: ${role} license drifted.`);
+    if (recovery.externalPhoto) {
+      assert.equal(photo?.src, recovery.externalPhoto.src, `${label}: external pixels source drifted.`);
+      assert.equal(photo?.sourceUrl, recovery.sourceUrl, `${label}: publication attribution drifted.`);
+      assert.equal(photo?.sourceLabel, recovery.externalPhoto.sourceLabel, `${label}: source label drifted.`);
+      assert.deepEqual(photo?.viewport, recovery.externalPhoto.viewport, `${label}: reviewed panel drifted.`);
+      assert.equal(resolvedMedia06ById.get(recovery.catalogId)?.sourceSha256, recovery.externalPhoto.sha256,
+        `${label}: pixel integrity evidence is missing.`);
+    }
   }
 }
 assertSameCatalogIds(

@@ -11,6 +11,7 @@ import {
 } from "./batch04/common.mjs";
 import { resolveImage } from "./batch04/media.mjs";
 import { loadRecovery } from "./batch06-recovery.mjs";
+import { resolveExternalPhoto } from "./batch06-external-photo.mjs";
 import {
   calculateSelection,
   chooseFamilyChoices,
@@ -283,7 +284,10 @@ for (const [candidateIndex, item] of candidates.entries()) {
 
   let media;
   try {
-    media = await resolveImage(item, usedFiles, reviewedMapping.commonsFile, reviewedMapping);
+    const recovery = recoveryById.get(item.catalogId);
+    media = recovery?.externalPhoto
+      ? await resolveExternalPhoto(recovery, usedFiles)
+      : await resolveImage(item, usedFiles, reviewedMapping.commonsFile, reviewedMapping);
   } catch (error) {
     report.rejected.push({
       candidateOrder: candidateIndex + 1,
@@ -366,6 +370,13 @@ for (const [candidateIndex, item] of candidates.entries()) {
     if (recovery?.decision === "approved") {
       photo.author = roleReview?.author ?? recovery.author;
       photo.license = roleReview?.license ?? recovery.license;
+      if (recovery.externalPhoto) {
+        photo.sourceUrl = recovery.sourceUrl;
+        photo.sourceLabel = recovery.externalPhoto.sourceLabel;
+        photo.viewport = recovery.externalPhoto.viewport;
+        photo.alt = `${photo.alt}. Only the reviewed cultivar panel is shown.`;
+        if (photoIndex > 0) photo.fallbackReason = "The same reviewed research panel is reused across roles; this is not a second photograph.";
+      }
     }
     photos.push(photo);
   }

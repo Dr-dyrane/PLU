@@ -567,6 +567,22 @@
     },
     {
       "order": 71,
+      "catalogId": "persimmons-vanilla",
+      "title": "Persimmons - Vanilla",
+      "code": "69220",
+      "family": "Persimmons",
+      "status": "ready"
+    },
+    {
+      "order": 72,
+      "catalogId": "persimmons-vanilla-case",
+      "title": "Persimmons - Vanilla (Case)",
+      "code": "71207",
+      "family": "Persimmons",
+      "status": "ready"
+    },
+    {
+      "order": 73,
       "catalogId": "pistachios-bulk-nuts",
       "title": "Pistachios (Bulk) - Nuts",
       "code": "1400",
@@ -574,7 +590,7 @@
       "status": "ready"
     },
     {
-      "order": 72,
+      "order": 74,
       "catalogId": "plums-blue-1-5l",
       "title": "Plums - Blue 1.5L",
       "code": "6706",
@@ -582,7 +598,7 @@
       "status": "ready"
     },
     {
-      "order": 73,
+      "order": 75,
       "catalogId": "plums-yellow-1-5l",
       "title": "Plums - Yellow 1.5L",
       "code": "1383",
@@ -590,7 +606,7 @@
       "status": "ready"
     },
     {
-      "order": 74,
+      "order": 76,
       "catalogId": "potato-red-10lb",
       "title": "Potato - Red 10lb",
       "code": "2674",
@@ -598,7 +614,7 @@
       "status": "ready"
     },
     {
-      "order": 75,
+      "order": 77,
       "catalogId": "potato-red-20lb",
       "title": "Potato - Red 20lb",
       "code": "2116",
@@ -606,7 +622,7 @@
       "status": "ready"
     },
     {
-      "order": 76,
+      "order": 78,
       "catalogId": "potato-russet-white-20lb",
       "title": "Potato - Russet / White 20lb",
       "code": "62006",
@@ -614,7 +630,7 @@
       "status": "ready"
     },
     {
-      "order": 77,
+      "order": 79,
       "catalogId": "potato-russet-10lb",
       "title": "Potato - Russet 10lb",
       "code": "171",
@@ -622,7 +638,7 @@
       "status": "ready"
     },
     {
-      "order": 78,
+      "order": 80,
       "catalogId": "potato-white-10lb",
       "title": "Potato - White 10lb",
       "code": "41",
@@ -630,7 +646,7 @@
       "status": "ready"
     },
     {
-      "order": 79,
+      "order": 81,
       "catalogId": "potato-yellow-10lb",
       "title": "Potato - Yellow 10lb",
       "code": "1093",
@@ -638,7 +654,7 @@
       "status": "ready"
     },
     {
-      "order": 80,
+      "order": 82,
       "catalogId": "prickly-pears-tray-case",
       "title": "Prickly Pears (Tray / Case)",
       "code": "6798",
@@ -646,7 +662,7 @@
       "status": "ready"
     },
     {
-      "order": 81,
+      "order": 83,
       "catalogId": "raspberries-red-half-pint-6oz",
       "title": "Raspberries - Red Half Pint / 6oz",
       "code": "7298",
@@ -654,7 +670,7 @@
       "status": "ready"
     },
     {
-      "order": 82,
+      "order": 84,
       "catalogId": "raspberries-red-pint-12oz",
       "title": "Raspberries - Red Pint / 12oz",
       "code": "4054",
@@ -662,7 +678,7 @@
       "status": "ready"
     },
     {
-      "order": 83,
+      "order": 85,
       "catalogId": "sher-li-hon",
       "title": "Sher-Li-Hon",
       "code": "69624",
@@ -670,7 +686,7 @@
       "status": "ready"
     },
     {
-      "order": 84,
+      "order": 86,
       "catalogId": "strawberries-1lb",
       "title": "Strawberries - 1lb",
       "code": "42468",
@@ -678,7 +694,7 @@
       "status": "ready"
     },
     {
-      "order": 85,
+      "order": 87,
       "catalogId": "strawberries-2lb",
       "title": "Strawberries - 2lb",
       "code": "36983",
@@ -686,7 +702,7 @@
       "status": "ready"
     },
     {
-      "order": 86,
+      "order": 88,
       "catalogId": "sweet-potatoes-white",
       "title": "Sweet Potatoes - White",
       "code": "9925",
@@ -694,7 +710,7 @@
       "status": "ready"
     },
     {
-      "order": 87,
+      "order": 89,
       "catalogId": "tomato-fm-on-the-vine-bulk",
       "title": "Tomato - FM On The Vine (Bulk)",
       "code": "64664",
@@ -702,7 +718,7 @@
       "status": "ready"
     },
     {
-      "order": 88,
+      "order": 90,
       "catalogId": "tomato-hh-organic",
       "title": "Tomato - HH (Organic)",
       "code": "94798",
@@ -710,7 +726,7 @@
       "status": "ready"
     },
     {
-      "order": 89,
+      "order": 91,
       "catalogId": "tomato-hh-red-bulk",
       "title": "Tomato - HH Red (Bulk)",
       "code": "4798",
@@ -718,7 +734,7 @@
       "status": "ready"
     },
     {
-      "order": 90,
+      "order": 92,
       "catalogId": "tomatoes-on-the-vine-hh-organic",
       "title": "Tomatoes - On The Vine HH (Organic)",
       "code": "94664",
@@ -726,7 +742,7 @@
       "status": "ready"
     },
     {
-      "order": 91,
+      "order": 93,
       "catalogId": "tomatoes-roma-plum-box-half-bushel",
       "title": "Tomatoes - Roma / Plum (Box, Half Bushel)",
       "code": "70755",
@@ -734,7 +750,7 @@
       "status": "ready"
     },
     {
-      "order": 92,
+      "order": 94,
       "catalogId": "tomatoes-vine-ripe-field-bulk",
       "title": "Tomatoes - Vine Ripe / Field (Bulk)",
       "code": "3061",
@@ -742,7 +758,7 @@
       "status": "ready"
     },
     {
-      "order": 93,
+      "order": 95,
       "catalogId": "uchoy-sum",
       "title": "Uchoy Sum",
       "code": "64387",
@@ -750,7 +766,7 @@
       "status": "ready"
     },
     {
-      "order": 94,
+      "order": 96,
       "catalogId": "yu-choy-jr",
       "title": "Yu Choy - Jr",
       "code": "10260",
@@ -765,7 +781,7 @@
       "status": "mapped",
       "mappingKind": "same-label-different-codes",
       "mappingReason": "The exact catalog label carries multiple recorded checkout codes; preserve the complete mapping without selecting a synthetic primary code.",
-      "order": 95
+      "order": 97
     },
     {
       "catalogId": "apples-red-delicious-2",
@@ -775,7 +791,7 @@
       "status": "mapped",
       "mappingKind": "same-label-different-codes",
       "mappingReason": "The exact catalog label appears with another recorded checkout code; preserve both source mappings instead of treating one as a replacement.",
-      "order": 96
+      "order": 98
     },
     {
       "catalogId": "apples-royal-gala-2",
@@ -785,7 +801,7 @@
       "status": "mapped",
       "mappingKind": "same-label-different-codes",
       "mappingReason": "The exact catalog label appears with another recorded checkout code; preserve both source mappings instead of treating one as a replacement.",
-      "order": 97
+      "order": 99
     },
     {
       "catalogId": "apricots-2",
@@ -795,7 +811,7 @@
       "status": "mapped",
       "mappingKind": "same-label-different-codes",
       "mappingReason": "The exact catalog label appears with another recorded checkout code; preserve both source mappings instead of treating one as a replacement.",
-      "order": 98
+      "order": 100
     },
     {
       "catalogId": "carrots-chinese-jumbo",
@@ -805,7 +821,7 @@
       "status": "mapped",
       "mappingKind": "shared-code",
       "mappingReason": "The catalog-supported code is also recorded for a compatible carrot identity; preserve the exact label and declare the reuse.",
-      "order": 99
+      "order": 101
     },
     {
       "catalogId": "celery-hearts",
@@ -815,7 +831,7 @@
       "status": "mapped",
       "mappingKind": "single",
       "mappingReason": "The catalog records one checkout code for an interpreted in-scope produce identity.",
-      "order": 100
+      "order": 102
     },
     {
       "catalogId": "cherimoya",
@@ -825,7 +841,7 @@
       "status": "mapped",
       "mappingKind": "same-label-different-codes",
       "mappingReason": "The exact catalog label appears with multiple recorded checkout codes across source rows; preserve every source mapping.",
-      "order": 101
+      "order": 103
     },
     {
       "catalogId": "cherimoya-2",
@@ -835,7 +851,7 @@
       "status": "mapped",
       "mappingKind": "same-label-different-codes",
       "mappingReason": "The exact catalog label appears with multiple recorded checkout codes across source rows; preserve every source mapping.",
-      "order": 102
+      "order": 104
     },
     {
       "catalogId": "grapefruit-bin",
@@ -845,7 +861,7 @@
       "status": "mapped",
       "mappingKind": "shared-code",
       "mappingReason": "The catalog-supported code is also recorded for a compatible grapefruit identity; preserve the exact label and declare the reuse.",
-      "order": 103
+      "order": 105
     },
     {
       "catalogId": "mangoes",
@@ -855,7 +871,7 @@
       "status": "mapped",
       "mappingKind": "shared-code",
       "mappingReason": "The catalog-supported code is also recorded for a compatible mango identity; preserve the exact label and declare the reuse.",
-      "order": 104
+      "order": 106
     },
     {
       "catalogId": "mangos-red-case",
@@ -865,7 +881,7 @@
       "status": "mapped",
       "mappingKind": "same-label-different-codes",
       "mappingReason": "The exact catalog label carries multiple recorded checkout codes; preserve the complete mapping without selecting a synthetic primary code.",
-      "order": 105
+      "order": 107
     },
     {
       "catalogId": "melons-goldendew",
@@ -875,7 +891,7 @@
       "status": "mapped",
       "mappingKind": "single",
       "mappingReason": "The catalog records one checkout code for an interpreted in-scope produce identity.",
-      "order": 106
+      "order": 108
     },
     {
       "catalogId": "melons-honeykiss",
@@ -885,7 +901,7 @@
       "status": "mapped",
       "mappingKind": "single",
       "mappingReason": "The catalog records one checkout code for an interpreted in-scope produce identity.",
-      "order": 107
+      "order": 109
     },
     {
       "catalogId": "oranges-navel-large",
@@ -895,7 +911,7 @@
       "status": "mapped",
       "mappingKind": "shared-code",
       "mappingReason": "The catalog-supported code is also recorded for a compatible navel orange identity; preserve the exact size label and declare the reuse.",
-      "order": 108
+      "order": 110
     },
     {
       "catalogId": "oranges-navel-medium",
@@ -905,7 +921,7 @@
       "status": "mapped",
       "mappingKind": "shared-code",
       "mappingReason": "The catalog-supported code is also recorded for a compatible navel orange identity; preserve the exact size label and declare the reuse.",
-      "order": 109
+      "order": 111
     },
     {
       "catalogId": "papayas-meridol",
@@ -915,7 +931,7 @@
       "status": "mapped",
       "mappingKind": "single",
       "mappingReason": "The catalog records one checkout code for an interpreted in-scope produce identity.",
-      "order": 110
+      "order": 112
     },
     {
       "catalogId": "parsley-curley-herbs",
@@ -925,7 +941,7 @@
       "status": "mapped",
       "mappingKind": "shared-code",
       "mappingReason": "The catalog-supported code is also recorded for a compatible parsley identity; preserve the exact label and declare the reuse.",
-      "order": 111
+      "order": 113
     },
     {
       "catalogId": "pears-asian-yellow-2",
@@ -935,7 +951,7 @@
       "status": "mapped",
       "mappingKind": "same-label-different-codes",
       "mappingReason": "The exact catalog label appears with another recorded checkout code; preserve both source mappings instead of treating one as a replacement.",
-      "order": 112
+      "order": 114
     },
     {
       "catalogId": "pears-bosc-large",
@@ -945,7 +961,7 @@
       "status": "mapped",
       "mappingKind": "shared-code",
       "mappingReason": "The catalog-supported code is also recorded for a compatible Bosc pear identity; preserve the exact size label and declare the reuse.",
-      "order": 113
+      "order": 115
     },
     {
       "catalogId": "pears-forelle-2",
@@ -955,33 +971,13 @@
       "status": "mapped",
       "mappingKind": "same-label-different-codes",
       "mappingReason": "The exact catalog label appears with another recorded checkout code; preserve both source mappings instead of treating one as a replacement.",
-      "order": 114
+      "order": 116
     },
     {
       "catalogId": "pears-taylor-gold",
       "title": "Pears - Taylor Gold",
       "code": "4553",
       "family": "Pears",
-      "status": "mapped",
-      "mappingKind": "single",
-      "mappingReason": "The catalog records one checkout code for an interpreted in-scope produce identity.",
-      "order": 115
-    },
-    {
-      "catalogId": "persimmons-vanilla",
-      "title": "Persimmons - Vanilla",
-      "code": "69220",
-      "family": "Persimmons",
-      "status": "mapped",
-      "mappingKind": "single",
-      "mappingReason": "The catalog records one checkout code for an interpreted in-scope produce identity.",
-      "order": 116
-    },
-    {
-      "catalogId": "persimmons-vanilla-case",
-      "title": "Persimmons - Vanilla (Case)",
-      "code": "71207",
-      "family": "Persimmons",
       "status": "mapped",
       "mappingKind": "single",
       "mappingReason": "The catalog records one checkout code for an interpreted in-scope produce identity.",
@@ -1536,7 +1532,7 @@
       "code": "2569710",
       "family": "Source review",
       "status": "queued",
-      "queueReason": "Store barcode needs separate handling",
+      "queueReason": "Store code type needs confirmation",
       "queueReasonCodes": [
         "store-barcode-not-plu",
         "unclassified-product"

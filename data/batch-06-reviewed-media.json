@@ -1840,6 +1840,62 @@
       "reviewBasis": "Exact Hachiya fruit in a market crate; avoids drying and mixed-variety results. Store-only or package qualifiers remain workbook-label claims and are not inferred from pixels."
     },
     {
+      "catalogId": "persimmons-vanilla",
+      "code": "69220",
+      "commonsFile": "https://www.frontiersin.org/files/Articles/1093074/xml-images/fpls-14-1093074-g001.webp",
+      "recognitionMode": "label-assisted",
+      "visibleIdentity": {
+        "label": "Persimmon",
+        "form": "Round to slightly flattened fruit with leafy calyx",
+        "color": "Orange",
+        "cue": "Whole fruit has smooth orange skin, a rounded outline, and a broad green calyx."
+      },
+      "labelClaims": [
+        {
+          "value": "Vanilla",
+          "basis": "workbook-label",
+          "sourceField": "catalog.item",
+          "sourcePages": [
+            5
+          ]
+        }
+      ],
+      "sharedMediaBasis": "One reviewed Vaniglia research panel supplies fruit recognition to both Vanilla listings. It is not a photo of a case and cannot choose between the distinct workbook codes 69220 and 71207. Repeated roles are disclosed as a one-source fallback.",
+      "reviewBasis": "Inspected the decoded original. Panel C is bottom-left: whole orange round to slightly flattened fruits, green calyx, two cut views with brown-orange seeded interiors, and loose seeds on a neutral background. Other panels depict other cultivars and must never enter this lesson's recognition frame. The rendered fixed viewport is required; full-figure or different-panel presentation is not approved."
+    },
+    {
+      "catalogId": "persimmons-vanilla-case",
+      "code": "71207",
+      "commonsFile": "https://www.frontiersin.org/files/Articles/1093074/xml-images/fpls-14-1093074-g001.webp",
+      "recognitionMode": "label-assisted",
+      "visibleIdentity": {
+        "label": "Persimmon",
+        "form": "Round to slightly flattened fruit with leafy calyx",
+        "color": "Orange",
+        "cue": "Whole fruit has smooth orange skin, a rounded outline, and a broad green calyx."
+      },
+      "labelClaims": [
+        {
+          "value": "Vanilla",
+          "basis": "workbook-label",
+          "sourceField": "catalog.item",
+          "sourcePages": [
+            5
+          ]
+        },
+        {
+          "value": "Case",
+          "basis": "workbook-label",
+          "sourceField": "catalog.item",
+          "sourcePages": [
+            5
+          ]
+        }
+      ],
+      "sharedMediaBasis": "One reviewed Vaniglia research panel supplies fruit recognition to both Vanilla listings. It is not a photo of a case and cannot choose between the distinct workbook codes 69220 and 71207. Repeated roles are disclosed as a one-source fallback.",
+      "reviewBasis": "Inspected the decoded original. Panel C is bottom-left: whole orange round to slightly flattened fruits, green calyx, two cut views with brown-orange seeded interiors, and loose seeds on a neutral background. Other panels depict other cultivars and must never enter this lesson's recognition frame. The rendered fixed viewport is required; full-figure or different-panel presentation is not approved."
+    },
+    {
       "catalogId": "pistachios-bulk-nuts",
       "code": "1400",
       "commonsFile": "Pistachio nuts from Iran.jpg",

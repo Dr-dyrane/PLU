@@ -1,0 +1,234 @@
+{
+  "schemaVersion": 1,
+  "batch": "06",
+  "reviewedOn": "2026-09-04",
+  "scope": "One alternate-source pass over the nine mapped rows still lacking media. Research ledger only; no catalog, source code, readiness, or live-state changes.",
+  "method": "Read prior common and cultivar recovery ledgers; try multilingual names, primary research figures, grower references, and photographer metadata. Check exact identity, rights, pixels, source dimensions, and visible competing codes separately. Previous rejections remain historical evidence. No synthetic images or raster edits were made.",
+  "summary": {
+    "reviewedRows": 9,
+    "exactLicensedPhotoRowsPendingViewportIntegration": 2,
+    "newClippedFormCandidateRowsNotAdmitted": 1,
+    "otherUnresolvedRows": 6
+  },
+  "assets": {
+    "vaniglia-research-figure-1-panel-c": {
+      "sourceKind": "external-research-photograph",
+      "src": "https://www.frontiersin.org/files/Articles/1093074/xml-images/fpls-14-1093074-g001.webp",
+      "sourceUrl": "https://www.frontiersin.org/journals/plant-science/articles/10.3389/fpls.2023.1093074/full",
+      "sourceLabel": "Frontiers in Plant Science, De Pascale et al. (2023), Figure 1C",
+      "author": "Sabrina De Pascale, Antonio Dario Troise, Milena Petriccione, Angelina Nunziata, Danilo Cice, Anna Magri, Anna Maria Salzano and Andrea Scaloni",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "width": 1949,
+      "height": 1553,
+      "sha256": "d2d628626cee812c3bf379a95a459bed4e4acc5e91d1b17a795929e64989d15c",
+      "localInspectionPath": "/tmp/plu-final-mapped-media.mHfnaw/vaniglia-research.webp",
+      "licenseBasis": "The publication copyright section licenses the article CC BY and links CC BY 4.0. Figure 1 has no separate third-party credit or license exception. Preserve author credit, publication citation, license link, and viewport disclosure.",
+      "identityBasis": "The primary study explicitly identifies panel C as Vaniglia; its fruit material section documents orchard-grown, harvested specimens. Nursery name references connect Vaniglia to English Vanilla persimmon.",
+      "pixelReview": "Inspected the decoded original. Panel C is bottom-left: whole orange round to slightly flattened fruits, green calyx, two cut views with brown-orange seeded interiors, and loose seeds on a neutral background. Other panels depict other cultivars and must never enter this lesson's recognition frame.",
+      "proposedSourceViewport": {
+        "x": 8,
+        "y": 760,
+        "width": 1068,
+        "height": 745,
+        "basis": "Interior of bottom-left panel C, excluding other cultivar panels and the lower scale bar. Browser review at mobile and desktop lesson sizes confirms only the cultivar panel is shown; a small edge of its C label may remain. No raster alteration has been performed."
+      },
+      "requiredPresentation": "Use only a fixed reviewed panel-C source viewport. Do not display the full four-cultivar figure, claim independent observations from one composite, or infer store origin, package quantity, flavor, or checkout code from this image.",
+      "roleReuseBasis": "One published photographic panel is available. Reusing its viewport across hero, alternate, and context roles remains a one-source fallback, not three independent photographs."
+    },
+    "celery-clipped-a": {
+      "sourceKind": "commons-photograph",
+      "commonsFile": "Staudensellerie IMG 20220501 A.jpg",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Staudensellerie_IMG_20220501_A.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Staudensellerie_IMG_20220501_A.jpg",
+      "author": "IgorCalzone1",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "width": 2489,
+      "height": 2472,
+      "sha1": "41fc8c2850a042c174b941dac0a5312ce615eddc",
+      "localInspectionPath": "/tmp/plu-final-mapped-media.mHfnaw/celery-a.jpg",
+      "pixelReview": "Raw green celery bunch held in a hand, visibly clipped ribbed stalk tips around central leaves. Hand obscures the bottom. No retail label or scale establishes Hearts, length, trimming grade, or selling unit."
+    },
+    "celery-clipped-b": {
+      "sourceKind": "commons-photograph",
+      "commonsFile": "Staudensellerie IMG 20220501 B.jpg",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/4/40/Staudensellerie_IMG_20220501_B.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Staudensellerie_IMG_20220501_B.jpg",
+      "author": "IgorCalzone1",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "width": 2566,
+      "height": 2531,
+      "sha1": "b6d190086210ef73bbe45b3d78172a3ed4b6c817",
+      "localInspectionPath": "/tmp/plu-final-mapped-media.mHfnaw/celery-b.jpg",
+      "pixelReview": "Different angle of the same clipped bunch: long parallel green ribbed stalks, cut tops and central leaves; bottom is held in a hand. Exact heart selection and 7-to-10-inch commercial form are not documented."
+    }
+  },
+  "items": [
+    {
+      "catalogId": "celery-hearts",
+      "sourceItem": "Celery - Hearts",
+      "codeText": "4575",
+      "sourcePages": [4],
+      "decision": "requires-form-adjudication",
+      "candidateAssets": ["celery-clipped-a", "celery-clipped-b"],
+      "queries": ["celery hearts Flickr", "celery hearts openfoodfacts", "Commons intitle:Staudensellerie filetype:bitmap"],
+      "results": [
+        "German Staudensellerie search found two new high-resolution licensed photographs of visibly clipped celery, both inspected. They resolve the old tiny-photo failure but not documented commercial Hearts identity.",
+        "OpenFoodFacts web search was blocked by robots.txt; no retry or alternate endpoint was used.",
+        "Flickr search returned a black-and-white artistic heart-shaped-food lead and plated dishes, not an eligible retail-form photograph.",
+        "Staudensellerie.jpg (Denis Barthel, CC BY-SA 3.0) was inspected and rejected: growing leafy canopy, with no clipped bunch visible."
+      ],
+      "identitySources": [
+        {"url": "https://www.ams.usda.gov/sites/default/files/media/Celery_Inspection_Instructions%5B1%5D.pdf", "claim": "Prior ledger's USDA identity reference describes commercial Hearts as clipped celery of specified length; the new photos contain no measurement or exact Hearts caption."}
+      ],
+      "blocker": "New pictures prove clipped celery, not the exact commercial Hearts selection. Do not silently equate every trimmed bunch with Hearts. Either record a justified label-assisted form adjudication without asserting length, or obtain an exact Hearts photograph with reuse permission.",
+      "proposedVisibleIdentityIfAdjudicated": {"label": "Celery", "form": "Clipped ribbed stalk bunch", "color": "Green", "cue": "Parallel ribbed stalks have cut tops with smaller central leaves."},
+      "notVisibleClaims": ["Hearts", "7-to-10-inch length", "package count", "code 4575"]
+    },
+    {
+      "catalogId": "melons-goldendew",
+      "sourceItem": "Melons - Goldendew",
+      "codeText": "3100",
+      "sourcePages": [5],
+      "decision": "unresolved",
+      "queries": ["golden honeydew Flickr", "Gold Honeymelon photograph license", "Fisher Ranch Dewlicious media images download"],
+      "results": [
+        "Fisher Ranch's primary Golden Dewlicious reference describes the exact smooth golden-yellow category and keeps it separate from Juan Canary and Golden Hami.",
+        "A new Flickr result is explicitly Casaba Golden Beauty and all rights reserved; not a Golden Dew substitute.",
+        "PIXbank yellow-honeydew stock photographs require a purchased license. No purchase or permission was made.",
+        "The prior striped Commons Golden honeydew melon.jpg rejection remains valid."
+      ],
+      "sources": ["https://fisherranch.com/", "https://www.flickr.com/photos/lifesgreatadventures/14513470493/", "https://depositphotos.com/182667548/stock-photo-one-yellow-honeydew-melon-two.html"],
+      "blocker": "No exact smooth Golden Dew photograph with established free-reuse rights. Request a Fisher Ranch photo grant or supply an original correctly identified photograph; do not relabel Casaba, Canary, or striped Asian melons."
+    },
+    {
+      "catalogId": "melons-honeykiss",
+      "sourceItem": "Melons - Honeykiss",
+      "codeText": "4375",
+      "sourcePages": [5],
+      "decision": "unresolved",
+      "queries": ["Honey Kiss melons Flickr -Garcinia -achacha", "Kiss Melons media assets image permission", "Honey Kiss melon photo license"],
+      "results": [
+        "Exact current grower and Kroger listings show Honey Kiss product photographs, with no reuse grant established.",
+        "Photographer searches returned Achacha, whose name translates to honey kiss, and non-target Sugar Kiss material. Neither is admissible.",
+        "Generic Hami remains insufficient for the named Honey Kiss commercial variety."
+      ],
+      "sources": ["https://kissmelons.com/melons/honey-kiss/", "https://www.kroger.com/p/honey-kiss-melon/0085142600218"],
+      "blocker": "Need permission-cleared exact Honey Kiss specimen imagery. A related Hami photo and the similar Sugar Kiss name do not close identity or photo-rights requirements."
+    },
+    {
+      "catalogId": "papayas-meridol",
+      "sourceItem": "Papayas - Meridol",
+      "codeText": "3112",
+      "sourcePages": [2],
+      "decision": "unresolved",
+      "queries": ["Maradol papaya fruit photograph open access figure", "Maradol papaya Creative Commons", "Commons intitle:Maradol filetype:bitmap"],
+      "results": [
+        "A different Farmanac photograph explicitly identifies Maradol and was pixel-inspected, but several stickers visibly show 4395. It repeats the old candidate's lesson-code conflict.",
+        "Farmanac's standard license is CC BY-NC-SA 2.0. Its separate website attribution wording was not treated as an unambiguous unrestricted commercial grant.",
+        "A new 2026 MDPI ripeness paper supplies statistical plots and microscopy, not a usable whole-fruit recognition photograph.",
+        "Commons exact-name search still returns the prior Maradol papaya from Mexico.jpg only."
+      ],
+      "rejectedCandidate": {
+        "src": "https://live.staticflickr.com/3295/5827321586_2bc008e1c4_b.jpg",
+        "sourceUrl": "https://www.flickr.com/photos/farmanac/5827321586/",
+        "author": "Farmanac",
+        "license": "CC BY-NC-SA 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/2.0/",
+        "width": 681,
+        "height": 1024,
+        "localInspectionPath": "/tmp/plu-final-mapped-media.mHfnaw/maradol-farmanac.jpg",
+        "pixelReview": "Orange elongated papayas in tissue-lined produce crates; multiple yellow-red stickers clearly print 4395, including foreground fruit. No visual checkout-code erasure was performed."
+      },
+      "sources": ["https://www.mdpi.com/2304-8158/15/12/2170", "https://www.fredmeyer.com/p/papaya-meridol-cut/0020424250000"],
+      "blocker": "Meridol/Maradol name bridge is supported; still need an exact reuse-cleared image without competing visible PLU 4395. Workbook 3112 is unchanged."
+    },
+    {
+      "catalogId": "pears-taylor-gold",
+      "sourceItem": "Pears - Taylor Gold",
+      "codeText": "4553",
+      "sourcePages": [5],
+      "decision": "unresolved",
+      "queries": ["Taylor's Gold pear USDA photo", "Doyenne du Comice - Taylor's Gold germplasm", "Taylor's Gold pear CC BY", "Taylor's Gold pears photo license"],
+      "results": [
+        "USDA germplasm identity lead confirms a Taylor's Gold accession name, but no public-domain exact specimen photograph was retrieved.",
+        "Research findings for Taylor's Gold involved rootstock yield charts and puree-processing plots, not whole-fruit photographs.",
+        "New Envato and TurboSquid results are paid 3D renders, not real photographs. No purchase was made.",
+        "Prior CFIA, IP Australia, and commercial-photographer rights gaps remain unresolved."
+      ],
+      "sources": ["https://www.rosaceae.org/Publication/9047162", "https://elements.envato.com/taylors-gold-pear-F98PLDY", "https://www.turbosquid.com/3d-models/taylors-gold-pear-04-max/1399226", "https://active.inspection.gc.ca/english/plaveg/pbrpov/cropreport/par/app00001119e.shtml"],
+      "blocker": "Need a real Taylor's Gold photograph with documented reuse rights, not generic Comice/Bosc or a 3D reconstruction."
+    },
+    {
+      "catalogId": "persimmons-vanilla",
+      "sourceItem": "Persimmons - Vanilla",
+      "codeText": "69220",
+      "sourcePages": [5],
+      "decision": "photo-approved-pending-reviewed-viewport-integration",
+      "approvedAsset": "vaniglia-research-figure-1-panel-c",
+      "queries": ["Vaniglia fruits Figure persimmon", "Vanilla persimmon Vaniglia nursery"],
+      "identitySources": [
+        {"url": "https://www.gardenplantsonline.co.uk/product/kaki-vaniglia-caco-persimmon-tree/", "claim": "Direct nursery product explicitly pairs Latin name Diospyros kaki Vaniglia with English name Vanilla Persimmon."},
+        {"url": "https://vivainannini.com/en/vanilla-persimmon/", "claim": "Grower's English Vanilla Persimmon page uses vaniglia in the photographed cultivar description, independently corroborating the name bridge."},
+        {"url": "https://www.frontiersin.org/journals/plant-science/articles/10.3389/fpls.2023.1093074/full", "claim": "Figure 1C identifies the photographed Vaniglia specimens; article and figure have CC BY 4.0 reuse terms."}
+      ],
+      "recognitionMode": "label-assisted",
+      "visibleIdentity": {"label": "Vaniglia persimmon", "form": "Round to slightly flattened fruit with leafy calyx", "color": "Orange", "cue": "Whole fruit has smooth orange skin, a rounded outline, and a broad green calyx."},
+      "labelClaims": [{"value": "Vanilla", "basis": "workbook-label", "sourceField": "catalog.item", "sourcePages": [5]}],
+      "retailInterpretation": {"soldBy": "Weight", "saleForm": "Loose", "reviewBasis": "Curated learning helper for the unqualified loose-fruit listing; the workbook sale-unit cell is blank and must stay blank."},
+      "limits": "Vanilla is linked to the photographed cultivar through sources, not uniquely identifiable by exterior appearance. Never transfer the study's orchard origin, seed count, or properties to the store listing.",
+      "integrationRequirement": "Implement and render-check the exact approved panel viewport with attribution. The full figure fails recognition isolation."
+    },
+    {
+      "catalogId": "persimmons-vanilla-case",
+      "sourceItem": "Persimmons - Vanilla (Case)",
+      "codeText": "71207",
+      "sourcePages": [5],
+      "decision": "photo-approved-pending-reviewed-viewport-integration",
+      "approvedAsset": "vaniglia-research-figure-1-panel-c",
+      "sharesIdentityEvidenceWith": "persimmons-vanilla",
+      "queries": ["Vaniglia fruits Figure persimmon", "Vanilla persimmon Vaniglia nursery"],
+      "recognitionMode": "label-assisted",
+      "visibleIdentity": {"label": "Vaniglia persimmon", "form": "Round to slightly flattened fruit with leafy calyx", "color": "Orange", "cue": "Whole fruit has smooth orange skin, a rounded outline, and a broad green calyx."},
+      "labelClaims": [
+        {"value": "Vanilla", "basis": "workbook-label", "sourceField": "catalog.item", "sourcePages": [5]},
+        {"value": "Case", "basis": "workbook-label", "sourceField": "catalog.item", "sourcePages": [5]}
+      ],
+      "retailInterpretation": {"soldBy": "Each", "saleForm": "Case", "reviewBasis": "One named case is an interpreted catalog selling unit. Its quantity and packaging are not pictured; the source sale-unit cell stays blank."},
+      "limits": "The same reviewed fruit image supports recognition only. It does not show a case or establish a case quantity. Preserve the distinct exact code 71207; do not inherit loose code 69220.",
+      "integrationRequirement": "Same fixed panel-C viewport and attribution as the loose listing; separately verify the case label/code contract."
+    },
+    {
+      "catalogId": "tangerines-fall-glo",
+      "sourceItem": "Tangerines - Fall Glo",
+      "codeText": "3144",
+      "sourcePages": [3],
+      "decision": "unresolved",
+      "queries": ["Fallglo photograph USDA", "Fallglo image ars-grin", "site:usda.gov Fallglo photo citrus"],
+      "results": [
+        "UCR's primary collection page identifies accession CRC 3990 / PI 539541 and links USDA GRIN. The linked GRIN page returned 502 and did not provide a usable photo.",
+        "USDA publication searches supplied cultivar research records and unrelated magazine photographs; no exact Fallglo recognition photograph with attributable federal authorship was established.",
+        "The existing UF/IFAS exact photo remains excluded from the article's general Creative Commons license."
+      ],
+      "sources": ["https://citrusvariety.ucr.edu/crc3990", "https://npgsweb.ars-grin.gov/gringlobal/accessiondetail.aspx?id=1434477", "https://www.ars.usda.gov/research/publications/publication/?seqNo115=266606", "https://ask.ifas.ufl.edu/publication/CH075", "https://ask.ifas.ufl.edu/copyright"],
+      "blocker": "Need an exact Fallglo photo and photo-specific permission/license. USDA origin of the cultivar does not make another institution's photograph public domain; US Early Pride remains a distinct cultivar."
+    },
+    {
+      "catalogId": "watermelons-mickey-lee",
+      "sourceItem": "Watermelons - Mickey Lee",
+      "codeText": "4331",
+      "sourcePages": [3],
+      "decision": "unresolved",
+      "queries": ["Guia ilustrativa tipos sandia Monge Perez", "10669/83286 rights", "Mickey Lee watermelon creativecommons"],
+      "results": [
+        "Traced the earlier ResearchGate image to the actual University of Costa Rica repository record, author Jose Eladio Monge Perez, dated 2021-04-19, and its original PDF.",
+        "Repository landing page identifies the work and author but exposes no reuse license. Full-metadata page failed and a direct metadata request timed out; no permission was inferred from open download availability.",
+        "A similarly titled genotype guide is a different source and must not be confused with the types guide containing Mickey Lee."
+      ],
+      "sources": ["https://www.kerwa.ucr.ac.cr/items/e33a426e-826d-4d5e-809b-15d8ceb782d4", "https://hdl.handle.net/10669/83286", "https://www.kerwa.ucr.ac.cr/bitstreams/7e95fda4-98db-4e0f-a56b-a8b3e203f163/download", "https://www.kerwa.ucr.ac.cr/items/09597ca4-a18b-4ab5-ac22-92862c3ce05b"],
+      "blocker": "Exact university photo now has a primary-source trail but no verified reuse grant. Obtain author/university permission or an original exact cultivar photo; Sugar Baby and generic striped watermelons remain ineligible substitutions."
+    }
+  ]
+}

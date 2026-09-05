@@ -2054,11 +2054,9 @@
     "sourcePages": [
       5
     ],
-    "decision": "mapped",
-    "mappingKind": "single",
+    "decision": "candidate",
     "reasonCodes": [],
-    "reason": "The catalog records one checkout code for an interpreted in-scope produce identity.",
-    "flags": []
+    "reason": "Passed exact-code and loose-produce admission; media review required."
   },
   {
     "sourceOrder": 131,
@@ -2070,11 +2068,9 @@
     "sourcePages": [
       5
     ],
-    "decision": "mapped",
-    "mappingKind": "single",
+    "decision": "candidate",
     "reasonCodes": [],
-    "reason": "The catalog records one checkout code for an interpreted in-scope produce identity.",
-    "flags": []
+    "reason": "Passed exact-code and loose-produce admission; media review required."
   },
   {
     "sourceOrder": 132,
@@ -2518,7 +2514,7 @@
       "store-barcode-not-plu",
       "unclassified-product"
     ],
-    "reason": "Store barcode needs separate handling",
+    "reason": "Store code type needs confirmation",
     "flags": [
       "barcode-or-long-store-code"
     ]

@@ -1,0 +1,321 @@
+{
+  "schemaVersion": 1,
+  "batch": "batch-06",
+  "reviewedAt": "2026-09-04",
+  "scope": "The twelve queued rows whose mediaPlan was source-required at 8df106dc4cb32fb288e68d5143ad80c202cafb05. This is an evidence ledger, not a publishing or code-adjudication override.",
+  "method": "Read the original review decisions, searched exact names and primary-authority synonyms in English and relevant local-language terms, queried Commons metadata, and pixel-inspected downloaded candidates. Reusable means an explicit license was located, not that the photograph certifies the source-store code or package. Original rejections remain historical evidence. No image was generated, retouched, relabeled, or cropped to conceal a conflicting checkout label.",
+  "summary": {
+    "reviewedRows": 12,
+    "reviewedRecognitionCandidates": 5,
+    "reviewedContextOnlyCandidates": 2,
+    "stillNeedsExactMedia": 5,
+    "readyLessonAdmissions": 0
+  },
+  "items": [
+    {
+      "catalogId": "apples-large-extra-fancy-first-word-obscured",
+      "sourceItem": "Apples - Large Extra Fancy (first word obscured)",
+      "codeText": "4129",
+      "sourcePages": [5],
+      "decision": "source-required",
+      "reviewBasis": "The unknown first word may be the identity-bearing apple cultivar. A generic apple or another 4129 listing cannot establish it. The obscured-label flag and cross-row code collision remain independent blockers.",
+      "nextRequirement": "The original page 5 source photograph, or an authoritative store listing that identifies the obscured apple and its complete code relationship, before selecting a cultivar-specific photo."
+    },
+    {
+      "catalogId": "bananas-baby-bananas-mini-4186",
+      "sourceItem": "Bananas - Baby Bananas Mini 4186",
+      "codeText": "4234",
+      "sourcePages": [5],
+      "decision": "reviewed-context-candidate",
+      "preservedRejection": "The original only candidate was sweet bread or cookies, not bananas.",
+      "photo": {
+        "commonsFile": "Baby bananas for sale.jpg",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/Baby_bananas_for_sale.jpg/1280px-Baby_bananas_for_sale.jpg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Baby_bananas_for_sale.jpg",
+        "author": "BrokenSegue",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "width": 1848,
+        "height": 4000,
+        "sha1": "2d5bc9fd5d2c748a20be7745a5a1f0c24d2ce1c8",
+        "reviewedLocalPath": "/tmp/plu-final-queued-media.uzUmrj/baby-bananas.jpg",
+        "pixelReview": "Bright yellow short banana hands fill the image beside mangoes. Dole stickers, barcodes, a Baby Bananas sign, and a foreign retailer price are visible. The photographer identifies Dole baby bananas at Grocery Outlet.",
+        "allowedUse": "Reference context only after the target code relationship is adjudicated; not a label-free recall hero. Do not copy the photographed retailer's brand, price, barcode, or unit into the workbook record."
+      },
+      "nextRequirement": "Reconcile source label 4186 against recorded code 4234 and Red bananas' shared 4234; obtain a clean label-free exact mini-banana view for recognition-first recall."
+    },
+    {
+      "catalogId": "cabbage-sour",
+      "sourceItem": "Cabbage - Sour",
+      "codeText": "62380",
+      "sourcePages": [4],
+      "decision": "source-required",
+      "identitySources": [
+        {
+          "type": "primary-producer",
+          "source": "https://stjacobsfoods.com/products/",
+          "supports": "The producer distinguishes fermented whole cabbage heads with removed cores from shredded sauerkraut. This supports the product-form distinction, not a claim that this producer supplies the workbook store."
+        }
+      ],
+      "attempts": [
+        {
+          "source": "https://commons.wikimedia.org/wiki/File:Glavice_kiselog_kupusa_u_ba%C4%8Dvi_s_rasolom.jpg",
+          "outcome": "Preserve prior rejection. The only uploaded version is identified as Edited with Google AI / Edited using generative AI. No pre-edit original is available in file history; unknown edits cannot be treated as photographic truth."
+        },
+        {
+          "source": "https://commons.wikimedia.org/wiki/File:%D0%A0%D0%B0%D1%81%D0%BE%D0%BB.jpg",
+          "outcome": "Fresh alternative, CC BY-SA 4.0 by Tiveropolnik, 4624 x 3468. Source description explicitly says preparation of cabbage with salt for brine; not evidence of finished fermented heads. Rejected before pixel approval."
+        },
+        {
+          "source": "https://commons.wikimedia.org/wiki/File:%D0%9A%D0%B8%D1%81%D0%B5%D0%BB%D0%B8_%D0%BA%D1%83%D0%BF%D1%83%D1%81_%D1%81%D0%B0_%D0%BF%D0%B0%D0%BF%D1%80%D0%B8%D0%BA%D0%BE%D0%BC.jpg",
+          "outcome": "CC BY-SA 3.0 by Petar Milosevic, 2000 x 1561; source describes a prepared sauerkraut-and-pepper salad, not the whole-head checkout form. Rejected."
+        },
+        {
+          "source": "https://stjacobsfoods.com/products/",
+          "outcome": "Exact producer photographs exist, but the page states All Rights Reserved. No reuse grant located."
+        }
+      ],
+      "nextRequirement": "A genuine unedited photograph of finished whole sour-cabbage heads with an explicit reuse grant, preferably a source-store image confirming the stocked form. Do not use raw preparation cabbage or plated sauerkraut."
+    },
+    {
+      "catalogId": "cherries-white-ranier-264497",
+      "sourceItem": "Cherries - White Ranier (264497)",
+      "codeText": "4260",
+      "sourcePages": [5],
+      "decision": "reviewed-recognition-candidate",
+      "preservedRejection": "All five original candidates were dragonflies, not cherries.",
+      "identitySources": [
+        {
+          "type": "primary-university",
+          "source": "https://magazine.wsu.edu/2019/08/02/rainier-cherries/",
+          "supports": "WSU identifies Rainier as its developed yellow/red-blushed cherry, including the historical white-cherry description. Ranier is treated as source spelling, not silently rewritten in the catalog."
+        }
+      ],
+      "photo": {
+        "commonsFile": "Rainier cherries.jpg",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/Rainier_cherries.jpg/1280px-Rainier_cherries.jpg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rainier_cherries.jpg",
+        "author": "dnak (Dave Nakayama)",
+        "license": "CC BY 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+        "width": 2400,
+        "height": 1600,
+        "sha1": "d635b472e03ff7182295aabc83f6a1489572314a",
+        "reviewedLocalPath": "/tmp/plu-final-queued-media.uzUmrj/rainier.jpg",
+        "pixelReview": "Two sharply visible stemmed cherries have yellow-to-cream skins with red blush; more cherries are softly out of focus behind them. No brand, price, or checkout-code labels are present. Source metadata names Rainier cherries.",
+        "visibleIdentity": {"label": "Rainier cherries", "form": "Small round stemmed fruit", "color": "Yellow and Red", "cue": "Small round cherries with yellow skins and red blush, attached to slender green stems."},
+        "claimBoundary": "The exterior is not pure white. White is source/cherry-type language; a white interior is not visible. The competing label number 264497 is not cleared by this photo."
+      },
+      "nextRequirement": "Adjudicate 264497 versus 4260 from original store/source evidence. The reviewed photo alone cannot create a checkout-ready lesson."
+    },
+    {
+      "catalogId": "durian-frozen",
+      "sourceItem": "Durian (Frozen)",
+      "codeText": "?",
+      "sourcePages": [5],
+      "decision": "reviewed-context-candidate",
+      "photo": {
+        "commonsFile": "Frozen Durian Fruit.jpeg",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/9/90/Frozen_Durian_Fruit.jpeg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Frozen_Durian_Fruit.jpeg",
+        "author": "OttawaAC",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "width": 600,
+        "height": 800,
+        "sha1": "7a02a24c1b4cb0fc5b556e9848a8eb498223d045",
+        "reviewedLocalPath": "/tmp/plu-final-queued-media.uzUmrj/frozen-durian.jpeg",
+        "pixelReview": "Whole spiny durians in yellow mesh bags fill a store display. A Frozen Durian sign and retailer price, bag labels, and barcodes are visible. Source explicitly describes frozen durian in a Canadian grocery store.",
+        "allowedUse": "Frozen whole-fruit context, not proof that the workbook listing is a flesh/segment package, and not a label-free recognition source. No source-store identity, unit, price, or code is copied."
+      },
+      "nextRequirement": "Capture the missing checkout code and confirm whether the source store's Frozen listing means whole fruit or packaged flesh. The prior helper's flesh/segments assumption is not source-recorded."
+    },
+    {
+      "catalogId": "jackfruit-cut-handwritten",
+      "sourceItem": "Jackfruit - Cut (handwritten)",
+      "codeText": "?",
+      "sourcePages": [5],
+      "decision": "reviewed-recognition-candidate",
+      "photo": {
+        "commonsFile": "Jackfruit NS-1 01 Asit.jpg",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/54/Jackfruit_NS-1_01_Asit.jpg/1280px-Jackfruit_NS-1_01_Asit.jpg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jackfruit_NS-1_01_Asit.jpg",
+        "author": "Asit K. Ghosh (Thaumaturgist)",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "width": 2560,
+        "height": 1920,
+        "sha1": "5e3cd0f7be395ea33f06349258280cd97e5acb41",
+        "reviewedLocalPath": "/tmp/plu-final-queued-media.uzUmrj/cut-jackfruit.jpg",
+        "pixelReview": "Two raw vertically cut jackfruit halves on a dark background expose pale yellow flesh, white central cores, and large seeds inside green knobbly rinds. No labels or competing codes are visible.",
+        "visibleIdentity": {"label": "Cut jackfruit", "form": "Large lengthwise-cut halves with knobbly rind", "color": "Green and Yellow", "cue": "The cut halves expose yellow flesh and large seeds around a pale central core inside a knobbly green rind."},
+        "claimBoundary": "The source identifies a photographed NS-1 specimen in Florida; that cultivar and origin must not be transferred to the workbook's unspecified cut-jackfruit listing."
+      },
+      "nextRequirement": "The original handwritten identity and missing numeric checkout code still require source-store evidence."
+    },
+    {
+      "catalogId": "mangos-spice",
+      "sourceItem": "Mangos - Spice",
+      "codeText": "58654",
+      "sourcePages": [2],
+      "decision": "source-required",
+      "identitySources": [
+        {"type": "primary-government", "source": "https://agriculture.gov.gy/wp-content/uploads/2016/01/Mango.pdf", "supports": "Guyana's Ministry of Agriculture identifies Buxton Spice as a leading mango cultivar with golden-yellow ripe skin."},
+        {"type": "primary-government-research", "source": "https://narei.org.gy/wp-content/uploads/2024/04/Annual-Report-2002-.pdf", "supports": "NARI's annual report calls Spice a distinct popular mango variety; this strengthens the cultivar requirement and does not justify using unrelated mango cultivars."},
+        {"type": "primary-grower", "source": "https://www.tropicalacresfarms.com/product-page/buxton-spice", "supports": "The grower identifies its Buxton Spice tree and fruit and supplies an exact photograph. The page explicitly reserves all content/picture rights and asks users to contact it for permission."}
+      ],
+      "attempts": [
+        {"query": "Commons exact Spice mango, Buxton Spice, and mango plus spice", "outcome": "No exact freely reusable cultivar photograph found. Results are other named mango cultivars associated with Fruit and Spice Park, not Spice mango. Prior rejections remain."},
+        {"source": "https://www.tropicalacresfarms.com/product-page/buxton-spice", "outcome": "Promising exact grower photograph, but All Rights Reserved. Not downloaded for publishing and not approved."}
+      ],
+      "nextRequirement": "A reusable photograph of the exact Spice listing, or a source-store photograph/label confirming a precise synonym, plus any necessary photo license. Do not replace it with Julie, Ataulfo, Kent, or a generic yellow mango."
+    },
+    {
+      "catalogId": "onions-medium-50lb-724-58312",
+      "sourceItem": "Onions - Medium 50lb 724 / 58312",
+      "codeText": "63430",
+      "sourcePages": [4],
+      "decision": "source-required",
+      "preservedRejection": "The original only result was a wild-onion flower, not a retail bulb.",
+      "attempts": [
+        {
+          "source": "https://commons.wikimedia.org/wiki/File:Yellow_onions_vegetables.jpg",
+          "commonsFile": "Yellow onions vegetables.jpg",
+          "author": "Jon Sullivan",
+          "license": "Public domain",
+          "width": 1280,
+          "height": 960,
+          "sha1": "8fe9e1e87a1a16f54e192e3b8d767bfda8ebbe62",
+          "reviewedLocalPath": "/tmp/plu-final-queued-media.uzUmrj/onions.jpg",
+          "outcome": "Pixel review confirms two clean loose brown/yellow onions without labels. This is a usable generic onion image but does not identify the unspecified color/type of the source 50lb listing or its exact bag. Retain as a lead, not exact-row approval."
+        },
+        {
+          "source": "https://commons.wikimedia.org/wiki/File:Onions.jpg",
+          "outcome": "Alternate source currently has GFDL 1.2 / CC BY-NC metadata and no machine-readable author. No new approval; the already-reviewed old rows are not changed by this lane."
+        }
+      ],
+      "nextRequirement": "Source-store bag/label evidence specifying the onion identity and reconciling 724, 58312, and 63430. Medium and 50lb are not inferred from a loose bulb photo."
+    },
+    {
+      "catalogId": "pumpkins-jamaican",
+      "sourceItem": "Pumpkins - Jamaican",
+      "codeText": "434",
+      "sourcePages": [3],
+      "decision": "source-required",
+      "identitySources": [
+        {"type": "primary-government", "source": "https://www.agroinvest.gov.jm/wp-content/uploads/2025/11/Pumpkin-Crop-Profile.pdf", "locator": "Product Profile - Pumpkin, printed page 4", "supports": "Jamaica's Agro-Investment Corporation associates Jamaican pumpkin with Calabaza and Cucurbita moschata, describing variable mottled green/yellow/buff fruit. Used only for category terminology, not the document's unrelated health or commercial claims."},
+        {"type": "primary-grower", "source": "https://trueloveseeds.com/collections/vegetables-and-grains/products/jamaican-pumpkin", "supports": "The grower describes a diverse Jamaican Pumpkin population, C. moschata, also called West Indian Pumpkin or Calabaza. It does not establish that another named C. moschata cultivar is interchangeable with the workbook item."}
+      ],
+      "attempts": [
+        {
+          "source": "https://commons.wikimedia.org/wiki/File:Kalabasa_(Calabaza)_squash_from_the_Philippines.jpg",
+          "commonsFile": "Kalabasa (Calabaza) squash from the Philippines.jpg",
+          "author": "Obsidian Soul",
+          "license": "CC0 1.0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "width": 2784,
+          "height": 2044,
+          "sha1": "9dd3eb7124b7bd69c493f7b657d4abc7a792ffc0",
+          "reviewedLocalPath": "/tmp/plu-final-queued-media.uzUmrj/calabaza.jpg",
+          "outcome": "Pixel review confirms whole flattened mottled pumpkins and orange-fleshed cut pieces, but prominent foreign store labels include item number 000158, prices, weights, and barcodes. Reject for this 434 lesson; do not erase labels to make it pass. Philippine provenance also cannot establish a named Jamaican cultivar."
+        },
+        {"source": "https://commons.wikimedia.org/wiki/File:Calabaza_(cuc%C3%BArbita_moschata).jpg", "outcome": "Metadata names Butternut, a distinct form; not an exact Jamaican pumpkin candidate."},
+        {"source": "https://commons.wikimedia.org/wiki/File:Calabaza_Vines_(Flor_de_Auyama).jpg", "outcome": "Metadata describes a flower/vine and categorizes C. maxima; not the raw checkout fruit."},
+        {"source": "https://commons.wikimedia.org/wiki/File:MyPlate_gov_Cultural_Food_(20241025-USDA-FNS-UNK-0078).jpg", "outcome": "Public-domain USDA image is cooked/blended Haitian Soup Joumou, not raw pumpkin. Prior cooked-bowl rejection remains."}
+      ],
+      "nextRequirement": "A genuine reusable clean photograph of Jamaican/West Indian Calabaza fruit with no conflicting code label; Jamaican remains label-assisted unless exact cultivar/origin evidence is supplied. The alias research alone does not complete media admission."
+    },
+    {
+      "catalogId": "sweet-sop",
+      "sourceItem": "Sweet Sop",
+      "codeText": "2569710",
+      "sourcePages": [3],
+      "decision": "reviewed-recognition-candidate",
+      "identitySources": [
+        {"type": "primary-university", "source": "https://ask.ifas.ufl.edu/publication/MG330", "locator": "Scientific Name, Common Names, Fruit and Varieties sections", "supports": "UF/IFAS explicitly identifies sweetsop/sugar apple as Annona squamosa, distinct from cherimoya, soursop and atemoya, and documents green and red/purple forms."}
+      ],
+      "photo": {
+        "commonsFile": "Sugar apples from Sint Eustatius.jpg",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/Sugar_apples_from_Sint_Eustatius.jpg/1280px-Sugar_apples_from_Sint_Eustatius.jpg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sugar_apples_from_Sint_Eustatius.jpg",
+        "author": "GIS Statia",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+        "width": 2291,
+        "height": 3183,
+        "sha1": "40dc72f713c6a98e6671df07a1200536e34ddb78",
+        "reviewedLocalPath": "/tmp/plu-final-queued-media.uzUmrj/sweet-sop-statia.jpg",
+        "pixelReview": "Two harvested sugar apples sit loose on pale paper, one green/yellow and one red/purple. Their segmented scale-like surfaces are clear; no brand, price, or code label is present. The photographer identifies sugar apples from Sint Eustatius.",
+        "visibleIdentity": {"label": "Sweet sop (sugar apple)", "form": "Rounded fruit made of raised scale-like segments", "color": "Green and Purple", "cue": "Raised scale-like segments divide the rounded surface; sweet sop can have green or red-purple skin."},
+        "claimBoundary": "The photographed origin and unspecified cultivars are not transferred to the workbook row. The seven-digit source value remains unclassified; do not truncate it, assume a public PLU, or borrow another Annona code."
+      },
+      "contextPhoto": {
+        "commonsFile": "Annona squamosa fruit from Myanmar.jpg",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/Annona_squamosa_fruit_from_Myanmar.jpg/1280px-Annona_squamosa_fruit_from_Myanmar.jpg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Annona_squamosa_fruit_from_Myanmar.jpg",
+        "author": "Yarzaryeni",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+        "width": 6000,
+        "height": 4000,
+        "sha1": "88cb7c02ef903751529427908233b0b8cd44a61c",
+        "reviewedLocalPath": "/tmp/plu-final-queued-media.uzUmrj/sweet-sop-loose.jpg",
+        "pixelReview": "One clearly visible green segmented Annona squamosa fruit remains attached to a tree. Despite the temporary local filename, it is not a loose-retail image. Suitable as natural context only."
+      },
+      "otherPixelReviews": [
+        {"commonsFile": "Starr-130708-5644-Annona squamosa-fruit-Ulupalakua Ranch-Maui (25193375476).jpg", "outcome": "Correct taxon but mottled fruit is partly crossed by a branch; Myanmar context is clearer."},
+        {"commonsFile": "Annona squamosa (Martinique).jpg", "outcome": "Correct taxon on tree, usable contextual alternative; no loose-retail form."},
+        {"commonsFile": "Annona squamosa.jpg", "outcome": "Dark uneven lighting and confusing author/version history; not selected."},
+        {"commonsFile": "Annona squamosa03.JPG", "outcome": "Small immature fruit on tree, not suitable as the primary retail recognition view."},
+        {"commonsFile": "Sugar-apple fruit.jpg", "outcome": "Correct taxon on tree, but backlit; the reviewed Myanmar context is clearer."}
+      ],
+      "nextRequirement": "Classify and verify 2569710 against an authoritative store/scale/register source. Media evidence does not resolve the long-code flag."
+    },
+    {
+      "catalogId": "turnip-purple-top-white",
+      "sourceItem": "Turnip - Purple Top (White)",
+      "codeText": "?",
+      "sourcePages": [4],
+      "decision": "reviewed-recognition-candidate",
+      "photo": {
+        "commonsFile": "Liat Portal for Foodie Disorder - Turnip.jpg",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Liat_Portal_for_Foodie_Disorder_-_Turnip.jpg/1280px-Liat_Portal_for_Foodie_Disorder_-_Turnip.jpg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Liat_Portal_for_Foodie_Disorder_-_Turnip.jpg",
+        "author": "Liat Portal (HaJunkiyada), Foodie Disorder",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "width": 3024,
+        "height": 4032,
+        "sha1": "9eb4cd63084b5f000c272ce5254349e0c78f5a49",
+        "reviewedLocalPath": "/tmp/plu-final-queued-media.uzUmrj/turnip.jpg",
+        "pixelReview": "Three raw trimmed turnips on a dark surface have purple upper shoulders and visible white lower skin. No labels or codes are present. Source metadata explicitly identifies purple-topped white-bodied turnips.",
+        "visibleIdentity": {"label": "Purple-top white turnip", "form": "Rounded roots with trimmed leafy tops", "color": "Purple and White", "cue": "Purple shoulders fade into a white lower root beneath the trimmed top."},
+        "claimBoundary": "The photograph supports the color/form description, not a particular named Purple Top White Globe cultivar or the missing checkout code."
+      },
+      "nextRequirement": "Capture the missing numeric checkout code from an authoritative source; do not copy a rutabaga or other turnip listing's code."
+    },
+    {
+      "catalogId": "walnuts-bulk-nuts-handwritten",
+      "sourceItem": "Walnuts (Bulk) - Nuts (handwritten)",
+      "codeText": "4943",
+      "sourcePages": [2, 5],
+      "decision": "reviewed-recognition-candidate",
+      "photo": {
+        "commonsFile": "Walnuts whole and open.jpg",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/39/Walnuts_whole_and_open.jpg/1280px-Walnuts_whole_and_open.jpg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Walnuts_whole_and_open.jpg",
+        "author": "Mister rf",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "width": 6800,
+        "height": 3800,
+        "sha1": "e2d29c8b310388e89c2a32fdff2c0730a2ffea68",
+        "reviewedLocalPath": "/tmp/plu-final-queued-media.uzUmrj/walnuts.jpg",
+        "pixelReview": "A whole tan ridged walnut shell sits beside a half-open shell exposing its wrinkled kernel on a pale background. No label or checkout code is visible; source identifies whole and open walnuts.",
+        "visibleIdentity": {"label": "Walnuts", "form": "Ridged oval shells and wrinkled kernels", "color": "Tan", "cue": "An oval ridged shell encloses the folded, wrinkled walnut kernel."},
+        "claimBoundary": "Bulk is workbook-only. Showing both shell and kernel does not decide whether the source store sells shelled or unshelled walnuts under this handwritten listing."
+      },
+      "nextRequirement": "Verify the handwritten source identity/code 4943 and actual bulk form. The photograph cannot clear handwritten review by itself."
+    }
+  ]
+}

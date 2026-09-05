@@ -1,6 +1,7 @@
 import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
 import { words } from "./batch04/common.mjs";
+import { validateExternalPhoto } from "./batch06-external-photo.mjs";
 
 export const legacyRecoveryIds = new Set([
   "asparagus-organic", "dill-weed-pickling-herbs", "garlic-loose-bulk",
@@ -47,7 +48,8 @@ export function validateRecovery(document, catalog) {
       `${label}: only the eight reviewed legacy exclusions can be cleared.`);
     assert.ok(item.mediaReview?.commonsFile && item.src && item.sourceUrl && item.license && item.author,
       `${label}: approved recovery requires reviewed photo provenance and rights.`);
-    assert.match(item.src, /^https:\/\/(?:upload|thumb)\.wikimedia\.org\//,
+    if (item.externalPhoto) validateExternalPhoto(item);
+    else assert.match(item.src, /^https:\/\/(?:upload|thumb)\.wikimedia\.org\//,
       `${label}: recovery photo must have a supported media URL.`);
     assert.equal(item.mediaReview.catalogId, item.catalogId, `${label}: media target drifted.`);
     assert.equal(item.mediaReview.code, item.code, `${label}: media cannot change the checkout code.`);
@@ -60,7 +62,7 @@ export function validateRecovery(document, catalog) {
       assert.ok(item.identitySources?.length > 0 && item.mediaReview.identityEvidence.every((phrase) => words(phrase).length > 0),
         `${label}: synonym evidence needs a cited identity source.`);
     }
-    assert.match(item.sourceUrl, /^https:\/\/commons\.wikimedia\.org\/wiki\/File:/,
+    if (!item.externalPhoto) assert.match(item.sourceUrl, /^https:\/\/commons\.wikimedia\.org\/wiki\/File:/,
       `${label}: attribution must link to the exact Commons file.`);
     const roles = new Set();
     for (const photo of item.reviewedPhotos ?? []) {

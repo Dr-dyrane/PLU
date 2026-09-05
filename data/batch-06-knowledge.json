@@ -39,26 +39,25 @@
     },
     "media": {
       "not-applicable": 12,
-      "reviewed-candidate": 30,
+      "reviewed-candidate": 35,
       "reviewed-reuse-candidate": 18,
-      "reviewed-source": 94,
-      "source-required": 21
+      "reviewed-source": 96,
+      "source-required": 14
     },
     "publishability": {
       "blocked": 41,
       "excluded": 12,
-      "mapped": 28,
-      "ready": 94
+      "mapped": 26,
+      "ready": 96
     },
     "nextActions": {
       "adjudicate-source-identity": 18,
       "capture-checkout-code-evidence": 9,
       "keep-out-of-produce-lessons": 12,
-      "none": 94,
+      "none": 96,
       "reconcile-code-mapping": 32,
       "separate-store-barcode-from-plu": 1,
-      "source-and-review-recognition-media": 8,
-      "verify-retail-unit-and-code": 1
+      "source-and-review-recognition-media": 7
     }
   },
   "items": [
@@ -6736,7 +6735,7 @@
         "packageSignals": []
       },
       "mediaPlan": {
-        "status": "source-required",
+        "status": "reviewed-candidate",
         "query": "White Ranier cherries Small round stone fruit",
         "target": {
           "identity": "White Ranier cherries",
@@ -6744,7 +6743,17 @@
           "color": "White",
           "retailForm": "Loose"
         },
-        "source": null,
+        "source": {
+          "provenance": "data/review-lanes/batch06-final-queued-media.json",
+          "file": "Rainier cherries.jpg",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/Rainier_cherries.jpg/1280px-Rainier_cherries.jpg",
+          "match": "pixel-reviewed-candidate",
+          "reviewReason": "Two sharply visible stemmed cherries have yellow-to-cream skins with red blush; more cherries are softly out of focus behind them. No brand, price, or checkout-code labels are present. Source metadata names Rainier cherries.",
+          "claimBoundary": "The exterior is not pure white. White is source/cherry-type language; a white interior is not visible. The competing label number 264497 is not cleared by this photo.",
+          "author": "dnak (Dave Nakayama)",
+          "license": "CC BY 2.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rainier_cherries.jpg"
+        },
         "acceptance": [
           "Metadata must identify the exact product or a reviewed synonym.",
           "Visible form and identity-bearing modifiers must match the learner title.",
@@ -6759,11 +6768,6 @@
             "domain": "code",
             "code": "competing-label-number",
             "detail": "The source label contains a number that is not the catalog code."
-          },
-          {
-            "domain": "media",
-            "code": "media-evidence-required",
-            "detail": "No human-reviewed recognition source is attached to this exact row."
           }
         ],
         "nextAction": {
@@ -10838,7 +10842,7 @@
         "packageSignals": []
       },
       "mediaPlan": {
-        "status": "source-required",
+        "status": "reviewed-candidate",
         "query": "Cut jackfruit Cut sections of large textured fruit",
         "target": {
           "identity": "Cut jackfruit",
@@ -10846,7 +10850,17 @@
           "color": "Green and Yellow",
           "retailForm": "Cut"
         },
-        "source": null,
+        "source": {
+          "provenance": "data/review-lanes/batch06-final-queued-media.json",
+          "file": "Jackfruit NS-1 01 Asit.jpg",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/54/Jackfruit_NS-1_01_Asit.jpg/1280px-Jackfruit_NS-1_01_Asit.jpg",
+          "match": "pixel-reviewed-candidate",
+          "reviewReason": "Two raw vertically cut jackfruit halves on a dark background expose pale yellow flesh, white central cores, and large seeds inside green knobbly rinds. No labels or competing codes are visible.",
+          "claimBoundary": "The source identifies a photographed NS-1 specimen in Florida; that cultivar and origin must not be transferred to the workbook's unspecified cut-jackfruit listing.",
+          "author": "Asit K. Ghosh (Thaumaturgist)",
+          "license": "CC BY-SA 3.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jackfruit_NS-1_01_Asit.jpg"
+        },
         "acceptance": [
           "Metadata must identify the exact product or a reviewed synonym.",
           "Visible form and identity-bearing modifiers must match the learner title.",
@@ -10866,11 +10880,6 @@
             "domain": "code",
             "code": "missing-checkout-code",
             "detail": "The immutable catalog contains no numeric code for this row."
-          },
-          {
-            "domain": "media",
-            "code": "media-evidence-required",
-            "detail": "No human-reviewed recognition source is attached to this exact row."
           }
         ],
         "nextAction": {
@@ -19793,35 +19802,35 @@
         "status": "interpreted",
         "title": {
           "value": "Vanilla persimmon",
-          "basis": "taxonomy-helper",
+          "basis": "curated-knowledge",
           "sourceFields": [
             "catalog.item"
           ],
-          "confidence": "derived"
+          "confidence": "curated-interpretation"
         },
         "family": {
           "value": "Persimmons",
-          "basis": "taxonomy-helper",
+          "basis": "curated-knowledge",
           "sourceFields": [
             "catalog.item"
           ],
-          "confidence": "derived"
+          "confidence": "curated-interpretation"
         },
         "form": {
-          "value": "Round orange fruit with leafy cap",
-          "basis": "taxonomy-helper",
+          "value": "Round to slightly flattened fruit with leafy calyx",
+          "basis": "curated-knowledge",
           "sourceFields": [
             "catalog.item"
           ],
-          "confidence": "derived"
+          "confidence": "curated-interpretation"
         },
         "color": {
           "value": "Orange",
-          "basis": "taxonomy-helper",
+          "basis": "curated-knowledge",
           "sourceFields": [
             "catalog.item"
           ],
-          "confidence": "derived"
+          "confidence": "curated-interpretation"
         },
         "curationNote": null,
         "evidenceGaps": []
@@ -19852,7 +19861,7 @@
         "catalogSoldBy": null,
         "soldBy": {
           "value": "Weight",
-          "basis": "sale-helper",
+          "basis": "curated-knowledge",
           "sourceFields": [
             "catalog.item"
           ],
@@ -19860,25 +19869,45 @@
         },
         "saleForm": {
           "value": "Loose",
-          "basis": "sale-helper",
+          "basis": "curated-knowledge",
           "sourceFields": [
             "catalog.item",
             "catalog.soldBy"
           ],
           "confidence": "interpreted"
         },
-        "packageSignals": []
+        "packageSignals": [],
+        "interpretation": {
+          "provenance": "data/batch-06-recovery-decisions.json",
+          "reviewBasis": "Curated learning helper for the unqualified loose-fruit listing; the workbook sale-unit cell is blank and must stay blank."
+        }
       },
       "mediaPlan": {
-        "status": "source-required",
-        "query": "Vanilla persimmon Round orange fruit with leafy cap",
+        "status": "reviewed-source",
+        "query": "Vanilla persimmon Round to slightly flattened fruit with leafy calyx",
         "target": {
           "identity": "Vanilla persimmon",
-          "visibleForm": "Round orange fruit with leafy cap",
+          "visibleForm": "Round to slightly flattened fruit with leafy calyx",
           "color": "Orange",
           "retailForm": "Loose"
         },
-        "source": null,
+        "source": {
+          "provenance": "public/media-resolution-batch06.json",
+          "file": "https://www.frontiersin.org/files/Articles/1093074/xml-images/fpls-14-1093074-g001.webp",
+          "url": "https://www.frontiersin.org/files/Articles/1093074/xml-images/fpls-14-1093074-g001.webp",
+          "match": "reviewed-override",
+          "recognitionMode": "label-assisted",
+          "labelClaims": [
+            {
+              "value": "Vanilla",
+              "basis": "workbook-label",
+              "sourceField": "catalog.item",
+              "sourcePages": [
+                5
+              ]
+            }
+          ]
+        },
         "acceptance": [
           "Metadata must identify the exact product or a reviewed synonym.",
           "Visible form and identity-bearing modifiers must match the learner title.",
@@ -19891,17 +19920,11 @@
         "reviewBasis": "The catalog records one checkout code for an interpreted in-scope produce identity."
       },
       "publishability": {
-        "status": "mapped",
-        "blockers": [
-          {
-            "domain": "media",
-            "code": "media-evidence-required",
-            "detail": "No human-reviewed recognition source is attached to this exact row."
-          }
-        ],
+        "status": "ready",
+        "blockers": [],
         "nextAction": {
-          "type": "source-and-review-recognition-media",
-          "description": "Find a rights-compatible image whose metadata and visible retail form match this exact identity, then review it before admission."
+          "type": "none",
+          "description": "All current identity, code, retail, and media gates are satisfied."
         }
       }
     },
@@ -19936,36 +19959,36 @@
       "identityEvidence": {
         "status": "interpreted",
         "title": {
-          "value": "Vanilla persimmon",
-          "basis": "taxonomy-helper",
+          "value": "Vanilla persimmon case",
+          "basis": "curated-knowledge",
           "sourceFields": [
             "catalog.item"
           ],
-          "confidence": "derived"
+          "confidence": "curated-interpretation"
         },
         "family": {
           "value": "Persimmons",
-          "basis": "taxonomy-helper",
+          "basis": "curated-knowledge",
           "sourceFields": [
             "catalog.item"
           ],
-          "confidence": "derived"
+          "confidence": "curated-interpretation"
         },
         "form": {
-          "value": "Round orange fruit with leafy cap",
-          "basis": "taxonomy-helper",
+          "value": "Round to slightly flattened fruit with leafy calyx",
+          "basis": "curated-knowledge",
           "sourceFields": [
             "catalog.item"
           ],
-          "confidence": "derived"
+          "confidence": "curated-interpretation"
         },
         "color": {
           "value": "Orange",
-          "basis": "taxonomy-helper",
+          "basis": "curated-knowledge",
           "sourceFields": [
             "catalog.item"
           ],
-          "confidence": "derived"
+          "confidence": "curated-interpretation"
         },
         "curationNote": null,
         "evidenceGaps": []
@@ -19995,16 +20018,16 @@
         "status": "package-evidence-required",
         "catalogSoldBy": null,
         "soldBy": {
-          "value": "Weight",
-          "basis": "sale-helper",
+          "value": "Each",
+          "basis": "curated-knowledge",
           "sourceFields": [
             "catalog.item"
           ],
           "confidence": "interpreted"
         },
         "saleForm": {
-          "value": "Loose",
-          "basis": "sale-helper",
+          "value": "Case",
+          "basis": "curated-knowledge",
           "sourceFields": [
             "catalog.item",
             "catalog.soldBy"
@@ -20013,18 +20036,46 @@
         },
         "packageSignals": [
           "Case"
-        ]
+        ],
+        "interpretation": {
+          "provenance": "data/batch-06-recovery-decisions.json",
+          "reviewBasis": "One named case is an interpreted catalog selling unit. Its quantity and packaging are not pictured; the source sale-unit cell stays blank."
+        }
       },
       "mediaPlan": {
-        "status": "source-required",
-        "query": "Vanilla persimmon Round orange fruit with leafy cap",
+        "status": "reviewed-source",
+        "query": "Vanilla persimmon case Round to slightly flattened fruit with leafy calyx",
         "target": {
-          "identity": "Vanilla persimmon",
-          "visibleForm": "Round orange fruit with leafy cap",
+          "identity": "Vanilla persimmon case",
+          "visibleForm": "Round to slightly flattened fruit with leafy calyx",
           "color": "Orange",
-          "retailForm": "Loose"
+          "retailForm": "Case"
         },
-        "source": null,
+        "source": {
+          "provenance": "public/media-resolution-batch06.json",
+          "file": "https://www.frontiersin.org/files/Articles/1093074/xml-images/fpls-14-1093074-g001.webp",
+          "url": "https://www.frontiersin.org/files/Articles/1093074/xml-images/fpls-14-1093074-g001.webp",
+          "match": "reviewed-override",
+          "recognitionMode": "label-assisted",
+          "labelClaims": [
+            {
+              "value": "Vanilla",
+              "basis": "workbook-label",
+              "sourceField": "catalog.item",
+              "sourcePages": [
+                5
+              ]
+            },
+            {
+              "value": "Case",
+              "basis": "workbook-label",
+              "sourceField": "catalog.item",
+              "sourcePages": [
+                5
+              ]
+            }
+          ]
+        },
         "acceptance": [
           "Metadata must identify the exact product or a reviewed synonym.",
           "Visible form and identity-bearing modifiers must match the learner title.",
@@ -20037,22 +20088,11 @@
         "reviewBasis": "The catalog records one checkout code for an interpreted in-scope produce identity."
       },
       "publishability": {
-        "status": "mapped",
-        "blockers": [
-          {
-            "domain": "retail",
-            "code": "retail-package-evidence-required",
-            "detail": "The named package, case, bin, quantity, or processed form needs exact retail evidence."
-          },
-          {
-            "domain": "media",
-            "code": "media-evidence-required",
-            "detail": "No human-reviewed recognition source is attached to this exact row."
-          }
-        ],
+        "status": "ready",
+        "blockers": [],
         "nextAction": {
-          "type": "verify-retail-unit-and-code",
-          "description": "Capture the exact package, case, bin, or quantity and verify that its code belongs to that retail unit."
+          "type": "none",
+          "description": "All current identity, code, retail, and media gates are satisfied."
         }
       }
     },
@@ -24263,7 +24303,7 @@
         "packageSignals": []
       },
       "mediaPlan": {
-        "status": "source-required",
+        "status": "reviewed-candidate",
         "query": "Sweet sop (sugar apple) Round or heart-shaped segmented fruit",
         "target": {
           "identity": "Sweet sop (sugar apple)",
@@ -24271,7 +24311,17 @@
           "color": "Green",
           "retailForm": "Loose"
         },
-        "source": null,
+        "source": {
+          "provenance": "data/review-lanes/batch06-final-queued-media.json",
+          "file": "Sugar apples from Sint Eustatius.jpg",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/Sugar_apples_from_Sint_Eustatius.jpg/1280px-Sugar_apples_from_Sint_Eustatius.jpg",
+          "match": "pixel-reviewed-candidate",
+          "reviewReason": "Two harvested sugar apples sit loose on pale paper, one green/yellow and one red/purple. Their segmented scale-like surfaces are clear; no brand, price, or code label is present. The photographer identifies sugar apples from Sint Eustatius.",
+          "claimBoundary": "The photographed origin and unspecified cultivars are not transferred to the workbook row. The seven-digit source value remains unclassified; do not truncate it, assume a public PLU, or borrow another Annona code.",
+          "author": "GIS Statia",
+          "license": "CC BY 4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sugar_apples_from_Sint_Eustatius.jpg"
+        },
         "acceptance": [
           "Metadata must identify the exact product or a reviewed synonym.",
           "Visible form and identity-bearing modifiers must match the learner title.",
@@ -24285,12 +24335,7 @@
           {
             "domain": "code",
             "code": "store-barcode-not-plu",
-            "detail": "The catalog marks this value as a long store barcode."
-          },
-          {
-            "domain": "media",
-            "code": "media-evidence-required",
-            "detail": "No human-reviewed recognition source is attached to this exact row."
+            "detail": "The source has a long or flagged store code whose checkout role is not confirmed."
           }
         ],
         "nextAction": {
@@ -25650,7 +25695,7 @@
         "packageSignals": []
       },
       "mediaPlan": {
-        "status": "source-required",
+        "status": "reviewed-candidate",
         "query": "Purple Top root vegetable Firm underground root or tuber",
         "target": {
           "identity": "Purple Top root vegetable",
@@ -25658,7 +25703,17 @@
           "color": "Purple",
           "retailForm": "Loose"
         },
-        "source": null,
+        "source": {
+          "provenance": "data/review-lanes/batch06-final-queued-media.json",
+          "file": "Liat Portal for Foodie Disorder - Turnip.jpg",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Liat_Portal_for_Foodie_Disorder_-_Turnip.jpg/1280px-Liat_Portal_for_Foodie_Disorder_-_Turnip.jpg",
+          "match": "pixel-reviewed-candidate",
+          "reviewReason": "Three raw trimmed turnips on a dark surface have purple upper shoulders and visible white lower skin. No labels or codes are present. Source metadata explicitly identifies purple-topped white-bodied turnips.",
+          "claimBoundary": "The photograph supports the color/form description, not a particular named Purple Top White Globe cultivar or the missing checkout code.",
+          "author": "Liat Portal (HaJunkiyada), Foodie Disorder",
+          "license": "CC BY-SA 4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Liat_Portal_for_Foodie_Disorder_-_Turnip.jpg"
+        },
         "acceptance": [
           "Metadata must identify the exact product or a reviewed synonym.",
           "Visible form and identity-bearing modifiers must match the learner title.",
@@ -25673,11 +25728,6 @@
             "domain": "code",
             "code": "missing-checkout-code",
             "detail": "The immutable catalog contains no numeric code for this row."
-          },
-          {
-            "domain": "media",
-            "code": "media-evidence-required",
-            "detail": "No human-reviewed recognition source is attached to this exact row."
           }
         ],
         "nextAction": {
@@ -25938,7 +25988,7 @@
         "packageSignals": []
       },
       "mediaPlan": {
-        "status": "source-required",
+        "status": "reviewed-candidate",
         "query": "Bulk walnuts Large ridged nuts in brown shells",
         "target": {
           "identity": "Bulk walnuts",
@@ -25946,7 +25996,17 @@
           "color": "Brown",
           "retailForm": "Loose"
         },
-        "source": null,
+        "source": {
+          "provenance": "data/review-lanes/batch06-final-queued-media.json",
+          "file": "Walnuts whole and open.jpg",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/39/Walnuts_whole_and_open.jpg/1280px-Walnuts_whole_and_open.jpg",
+          "match": "pixel-reviewed-candidate",
+          "reviewReason": "A whole tan ridged walnut shell sits beside a half-open shell exposing its wrinkled kernel on a pale background. No label or checkout code is visible; source identifies whole and open walnuts.",
+          "claimBoundary": "Bulk is workbook-only. Showing both shell and kernel does not decide whether the source store sells shelled or unshelled walnuts under this handwritten listing.",
+          "author": "Mister rf",
+          "license": "CC BY-SA 4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Walnuts_whole_and_open.jpg"
+        },
         "acceptance": [
           "Metadata must identify the exact product or a reviewed synonym.",
           "Visible form and identity-bearing modifiers must match the learner title.",
@@ -25961,11 +26021,6 @@
             "domain": "identity",
             "code": "identity-source-review",
             "detail": "Handwritten, obscured, or separately excluded source wording needs adjudication."
-          },
-          {
-            "domain": "media",
-            "code": "media-evidence-required",
-            "detail": "No human-reviewed recognition source is attached to this exact row."
           }
         ],
         "nextAction": {

@@ -1513,6 +1513,49 @@
     "sourceOrder": 129
   },
   {
+    "catalogId": "persimmons-vanilla",
+    "title": "Persimmons - Vanilla",
+    "code": "69220",
+    "family": "Persimmons",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Round to slightly flattened fruit with leafy calyx",
+    "color": "Orange",
+    "imageQuery": "Persimmon raw produce",
+    "cue": "Whole fruit has smooth orange skin, a rounded outline, and a broad green calyx.",
+    "group": "persimmons",
+    "sourcePages": [
+      5
+    ],
+    "flags": [
+      "sold-by-curated"
+    ],
+    "sourceItem": "Persimmons - Vanilla",
+    "sourceOrder": 130
+  },
+  {
+    "catalogId": "persimmons-vanilla-case",
+    "title": "Persimmons - Vanilla (Case)",
+    "code": "71207",
+    "family": "Persimmons",
+    "soldBy": "Each",
+    "saleForm": "Case",
+    "form": "Round to slightly flattened fruit with leafy calyx",
+    "color": "Orange",
+    "imageQuery": "Persimmon raw produce",
+    "cue": "Whole fruit has smooth orange skin, a rounded outline, and a broad green calyx.",
+    "group": "persimmons",
+    "sourcePages": [
+      5
+    ],
+    "flags": [
+      "sold-by-curated",
+      "retail-form-specific"
+    ],
+    "sourceItem": "Persimmons - Vanilla (Case)",
+    "sourceOrder": 131
+  },
+  {
     "catalogId": "pistachios-bulk-nuts",
     "title": "Pistachios (Bulk) - Nuts",
     "code": "1400",

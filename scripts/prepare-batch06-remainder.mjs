@@ -25,7 +25,7 @@ const reasonLabels = {
   "missing-code": "Missing verified checkout code",
   "multiple-codes": "Multiple source codes need one primary mapping",
   "outside-produce-scope": "Outside the produce-learning scope",
-  "store-barcode-not-plu": "Store barcode needs separate handling",
+  "store-barcode-not-plu": "Store code type needs confirmation",
   "uncertain-source": "Source identity or code is marked uncertain",
   "package-evidence-required": "Package or case evidence is required",
   "duplicate-label-codes": "The same source label has competing codes",

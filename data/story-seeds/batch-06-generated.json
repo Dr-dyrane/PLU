@@ -10128,12 +10128,12 @@
     "title": "Persimmons - Hachiya (Case)",
     "shortTitle": "Persimmons - Hachiya (Case)",
     "family": "Persimmons",
-    "priority": "common",
+    "priority": "must-know",
     "selection": {
-      "rawScore": 75,
-      "score": 75,
-      "band": "Common",
-      "priority": "common"
+      "rawScore": 90,
+      "score": 90,
+      "band": "Essential",
+      "priority": "must-know"
     },
     "identity": {
       "family": "Persimmons",
@@ -10205,12 +10205,12 @@
           "label": "Orange · Round orange fruit with leafy cap"
         },
         {
-          "id": "confusion-persimmons-sharon-fruit",
-          "label": "Sharon Fruit persimmon"
+          "id": "confusion-persimmons-vanilla",
+          "label": "Persimmons - Vanilla"
         },
         {
-          "id": "confusion-apples-ambrosia-bin",
-          "label": "Apples - Ambrosia (Bin)"
+          "id": "confusion-persimmons-vanilla-case",
+          "label": "Persimmons - Vanilla (Case)"
         }
       ]
     },
@@ -10229,21 +10229,21 @@
     ],
     "similarItems": [
       {
-        "name": "Sharon Fruit persimmon",
-        "code": "4429",
-        "cue": "Sharon Fruit persimmon is identified by its orange appearance and round orange fruit with leafy cap.",
+        "name": "Persimmons - Vanilla",
+        "code": "69220",
+        "cue": "Whole fruit has smooth orange skin, a rounded outline, and a broad green calyx.",
         "color": "#4F8B58"
       },
       {
-        "name": "Apples - Ambrosia (Bin)",
-        "code": "25040",
-        "cue": "The reviewed photograph clearly shows apples - ambrosia in round apple form.",
+        "name": "Persimmons - Vanilla (Case)",
+        "code": "71207",
+        "cue": "Whole fruit has smooth orange skin, a rounded outline, and a broad green calyx.",
         "color": "#C25D52"
       },
       {
-        "name": "Apples - Ambrosia PC",
-        "code": "64749",
-        "cue": "Round apples with a mixed red-yellow blush anchor the Ambrosia identity.",
+        "name": "Sharon Fruit persimmon",
+        "code": "4429",
+        "cue": "Sharon Fruit persimmon is identified by its orange appearance and round orange fruit with leafy cap.",
         "color": "#D1A23B"
       }
     ],
@@ -10259,7 +10259,372 @@
         "sold-by-curated",
         "retail-form-specific",
         "batch-06",
-        "catalog-remainder-common",
+        "catalog-remainder-essential",
+        "media-reviewed-override",
+        "media-shared-reviewed",
+        "media-label-assisted",
+        "qualifier-workbook-label"
+      ],
+      "confidence": "verified-from-supplied-material"
+    }
+  },
+  {
+    "schemaVersion": "0.9.0",
+    "id": "persimmons-vanilla-69220",
+    "catalogId": "persimmons-vanilla",
+    "title": "Persimmons - Vanilla",
+    "shortTitle": "Persimmons - Vanilla",
+    "family": "Persimmons",
+    "priority": "must-know",
+    "selection": {
+      "rawScore": 90,
+      "score": 90,
+      "band": "Essential",
+      "priority": "must-know"
+    },
+    "identity": {
+      "family": "Persimmons",
+      "form": "Round to slightly flattened fruit with leafy calyx",
+      "color": "Orange",
+      "variant": "Persimmons - Vanilla"
+    },
+    "checkout": {
+      "code": "69220",
+      "soldBy": "Weight",
+      "saleForm": "Loose",
+      "codeScope": "catalog-listed-retail-unit"
+    },
+    "photos": [
+      {
+        "id": "persimmons-vanilla-69220-hero",
+        "file": "https://www.frontiersin.org/files/Articles/1093074/xml-images/fpls-14-1093074-g001.webp",
+        "src": "https://www.frontiersin.org/files/Articles/1093074/xml-images/fpls-14-1093074-g001.webp",
+        "alt": "Persimmon reference photograph showing whole fruit has smooth orange skin, a rounded outline, and a broad green calyx.. Only the reviewed cultivar panel is shown.",
+        "role": "hero",
+        "focus": "50% 50%",
+        "author": "De Pascale, Troise, Petriccione, Nunziata, Cice, Magri, Salzano and Scaloni",
+        "license": "CC BY 4.0",
+        "sourceUrl": "https://www.frontiersin.org/journals/plant-science/articles/10.3389/fpls.2023.1093074/full",
+        "sourceLabel": "Frontiers in Plant Science (2023), Figure 1C; reviewed panel viewport",
+        "viewport": {
+          "x": 8,
+          "y": 760,
+          "width": 1068,
+          "height": 745,
+          "sourceWidth": 1949,
+          "sourceHeight": 1553
+        }
+      },
+      {
+        "id": "persimmons-vanilla-69220-alternate",
+        "file": "https://www.frontiersin.org/files/Articles/1093074/xml-images/fpls-14-1093074-g001.webp",
+        "src": "https://www.frontiersin.org/files/Articles/1093074/xml-images/fpls-14-1093074-g001.webp",
+        "alt": "Alternate crop of Persimmon highlighting its round to slightly flattened fruit with leafy calyx. Only the reviewed cultivar panel is shown.",
+        "role": "alternate",
+        "focus": "38% 50%",
+        "reuseOf": "https://www.frontiersin.org/files/Articles/1093074/xml-images/fpls-14-1093074-g001.webp",
+        "fallbackReason": "The same reviewed research panel is reused across roles; this is not a second photograph.",
+        "author": "De Pascale, Troise, Petriccione, Nunziata, Cice, Magri, Salzano and Scaloni",
+        "license": "CC BY 4.0",
+        "sourceUrl": "https://www.frontiersin.org/journals/plant-science/articles/10.3389/fpls.2023.1093074/full",
+        "sourceLabel": "Frontiers in Plant Science (2023), Figure 1C; reviewed panel viewport",
+        "viewport": {
+          "x": 8,
+          "y": 760,
+          "width": 1068,
+          "height": 745,
+          "sourceWidth": 1949,
+          "sourceHeight": 1553
+        }
+      },
+      {
+        "id": "persimmons-vanilla-69220-context",
+        "file": "https://www.frontiersin.org/files/Articles/1093074/xml-images/fpls-14-1093074-g001.webp",
+        "src": "https://www.frontiersin.org/files/Articles/1093074/xml-images/fpls-14-1093074-g001.webp",
+        "alt": "Persimmon produce reference emphasizing its orange appearance. Only the reviewed cultivar panel is shown.",
+        "role": "context",
+        "focus": "62% 50%",
+        "reuseOf": "https://www.frontiersin.org/files/Articles/1093074/xml-images/fpls-14-1093074-g001.webp",
+        "fallbackReason": "The same reviewed research panel is reused across roles; this is not a second photograph.",
+        "author": "De Pascale, Troise, Petriccione, Nunziata, Cice, Magri, Salzano and Scaloni",
+        "license": "CC BY 4.0",
+        "sourceUrl": "https://www.frontiersin.org/journals/plant-science/articles/10.3389/fpls.2023.1093074/full",
+        "sourceLabel": "Frontiers in Plant Science (2023), Figure 1C; reviewed panel viewport",
+        "viewport": {
+          "x": 8,
+          "y": 760,
+          "width": 1068,
+          "height": 745,
+          "sourceWidth": 1949,
+          "sourceHeight": 1553
+        }
+      }
+    ],
+    "visualCues": [
+      "Whole fruit has smooth orange skin, a rounded outline, and a broad green calyx.",
+      "The visible color is orange; Vanilla is from the workbook label, not appearance.",
+      "Match the store label to Persimmons - Vanilla before using 69220."
+    ],
+    "classification": {
+      "familyAnswer": "persimmons",
+      "familyChoices": [
+        {
+          "id": "persimmons",
+          "label": "Persimmons"
+        },
+        {
+          "id": "stalk-vegetables",
+          "label": "Stalk Vegetables"
+        },
+        {
+          "id": "apples",
+          "label": "Apples"
+        }
+      ],
+      "formAnswer": "round-to-slightly-flattened-fruit-with-leafy-calyx",
+      "formChoices": [
+        {
+          "id": "round-to-slightly-flattened-fruit-with-leafy-calyx",
+          "label": "Orange · Round to slightly flattened fruit with leafy calyx"
+        },
+        {
+          "id": "confusion-persimmons-hachiya-case",
+          "label": "Persimmons - Hachiya (Case)"
+        },
+        {
+          "id": "confusion-persimmons-vanilla-case",
+          "label": "Persimmons - Vanilla (Case)"
+        }
+      ]
+    },
+    "variants": [],
+    "relations": [
+      {
+        "kind": "exception",
+        "title": "The store label selects this listing",
+        "copy": "The photograph teaches Persimmon. Vanilla is copied from the workbook label and is not inferred from appearance."
+      },
+      {
+        "kind": "exception",
+        "title": "The code follows the exact listing",
+        "copy": "Use 69220 only after the label matches Persimmons - Vanilla."
+      }
+    ],
+    "similarItems": [
+      {
+        "name": "Persimmons - Hachiya (Case)",
+        "code": "36308",
+        "cue": "The reviewed photograph clearly shows persimmons - hachiya in round orange fruit with leafy cap form.",
+        "color": "#4F8B58"
+      },
+      {
+        "name": "Persimmons - Vanilla (Case)",
+        "code": "71207",
+        "cue": "Whole fruit has smooth orange skin, a rounded outline, and a broad green calyx.",
+        "color": "#C25D52"
+      },
+      {
+        "name": "Sharon Fruit persimmon",
+        "code": "4429",
+        "cue": "Sharon Fruit persimmon is identified by its orange appearance and round orange fruit with leafy cap.",
+        "color": "#D1A23B"
+      }
+    ],
+    "source": {
+      "primaryPages": [
+        5
+      ],
+      "relatedPages": [
+        5
+      ],
+      "checkedOnReference": true,
+      "flags": [
+        "sold-by-curated",
+        "batch-06",
+        "catalog-remainder-essential",
+        "media-reviewed-override",
+        "media-shared-reviewed",
+        "media-label-assisted",
+        "qualifier-workbook-label"
+      ],
+      "confidence": "verified-from-supplied-material"
+    }
+  },
+  {
+    "schemaVersion": "0.9.0",
+    "id": "persimmons-vanilla-case-71207",
+    "catalogId": "persimmons-vanilla-case",
+    "title": "Persimmons - Vanilla (Case)",
+    "shortTitle": "Persimmons - Vanilla (Case)",
+    "family": "Persimmons",
+    "priority": "must-know",
+    "selection": {
+      "rawScore": 90,
+      "score": 90,
+      "band": "Essential",
+      "priority": "must-know"
+    },
+    "identity": {
+      "family": "Persimmons",
+      "form": "Round to slightly flattened fruit with leafy calyx",
+      "color": "Orange",
+      "variant": "Persimmons - Vanilla (Case)"
+    },
+    "checkout": {
+      "code": "71207",
+      "soldBy": "Each",
+      "saleForm": "Case",
+      "codeScope": "catalog-listed-retail-unit"
+    },
+    "photos": [
+      {
+        "id": "persimmons-vanilla-case-71207-hero",
+        "file": "https://www.frontiersin.org/files/Articles/1093074/xml-images/fpls-14-1093074-g001.webp",
+        "src": "https://www.frontiersin.org/files/Articles/1093074/xml-images/fpls-14-1093074-g001.webp",
+        "alt": "Persimmon reference photograph showing whole fruit has smooth orange skin, a rounded outline, and a broad green calyx.. Only the reviewed cultivar panel is shown.",
+        "role": "hero",
+        "focus": "50% 50%",
+        "author": "De Pascale, Troise, Petriccione, Nunziata, Cice, Magri, Salzano and Scaloni",
+        "license": "CC BY 4.0",
+        "sourceUrl": "https://www.frontiersin.org/journals/plant-science/articles/10.3389/fpls.2023.1093074/full",
+        "sourceLabel": "Frontiers in Plant Science (2023), Figure 1C; reviewed panel viewport",
+        "viewport": {
+          "x": 8,
+          "y": 760,
+          "width": 1068,
+          "height": 745,
+          "sourceWidth": 1949,
+          "sourceHeight": 1553
+        }
+      },
+      {
+        "id": "persimmons-vanilla-case-71207-alternate",
+        "file": "https://www.frontiersin.org/files/Articles/1093074/xml-images/fpls-14-1093074-g001.webp",
+        "src": "https://www.frontiersin.org/files/Articles/1093074/xml-images/fpls-14-1093074-g001.webp",
+        "alt": "Alternate crop of Persimmon highlighting its round to slightly flattened fruit with leafy calyx. Only the reviewed cultivar panel is shown.",
+        "role": "alternate",
+        "focus": "38% 50%",
+        "reuseOf": "https://www.frontiersin.org/files/Articles/1093074/xml-images/fpls-14-1093074-g001.webp",
+        "fallbackReason": "The same reviewed research panel is reused across roles; this is not a second photograph.",
+        "author": "De Pascale, Troise, Petriccione, Nunziata, Cice, Magri, Salzano and Scaloni",
+        "license": "CC BY 4.0",
+        "sourceUrl": "https://www.frontiersin.org/journals/plant-science/articles/10.3389/fpls.2023.1093074/full",
+        "sourceLabel": "Frontiers in Plant Science (2023), Figure 1C; reviewed panel viewport",
+        "viewport": {
+          "x": 8,
+          "y": 760,
+          "width": 1068,
+          "height": 745,
+          "sourceWidth": 1949,
+          "sourceHeight": 1553
+        }
+      },
+      {
+        "id": "persimmons-vanilla-case-71207-context",
+        "file": "https://www.frontiersin.org/files/Articles/1093074/xml-images/fpls-14-1093074-g001.webp",
+        "src": "https://www.frontiersin.org/files/Articles/1093074/xml-images/fpls-14-1093074-g001.webp",
+        "alt": "Persimmon produce reference emphasizing its orange appearance. Only the reviewed cultivar panel is shown.",
+        "role": "context",
+        "focus": "62% 50%",
+        "reuseOf": "https://www.frontiersin.org/files/Articles/1093074/xml-images/fpls-14-1093074-g001.webp",
+        "fallbackReason": "The same reviewed research panel is reused across roles; this is not a second photograph.",
+        "author": "De Pascale, Troise, Petriccione, Nunziata, Cice, Magri, Salzano and Scaloni",
+        "license": "CC BY 4.0",
+        "sourceUrl": "https://www.frontiersin.org/journals/plant-science/articles/10.3389/fpls.2023.1093074/full",
+        "sourceLabel": "Frontiers in Plant Science (2023), Figure 1C; reviewed panel viewport",
+        "viewport": {
+          "x": 8,
+          "y": 760,
+          "width": 1068,
+          "height": 745,
+          "sourceWidth": 1949,
+          "sourceHeight": 1553
+        }
+      }
+    ],
+    "visualCues": [
+      "Whole fruit has smooth orange skin, a rounded outline, and a broad green calyx.",
+      "The visible color is orange; Vanilla and Case are from the workbook label, not appearance.",
+      "Match the store label to Persimmons - Vanilla (Case) before using 71207."
+    ],
+    "classification": {
+      "familyAnswer": "persimmons",
+      "familyChoices": [
+        {
+          "id": "persimmons",
+          "label": "Persimmons"
+        },
+        {
+          "id": "stalk-vegetables",
+          "label": "Stalk Vegetables"
+        },
+        {
+          "id": "apples",
+          "label": "Apples"
+        }
+      ],
+      "formAnswer": "round-to-slightly-flattened-fruit-with-leafy-calyx",
+      "formChoices": [
+        {
+          "id": "round-to-slightly-flattened-fruit-with-leafy-calyx",
+          "label": "Orange · Round to slightly flattened fruit with leafy calyx"
+        },
+        {
+          "id": "confusion-persimmons-hachiya-case",
+          "label": "Persimmons - Hachiya (Case)"
+        },
+        {
+          "id": "confusion-persimmons-vanilla",
+          "label": "Persimmons - Vanilla"
+        }
+      ]
+    },
+    "variants": [],
+    "relations": [
+      {
+        "kind": "exception",
+        "title": "The store label selects this listing",
+        "copy": "The photograph teaches Persimmon. Vanilla and Case are copied from the workbook label and are not inferred from appearance."
+      },
+      {
+        "kind": "exception",
+        "title": "The code follows the exact listing",
+        "copy": "Use 71207 only after the label matches Persimmons - Vanilla (Case)."
+      }
+    ],
+    "similarItems": [
+      {
+        "name": "Persimmons - Hachiya (Case)",
+        "code": "36308",
+        "cue": "The reviewed photograph clearly shows persimmons - hachiya in round orange fruit with leafy cap form.",
+        "color": "#4F8B58"
+      },
+      {
+        "name": "Persimmons - Vanilla",
+        "code": "69220",
+        "cue": "Whole fruit has smooth orange skin, a rounded outline, and a broad green calyx.",
+        "color": "#C25D52"
+      },
+      {
+        "name": "Sharon Fruit persimmon",
+        "code": "4429",
+        "cue": "Sharon Fruit persimmon is identified by its orange appearance and round orange fruit with leafy cap.",
+        "color": "#D1A23B"
+      }
+    ],
+    "source": {
+      "primaryPages": [
+        5
+      ],
+      "relatedPages": [
+        5
+      ],
+      "checkedOnReference": true,
+      "flags": [
+        "sold-by-curated",
+        "retail-form-specific",
+        "batch-06",
+        "catalog-remainder-essential",
         "media-reviewed-override",
         "media-shared-reviewed",
         "media-label-assisted",
