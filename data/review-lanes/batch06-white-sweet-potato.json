@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "reviewedOn": "2026-09-04",
+  "catalogId": "sweet-potatoes-white",
+  "decision": "approved",
+  "sourceEvidence": {
+    "workbook": "PLU_Codes 2.xlsx",
+    "locator": "PLU Codes!A430:D430",
+    "item": "Sweet Potatoes - White",
+    "code": "9925",
+    "soldBy": null,
+    "sourcePages": [4],
+    "flags": []
+  },
+  "photo": {
+    "commonsFile": "Sweet-potato.JPG",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sweet-potato.JPG",
+    "author": "JanManu",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "metadataIdentity": "The photographer describes white-fleshed Ipomoea batatas.",
+    "pixelReview": "Two whole raw tapered sweet potatoes, one lobed, with pale tan skin. No cut interior, mixed cultivar, cooked food, retail package, or competing code is visible.",
+    "limits": "The photo does not establish a named cultivar, store origin, checkout unit, or visible white interior. White stays label-assisted. Reusing one source across hero/alternate/context is the explicit seed fallback, not three distinct photographs."
+  },
+  "preservedRejections": [
+    {
+      "source": "data/review-lanes/batch06-media-review-54-107.json",
+      "reportIndex": 103,
+      "reason": "Earlier prepared/context shots and mixed white/red raw candidates remain rejected."
+    }
+  ],
+  "sourceAvailability": {
+    "workbookLocated": true,
+    "originalReferencePhotographsLocated": false,
+    "checked": ["repository/source", "PLU_local_worktree_unpushed_snapshot/source", "Downloads filename inventory"],
+    "consequence": "Handwritten and obscured rows remain blocked. This unflagged workbook row does not clear those source uncertainties."
+  },
+  "otherFollowUp": [
+    {
+      "catalogId": "avocado-caribbean",
+      "decision": "candidate-only",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Aguacates_Dominicanos.jpg",
+      "nextAction": "Review the proposed Dominican regional example and label-assisted contract separately; no admission in this pass."
+    },
+    {
+      "catalogId": "cabbage-sour",
+      "decision": "unresolved",
+      "identitySource": "https://stjacobsfoods.com/products/",
+      "rejectedSourceUrl": "https://commons.wikimedia.org/wiki/File:Glavice_kiselog_kupusa_u_ba%C4%8Dvi_s_rasolom.jpg",
+      "reason": "Manufacturer distinguishes fermented whole sour-cabbage heads from shredded sauerkraut. The new Commons whole-head candidate declares generative-AI editing, with no scope of edits established. It is not admitted as untouched product evidence; prior raw preparation photos remain rejected."
+    }
+  ]
+}

@@ -12324,6 +12324,158 @@
   },
   {
     "schemaVersion": "0.9.0",
+    "id": "sweet-potatoes-white-9925",
+    "catalogId": "sweet-potatoes-white",
+    "title": "Sweet Potatoes - White",
+    "shortTitle": "Sweet Potatoes - White",
+    "family": "Potatoes",
+    "priority": "must-know",
+    "selection": {
+      "rawScore": 90,
+      "score": 90,
+      "band": "Essential",
+      "priority": "must-know"
+    },
+    "identity": {
+      "family": "Potatoes",
+      "form": "Whole tapered roots",
+      "color": "Tan",
+      "variant": "Sweet Potatoes - White"
+    },
+    "checkout": {
+      "code": "9925",
+      "soldBy": "Weight",
+      "saleForm": "Loose",
+      "codeScope": "catalog-listed-retail-unit"
+    },
+    "photos": [
+      {
+        "id": "sweet-potatoes-white-9925-hero",
+        "file": "Sweet-potato.JPG",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/Sweet-potato.JPG/1920px-Sweet-potato.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Sweet potato reference photograph showing whole sweet potatoes have tapered ends and pale tan skin here; their flesh is not exposed.",
+        "role": "hero",
+        "focus": "50% 50%",
+        "author": "JanManu",
+        "license": "CC BY-SA 3.0"
+      },
+      {
+        "id": "sweet-potatoes-white-9925-alternate",
+        "file": "Sweet-potato.JPG",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/Sweet-potato.JPG/1920px-Sweet-potato.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Alternate crop of Sweet potato highlighting its whole tapered roots",
+        "role": "alternate",
+        "focus": "38% 50%",
+        "reuseOf": "Sweet-potato.JPG",
+        "fallbackReason": "One verified exact-item photograph is reused with a different crop so no unverified image can publish.",
+        "author": "JanManu",
+        "license": "CC BY-SA 3.0"
+      },
+      {
+        "id": "sweet-potatoes-white-9925-context",
+        "file": "Sweet-potato.JPG",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/Sweet-potato.JPG/1920px-Sweet-potato.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Sweet potato produce reference emphasizing its tan appearance",
+        "role": "context",
+        "focus": "62% 50%",
+        "reuseOf": "Sweet-potato.JPG",
+        "fallbackReason": "One verified exact-item photograph is reused with a different crop so no unverified image can publish.",
+        "author": "JanManu",
+        "license": "CC BY-SA 3.0"
+      }
+    ],
+    "visualCues": [
+      "Whole sweet potatoes have tapered ends and pale tan skin here; their flesh is not exposed.",
+      "The visible color is tan; White is from the workbook label, not appearance.",
+      "Match the store label to Sweet Potatoes - White before using 9925."
+    ],
+    "classification": {
+      "familyAnswer": "potatoes",
+      "familyChoices": [
+        {
+          "id": "potatoes",
+          "label": "Potatoes"
+        },
+        {
+          "id": "stalk-vegetables",
+          "label": "Stalk Vegetables"
+        },
+        {
+          "id": "apples",
+          "label": "Apples"
+        }
+      ],
+      "formAnswer": "whole-tapered-roots",
+      "formChoices": [
+        {
+          "id": "whole-tapered-roots",
+          "label": "Tan · Whole tapered roots"
+        },
+        {
+          "id": "confusion-potato-red-10lb",
+          "label": "Potato - Red 10lb"
+        },
+        {
+          "id": "confusion-potato-red-20lb",
+          "label": "Potato - Red 20lb"
+        }
+      ]
+    },
+    "variants": [],
+    "relations": [
+      {
+        "kind": "exception",
+        "title": "The store label selects this listing",
+        "copy": "The photograph teaches Sweet potato. White is copied from the workbook label and is not inferred from appearance."
+      },
+      {
+        "kind": "exception",
+        "title": "The code follows the exact listing",
+        "copy": "Use 9925 only after the label matches Sweet Potatoes - White."
+      }
+    ],
+    "similarItems": [
+      {
+        "name": "Potato - Red 10lb",
+        "code": "2674",
+        "cue": "A compact round tuber with smooth red skin identifies a red potato.",
+        "color": "#4F8B58"
+      },
+      {
+        "name": "Potato - Red 20lb",
+        "code": "2116",
+        "cue": "A compact round tuber with smooth red skin identifies a red potato.",
+        "color": "#C25D52"
+      },
+      {
+        "name": "Potato - Russet / White 20lb",
+        "code": "62006",
+        "cue": "The reviewed photograph clearly shows potato - russet / white in firm round or tapered tuber form.",
+        "color": "#D1A23B"
+      }
+    ],
+    "source": {
+      "primaryPages": [
+        4
+      ],
+      "relatedPages": [
+        4
+      ],
+      "checkedOnReference": true,
+      "flags": [
+        "sold-by-curated",
+        "batch-06",
+        "catalog-remainder-essential",
+        "media-reviewed-override",
+        "media-shared-reviewed",
+        "media-label-assisted",
+        "qualifier-workbook-label"
+      ],
+      "confidence": "verified-from-supplied-material"
+    }
+  },
+  {
+    "schemaVersion": "0.9.0",
     "id": "tomato-fm-on-the-vine-bulk-64664",
     "catalogId": "tomato-fm-on-the-vine-bulk",
     "title": "Tomato - FM On The Vine (Bulk)",

@@ -41,20 +41,20 @@
       "not-applicable": 12,
       "reviewed-candidate": 30,
       "reviewed-reuse-candidate": 18,
-      "reviewed-source": 92,
-      "source-required": 23
+      "reviewed-source": 93,
+      "source-required": 22
     },
     "publishability": {
-      "blocked": 43,
+      "blocked": 42,
       "excluded": 12,
       "mapped": 28,
-      "ready": 92
+      "ready": 93
     },
     "nextActions": {
-      "adjudicate-source-identity": 20,
+      "adjudicate-source-identity": 19,
       "capture-checkout-code-evidence": 9,
       "keep-out-of-produce-lessons": 12,
-      "none": 92,
+      "none": 93,
       "reconcile-code-mapping": 32,
       "separate-store-barcode-from-plu": 1,
       "source-and-review-recognition-media": 8,
@@ -24021,40 +24021,45 @@
         }
       },
       "identityEvidence": {
-        "status": "source-review-required",
+        "status": "interpreted",
         "title": {
           "value": "White sweet potato",
-          "basis": "taxonomy-helper",
+          "basis": "curated-knowledge",
           "sourceFields": [
             "catalog.item"
           ],
-          "confidence": "derived"
+          "confidence": "curated-interpretation"
         },
         "family": {
           "value": "Potatoes",
-          "basis": "taxonomy-helper",
+          "basis": "curated-knowledge",
           "sourceFields": [
             "catalog.item"
           ],
-          "confidence": "derived"
+          "confidence": "curated-interpretation"
         },
         "form": {
-          "value": "Firm round or tapered tuber",
-          "basis": "taxonomy-helper",
+          "value": "Whole tapered roots",
+          "basis": "curated-knowledge",
           "sourceFields": [
             "catalog.item"
           ],
-          "confidence": "derived"
+          "confidence": "curated-interpretation"
         },
         "color": {
-          "value": "White",
-          "basis": "taxonomy-helper",
+          "value": "Tan",
+          "basis": "curated-knowledge",
           "sourceFields": [
             "catalog.item"
           ],
-          "confidence": "derived"
+          "confidence": "curated-interpretation"
         },
         "curationNote": null,
+        "adjudication": {
+          "provenance": "data/batch-06-recovery-decisions.json",
+          "scope": "legacy-batch05-exclusion",
+          "reviewBasis": "Clear this row's inherited Batch 05 selection exclusion only. PLU Codes!A430:D430 records the exact unflagged White sweet potato listing and code 9925. The prior mixed/prepared candidate rejection remains valid. A fresh review of Sweet-potato.JPG found whole raw sweet potatoes with pale tan skin, and the photographer explicitly identifies white flesh. The interior is not exposed, so White remains label-assisted and no named cultivar or store origin is asserted. The missing workbook sale unit keeps the existing interpreted Weight/Loose basis; it is not a verified store unit."
+        },
         "evidenceGaps": []
       },
       "codeEvidence": {
@@ -24101,15 +24106,31 @@
         "packageSignals": []
       },
       "mediaPlan": {
-        "status": "source-required",
-        "query": "White sweet potato Firm round or tapered tuber",
+        "status": "reviewed-source",
+        "query": "White sweet potato Whole tapered roots",
         "target": {
           "identity": "White sweet potato",
-          "visibleForm": "Firm round or tapered tuber",
-          "color": "White",
+          "visibleForm": "Whole tapered roots",
+          "color": "Tan",
           "retailForm": "Loose"
         },
-        "source": null,
+        "source": {
+          "provenance": "public/media-resolution-batch06.json",
+          "file": "Sweet-potato.JPG",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/Sweet-potato.JPG/1920px-Sweet-potato.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "match": "reviewed-override",
+          "recognitionMode": "label-assisted",
+          "labelClaims": [
+            {
+              "value": "White",
+              "basis": "workbook-label",
+              "sourceField": "catalog.item",
+              "sourcePages": [
+                4
+              ]
+            }
+          ]
+        },
         "acceptance": [
           "Metadata must identify the exact product or a reviewed synonym.",
           "Visible form and identity-bearing modifiers must match the learner title.",
@@ -24118,27 +24139,11 @@
       },
       "mappingDecision": null,
       "publishability": {
-        "status": "blocked",
-        "blockers": [
-          {
-            "domain": "identity",
-            "code": "identity-source-review",
-            "detail": "Handwritten, obscured, or separately excluded source wording needs adjudication."
-          },
-          {
-            "domain": "identity",
-            "code": "identity-adjudication-required",
-            "detail": "This catalog identity is on the explicit source-review list."
-          },
-          {
-            "domain": "media",
-            "code": "media-evidence-required",
-            "detail": "No human-reviewed recognition source is attached to this exact row."
-          }
-        ],
+        "status": "ready",
+        "blockers": [],
         "nextAction": {
-          "type": "adjudicate-source-identity",
-          "description": "Resolve the exact source wording and product identity before changing code or media state."
+          "type": "none",
+          "description": "All current identity, code, retail, and media gates are satisfied."
         }
       }
     },

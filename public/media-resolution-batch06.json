@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-09-05T00:51:26.555Z",
+  "generatedAt": "2026-09-05T01:34:10.263Z",
   "batch": "06",
   "strategy": "Resolve the human-reviewed subset of the complete catalog remainder, using label-assisted truth when store qualifiers are not visible in product pixels.",
-  "candidateCount": 92,
-  "sourceCount": 92,
+  "candidateCount": 93,
+  "sourceCount": 93,
   "media": [
     {
       "order": 1,
@@ -1171,16 +1171,17 @@
       "height": 4000,
       "thumbWidth": 1600,
       "thumbHeight": 1067,
-      "score": 5,
+      "score": 25,
       "sharedAcrossProducts": false,
       "match": "reviewed-override",
       "matchedTargets": [
         "blackberries"
       ],
-      "matchedModifiers": [
+      "matchedModifiers": [],
+      "identityEvidence": [
+        "blackberry",
         "blackberries"
       ],
-      "identityEvidence": [],
       "sourceEvidence": {
         "title": "Blackberry (Rubus fruticosus).jpg",
         "objectName": "Blackberry (Rubus fruticosus)",
@@ -1233,16 +1234,17 @@
       "height": 2432,
       "thumbWidth": 1600,
       "thumbHeight": 1067,
-      "score": 41,
+      "score": 43,
       "sharedAcrossProducts": false,
       "match": "reviewed-override",
       "matchedTargets": [
         "blueberries"
       ],
-      "matchedModifiers": [
+      "matchedModifiers": [],
+      "identityEvidence": [
+        "berries",
         "blueberries"
       ],
-      "identityEvidence": [],
       "sourceEvidence": {
         "title": "A generous handful of blueberries depicts the rich abundance of berries that may be found in Alaskan areas. (d84880d1-1dd8-b71b-0b3d-6380eca4c663).jpg",
         "objectName": "Bountiful blueberries",
@@ -1304,16 +1306,17 @@
       "height": 2432,
       "thumbWidth": 1600,
       "thumbHeight": 1067,
-      "score": -59,
+      "score": -57,
       "sharedAcrossProducts": true,
       "match": "reviewed-override",
       "matchedTargets": [
         "blueberries"
       ],
-      "matchedModifiers": [
+      "matchedModifiers": [],
+      "identityEvidence": [
+        "berries",
         "blueberries"
       ],
-      "identityEvidence": [],
       "sourceEvidence": {
         "title": "A generous handful of blueberries depicts the rich abundance of berries that may be found in Alaskan areas. (d84880d1-1dd8-b71b-0b3d-6380eca4c663).jpg",
         "objectName": "Bountiful blueberries",
@@ -1375,16 +1378,17 @@
       "height": 2432,
       "thumbWidth": 1600,
       "thumbHeight": 1067,
-      "score": -59,
+      "score": -57,
       "sharedAcrossProducts": true,
       "match": "reviewed-override",
       "matchedTargets": [
         "blueberries"
       ],
-      "matchedModifiers": [
+      "matchedModifiers": [],
+      "identityEvidence": [
+        "berries",
         "blueberries"
       ],
-      "identityEvidence": [],
       "sourceEvidence": {
         "title": "A generous handful of blueberries depicts the rich abundance of berries that may be found in Alaskan areas. (d84880d1-1dd8-b71b-0b3d-6380eca4c663).jpg",
         "objectName": "Bountiful blueberries",
@@ -1919,7 +1923,7 @@
       "height": 768,
       "thumbWidth": 1600,
       "thumbHeight": 1200,
-      "score": -4,
+      "score": -104,
       "sharedAcrossProducts": true,
       "match": "reviewed-override",
       "matchedTargets": [
@@ -3495,7 +3499,7 @@
       "height": 7360,
       "thumbWidth": 1600,
       "thumbHeight": 2397,
-      "score": 98,
+      "score": 100,
       "sharedAcrossProducts": false,
       "match": "reviewed-override",
       "matchedTargets": [
@@ -3504,10 +3508,11 @@
         "tree"
       ],
       "matchedModifiers": [
-        "olives",
         "green"
       ],
-      "identityEvidence": [],
+      "identityEvidence": [
+        "olives"
+      ],
       "sourceEvidence": {
         "title": "A crate of olives fresh from the tree (15299192895).jpg",
         "objectName": "A crate of olives fresh from the tree (15299192895)",
@@ -4676,7 +4681,7 @@
       "height": 4032,
       "thumbWidth": 1600,
       "thumbHeight": 2133,
-      "score": 41,
+      "score": 76,
       "sharedAcrossProducts": false,
       "match": "reviewed-override",
       "matchedTargets": [
@@ -4685,7 +4690,9 @@
       "matchedModifiers": [
         "nuts"
       ],
-      "identityEvidence": [],
+      "identityEvidence": [
+        "pistachio"
+      ],
       "sourceEvidence": {
         "title": "Pistachio nuts from Iran.jpg",
         "objectName": "Pistachio nuts from Iran",
@@ -5339,12 +5346,14 @@
       "height": 3840,
       "thumbWidth": 1600,
       "thumbHeight": 1066,
-      "score": -14,
+      "score": 21,
       "sharedAcrossProducts": false,
       "match": "reviewed-override",
       "matchedTargets": [],
       "matchedModifiers": [],
-      "identityEvidence": [],
+      "identityEvidence": [
+        "raspberry"
+      ],
       "sourceEvidence": {
         "title": "Raspberry - whole (Rubus idaeus).jpg",
         "objectName": "Raspberry - whole (Rubus idaeus)",
@@ -5405,12 +5414,14 @@
       "height": 3840,
       "thumbWidth": 1600,
       "thumbHeight": 1066,
-      "score": -114,
+      "score": -79,
       "sharedAcrossProducts": true,
       "match": "reviewed-override",
       "matchedTargets": [],
       "matchedModifiers": [],
-      "identityEvidence": [],
+      "identityEvidence": [
+        "raspberry"
+      ],
       "sourceEvidence": {
         "title": "Raspberry - whole (Rubus idaeus).jpg",
         "objectName": "Raspberry - whole (Rubus idaeus)",
@@ -5523,17 +5534,18 @@
       "height": 5504,
       "thumbWidth": 1600,
       "thumbHeight": 1067,
-      "score": 35,
+      "score": 55,
       "sharedAcrossProducts": false,
       "match": "reviewed-override",
       "matchedTargets": [
         "strawberries",
         "garden"
       ],
-      "matchedModifiers": [
+      "matchedModifiers": [],
+      "identityEvidence": [
+        "strawberry",
         "strawberries"
       ],
-      "identityEvidence": [],
       "sourceEvidence": {
         "title": "Garden strawberry (Fragaria × ananassa) single2.jpg",
         "objectName": "Garden strawberry (Fragaria × ananassa) single2",
@@ -5589,17 +5601,18 @@
       "height": 5504,
       "thumbWidth": 1600,
       "thumbHeight": 1067,
-      "score": -65,
+      "score": -45,
       "sharedAcrossProducts": true,
       "match": "reviewed-override",
       "matchedTargets": [
         "strawberries",
         "garden"
       ],
-      "matchedModifiers": [
+      "matchedModifiers": [],
+      "identityEvidence": [
+        "strawberry",
         "strawberries"
       ],
-      "identityEvidence": [],
       "sourceEvidence": {
         "title": "Garden strawberry (Fragaria × ananassa) single2.jpg",
         "objectName": "Garden strawberry (Fragaria × ananassa) single2",
@@ -5611,6 +5624,73 @@
     {
       "order": 85,
       "candidateOrder": 85,
+      "storyId": "sweet-potatoes-white-9925",
+      "catalogId": "sweet-potatoes-white",
+      "title": "Sweet Potatoes - White",
+      "query": "Sweet potato raw produce",
+      "selection": {
+        "rawScore": 90,
+        "score": 90,
+        "band": "Essential",
+        "priority": "must-know"
+      },
+      "mediaReview": {
+        "catalogId": "sweet-potatoes-white",
+        "code": "9925",
+        "commonsFile": "Sweet-potato.JPG",
+        "recognitionMode": "label-assisted",
+        "visibleIdentity": {
+          "label": "Sweet potato",
+          "form": "Whole tapered roots",
+          "color": "Tan",
+          "cue": "Whole sweet potatoes have tapered ends and pale tan skin here; their flesh is not exposed."
+        },
+        "labelClaims": [
+          {
+            "value": "White",
+            "basis": "workbook-label",
+            "sourceField": "catalog.item",
+            "sourcePages": [
+              4
+            ]
+          }
+        ],
+        "sharedMediaBasis": "The photograph also appears in an earlier sweet-potato lesson. It supplies recognition evidence only; this separate source row retains code 9925 and the workbook White qualifier. No code is inherited from the photo's prior use.",
+        "reviewBasis": "Pixel review confirms whole raw pale-tan sweet potatoes, one lobed root, with no competing variety, cooked food, package, or printed checkout code. The photographer's white-flesh identification supports this catalog type, but the interior is not visible. Read White from the workbook label instead of treating skin color as a sufficient checkout discriminator."
+      },
+      "file": "Sweet-potato.JPG",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/Sweet-potato.JPG/1920px-Sweet-potato.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "mime": "image/jpeg",
+      "width": 2304,
+      "height": 1728,
+      "thumbWidth": 1600,
+      "thumbHeight": 1200,
+      "score": 18,
+      "sharedAcrossProducts": true,
+      "match": "reviewed-override",
+      "matchedTargets": [
+        "sweet",
+        "potatoes",
+        "potato"
+      ],
+      "matchedModifiers": [
+        "sweet"
+      ],
+      "identityEvidence": [
+        "potato",
+        "potatoes"
+      ],
+      "sourceEvidence": {
+        "title": "Sweet-potato.JPG",
+        "objectName": "Sweet-potato",
+        "description": "Süsskartoffel, Batate (Ipomoea batatas) mit weißem Fruchtfleisch",
+        "categories": "Sweet potatoes|Self-published work|Bilobed shapes|Grooves"
+      },
+      "alternatives": []
+    },
+    {
+      "order": 86,
+      "candidateOrder": 86,
       "storyId": "tomato-fm-on-the-vine-bulk-64664",
       "catalogId": "tomato-fm-on-the-vine-bulk",
       "title": "Tomato - FM On The Vine (Bulk)",
@@ -5675,8 +5755,8 @@
       "alternatives": []
     },
     {
-      "order": 86,
-      "candidateOrder": 86,
+      "order": 87,
+      "candidateOrder": 87,
       "storyId": "tomato-hh-organic-94798",
       "catalogId": "tomato-hh-organic",
       "title": "Tomato - HH (Organic)",
@@ -5746,8 +5826,8 @@
       "alternatives": []
     },
     {
-      "order": 87,
-      "candidateOrder": 87,
+      "order": 88,
+      "candidateOrder": 88,
       "storyId": "tomato-hh-red-bulk-4798",
       "catalogId": "tomato-hh-red-bulk",
       "title": "Tomato - HH Red (Bulk)",
@@ -5818,8 +5898,8 @@
       "alternatives": []
     },
     {
-      "order": 88,
-      "candidateOrder": 88,
+      "order": 89,
+      "candidateOrder": 89,
       "storyId": "tomatoes-on-the-vine-hh-organic-94664",
       "catalogId": "tomatoes-on-the-vine-hh-organic",
       "title": "Tomatoes - On The Vine HH (Organic)",
@@ -5894,8 +5974,8 @@
       "alternatives": []
     },
     {
-      "order": 89,
-      "candidateOrder": 89,
+      "order": 90,
+      "candidateOrder": 90,
       "storyId": "tomatoes-roma-plum-box-half-bushel-70755",
       "catalogId": "tomatoes-roma-plum-box-half-bushel",
       "title": "Tomatoes - Roma / Plum (Box, Half Bushel)",
@@ -5971,8 +6051,8 @@
       "alternatives": []
     },
     {
-      "order": 90,
-      "candidateOrder": 90,
+      "order": 91,
+      "candidateOrder": 91,
       "storyId": "tomatoes-vine-ripe-field-bulk-3061",
       "catalogId": "tomatoes-vine-ripe-field-bulk",
       "title": "Tomatoes - Vine Ripe / Field (Bulk)",
@@ -6047,8 +6127,8 @@
       "alternatives": []
     },
     {
-      "order": 91,
-      "candidateOrder": 91,
+      "order": 92,
+      "candidateOrder": 92,
       "storyId": "uchoy-sum-64387",
       "catalogId": "uchoy-sum",
       "title": "Uchoy Sum",
@@ -6099,8 +6179,8 @@
       "alternatives": []
     },
     {
-      "order": 92,
-      "candidateOrder": 92,
+      "order": 93,
+      "candidateOrder": 93,
       "storyId": "yu-choy-jr-10260",
       "catalogId": "yu-choy-jr",
       "title": "Yu Choy - Jr",
@@ -6172,7 +6252,7 @@
       "status": "mapped",
       "mappingKind": "same-label-different-codes",
       "mappingReason": "The exact catalog label carries multiple recorded checkout codes; preserve the complete mapping without selecting a synthetic primary code.",
-      "order": 93
+      "order": 94
     },
     {
       "catalogId": "apples-red-delicious-2",
@@ -6182,7 +6262,7 @@
       "status": "mapped",
       "mappingKind": "same-label-different-codes",
       "mappingReason": "The exact catalog label appears with another recorded checkout code; preserve both source mappings instead of treating one as a replacement.",
-      "order": 94
+      "order": 95
     },
     {
       "catalogId": "apples-royal-gala-2",
@@ -6192,7 +6272,7 @@
       "status": "mapped",
       "mappingKind": "same-label-different-codes",
       "mappingReason": "The exact catalog label appears with another recorded checkout code; preserve both source mappings instead of treating one as a replacement.",
-      "order": 95
+      "order": 96
     },
     {
       "catalogId": "apricots-2",
@@ -6202,7 +6282,7 @@
       "status": "mapped",
       "mappingKind": "same-label-different-codes",
       "mappingReason": "The exact catalog label appears with another recorded checkout code; preserve both source mappings instead of treating one as a replacement.",
-      "order": 96
+      "order": 97
     },
     {
       "catalogId": "carrots-chinese-jumbo",
@@ -6212,7 +6292,7 @@
       "status": "mapped",
       "mappingKind": "shared-code",
       "mappingReason": "The catalog-supported code is also recorded for a compatible carrot identity; preserve the exact label and declare the reuse.",
-      "order": 97
+      "order": 98
     },
     {
       "catalogId": "celery-hearts",
@@ -6222,7 +6302,7 @@
       "status": "mapped",
       "mappingKind": "single",
       "mappingReason": "The catalog records one checkout code for an interpreted in-scope produce identity.",
-      "order": 98
+      "order": 99
     },
     {
       "catalogId": "cherimoya",
@@ -6232,7 +6312,7 @@
       "status": "mapped",
       "mappingKind": "same-label-different-codes",
       "mappingReason": "The exact catalog label appears with multiple recorded checkout codes across source rows; preserve every source mapping.",
-      "order": 99
+      "order": 100
     },
     {
       "catalogId": "cherimoya-2",
@@ -6242,7 +6322,7 @@
       "status": "mapped",
       "mappingKind": "same-label-different-codes",
       "mappingReason": "The exact catalog label appears with multiple recorded checkout codes across source rows; preserve every source mapping.",
-      "order": 100
+      "order": 101
     },
     {
       "catalogId": "grapefruit-bin",
@@ -6252,7 +6332,7 @@
       "status": "mapped",
       "mappingKind": "shared-code",
       "mappingReason": "The catalog-supported code is also recorded for a compatible grapefruit identity; preserve the exact label and declare the reuse.",
-      "order": 101
+      "order": 102
     },
     {
       "catalogId": "mangoes",
@@ -6262,7 +6342,7 @@
       "status": "mapped",
       "mappingKind": "shared-code",
       "mappingReason": "The catalog-supported code is also recorded for a compatible mango identity; preserve the exact label and declare the reuse.",
-      "order": 102
+      "order": 103
     },
     {
       "catalogId": "mangos-red-case",
@@ -6272,7 +6352,7 @@
       "status": "mapped",
       "mappingKind": "same-label-different-codes",
       "mappingReason": "The exact catalog label carries multiple recorded checkout codes; preserve the complete mapping without selecting a synthetic primary code.",
-      "order": 103
+      "order": 104
     },
     {
       "catalogId": "melons-goldendew",
@@ -6282,7 +6362,7 @@
       "status": "mapped",
       "mappingKind": "single",
       "mappingReason": "The catalog records one checkout code for an interpreted in-scope produce identity.",
-      "order": 104
+      "order": 105
     },
     {
       "catalogId": "melons-honeykiss",
@@ -6292,7 +6372,7 @@
       "status": "mapped",
       "mappingKind": "single",
       "mappingReason": "The catalog records one checkout code for an interpreted in-scope produce identity.",
-      "order": 105
+      "order": 106
     },
     {
       "catalogId": "oranges-navel-large",
@@ -6302,7 +6382,7 @@
       "status": "mapped",
       "mappingKind": "shared-code",
       "mappingReason": "The catalog-supported code is also recorded for a compatible navel orange identity; preserve the exact size label and declare the reuse.",
-      "order": 106
+      "order": 107
     },
     {
       "catalogId": "oranges-navel-medium",
@@ -6312,7 +6392,7 @@
       "status": "mapped",
       "mappingKind": "shared-code",
       "mappingReason": "The catalog-supported code is also recorded for a compatible navel orange identity; preserve the exact size label and declare the reuse.",
-      "order": 107
+      "order": 108
     },
     {
       "catalogId": "papayas-meridol",
@@ -6322,7 +6402,7 @@
       "status": "mapped",
       "mappingKind": "single",
       "mappingReason": "The catalog records one checkout code for an interpreted in-scope produce identity.",
-      "order": 108
+      "order": 109
     },
     {
       "catalogId": "parsley-curley-herbs",
@@ -6332,7 +6412,7 @@
       "status": "mapped",
       "mappingKind": "shared-code",
       "mappingReason": "The catalog-supported code is also recorded for a compatible parsley identity; preserve the exact label and declare the reuse.",
-      "order": 109
+      "order": 110
     },
     {
       "catalogId": "pears-asian-yellow-2",
@@ -6342,7 +6422,7 @@
       "status": "mapped",
       "mappingKind": "same-label-different-codes",
       "mappingReason": "The exact catalog label appears with another recorded checkout code; preserve both source mappings instead of treating one as a replacement.",
-      "order": 110
+      "order": 111
     },
     {
       "catalogId": "pears-bosc-large",
@@ -6352,7 +6432,7 @@
       "status": "mapped",
       "mappingKind": "shared-code",
       "mappingReason": "The catalog-supported code is also recorded for a compatible Bosc pear identity; preserve the exact size label and declare the reuse.",
-      "order": 111
+      "order": 112
     },
     {
       "catalogId": "pears-forelle-2",
@@ -6362,7 +6442,7 @@
       "status": "mapped",
       "mappingKind": "same-label-different-codes",
       "mappingReason": "The exact catalog label appears with another recorded checkout code; preserve both source mappings instead of treating one as a replacement.",
-      "order": 112
+      "order": 113
     },
     {
       "catalogId": "pears-taylor-gold",
@@ -6372,7 +6452,7 @@
       "status": "mapped",
       "mappingKind": "single",
       "mappingReason": "The catalog records one checkout code for an interpreted in-scope produce identity.",
-      "order": 113
+      "order": 114
     },
     {
       "catalogId": "persimmons-vanilla",
@@ -6382,7 +6462,7 @@
       "status": "mapped",
       "mappingKind": "single",
       "mappingReason": "The catalog records one checkout code for an interpreted in-scope produce identity.",
-      "order": 114
+      "order": 115
     },
     {
       "catalogId": "persimmons-vanilla-case",
@@ -6392,7 +6472,7 @@
       "status": "mapped",
       "mappingKind": "single",
       "mappingReason": "The catalog records one checkout code for an interpreted in-scope produce identity.",
-      "order": 115
+      "order": 116
     },
     {
       "catalogId": "pumpkins-large",
@@ -6402,7 +6482,7 @@
       "status": "mapped",
       "mappingKind": "same-label-different-codes",
       "mappingReason": "The exact catalog label appears with multiple recorded checkout codes across source rows; preserve every source mapping.",
-      "order": 116
+      "order": 117
     },
     {
       "catalogId": "pumpkins-large-2",
@@ -6412,7 +6492,7 @@
       "status": "mapped",
       "mappingKind": "same-label-different-codes",
       "mappingReason": "The exact catalog label appears with multiple recorded checkout codes across source rows; preserve every source mapping.",
-      "order": 117
+      "order": 118
     },
     {
       "catalogId": "tangerines-fall-glo",
@@ -6422,7 +6502,7 @@
       "status": "mapped",
       "mappingKind": "single",
       "mappingReason": "The catalog records one checkout code for an interpreted in-scope produce identity.",
-      "order": 118
+      "order": 119
     },
     {
       "catalogId": "watermelons-mickey-lee",
@@ -6432,7 +6512,7 @@
       "status": "mapped",
       "mappingKind": "single",
       "mappingReason": "The catalog records one checkout code for an interpreted in-scope produce identity.",
-      "order": 119
+      "order": 120
     },
     {
       "catalogId": "yams-white",
@@ -6442,12 +6522,12 @@
       "status": "mapped",
       "mappingKind": "shared-code",
       "mappingReason": "The catalog-supported code is also recorded for a compatible white yam identity; preserve the exact label and declare the reuse.",
-      "order": 120
+      "order": 121
     }
   ],
   "queued": [
     {
-      "order": 121,
+      "order": 122,
       "catalogId": "aloe-vera-handwritten",
       "title": "Aloe Vera (handwritten)",
       "code": "Code needed",
@@ -6460,7 +6540,7 @@
       ]
     },
     {
-      "order": 122,
+      "order": 123,
       "catalogId": "apples-large-extra-fancy-first-word-obscured",
       "title": "Apples - Large Extra Fancy (first word obscured)",
       "code": "4129",
@@ -6473,7 +6553,7 @@
       ]
     },
     {
-      "order": 123,
+      "order": 124,
       "catalogId": "apples-mcintosh-extra-fancy",
       "title": "Apples - McIntosh Extra Fancy",
       "code": "4019",
@@ -6485,7 +6565,7 @@
       ]
     },
     {
-      "order": 124,
+      "order": 125,
       "catalogId": "artichokes-small-handwritten",
       "title": "Artichokes - Small (handwritten)",
       "code": "4516",
@@ -6499,7 +6579,7 @@
       ]
     },
     {
-      "order": 125,
+      "order": 126,
       "catalogId": "avocado-5ct-bag-handwritten",
       "title": "Avocado - 5ct (Bag) (handwritten)",
       "code": "9523",
@@ -6513,7 +6593,7 @@
       ]
     },
     {
-      "order": 126,
+      "order": 127,
       "catalogId": "avocado-caribbean",
       "title": "Avocado - Caribbean",
       "code": "58559",
@@ -6525,7 +6605,7 @@
       ]
     },
     {
-      "order": 127,
+      "order": 128,
       "catalogId": "bananas-baby-bananas-mini-4186",
       "title": "Bananas - Baby Bananas Mini 4186",
       "code": "4234",
@@ -6538,7 +6618,7 @@
       ]
     },
     {
-      "order": 128,
+      "order": 129,
       "catalogId": "bananas-red",
       "title": "Bananas - Red",
       "code": "4234",
@@ -6550,7 +6630,7 @@
       ]
     },
     {
-      "order": 129,
+      "order": 130,
       "catalogId": "bartlett-orchard-run-first-word-obscured",
       "title": "Bartlett - Orchard Run (first word obscured)",
       "code": "64037",
@@ -6564,7 +6644,7 @@
       ]
     },
     {
-      "order": 130,
+      "order": 131,
       "catalogId": "cabbage-sour",
       "title": "Cabbage - Sour",
       "code": "62380",
@@ -6576,7 +6656,7 @@
       ]
     },
     {
-      "order": 131,
+      "order": 132,
       "catalogId": "cherries-white-ranier-264497",
       "title": "Cherries - White Ranier (264497)",
       "code": "4260",
@@ -6588,7 +6668,7 @@
       ]
     },
     {
-      "order": 132,
+      "order": 133,
       "catalogId": "durian-frozen",
       "title": "Durian (Frozen)",
       "code": "Code needed",
@@ -6602,7 +6682,7 @@
       ]
     },
     {
-      "order": 133,
+      "order": 134,
       "catalogId": "eddoes-handwritten",
       "title": "Eddoes (handwritten)",
       "code": "Code needed",
@@ -6616,7 +6696,7 @@
       ]
     },
     {
-      "order": 134,
+      "order": 135,
       "catalogId": "fennel-anise",
       "title": "Fennel / Anise",
       "code": "4516",
@@ -6628,7 +6708,7 @@
       ]
     },
     {
-      "order": 135,
+      "order": 136,
       "catalogId": "gourds-ornamental",
       "title": "Gourds - Ornamental",
       "code": "Code needed",
@@ -6642,7 +6722,7 @@
       ]
     },
     {
-      "order": 136,
+      "order": 137,
       "catalogId": "jackfruit-cut-handwritten",
       "title": "Jackfruit - Cut (handwritten)",
       "code": "Code needed",
@@ -6656,7 +6736,7 @@
       ]
     },
     {
-      "order": 137,
+      "order": 138,
       "catalogId": "jicama-roots",
       "title": "Jicama (Roots)",
       "code": "Code needed",
@@ -6670,7 +6750,7 @@
       ]
     },
     {
-      "order": 138,
+      "order": 139,
       "catalogId": "kohlrabi-note-on-sheet-kohlrabi-1692-handwritten",
       "title": "Kohlrabi (note on sheet: 'Kohlrabi = 1692') (handwritten)",
       "code": "1692",
@@ -6683,7 +6763,7 @@
       ]
     },
     {
-      "order": 139,
+      "order": 140,
       "catalogId": "mangoes-ataulfo-case-handwritten",
       "title": "Mangoes - Ataulfo (Case) (handwritten)",
       "code": "2145",
@@ -6697,7 +6777,7 @@
       ]
     },
     {
-      "order": 140,
+      "order": 141,
       "catalogId": "mangoes-red-case-handwritten",
       "title": "Mangoes - Red (Case) (handwritten)",
       "code": "2146",
@@ -6712,7 +6792,7 @@
       ]
     },
     {
-      "order": 141,
+      "order": 142,
       "catalogId": "mangos-spice",
       "title": "Mangos - Spice",
       "code": "58654",
@@ -6724,7 +6804,7 @@
       ]
     },
     {
-      "order": 142,
+      "order": 143,
       "catalogId": "nappa-baby-4540-bag",
       "title": "Nappa - Baby 4540 (Bag)",
       "code": "62527",
@@ -6737,7 +6817,7 @@
       ]
     },
     {
-      "order": 143,
+      "order": 144,
       "catalogId": "onions-1381-label-as-printed",
       "title": "Onions - 1381 (label as printed)",
       "code": "2525",
@@ -6750,7 +6830,7 @@
       ]
     },
     {
-      "order": 144,
+      "order": 145,
       "catalogId": "onions-medium-50lb-724-58312",
       "title": "Onions - Medium 50lb 724 / 58312",
       "code": "63430",
@@ -6763,7 +6843,7 @@
       ]
     },
     {
-      "order": 145,
+      "order": 146,
       "catalogId": "onions-sweet-4166-59914",
       "title": "Onions - Sweet 4166 / 59914",
       "code": "4159",
@@ -6778,7 +6858,7 @@
       ]
     },
     {
-      "order": 146,
+      "order": 147,
       "catalogId": "onions-yellow-25lb-334",
       "title": "Onions - Yellow 25lb 334",
       "code": "62782",
@@ -6792,7 +6872,7 @@
       ]
     },
     {
-      "order": 147,
+      "order": 148,
       "catalogId": "parsnips-2lb",
       "title": "Parsnips - 2lb",
       "code": "Code needed",
@@ -6807,7 +6887,7 @@
       ]
     },
     {
-      "order": 148,
+      "order": 149,
       "catalogId": "parsnips-bulk-4672",
       "title": "Parsnips - Bulk 4672",
       "code": "Code needed",
@@ -6822,7 +6902,7 @@
       ]
     },
     {
-      "order": 149,
+      "order": 150,
       "catalogId": "pears-red-4415",
       "title": "Pears - Red 4415",
       "code": "3118",
@@ -6835,7 +6915,7 @@
       ]
     },
     {
-      "order": 150,
+      "order": 151,
       "catalogId": "peppers-red-long-handwritten",
       "title": "Peppers - Red Long (handwritten)",
       "code": "4711",
@@ -6850,7 +6930,7 @@
       ]
     },
     {
-      "order": 151,
+      "order": 152,
       "catalogId": "plumcots-handwritten",
       "title": "Plumcots (handwritten)",
       "code": "5127",
@@ -6863,7 +6943,7 @@
       ]
     },
     {
-      "order": 152,
+      "order": 153,
       "catalogId": "potato-sweet-jamaican-handwritten",
       "title": "Potato - Sweet Jamaican (handwritten)",
       "code": "Code needed",
@@ -6876,7 +6956,7 @@
       ]
     },
     {
-      "order": 153,
+      "order": 154,
       "catalogId": "pumpkins-jamaican",
       "title": "Pumpkins - Jamaican",
       "code": "434",
@@ -6888,7 +6968,7 @@
       ]
     },
     {
-      "order": 154,
+      "order": 155,
       "catalogId": "pumpkins-small-pie-4737",
       "title": "Pumpkins - Small Pie 4737",
       "code": "Code needed",
@@ -6902,7 +6982,7 @@
       ]
     },
     {
-      "order": 155,
+      "order": 156,
       "catalogId": "pumpkins-white",
       "title": "Pumpkins - White",
       "code": "Code needed",
@@ -6915,7 +6995,7 @@
       ]
     },
     {
-      "order": 156,
+      "order": 157,
       "catalogId": "radish-bunch",
       "title": "Radish - Bunch",
       "code": "4019",
@@ -6927,7 +7007,7 @@
       ]
     },
     {
-      "order": 157,
+      "order": 158,
       "catalogId": "rutabagas",
       "title": "Rutabagas",
       "code": "Code needed",
@@ -6940,7 +7020,7 @@
       ]
     },
     {
-      "order": 158,
+      "order": 159,
       "catalogId": "squash-buttercup",
       "title": "Squash - Buttercup",
       "code": "4758",
@@ -6949,18 +7029,6 @@
       "queueReason": "The code is attached to another source identity",
       "queueReasonCodes": [
         "conflicting-code"
-      ]
-    },
-    {
-      "order": 159,
-      "catalogId": "sweet-potatoes-white",
-      "title": "Sweet Potatoes - White",
-      "code": "9925",
-      "family": "Potatoes",
-      "status": "queued",
-      "queueReason": "Source identity needs manual adjudication",
-      "queueReasonCodes": [
-        "source-identity-review"
       ]
     },
     {

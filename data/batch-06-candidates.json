@@ -1820,6 +1820,27 @@
     "sourceOrder": 157
   },
   {
+    "catalogId": "sweet-potatoes-white",
+    "title": "Sweet Potatoes - White",
+    "code": "9925",
+    "family": "Potatoes",
+    "soldBy": "Weight",
+    "saleForm": "Loose",
+    "form": "Whole tapered roots",
+    "color": "Tan",
+    "imageQuery": "Sweet potato raw produce",
+    "cue": "Whole sweet potatoes have tapered ends and pale tan skin here; their flesh is not exposed.",
+    "group": "potatoes",
+    "sourcePages": [
+      4
+    ],
+    "flags": [
+      "sold-by-curated"
+    ],
+    "sourceItem": "Sweet Potatoes - White",
+    "sourceOrder": 158
+  },
+  {
     "catalogId": "tomato-fm-on-the-vine-bulk",
     "title": "Tomato - FM On The Vine (Bulk)",
     "code": "64664",

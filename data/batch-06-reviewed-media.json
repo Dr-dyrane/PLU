@@ -2203,6 +2203,30 @@
       ]
     },
     {
+      "catalogId": "sweet-potatoes-white",
+      "code": "9925",
+      "commonsFile": "Sweet-potato.JPG",
+      "recognitionMode": "label-assisted",
+      "visibleIdentity": {
+        "label": "Sweet potato",
+        "form": "Whole tapered roots",
+        "color": "Tan",
+        "cue": "Whole sweet potatoes have tapered ends and pale tan skin here; their flesh is not exposed."
+      },
+      "labelClaims": [
+        {
+          "value": "White",
+          "basis": "workbook-label",
+          "sourceField": "catalog.item",
+          "sourcePages": [
+            4
+          ]
+        }
+      ],
+      "sharedMediaBasis": "The photograph also appears in an earlier sweet-potato lesson. It supplies recognition evidence only; this separate source row retains code 9925 and the workbook White qualifier. No code is inherited from the photo's prior use.",
+      "reviewBasis": "Pixel review confirms whole raw pale-tan sweet potatoes, one lobed root, with no competing variety, cooked food, package, or printed checkout code. The photographer's white-flesh identification supports this catalog type, but the interior is not visible. Read White from the workbook label instead of treating skin color as a sufficient checkout discriminator."
+    },
+    {
       "catalogId": "tomato-fm-on-the-vine-bulk",
       "code": "64664",
       "commonsFile": "Cluster of Tomatoes on Vine.jpg",

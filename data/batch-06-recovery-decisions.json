@@ -2,8 +2,58 @@
   "schemaVersion": 1,
   "batch": "06",
   "reviewedOn": "2026-09-04",
-  "method": "Exact workbook listings and codes, explicit adjudication of six legacy exclusions, and direct pixel review of twenty media cases. Unresolved cases remain unpublishable; supplier references do not grant photo rights.",
+  "method": "Exact workbook listings and codes, explicit adjudication of seven legacy exclusions, and direct pixel review of twenty original media cases plus the White sweet potato follow-up. Unresolved cases remain unpublishable; supplier references do not grant photo rights.",
   "items": [
+    {
+      "catalogId": "sweet-potatoes-white",
+      "sourceItem": "Sweet Potatoes - White",
+      "code": "9925",
+      "sourcePages": [4],
+      "decision": "approved",
+      "reviewBasis": "Clear this row's inherited Batch 05 selection exclusion only. PLU Codes!A430:D430 records the exact unflagged White sweet potato listing and code 9925. The prior mixed/prepared candidate rejection remains valid. A fresh review of Sweet-potato.JPG found whole raw sweet potatoes with pale tan skin, and the photographer explicitly identifies white flesh. The interior is not exposed, so White remains label-assisted and no named cultivar or store origin is asserted. The missing workbook sale unit keeps the existing interpreted Weight/Loose basis; it is not a verified store unit.",
+      "evidenceFile": "data/review-lanes/batch06-white-sweet-potato.json",
+      "identitySources": [
+        {
+          "type": "workbook",
+          "source": "PLU_Codes 2.xlsx",
+          "locator": "PLU Codes!A430:D430",
+          "supports": "Sweet Potatoes - White; code 9925; blank sold-by cell; source page 4."
+        },
+        {
+          "type": "media-metadata",
+          "source": "https://commons.wikimedia.org/wiki/File:Sweet-potato.JPG",
+          "supports": "The photographer identifies Ipomoea batatas with white flesh. Whole raw roots are visible; the flesh is not cut open. JanManu licenses the photograph CC BY-SA 3.0."
+        }
+      ],
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/Sweet-potato.JPG/1920px-Sweet-potato.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sweet-potato.JPG",
+      "author": "JanManu",
+      "license": "CC BY-SA 3.0",
+      "lessonTitle": "White sweet potato",
+      "clearsLegacyExclusion": true,
+      "mediaReview": {
+        "catalogId": "sweet-potatoes-white",
+        "code": "9925",
+        "commonsFile": "Sweet-potato.JPG",
+        "recognitionMode": "label-assisted",
+        "visibleIdentity": {
+          "label": "Sweet potato",
+          "form": "Whole tapered roots",
+          "color": "Tan",
+          "cue": "Whole sweet potatoes have tapered ends and pale tan skin here; their flesh is not exposed."
+        },
+        "labelClaims": [
+          {
+            "value": "White",
+            "basis": "workbook-label",
+            "sourceField": "catalog.item",
+            "sourcePages": [4]
+          }
+        ],
+        "sharedMediaBasis": "The photograph also appears in an earlier sweet-potato lesson. It supplies recognition evidence only; this separate source row retains code 9925 and the workbook White qualifier. No code is inherited from the photo's prior use.",
+        "reviewBasis": "Pixel review confirms whole raw pale-tan sweet potatoes, one lobed root, with no competing variety, cooked food, package, or printed checkout code. The photographer's white-flesh identification supports this catalog type, but the interior is not visible. Read White from the workbook label instead of treating skin color as a sufficient checkout discriminator."
+      }
+    },
     {
       "catalogId": "asparagus-organic",
       "sourceItem": "Asparagus - Organic",
