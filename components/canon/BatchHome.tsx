@@ -26,7 +26,6 @@ import {
 } from "@/components/canon/HomeFilterSheet";
 import { productTheme } from "@/lib/ui/product-theme";
 import { ReviewedPhoto } from "@/components/canon/ReviewedPhoto";
-import { LearningNavigation } from "@/components/canon/LearningNavigation";
 import { isSavedRelationshipStudy } from "@/lib/trace/relationship-recall";
 import { isSavedReferenceStudy, referenceSignature, referenceStorageKey, REFERENCE_STUDY_EVENT } from "@/lib/trace/reference-study";
 import type { BatchItem, BatchStorySummary, ProductBatch } from "@/types/batch";
@@ -215,9 +214,19 @@ export function BatchHome({ batch, stories, relationships = NO_RELATIONSHIPS, re
   useEffect(() => {
     const page = pageRef.current;
     if (!page) return;
-    page.inert = filterOpen;
-    if (filterOpen) page.setAttribute("aria-hidden", "true");
-    else page.removeAttribute("aria-hidden");
+    const chrome = page.closest(".learningApp")?.querySelectorAll<HTMLElement>(".learningHeader, .appFooter") ?? [];
+    const background = [page, ...chrome];
+    for (const element of background) {
+      element.inert = filterOpen;
+      if (filterOpen) element.setAttribute("aria-hidden", "true");
+      else element.removeAttribute("aria-hidden");
+    }
+    return () => {
+      for (const element of background) {
+        element.inert = false;
+        element.removeAttribute("aria-hidden");
+      }
+    };
   }, [filterOpen]);
 
   const records = useMemo(
@@ -383,7 +392,7 @@ export function BatchHome({ batch, stories, relationships = NO_RELATIONSHIPS, re
   return (
     <>
       <main className={`batchPage${mode === "library" ? " batchLibrary" : ""}`} ref={pageRef}>
-        <header className="batchTopbar">
+        {mode !== "library" && <header className="batchTopbar">
           <Link className="batchBrand" href="/" aria-label="PLU home">
             <img src="/icon.svg" alt="" aria-hidden="true" />
             <span>
@@ -391,14 +400,14 @@ export function BatchHome({ batch, stories, relationships = NO_RELATIONSHIPS, re
               <small>See it. Know it. Ring it.</small>
             </span>
           </Link>
-          {mode === "library" ? <LearningNavigation active="library" /> : <div
+          <div
             className="batchCount"
             aria-label={`${learnedCount} learned, ${allReady.length} ready, ${allRelationships.length} relationship lessons, ${allReferences.length} reference studies, ${allMapped.length} awaiting verified photographs, ${allQueued.length} needing source review, ${allExcluded.length} catalog only, ${batch.size} total`}
           >
             <span>{learnedCount}</span>
             <small>learned · {allReady.length} ready</small>
-          </div>}
-        </header>
+          </div>
+        </header>}
 
         <section className="batchHero">
           <div>

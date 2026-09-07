@@ -14,6 +14,8 @@ The app teaches the part that can be reasoned about—exact product recognition�
 
 Today (`/`) offers one five-product Core 25 session at `/session/core-25/`: green pepper, yellow banana, avocado, lemon, and field cucumber. Each uses the existing Look → Know → Code → Practice → Recall exercise. Only exact successful recall adds to the session's completed prefix; Next product is explicit. Pause and reload retain completed products and restart the incomplete product at Look. The final summary means **practised**, not measured mastery or long-term retention. This is a fixed starter session, not a daily scheduler.
 
+Today and Library share a persistent, full-width app frame. The logo, navigation and settings footer stay in place while the content scrolls and changes, with the same responsive gutters in both views. Their URLs and browser Back navigation remain available.
+
 ## Catalog 475
 
 Six catalog batches are accounted for:

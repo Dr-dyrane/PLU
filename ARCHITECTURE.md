@@ -65,12 +65,13 @@ Ready lessons show short form, color and unit cues during Look, with a wider pho
 For PLU, follow the user's borderless, show-don't-tell direction:
 
 - Group with spacing, alignment and subtle semantic surface tones. Avoid decorative enclosing borders, inset outline substitutes, repeated badges and unnecessary dividers.
+- Today, Library and their shared header/footer use the full available width with responsive safe-area gutters, not fixed page-width ceilings. Short text can retain a readable line length without constraining the page shell.
 - Let reviewed product images lead. Show one clear current action, short prompts and useful feedback; don't repeat what the image, selected navigation or progress already communicates.
 - Keep supporting evidence in existing disclosures. Never hide source uncertainty, provenance or recovery feedback merely to reduce copy.
 - Preserve visible keyboard focus, readable contrast, touch targets, reduced-motion support and both themes. Borderless does not mean removing interaction states.
 - Reuse the lesson engine, shared components and theme tokens. Verify rendered appearance as well as behaviour before release.
 
-The Today, shared navigation and session-summary CSS have a focused regression check for decorative borders and missing focus indicators. This is not a claim that every legacy surface has been restyled.
+The Today, shared navigation and session-summary CSS have a focused regression check for decorative borders and missing focus indicators. The same guard checks that Today, Library and their header/footer retain full-width page shells. This is not a claim that every legacy surface has been restyled.
 
 ## Runtime
 
@@ -80,7 +81,9 @@ The Today, shared navigation and session-summary CSS have a focused regression c
 
 `plu:session:core-25:v1` saves a versioned, exact ordered ID/code signature, completed ID prefix, and timestamp. Invalid, stale-signature, out-of-order, and future-dated payloads are rejected. Session completion is idempotent and never inferred from legacy lesson flags or relationship/reference results. Storage errors leave an in-memory session usable, with a visible warning. No daily scheduling, retention scoring, or cross-device sync is claimed.
 
-`/library/` retains all catalog routes and filters. Old root search URLs redirect client-side to Library for static-export compatibility. Explicit `returnTo` links preserve Library filters across lessons and continuation; only the local `/library/` path is accepted. Today and Library share a small two-destination navigation component.
+`/library/` retains all catalog routes and filters. Old root search URLs redirect client-side to Library for static-export compatibility. Explicit `returnTo` links preserve Library filters across lessons and continuation; only the local `/library/` path is accepted.
+
+Today and Library live under the `(learning)` route group, keeping their public URLs unchanged. Its persistent `LearningShell` owns one header, logo, navigation and footer. Only the route content scrolls; the viewport-sized background and shared safe-area gutters stay stable between views. Navigation derives its selected state from the pathname without replacing its icons. Content starts at the top on route changes, and Library filters retain their existing URL contract. The filter sheet makes both the content and shared chrome inert until dismissal. Standalone batch and lesson routes keep their own layouts.
 
 The first version is intentionally local-first:
 

@@ -10,7 +10,7 @@ const mobile = await read("../app/styles/canon/mobile-grid.css");
 const progressive = await read("../app/styles/canon/progressive-feed.css");
 const controls = await read("../app/styles/canon/catalog-controls.css");
 const globalStyles = await read("../app/styles/canon.css");
-const libraryPage = await read("../app/library/page.tsx");
+const libraryPage = await read("../app/(learning)/library/page.tsx");
 
 for (const required of [
   "IntersectionObserver",

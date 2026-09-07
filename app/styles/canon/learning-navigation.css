@@ -1,19 +1,26 @@
-.learningApp { min-height: 100dvh; display: flex; flex-direction: column; }
-.learningHeader { width: min(1080px, 100%); margin: 0 auto; padding: max(18px, env(safe-area-inset-top)) 24px 0; display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+.learningApp { --learning-gutter: 24px; height: 100dvh; display: grid; grid-template-rows: auto minmax(0, 1fr) auto; overflow: hidden; background: var(--page-background); }
+.learningHeader { width: 100%; padding: max(18px, env(safe-area-inset-top)) max(var(--learning-gutter), env(safe-area-inset-right)) 0 max(var(--learning-gutter), env(safe-area-inset-left)); display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+.learningContent { min-height: 0; overflow-y: auto; overflow-x: hidden; scrollbar-gutter: stable; overscroll-behavior-y: contain; }
+.learningContent:has(.homeFilterOverlay) { overflow: hidden; }
+.learningContent .todayPage,
+.learningContent .batchLibrary { min-height: 0; padding: clamp(24px, 4.4vw, 58px) max(var(--learning-gutter), env(safe-area-inset-right)) 30px max(var(--learning-gutter), env(safe-area-inset-left)); }
 .learningNavigation { display: inline-flex; align-items: center; gap: 4px; padding: 4px; }
 .learningNavigation a { min-height: 44px; display: inline-flex; align-items: center; justify-content: center; gap: 7px; padding: 0 15px; border-radius: 12px; color: var(--muted); font-size: 13px; font-weight: 700; text-decoration: none; }
 .learningNavigation svg { width: 17px; height: 17px; }
 .learningNavigation a[aria-current="page"] { color: var(--home-accent); background: var(--soft); }
 .learningNavigation a:focus-visible { outline: 3px solid var(--home-accent); outline-offset: 2px; }
-.learningApp .appFooter { width: min(1080px, 100%); margin-top: auto; }
-.batchLibrary .batchHero { margin: 32px 0 24px; }
+.learningApp .appFooter { margin: 0; padding-left: max(var(--learning-gutter), env(safe-area-inset-left)); padding-right: max(var(--learning-gutter), env(safe-area-inset-right)); }
+.batchLibrary .batchHero { margin: 0 0 24px; }
 .batchLibrary .batchHero h1 { max-width: none; font-size: clamp(36px, 5vw, 56px); line-height: 1.08; }
 .batchLibrary .batchHero p { margin-top: 10px; }
 @media (max-width: 600px) {
-  .learningHeader { padding: max(12px, env(safe-area-inset-top)) 16px 0; gap: 8px; }
+  .learningApp { --learning-gutter: 16px; }
+  .learningHeader { padding-top: max(12px, env(safe-area-inset-top)); gap: 8px; }
+  .learningContent .todayPage,
+  .learningContent .batchLibrary { padding-top: 22px; }
   .learningHeader .batchBrand small, .batchLibrary .batchBrand small { display: none; }
   .learningNavigation { padding: 3px; gap: 2px; }
   .learningNavigation a { padding: 0 11px; font-size: 12px; gap: 5px; }
   .learningNavigation svg { width: 15px; height: 15px; }
-  .batchLibrary .batchHero { margin: 26px 0 20px; }
+  .batchLibrary .batchHero { margin: 0 0 20px; }
 }

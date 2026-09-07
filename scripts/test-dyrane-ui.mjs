@@ -41,11 +41,26 @@ function hasFocusOutline(css, selector) {
   return [...withoutComments(css).matchAll(/([^{}]+)\{([^{}]*)\}/g)].some(([, selectors, body]) => selectors.split(",").some(value => value.trim() === selector) && declarations(body).some(([property, value]) => property === "outline" && (value === "auto" || Number.parseFloat(value) > 0) && !/\bnone\b/.test(value)));
 }
 
+function shellWidthFailures(css, selector, requireFullWidth = true) {
+  const rules = [...withoutComments(css).matchAll(/([^{}]+)\{([^{}]*)\}/g)].filter(([, selectors]) => selectors.split(",").some(value => value.trim() === selector));
+  const sizing = rules.flatMap(([, , body]) => declarations(body)).filter(([property]) => property === "width" || property === "max-width");
+  const failures = sizing.filter(([property, value]) => property === "width" ? value !== "100%" : !["none", "100%"].includes(value)).map(([property, value]) => `${property}: ${value}`);
+  if (requireFullWidth && !sizing.some(([property, value]) => property === "width" && value === "100%")) failures.push("missing width: 100%");
+  return failures;
+}
+
 // Keep the guard narrow: soft depth, rounded corners and keyboard outlines are valid.
 assert.deepEqual(decorationFailures(".ok { border: 0; border-top: none; border-radius: 18px; box-shadow: 0 12px 38px rgba(0,0,0,.08); }"), []);
 for (const declaration of ["border: 1px solid red", "border-bottom: 1px solid var(--hairline)", "box-shadow: inset 0 1px 0 white", "box-shadow: 0 0 0 1px var(--accent)", "box-shadow: 0 8px 20px rgba(0,0,0,.1), 0 0 0 2px red"]) assert.ok(decorationFailures(`.no { ${declaration}; }`).length > 0, declaration);
 assert.ok(hasFocusOutline(".link:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }", ".link:focus-visible"));
 assert.equal(hasFocusOutline(".link:focus-visible { outline: none; }", ".link:focus-visible"), false);
+
+// Only page shells stretch; text measures and controls may retain their own widths.
+assert.deepEqual(shellWidthFailures(".shell, .other { width: 100%; max-width: none; } .shell p { max-width: 44ch; } .control { width: min(100%, 220px); } @media (max-width: 600px) { .shell { padding: 16px; } }", ".shell"), []);
+assert.ok(shellWidthFailures(".shell p { width: 100%; }", ".shell").length > 0);
+for (const declaration of ["max-width: 1200px", "width: 1200px", "width: min(100%, 1200px)", "width: clamp(320px, 100%, 1200px)"]) assert.ok(shellWidthFailures(`.shell { width: 100%; } @media (min-width: 900px) { .shell { ${declaration}; } }`, ".shell").length > 0, declaration);
+assert.deepEqual(shellWidthFailures(".learningApp .appFooter { margin-top: auto; }", ".learningApp .appFooter", false), []);
+assert.ok(shellWidthFailures(".learningApp .appFooter { width: min(100%, 1200px); }", ".learningApp .appFooter", false).length > 0);
 
 for (const [file, focusSelector] of surfaces) {
   const css = await readFile(new URL(`../app/styles/canon/${file}`, import.meta.url), "utf8");
@@ -53,4 +68,10 @@ for (const [file, focusSelector] of surfaces) {
   assert.ok(hasFocusOutline(css, focusSelector), `${file}: retain a visible keyboard outline for ${focusSelector}`);
 }
 
-console.log("Dyrane UI: three new surfaces stay border-free without outline-shadow substitutes; keyboard focus outlines remain visible.");
+for (const [file, selector] of [["today.css", ".todayPage"], ["learning-navigation.css", ".learningHeader"], ["batch.css", ".batchPage"], ["footer.css", ".appFooter"]]) {
+  const css = await readFile(new URL(`../app/styles/canon/${file}`, import.meta.url), "utf8");
+  assert.deepEqual(shellWidthFailures(css, selector), [], `${file}: ${selector} must use the available width without a page-width cap`);
+  if (file === "learning-navigation.css") assert.deepEqual(shellWidthFailures(css, ".learningApp .appFooter", false), [], `${file}: the footer override must not restore a page-width cap`);
+}
+
+console.log("Dyrane UI: three new surfaces stay border-free with visible keyboard focus; four page shells fill the available width without caps.");

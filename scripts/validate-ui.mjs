@@ -6,6 +6,7 @@ import "./test-lesson-transition.mjs";
 import "./test-core-session.mjs";
 import "./test-library-navigation.mjs";
 import "./test-dyrane-ui.mjs";
+import "./test-learning-shell.mjs";
 
 const lesson = await readFile(new URL("../components/canon/PluLesson.tsx", import.meta.url), "utf8");
 const productSheet = await readFile(new URL("../components/canon/ProductSheet.tsx", import.meta.url), "utf8");
@@ -27,8 +28,8 @@ const appearanceCss = await readFile(new URL("../app/styles/canon/appearance.css
 const footerCss = await readFile(new URL("../app/styles/canon/footer.css", import.meta.url), "utf8");
 const layout = await readFile(new URL("../app/layout.tsx", import.meta.url), "utf8");
 const manifest = await readFile(new URL("../app/manifest.ts", import.meta.url), "utf8");
-const homePage = await readFile(new URL("../app/page.tsx", import.meta.url), "utf8");
-const libraryPage = await readFile(new URL("../app/library/page.tsx", import.meta.url), "utf8");
+const homePage = await readFile(new URL("../app/(learning)/page.tsx", import.meta.url), "utf8");
+const libraryPage = await readFile(new URL("../app/(learning)/library/page.tsx", import.meta.url), "utf8");
 const seedCompiler = await readFile(new URL("../data/stories/compile-story-seed.ts", import.meta.url), "utf8");
 
 const forbiddenLearnerCopy = [
@@ -96,7 +97,6 @@ for (const required of ["appFooter", "ThemeToggle", "Progress stays on this devi
   assert.ok(homeFooter.includes(required), `Home footer is missing ${required}.`);
 }
 
-assert.ok(homePage.includes("HomeFooter"), "The home route must render the settings footer.");
 assert.ok(homePage.includes("TodayHome") && homePage.includes("coreSessionSummaries"), "Today must offer the bounded five-product session.");
 assert.ok(homePage.includes("LegacyLibraryRedirect"), "Existing filtered home URLs must remain usable.");
 assert.ok(libraryPage.includes("catalog475") && libraryPage.includes('mode="library"'), "Library must retain the complete Catalog 475 collection.");
