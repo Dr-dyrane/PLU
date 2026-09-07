@@ -3,6 +3,8 @@ import { readFile, stat } from "node:fs/promises";
 import "./test-relationship-recall.mjs";
 import "./test-lesson-sequence.mjs";
 import "./test-lesson-transition.mjs";
+import "./test-core-session.mjs";
+import "./test-library-navigation.mjs";
 
 const lesson = await readFile(new URL("../components/canon/PluLesson.tsx", import.meta.url), "utf8");
 const productSheet = await readFile(new URL("../components/canon/ProductSheet.tsx", import.meta.url), "utf8");
@@ -25,6 +27,7 @@ const footerCss = await readFile(new URL("../app/styles/canon/footer.css", impor
 const layout = await readFile(new URL("../app/layout.tsx", import.meta.url), "utf8");
 const manifest = await readFile(new URL("../app/manifest.ts", import.meta.url), "utf8");
 const homePage = await readFile(new URL("../app/page.tsx", import.meta.url), "utf8");
+const libraryPage = await readFile(new URL("../app/library/page.tsx", import.meta.url), "utf8");
 const seedCompiler = await readFile(new URL("../data/stories/compile-story-seed.ts", import.meta.url), "utf8");
 
 const forbiddenLearnerCopy = [
@@ -93,7 +96,9 @@ for (const required of ["appFooter", "ThemeToggle", "Progress stays on this devi
 }
 
 assert.ok(homePage.includes("HomeFooter"), "The home route must render the settings footer.");
-assert.ok(homePage.includes("catalog475"), "The home route must render the complete Catalog 475 collection.");
+assert.ok(homePage.includes("TodayHome") && homePage.includes("coreSessionSummaries"), "Today must offer the bounded five-product session.");
+assert.ok(homePage.includes("LegacyLibraryRedirect"), "Existing filtered home URLs must remain usable.");
+assert.ok(libraryPage.includes("catalog475") && libraryPage.includes('mode="library"'), "Library must retain the complete Catalog 475 collection.");
 
 for (const required of [
   'seed.checkout.codeScope === "catalog-listed-retail-unit"',
@@ -152,5 +157,5 @@ const icon = await stat(new URL("../app/icon.svg", import.meta.url));
 assert.ok(icon.size > 0, "app/icon.svg must be non-empty.");
 
 console.log(
-  "Validated generic multi-family lessons, the Catalog 475 home, fixed lesson shell, scrolling, back navigation, search, category chips, native filter sheet, one-row footer, default-light theme persistence, semantic light/dark colors, safe areas, 44px targets, reduced motion, clean learner copy, and favicon.",
+  "Validated generic multi-family lessons, Today and Catalog 475 Library, fixed lesson shell, scrolling, back navigation, search, category chips, native filter sheet, one-row footer, default-light theme persistence, semantic light/dark colors, safe areas, 44px targets, reduced motion, clean learner copy, and favicon.",
 );

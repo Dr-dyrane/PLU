@@ -49,7 +49,8 @@ for (const [path, identity] of [["learn/[slug]", "story.id"], ["relationships/[c
   assert.ok(page.includes("nextLessonByHref.get("), `${path}: pass a lightweight destination`);
 }
 const finish = await read("components/canon/LessonFinishActions.tsx");
-assert.ok(finish.includes('next?.href ?? "/"'));
+assert.ok(finish.includes('returnTo ?? "/library/"'));
+assert.ok(finish.includes('new URLSearchParams({ returnTo })'));
 assert.ok(finish.includes('"Next lesson" : "Next study"'));
 assert.ok(finish.includes('onClick={onRetry}'));
 console.log("Lesson continuation: 463 unique catalog-ordered routes, separate study sequences, terminal Done, and keyed lesson resets passed.");

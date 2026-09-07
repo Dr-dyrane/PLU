@@ -10,7 +10,9 @@ An image-first produce-identification and checkout-code learning system built wi
 Look → Know → Code → Practice → Recall → Next lesson
 ```
 
-The app teaches the part that can be reasoned about—exact product recognition—before attaching the store's assigned code. Code lessons use reviewed product photography; reference studies label generated illustrations separately. Completing a lesson offers the next item in catalog order or a retry. Relationship and reference studies stay in their own sequences, with Done returning home at the end. Opening the next item starts a fresh exercise; it never marks that item learned.
+The app teaches the part that can be reasoned about—exact product recognition—before attaching the store's assigned code. Code lessons use reviewed product photography; reference studies label generated illustrations separately. Completing a standalone lesson offers the next item in catalog order or a retry. Relationship and reference studies stay in their own sequences, with Done returning to Library. Opening the next item starts a fresh exercise; it never marks that item learned.
+
+Today (`/`) offers one five-product Core 25 session at `/session/core-25/`: green pepper, yellow banana, avocado, lemon, and field cucumber. Each uses the existing Look → Know → Code → Practice → Recall exercise. Only exact successful recall adds to the session's completed prefix; Next product is explicit. Pause and reload retain completed products and restart the incomplete product at Look. The final summary means **practised**, not measured mastery or long-term retention. This is a fixed starter session, not a daily scheduler.
 
 ## Catalog 475
 
@@ -23,7 +25,7 @@ Six catalog batches are accounted for:
 - `data/batches/batch-05.json` — Products 201–300
 - `data/batches/batch-06.json` — All 175 remaining source rows
 
-The home page combines them into one searchable **Catalog 475** collection. The first five batches remain the completed **Must Know 300** set. Batch-specific views are available at `/batch-01/` through `/batch-06/`.
+Library (`/library/`) combines them into one searchable **Catalog 475** collection. Previously shared home query/filter URLs redirect to the same Library view. Lesson return links preserve the Library's search and filters. The first five batches remain the completed **Must Know 300** set. Batch-specific views are available at `/batch-01/` through `/batch-06/`.
 
 Batch 05 is selected from the remaining normalized catalog rows. It rejects already-published IDs, uncertain codes, non-produce rows, and weak media matches before accepting exactly 100 lessons.
 

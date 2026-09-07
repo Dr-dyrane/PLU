@@ -26,6 +26,7 @@ import {
 } from "@/components/canon/HomeFilterSheet";
 import { productTheme } from "@/lib/ui/product-theme";
 import { ReviewedPhoto } from "@/components/canon/ReviewedPhoto";
+import { LearningNavigation } from "@/components/canon/LearningNavigation";
 import { isSavedRelationshipStudy } from "@/lib/trace/relationship-recall";
 import { isSavedReferenceStudy, referenceSignature, referenceStorageKey, REFERENCE_STUDY_EVENT } from "@/lib/trace/reference-study";
 import type { BatchItem, BatchStorySummary, ProductBatch } from "@/types/batch";
@@ -94,7 +95,7 @@ function readCompleted(stories: BatchStorySummary[]) {
   return completed;
 }
 
-export function BatchHome({ batch, stories, relationships = NO_RELATIONSHIPS, references = NO_REFERENCES }: { batch: ProductBatch; stories: BatchStorySummary[]; relationships?: RelationshipSummary[]; references?: ReferenceLessonSummary[] }) {
+export function BatchHome({ batch, stories, relationships = NO_RELATIONSHIPS, references = NO_REFERENCES, mode = "catalog" }: { batch: ProductBatch; stories: BatchStorySummary[]; relationships?: RelationshipSummary[]; references?: ReferenceLessonSummary[]; mode?: "catalog" | "library" }) {
   const [query, setQuery] = useState("");
   const [category, setCategory] = useState<CategoryFilter>("all");
   const [sold, setSold] = useState<SoldFilter>("all");
@@ -116,6 +117,17 @@ export function BatchHome({ batch, stories, relationships = NO_RELATIONSHIPS, re
   const pageRef = useRef<HTMLElement | null>(null);
   const filterTriggerRef = useRef<HTMLButtonElement | null>(null);
   const loadSentinelRef = useRef<HTMLDivElement | null>(null);
+
+  const lessonHref = (path: string) => {
+    if (mode !== "library") return path;
+    const params = new URLSearchParams();
+    if (query.trim()) params.set("q", query.trim());
+    if (category !== "all") params.set("category", category);
+    if (sold !== "all") params.set("sold", sold);
+    if (learning !== "all") params.set("learning", learning);
+    const returnTo = `/library/${params.size ? `?${params.toString()}` : ""}`;
+    return `${path}?${new URLSearchParams({ returnTo })}`;
+  };
 
   const byCatalogId = useMemo(
     () => new Map(stories.map((story) => [story.catalogId, story])),
@@ -370,7 +382,7 @@ export function BatchHome({ batch, stories, relationships = NO_RELATIONSHIPS, re
 
   return (
     <>
-      <main className="batchPage" ref={pageRef}>
+      <main className={`batchPage${mode === "library" ? " batchLibrary" : ""}`} ref={pageRef}>
         <header className="batchTopbar">
           <Link className="batchBrand" href="/" aria-label="PLU home">
             <img src="/icon.svg" alt="" aria-hidden="true" />
@@ -379,24 +391,24 @@ export function BatchHome({ batch, stories, relationships = NO_RELATIONSHIPS, re
               <small>See it. Know it. Ring it.</small>
             </span>
           </Link>
-          <div
+          {mode === "library" ? <LearningNavigation active="library" /> : <div
             className="batchCount"
             aria-label={`${learnedCount} learned, ${allReady.length} ready, ${allRelationships.length} relationship lessons, ${allReferences.length} reference studies, ${allMapped.length} awaiting verified photographs, ${allQueued.length} needing source review, ${allExcluded.length} catalog only, ${batch.size} total`}
           >
             <span>{learnedCount}</span>
             <small>learned · {allReady.length} ready</small>
-          </div>
+          </div>}
         </header>
 
         <section className="batchHero">
           <div>
-            <p className="batchEyebrow">
+            {mode !== "library" && <p className="batchEyebrow">
               <Sparkles aria-hidden="true" /> {batch.title}
-            </p>
-            <h1>Know it at a glance.</h1>
-            <p>Spot the difference. Recall the code.</p>
+            </p>}
+            <h1>{mode === "library" ? "Library" : "Know it at a glance."}</h1>
+            <p>{mode === "library" ? "Find a product. Check a code." : "Spot the difference. Recall the code."}</p>
           </div>
-          {first?.story && (
+          {mode !== "library" && first?.story && (
             <Link className="batchStart" href={`/learn/${first.story.id}/`}>
               <Play aria-hidden="true" />
               <span>
@@ -477,7 +489,7 @@ export function BatchHome({ batch, stories, relationships = NO_RELATIONSHIPS, re
                   <Link
                     className="batchLessonCard"
                     style={productTheme(story)}
-                    href={`/learn/${story.id}/`}
+                    href={lessonHref(`/learn/${story.id}/`)}
                     key={item.catalogId}
                   >
                     <ReviewedPhoto
@@ -542,7 +554,7 @@ export function BatchHome({ batch, stories, relationships = NO_RELATIONSHIPS, re
             <p className="batchSectionNote">Compare recorded codes. Check the store listing before checkout.</p>
             <div className="batchQueueGrid">
               {visibleRelationships.map(({ item, studied }) => (
-                <Link className="batchQueueCard batchMappedCard batchRelationshipCard" href={`/relationships/${item.catalogId}/`} key={item.catalogId}>
+                <Link className="batchQueueCard batchMappedCard batchRelationshipCard" href={lessonHref(`/relationships/${item.catalogId}/`)} key={item.catalogId}>
                   <BookOpenCheck aria-hidden="true" />
                   <div><strong>{item.title}</strong><small>{studied ? "Mapping studied · Review" : item.mappingKind === "shared-code" ? "Shared code" : "Different codes"}</small></div>
                   <b className="batchReferenceCode">{item.code}</b><ArrowRight aria-hidden="true" />
@@ -564,7 +576,7 @@ export function BatchHome({ batch, stories, relationships = NO_RELATIONSHIPS, re
             <p className="batchSectionNote">Study aids. Check the store listing before checkout.</p>
             <div className="batchQueueGrid">
               {visibleReferences.map(({ item, reference, referenceStudied }) => (
-                <Link className="batchQueueCard batchMappedCard batchRelationshipCard" href={`/reference/${item.catalogId}/`} key={item.catalogId}>
+                <Link className="batchQueueCard batchMappedCard batchRelationshipCard" href={lessonHref(`/reference/${item.catalogId}/`)} key={item.catalogId}>
                   <BookOpenCheck aria-hidden="true" />
                   <div><strong>{item.title}</strong><small>{referenceStudied ? "Studied · Review" : `${reference?.mediaKind === "generated-illustration" ? "AI illustration" : "Reference photo"} · ${reference?.codeStatus === "recorded" ? "Recorded code" : "Code unconfirmed"}`}</small></div>
                   <ArrowRight aria-hidden="true" />

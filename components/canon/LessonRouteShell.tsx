@@ -4,11 +4,14 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { ArrowLeft } from "lucide-react";
 import type { ReactNode } from "react";
+import { libraryReturnPath } from "@/lib/trace/library-navigation";
 
 export function LessonRouteShell({ children }: { children?: ReactNode }) {
   const router = useRouter();
 
   const goBack = () => {
+    const returnTo = libraryReturnPath(window.location.search);
+    if (returnTo) { router.push(returnTo); return; }
     try {
       const referrer = document.referrer ? new URL(document.referrer) : null;
       if (referrer?.origin === window.location.origin) {
@@ -16,9 +19,9 @@ export function LessonRouteShell({ children }: { children?: ReactNode }) {
         return;
       }
     } catch {
-      // A direct visit simply falls back to Home.
+      // A direct visit simply falls back to Library.
     }
-    router.push("/");
+    router.push("/library/");
   };
 
   return (

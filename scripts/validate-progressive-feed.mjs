@@ -10,7 +10,7 @@ const mobile = await read("../app/styles/canon/mobile-grid.css");
 const progressive = await read("../app/styles/canon/progressive-feed.css");
 const controls = await read("../app/styles/canon/catalog-controls.css");
 const globalStyles = await read("../app/styles/canon.css");
-const homePage = await read("../app/page.tsx");
+const libraryPage = await read("../app/library/page.tsx");
 
 for (const required of [
   "IntersectionObserver",
@@ -64,12 +64,12 @@ assert.ok(
   globalStyles.includes('@import "./canon/batch-dispositions.css"'),
   "Catalog disposition CSS must be included globally.",
 );
-assert.ok(homePage.includes("catalog475"), "The home page must expose the complete Catalog 475 collection.");
+assert.ok(libraryPage.includes("catalog475"), "Library must expose the complete Catalog 475 collection.");
 assert.ok(
-  homePage.includes("homeStorySummaries"),
-  "The home page must use lightweight story summaries rather than full lessons.",
+  libraryPage.includes("homeStorySummaries"),
+  "Library must use lightweight story summaries rather than full lessons.",
 );
 
 console.log(
-  "Validated 18-at-a-time ready loading, mapped/queued/catalog-only discovery, image laziness, mobile scan grid, horizontal category scrolling, theme-safe selected controls, and the Catalog 475 home feed.",
+  "Validated 18-at-a-time ready loading, mapped/queued/catalog-only discovery, image laziness, mobile scan grid, horizontal category scrolling, theme-safe selected controls, and the Catalog 475 Library feed.",
 );

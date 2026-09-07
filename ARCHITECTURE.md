@@ -62,6 +62,14 @@ Ready lessons show short form, color and unit cues during Look, with a wider pho
 
 ## Runtime
 
+### Today and bounded practice
+
+`data/core-session.ts` selects exactly five authored Core 25 stories. The home route sends only their photo/title summaries to `TodayHome`; `/session/core-25/` sends those five stories to `CoreSession`, which reuses `PluLesson` and its exact-code success gate. The callback runs after successful recall; a finish-actions slot keeps standalone continuation unchanged.
+
+`plu:session:core-25:v1` saves a versioned, exact ordered ID/code signature, completed ID prefix, and timestamp. Invalid, stale-signature, out-of-order, and future-dated payloads are rejected. Session completion is idempotent and never inferred from legacy lesson flags or relationship/reference results. Storage errors leave an in-memory session usable, with a visible warning. No daily scheduling, retention scoring, or cross-device sync is claimed.
+
+`/library/` retains all catalog routes and filters. Old root search URLs redirect client-side to Library for static-export compatibility. Explicit `returnTo` links preserve Library filters across lessons and continuation; only the local `/library/` path is accepted. Today and Library share a small two-destination navigation component.
+
 The first version is intentionally local-first:
 
 - Next.js App Router

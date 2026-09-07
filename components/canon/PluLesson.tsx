@@ -1,6 +1,6 @@
 "use client";
 
-import { Fragment, useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { Fragment, useCallback, useEffect, useMemo, useRef, useState, type ReactNode } from "react";
 
 import { ChoiceVisual, Icon, friendlyQuestion } from "@/components/canon/Icon";
 import { CodeSlots, NumberPad, chunkIndexForPosition, chunkStart } from "@/components/canon/Keypad";
@@ -22,7 +22,7 @@ function photoFor(story: ProductStory, role: ProductPhotoRole) {
   return story.photos.find((photo) => photo.role === role) ?? story.photos[0];
 }
 
-export function PluLesson({ story, nextLesson }: { story: ProductStory; nextLesson?: LessonDestination | null }) {
+export function PluLesson({ story, nextLesson, onComplete, completionActions }: { story: ProductStory; nextLesson?: LessonDestination | null; onComplete?: () => void; completionActions?: ReactNode }) {
   const [step, setStep] = useState<Step>(1);
   const [questionIndex, setQuestionIndex] = useState(0);
   const [choiceFeedback, setChoiceFeedback] = useState<{ id: string; correct: boolean } | null>(null);
@@ -236,6 +236,7 @@ export function PluLesson({ story, nextLesson }: { story: ProductStory; nextLess
     } catch {
       // Persistence is optional.
     }
+    onComplete?.();
   };
 
   const deleteRecallDigit = () => {
@@ -248,7 +249,7 @@ export function PluLesson({ story, nextLesson }: { story: ProductStory; nextLess
     const onKeyDown = (event: KeyboardEvent) => {
       if (!active.current || sheetOpenRef.current || completeRef.current || transition.isPending() || wrongChunkRef.current !== null || event.defaultPrevented || event.repeat || event.metaKey || event.ctrlKey || event.altKey) return;
       if (event.target instanceof HTMLElement && (event.target.isContentEditable || event.target.closest("input, textarea, select"))) return;
-      if (event.key === "Enter" && event.target instanceof HTMLElement && event.target.closest(".topbar, .actionDock, .lessonRouteNav")) return;
+      if (event.key === "Enter" && event.target instanceof HTMLElement && event.target.closest(".topbar, .actionDock, .lessonRouteNav, a")) return;
       if (stepRef.current === 4 && /^\d$/.test(event.key)) { event.preventDefault(); practiceDigit(event.key); }
       if (stepRef.current === 5) {
         if (/^\d$/.test(event.key) || event.key === "Backspace" || event.key === "Enter") event.preventDefault();
@@ -411,7 +412,7 @@ export function PluLesson({ story, nextLesson }: { story: ProductStory; nextLess
               )}
             </div>
 
-            {complete ? <div className="actionDock two"><LessonFinishActions next={nextLesson ?? null} onRetry={reset} retryLabel="Run again" /></div> : <div className={`actionDock${step === 2 || step === 4 ? " hiddenDock" : ""}${step === 5 && wrongChunk === null ? " two" : ""}`}>
+            {complete ? <div className="actionDock two">{completionActions ?? <LessonFinishActions next={nextLesson ?? null} onRetry={reset} retryLabel="Run again" />}</div> : <div className={`actionDock${step === 2 || step === 4 ? " hiddenDock" : ""}${step === 5 && wrongChunk === null ? " two" : ""}`}>
               {step === 1 && <button className="primaryAction" type="button" onClick={() => { if (stepRef.current === 1 && !sheetOpenRef.current) goToStep(2); }}>Start</button>}
               {step === 2 && null}
               {step === 3 && <button className="primaryAction" type="button" onClick={() => { if (stepRef.current !== 3 || sheetOpenRef.current) return; traceEntryRef.current = ""; setTraceEntry(""); goToStep(4); }}>Practice {code}</button>}

@@ -1,0 +1,43 @@
+.coreSession { --accent: var(--home-accent); --accent-strong: var(--home-accent-strong); --accent-rgb: var(--home-accent-rgb); position: relative; min-height: 100dvh; }
+.coreSessionHeader { position: absolute; z-index: 8; top: max(16px, env(safe-area-inset-top)); left: max(20px, calc((100vw - 1480px) / 2 + 20px), env(safe-area-inset-left)); height: 56px; display: flex; align-items: center; gap: 18px; }
+.coreSessionExit { min-height: 44px; display: inline-flex; align-items: center; gap: 7px; color: var(--muted); text-decoration: none; font-weight: 650; font-size: 13px; }
+.coreSessionExit svg { width: 20px; height: 20px; }
+.coreSessionCounter { margin: 0; line-height: 1.3; }
+.coreSessionCounter span { display: block; color: var(--muted); font-size: 10px; margin-bottom: 3px; }
+.coreSessionCounter strong { display: block; font-size: 12px; font-weight: 720; font-variant-numeric: tabular-nums; }
+.coreSessionCounter:focus, .coreSessionSummary h1:focus { outline: none; }
+.coreSessionDots { display: flex; gap: 4px; margin: 0; padding: 0; list-style: none; }
+.coreSessionDots li { width: 6px; height: 6px; border-radius: 50%; background: var(--soft-2); }
+.coreSessionDots li[data-state="complete"] { background: var(--accent); }
+.coreSessionDots li[data-state="current"] { box-shadow: 0 0 0 1px var(--accent); }
+.coreSessionStatus { position: absolute; top: max(75px, calc(env(safe-area-inset-top) + 60px)); left: 20px; right: 20px; z-index: 8; margin: 0; text-align: center; color: var(--muted); font-size: 12px; line-height: 1.5; }
+.coreSession:has(> .coreSessionStatus) .app { padding-top: max(102px, calc(env(safe-area-inset-top) + 90px)); }
+.coreSession .secondaryAction { text-decoration: none; display: inline-flex; align-items: center; justify-content: center; gap: 7px; }
+.coreSession .primaryAction { text-decoration: none; display: inline-flex; align-items: center; justify-content: center; gap: 9px; }
+.coreSessionSummary { width: min(540px, 100%); margin: 0 auto; padding: max(120px, calc(env(safe-area-inset-top) + 100px)) 24px 40px; }
+.coreSessionSummaryMark { display: grid; place-items: center; width: 60px; height: 60px; margin-bottom: 22px; border-radius: 22px; color: var(--accent); background: var(--success-soft); }
+.coreSessionSummaryMark svg { width: 30px; height: 30px; }
+.coreSessionSummary h1 { margin: 0 0 28px; max-width: 11ch; font-size: clamp(36px, 7vw, 50px); line-height: 1.05; letter-spacing: -.05em; }
+.coreSessionSummaryList { list-style: none; margin: 0; padding: 0; }
+.coreSessionSummaryList li { display: flex; align-items: center; gap: 12px; padding: 16px 0; border-bottom: 1px solid var(--hairline); font-size: 14px; }
+.coreSessionSummaryList svg { width: 18px; height: 18px; flex-shrink: 0; color: var(--accent); }
+.coreSessionSummaryList code { margin-left: auto; font-size: 16px; font-weight: 700; letter-spacing: .06em; }
+.coreSessionSummaryActions { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 28px; }
+.coreSessionSummaryActions svg { width: 18px; height: 18px; }
+.coreSession a:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+@media (max-width: 980px) {
+  .coreSessionHeader { top: max(9px, env(safe-area-inset-top)); left: max(9px, env(safe-area-inset-left)); height: 48px; gap: 5px; }
+  .coreSessionExit { width: 42px; height: 44px; justify-content: center; border-radius: 50%; background: var(--soft); }
+  .coreSessionExit span, .coreSessionDots, .coreSessionCounter > span { display: none; }
+  .coreSessionCounter { max-width: 68px; }
+  .coreSessionCounter strong { font-size: 11px; }
+  .coreSessionStatus { top: max(64px, calc(env(safe-area-inset-top) + 56px)); left: 12px; right: 12px; font-size: 11px; }
+  .coreSession:has(> .coreSessionStatus) .app { padding-top: max(95px, calc(env(safe-area-inset-top) + 86px)); }
+}
+@media (max-width: 600px) {
+  .coreSessionSummary { padding: 98px 24px 30px; }
+  .coreSessionSummaryMark { width: 48px; height: 48px; border-radius: 16px; margin-bottom: 18px; }
+  .coreSessionSummary h1 { margin-bottom: 18px; }
+  .coreSessionSummaryList li { padding: 14px 0; font-size: 13px; }
+  .coreSessionSummaryActions { margin-top: 22px; }
+}
