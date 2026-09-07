@@ -54,7 +54,7 @@ for (const field of ["qualifierNote", "reviewBasis", "checkoutCaveat", "visualCu
   assert.equal(lessonUi.includes(`lesson.${field}`), false, `${field} stays out of the exercise`);
   assert.ok(sheetUi.includes(`lesson.${field}`), `${field} remains available in Details`);
 }
-for (const required of ["<RelationshipSheet", "aria-haspopup=\"dialog\"", "codes.map((code)", "chunkCode(code)", "lesson.sourcePages", "if (step !== 3) return", "if (choice !== \"verify\") return", "<Link className=\"primaryAction\" href=\"/\">Done", ">Look again</button>"]) {
+for (const required of ["<RelationshipSheet", "aria-haspopup=\"dialog\"", "codes.map((code)", "chunkCode(code)", "lesson.sourcePages", "if (step !== 3) return", "if (choice !== \"verify\") return", "<LessonFinishActions next={nextLesson} onRetry={reset}", ">Look again</button>"]) {
   assert.ok(lessonUi.includes(required), `Compact relationship UI contract missing: ${required}`);
 }
 assert.equal(lessonUi.includes("plu:complete:"), false, "Relationship study cannot write checkout mastery");

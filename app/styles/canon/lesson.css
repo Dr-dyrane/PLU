@@ -150,6 +150,7 @@
 .primaryAction:disabled { opacity: .34; cursor: default; box-shadow: none; }
 .secondaryAction { color: var(--muted); background: var(--soft); }
 .secondaryAction:hover { color: var(--text); background: var(--soft-2); }
+.lessonNextAction { display: flex; align-items: center; justify-content: center; gap: 8px; text-decoration: none; }
 
 .reaction { position: fixed; z-index: 80; left: 50%; bottom: max(18px,env(safe-area-inset-bottom)); min-height: 42px; padding: 0 15px; border-radius: 999px; display: flex; align-items: center; justify-content: center; gap: 8px; color: #07170d; font-size: 12px; font-weight: 820; background: var(--green); box-shadow: 0 18px 46px rgba(0,0,0,.4); opacity: 0; pointer-events: none; transform: translate(-50%,20px) scale(.96); transition: opacity .22s, transform .32s var(--ease), background .18s; }
 .reaction.show { opacity: 1; transform: translate(-50%,0) scale(1); }

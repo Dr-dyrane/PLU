@@ -1,11 +1,12 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
 import { ArrowRight, BookOpen, Check, CircleHelp, Copy, Eye, FileQuestion, ImageOff, RotateCcw, ShieldCheck, Store } from "lucide-react";
 import { useCallback, useEffect, useRef, useState, type FormEvent } from "react";
 
 import { ReferenceSheet } from "@/components/canon/ReferenceSheet";
+import { LessonFinishActions } from "@/components/canon/LessonFinishActions";
+import type { LessonDestination } from "@/types/lesson";
 import { chunkCode } from "@/lib/trace/code-path";
 import { canRecallReferenceCode, isSavedReferenceStudy, REFERENCE_STUDY_EVENT, referenceCodeHints, referenceCodeLabels, referenceSignature, referenceSourceChoices, referenceStorageKey, referenceVisualCue, validateReferenceCodeRecall } from "@/lib/trace/reference-study";
 import type { ReferenceLessonData } from "@/types/reference";
@@ -25,7 +26,7 @@ function notifyProgress(catalogId: string) {
   window.dispatchEvent(new CustomEvent(REFERENCE_STUDY_EVENT, { detail: { catalogId } }));
 }
 
-export function ReferenceLesson({ lesson }: { lesson: ReferenceLessonData }) {
+export function ReferenceLesson({ lesson, nextLesson = null }: { lesson: ReferenceLessonData; nextLesson?: LessonDestination | null }) {
   const [step, setStep] = useState<Step>(1);
   const [entry, setEntry] = useState("");
   const [error, setError] = useState("");
@@ -238,7 +239,7 @@ export function ReferenceLesson({ lesson }: { lesson: ReferenceLessonData }) {
             {step === 2 && !revealed && !codeRecall && <button type="button" className="secondaryAction" onClick={() => { setError(""); setRevealed(true); }}>Look again</button>}
             {step === 2 && revealed && <button type="button" className="primaryAction" onClick={() => { setEntry(""); setError(""); setSourceChoice(null); setRevealed(false); }}>Try again</button>}
             {step === 3 && <button type="button" className="secondaryAction" onClick={returnToInspection}>Look again</button>}
-            {step === 4 && <><button type="button" className="secondaryAction" onClick={reset}>Study again</button><Link className="primaryAction" href="/">Done <ArrowRight aria-hidden="true" /></Link></>}
+            {step === 4 && <LessonFinishActions next={nextLesson} onRetry={reset} />}
           </div>
         </section>
       </main>

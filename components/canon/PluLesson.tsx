@@ -4,9 +4,12 @@ import { Fragment, useCallback, useEffect, useMemo, useRef, useState } from "rea
 
 import { ChoiceVisual, Icon, friendlyQuestion } from "@/components/canon/Icon";
 import { CodeSlots, NumberPad, chunkIndexForPosition, chunkStart } from "@/components/canon/Keypad";
+import { LessonFinishActions } from "@/components/canon/LessonFinishActions";
 import { ProductSheet } from "@/components/canon/ProductSheet";
 import { ReviewedPhoto } from "@/components/canon/ReviewedPhoto";
 import { compileCheckoutPath, firstDifferentDigit, toneForDigit } from "@/lib/trace/code-path";
+import { createLessonTransition } from "@/lib/trace/lesson-transition";
+import type { LessonDestination } from "@/types/lesson";
 import type { ProductPhotoRole, ProductStory } from "@/types/trace";
 
 type Step = 1 | 2 | 3 | 4 | 5;
@@ -19,7 +22,7 @@ function photoFor(story: ProductStory, role: ProductPhotoRole) {
   return story.photos.find((photo) => photo.role === role) ?? story.photos[0];
 }
 
-export function PluLesson({ story }: { story: ProductStory }) {
+export function PluLesson({ story, nextLesson }: { story: ProductStory; nextLesson?: LessonDestination | null }) {
   const [step, setStep] = useState<Step>(1);
   const [questionIndex, setQuestionIndex] = useState(0);
   const [choiceFeedback, setChoiceFeedback] = useState<{ id: string; correct: boolean } | null>(null);
@@ -31,10 +34,20 @@ export function PluLesson({ story }: { story: ProductStory }) {
   const [reaction, setReaction] = useState<Reaction>(null);
   const [sheetOpen, setSheetOpen] = useState(false);
   const [sheetTab, setSheetTab] = useState<SheetTab>("spot");
+  const [pending, setPending] = useState(false);
+  const [transition] = useState(() => createLessonTransition());
   const appRef = useRef<HTMLDivElement | null>(null);
   const previousFocus = useRef<HTMLElement | null>(null);
-  const reactionTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const reactionCancel = useRef<(() => void) | null>(null);
   const audioContext = useRef<AudioContext | null>(null);
+  const active = useRef(true);
+  const stepRef = useRef<Step>(1);
+  const questionIndexRef = useRef(0);
+  const traceEntryRef = useRef("");
+  const recallEntryRef = useRef("");
+  const wrongChunkRef = useRef<number | null>(null);
+  const completeRef = useRef(false);
+  const sheetOpenRef = useRef(false);
 
   const path = useMemo(() => compileCheckoutPath(story.checkout.code, "calculator"), [story.checkout.code]);
   const code = path.code;
@@ -66,14 +79,10 @@ export function PluLesson({ story }: { story: ProductStory }) {
   }, []);
 
   const feedback = useCallback((kind: "good" | "warn", text: string) => {
-    if (reactionTimer.current) clearTimeout(reactionTimer.current);
+    reactionCancel.current?.();
     setReaction({ kind, text });
-    reactionTimer.current = setTimeout(() => setReaction(null), 1050);
-  }, []);
-
-  useEffect(() => () => {
-    if (reactionTimer.current) clearTimeout(reactionTimer.current);
-  }, []);
+    reactionCancel.current = transition.schedule(() => setReaction(null), 1050);
+  }, [transition]);
 
   useEffect(() => {
     const element = appRef.current;
@@ -84,17 +93,32 @@ export function PluLesson({ story }: { story: ProductStory }) {
   }, [sheetOpen]);
 
   const openSheet = useCallback((tab: SheetTab = "spot") => {
+    if (!active.current || transition.isPending()) return;
     previousFocus.current = document.activeElement as HTMLElement;
+    sheetOpenRef.current = true;
     setSheetTab(tab);
     setSheetOpen(true);
-  }, []);
+  }, [transition]);
 
   const closeSheet = useCallback(() => {
+    sheetOpenRef.current = false;
     setSheetOpen(false);
-    requestAnimationFrame(() => previousFocus.current?.focus({ preventScroll: true }));
-  }, []);
+    transition.schedule(() => previousFocus.current?.focus({ preventScroll: true }), 0);
+  }, [transition]);
 
-  const reset = useCallback(() => {
+  const resetSession = useCallback((announce = true) => {
+    transition.cancelAll();
+    reactionCancel.current = null;
+    stepRef.current = 1;
+    questionIndexRef.current = 0;
+    traceEntryRef.current = "";
+    recallEntryRef.current = "";
+    wrongChunkRef.current = null;
+    completeRef.current = false;
+    sheetOpenRef.current = false;
+    setPending(false);
+    setSheetOpen(false);
+    setReaction(null);
     setStep(1);
     setQuestionIndex(0);
     setChoiceFeedback(null);
@@ -102,71 +126,110 @@ export function PluLesson({ story }: { story: ProductStory }) {
     setRecallEntry("");
     setWrongChunk(null);
     setComplete(false);
-    feedback("good", "Ready");
-  }, [feedback]);
+    if (announce) feedback("good", "Ready");
+  }, [feedback, transition]);
+
+  const reset = useCallback(() => resetSession(), [resetSession]);
+
+  useEffect(() => {
+    active.current = true;
+    resetSession(false);
+    return () => {
+      active.current = false;
+      transition.cancelAll();
+      void audioContext.current?.close().catch(() => {});
+      audioContext.current = null;
+    };
+  }, [story.id, resetSession, transition]);
+
+  const goToStep = (next: Step) => {
+    stepRef.current = next;
+    setStep(next);
+  };
+
+  const beginTransition = (delay: number, callback: () => void) => {
+    if (!transition.begin(delay, () => { callback(); setPending(false); })) return false;
+    setPending(true);
+    return true;
+  };
 
   const respondToPrompt = (choiceId: string) => {
-    if (choiceId !== prompt.answer) {
+    if (!active.current || stepRef.current !== 2 || sheetOpenRef.current || transition.isPending()) return;
+    const index = questionIndexRef.current;
+    const currentPrompt = story.classificationPrompts[index];
+    if (!currentPrompt) return;
+    const correct = choiceId === currentPrompt.answer;
+    if (!beginTransition(correct ? 360 : 430, () => {
+      setChoiceFeedback(null);
+      if (!correct) return;
+      if (index < story.classificationPrompts.length - 1) {
+        questionIndexRef.current = index + 1;
+        setQuestionIndex(index + 1);
+      } else goToStep(3);
+    })) return;
+    if (!correct) {
       setChoiceFeedback({ id: choiceId, correct: false });
-      window.setTimeout(() => setChoiceFeedback(null), 430);
       feedback("warn", "Look once more");
       tone(150, 0.1, 0.03);
       haptic([22, 22, 22]);
       return;
     }
     setChoiceFeedback({ id: choiceId, correct: true });
-    feedback("good", questionIndex === story.classificationPrompts.length - 1 ? "That is the exact item" : "Yes");
-    tone(520 + questionIndex * 70);
+    feedback("good", index === story.classificationPrompts.length - 1 ? "That is the exact item" : "Yes");
+    tone(520 + index * 70);
     haptic(11);
-    window.setTimeout(() => {
-      setChoiceFeedback(null);
-      if (questionIndex < story.classificationPrompts.length - 1) setQuestionIndex((index) => index + 1);
-      else setStep(3);
-    }, 360);
   };
 
   const practiceDigit = (digit: string) => {
-    const expected = code[traceEntry.length];
-    const chunkIndex = chunkIndexForPosition(path.chunks, traceEntry.length);
+    if (!active.current || stepRef.current !== 4 || sheetOpenRef.current || transition.isPending() || traceEntryRef.current.length >= code.length) return;
+    const expected = code[traceEntryRef.current.length];
+    const chunkIndex = chunkIndexForPosition(path.chunks, traceEntryRef.current.length);
     if (digit !== expected) {
       feedback("warn", "Start this group again");
       tone(145, 0.1, 0.03);
       haptic([20, 20, 20]);
-      setTraceEntry(code.slice(0, chunkStart(path.chunks, chunkIndex)));
+      traceEntryRef.current = code.slice(0, chunkStart(path.chunks, chunkIndex));
+      setTraceEntry(traceEntryRef.current);
       return;
     }
-    const next = `${traceEntry}${digit}`;
+    const next = `${traceEntryRef.current}${digit}`;
+    traceEntryRef.current = next;
     setTraceEntry(next);
     tone(toneForDigit(digit));
     haptic(9);
     if (next.length === code.length) {
       feedback("good", "Ready");
-      window.setTimeout(() => {
-        setStep(5);
+      beginTransition(420, () => {
+        goToStep(5);
+        recallEntryRef.current = "";
         setRecallEntry("");
-      }, 420);
+      });
     }
   };
 
   const recallDigit = (digit: string) => {
-    if (recallEntry.length >= code.length) return;
-    setRecallEntry((entry) => `${entry}${digit}`);
+    if (!active.current || stepRef.current !== 5 || sheetOpenRef.current || completeRef.current || wrongChunkRef.current !== null || transition.isPending() || recallEntryRef.current.length >= code.length) return;
+    recallEntryRef.current += digit;
+    setRecallEntry(recallEntryRef.current);
     tone(toneForDigit(digit), 0.05, 0.02);
     haptic(8);
   };
 
   const checkRecall = () => {
-    if (recallEntry !== code) {
-      const wrongAt = firstDifferentDigit(code, recallEntry);
-      setWrongChunk(chunkIndexForPosition(path.chunks, Math.max(0, wrongAt)));
+    if (!active.current || stepRef.current !== 5 || sheetOpenRef.current || completeRef.current || wrongChunkRef.current !== null || transition.isPending()) return;
+    if (recallEntryRef.current !== code) {
+      const wrongAt = firstDifferentDigit(code, recallEntryRef.current);
+      wrongChunkRef.current = chunkIndexForPosition(path.chunks, Math.max(0, wrongAt));
+      setWrongChunk(wrongChunkRef.current);
       feedback("warn", "Repair one group");
       tone(145, 0.11, 0.03);
       haptic([25, 22, 25]);
       return;
     }
+    completeRef.current = true;
     setComplete(true);
     feedback("good", "You got it");
-    [523, 659, 784].forEach((frequency, index) => window.setTimeout(() => tone(frequency, 0.12, 0.04), index * 70));
+    [523, 659, 784].forEach((frequency, index) => transition.schedule(() => tone(frequency, 0.12, 0.04), index * 70));
     haptic([18, 35, 30]);
     try {
       window.localStorage.setItem(`plu:complete:${story.id}`, JSON.stringify({ completedAt: new Date().toISOString() }));
@@ -175,14 +238,23 @@ export function PluLesson({ story }: { story: ProductStory }) {
     }
   };
 
+  const deleteRecallDigit = () => {
+    if (!active.current || stepRef.current !== 5 || sheetOpenRef.current || completeRef.current || wrongChunkRef.current !== null || transition.isPending()) return;
+    recallEntryRef.current = recallEntryRef.current.slice(0, -1);
+    setRecallEntry(recallEntryRef.current);
+  };
+
   useEffect(() => {
     const onKeyDown = (event: KeyboardEvent) => {
-      if (sheetOpen || complete) return;
-      if (step === 4 && /^\d$/.test(event.key)) practiceDigit(event.key);
-      if (step === 5 && wrongChunk === null) {
+      if (!active.current || sheetOpenRef.current || completeRef.current || transition.isPending() || wrongChunkRef.current !== null || event.defaultPrevented || event.repeat || event.metaKey || event.ctrlKey || event.altKey) return;
+      if (event.target instanceof HTMLElement && (event.target.isContentEditable || event.target.closest("input, textarea, select"))) return;
+      if (event.key === "Enter" && event.target instanceof HTMLElement && event.target.closest(".topbar, .actionDock, .lessonRouteNav")) return;
+      if (stepRef.current === 4 && /^\d$/.test(event.key)) { event.preventDefault(); practiceDigit(event.key); }
+      if (stepRef.current === 5) {
+        if (/^\d$/.test(event.key) || event.key === "Backspace" || event.key === "Enter") event.preventDefault();
         if (/^\d$/.test(event.key)) recallDigit(event.key);
-        if (event.key === "Backspace") setRecallEntry((entry) => entry.slice(0, -1));
-        if (event.key === "Enter" && recallEntry.length === code.length) checkRecall();
+        if (event.key === "Backspace") deleteRecallDigit();
+        if (event.key === "Enter" && recallEntryRef.current.length === code.length) checkRecall();
       }
     };
     window.addEventListener("keydown", onKeyDown);
@@ -199,7 +271,7 @@ export function PluLesson({ story }: { story: ProductStory }) {
 
   return (
     <>
-      <div className="app" ref={appRef} data-step={step} data-complete={complete}>
+      <div className="app" ref={appRef} data-step={step} data-complete={complete} data-pending={pending}>
         <header className="topbar">
           <button className="brand" type="button" aria-label={`Restart ${story.title} lesson`} onClick={reset}>
             <img src="/icon.svg" alt="" aria-hidden="true" />
@@ -212,7 +284,7 @@ export function PluLesson({ story }: { story: ProductStory }) {
             </div>
           </div>
           <div className="topActions">
-            <button className="headerButton" type="button" aria-label="Open product story" onClick={() => openSheet("spot")}><Icon name="bookmark" /><span>Story</span></button>
+            <button className="headerButton" type="button" aria-label="Open product story" disabled={pending} onClick={() => openSheet("spot")}><Icon name="bookmark" /><span>Story</span></button>
             <button
               className="headerButton"
               type="button"
@@ -248,7 +320,7 @@ export function PluLesson({ story }: { story: ProductStory }) {
             </figcaption>
           </figure>
 
-          <section className="lessonCard" aria-live="polite">
+          <section className="lessonCard" aria-live="polite" aria-busy={pending}>
             <div className="lessonScroller">
               {step === 1 && (
                 <section className="lessonView" data-screen="look">
@@ -268,7 +340,7 @@ export function PluLesson({ story }: { story: ProductStory }) {
                   <h2>{friendlyQuestion(prompt)}</h2>
                   <div className="choiceGrid">
                     {prompt.choices.map((choice) => (
-                      <button className={`choiceButton${choiceFeedback?.id === choice.id ? (choiceFeedback.correct ? " correct" : " wrong") : ""}`} data-choice={choice.id} type="button" onClick={() => respondToPrompt(choice.id)} key={choice.id}>
+                      <button className={`choiceButton${choiceFeedback?.id === choice.id ? (choiceFeedback.correct ? " correct" : " wrong") : ""}`} data-choice={choice.id} type="button" disabled={pending} onClick={() => respondToPrompt(choice.id)} key={choice.id}>
                         {ChoiceVisual(prompt, choice)}
                         <span className="choiceCopy"><b>{choice.label}</b></span>
                         <span className="choiceArrow" aria-hidden="true">→</span>
@@ -310,7 +382,7 @@ export function PluLesson({ story }: { story: ProductStory }) {
                     <h2>Follow the glow.</h2>
                     <CodeSlots codeLength={code.length} entry={traceEntry} />
                     <div className="pairProgress"><span>Now</span><b>{path.chunks[activeChunk]}</b></div>
-                    <NumberPad code={code} entry={traceEntry} guided onDigit={practiceDigit} />
+                    <fieldset disabled={pending} aria-label="Practice number pad" style={{ border: 0, padding: 0, margin: 0, minWidth: 0 }}><NumberPad code={code} entry={traceEntry} guided onDigit={practiceDigit} /></fieldset>
                   </section>
                 );
               })()}
@@ -339,15 +411,14 @@ export function PluLesson({ story }: { story: ProductStory }) {
               )}
             </div>
 
-            <div className={`actionDock${step === 2 || step === 4 ? " hiddenDock" : ""}${step === 5 && !complete && wrongChunk === null ? " two" : complete ? " two" : ""}`}>
-              {step === 1 && <button className="primaryAction" type="button" onClick={() => setStep(2)}>Start</button>}
+            {complete ? <div className="actionDock two"><LessonFinishActions next={nextLesson ?? null} onRetry={reset} retryLabel="Run again" /></div> : <div className={`actionDock${step === 2 || step === 4 ? " hiddenDock" : ""}${step === 5 && wrongChunk === null ? " two" : ""}`}>
+              {step === 1 && <button className="primaryAction" type="button" onClick={() => { if (stepRef.current === 1 && !sheetOpenRef.current) goToStep(2); }}>Start</button>}
               {step === 2 && null}
-              {step === 3 && <button className="primaryAction" type="button" onClick={() => { setTraceEntry(""); setStep(4); }}>Practice {code}</button>}
+              {step === 3 && <button className="primaryAction" type="button" onClick={() => { if (stepRef.current !== 3 || sheetOpenRef.current) return; traceEntryRef.current = ""; setTraceEntry(""); goToStep(4); }}>Practice {code}</button>}
               {step === 4 && null}
-              {step === 5 && !complete && wrongChunk !== null && <button className="primaryAction" type="button" onClick={() => { setWrongChunk(null); setRecallEntry(""); }}>Try again</button>}
-              {step === 5 && !complete && wrongChunk === null && <><button className="secondaryAction" type="button" disabled={!recallEntry} onClick={() => setRecallEntry((entry) => entry.slice(0, -1))}>Delete</button><button className="primaryAction" type="button" disabled={recallEntry.length !== code.length} onClick={checkRecall}>Check</button></>}
-              {complete && <><button className="secondaryAction" type="button" onClick={() => openSheet("similar")}>Similar items</button><button className="primaryAction" type="button" onClick={reset}>Run again</button></>}
-            </div>
+              {step === 5 && wrongChunk !== null && <button className="primaryAction" type="button" onClick={() => { wrongChunkRef.current = null; recallEntryRef.current = ""; setWrongChunk(null); setRecallEntry(""); }}>Try again</button>}
+              {step === 5 && wrongChunk === null && <><button className="secondaryAction" type="button" disabled={!recallEntry} onClick={deleteRecallDigit}>Delete</button><button className="primaryAction" type="button" disabled={recallEntry.length !== code.length} onClick={checkRecall}>Check</button></>}
+            </div>}
           </section>
         </main>
 

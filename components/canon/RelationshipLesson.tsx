@@ -1,11 +1,12 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
 import { ArrowRight, BookOpen, Check, Copy, Eye, ImageOff, RotateCcw, ShieldCheck, Store } from "lucide-react";
 import { useCallback, useEffect, useRef, useState, type FormEvent } from "react";
 
 import { RelationshipSheet } from "@/components/canon/RelationshipSheet";
+import { LessonFinishActions } from "@/components/canon/LessonFinishActions";
+import type { LessonDestination } from "@/types/lesson";
 import { chunkCode } from "@/lib/trace/code-path";
 import { isSavedRelationshipStudy, relationshipSignature, validateRelationshipRecall } from "@/lib/trace/relationship-recall";
 import type { RelationshipLessonData } from "@/types/relationship";
@@ -20,7 +21,7 @@ function CodeSet({ codes }: { codes: string[] }) {
   </div>;
 }
 
-export function RelationshipLesson({ lesson }: { lesson: RelationshipLessonData }) {
+export function RelationshipLesson({ lesson, nextLesson = null }: { lesson: RelationshipLessonData; nextLesson?: LessonDestination | null }) {
   const [step, setStep] = useState<Step>(1);
   const [entry, setEntry] = useState("");
   const [error, setError] = useState("");
@@ -201,7 +202,7 @@ export function RelationshipLesson({ lesson }: { lesson: RelationshipLessonData 
             {step === 2 && !revealed && <><button type="button" className="secondaryAction" onClick={() => { setError(""); setRevealed(true); }}>Peek</button><button type="submit" form="relationship-recall" className="primaryAction">Check</button></>}
             {step === 2 && revealed && <button type="button" className="primaryAction" onClick={() => { setEntry(""); setError(""); setRevealed(false); }}>Try again</button>}
             {step === 3 && <button type="button" className="secondaryAction" onClick={lookAgain}>Look again</button>}
-            {step === 4 && <><button type="button" className="secondaryAction" onClick={reset}>Study again</button><Link className="primaryAction" href="/">Done <ArrowRight aria-hidden="true" /></Link></>}
+            {step === 4 && <LessonFinishActions next={nextLesson} onRetry={reset} />}
           </div>
         </section>
       </main>

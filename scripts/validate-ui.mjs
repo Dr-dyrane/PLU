@@ -1,6 +1,8 @@
 import assert from "node:assert/strict";
 import { readFile, stat } from "node:fs/promises";
 import "./test-relationship-recall.mjs";
+import "./test-lesson-sequence.mjs";
+import "./test-lesson-transition.mjs";
 
 const lesson = await readFile(new URL("../components/canon/PluLesson.tsx", import.meta.url), "utf8");
 const productSheet = await readFile(new URL("../components/canon/ProductSheet.tsx", import.meta.url), "utf8");

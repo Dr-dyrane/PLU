@@ -7,10 +7,10 @@ An image-first produce-identification and checkout-code learning system built wi
 ## Learning flow
 
 ```text
-Look → Know → Code → Practice → Recall
+Look → Know → Code → Practice → Recall → Next lesson
 ```
 
-The app teaches the part that can be reasoned about—exact product recognition—before attaching the store's assigned code. Every lesson uses realistic product photography so recognition transfers across angle, lighting, specimen, and market context.
+The app teaches the part that can be reasoned about—exact product recognition—before attaching the store's assigned code. Code lessons use reviewed product photography; reference studies label generated illustrations separately. Completing a lesson offers the next item in catalog order or a retry. Relationship and reference studies stay in their own sequences, with Done returning home at the end. Opening the next item starts a fresh exercise; it never marks that item learned.
 
 ## Catalog 475
 
@@ -27,9 +27,9 @@ The home page combines them into one searchable **Catalog 475** collection. The 
 
 Batch 05 is selected from the remaining normalized catalog rows. It rejects already-published IDs, uncertain codes, non-produce rows, and weak media matches before accepting exactly 100 lessons.
 
-Batch 06 accounts for every source row left after Batch 05. Its full-remainder pass searched all 163 in-scope identities, not only the old strict loose-produce subset: 108 returned candidate media, all 422 primary/alternative images were decoded and pixel-reviewed, and 75 candidates passed visual review. A second catalog-relationship pass reused 22 already-reviewed recognition photos where the remaining row had one exact code and a safe label-assisted lesson contract. Batch 06 now contains 75 ready lessons, 39 exact mapped references, 49 rows needing source review, and 12 catalog-only rows, bringing the ready lesson total to 375.
+Batch 06 accounts for every source row left after Batch 05. Its full-remainder pass searched all 163 in-scope identities, not only the old strict loose-produce subset: 108 returned candidate media, all 422 primary/alternative images were decoded and pixel-reviewed, and 75 candidates passed visual review. Subsequent source, media-reuse, and relationship passes brought the complete catalog to 396 ready code lessons, 19 relationship studies, 48 reference studies, and 12 catalog-only rows. All 463 in-scope rows now have a study route.
 
-Mapped references preserve exact catalog truth without forcing multi-code, shared-code, or not-yet-photographed relationships into a one-answer recall lesson. The 49-row review queue is limited to real evidence gaps: 26 identity adjudications, 9 missing-code captures, 13 code reconciliations, and 1 store-code classification.
+Relationship and reference studies preserve exact catalog truth without forcing multi-code, shared-code, or unresolved records into a one-answer checkout lesson. The 48 reference studies use 36 reviewed photos and 12 explicitly labeled generated illustrations. Ten can test a clean recorded code; the other 38 test source status instead. Study completion does not resolve missing codes, conflicts, uncertain identities, or store verification.
 
 ## Product stories
 

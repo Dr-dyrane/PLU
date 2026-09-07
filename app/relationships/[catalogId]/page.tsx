@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import { LessonRouteShell } from "@/components/canon/LessonRouteShell";
 import { RelationshipLesson } from "@/components/canon/RelationshipLesson";
 import { relationshipLessons, relationshipByCatalogId } from "@/data/relationships";
+import { nextLessonByHref } from "@/data/lesson-navigation";
 
 export const dynamicParams = false;
 export function generateStaticParams() {
@@ -11,5 +12,5 @@ export default async function RelationshipPage({ params }: { params: Promise<{ c
   const { catalogId } = await params;
   const lesson = relationshipByCatalogId.get(catalogId);
   if (!lesson) notFound();
-  return <LessonRouteShell><RelationshipLesson lesson={lesson} /></LessonRouteShell>;
+  return <LessonRouteShell><RelationshipLesson key={lesson.catalogId} lesson={lesson} nextLesson={nextLessonByHref.get(`/relationships/${lesson.catalogId}/`) ?? null} /></LessonRouteShell>;
 }

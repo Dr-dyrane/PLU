@@ -5,6 +5,7 @@ import { LessonRouteShell } from "@/components/canon/LessonRouteShell";
 import { PluLesson } from "@/components/canon/PluLesson";
 import { productStories, productStoryById } from "@/data/stories";
 import { productTheme } from "@/lib/ui/product-theme";
+import { nextLessonByHref } from "@/data/lesson-navigation";
 
 export const dynamicParams = false;
 
@@ -25,7 +26,7 @@ export default async function ProductLessonPage({
     <LessonRouteShell>
       <div className="productTheme" style={productTheme(story)}>
         <ProductIconProvider story={story}>
-          <PluLesson story={story} />
+          <PluLesson key={story.id} story={story} nextLesson={nextLessonByHref.get(`/learn/${story.id}/`) ?? null} />
         </ProductIconProvider>
       </div>
     </LessonRouteShell>
