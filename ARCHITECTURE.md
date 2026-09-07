@@ -23,6 +23,8 @@ Only `ready` rows compile to `ProductStory` and `/learn/` routes. Mapped, queued
 
 Nineteen explicitly reviewed `mapped` rows also have `/relationships/[catalogId]/` source-row lessons. These teach the exact label, source pages, and complete recorded code set without establishing a primary or current checkout code. Same-label and shared-code neighbors retain their complete source arrays and uncertainty flags. Relationship recall requires every recorded code, preserves leading zeros, and rejects partial sets and duplicates. A separate checkout guard prevents photo-only or interchangeable-label conclusions.
 
+Relationship presentation uses one title/page marker, complete chunked code sets, short recall and checkout choices, and a fixed action dock. Full listing evidence, sale-unit gaps, all related-row arrays and flags, and photo credits live in a native Listing / Related / Sources sheet. Concise presentation never selects a primary code or changes the source-row completion contract.
+
 `data/batch-06-relationship-decisions.json` is the evidence ledger; `npm run prepare:relationships` materializes reviewed source photographs and immutable mappings into `data/relationship-lessons.json`. The build validates the exact nineteen targets and their neighbors. Home receives lightweight summaries only. Completion uses `plu:relationship:<catalogId>` and is displayed as “Mapping studied,” never mixed with `plu:complete:<storyId>` mastery. The 26 mapped records therefore comprise 19 studyable relationships and 7 awaiting media, not 26 new checkout-ready lessons.
 
 ## Reference-study coverage
@@ -55,6 +57,8 @@ Examples:
 `See → Encode → Hide → Recall → Correct → Contrast → Schedule`
 
 The React component is reusable. Product-specific facts, images, visual anchors, stories, and confusion sets live in lesson data.
+
+Ready lessons show short form, color and unit cues during Look, with a wider phone cue for long exact forms. Code uses a fixed short prompt rather than repeating the product title. Full recognition cues remain in ProductSheet; reviewed-panel credits and reuse limitations are available through its Photo source disclosure.
 
 ## Runtime
 

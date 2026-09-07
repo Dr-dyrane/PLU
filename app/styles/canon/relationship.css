@@ -56,6 +56,37 @@
 .relationshipApp .actionDock.two { grid-template-columns: 1fr 1fr; }
 .relationshipSrOnly { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; border: 0; }
 
+/* Compact listing practice keeps the complete record in its native details sheet. */
+.relationshipCompactApp .relationshipCard { grid-template-rows: minmax(0, 1fr) auto; }
+.relationshipCodeLabel { margin: 22px 0 9px; color: var(--muted); font-size: 12px; }
+.relationshipCodeSet { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 10px; }
+.relationshipCodeChip { min-height: 88px; padding: 14px 12px; border-radius: 21px; display: flex; align-items: center; justify-content: center; gap: 8px; background: var(--success-soft); color: var(--green); font-size: clamp(29px, 3.6vw, 44px); font-weight: 800; font-variant-numeric: tabular-nums; letter-spacing: -.04em; }
+.relationshipCompactNote { margin: 17px 0 0; color: var(--muted); font-size: 13px; line-height: 1.45; }
+.relationshipCompactApp .relationshipRecall input { text-align: center; font-size: 30px; }
+.relationshipCompactApp .relationshipRepair > p { text-align: center; margin-top: 12px; }
+.relationshipCompactApp .relationshipChoices .choiceVisual svg { fill: none; stroke: var(--accent); }
+.relationshipCompactApp .relationshipChoices > button > svg { width: 18px; height: 18px; }
+.relationshipCompactSuccess { margin-inline: auto; }
+.relationshipFinishNote { display: flex; align-items: center; justify-content: center; gap: 8px; color: var(--muted); font-size: 13px; line-height: 1.45; margin: 20px 0 0; }
+.relationshipFinishNote svg { width: 20px; height: 20px; flex-shrink: 0; fill: none; stroke: var(--amber); }
+.relationshipCompactApp .successView .kicker { justify-content: center; }
+.relationshipCompactApp .successView h2 { max-width: none; }
+.relationshipCompactApp .actionDock a { text-decoration: none; }
+.relationshipImageFailure { position: absolute; z-index: 2; inset: 60px 20px 150px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px; color: var(--text); text-align: center; font-size: 15px; line-height: 1.5; }
+.relationshipImageFailure > svg { width: 30px; height: 30px; fill: none; }
+.relationshipImageFailure button { min-height: 44px; padding: 8px 15px; border: 1px solid var(--hairline); border-radius: 12px; background: var(--soft); color: var(--text); cursor: pointer; }
+.relationshipImageFailure button:focus-visible, .relationshipDetailsSheet a:focus-visible, .relationshipDetailsSheet .sheetBody:focus-visible { outline: 3px solid rgba(var(--home-accent-rgb), .5); outline-offset: 3px; }
+.relationshipDetailsDialog { --accent: var(--home-accent); --accent-strong: var(--home-accent-strong); --accent-rgb: var(--home-accent-rgb); position: fixed; inset: 0; width: 100vw; height: 100dvh; max-width: none; max-height: none; margin: 0; padding: 0; border: 0; background: transparent; color: var(--text); overflow: hidden; }
+.relationshipDetailsDialog::backdrop { background: transparent; }
+.relationshipDetailsSheet .storyCard { grid-template-columns: 44px minmax(0, 1fr); }
+.relationshipDetailsSheet .storyCard > :last-child { min-width: 0; }
+.relationshipDetailsSheet .storyCard small { font-size: 12px; line-height: 1.5; }
+.relationshipDetailsSheet .storyCard small + small { margin-top: 12px; }
+.relationshipDetailsSheet .sheetHeader small { display: block; overflow-wrap: anywhere; }
+.relationshipDetailsSheet a { display: inline-flex; align-items: center; min-height: 44px; overflow-wrap: anywhere; color: var(--blue); }
+.relationshipDetailsSheet .relationshipCodes code { font-size: 22px; }
+.relationshipSheetNote { margin: 0 0 6px; color: var(--muted); font-size: 12px; line-height: 1.5; }
+
 @media (max-width: 980px) {
   .relationshipApp .workspace { grid-template-rows: minmax(140px, 28%) minmax(0, 1fr); }
   .relationshipApp .photoCaption { left: 16px; right: 16px; bottom: 13px; }
@@ -76,6 +107,12 @@
   .relationshipChoices { margin-top: 15px; }
   .relationshipChoices .choiceButton { min-height: 58px; padding: 11px; gap: 11px; }
   .relationshipChoices .choiceCopy b { font-size: 13px; }
+  .relationshipCodeChip { min-height: 66px; font-size: 29px; padding: 10px; }
+  .relationshipCodeLabel { margin-top: 17px; }
+  .relationshipCompactNote { font-size: 12px; margin-top: 13px; }
+  .relationshipImageFailure { inset: 38px 12px 68px; flex-direction: row; flex-wrap: wrap; gap: 5px 9px; font-size: 12px; }
+  .relationshipImageFailure > svg { width: 18px; height: 18px; }
+  .relationshipImageFailure button { padding: 6px 10px; font-size: 11px; }
 }
 
 @media (max-height: 720px) and (max-width: 980px) {

@@ -45,7 +45,7 @@ export function ProductSheet({
       if (event.key !== "Tab" || !sheetRef.current) return;
       const focusable = [
         ...sheetRef.current.querySelectorAll<HTMLElement>(
-          'button:not([disabled]), [href], [tabindex]:not([tabindex="-1"])',
+          'button:not([disabled]), summary, [href], [tabindex]:not([tabindex="-1"])',
         ),
       ].filter((element) => element.offsetParent !== null);
       if (!focusable.length) return;
@@ -168,16 +168,18 @@ export function ProductSheet({
                 </span>
               </article>
               {reviewedPanel && (
-                <article className="storyCard">
-                  <span className="storyIcon"><Icon name="bookmark" /></span>
-                  <span>
-                    <b>Photograph source</b>
+                <details className="photoSourceDetails">
+                  <summary>Photo source</summary>
+                  <div className="storyCard">
+                    <span className="storyIcon"><Icon name="bookmark" /></span>
+                    <span>
                     <small>{reviewedPanel.source.author}</small>
                     <small><a href={reviewedPanel.source.url} target="_blank" rel="noreferrer">{reviewedPanel.source.label}</a></small>
                     <small><a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noreferrer">{reviewedPanel.source.license}</a></small>
                     <small>Only the reviewed cultivar panel is shown. Its unchanged source is reused across lesson stages; these are not three independent photographs.</small>
-                  </span>
-                </article>
+                    </span>
+                  </div>
+                </details>
               )}
             </div>
           )}

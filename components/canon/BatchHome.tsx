@@ -286,9 +286,11 @@ export function BatchHome({ batch, stories, relationships = NO_RELATIONSHIPS, re
     showAllMapped || query.trim() || learning === "mapped" || category !== "all" || sold !== "all"
       ? mapped
       : mapped.slice(0, 4);
-  const visibleRelationships = showAllRelationships || query.trim() || learning === "relationships" || category !== "all" || sold !== "all"
+  const expandRelationships = Boolean(query.trim() || learning === "relationships" || category !== "all" || sold !== "all");
+  const expandReferences = Boolean(query.trim() || learning !== "all" || category !== "all" || sold !== "all");
+  const visibleRelationships = showAllRelationships || expandRelationships
     ? relationshipRecords : relationshipRecords.slice(0, 4);
-  const visibleReferences = showAllReferences || query.trim() || learning !== "all" || category !== "all" || sold !== "all"
+  const visibleReferences = showAllReferences || expandReferences
     ? referenceRecords : referenceRecords.slice(0, 4);
   const visibleExcluded =
     showAllExcluded || query.trim() || learning === "excluded" || category !== "all" || sold !== "all"
@@ -382,7 +384,7 @@ export function BatchHome({ batch, stories, relationships = NO_RELATIONSHIPS, re
             aria-label={`${learnedCount} learned, ${allReady.length} ready, ${allRelationships.length} relationship lessons, ${allReferences.length} reference studies, ${allMapped.length} awaiting verified photographs, ${allQueued.length} needing source review, ${allExcluded.length} catalog only, ${batch.size} total`}
           >
             <span>{learnedCount}</span>
-            <small>learned · {allReady.length} ready{allRelationships.length > 0 ? ` · ${allRelationships.length} relationships` : ""}{allReferences.length > 0 ? ` · ${allReferences.length} references` : ` · ${allQueued.length} review`}</small>
+            <small>learned · {allReady.length} ready</small>
           </div>
         </header>
 
@@ -392,7 +394,7 @@ export function BatchHome({ batch, stories, relationships = NO_RELATIONSHIPS, re
               <Sparkles aria-hidden="true" /> {batch.title}
             </p>
             <h1>Know it at a glance.</h1>
-            <p>Learn the visual difference first. Then make the checkout code automatic.</p>
+            <p>Spot the difference. Recall the code.</p>
           </div>
           {first?.story && (
             <Link className="batchStart" href={`/learn/${first.story.id}/`}>
@@ -533,16 +535,16 @@ export function BatchHome({ batch, stories, relationships = NO_RELATIONSHIPS, re
           <section className="batchSection batchQueue batchMapped" aria-labelledby="relationshipHeading">
             <div className="batchSectionHeading">
               <div><BookOpenCheck aria-hidden="true" /><h2 id="relationshipHeading">Code relationships</h2></div>
-              <button className="batchQueueToggle" type="button" aria-expanded={showAllRelationships} onClick={() => setShowAllRelationships(value => !value)}>
-                {showAllRelationships ? "Show less" : `${relationshipRecords.length} relationship ${relationshipRecords.length === 1 ? "lesson" : "lessons"}`}<ChevronDown aria-hidden="true" />
-              </button>
+              {!expandRelationships && relationshipRecords.length > 4 ? <button className="batchQueueToggle" type="button" aria-expanded={showAllRelationships} onClick={() => setShowAllRelationships(value => !value)}>
+                {showAllRelationships ? "Show less" : `View all ${relationshipRecords.length}`}<ChevronDown aria-hidden="true" />
+              </button> : <span>{relationshipRecords.length} {relationshipRecords.length === 1 ? "lesson" : "lessons"}</span>}
             </div>
-            <p className="batchSectionNote">Study the exact workbook mappings. Separate from single-code mastery; confirm the store listing before checkout.</p>
+            <p className="batchSectionNote">Compare recorded codes. Check the store listing before checkout.</p>
             <div className="batchQueueGrid">
               {visibleRelationships.map(({ item, studied }) => (
                 <Link className="batchQueueCard batchMappedCard batchRelationshipCard" href={`/relationships/${item.catalogId}/`} key={item.catalogId}>
                   <BookOpenCheck aria-hidden="true" />
-                  <div><strong>{item.title}</strong><small>{studied ? "Mapping studied · Review" : item.mappingKind === "shared-code" ? "Shared code · Study mapping" : "Different recorded codes · Study mapping"}</small></div>
+                  <div><strong>{item.title}</strong><small>{studied ? "Mapping studied · Review" : item.mappingKind === "shared-code" ? "Shared code" : "Different codes"}</small></div>
                   <b className="batchReferenceCode">{item.code}</b><ArrowRight aria-hidden="true" />
                 </Link>
               ))}
@@ -555,9 +557,9 @@ export function BatchHome({ batch, stories, relationships = NO_RELATIONSHIPS, re
           <section className="batchSection batchQueue batchMapped" aria-labelledby="referenceHeading">
             <div className="batchSectionHeading">
               <div><BookOpenCheck aria-hidden="true" /><h2 id="referenceHeading">Reference studies</h2></div>
-              <button className="batchQueueToggle" type="button" aria-expanded={showAllReferences} onClick={() => setShowAllReferences(value => !value)}>
-                {showAllReferences ? "Show less" : `${referenceRecords.length} reference studies`}<ChevronDown aria-hidden="true" />
-              </button>
+              {!expandReferences && referenceRecords.length > 4 ? <button className="batchQueueToggle" type="button" aria-expanded={showAllReferences} onClick={() => setShowAllReferences(value => !value)}>
+                {showAllReferences ? "Show less" : `View all ${referenceRecords.length}`}<ChevronDown aria-hidden="true" />
+              </button> : <span>{referenceRecords.length} {referenceRecords.length === 1 ? "study" : "studies"}</span>}
             </div>
             <p className="batchSectionNote">Study aids. Check the store listing before checkout.</p>
             <div className="batchQueueGrid">
@@ -578,7 +580,7 @@ export function BatchHome({ batch, stories, relationships = NO_RELATIONSHIPS, re
             <div className="batchSectionHeading">
               <div>
                 <BookOpenCheck aria-hidden="true" />
-                <h2 id="mappedHeading">Awaiting recognition media</h2>
+                <h2 id="mappedHeading">Needs verified photos</h2>
               </div>
               {hiddenMapped > 0 || showAllMapped ? (
                 <button
@@ -595,7 +597,7 @@ export function BatchHome({ batch, stories, relationships = NO_RELATIONSHIPS, re
               )}
             </div>
             <p className="batchSectionNote">
-              Exact catalog codes retained while suitable recognition photographs remain unresolved.
+              Recorded codes; photos still need checking.
             </p>
             <div className="batchQueueGrid">
               {visibleMapped.map(({ item }) => (
@@ -690,7 +692,7 @@ export function BatchHome({ batch, stories, relationships = NO_RELATIONSHIPS, re
               )}
             </div>
             <p className="batchSectionNote">
-              Retained from the source workbook for completeness, but outside the produce-learning curriculum.
+              Kept for reference. No produce lesson.
             </p>
             <div className="batchQueueGrid">
               {visibleExcluded.map(({ item }) => (
@@ -698,7 +700,7 @@ export function BatchHome({ batch, stories, relationships = NO_RELATIONSHIPS, re
                   <span>{String(item.order).padStart(3, "0")}</span>
                   <div>
                     <strong>{item.title}</strong>
-                    <small>{item.queueReason ?? "Outside produce-learning scope"}</small>
+                    {item.queueReason && item.queueReason !== "Outside the produce-learning scope" && <small>{item.queueReason}</small>}
                   </div>
                   <Archive aria-hidden="true" />
                 </article>

@@ -40,6 +40,17 @@ for (const phrase of forbiddenLearnerCopy) {
   assert.ok(!lesson.includes(phrase), `Learner UI must not expose: ${phrase}`);
 }
 
+assert.ok(lesson.includes("Remember the code."), "Code stage must use a concise prompt, not repeat the full product title.");
+assert.ok(!lesson.includes("story.title.toLowerCase()"), "Code stage must not repeat the photo title.");
+assert.ok(!lesson.includes("story.visualCues["), "Full recognition prose belongs in the product sheet, not repeated under the cue cards.");
+assert.ok(lesson.includes('step !== 1 && <div className="factChips"'), "Look must not repeat its recognition cards on the photograph.");
+assert.ok(lesson.includes('" longForm"'), "Long exact forms must retain a readable phone layout.");
+for (const field of ["story.visualCues[0]", "story.visualCues[1]", "reviewedPanel.source.author", "reviewedPanel.source.license", "these are not three independent photographs"]) {
+  assert.ok(productSheet.includes(field), `Product evidence must remain accessible: ${field}`);
+}
+assert.ok(productSheet.includes('<details className="photoSourceDetails">'), "Photo source must use an on-demand disclosure.");
+assert.ok(productSheet.includes("summary, [href]"), "Photo-source disclosure must remain in the sheet's keyboard focus loop.");
+
 for (const required of ["Practice {code}", "ProductSheet", "actionDock", "Open product story"]) {
   assert.ok(lesson.includes(required), `Canonical lesson is missing ${required}.`);
 }
@@ -63,7 +74,7 @@ for (const required of [
   "HomeFilterSheet",
   "Needs source review",
   "Code relationships",
-  "Awaiting recognition media",
+  "Needs verified photos",
   'learning === "relationships"',
   "isSavedRelationshipStudy",
   "!ready.length && !relationshipRecords.length && !mapped.length",
@@ -103,7 +114,7 @@ for (const required of ["Back to products", "router.back()", 'href="/"']) {
   assert.ok(routeShell.includes(required), `Lesson navigation is missing ${required}.`);
 }
 
-for (const required of ["aria-modal", "Escape", "How it is sold", "Learning", "Code relationships", "Awaiting recognition media", "Catalog only"]) {
+for (const required of ["aria-modal", "Escape", "How it is sold", "Learning", "Code relationships", "Needs verified photos", "Catalog only"]) {
   assert.ok(homeFilters.includes(required), `Filter sheet is missing ${required}.`);
 }
 

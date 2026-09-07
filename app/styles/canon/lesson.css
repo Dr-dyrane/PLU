@@ -47,6 +47,11 @@
 .visualCue b, .visualCue small { display: block; }
 .visualCue b { font-size: 13px; }
 .visualCue small { margin-top: 3px; color: var(--muted); font-size: 10px; }
+@media (max-width: 980px) {
+  .visualCueGrid.longForm { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .visualCueGrid.longForm .visualCue:first-child { grid-column: 1 / -1; flex-direction: row; align-items: center; justify-content: flex-start; gap: 12px; min-height: 64px; }
+  .visualCueGrid.longForm .visualCue:first-child .visualCueIcon { flex-shrink: 0; }
+}
 
 .questionMeta { margin-bottom: 17px; display: flex; align-items: center; justify-content: space-between; gap: 14px; }
 .questionMeta span { color: var(--muted); font-size: 11px; }

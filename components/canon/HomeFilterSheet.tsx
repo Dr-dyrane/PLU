@@ -34,27 +34,27 @@ const learningOptions: Array<{
   detail: string;
   icon: typeof Sparkles;
 }> = [
-  { value: "all", label: "Entire catalog", detail: "Lessons, mappings, and review", icon: Layers3 },
+  { value: "all", label: "Entire catalog", detail: "All products", icon: Layers3 },
   { value: "ready", label: "Ready to learn", detail: "Available, not completed", icon: Sparkles },
   { value: "learned", label: "Learned", detail: "Completed on this device", icon: Check },
-  { value: "relationships", label: "Code relationships", detail: "Source-row recall, not checkout mastery", icon: BookOpenCheck },
+  { value: "relationships", label: "Code relationships", detail: "Compare codes · Check in store", icon: BookOpenCheck },
   { value: "reference", label: "Reference studies", detail: "Study aids · Check in store", icon: BookOpenCheck },
   {
     value: "mapped",
-    label: "Awaiting recognition media",
-    detail: "Exact codes, photographs still unresolved",
+    label: "Needs verified photos",
+    detail: "Photo evidence incomplete",
     icon: BookOpenCheck,
   },
   {
     value: "queued",
     label: "Needs source review",
-    detail: "Held until evidence is verified",
+    detail: "Item or code unconfirmed",
     icon: Clock3,
   },
   {
     value: "excluded",
     label: "Catalog only",
-    detail: "Outside produce-learning scope",
+    detail: "No produce lesson",
     icon: Archive,
   },
 ];

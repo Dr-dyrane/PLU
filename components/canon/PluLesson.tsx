@@ -191,7 +191,7 @@ export function PluLesson({ story }: { story: ProductStory }) {
 
   const factCount = step === 1 ? 1 : step === 2 ? Math.min(3, questionIndex + 2) : 4;
   const facts = [
-    { icon: "bell" as const, label: `${story.identity.form} shape` },
+    { icon: "bell" as const, label: story.identity.form },
     { icon: "color" as const, label: story.identity.color },
     { icon: "loose" as const, label: story.checkout.saleForm },
     { icon: "scale" as const, label: story.checkout.soldBy === "Weight" ? "By weight" : "Each" },
@@ -242,9 +242,9 @@ export function PluLesson({ story }: { story: ProductStory }) {
             <figcaption className="photoCaption">
               <span className="familyLabel">{story.family}</span>
               <h1>{story.title}</h1>
-              <div className="factChips" aria-live="polite">
+              {step !== 1 && <div className="factChips" aria-live="polite">
                 {facts.slice(0, factCount).map((fact) => <span className="factChip" key={fact.label}><Icon name={fact.icon} />{fact.label}</span>)}
-              </div>
+              </div>}
             </figcaption>
           </figure>
 
@@ -254,9 +254,9 @@ export function PluLesson({ story }: { story: ProductStory }) {
                 <section className="lessonView" data-screen="look">
                   <p className="kicker">Look</p>
                   <h2>Notice what makes it distinct.</h2>
-                  <div className="visualCueGrid">
-                    <article className="visualCue"><span className="visualCueIcon"><Icon name="bell" /></span><span><b>{story.identity.form} shape</b><small>{story.visualCues[0]}</small></span></article>
-                    <article className="visualCue"><span className="visualCueIcon"><Icon name="color" /></span><span><b>{story.identity.color}</b><small>{story.visualCues[1]}</small></span></article>
+                  <div className={`visualCueGrid${story.identity.form.length > 32 ? " longForm" : ""}`}>
+                    <article className="visualCue"><span className="visualCueIcon"><Icon name="bell" /></span><b>{story.identity.form}</b></article>
+                    <article className="visualCue"><span className="visualCueIcon"><Icon name="color" /></span><b>{story.identity.color}</b></article>
                     <article className="visualCue"><span className="visualCueIcon"><Icon name="scale" /></span><span><b>{story.checkout.soldBy}</b><small>{story.checkout.saleForm}</small></span></article>
                   </div>
                 </section>
@@ -281,7 +281,7 @@ export function PluLesson({ story }: { story: ProductStory }) {
               {step === 3 && (
                 <section className="lessonView" data-screen="code">
                   <p className="kicker">Code</p>
-                  <h2>This {story.title.toLowerCase()} is:</h2>
+                  <h2>Remember the code.</h2>
                   <div className="codeHero" aria-label={`PLU ${code}`}>
                     {path.chunks.map((chunk, index) => (
                       <Fragment key={`${chunk}-${index}`}>
