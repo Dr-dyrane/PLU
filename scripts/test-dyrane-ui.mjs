@@ -74,4 +74,18 @@ for (const [file, selector] of [["today.css", ".todayPage"], ["learning-navigati
   if (file === "learning-navigation.css") assert.deepEqual(shellWidthFailures(css, ".learningApp .appFooter", false), [], `${file}: the footer override must not restore a page-width cap`);
 }
 
-console.log("Dyrane UI: three new surfaces stay border-free with visible keyboard focus; four page shells fill the available width without caps.");
+// Source contracts only: rendered card sizing and scroll behavior still need browser QA.
+const [catalogControls, mobileGrid, batchGrid] = await Promise.all(["catalog-controls.css", "mobile-grid.css", "batch.css"].map(async file => withoutComments(await readFile(new URL(`../app/styles/canon/${file}`, import.meta.url), "utf8"))));
+const libraryGrid = catalogControls.match(/@media\s*\(min-width:\s*561px\)\s*\{\s*\.batchLibrary\s+\.batchReadyGrid\s*\{([^{}]*)\}\s*\}/);
+assert.ok(libraryGrid, "Adaptive card density must be scoped to Library above the existing phone breakpoint.");
+assert.ok(declarations(libraryGrid[1]).some(([property, value]) => property === "grid-template-columns" && value.replace(/\s+/g, "") === "repeat(auto-fill,minmax(min(100%,14rem),1fr))"), "Library must retain 14rem minimum cards and empty auto-fill tracks for sparse results.");
+assert.equal((catalogControls.match(/grid-template-columns\s*:/g) ?? []).length, 1, "The density override must not introduce an unscoped standalone or phone grid.");
+for (const [breakpoint, columns] of [[560, "repeat(2,minmax(0,1fr))"], [350, "1fr"]]) {
+  const media = mobileGrid.match(new RegExp(`@media\\s*\\(max-width:\\s*${breakpoint}px\\)\\s*\\{([\\s\\S]*?)(?=@media|$)`));
+  const grid = media?.[1].match(/\.batchReadyGrid\s*\{([^{}]*)\}/);
+  assert.ok(grid && declarations(grid[1]).some(([property, value]) => property === "grid-template-columns" && value.replace(/\s+/g, "") === columns), `Retain the existing ${breakpoint}px phone grid.`);
+}
+const standaloneGrid = batchGrid.match(/\.batchReadyGrid\s*\{([^{}]*)\}/);
+assert.ok(standaloneGrid && declarations(standaloneGrid[1]).some(([property, value]) => property === "grid-template-columns" && value.replace(/\s+/g, "") === "repeat(3,minmax(0,1fr))"), "Standalone batches must retain their three-column desktop grid.");
+
+console.log("Dyrane UI: border-free focus-visible surfaces and full-width shells; Library density preserves phone and standalone grid contracts.");

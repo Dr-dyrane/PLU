@@ -96,6 +96,13 @@
   contain-intrinsic-size: 235px;
 }
 
+@media (min-width: 561px) {
+  .batchLibrary .batchReadyGrid {
+    /* Retain empty tracks so a filtered result stays the same size as a catalog card. */
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 14rem), 1fr));
+  }
+}
+
 @media (max-width: 560px) {
   .batchCategoryRail {
     margin-right: -12px;

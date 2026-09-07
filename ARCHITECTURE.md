@@ -66,6 +66,7 @@ For PLU, follow the user's borderless, show-don't-tell direction:
 
 - Group with spacing, alignment and subtle semantic surface tones. Avoid decorative enclosing borders, inset outline substitutes, repeated badges and unnecessary dividers.
 - Today, Library and their shared header/footer use the full available width with responsive safe-area gutters, not fixed page-width ceilings. Short text can retain a readable line length without constraining the page shell.
+- Library uses equal-size product cards, adding columns as space permits above phone widths (14rem minimum). Empty tracks keep sparse search results card-sized; the existing two-column phone and one-column narrow-phone layouts remain unchanged.
 - Let reviewed product images lead. Show one clear current action, short prompts and useful feedback; don't repeat what the image, selected navigation or progress already communicates.
 - Keep supporting evidence in existing disclosures. Never hide source uncertainty, provenance or recovery feedback merely to reduce copy.
 - Preserve visible keyboard focus, readable contrast, touch targets, reduced-motion support and both themes. Borderless does not mean removing interaction states.
