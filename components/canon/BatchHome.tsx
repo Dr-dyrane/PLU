@@ -559,12 +559,12 @@ export function BatchHome({ batch, stories, relationships = NO_RELATIONSHIPS, re
                 {showAllReferences ? "Show less" : `${referenceRecords.length} reference studies`}<ChevronDown aria-hidden="true" />
               </button>
             </div>
-            <p className="batchSectionNote">Study the product and its source record now. AI illustrations are labelled; uncertain codes are never quiz answers. Reference study is separate from checkout mastery.</p>
+            <p className="batchSectionNote">Study aids. Check the store listing before checkout.</p>
             <div className="batchQueueGrid">
               {visibleReferences.map(({ item, reference, referenceStudied }) => (
                 <Link className="batchQueueCard batchMappedCard batchRelationshipCard" href={`/reference/${item.catalogId}/`} key={item.catalogId}>
                   <BookOpenCheck aria-hidden="true" />
-                  <div><strong>{item.title}</strong><small>{referenceStudied ? "Reference studied · Review" : `${reference?.mediaKind === "generated-illustration" ? "AI illustration" : "Reference photograph"} · ${reference?.codeStatus === "recorded" ? "Recorded-code study" : "Code unconfirmed"}`}</small></div>
+                  <div><strong>{item.title}</strong><small>{referenceStudied ? "Studied · Review" : `${reference?.mediaKind === "generated-illustration" ? "AI illustration" : "Reference photo"} · ${reference?.codeStatus === "recorded" ? "Recorded code" : "Code unconfirmed"}`}</small></div>
                   <ArrowRight aria-hidden="true" />
                 </Link>
               ))}

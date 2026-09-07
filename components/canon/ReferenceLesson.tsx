@@ -2,22 +2,23 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, BookOpen, Check, Eye, ImageOff, RotateCcw, ShieldCheck } from "lucide-react";
-import { useEffect, useRef, useState, type FormEvent } from "react";
+import { ArrowRight, BookOpen, Check, CircleHelp, Copy, Eye, FileQuestion, ImageOff, RotateCcw, ShieldCheck, Store } from "lucide-react";
+import { useCallback, useEffect, useRef, useState, type FormEvent } from "react";
 
-import { canRecallReferenceCode, isSavedReferenceStudy, REFERENCE_STUDY_EVENT, referenceSignature, referenceSourceChoices, referenceStorageKey, validateReferenceCodeRecall } from "@/lib/trace/reference-study";
+import { ReferenceSheet } from "@/components/canon/ReferenceSheet";
+import { chunkCode } from "@/lib/trace/code-path";
+import { canRecallReferenceCode, isSavedReferenceStudy, REFERENCE_STUDY_EVENT, referenceCodeHints, referenceCodeLabels, referenceSignature, referenceSourceChoices, referenceStorageKey, referenceVisualCue, validateReferenceCodeRecall } from "@/lib/trace/reference-study";
 import type { ReferenceLessonData } from "@/types/reference";
 
 type Step = 1 | 2 | 3 | 4;
 type Persistence = "checking" | "available" | "saved" | "unavailable";
-const steps = ["Inspect", "Recall", "Checkout boundary", "Studied"];
+const steps = ["Look", "Recall", "Check", "Studied"];
+const statusIcons = { recorded: BookOpen, missing: FileQuestion, conflicted: Copy, uncertain: CircleHelp };
 
-function pagesLabel(pages: number[]) {
-  return pages.length ? `Source ${pages.length === 1 ? "page" : "pages"} ${pages.join(", ")}` : "Source page not recorded";
-}
-
-function saleLabel(soldBy: ReferenceLessonData["soldBy"]) {
-  return soldBy === "Weight" ? "Sold by weight" : soldBy === "Each" ? "Sold each" : "Sale unit not recorded";
+function RecordedCode({ code }: { code: string }) {
+  return <div className="codeHero referenceCodeHero" aria-label={`Recorded code ${code}`}>
+    {chunkCode(code).map((chunk, index) => <span className="codePair" key={index}><b>{chunk}</b></span>)}
+  </div>;
 }
 
 function notifyProgress(catalogId: string) {
@@ -34,6 +35,8 @@ export function ReferenceLesson({ lesson }: { lesson: ReferenceLessonData }) {
   const [persistence, setPersistence] = useState<Persistence>("checking");
   const [restored, setRestored] = useState(false);
   const [failedImage, setFailedImage] = useState<string | null>(null);
+  const [sheetOpen, setSheetOpen] = useState(false);
+  const sheetTrigger = useRef<HTMLButtonElement>(null);
   const heading = useRef<HTMLHeadingElement>(null);
   const input = useRef<HTMLInputElement>(null);
   const scroller = useRef<HTMLDivElement>(null);
@@ -43,6 +46,11 @@ export function ReferenceLesson({ lesson }: { lesson: ReferenceLessonData }) {
   const codeRecall = canRecallReferenceCode(lesson);
   const illustrated = lesson.media.kind === "generated-illustration";
   const imageUnavailable = failedImage === lesson.media.src;
+  const StatusIcon = statusIcons[lesson.codeStatus];
+  const closeSheet = useCallback(() => {
+    setSheetOpen(false);
+    sheetTrigger.current?.focus({ preventScroll: true });
+  }, []);
 
   useEffect(() => {
     setStep(1);
@@ -103,10 +111,10 @@ export function ReferenceLesson({ lesson }: { lesson: ReferenceLessonData }) {
       return;
     }
     const messages = {
-      unverified: "This source code is not a verified recall target. Review the source note instead.",
-      empty: "Enter the recorded code for this exact source listing.",
-      malformed: "Enter digits only. Keep any leading zeros.",
-      wrong: "That is not this source listing’s recorded code. Try again, or reveal it to review.",
+      unverified: "Code unconfirmed. Check the notes.",
+      empty: "Enter the code.",
+      malformed: "Digits only. Keep leading zeros.",
+      wrong: "Not quite. Try again or take a peek.",
     };
     setError(messages[result.reason]);
     input.current?.focus();
@@ -119,7 +127,7 @@ export function ReferenceLesson({ lesson }: { lesson: ReferenceLessonData }) {
       setError("");
       setStep(3);
     } else {
-      setError(choice === "verified" ? "The source still has an unresolved requirement. Choose the note that belongs to this listing." : "A reference image cannot confirm a store’s code, exact variety, or sale unit. Choose the source note.");
+      setError("Not quite. Take another look.");
     }
   };
 
@@ -147,113 +155,93 @@ export function ReferenceLesson({ lesson }: { lesson: ReferenceLessonData }) {
   };
 
   return (
-    <div className="app relationshipApp referenceApp" data-reference-step={step} data-reference-mode={codeRecall ? "recorded-code" : "source-note"}>
+    <><div className="app relationshipApp referenceApp" data-reference-step={step} data-reference-mode={codeRecall ? "recorded-code" : "source-note"}>
       <header className="topbar">
         <span aria-hidden="true" />
         <div className="progress" aria-label={`Step ${step} of 4: ${steps[step - 1]}`}>
           <span className="progressLabel">Step <b>{step} of 4</b></span>
           <div className="progressDots" aria-hidden="true">{steps.map((label, index) => <i className={`${index + 1 <= step ? "active" : ""}${index + 1 === step ? " current" : ""}`} key={label} />)}</div>
         </div>
-        <div className="topActions"><button type="button" className="headerButton" onClick={reset} aria-label="Restart reference study and clear its saved result"><RotateCcw aria-hidden="true" /><span>Restart</span></button></div>
+        <div className="topActions">
+          <button ref={sheetTrigger} type="button" className="headerButton" onClick={() => setSheetOpen(true)} aria-label="Open item details" aria-haspopup="dialog"><BookOpen aria-hidden="true" /><span>Details</span></button>
+          <button type="button" className="headerButton" onClick={reset} aria-label="Restart reference study and clear its saved result"><RotateCcw aria-hidden="true" /><span>Restart</span></button>
+        </div>
       </header>
 
       <main className="workspace">
         <figure className="productStage referenceStage">
           <div className="photoStack">
-            {imageUnavailable ? <div className="referenceImageFailure" role="status"><ImageOff aria-hidden="true" /><span>{illustrated ? "Illustration unavailable" : "Reference photograph unavailable"}</span><small>The source notes remain available below.</small><button type="button" onClick={() => setFailedImage(null)}>Retry image</button></div> : <Image className="referencePhoto" src={lesson.media.src} alt={step === 2 ? `${illustrated ? "AI illustration" : "Reference photograph"} accompanying the source listing ${lesson.title}; not proof of exact store identity or code.` : lesson.media.alt} fill sizes="(max-width: 980px) 100vw, 55vw" priority unoptimized onError={() => setFailedImage(lesson.media.src)} />}
+            {imageUnavailable ? <div className="referenceImageFailure" role="status"><ImageOff aria-hidden="true" /><span>Image unavailable</span><button type="button" onClick={() => setFailedImage(null)}>Retry image</button></div> : <Image className="referencePhoto" src={lesson.media.src} alt={step === 2 ? `${illustrated ? "AI illustration" : "Reference photo"} of ${lesson.title}; reference only.` : lesson.media.alt} fill sizes="(max-width: 980px) 100vw, 55vw" priority unoptimized onError={() => setFailedImage(lesson.media.src)} />}
             <div className="photoWash" aria-hidden="true" />
           </div>
-          <div className="mediaBadgeRow"><span className="badge">{illustrated ? "AI illustration" : "Reference photograph"}</span><span className="badge referenceOnlyBadge">Reference only</span></div>
+          <div className="mediaBadgeRow"><span className="badge">{illustrated ? "AI illustration" : "Reference photo"}</span><span className="badge referenceOnlyBadge">Reference only</span></div>
           <figcaption className="photoCaption">
-            <span className="familyLabel">Exact source label · reference study</span>
+            <span className="familyLabel">{lesson.family}</span>
             <h1>{lesson.title}</h1>
-            <div className="factChips"><span className="factChip">{pagesLabel(lesson.sourcePages)}</span><span className="factChip">{saleLabel(lesson.soldBy)}</span></div>
           </figcaption>
         </figure>
 
         <section className="lessonCard relationshipCard referenceCard" aria-labelledby="reference-heading">
           <div className="lessonScroller" ref={scroller}>
-            <div className="lessonView">
-              <p className="kicker">{steps[step - 1]}</p>
-              <h2 id="reference-heading" ref={heading} tabIndex={-1}>{step === 1 ? "Learn what the source supports." : step === 2 ? codeRecall ? "Recall the recorded code." : "Keep the source note attached." : step === 3 ? "Before checkout…" : "Reference studied."}</h2>
+            <div className={`lessonView${step === 4 ? " successView" : ""}`}>
+              <p className="kicker">{step === 4 ? "Reference" : steps[step - 1]}</p>
+              <h2 id="reference-heading" ref={heading} tabIndex={-1}>{step === 1 ? "Take a closer look." : step === 2 ? codeRecall ? "Enter the recorded code." : "What needs checking?" : step === 3 ? "Before you ring it up?" : "Studied."}</h2>
 
               {step === 1 && <>
-                <p className="relationshipLead">{lesson.visualCue}</p>
-                <div className="relationshipTarget">
-                  <strong>{lesson.title}</strong>
-                  <span>{pagesLabel(lesson.sourcePages)} · {saleLabel(lesson.soldBy)}</span>
-                  {codeRecall ? <><div className="relationshipCodes" aria-label="Recorded source code, reference only"><code>{lesson.codes[0]}</code></div><small>Recorded code for this labeled source row. The reference image does not verify the exact store item.</small></> : <p className="referenceSourceIssue"><BookOpen aria-hidden="true" /><span>{lesson.sourceIssue}</span></p>}
-                </div>
-                <p className="relationshipNote">{lesson.identityNote}</p>
-                <p className="relationshipCaveat"><ShieldCheck aria-hidden="true" /><span>{lesson.media.claimBoundary}</span></p>
-                <details className="relationshipDetails" onKeyDown={(event) => { if (event.key === "Escape") { event.currentTarget.open = false; event.currentTarget.querySelector("summary")?.focus(); event.stopPropagation(); } }}>
-                  <summary>Source notes &amp; image credit</summary>
-                  <div className="relationshipSource">
-                    <p>{lesson.sourceIssue}</p>
-                    <p>{lesson.checkoutCaveat}</p>
-                    {!codeRecall && <p>Unverified source text, not a recall answer: <span className="referenceRawCode">{lesson.sourceCodeText || "No code recorded"}</span></p>}
-                    <p><strong>{illustrated ? "AI-generated illustration" : "Reviewed reference photograph"}</strong> · {lesson.media.author}</p>
-                    <p>{lesson.media.licenseUrl ? <a href={lesson.media.licenseUrl} target="_blank" rel="noopener noreferrer">{lesson.media.license}<span className="relationshipSrOnly"> (opens a new tab)</span></a> : lesson.media.license}</p>
-                    <a href={lesson.media.sourceUrl} target="_blank" rel="noopener noreferrer">Image provenance <span aria-hidden="true">↗</span><span className="relationshipSrOnly"> (opens a new tab)</span></a>
-                    {lesson.evidenceSources.length > 0 && <ul className="referenceSources">{lesson.evidenceSources.map((source) => <li key={`${source.title}:${source.url}`}><a href={source.url} target="_blank" rel="noopener noreferrer">{source.title}<span className="relationshipSrOnly"> (opens a new tab)</span></a></li>)}</ul>}
-                  </div>
-                </details>
+                <div className="referenceCue"><Eye aria-hidden="true" /><p>{referenceVisualCue(lesson)}</p></div>
+                {codeRecall ? <>
+                  <p className="referenceCodeLabel">Recorded code</p>
+                  <RecordedCode code={lesson.codes[0]} />
+                </> : <div className="referenceStatus"><StatusIcon aria-hidden="true" /><div><b>{referenceCodeLabels[lesson.codeStatus]}</b><small>{referenceCodeHints[lesson.codeStatus]}</small></div></div>}
               </>}
 
               {step === 2 && <>
-                <p className="relationshipLead">For <strong>{lesson.title}</strong> · {pagesLabel(lesson.sourcePages).toLowerCase()}.</p>
                 {revealed ? <div className="relationshipRepair" role="status">
-                  <p>{codeRecall ? "Review the recorded code for this exact source label." : "Review the unresolved note for this exact source label."}</p>
-                  {codeRecall ? <div className="relationshipCodes"><code>{lesson.codes[0]}</code></div> : <p>{lesson.sourceIssue}</p>}
-                  <p>Hide the answer, then recall it again.</p>
+                  {codeRecall ? <RecordedCode code={lesson.codes[0]} /> : <div className="referenceStatus"><StatusIcon aria-hidden="true" /><div><b>{referenceCodeLabels[lesson.codeStatus]}</b><small>{referenceCodeHints[lesson.codeStatus]}</small></div></div>}
+                  <p>Look once. Then try again.</p>
                 </div> : codeRecall ? <form id="reference-recall" onSubmit={submitRecall} className="relationshipRecall" noValidate>
-                  <label htmlFor="reference-code">Recorded source code</label>
+                  <label htmlFor="reference-code" className="relationshipSrOnly">Recorded code</label>
                   <input ref={input} id="reference-code" type="text" inputMode="numeric" autoComplete="off" autoCorrect="off" autoCapitalize="none" spellCheck={false} value={entry} onChange={(event) => { setEntry(event.target.value); setError(""); }} aria-invalid={Boolean(error)} aria-describedby={`reference-entry-help${error ? " reference-entry-error" : ""}`} />
-                  <p id="reference-entry-help">Enter the digits exactly, keeping any leading zeros. This is label-to-code reference practice.</p>
+                  <p id="reference-entry-help" className="relationshipSrOnly">Keep any leading zeros.</p>
                   {error && <p className="relationshipError" id="reference-entry-error" role="alert">{error}</p>}
                 </form> : <>
-                  <p className="relationshipNote">Which source note belongs to this listing?</p>
-                  <div className="choiceGrid relationshipChoices referenceSourceChoices" role="group" aria-label="Source note choices">{referenceSourceChoices(lesson).map((choice) => <button key={choice.id} type="button" className={`choiceButton${sourceChoice === choice.id && choice.id !== "source" ? " wrong" : ""}`} onClick={() => chooseSource(choice.id)}><span className="choiceCopy"><b>{choice.text}</b></span></button>)}</div>
+                  <div className="choiceGrid referenceChoices" role="group" aria-label="Source check choices">{referenceSourceChoices(lesson).map((choice) => {
+                    const ChoiceIcon = statusIcons[choice.status];
+                    return <button key={choice.id} type="button" className={`choiceButton${sourceChoice === choice.id && choice.id !== "source" ? " wrong" : ""}`} onClick={() => chooseSource(choice.id)}><span className="choiceVisual"><ChoiceIcon aria-hidden="true" /></span><span className="choiceCopy"><b>{choice.text}</b></span><ArrowRight className="choiceArrow" aria-hidden="true" /></button>;
+                  })}</div>
                   {error && <p className="relationshipError" role="alert">{error}</p>}
                 </>}
-                <p className="relationshipQuiet">{codeRecall ? "A recorded label-to-code answer is not photo verification or a live-checkout approval." : "An unresolved code is not a memory target. Learn the source boundary without guessing digits."}</p>
               </>}
 
               {step === 3 && <>
-                <p className="relationshipLead">{lesson.checkoutCaveat}</p>
-                <p className="relationshipNote">What is the safe next action for this listing?</p>
-                <div className="choiceGrid relationshipChoices" role="group" aria-label="Checkout boundary choices">
-                  <button type="button" className={`choiceButton${guardChoice === "photo" ? " wrong" : ""}`} onClick={() => chooseGuard("photo")}><Eye aria-hidden="true" /><span className="choiceCopy"><b>Use this image as proof of the checkout code.</b></span></button>
-                  <button type="button" className="choiceButton" onClick={() => chooseGuard("verify")}><ShieldCheck aria-hidden="true" /><span className="choiceCopy"><b>Confirm the exact store item, code, and sale unit before use.</b></span></button>
-                  <button type="button" className={`choiceButton${guardChoice === "guess" ? " wrong" : ""}`} onClick={() => chooseGuard("guess")}><ArrowRight aria-hidden="true" /><span className="choiceCopy"><b>Choose the nearest-looking item and borrow its code.</b></span></button>
+                <div className="choiceGrid referenceChoices" role="group" aria-label="Checkout choices">
+                  <button type="button" className={`choiceButton${guardChoice === "photo" ? " wrong" : ""}`} onClick={() => chooseGuard("photo")}><span className="choiceVisual"><Eye aria-hidden="true" /></span><span className="choiceCopy"><b>Go by the picture</b></span><ArrowRight className="choiceArrow" aria-hidden="true" /></button>
+                  <button type="button" className="choiceButton" onClick={() => chooseGuard("verify")}><span className="choiceVisual"><Store aria-hidden="true" /></span><span className="choiceCopy"><b>Check the store listing</b></span><ArrowRight className="choiceArrow" aria-hidden="true" /></button>
+                  <button type="button" className={`choiceButton${guardChoice === "guess" ? " wrong" : ""}`} onClick={() => chooseGuard("guess")}><span className="choiceVisual"><Copy aria-hidden="true" /></span><span className="choiceCopy"><b>Borrow a similar item's code</b></span><ArrowRight className="choiceArrow" aria-hidden="true" /></button>
                 </div>
-                {guardChoice && guardChoice !== "verify" && <p className="relationshipError" role="alert">{guardChoice === "photo" ? "A reference image cannot verify an exact checkout mapping." : "Related-looking products can have different store codes. Do not borrow a code."} Choose again.</p>}
+                {guardChoice && guardChoice !== "verify" && <p className="relationshipError" role="alert">{guardChoice === "photo" ? "A picture can't confirm the code." : "Similar items can have different codes."} Try again.</p>}
               </>}
 
               {step === 4 && <>
-                <div className="relationshipSuccess" aria-hidden="true"><Check /></div>
-                <p className="relationshipLead">{restored ? "Previously studied on this device: " : "You studied: "}<strong>{lesson.title}</strong>.</p>
-                <p className="relationshipNote">{codeRecall ? "Recorded label-to-code recall and the checkout boundary." : "The source note and the checkout boundary. No uncertain code was memorized."}</p>
-                <p className="relationshipCaveat"><ShieldCheck aria-hidden="true" /><span>Reference study is complete. The source restriction remains; this is not checkout-ready mastery.</span></p>
-                <p className="relationshipNote">{lesson.sourceIssue}</p>
-                {persistence === "saved" && <p className="relationshipQuiet" role="status">Reference study saved on this device, separately from checkout lessons and relationship studies.</p>}
-                <Link className="referenceHomeLink" href="/">Back to products <ArrowRight aria-hidden="true" /></Link>
+                <div className="relationshipSuccess referenceSuccess" aria-hidden="true"><Check /></div>
+                <p className="referenceFinishNote"><ShieldCheck aria-hidden="true" />Still check the item, code and unit in store.</p>
+                {persistence === "saved" && <p className="relationshipQuiet" role="status">{restored ? "Studied on this device." : "Saved on this device."}</p>}
               </>}
 
-              {persistence === "unavailable" && <p className="relationshipPersistence" role="status">Device storage is unavailable. You can study, but this result or a reset may not persist after refresh.</p>}
+              {persistence === "unavailable" && <p className="relationshipPersistence" role="status">Progress can't be saved on this device.</p>}
             </div>
           </div>
 
-          <div className={`actionDock${step === 2 && !revealed && codeRecall ? " two" : ""}`}>
-            {step === 1 && <button type="button" className="primaryAction" onClick={() => setStep(2)}>Try the recall <ArrowRight aria-hidden="true" /></button>}
-            {step === 2 && !revealed && codeRecall && <><button type="button" className="secondaryAction" onClick={() => { setError(""); setRevealed(true); }}>Reveal answer</button><button type="submit" form="reference-recall" className="primaryAction">Check answer</button></>}
-            {step === 2 && !revealed && !codeRecall && <button type="button" className="secondaryAction" onClick={() => { setError(""); setRevealed(true); }}>Review source note</button>}
-            {step === 2 && revealed && <button type="button" className="primaryAction" onClick={() => { setEntry(""); setError(""); setSourceChoice(null); setRevealed(false); }}>Hide answer &amp; try again</button>}
-            {step === 3 && <button type="button" className="secondaryAction" onClick={returnToInspection}>Review this listing</button>}
-            {step === 4 && <button type="button" className="primaryAction" onClick={reset}>Study again <RotateCcw aria-hidden="true" /></button>}
+          <div className={`actionDock${(step === 2 && !revealed && codeRecall) || step === 4 ? " two" : ""}`}>
+            {step === 1 && <button type="button" className="primaryAction" onClick={() => setStep(2)}>Start <ArrowRight aria-hidden="true" /></button>}
+            {step === 2 && !revealed && codeRecall && <><button type="button" className="secondaryAction" onClick={() => { setError(""); setRevealed(true); }}>Peek</button><button type="submit" form="reference-recall" className="primaryAction">Check</button></>}
+            {step === 2 && !revealed && !codeRecall && <button type="button" className="secondaryAction" onClick={() => { setError(""); setRevealed(true); }}>Look again</button>}
+            {step === 2 && revealed && <button type="button" className="primaryAction" onClick={() => { setEntry(""); setError(""); setSourceChoice(null); setRevealed(false); }}>Try again</button>}
+            {step === 3 && <button type="button" className="secondaryAction" onClick={returnToInspection}>Look again</button>}
+            {step === 4 && <><button type="button" className="secondaryAction" onClick={reset}>Study again</button><Link className="primaryAction" href="/">Done <ArrowRight aria-hidden="true" /></Link></>}
           </div>
         </section>
       </main>
-    </div>
+    </div><ReferenceSheet lesson={lesson} open={sheetOpen} onClose={closeSheet} /></>
   );
 }

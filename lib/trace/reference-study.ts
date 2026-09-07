@@ -34,15 +34,44 @@ export function validateReferenceCodeRecall(input: string, lesson: Pick<Referenc
   return value === lesson.codes[0] ? { correct: true } : { correct: false, reason: "wrong" };
 }
 
-export interface ReferenceSourceChoice { id: string; text: string }
+export const referenceCodeLabels = {
+  recorded: "Code recorded",
+  missing: "Code missing",
+  conflicted: "Codes conflict",
+  uncertain: "Source unclear",
+} as const;
 
-/** Recall the actual unresolved source note, not an invented product fact or code. */
-export function referenceSourceChoices(lesson: Pick<ReferenceLessonData, "catalogId" | "sourceIssue">): ReferenceSourceChoice[] {
-  const choices = [
-    { id: "verified", text: "The exact checkout code and store identity are already confirmed." },
-    { id: "source", text: lesson.sourceIssue },
-    { id: "visual", text: "The picture is enough to establish its exact store variety and sale unit." },
-  ];
+export const referenceCodeHints = {
+  recorded: "Check the store listing before use.",
+  missing: "No code is recorded for this item.",
+  conflicted: "The recorded numbers need checking.",
+  uncertain: "The original source needs checking.",
+} as const;
+
+/** Presentation only: complete wording and limitations remain in the item sheet. */
+export function referenceVisualCue(lesson: Pick<ReferenceLessonData, "catalogId" | "visualCue">): string {
+  const concise: Record<string, string> = {
+    "durian-frozen": "Pale durian flesh with a hint of frost.",
+    "cabbage-sour": "A whole head with pale-olive leaves.",
+    "mangos-spice": "Yellow-orange skin with a green patch.",
+    "pumpkins-jamaican": "Broad ribs, green skin, orange flesh.",
+  };
+  const cue = concise[lesson.catalogId] ?? lesson.visualCue
+    .replace(/^Illustrated reference form: /, "")
+    .replace(/^AI-generated teaching illustration of /, "")
+    .split(";")[0];
+  return cue.charAt(0).toUpperCase() + cue.slice(1).replace(/\.?$/, ".");
+}
+
+export interface ReferenceSourceChoice { id: string; text: string; status: "missing" | "conflicted" | "uncertain" }
+
+/** Recall the source's existing uncertainty category, never guess a code. */
+export function referenceSourceChoices(lesson: Pick<ReferenceLessonData, "catalogId" | "codeStatus">): ReferenceSourceChoice[] {
+  const choices = (["missing", "conflicted", "uncertain"] as const).map(status => ({
+    id: status === lesson.codeStatus ? "source" : status,
+    status,
+    text: referenceCodeLabels[status],
+  }));
   const offset = Array.from(lesson.catalogId).reduce((sum, char) => sum + char.charCodeAt(0), 0) % choices.length;
   return [...choices.slice(offset), ...choices.slice(0, offset)];
 }

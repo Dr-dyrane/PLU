@@ -85,3 +85,9 @@ Recall uses a different image from instruction so success represents product rec
 ## Reference guidance
 
 The audit follows Apple Human Interface Guidelines for designing for iOS, layout, feedback, offering help, accessibility, and motion. The implementation adapts those principles to a responsive web/PWA surface rather than imitating native chrome literally.
+
+## Reference-study alignment — 2026-09-07
+
+The 48 reference studies now reuse the Core 25 pacing established in `570fcca`, documented in `442f685`, and completed in `1061aa8`. Product identity appears once on the stage. The exercise shows a short visual cue, a recorded code in its established chunks or a compact source-status choice, then one checkout decision. Original source wording and media restrictions live in the Item / Code / Sources sheet; AI/reference labels and separate completion semantics remain visible.
+
+Browser checks covered 375 × 667 dark/light layouts and desktop layouts up to 1440 × 900, with no document overflow in inspected states. Goldendew exact-code recall, wrong-answer repair, completion, refresh and reset passed; handwritten Aloe used only short source-status choices, and the long Kohlrabi label remained contained. Native sheet checks covered visible initial focus, repeated opening, backdrop/close/Escape dismissal, focus restoration, arrow-key tabs, source links, internal scrolling and 44-pixel controls. Green and Yellow bell pepper provided the unchanged Core 25 comparison. No catalogue facts, source statuses or mastery-storage boundaries changed.

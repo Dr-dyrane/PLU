@@ -38,7 +38,7 @@ const learningOptions: Array<{
   { value: "ready", label: "Ready to learn", detail: "Available, not completed", icon: Sparkles },
   { value: "learned", label: "Learned", detail: "Completed on this device", icon: Check },
   { value: "relationships", label: "Code relationships", detail: "Source-row recall, not checkout mastery", icon: BookOpenCheck },
-  { value: "reference", label: "Reference studies", detail: "Illustrated and source-record study; not checkout approval", icon: BookOpenCheck },
+  { value: "reference", label: "Reference studies", detail: "Study aids · Check in store", icon: BookOpenCheck },
   {
     value: "mapped",
     label: "Awaiting recognition media",
