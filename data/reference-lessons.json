@@ -1,0 +1,1896 @@
+{
+  "schemaVersion": 1,
+  "purpose": "Source-reading reference study only. Does not change checkout readiness or learned mastery.",
+  "items": [
+    {
+      "catalogId": "aloe-vera-handwritten",
+      "title": "Aloe Vera (handwritten)",
+      "family": "Stalk Vegetables",
+      "sourcePages": [
+        5
+      ],
+      "soldBy": null,
+      "codes": [
+        "?"
+      ],
+      "sourceCodeText": "?",
+      "codeStatus": "missing",
+      "visualCue": "Thick green succulent leaves taper to pointed tips.",
+      "identityNote": "This is a transcription of a handwritten line; the original handwriting has not been independently checked. The source-only qualifiers (handwritten) are not established by the photo. It does not verify this source row's checkout mapping.",
+      "checkoutCaveat": "The source has no confirmed code. Do not guess one from an image, a similar item, or a number embedded in the label. The workbook sale-unit cell is blank; no sale unit is inferred.",
+      "sourceIssue": "Provide the page 5 handwritten Aloe Vera line with its missing code legible, or a current store record for that exact Aloe Vera listing. The separate Aloe 3798 row is not authority for this row.",
+      "media": {
+        "kind": "reviewed-photo",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/Aloe_vera_for_sale.jpg/1280px-Aloe_vera_for_sale.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "author": "Robert-brook",
+        "license": "CC0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Aloe_vera_for_sale.jpg",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "alt": "Reference photograph: Thick green succulent leaves taper to pointed tips.",
+        "claimBoundary": "The source-only qualifiers (handwritten) are not established by the photo. It does not verify this source row's checkout mapping."
+      },
+      "evidenceSources": [
+        {
+          "title": "Workbook transcription and remaining source issue",
+          "url": "https://github.com/Dr-dyrane/PLU/blob/main/data/review-lanes/batch06-final-source-codes.json"
+        },
+        {
+          "title": "Photograph and reuse rights",
+          "url": "https://commons.wikimedia.org/wiki/File:Aloe_vera_for_sale.jpg"
+        }
+      ],
+      "revision": "ref-v1-da64340ef8714737"
+    },
+    {
+      "catalogId": "apples-large-extra-fancy-first-word-obscured",
+      "title": "Apples - Large Extra Fancy (first word obscured)",
+      "family": "Apples",
+      "sourcePages": [
+        5
+      ],
+      "soldBy": null,
+      "codes": [
+        "4129"
+      ],
+      "sourceCodeText": "4129",
+      "codeStatus": "conflicted",
+      "visualCue": "A rounded apple has smooth red-and-yellow skin, a shallow stem hollow, and a short stem.",
+      "identityNote": "The first word in the original source label is obscured. This example does not restore that word, select a cultivar from the shared number 4129, or prove Large or Extra Fancy.",
+      "checkoutCaveat": "The source contains a conflicting mapping or another unexplained number. Do not select a checkout code from this study. The workbook sale-unit cell is blank; no sale unit is inferred.",
+      "sourceIssue": "Provide page 5 with the obscured first word visible and reconcile 4129 against the separate Fuji apple row. Do not infer Fuji solely from the shared number.",
+      "media": {
+        "kind": "reviewed-photo",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/Honeycrisp-Apple.jpg/1280px-Honeycrisp-Apple.jpg",
+        "alt": "Generic apple-form example with red-and-yellow skin and a short stem; not a reconstruction of the obscured source variety or grade.",
+        "author": "Evan-Amos",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Honeycrisp-Apple.jpg",
+        "license": "CC0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "claimBoundary": "The source identifies this photograph as Honeycrisp. It is used only as a generic apple example, not to claim the obscured workbook listing is Honeycrisp, Fuji, Large, Extra Fancy, or Organic. No code is inferred from the image."
+      },
+      "evidenceSources": [
+        {
+          "title": "Workbook transcription and remaining source issue",
+          "url": "https://github.com/Dr-dyrane/PLU/blob/main/data/review-lanes/batch06-final-source-codes.json"
+        },
+        {
+          "title": "Photograph and reuse rights",
+          "url": "https://commons.wikimedia.org/wiki/File:Honeycrisp-Apple.jpg"
+        }
+      ],
+      "revision": "ref-v1-6f2524ab65a3bc20"
+    },
+    {
+      "catalogId": "apples-mcintosh-extra-fancy",
+      "title": "Apples - McIntosh Extra Fancy",
+      "family": "Apples",
+      "sourcePages": [
+        5
+      ],
+      "soldBy": null,
+      "codes": [
+        "4019"
+      ],
+      "sourceCodeText": "4019",
+      "codeStatus": "conflicted",
+      "visualCue": "Rounded apples have red and green areas; Extra Fancy is a source grade, not a visible test.",
+      "identityNote": "The title preserves the workbook wording. This source-reading lesson does not independently certify that listing. The source-only qualifiers Extra Fancy are not established by the photo. It does not verify this source row's checkout mapping.",
+      "checkoutCaveat": "The source contains a conflicting mapping or another unexplained number. Do not select a checkout code from this study. The workbook sale-unit cell is blank; no sale unit is inferred.",
+      "sourceIssue": "Reconcile the page 5 McIntosh Extra Fancy 4019 line against page 4 Radish - Bunch 4019 using the original sheets or current checkout records. Workbook repetition does not establish which mapping is intended.",
+      "media": {
+        "kind": "reviewed-photo",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/McIntosh_Apples.jpg/1280px-McIntosh_Apples.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "author": "infowidget",
+        "license": "CC BY-SA 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:McIntosh_Apples.jpg",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+        "alt": "Reference photograph: Rounded apples have red and green areas; Extra Fancy is a source grade, not a visible test.",
+        "claimBoundary": "The source-only qualifiers Extra Fancy are not established by the photo. It does not verify this source row's checkout mapping."
+      },
+      "evidenceSources": [
+        {
+          "title": "Workbook transcription and remaining source issue",
+          "url": "https://github.com/Dr-dyrane/PLU/blob/main/data/review-lanes/batch06-final-source-codes.json"
+        },
+        {
+          "title": "Photograph and reuse rights",
+          "url": "https://commons.wikimedia.org/wiki/File:McIntosh_Apples.jpg"
+        }
+      ],
+      "revision": "ref-v1-5db8662b29375359"
+    },
+    {
+      "catalogId": "artichokes-small-handwritten",
+      "title": "Artichokes - Small (handwritten)",
+      "family": "Artichokes",
+      "sourcePages": [
+        1,
+        4
+      ],
+      "soldBy": "Each",
+      "codes": [
+        "4516"
+      ],
+      "sourceCodeText": "4516",
+      "codeStatus": "conflicted",
+      "visualCue": "Green overlapping scales form compact flower buds; size cannot be measured from this photo.",
+      "identityNote": "This is a transcription of a handwritten line; the original handwriting has not been independently checked. The source-only qualifiers Small, (handwritten) are not established by the photo. It does not verify this source row's checkout mapping.",
+      "checkoutCaveat": "The source contains a conflicting mapping or another unexplained number. Do not select a checkout code from this study. The workbook records Each; confirm the current exact retail listing before use.",
+      "sourceIssue": "Read the original handwritten Small artichoke line on pages 1 and 4 and reconcile 4516 against Fennel / Anise. Preserve the source Each unit.",
+      "media": {
+        "kind": "reviewed-photo",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/Artichoke_stack.JPG/1280px-Artichoke_stack.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "author": "Toby Hudson",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Artichoke_stack.JPG",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "alt": "Reference photograph: Green overlapping scales form compact flower buds; size cannot be measured from this photo.",
+        "claimBoundary": "The source-only qualifiers Small, (handwritten) are not established by the photo. It does not verify this source row's checkout mapping."
+      },
+      "evidenceSources": [
+        {
+          "title": "Workbook transcription and remaining source issue",
+          "url": "https://github.com/Dr-dyrane/PLU/blob/main/data/review-lanes/batch06-final-source-codes.json"
+        },
+        {
+          "title": "Photograph and reuse rights",
+          "url": "https://commons.wikimedia.org/wiki/File:Artichoke_stack.JPG"
+        }
+      ],
+      "revision": "ref-v1-fb68b07095a9d78a"
+    },
+    {
+      "catalogId": "avocado-5ct-bag-handwritten",
+      "title": "Avocado - 5ct (Bag) (handwritten)",
+      "family": "Avocados",
+      "sourcePages": [
+        5
+      ],
+      "soldBy": null,
+      "codes": [
+        "9523"
+      ],
+      "sourceCodeText": "9523",
+      "codeStatus": "uncertain",
+      "visualCue": "A whole avocado has dark, pebbled skin; the half shows pale green flesh around a large brown stone.",
+      "identityNote": "The five-count bag and handwritten label are workbook transcription claims. The reference photograph teaches avocado structure, not this package or a newly verified store mapping.",
+      "checkoutCaveat": "The recorded number or source reading still needs confirmation. Do not treat it as a verified checkout instruction. The workbook sale-unit cell is blank; no sale unit is inferred.",
+      "sourceIssue": "Confirm the page 5 handwritten five-count avocado bag label and 9523 together. A register or package record must identify the five-count sale unit; loose avocado imagery cannot confirm bag identity.",
+      "media": {
+        "kind": "reviewed-photo",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/Avocado_Hass_-_single_and_halved.jpg/1280px-Avocado_Hass_-_single_and_halved.jpg",
+        "alt": "Avocado example: a whole dark-skinned fruit beside a cut half with pale green flesh and a large stone; no five-count bag is pictured.",
+        "author": "Ivar Leidus",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Avocado_Hass_-_single_and_halved.jpg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "claimBoundary": "The photographer identifies Hass avocado grown in Colombia. Neither cultivar nor origin transfers to the workbook row. Bag count, sale unit, handwritten reading, and checkout code are not established by this photograph."
+      },
+      "evidenceSources": [
+        {
+          "title": "Workbook transcription and remaining source issue",
+          "url": "https://github.com/Dr-dyrane/PLU/blob/main/data/review-lanes/batch06-final-source-codes.json"
+        },
+        {
+          "title": "Photograph and reuse rights",
+          "url": "https://commons.wikimedia.org/wiki/File:Avocado_Hass_-_single_and_halved.jpg"
+        }
+      ],
+      "revision": "ref-v1-d997bac3477de095"
+    },
+    {
+      "catalogId": "bananas-baby-bananas-mini-4186",
+      "title": "Bananas - Baby Bananas Mini 4186",
+      "family": "Bananas",
+      "sourcePages": [
+        5
+      ],
+      "soldBy": null,
+      "codes": [
+        "4234"
+      ],
+      "sourceCodeText": "4234",
+      "codeStatus": "conflicted",
+      "visualCue": "AI-generated teaching illustration of a compact bunch of short yellow bananas; general form only.",
+      "identityNote": "The title preserves the workbook wording. This source-reading lesson does not independently certify that listing. AI-generated general mini-banana form, not evidence of an exact cultivar, store listing, scale, or code. The conflicting source label and recorded code remain unresolved.",
+      "checkoutCaveat": "The source contains a conflicting mapping or another unexplained number. Do not select a checkout code from this study. The workbook sale-unit cell is blank; no sale unit is inferred.",
+      "sourceIssue": "Read the original page 5 row and classify label number 4186 versus B-cell 4234, which is also assigned to Red bananas. Do not choose the public or more plausible number.",
+      "media": {
+        "kind": "generated-illustration",
+        "src": "/media/reference/bananas-baby-bananas-mini-4186.png",
+        "alt": "AI-generated teaching illustration of a compact bunch of short yellow bananas; general form only.",
+        "author": "OpenAI image generation",
+        "sourceUrl": "/media/reference/provenance.json",
+        "license": "AI-generated study illustration; no third-party photo license claimed",
+        "claimBoundary": "AI-generated general mini-banana form, not evidence of an exact cultivar, store listing, scale, or code. The conflicting source label and recorded code remain unresolved."
+      },
+      "evidenceSources": [
+        {
+          "title": "Workbook transcription and remaining source issue",
+          "url": "https://github.com/Dr-dyrane/PLU/blob/main/data/review-lanes/batch06-final-source-codes.json"
+        },
+        {
+          "title": "Generated illustration provenance",
+          "url": "/media/reference/provenance.json"
+        }
+      ],
+      "revision": "ref-v1-d0cdc0940f67b99a"
+    },
+    {
+      "catalogId": "bananas-red",
+      "title": "Bananas - Red",
+      "family": "Bananas",
+      "sourcePages": [
+        5
+      ],
+      "soldBy": null,
+      "codes": [
+        "4234"
+      ],
+      "sourceCodeText": "4234",
+      "codeStatus": "conflicted",
+      "visualCue": "Curved banana fingers have conspicuous red-orange skin.",
+      "identityNote": "The title preserves the workbook wording. This source-reading lesson does not independently certify that listing. This is a produce example, not proof of this store's exact retail unit, origin, cultivar, or entered code. It does not verify this source row's checkout mapping.",
+      "checkoutCaveat": "The source contains a conflicting mapping or another unexplained number. Do not select a checkout code from this study. The workbook sale-unit cell is blank; no sale unit is inferred.",
+      "sourceIssue": "Confirm page 5 Red bananas 4234 independently of the Baby Bananas Mini row, which also carries 4234 and a label number 4186.",
+      "media": {
+        "kind": "reviewed-photo",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/%22Red_banana%22.jpg/1280px-%22Red_banana%22.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "author": "Thamizhpparithi Maari",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:%22Red_banana%22.jpg",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "alt": "Reference photograph: Curved banana fingers have conspicuous red-orange skin.",
+        "claimBoundary": "This is a produce example, not proof of this store's exact retail unit, origin, cultivar, or entered code. It does not verify this source row's checkout mapping."
+      },
+      "evidenceSources": [
+        {
+          "title": "Workbook transcription and remaining source issue",
+          "url": "https://github.com/Dr-dyrane/PLU/blob/main/data/review-lanes/batch06-final-source-codes.json"
+        },
+        {
+          "title": "Photograph and reuse rights",
+          "url": "https://commons.wikimedia.org/wiki/File:%22Red_banana%22.jpg"
+        }
+      ],
+      "revision": "ref-v1-66e0dc9c5f72b8a2"
+    },
+    {
+      "catalogId": "bartlett-orchard-run-first-word-obscured",
+      "title": "Bartlett - Orchard Run (first word obscured)",
+      "family": "Pears",
+      "sourcePages": [
+        5
+      ],
+      "soldBy": null,
+      "codes": [
+        "64037"
+      ],
+      "sourceCodeText": "64037",
+      "codeStatus": "uncertain",
+      "visualCue": "Bell-shaped pears provide a Bartlett reference; the obscured word and orchard-run grade cannot be recovered from the photo.",
+      "identityNote": "Part of the original label is obscured; the exact wording below remains a transcription, not a restored identity. The source-only qualifiers Orchard Run, (first word obscured) are not established by the photo. It does not verify this source row's checkout mapping.",
+      "checkoutCaveat": "The recorded number or source reading still needs confirmation. Do not treat it as a verified checkout instruction. The workbook sale-unit cell is blank; no sale unit is inferred.",
+      "sourceIssue": "Provide page 5 with the obscured first word legible and bound to 64037. Bartlett fruit imagery cannot restore the missing source identity.",
+      "media": {
+        "kind": "reviewed-photo",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/Bartlett_pear.jpg/1280px-Bartlett_pear.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "author": "Rhododendrites",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bartlett_pear.jpg",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "alt": "Reference photograph: Bell-shaped pears provide a Bartlett reference; the obscured word and orchard-run grade cannot be recovered from the photo.",
+        "claimBoundary": "The source-only qualifiers Orchard Run, (first word obscured) are not established by the photo. It does not verify this source row's checkout mapping."
+      },
+      "evidenceSources": [
+        {
+          "title": "Workbook transcription and remaining source issue",
+          "url": "https://github.com/Dr-dyrane/PLU/blob/main/data/review-lanes/batch06-final-source-codes.json"
+        },
+        {
+          "title": "Photograph and reuse rights",
+          "url": "https://commons.wikimedia.org/wiki/File:Bartlett_pear.jpg"
+        }
+      ],
+      "revision": "ref-v1-c9e4518264432828"
+    },
+    {
+      "catalogId": "cabbage-sour",
+      "title": "Cabbage - Sour",
+      "family": "Cabbages",
+      "sourcePages": [
+        4
+      ],
+      "soldBy": null,
+      "codes": [
+        "62380"
+      ],
+      "sourceCodeText": "62380",
+      "codeStatus": "recorded",
+      "visualCue": "AI-generated teaching illustration of one whole pale-olive sour-cabbage head; one possible form, not confirmed store presentation.",
+      "identityNote": "The title preserves the workbook wording. This source-reading lesson does not independently certify that listing. AI-generated whole-head sour-cabbage teaching form, not a real specimen and not confirmation that the store stocks whole heads rather than another sour-cabbage presentation. No exact product, manufacturer, fermentation status or checkout code is established by the image.",
+      "checkoutCaveat": "The number is recorded in the workbook, not newly verified at a current checkout. The workbook sale-unit cell is blank; no sale unit is inferred.",
+      "sourceIssue": "Code evidence is clean: the unflagged workbook row records 62380 with no competing label number or catalog collision. Identity, finished-product form, media rights, and sale-unit interpretation remain separate gates owned by the identity/media lane.",
+      "media": {
+        "kind": "generated-illustration",
+        "src": "/media/reference/cabbage-sour.png",
+        "alt": "AI-generated teaching illustration of one whole pale-olive sour-cabbage head; one possible form, not confirmed store presentation.",
+        "author": "OpenAI image generation",
+        "sourceUrl": "/media/reference/provenance.json",
+        "license": "AI-generated study illustration; no third-party photo license claimed",
+        "claimBoundary": "AI-generated whole-head sour-cabbage teaching form, not a real specimen and not confirmation that the store stocks whole heads rather than another sour-cabbage presentation. No exact product, manufacturer, fermentation status or checkout code is established by the image."
+      },
+      "evidenceSources": [
+        {
+          "title": "Workbook transcription and remaining source issue",
+          "url": "https://github.com/Dr-dyrane/PLU/blob/main/data/review-lanes/batch06-final-source-codes.json"
+        },
+        {
+          "title": "Generated illustration provenance",
+          "url": "/media/reference/provenance.json"
+        },
+        {
+          "title": "Sour cabbage may be sold as an entire brine-fermented head with its core removed, distinct from shredded sauerkraut.",
+          "url": "https://stjacobsfoods.com/products/"
+        }
+      ],
+      "revision": "ref-v1-c7e42588e703294e"
+    },
+    {
+      "catalogId": "celery-hearts",
+      "title": "Celery - Hearts",
+      "family": "Stalk Vegetables",
+      "sourcePages": [
+        4
+      ],
+      "soldBy": null,
+      "codes": [
+        "4575"
+      ],
+      "sourceCodeText": "4575",
+      "codeStatus": "recorded",
+      "visualCue": "Parallel green ribbed stalks have cut tops around smaller central leaves; a hand covers the base.",
+      "identityNote": "Hearts is the workbook listing. This clipped-celery example does not establish the exact inner-heart selection, commercial length, trimming standard, or selling unit.",
+      "checkoutCaveat": "The number is recorded in the workbook, not newly verified at a current checkout. The workbook sale-unit cell is blank; no sale unit is inferred.",
+      "sourceIssue": "New pictures prove clipped celery, not the exact commercial Hearts selection. Do not silently equate every trimmed bunch with Hearts. Either record a justified label-assisted form adjudication without asserting length, or obtain an exact Hearts photograph with reuse permission.",
+      "media": {
+        "kind": "reviewed-photo",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9c/Staudensellerie_IMG_20220501_A.jpg/1280px-Staudensellerie_IMG_20220501_A.jpg",
+        "alt": "Clipped green celery stalks with central leaves held in a hand; no scale or label proves commercial Hearts form.",
+        "author": "IgorCalzone1",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Staudensellerie_IMG_20220501_A.jpg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "claimBoundary": "Only clipped celery structure is visible. The photograph does not prove Hearts, a 7-to-10-inch length, exact inner-stalk selection, package count, sale unit, or a current checkout mapping."
+      },
+      "evidenceSources": [
+        {
+          "title": "Workbook transcription and remaining source issue",
+          "url": "https://github.com/Dr-dyrane/PLU/blob/main/data/review-lanes/batch06-final-mapped-media.json"
+        },
+        {
+          "title": "Photograph and reuse rights",
+          "url": "https://commons.wikimedia.org/wiki/File:Staudensellerie_IMG_20220501_A.jpg"
+        }
+      ],
+      "revision": "ref-v1-2668a2cc4045d0e4"
+    },
+    {
+      "catalogId": "cherries-white-ranier-264497",
+      "title": "Cherries - White Ranier (264497)",
+      "family": "Cherries",
+      "sourcePages": [
+        5
+      ],
+      "soldBy": null,
+      "codes": [
+        "4260"
+      ],
+      "sourceCodeText": "4260",
+      "codeStatus": "conflicted",
+      "visualCue": "Small stemmed cherries show yellow-to-cream skin with a red blush, not a uniformly white exterior.",
+      "identityNote": "The title preserves the workbook wording. This source-reading lesson does not independently certify that listing. The exterior is not pure white. White is source/cherry-type language; a white interior is not visible. The competing label number 264497 is not cleared by this photo. It does not verify this source row's checkout mapping.",
+      "checkoutCaveat": "The source contains a conflicting mapping or another unexplained number. Do not select a checkout code from this study. The workbook sale-unit cell is blank; no sale unit is inferred.",
+      "sourceIssue": "Read page 5 to classify parenthetical 264497 versus B-cell 4260 for the exact White Ranier listing. Neither number may be silently discarded.",
+      "media": {
+        "kind": "reviewed-photo",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/Rainier_cherries.jpg/1280px-Rainier_cherries.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "author": "dnak",
+        "license": "CC BY 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rainier_cherries.jpg",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+        "alt": "Reference photograph: Small stemmed cherries show yellow-to-cream skin with a red blush, not a uniformly white exterior.",
+        "claimBoundary": "The exterior is not pure white. White is source/cherry-type language; a white interior is not visible. The competing label number 264497 is not cleared by this photo. It does not verify this source row's checkout mapping."
+      },
+      "evidenceSources": [
+        {
+          "title": "Workbook transcription and remaining source issue",
+          "url": "https://github.com/Dr-dyrane/PLU/blob/main/data/review-lanes/batch06-final-source-codes.json"
+        },
+        {
+          "title": "Photograph and reuse rights",
+          "url": "https://commons.wikimedia.org/wiki/File:Rainier_cherries.jpg"
+        }
+      ],
+      "revision": "ref-v1-ba413af6225a6c01"
+    },
+    {
+      "catalogId": "durian-frozen",
+      "title": "Durian (Frozen)",
+      "family": "Tropical Fruit",
+      "sourcePages": [
+        5
+      ],
+      "soldBy": null,
+      "codes": [
+        "?"
+      ],
+      "sourceCodeText": "?",
+      "codeStatus": "missing",
+      "visualCue": "AI-generated teaching illustration of pale durian flesh segments with a hint of frost on a neutral tray; one possible form, not confirmed store presentation.",
+      "identityNote": "The title preserves the workbook wording. This source-reading lesson does not independently certify that listing. AI-generated general durian-flesh illustration, not evidence that the source store's Frozen listing means segments rather than whole fruit. The tray is an illustration device, not confirmed packaging. Frozen status, identity and missing checkout code require store confirmation.",
+      "checkoutCaveat": "The source has no confirmed code. Do not guess one from an image, a similar item, or a number embedded in the label. The workbook sale-unit cell is blank; no sale unit is inferred.",
+      "sourceIssue": "Capture an exact store/register/package code for Frozen durian and identify the sold unit. The workbook has no code; a fresh whole-durian code is not transferable.",
+      "media": {
+        "kind": "generated-illustration",
+        "src": "/media/reference/durian-frozen.png",
+        "alt": "AI-generated teaching illustration of pale durian flesh segments with a hint of frost on a neutral tray; one possible form, not confirmed store presentation.",
+        "author": "OpenAI image generation",
+        "sourceUrl": "/media/reference/provenance.json",
+        "license": "AI-generated study illustration; no third-party photo license claimed",
+        "claimBoundary": "AI-generated general durian-flesh illustration, not evidence that the source store's Frozen listing means segments rather than whole fruit. The tray is an illustration device, not confirmed packaging. Frozen status, identity and missing checkout code require store confirmation."
+      },
+      "evidenceSources": [
+        {
+          "title": "Workbook transcription and remaining source issue",
+          "url": "https://github.com/Dr-dyrane/PLU/blob/main/data/review-lanes/batch06-final-source-codes.json"
+        },
+        {
+          "title": "Generated illustration provenance",
+          "url": "/media/reference/provenance.json"
+        }
+      ],
+      "revision": "ref-v1-262e84bc4280e391"
+    },
+    {
+      "catalogId": "eddoes-handwritten",
+      "title": "Eddoes (handwritten)",
+      "family": "Roots",
+      "sourcePages": [
+        4
+      ],
+      "soldBy": null,
+      "codes": [
+        "?"
+      ],
+      "sourceCodeText": "?",
+      "codeStatus": "missing",
+      "visualCue": "Small brown corms have hairy, ringed surfaces.",
+      "identityNote": "This is a transcription of a handwritten line; the original handwriting has not been independently checked. This is a produce example, not proof of this store's exact retail unit, origin, cultivar, or entered code. It does not verify this source row's checkout mapping.",
+      "checkoutCaveat": "The source has no confirmed code. Do not guess one from an image, a similar item, or a number embedded in the label. The workbook sale-unit cell is blank; no sale unit is inferred.",
+      "sourceIssue": "Provide the page 4 handwritten Eddoes line with an assigned code or a current exact store record. Other eddoe/taro entries and public PLUs do not fill the missing cell.",
+      "media": {
+        "kind": "reviewed-photo",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/Eddoes_at_Church_Fruit_Farm_BK_NYC.jpg/1280px-Eddoes_at_Church_Fruit_Farm_BK_NYC.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "author": "Wil540 art",
+        "license": "CC BY 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Eddoes_at_Church_Fruit_Farm_BK_NYC.jpg",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+        "alt": "Reference photograph: Small brown corms have hairy, ringed surfaces.",
+        "claimBoundary": "This is a produce example, not proof of this store's exact retail unit, origin, cultivar, or entered code. It does not verify this source row's checkout mapping."
+      },
+      "evidenceSources": [
+        {
+          "title": "Workbook transcription and remaining source issue",
+          "url": "https://github.com/Dr-dyrane/PLU/blob/main/data/review-lanes/batch06-final-source-codes.json"
+        },
+        {
+          "title": "Photograph and reuse rights",
+          "url": "https://commons.wikimedia.org/wiki/File:Eddoes_at_Church_Fruit_Farm_BK_NYC.jpg"
+        }
+      ],
+      "revision": "ref-v1-e78777fbb3a82145"
+    },
+    {
+      "catalogId": "fennel-anise",
+      "title": "Fennel / Anise",
+      "family": "Stalk Vegetables",
+      "sourcePages": [
+        4
+      ],
+      "soldBy": null,
+      "codes": [
+        "4516"
+      ],
+      "sourceCodeText": "4516",
+      "codeStatus": "conflicted",
+      "visualCue": "A pale layered bulb continues into green stalks and feathery fronds.",
+      "identityNote": "The title preserves the workbook wording. This source-reading lesson does not independently certify that listing. This is a produce example, not proof of this store's exact retail unit, origin, cultivar, or entered code. It does not verify this source row's checkout mapping.",
+      "checkoutCaveat": "The source contains a conflicting mapping or another unexplained number. Do not select a checkout code from this study. The workbook sale-unit cell is blank; no sale unit is inferred.",
+      "sourceIssue": "Confirm page 4 Fennel / Anise 4516 and reconcile the same code on handwritten Small artichokes (pages 1 and 4). Generic anise/fennel terminology cannot settle this mapping.",
+      "media": {
+        "kind": "reviewed-photo",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Finocchio_2.jpg/1280px-Finocchio_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "author": "Challiyan",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Finocchio_2.jpg",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "alt": "Reference photograph: A pale layered bulb continues into green stalks and feathery fronds.",
+        "claimBoundary": "This is a produce example, not proof of this store's exact retail unit, origin, cultivar, or entered code. It does not verify this source row's checkout mapping."
+      },
+      "evidenceSources": [
+        {
+          "title": "Workbook transcription and remaining source issue",
+          "url": "https://github.com/Dr-dyrane/PLU/blob/main/data/review-lanes/batch06-final-source-codes.json"
+        },
+        {
+          "title": "Photograph and reuse rights",
+          "url": "https://commons.wikimedia.org/wiki/File:Finocchio_2.jpg"
+        }
+      ],
+      "revision": "ref-v1-58ba983eb277a504"
+    },
+    {
+      "catalogId": "gourds-ornamental",
+      "title": "Gourds - Ornamental",
+      "family": "Squash",
+      "sourcePages": [
+        4
+      ],
+      "soldBy": null,
+      "codes": [
+        "?"
+      ],
+      "sourceCodeText": "?",
+      "codeStatus": "missing",
+      "visualCue": "Small ornamental gourds vary in shape, surface texture, and color.",
+      "identityNote": "The title preserves the workbook wording. This source-reading lesson does not independently certify that listing. This is a produce example, not proof of this store's exact retail unit, origin, cultivar, or entered code. It does not verify this source row's checkout mapping.",
+      "checkoutCaveat": "The source has no confirmed code. Do not guess one from an image, a similar item, or a number embedded in the label. The workbook sale-unit cell is blank; no sale unit is inferred.",
+      "sourceIssue": "Capture an assigned code for the page 4 Ornamental gourds listing from the original sheet or a current exact store record. The workbook contains only a question mark.",
+      "media": {
+        "kind": "reviewed-photo",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/Cucurbita_pepo_ornamental_gourds_-_14.Autumn.WholeFoods.1440P.NW.WDC.14October2014.jpg/1280px-Cucurbita_pepo_ornamental_gourds_-_14.Autumn.WholeFoods.1440P.NW.WDC.14October2014.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "author": "Elvert Barnes",
+        "license": "CC BY-SA 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cucurbita_pepo_ornamental_gourds_-_14.Autumn.WholeFoods.1440P.NW.WDC.14October2014.jpg",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+        "alt": "Reference photograph: Small ornamental gourds vary in shape, surface texture, and color.",
+        "claimBoundary": "This is a produce example, not proof of this store's exact retail unit, origin, cultivar, or entered code. It does not verify this source row's checkout mapping."
+      },
+      "evidenceSources": [
+        {
+          "title": "Workbook transcription and remaining source issue",
+          "url": "https://github.com/Dr-dyrane/PLU/blob/main/data/review-lanes/batch06-final-source-codes.json"
+        },
+        {
+          "title": "Photograph and reuse rights",
+          "url": "https://commons.wikimedia.org/wiki/File:Cucurbita_pepo_ornamental_gourds_-_14.Autumn.WholeFoods.1440P.NW.WDC.14October2014.jpg"
+        }
+      ],
+      "revision": "ref-v1-cffa67cd788e73dc"
+    },
+    {
+      "catalogId": "jackfruit-cut-handwritten",
+      "title": "Jackfruit - Cut (handwritten)",
+      "family": "Tropical Fruit",
+      "sourcePages": [
+        5
+      ],
+      "soldBy": null,
+      "codes": [
+        "?"
+      ],
+      "sourceCodeText": "?",
+      "codeStatus": "missing",
+      "visualCue": "Cut jackfruit exposes pale yellow flesh, a light central core, and large seeds inside a knobbly green rind.",
+      "identityNote": "This is a transcription of a handwritten line; the original handwriting has not been independently checked. The source identifies a photographed NS-1 specimen in Florida; that cultivar and origin must not be transferred to the workbook's unspecified cut-jackfruit listing. It does not verify this source row's checkout mapping.",
+      "checkoutCaveat": "The source has no confirmed code. Do not guess one from an image, a similar item, or a number embedded in the label. The workbook sale-unit cell is blank; no sale unit is inferred.",
+      "sourceIssue": "Provide the handwritten page 5 Cut jackfruit line with a legible assigned code and exact cut/sale form, or a current equivalent store record. Whole jackfruit codes are not substitutes.",
+      "media": {
+        "kind": "reviewed-photo",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/54/Jackfruit_NS-1_01_Asit.jpg/1280px-Jackfruit_NS-1_01_Asit.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "author": "Asit K. Ghosh Thaumaturgist",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jackfruit_NS-1_01_Asit.jpg",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "alt": "Reference photograph: Cut jackfruit exposes pale yellow flesh, a light central core, and large seeds inside a knobbly green rind.",
+        "claimBoundary": "The source identifies a photographed NS-1 specimen in Florida; that cultivar and origin must not be transferred to the workbook's unspecified cut-jackfruit listing. It does not verify this source row's checkout mapping."
+      },
+      "evidenceSources": [
+        {
+          "title": "Workbook transcription and remaining source issue",
+          "url": "https://github.com/Dr-dyrane/PLU/blob/main/data/review-lanes/batch06-final-source-codes.json"
+        },
+        {
+          "title": "Photograph and reuse rights",
+          "url": "https://commons.wikimedia.org/wiki/File:Jackfruit_NS-1_01_Asit.jpg"
+        }
+      ],
+      "revision": "ref-v1-d329a994911e68e0"
+    },
+    {
+      "catalogId": "jicama-roots",
+      "title": "Jicama (Roots)",
+      "family": "Roots",
+      "sourcePages": [
+        4
+      ],
+      "soldBy": null,
+      "codes": [
+        "?"
+      ],
+      "sourceCodeText": "?",
+      "codeStatus": "missing",
+      "visualCue": "Whole jicama roots have firm, rounded tuber forms and brown outer skins.",
+      "identityNote": "The title preserves the workbook wording. This source-reading lesson does not independently certify that listing. This is a produce example, not proof of this store's exact retail unit, origin, cultivar, or entered code. It does not verify this source row's checkout mapping.",
+      "checkoutCaveat": "The source has no confirmed code. Do not guess one from an image, a similar item, or a number embedded in the label. The workbook sale-unit cell is blank; no sale unit is inferred.",
+      "sourceIssue": "Capture an assigned code for page 4 Jicama (Roots). A different Jicama row or already-published lesson does not establish this missing mapping.",
+      "media": {
+        "kind": "reviewed-photo",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Jicama_Ecuador_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "author": "Awkiku",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jicama_Ecuador_2.jpg",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "alt": "Reference photograph: Whole jicama roots have firm, rounded tuber forms and brown outer skins.",
+        "claimBoundary": "This is a produce example, not proof of this store's exact retail unit, origin, cultivar, or entered code. It does not verify this source row's checkout mapping."
+      },
+      "evidenceSources": [
+        {
+          "title": "Workbook transcription and remaining source issue",
+          "url": "https://github.com/Dr-dyrane/PLU/blob/main/data/review-lanes/batch06-final-source-codes.json"
+        },
+        {
+          "title": "Photograph and reuse rights",
+          "url": "https://commons.wikimedia.org/wiki/File:Jicama_Ecuador_2.jpg"
+        }
+      ],
+      "revision": "ref-v1-19d862208190234b"
+    },
+    {
+      "catalogId": "kohlrabi-note-on-sheet-kohlrabi-1692-handwritten",
+      "title": "Kohlrabi (note on sheet: 'Kohlrabi = 1692') (handwritten)",
+      "family": "Roots",
+      "sourcePages": [
+        2,
+        4
+      ],
+      "soldBy": "Weight",
+      "codes": [
+        "1692"
+      ],
+      "sourceCodeText": "1692",
+      "codeStatus": "uncertain",
+      "visualCue": "Illustrated reference form: A round pale-green swollen stem with outward leaf stalks.",
+      "identityNote": "Use the illustration to study general form. The exact workbook label is preserved, but a generated image cannot confirm its cultivar, missing words, grade, package, or checkout mapping.",
+      "checkoutCaveat": "The recorded number or source reading still needs confirmation. Do not treat it as a verified checkout instruction. The workbook records Weight; confirm the current exact retail listing before use.",
+      "sourceIssue": "Inspect the handwritten note on pages 2 and 4 that is transcribed as Kohlrabi = 1692. The duplicate appearance of 1692 in the workbook label and code cell is one transcription, not independent corroboration.",
+      "media": {
+        "kind": "generated-illustration",
+        "src": "/media/reference/kohlrabi-note-on-sheet-kohlrabi-1692-handwritten.png",
+        "alt": "AI-generated teaching illustration. A round pale-green swollen stem with outward leaf stalks.",
+        "author": "OpenAI image generation",
+        "sourceUrl": "/media/reference/provenance.json",
+        "license": "AI-generated study illustration; no third-party photo license claimed",
+        "claimBoundary": "AI-generated general-form illustration, not a photograph or proof of the exact cultivar, store presentation, sale unit, or checkout code."
+      },
+      "evidenceSources": [
+        {
+          "title": "Workbook transcription and remaining source issue",
+          "url": "https://github.com/Dr-dyrane/PLU/blob/main/data/review-lanes/batch06-final-source-codes.json"
+        },
+        {
+          "title": "Generated illustration provenance",
+          "url": "/media/reference/provenance.json"
+        }
+      ],
+      "revision": "ref-v1-3afe4fe77a92dd56"
+    },
+    {
+      "catalogId": "mangoes-ataulfo-case-handwritten",
+      "title": "Mangoes - Ataulfo (Case) (handwritten)",
+      "family": "Mangoes",
+      "sourcePages": [
+        5
+      ],
+      "soldBy": null,
+      "codes": [
+        "2145"
+      ],
+      "sourceCodeText": "2145",
+      "codeStatus": "uncertain",
+      "visualCue": "The Ataulfo reference shows the mango's curved, elongated form; a case is not pictured.",
+      "identityNote": "This is a transcription of a handwritten line; the original handwriting has not been independently checked. The source-only qualifiers Case, (handwritten) are not established by the photo. It does not verify this source row's checkout mapping.",
+      "checkoutCaveat": "The recorded number or source reading still needs confirmation. Do not treat it as a verified checkout instruction. The workbook sale-unit cell is blank; no sale unit is inferred.",
+      "sourceIssue": "Confirm the original page 5 handwritten Ataulfo case label and 2145 together, including case sale identity. The source qualifier may remain label-assisted after that check.",
+      "media": {
+        "kind": "reviewed-photo",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/Mango_Ataulfo.jpg/1280px-Mango_Ataulfo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "author": "El Mono Español",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mango_Ataulfo.jpg",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "alt": "Reference photograph: The Ataulfo reference shows the mango's curved, elongated form; a case is not pictured.",
+        "claimBoundary": "The source-only qualifiers Case, (handwritten) are not established by the photo. It does not verify this source row's checkout mapping."
+      },
+      "evidenceSources": [
+        {
+          "title": "Workbook transcription and remaining source issue",
+          "url": "https://github.com/Dr-dyrane/PLU/blob/main/data/review-lanes/batch06-final-source-codes.json"
+        },
+        {
+          "title": "Photograph and reuse rights",
+          "url": "https://commons.wikimedia.org/wiki/File:Mango_Ataulfo.jpg"
+        }
+      ],
+      "revision": "ref-v1-ab08864521b451e3"
+    },
+    {
+      "catalogId": "mangoes-red-case-handwritten",
+      "title": "Mangoes - Red (Case) (handwritten)",
+      "family": "Mangoes",
+      "sourcePages": [
+        5
+      ],
+      "soldBy": null,
+      "codes": [
+        "2146"
+      ],
+      "sourceCodeText": "2146",
+      "codeStatus": "conflicted",
+      "visualCue": "A whole oval mango has red skin; the photo does not show a case or its quantity.",
+      "identityNote": "This is a transcription of a handwritten line; the original handwriting has not been independently checked. This is a produce example, not proof of this store's exact retail unit, origin, cultivar, or entered code. It does not verify this source row's checkout mapping.",
+      "checkoutCaveat": "The source contains a conflicting mapping or another unexplained number. Do not select a checkout code from this study. The workbook sale-unit cell is blank; no sale unit is inferred.",
+      "sourceIssue": "Confirm the handwritten page 5 Red mango case 2146 line and reconcile it against the other Red mango case source row whose full code set includes 2146 and 13493. Do not promote the handwritten neighbor from the existing mapping lesson.",
+      "media": {
+        "kind": "reviewed-photo",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/HK_food_red_fruit_%E8%8A%92%E6%9E%9C_mango_March_2021_SS2_03.jpg/1280px-HK_food_red_fruit_%E8%8A%92%E6%9E%9C_mango_March_2021_SS2_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "author": "LEIS Rulam Augiwa",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:HK_food_red_fruit_%E8%8A%92%E6%9E%9C_mango_March_2021_SS2_03.jpg",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "alt": "Reference photograph: A whole oval mango has red skin; the photo does not show a case or its quantity.",
+        "claimBoundary": "This is a produce example, not proof of this store's exact retail unit, origin, cultivar, or entered code. It does not verify this source row's checkout mapping."
+      },
+      "evidenceSources": [
+        {
+          "title": "Workbook transcription and remaining source issue",
+          "url": "https://github.com/Dr-dyrane/PLU/blob/main/data/review-lanes/batch06-final-source-codes.json"
+        },
+        {
+          "title": "Photograph and reuse rights",
+          "url": "https://commons.wikimedia.org/wiki/File:HK_food_red_fruit_%E8%8A%92%E6%9E%9C_mango_March_2021_SS2_03.jpg"
+        }
+      ],
+      "revision": "ref-v1-88081ef9d6c12bef"
+    },
+    {
+      "catalogId": "mangos-spice",
+      "title": "Mangos - Spice",
+      "family": "Mangoes",
+      "sourcePages": [
+        2
+      ],
+      "soldBy": "Weight",
+      "codes": [
+        "58654"
+      ],
+      "sourceCodeText": "58654",
+      "codeStatus": "recorded",
+      "visualCue": "AI-generated generic mango-form illustration with yellow-orange skin and a green patch; not a confirmed Spice cultivar.",
+      "identityNote": "The title preserves the workbook wording. This source-reading lesson does not independently certify that listing. AI-generated generic mango-form reference, not a photograph or evidence of the exact Spice or Buxton Spice cultivar, store listing, origin, supplier or checkout code. Spice remains a source-label distinction, not a generated visual diagnosis.",
+      "checkoutCaveat": "The number is recorded in the workbook, not newly verified at a current checkout. The workbook records Weight; confirm the current exact retail listing before use.",
+      "sourceIssue": "Code evidence is clean: the unflagged workbook row records 58654, Weight, page 2 without competing label numbers or catalog collision. Exact Spice identity and usable recognition media remain separate gates owned by the identity/media lane.",
+      "media": {
+        "kind": "generated-illustration",
+        "src": "/media/reference/mangos-spice.png",
+        "alt": "AI-generated generic mango-form illustration with yellow-orange skin and a green patch; not a confirmed Spice cultivar.",
+        "author": "OpenAI image generation",
+        "sourceUrl": "/media/reference/provenance.json",
+        "license": "AI-generated study illustration; no third-party photo license claimed",
+        "claimBoundary": "AI-generated generic mango-form reference, not a photograph or evidence of the exact Spice or Buxton Spice cultivar, store listing, origin, supplier or checkout code. Spice remains a source-label distinction, not a generated visual diagnosis."
+      },
+      "evidenceSources": [
+        {
+          "title": "Workbook transcription and remaining source issue",
+          "url": "https://github.com/Dr-dyrane/PLU/blob/main/data/review-lanes/batch06-final-source-codes.json"
+        },
+        {
+          "title": "Generated illustration provenance",
+          "url": "/media/reference/provenance.json"
+        },
+        {
+          "title": "Buxton Spice is a distinct named mango grown by this nursery; an exact cultivar photograph cannot be replaced by a generated generic mango as evidence.",
+          "url": "https://www.tropicalacresfarms.com/product-page/buxton-spice"
+        }
+      ],
+      "revision": "ref-v1-e52a3642597feb8b"
+    },
+    {
+      "catalogId": "melons-goldendew",
+      "title": "Melons - Goldendew",
+      "family": "Melons",
+      "sourcePages": [
+        5
+      ],
+      "soldBy": null,
+      "codes": [
+        "3100"
+      ],
+      "sourceCodeText": "3100",
+      "codeStatus": "recorded",
+      "visualCue": "Illustrated reference form: A smooth golden-yellow melon and pale-fleshed wedge.",
+      "identityNote": "Use the illustration to study general form. The exact workbook label is preserved, but a generated image cannot confirm its cultivar, missing words, grade, package, or checkout mapping.",
+      "checkoutCaveat": "The number is recorded in the workbook, not newly verified at a current checkout. The workbook sale-unit cell is blank; no sale unit is inferred.",
+      "sourceIssue": "No exact smooth Golden Dew photograph with established free-reuse rights. Request a Fisher Ranch photo grant or supply an original correctly identified photograph; do not relabel Casaba, Canary, or striped Asian melons.",
+      "media": {
+        "kind": "generated-illustration",
+        "src": "/media/reference/melons-goldendew.png",
+        "alt": "AI-generated teaching illustration. A smooth golden-yellow melon and pale-fleshed wedge.",
+        "author": "OpenAI image generation",
+        "sourceUrl": "/media/reference/provenance.json",
+        "license": "AI-generated study illustration; no third-party photo license claimed",
+        "claimBoundary": "AI-generated general-form illustration, not a photograph or proof of the exact cultivar, store presentation, sale unit, or checkout code."
+      },
+      "evidenceSources": [
+        {
+          "title": "Workbook transcription and remaining source issue",
+          "url": "https://github.com/Dr-dyrane/PLU/blob/main/data/review-lanes/batch06-final-mapped-media.json"
+        },
+        {
+          "title": "Generated illustration provenance",
+          "url": "/media/reference/provenance.json"
+        },
+        {
+          "title": "Fisher Ranch: Golden Dew traits",
+          "url": "https://fisherranch.com/"
+        }
+      ],
+      "revision": "ref-v1-011c163941a7d4a7"
+    },
+    {
+      "catalogId": "melons-honeykiss",
+      "title": "Melons - Honeykiss",
+      "family": "Melons",
+      "sourcePages": [
+        5
+      ],
+      "soldBy": null,
+      "codes": [
+        "4375"
+      ],
+      "sourceCodeText": "4375",
+      "codeStatus": "recorded",
+      "visualCue": "Illustrated reference form: An oblong golden melon with fine pale netting and an orange-fleshed wedge.",
+      "identityNote": "Use the illustration to study general form. The exact workbook label is preserved, but a generated image cannot confirm its cultivar, missing words, grade, package, or checkout mapping.",
+      "checkoutCaveat": "The number is recorded in the workbook, not newly verified at a current checkout. The workbook sale-unit cell is blank; no sale unit is inferred.",
+      "sourceIssue": "Need permission-cleared exact Honey Kiss specimen imagery. A related Hami photo and the similar Sugar Kiss name do not close identity or photo-rights requirements.",
+      "media": {
+        "kind": "generated-illustration",
+        "src": "/media/reference/melons-honeykiss.png",
+        "alt": "AI-generated teaching illustration. An oblong golden melon with fine pale netting and an orange-fleshed wedge.",
+        "author": "OpenAI image generation",
+        "sourceUrl": "/media/reference/provenance.json",
+        "license": "AI-generated study illustration; no third-party photo license claimed",
+        "claimBoundary": "AI-generated general-form illustration, not a photograph or proof of the exact cultivar, store presentation, sale unit, or checkout code."
+      },
+      "evidenceSources": [
+        {
+          "title": "Workbook transcription and remaining source issue",
+          "url": "https://github.com/Dr-dyrane/PLU/blob/main/data/review-lanes/batch06-final-mapped-media.json"
+        },
+        {
+          "title": "Generated illustration provenance",
+          "url": "/media/reference/provenance.json"
+        },
+        {
+          "title": "Kiss Melons: Honey Kiss",
+          "url": "https://kissmelons.com/melons/honey-kiss/"
+        }
+      ],
+      "revision": "ref-v1-9ad2e719d9ad7f99"
+    },
+    {
+      "catalogId": "nappa-baby-4540-bag",
+      "title": "Nappa - Baby 4540 (Bag)",
+      "family": "Cabbages",
+      "sourcePages": [
+        4
+      ],
+      "soldBy": null,
+      "codes": [
+        "62527"
+      ],
+      "sourceCodeText": "62527",
+      "codeStatus": "conflicted",
+      "visualCue": "Compact napa cabbage heads have layered leaves and pale ribs; the bag listing comes from the workbook.",
+      "identityNote": "The title preserves the workbook wording. This source-reading lesson does not independently certify that listing. This is a produce example, not proof of this store's exact retail unit, origin, cultivar, or entered code. It does not verify this source row's checkout mapping.",
+      "checkoutCaveat": "The source contains a conflicting mapping or another unexplained number. Do not select a checkout code from this study. The workbook sale-unit cell is blank; no sale unit is inferred.",
+      "sourceIssue": "Read page 4 to classify label number 4540 versus B-cell 62527 and verify the Baby Nappa bag sale unit. Loose baby cabbage imagery cannot decide the bag checkout mapping.",
+      "media": {
+        "kind": "reviewed-photo",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/Mini_Tientsin_Pakchoi_~_Baby_napa_cabbage.jpg/1280px-Mini_Tientsin_Pakchoi_~_Baby_napa_cabbage.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "author": "Fumikas Sagisavas",
+        "license": "CC0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mini_Tientsin_Pakchoi_~_Baby_napa_cabbage.jpg",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "alt": "Reference photograph: Compact napa cabbage heads have layered leaves and pale ribs; the bag listing comes from the workbook.",
+        "claimBoundary": "This is a produce example, not proof of this store's exact retail unit, origin, cultivar, or entered code. It does not verify this source row's checkout mapping."
+      },
+      "evidenceSources": [
+        {
+          "title": "Workbook transcription and remaining source issue",
+          "url": "https://github.com/Dr-dyrane/PLU/blob/main/data/review-lanes/batch06-final-source-codes.json"
+        },
+        {
+          "title": "Photograph and reuse rights",
+          "url": "https://commons.wikimedia.org/wiki/File:Mini_Tientsin_Pakchoi_~_Baby_napa_cabbage.jpg"
+        }
+      ],
+      "revision": "ref-v1-8a3d7fad9c662fcf"
+    },
+    {
+      "catalogId": "onions-1381-label-as-printed",
+      "title": "Onions - 1381 (label as printed)",
+      "family": "Alliums",
+      "sourcePages": [
+        4
+      ],
+      "soldBy": null,
+      "codes": [
+        "2525"
+      ],
+      "sourceCodeText": "2525",
+      "codeStatus": "conflicted",
+      "visualCue": "Whole onion bulbs have papery skins; cut halves expose concentric rings.",
+      "identityNote": "This is a generic onion reference for the label as transcribed. The photographed yellow onion type is not assigned to the source row, and printed number 1381 is not reconciled with recorded value 2525.",
+      "checkoutCaveat": "The source contains a conflicting mapping or another unexplained number. Do not select a checkout code from this study. The workbook sale-unit cell is blank; no sale unit is inferred.",
+      "sourceIssue": "Read page 4 to classify the printed label number 1381 versus B-cell 2525, preserving the exact onion identity. Neither field alone adjudicates the other.",
+      "media": {
+        "kind": "reviewed-photo",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/Yellow_onion_with_x-section.jpg/1280px-Yellow_onion_with_x-section.jpg",
+        "alt": "Generic onion reference with whole papery-skinned bulbs and cut halves showing rings; the source row's variety and printed numbers are not identified by the photo.",
+        "author": "Andrew c at English Wikipedia",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Yellow_onion_with_x-section.jpg",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "claimBoundary": "This yellow-onion example supports only general bulb structure. It does not establish the source listing's color or cultivar, the meaning of 1381, or whether 2525 is the current checkout code."
+      },
+      "evidenceSources": [
+        {
+          "title": "Workbook transcription and remaining source issue",
+          "url": "https://github.com/Dr-dyrane/PLU/blob/main/data/review-lanes/batch06-final-source-codes.json"
+        },
+        {
+          "title": "Photograph and reuse rights",
+          "url": "https://commons.wikimedia.org/wiki/File:Yellow_onion_with_x-section.jpg"
+        }
+      ],
+      "revision": "ref-v1-b8a0d685a1b7bbb7"
+    },
+    {
+      "catalogId": "onions-medium-50lb-724-58312",
+      "title": "Onions - Medium 50lb 724 / 58312",
+      "family": "Alliums",
+      "sourcePages": [
+        4
+      ],
+      "soldBy": null,
+      "codes": [
+        "63430"
+      ],
+      "sourceCodeText": "63430",
+      "codeStatus": "conflicted",
+      "visualCue": "Whole onion bulbs have papery skins; a cut cross-section shows concentric layers.",
+      "identityNote": "Medium, 50lb, 724, and 58312 are preserved as source-label text. The photo does not establish those package details or reconcile them with recorded value 63430.",
+      "checkoutCaveat": "The source contains a conflicting mapping or another unexplained number. Do not select a checkout code from this study. The workbook sale-unit cell is blank; no sale unit is inferred.",
+      "sourceIssue": "Read page 4 and a current package/register record to classify 724, 58312, and B-cell 63430 for the exact Medium 50lb onion package.",
+      "media": {
+        "kind": "reviewed-photo",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/Yellow_onion_with_x-section.jpg/1280px-Yellow_onion_with_x-section.jpg",
+        "alt": "Generic whole-and-cut onion example; no bag, weight, medium-size standard, or source label is shown.",
+        "author": "Andrew c at English Wikipedia",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Yellow_onion_with_x-section.jpg",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "claimBoundary": "The photograph shows yellow onions, not evidence of the workbook row's color, cultivar, Medium size, 50lb quantity, package form, or the roles of 724, 58312, and 63430."
+      },
+      "evidenceSources": [
+        {
+          "title": "Workbook transcription and remaining source issue",
+          "url": "https://github.com/Dr-dyrane/PLU/blob/main/data/review-lanes/batch06-final-source-codes.json"
+        },
+        {
+          "title": "Photograph and reuse rights",
+          "url": "https://commons.wikimedia.org/wiki/File:Yellow_onion_with_x-section.jpg"
+        }
+      ],
+      "revision": "ref-v1-51625f3efdcb64ad"
+    },
+    {
+      "catalogId": "onions-sweet-4166-59914",
+      "title": "Onions - Sweet 4166 / 59914",
+      "family": "Alliums",
+      "sourcePages": [
+        4
+      ],
+      "soldBy": null,
+      "codes": [
+        "4159"
+      ],
+      "sourceCodeText": "4159",
+      "codeStatus": "conflicted",
+      "visualCue": "Whole sweet-onion examples have pale papery skins; sweetness is not established by looking at the photo.",
+      "identityNote": "The title preserves the workbook wording. This source-reading lesson does not independently certify that listing. This is a produce example, not proof of this store's exact retail unit, origin, cultivar, or entered code. It does not verify this source row's checkout mapping.",
+      "checkoutCaveat": "The source contains a conflicting mapping or another unexplained number. Do not select a checkout code from this study. The workbook sale-unit cell is blank; no sale unit is inferred.",
+      "sourceIssue": "Reconcile page 4 label numbers 4166 and 59914 with B-cell 4159 and the other Sweet onion row carrying 4159. Preserve all recorded numbers until the original source establishes their roles.",
+      "media": {
+        "kind": "reviewed-photo",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Sweet_onions_in_a_pile.jpg/1280px-Sweet_onions_in_a_pile.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "author": "Jeffery Martin",
+        "license": "CC0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sweet_onions_in_a_pile.jpg",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "alt": "Reference photograph: Whole sweet-onion examples have pale papery skins; sweetness is not established by looking at the photo.",
+        "claimBoundary": "This is a produce example, not proof of this store's exact retail unit, origin, cultivar, or entered code. It does not verify this source row's checkout mapping."
+      },
+      "evidenceSources": [
+        {
+          "title": "Workbook transcription and remaining source issue",
+          "url": "https://github.com/Dr-dyrane/PLU/blob/main/data/review-lanes/batch06-final-source-codes.json"
+        },
+        {
+          "title": "Photograph and reuse rights",
+          "url": "https://commons.wikimedia.org/wiki/File:Sweet_onions_in_a_pile.jpg"
+        }
+      ],
+      "revision": "ref-v1-6a7eec121d60b120"
+    },
+    {
+      "catalogId": "onions-yellow-25lb-334",
+      "title": "Onions - Yellow 25lb 334",
+      "family": "Alliums",
+      "sourcePages": [
+        4
+      ],
+      "soldBy": null,
+      "codes": [
+        "62782"
+      ],
+      "sourceCodeText": "62782",
+      "codeStatus": "conflicted",
+      "visualCue": "A whole yellow onion and a cut section show papery skin and concentric layers; no 25lb package is shown.",
+      "identityNote": "The title preserves the workbook wording. This source-reading lesson does not independently certify that listing. This is a produce example, not proof of this store's exact retail unit, origin, cultivar, or entered code. It does not verify this source row's checkout mapping.",
+      "checkoutCaveat": "The source contains a conflicting mapping or another unexplained number. Do not select a checkout code from this study. The workbook sale-unit cell is blank; no sale unit is inferred.",
+      "sourceIssue": "Read page 4 to classify label number 334 versus B-cell 62782 and verify the exact Yellow 25lb onion package sale unit.",
+      "media": {
+        "kind": "reviewed-photo",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/Yellow_onion_with_x-section.jpg/1280px-Yellow_onion_with_x-section.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "author": "Andrew c at English Wikipedia",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Yellow_onion_with_x-section.jpg",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "alt": "Reference photograph: A whole yellow onion and a cut section show papery skin and concentric layers; no 25lb package is shown.",
+        "claimBoundary": "This is a produce example, not proof of this store's exact retail unit, origin, cultivar, or entered code. It does not verify this source row's checkout mapping."
+      },
+      "evidenceSources": [
+        {
+          "title": "Workbook transcription and remaining source issue",
+          "url": "https://github.com/Dr-dyrane/PLU/blob/main/data/review-lanes/batch06-final-source-codes.json"
+        },
+        {
+          "title": "Photograph and reuse rights",
+          "url": "https://commons.wikimedia.org/wiki/File:Yellow_onion_with_x-section.jpg"
+        }
+      ],
+      "revision": "ref-v1-b4235429d2d940b0"
+    },
+    {
+      "catalogId": "papayas-meridol",
+      "title": "Papayas - Meridol",
+      "family": "Papayas",
+      "sourcePages": [
+        2
+      ],
+      "soldBy": "Weight",
+      "codes": [
+        "3112"
+      ],
+      "sourceCodeText": "3112",
+      "codeStatus": "recorded",
+      "visualCue": "Illustrated reference form: An elongated green-orange papaya beside an orange-fleshed half with black seeds.",
+      "identityNote": "Use the illustration to study general form. The exact workbook label is preserved, but a generated image cannot confirm its cultivar, missing words, grade, package, or checkout mapping.",
+      "checkoutCaveat": "The number is recorded in the workbook, not newly verified at a current checkout. The workbook records Weight; confirm the current exact retail listing before use.",
+      "sourceIssue": "Meridol/Maradol name bridge is supported; still need an exact reuse-cleared image without competing visible PLU 4395. Workbook 3112 is unchanged.",
+      "media": {
+        "kind": "generated-illustration",
+        "src": "/media/reference/papayas-meridol.png",
+        "alt": "AI-generated teaching illustration. An elongated green-orange papaya beside an orange-fleshed half with black seeds.",
+        "author": "OpenAI image generation",
+        "sourceUrl": "/media/reference/provenance.json",
+        "license": "AI-generated study illustration; no third-party photo license claimed",
+        "claimBoundary": "AI-generated general-form illustration, not a photograph or proof of the exact cultivar, store presentation, sale unit, or checkout code."
+      },
+      "evidenceSources": [
+        {
+          "title": "Workbook transcription and remaining source issue",
+          "url": "https://github.com/Dr-dyrane/PLU/blob/main/data/review-lanes/batch06-final-mapped-media.json"
+        },
+        {
+          "title": "Generated illustration provenance",
+          "url": "/media/reference/provenance.json"
+        }
+      ],
+      "revision": "ref-v1-7d76cfbd1b15d232"
+    },
+    {
+      "catalogId": "parsnips-2lb",
+      "title": "Parsnips - 2lb",
+      "family": "Roots",
+      "sourcePages": [
+        4
+      ],
+      "soldBy": null,
+      "codes": [
+        "?"
+      ],
+      "sourceCodeText": "?",
+      "codeStatus": "missing",
+      "visualCue": "Cream-colored roots taper to narrow tips; no two-pound package is shown.",
+      "identityNote": "The title preserves the workbook wording. This source-reading lesson does not independently certify that listing. This is a produce example, not proof of this store's exact retail unit, origin, cultivar, or entered code. It does not verify this source row's checkout mapping.",
+      "checkoutCaveat": "The source has no confirmed code. Do not guess one from an image, a similar item, or a number embedded in the label. The workbook sale-unit cell is blank; no sale unit is inferred.",
+      "sourceIssue": "Capture the assigned code and package sale unit for page 4 Parsnips - 2lb. Do not reuse loose or bulk parsnip codes for the missing package code.",
+      "media": {
+        "kind": "reviewed-photo",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b2/Parsnips.JPG/1280px-Parsnips.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "author": "Jonathunder",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Parsnips.JPG",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "alt": "Reference photograph: Cream-colored roots taper to narrow tips; no two-pound package is shown.",
+        "claimBoundary": "This is a produce example, not proof of this store's exact retail unit, origin, cultivar, or entered code. It does not verify this source row's checkout mapping."
+      },
+      "evidenceSources": [
+        {
+          "title": "Workbook transcription and remaining source issue",
+          "url": "https://github.com/Dr-dyrane/PLU/blob/main/data/review-lanes/batch06-final-source-codes.json"
+        },
+        {
+          "title": "Photograph and reuse rights",
+          "url": "https://commons.wikimedia.org/wiki/File:Parsnips.JPG"
+        }
+      ],
+      "revision": "ref-v1-6b653ea0936e7a18"
+    },
+    {
+      "catalogId": "parsnips-bulk-4672",
+      "title": "Parsnips - Bulk 4672",
+      "family": "Roots",
+      "sourcePages": [
+        4
+      ],
+      "soldBy": null,
+      "codes": [
+        "?"
+      ],
+      "sourceCodeText": "?",
+      "codeStatus": "missing",
+      "visualCue": "Raw tapered parsnips are arranged on a retail shelf; the photo does not settle the label number.",
+      "identityNote": "The title preserves the workbook wording. This source-reading lesson does not independently certify that listing. This is a produce example, not proof of this store's exact retail unit, origin, cultivar, or entered code. It does not verify this source row's checkout mapping.",
+      "checkoutCaveat": "The source has no confirmed code. Do not guess one from an image, a similar item, or a number embedded in the label. The workbook sale-unit cell is blank; no sale unit is inferred.",
+      "sourceIssue": "Inspect page 4 to confirm what label number 4672 means for Bulk parsnips, whose B-cell is a question mark. A number embedded in a label is not automatically an adjudicated checkout value.",
+      "media": {
+        "kind": "reviewed-photo",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Parsnips_on_a_shelf.jpg/1280px-Parsnips_on_a_shelf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "author": "Jeffery Martin",
+        "license": "CC0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Parsnips_on_a_shelf.jpg",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "alt": "Reference photograph: Raw tapered parsnips are arranged on a retail shelf; the photo does not settle the label number.",
+        "claimBoundary": "This is a produce example, not proof of this store's exact retail unit, origin, cultivar, or entered code. It does not verify this source row's checkout mapping."
+      },
+      "evidenceSources": [
+        {
+          "title": "Workbook transcription and remaining source issue",
+          "url": "https://github.com/Dr-dyrane/PLU/blob/main/data/review-lanes/batch06-final-source-codes.json"
+        },
+        {
+          "title": "Photograph and reuse rights",
+          "url": "https://commons.wikimedia.org/wiki/File:Parsnips_on_a_shelf.jpg"
+        }
+      ],
+      "revision": "ref-v1-8c261eb20bc3bd12"
+    },
+    {
+      "catalogId": "pears-red-4415",
+      "title": "Pears - Red 4415",
+      "family": "Pears",
+      "sourcePages": [
+        5
+      ],
+      "soldBy": null,
+      "codes": [
+        "3118"
+      ],
+      "sourceCodeText": "3118",
+      "codeStatus": "conflicted",
+      "visualCue": "Whole and cut red pears provide a color-and-form example, not proof of the workbook's cultivar or code.",
+      "identityNote": "The title preserves the workbook wording. This source-reading lesson does not independently certify that listing. This is a produce example, not proof of this store's exact retail unit, origin, cultivar, or entered code. It does not verify this source row's checkout mapping.",
+      "checkoutCaveat": "The source contains a conflicting mapping or another unexplained number. Do not select a checkout code from this study. The workbook sale-unit cell is blank; no sale unit is inferred.",
+      "sourceIssue": "Read page 5 to classify label number 4415 versus B-cell 3118 for the exact Red pear listing. Other Red pear entries cannot select one without source evidence.",
+      "media": {
+        "kind": "reviewed-photo",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/Red_Modoc_%28pear%29_jm135831.jpg/1280px-Red_Modoc_%28pear%29_jm135831.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "author": "Joergens.mi",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Red_Modoc_(pear)_jm135831.jpg",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "alt": "Reference photograph: Whole and cut red pears provide a color-and-form example, not proof of the workbook's cultivar or code.",
+        "claimBoundary": "This is a produce example, not proof of this store's exact retail unit, origin, cultivar, or entered code. It does not verify this source row's checkout mapping."
+      },
+      "evidenceSources": [
+        {
+          "title": "Workbook transcription and remaining source issue",
+          "url": "https://github.com/Dr-dyrane/PLU/blob/main/data/review-lanes/batch06-final-source-codes.json"
+        },
+        {
+          "title": "Photograph and reuse rights",
+          "url": "https://commons.wikimedia.org/wiki/File:Red_Modoc_(pear)_jm135831.jpg"
+        }
+      ],
+      "revision": "ref-v1-9c79eb84058db553"
+    },
+    {
+      "catalogId": "pears-taylor-gold",
+      "title": "Pears - Taylor Gold",
+      "family": "Pears",
+      "sourcePages": [
+        5
+      ],
+      "soldBy": null,
+      "codes": [
+        "4553"
+      ],
+      "sourceCodeText": "4553",
+      "codeStatus": "recorded",
+      "visualCue": "Illustrated reference form: A short-necked rounded pear with cinnamon russet skin.",
+      "identityNote": "Use the illustration to study general form. The exact workbook label is preserved, but a generated image cannot confirm its cultivar, missing words, grade, package, or checkout mapping.",
+      "checkoutCaveat": "The number is recorded in the workbook, not newly verified at a current checkout. The workbook sale-unit cell is blank; no sale unit is inferred.",
+      "sourceIssue": "Need a real Taylor's Gold photograph with documented reuse rights, not generic Comice/Bosc or a 3D reconstruction.",
+      "media": {
+        "kind": "generated-illustration",
+        "src": "/media/reference/pears-taylor-gold.png",
+        "alt": "AI-generated teaching illustration. A short-necked rounded pear with cinnamon russet skin.",
+        "author": "OpenAI image generation",
+        "sourceUrl": "/media/reference/provenance.json",
+        "license": "AI-generated study illustration; no third-party photo license claimed",
+        "claimBoundary": "AI-generated general-form illustration, not a photograph or proof of the exact cultivar, store presentation, sale unit, or checkout code."
+      },
+      "evidenceSources": [
+        {
+          "title": "Workbook transcription and remaining source issue",
+          "url": "https://github.com/Dr-dyrane/PLU/blob/main/data/review-lanes/batch06-final-mapped-media.json"
+        },
+        {
+          "title": "Generated illustration provenance",
+          "url": "/media/reference/provenance.json"
+        },
+        {
+          "title": "CFIA: Taylors Gold variety description",
+          "url": "https://active.inspection.gc.ca/english/plaveg/pbrpov/cropreport/par/app00001119e.shtml"
+        }
+      ],
+      "revision": "ref-v1-97faf1181cbdcf1e"
+    },
+    {
+      "catalogId": "peppers-red-long-handwritten",
+      "title": "Peppers - Red Long (handwritten)",
+      "family": "Peppers",
+      "sourcePages": [
+        4
+      ],
+      "soldBy": null,
+      "codes": [
+        "4711"
+      ],
+      "sourceCodeText": "4711",
+      "codeStatus": "conflicted",
+      "visualCue": "Slender red peppers taper to pointed ends.",
+      "identityNote": "This is a transcription of a handwritten line; the original handwriting has not been independently checked. This is a produce example, not proof of this store's exact retail unit, origin, cultivar, or entered code. It does not verify this source row's checkout mapping.",
+      "checkoutCaveat": "The source contains a conflicting mapping or another unexplained number. Do not select a checkout code from this study. The workbook sale-unit cell is blank; no sale unit is inferred.",
+      "sourceIssue": "Inspect the page 4 handwritten Red Long pepper 4711 line and reconcile it against the separately recorded Red Long pepper row. Shared wording and a shared number are not independent confirmation of the handwriting.",
+      "media": {
+        "kind": "reviewed-photo",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/Long_hot_red_chili_pepper.jpg/1280px-Long_hot_red_chili_pepper.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "author": "Challiyan",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Long_hot_red_chili_pepper.jpg",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "alt": "Reference photograph: Slender red peppers taper to pointed ends.",
+        "claimBoundary": "This is a produce example, not proof of this store's exact retail unit, origin, cultivar, or entered code. It does not verify this source row's checkout mapping."
+      },
+      "evidenceSources": [
+        {
+          "title": "Workbook transcription and remaining source issue",
+          "url": "https://github.com/Dr-dyrane/PLU/blob/main/data/review-lanes/batch06-final-source-codes.json"
+        },
+        {
+          "title": "Photograph and reuse rights",
+          "url": "https://commons.wikimedia.org/wiki/File:Long_hot_red_chili_pepper.jpg"
+        }
+      ],
+      "revision": "ref-v1-3121acc52ee6f74c"
+    },
+    {
+      "catalogId": "plumcots-handwritten",
+      "title": "Plumcots (handwritten)",
+      "family": "Plums",
+      "sourcePages": [
+        5
+      ],
+      "soldBy": null,
+      "codes": [
+        "5127"
+      ],
+      "sourceCodeText": "5127",
+      "codeStatus": "uncertain",
+      "visualCue": "Whole and sliced plumcot/pluot fruit show smooth skin and the cut interior; the handwritten store mapping remains unconfirmed.",
+      "identityNote": "This is a transcription of a handwritten line; the original handwriting has not been independently checked. This is a produce example, not proof of this store's exact retail unit, origin, cultivar, or entered code. It does not verify this source row's checkout mapping.",
+      "checkoutCaveat": "The recorded number or source reading still needs confirmation. Do not treat it as a verified checkout instruction. The workbook sale-unit cell is blank; no sale unit is inferred.",
+      "sourceIssue": "Inspect page 5 to confirm the handwritten Plumcots identity and 5127 mapping. A plumcot/pluot synonym or recognition photograph cannot independently validate the handwritten code.",
+      "media": {
+        "kind": "reviewed-photo",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/Metis_Plumcot_Pluot.jpg/1280px-Metis_Plumcot_Pluot.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "author": "Benjamin Bestier",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Metis_Plumcot_Pluot.jpg",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "alt": "Reference photograph: Whole and sliced plumcot/pluot fruit show smooth skin and the cut interior; the handwritten store mapping remains unconfirmed.",
+        "claimBoundary": "This is a produce example, not proof of this store's exact retail unit, origin, cultivar, or entered code. It does not verify this source row's checkout mapping."
+      },
+      "evidenceSources": [
+        {
+          "title": "Workbook transcription and remaining source issue",
+          "url": "https://github.com/Dr-dyrane/PLU/blob/main/data/review-lanes/batch06-final-source-codes.json"
+        },
+        {
+          "title": "Photograph and reuse rights",
+          "url": "https://commons.wikimedia.org/wiki/File:Metis_Plumcot_Pluot.jpg"
+        }
+      ],
+      "revision": "ref-v1-c3deebbdca054e02"
+    },
+    {
+      "catalogId": "potato-sweet-jamaican-handwritten",
+      "title": "Potato - Sweet Jamaican (handwritten)",
+      "family": "Potatoes",
+      "sourcePages": [
+        4
+      ],
+      "soldBy": null,
+      "codes": [
+        "?"
+      ],
+      "sourceCodeText": "?",
+      "codeStatus": "missing",
+      "visualCue": "Whole sweet-potato roots have pale tan skin; Jamaican origin or a named cultivar is not visible.",
+      "identityNote": "This is a transcription of a handwritten line; the original handwriting has not been independently checked. The source-only qualifiers (handwritten) are not established by the photo. It does not verify this source row's checkout mapping.",
+      "checkoutCaveat": "The source has no confirmed code. Do not guess one from an image, a similar item, or a number embedded in the label. The workbook sale-unit cell is blank; no sale unit is inferred.",
+      "sourceIssue": "Provide the page 4 handwritten Sweet Jamaican potato line with a code or a current exact store record. The White sweet potato 9925 recovery does not fill this separate missing code.",
+      "media": {
+        "kind": "reviewed-photo",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/Sweet-potato.JPG/1280px-Sweet-potato.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "author": "JanManu",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sweet-potato.JPG",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "alt": "Reference photograph: Whole sweet-potato roots have pale tan skin; Jamaican origin or a named cultivar is not visible.",
+        "claimBoundary": "The source-only qualifiers (handwritten) are not established by the photo. It does not verify this source row's checkout mapping."
+      },
+      "evidenceSources": [
+        {
+          "title": "Workbook transcription and remaining source issue",
+          "url": "https://github.com/Dr-dyrane/PLU/blob/main/data/review-lanes/batch06-final-source-codes.json"
+        },
+        {
+          "title": "Photograph and reuse rights",
+          "url": "https://commons.wikimedia.org/wiki/File:Sweet-potato.JPG"
+        }
+      ],
+      "revision": "ref-v1-346e2f791634437e"
+    },
+    {
+      "catalogId": "pumpkins-jamaican",
+      "title": "Pumpkins - Jamaican",
+      "family": "Squash",
+      "sourcePages": [
+        3
+      ],
+      "soldBy": "Weight",
+      "codes": [
+        "434"
+      ],
+      "sourceCodeText": "434",
+      "codeStatus": "recorded",
+      "visualCue": "AI-generated Calabaza-style pumpkin illustration: a broad ribbed green gourd and one orange-fleshed wedge; general form only.",
+      "identityNote": "The title preserves the workbook wording. This source-reading lesson does not independently certify that listing. AI-generated general Calabaza-style pumpkin form, not evidence of an exact Jamaican cultivar, country of origin, store specimen or checkout code. Jamaican remains source-label wording; the depicted mottling and shape are not guaranteed for all listings.",
+      "checkoutCaveat": "The number is recorded in the workbook, not newly verified at a current checkout. The workbook records Weight; confirm the current exact retail listing before use.",
+      "sourceIssue": "Code evidence is clean: the unflagged workbook row records 434, Weight, page 3 without competing label numbers or catalog collision. Exact Jamaican product identity and usable recognition media remain separate gates owned by the identity/media lane.",
+      "media": {
+        "kind": "generated-illustration",
+        "src": "/media/reference/pumpkins-jamaican.png",
+        "alt": "AI-generated Calabaza-style pumpkin illustration: a broad ribbed green gourd and one orange-fleshed wedge; general form only.",
+        "author": "OpenAI image generation",
+        "sourceUrl": "/media/reference/provenance.json",
+        "license": "AI-generated study illustration; no third-party photo license claimed",
+        "claimBoundary": "AI-generated general Calabaza-style pumpkin form, not evidence of an exact Jamaican cultivar, country of origin, store specimen or checkout code. Jamaican remains source-label wording; the depicted mottling and shape are not guaranteed for all listings."
+      },
+      "evidenceSources": [
+        {
+          "title": "Workbook transcription and remaining source issue",
+          "url": "https://github.com/Dr-dyrane/PLU/blob/main/data/review-lanes/batch06-final-source-codes.json"
+        },
+        {
+          "title": "Generated illustration provenance",
+          "url": "/media/reference/provenance.json"
+        },
+        {
+          "title": "The grower's Jamaican Pumpkin is a diverse Cucurbita moschata population with orange flesh and green streaked skin, also called West Indian Pumpkin or Calabaza.",
+          "url": "https://trueloveseeds.com/collections/vegetables-and-grains/products/jamaican-pumpkin"
+        }
+      ],
+      "revision": "ref-v1-fdfbe56ed0e4f619"
+    },
+    {
+      "catalogId": "pumpkins-small-pie-4737",
+      "title": "Pumpkins - Small Pie 4737",
+      "family": "Squash",
+      "sourcePages": [
+        4
+      ],
+      "soldBy": null,
+      "codes": [
+        "?"
+      ],
+      "sourceCodeText": "?",
+      "codeStatus": "missing",
+      "visualCue": "A small orange pumpkin has rounded ribs and a stem; the embedded source number is not a visible product trait.",
+      "identityNote": "The title preserves the workbook wording. This source-reading lesson does not independently certify that listing. This is a produce example, not proof of this store's exact retail unit, origin, cultivar, or entered code. It does not verify this source row's checkout mapping.",
+      "checkoutCaveat": "The source has no confirmed code. Do not guess one from an image, a similar item, or a number embedded in the label. The workbook sale-unit cell is blank; no sale unit is inferred.",
+      "sourceIssue": "Inspect page 4 to classify label number 4737 for Small Pie pumpkins, whose B-cell is a question mark. Do not promote the embedded number without an exact source or current store mapping.",
+      "media": {
+        "kind": "reviewed-photo",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/20171027-AMS-LSC-0131_%2838068402991%29.jpg/1280px-20171027-AMS-LSC-0131_%2838068402991%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "author": "U.S. Department of Agriculture",
+        "license": "Public domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:20171027-AMS-LSC-0131_(38068402991).jpg",
+        "alt": "Reference photograph: A small orange pumpkin has rounded ribs and a stem; the embedded source number is not a visible product trait.",
+        "claimBoundary": "This is a produce example, not proof of this store's exact retail unit, origin, cultivar, or entered code. It does not verify this source row's checkout mapping."
+      },
+      "evidenceSources": [
+        {
+          "title": "Workbook transcription and remaining source issue",
+          "url": "https://github.com/Dr-dyrane/PLU/blob/main/data/review-lanes/batch06-final-source-codes.json"
+        },
+        {
+          "title": "Photograph and reuse rights",
+          "url": "https://commons.wikimedia.org/wiki/File:20171027-AMS-LSC-0131_(38068402991).jpg"
+        }
+      ],
+      "revision": "ref-v1-7e87703852c329ac"
+    },
+    {
+      "catalogId": "pumpkins-white",
+      "title": "Pumpkins - White",
+      "family": "Squash",
+      "sourcePages": [
+        4
+      ],
+      "soldBy": null,
+      "codes": [
+        "?"
+      ],
+      "sourceCodeText": "?",
+      "codeStatus": "missing",
+      "visualCue": "Whole pumpkins have pale white skins and rounded, ribbed forms.",
+      "identityNote": "The title preserves the workbook wording. This source-reading lesson does not independently certify that listing. This is a produce example, not proof of this store's exact retail unit, origin, cultivar, or entered code. It does not verify this source row's checkout mapping.",
+      "checkoutCaveat": "The source has no confirmed code. Do not guess one from an image, a similar item, or a number embedded in the label. The workbook sale-unit cell is blank; no sale unit is inferred.",
+      "sourceIssue": "Capture an assigned code for page 4 White pumpkins from the original sheet or current exact store record. Other pumpkin codes are not interchangeable.",
+      "media": {
+        "kind": "reviewed-photo",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/Cucurbita_pepo_white_pumpkin_15.Autumn.WholeFoods.1440P.NW.WDC.14October2014.jpg/1280px-Cucurbita_pepo_white_pumpkin_15.Autumn.WholeFoods.1440P.NW.WDC.14October2014.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "author": "Elvert Barnes",
+        "license": "CC BY-SA 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cucurbita_pepo_white_pumpkin_15.Autumn.WholeFoods.1440P.NW.WDC.14October2014.jpg",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+        "alt": "Reference photograph: Whole pumpkins have pale white skins and rounded, ribbed forms.",
+        "claimBoundary": "This is a produce example, not proof of this store's exact retail unit, origin, cultivar, or entered code. It does not verify this source row's checkout mapping."
+      },
+      "evidenceSources": [
+        {
+          "title": "Workbook transcription and remaining source issue",
+          "url": "https://github.com/Dr-dyrane/PLU/blob/main/data/review-lanes/batch06-final-source-codes.json"
+        },
+        {
+          "title": "Photograph and reuse rights",
+          "url": "https://commons.wikimedia.org/wiki/File:Cucurbita_pepo_white_pumpkin_15.Autumn.WholeFoods.1440P.NW.WDC.14October2014.jpg"
+        }
+      ],
+      "revision": "ref-v1-81395b3763736b86"
+    },
+    {
+      "catalogId": "radish-bunch",
+      "title": "Radish - Bunch",
+      "family": "Roots",
+      "sourcePages": [
+        4
+      ],
+      "soldBy": null,
+      "codes": [
+        "4019"
+      ],
+      "sourceCodeText": "4019",
+      "codeStatus": "conflicted",
+      "visualCue": "Red-and-white radish roots are grouped with their leafy tops.",
+      "identityNote": "The title preserves the workbook wording. This source-reading lesson does not independently certify that listing. This is a produce example, not proof of this store's exact retail unit, origin, cultivar, or entered code. It does not verify this source row's checkout mapping.",
+      "checkoutCaveat": "The source contains a conflicting mapping or another unexplained number. Do not select a checkout code from this study. The workbook sale-unit cell is blank; no sale unit is inferred.",
+      "sourceIssue": "Reconcile the page 4 Radish - Bunch 4019 line against page 5 McIntosh Extra Fancy apple 4019 using original or current checkout evidence. Do not select the likely public PLU by plausibility.",
+      "media": {
+        "kind": "reviewed-photo",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a9/Radish_bunches.jpg/1280px-Radish_bunches.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "author": "Jeffery Martin",
+        "license": "CC0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Radish_bunches.jpg",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "alt": "Reference photograph: Red-and-white radish roots are grouped with their leafy tops.",
+        "claimBoundary": "This is a produce example, not proof of this store's exact retail unit, origin, cultivar, or entered code. It does not verify this source row's checkout mapping."
+      },
+      "evidenceSources": [
+        {
+          "title": "Workbook transcription and remaining source issue",
+          "url": "https://github.com/Dr-dyrane/PLU/blob/main/data/review-lanes/batch06-final-source-codes.json"
+        },
+        {
+          "title": "Photograph and reuse rights",
+          "url": "https://commons.wikimedia.org/wiki/File:Radish_bunches.jpg"
+        }
+      ],
+      "revision": "ref-v1-6995c3347c873fdd"
+    },
+    {
+      "catalogId": "rutabagas",
+      "title": "Rutabagas",
+      "family": "Roots",
+      "sourcePages": [
+        4
+      ],
+      "soldBy": null,
+      "codes": [
+        "?"
+      ],
+      "sourceCodeText": "?",
+      "codeStatus": "missing",
+      "visualCue": "Rounded rutabaga roots have pale lower skins and darker shoulders.",
+      "identityNote": "The title preserves the workbook wording. This source-reading lesson does not independently certify that listing. This is a produce example, not proof of this store's exact retail unit, origin, cultivar, or entered code. It does not verify this source row's checkout mapping.",
+      "checkoutCaveat": "The source has no confirmed code. Do not guess one from an image, a similar item, or a number embedded in the label. The workbook sale-unit cell is blank; no sale unit is inferred.",
+      "sourceIssue": "Capture an assigned code for the page 4 Rutabagas listing from an original or current exact store record. The known rutabaga identity and reviewed photo do not supply the missing number.",
+      "media": {
+        "kind": "reviewed-photo",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Swede_-_rutabaga_-_veggiegroup.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "author": "pin add",
+        "license": "CC BY 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Swede_-_rutabaga_-_veggiegroup.jpg",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+        "alt": "Reference photograph: Rounded rutabaga roots have pale lower skins and darker shoulders.",
+        "claimBoundary": "This is a produce example, not proof of this store's exact retail unit, origin, cultivar, or entered code. It does not verify this source row's checkout mapping."
+      },
+      "evidenceSources": [
+        {
+          "title": "Workbook transcription and remaining source issue",
+          "url": "https://github.com/Dr-dyrane/PLU/blob/main/data/review-lanes/batch06-final-source-codes.json"
+        },
+        {
+          "title": "Photograph and reuse rights",
+          "url": "https://commons.wikimedia.org/wiki/File:Swede_-_rutabaga_-_veggiegroup.jpg"
+        }
+      ],
+      "revision": "ref-v1-c1abce4fc6c41b3b"
+    },
+    {
+      "catalogId": "squash-buttercup",
+      "title": "Squash - Buttercup",
+      "family": "Squash",
+      "sourcePages": [
+        4
+      ],
+      "soldBy": null,
+      "codes": [
+        "4758"
+      ],
+      "sourceCodeText": "4758",
+      "codeStatus": "conflicted",
+      "visualCue": "A whole buttercup squash has a squat green form; the photo cannot resolve its conflicting code.",
+      "identityNote": "The title preserves the workbook wording. This source-reading lesson does not independently certify that listing. This is a produce example, not proof of this store's exact retail unit, origin, cultivar, or entered code. It does not verify this source row's checkout mapping.",
+      "checkoutCaveat": "The source contains a conflicting mapping or another unexplained number. Do not select a checkout code from this study. The workbook sale-unit cell is blank; no sale unit is inferred.",
+      "sourceIssue": "Reconcile page 4 Buttercup 4758 with the separate Butternut squash row carrying 4758. Similar names or public conventions cannot prove a transcription correction.",
+      "media": {
+        "kind": "reviewed-photo",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/54/Buttercup_Squash_on_Kitchen_Counter.jpg/1280px-Buttercup_Squash_on_Kitchen_Counter.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "author": "ParentingPatch",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Buttercup_Squash_on_Kitchen_Counter.jpg",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "alt": "Reference photograph: A whole buttercup squash has a squat green form; the photo cannot resolve its conflicting code.",
+        "claimBoundary": "This is a produce example, not proof of this store's exact retail unit, origin, cultivar, or entered code. It does not verify this source row's checkout mapping."
+      },
+      "evidenceSources": [
+        {
+          "title": "Workbook transcription and remaining source issue",
+          "url": "https://github.com/Dr-dyrane/PLU/blob/main/data/review-lanes/batch06-final-source-codes.json"
+        },
+        {
+          "title": "Photograph and reuse rights",
+          "url": "https://commons.wikimedia.org/wiki/File:Buttercup_Squash_on_Kitchen_Counter.jpg"
+        }
+      ],
+      "revision": "ref-v1-84da6bd06db1e92e"
+    },
+    {
+      "catalogId": "sweet-sop",
+      "title": "Sweet Sop",
+      "family": "Tropical Fruit",
+      "sourcePages": [
+        3
+      ],
+      "soldBy": "Weight",
+      "codes": [
+        "2569710"
+      ],
+      "sourceCodeText": "2569710",
+      "codeStatus": "uncertain",
+      "visualCue": "Sugar apples have segmented, scale-like surfaces; the photographed colors and origin do not define the store listing.",
+      "identityNote": "The title preserves the workbook wording. This source-reading lesson does not independently certify that listing. The photographed origin and unspecified cultivars are not transferred to the workbook row. The seven-digit source value remains unclassified; do not truncate it, assume a public PLU, or borrow another Annona code. It does not verify this source row's checkout mapping.",
+      "checkoutCaveat": "The recorded number or source reading still needs confirmation. Do not treat it as a verified checkout instruction. The workbook records Weight; confirm the current exact retail listing before use.",
+      "sourceIssue": "Confirm whether page 3 value 2569710 is entered as a learner-facing internal lookup code, scanned as a barcode, or references another store identifier. The seven-digit length and source flag alone do not establish its code kind.",
+      "media": {
+        "kind": "reviewed-photo",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/Sugar_apples_from_Sint_Eustatius.jpg/1280px-Sugar_apples_from_Sint_Eustatius.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "author": "GIS Statia",
+        "license": "CC BY 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sugar_apples_from_Sint_Eustatius.jpg",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+        "alt": "Reference photograph: Sugar apples have segmented, scale-like surfaces; the photographed colors and origin do not define the store listing.",
+        "claimBoundary": "The photographed origin and unspecified cultivars are not transferred to the workbook row. The seven-digit source value remains unclassified; do not truncate it, assume a public PLU, or borrow another Annona code. It does not verify this source row's checkout mapping."
+      },
+      "evidenceSources": [
+        {
+          "title": "Workbook transcription and remaining source issue",
+          "url": "https://github.com/Dr-dyrane/PLU/blob/main/data/review-lanes/batch06-final-source-codes.json"
+        },
+        {
+          "title": "Photograph and reuse rights",
+          "url": "https://commons.wikimedia.org/wiki/File:Sugar_apples_from_Sint_Eustatius.jpg"
+        }
+      ],
+      "revision": "ref-v1-232cea0d2547fbe9"
+    },
+    {
+      "catalogId": "tangerines-fall-glo",
+      "title": "Tangerines - Fall Glo",
+      "family": "Citrus",
+      "sourcePages": [
+        3
+      ],
+      "soldBy": "Weight",
+      "codes": [
+        "3144"
+      ],
+      "sourceCodeText": "3144",
+      "codeStatus": "recorded",
+      "visualCue": "Illustrated reference form: A slightly flattened orange mandarin and a peeled segment.",
+      "identityNote": "Use the illustration to study general form. The exact workbook label is preserved, but a generated image cannot confirm its cultivar, missing words, grade, package, or checkout mapping.",
+      "checkoutCaveat": "The number is recorded in the workbook, not newly verified at a current checkout. The workbook records Weight; confirm the current exact retail listing before use.",
+      "sourceIssue": "Need an exact Fallglo photo and photo-specific permission/license. USDA origin of the cultivar does not make another institution's photograph public domain; US Early Pride remains a distinct cultivar.",
+      "media": {
+        "kind": "generated-illustration",
+        "src": "/media/reference/tangerines-fall-glo.png",
+        "alt": "AI-generated teaching illustration. A slightly flattened orange mandarin and a peeled segment.",
+        "author": "OpenAI image generation",
+        "sourceUrl": "/media/reference/provenance.json",
+        "license": "AI-generated study illustration; no third-party photo license claimed",
+        "claimBoundary": "AI-generated general-form illustration, not a photograph or proof of the exact cultivar, store presentation, sale unit, or checkout code."
+      },
+      "evidenceSources": [
+        {
+          "title": "Workbook transcription and remaining source issue",
+          "url": "https://github.com/Dr-dyrane/PLU/blob/main/data/review-lanes/batch06-final-mapped-media.json"
+        },
+        {
+          "title": "Generated illustration provenance",
+          "url": "/media/reference/provenance.json"
+        },
+        {
+          "title": "UCR: Fallglo mandarin",
+          "url": "https://citrusvariety.ucr.edu/crc3990"
+        }
+      ],
+      "revision": "ref-v1-8e5eb1677c02d2de"
+    },
+    {
+      "catalogId": "tomato-heirloom-handwritten",
+      "title": "Tomato - Heirloom (handwritten)",
+      "family": "Tomatoes",
+      "sourcePages": [
+        4
+      ],
+      "soldBy": null,
+      "codes": [
+        "?"
+      ],
+      "sourceCodeText": "?",
+      "codeStatus": "missing",
+      "visualCue": "A basket contains tomatoes with varied colors and irregular, sometimes ribbed forms.",
+      "identityNote": "This is a transcription of a handwritten line; the original handwriting has not been independently checked. This is a produce example, not proof of this store's exact retail unit, origin, cultivar, or entered code. It does not verify this source row's checkout mapping.",
+      "checkoutCaveat": "The source has no confirmed code. Do not guess one from an image, a similar item, or a number embedded in the label. The workbook sale-unit cell is blank; no sale unit is inferred.",
+      "sourceIssue": "Provide the handwritten page 4 Heirloom tomato line with an assigned code or a current exact store record. Existing heirloom lessons do not establish this row's missing code.",
+      "media": {
+        "kind": "reviewed-photo",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/Capay_heirloom_tomatoes_at_Slow_Food_Nation.jpg/1280px-Capay_heirloom_tomatoes_at_Slow_Food_Nation.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "author": "mercedesfromtheeighties",
+        "license": "CC BY-SA 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Capay_heirloom_tomatoes_at_Slow_Food_Nation.jpg",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+        "alt": "Reference photograph: A basket contains tomatoes with varied colors and irregular, sometimes ribbed forms.",
+        "claimBoundary": "This is a produce example, not proof of this store's exact retail unit, origin, cultivar, or entered code. It does not verify this source row's checkout mapping."
+      },
+      "evidenceSources": [
+        {
+          "title": "Workbook transcription and remaining source issue",
+          "url": "https://github.com/Dr-dyrane/PLU/blob/main/data/review-lanes/batch06-final-source-codes.json"
+        },
+        {
+          "title": "Photograph and reuse rights",
+          "url": "https://commons.wikimedia.org/wiki/File:Capay_heirloom_tomatoes_at_Slow_Food_Nation.jpg"
+        }
+      ],
+      "revision": "ref-v1-b79e6e006b12588a"
+    },
+    {
+      "catalogId": "turnip-purple-top-white",
+      "title": "Turnip - Purple Top (White)",
+      "family": "Roots",
+      "sourcePages": [
+        4
+      ],
+      "soldBy": null,
+      "codes": [
+        "?"
+      ],
+      "sourceCodeText": "?",
+      "codeStatus": "missing",
+      "visualCue": "Trimmed turnips have purple shoulders above white lower skins.",
+      "identityNote": "The title preserves the workbook wording. This source-reading lesson does not independently certify that listing. The photograph supports the color/form description, not a particular named Purple Top White Globe cultivar or the missing checkout code. It does not verify this source row's checkout mapping.",
+      "checkoutCaveat": "The source has no confirmed code. Do not guess one from an image, a similar item, or a number embedded in the label. The workbook sale-unit cell is blank; no sale unit is inferred.",
+      "sourceIssue": "Capture an assigned code for the exact page 4 Purple Top (White) turnip listing. A botanical identity or other turnip code does not resolve the missing cell.",
+      "media": {
+        "kind": "reviewed-photo",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Liat_Portal_for_Foodie_Disorder_-_Turnip.jpg/1280px-Liat_Portal_for_Foodie_Disorder_-_Turnip.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "author": "HaJunkiyada",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Liat_Portal_for_Foodie_Disorder_-_Turnip.jpg",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "alt": "Reference photograph: Trimmed turnips have purple shoulders above white lower skins.",
+        "claimBoundary": "The photograph supports the color/form description, not a particular named Purple Top White Globe cultivar or the missing checkout code. It does not verify this source row's checkout mapping."
+      },
+      "evidenceSources": [
+        {
+          "title": "Workbook transcription and remaining source issue",
+          "url": "https://github.com/Dr-dyrane/PLU/blob/main/data/review-lanes/batch06-final-source-codes.json"
+        },
+        {
+          "title": "Photograph and reuse rights",
+          "url": "https://commons.wikimedia.org/wiki/File:Liat_Portal_for_Foodie_Disorder_-_Turnip.jpg"
+        }
+      ],
+      "revision": "ref-v1-0ab29788287ec69c"
+    },
+    {
+      "catalogId": "walnuts-bulk-nuts-handwritten",
+      "title": "Walnuts (Bulk) - Nuts (handwritten)",
+      "family": "Nuts",
+      "sourcePages": [
+        2,
+        5
+      ],
+      "soldBy": "Weight",
+      "codes": [
+        "4943"
+      ],
+      "sourceCodeText": "4943",
+      "codeStatus": "uncertain",
+      "visualCue": "A ridged tan shell and an exposed wrinkled kernel show walnut structure; they do not settle whether the listing is shelled or in-shell.",
+      "identityNote": "This is a transcription of a handwritten line; the original handwriting has not been independently checked. Bulk is workbook-only. Showing both shell and kernel does not decide whether the source store sells shelled or unshelled walnuts under this handwritten listing. It does not verify this source row's checkout mapping.",
+      "checkoutCaveat": "The recorded number or source reading still needs confirmation. Do not treat it as a verified checkout instruction. The workbook records Weight; confirm the current exact retail listing before use.",
+      "sourceIssue": "Inspect the handwritten Bulk walnuts line on pages 2 and 5 to confirm 4943 and the exact in-shell or shelled sale identity. Preserve Weight; public walnut imagery cannot validate the handwritten mapping.",
+      "media": {
+        "kind": "reviewed-photo",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/39/Walnuts_whole_and_open.jpg/1280px-Walnuts_whole_and_open.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "author": "Mister rf",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Walnuts_whole_and_open.jpg",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "alt": "Reference photograph: A ridged tan shell and an exposed wrinkled kernel show walnut structure; they do not settle whether the listing is shelled or in-shell.",
+        "claimBoundary": "Bulk is workbook-only. Showing both shell and kernel does not decide whether the source store sells shelled or unshelled walnuts under this handwritten listing. It does not verify this source row's checkout mapping."
+      },
+      "evidenceSources": [
+        {
+          "title": "Workbook transcription and remaining source issue",
+          "url": "https://github.com/Dr-dyrane/PLU/blob/main/data/review-lanes/batch06-final-source-codes.json"
+        },
+        {
+          "title": "Photograph and reuse rights",
+          "url": "https://commons.wikimedia.org/wiki/File:Walnuts_whole_and_open.jpg"
+        }
+      ],
+      "revision": "ref-v1-241eeffac7000bab"
+    },
+    {
+      "catalogId": "watermelons-mickey-lee",
+      "title": "Watermelons - Mickey Lee",
+      "family": "Watermelons",
+      "sourcePages": [
+        3
+      ],
+      "soldBy": "Each",
+      "codes": [
+        "4331"
+      ],
+      "sourceCodeText": "4331",
+      "codeStatus": "recorded",
+      "visualCue": "Illustrated reference form: A rounded mottled green watermelon and a red-fleshed wedge.",
+      "identityNote": "Use the illustration to study general form. The exact workbook label is preserved, but a generated image cannot confirm its cultivar, missing words, grade, package, or checkout mapping.",
+      "checkoutCaveat": "The number is recorded in the workbook, not newly verified at a current checkout. The workbook records Each; confirm the current exact retail listing before use.",
+      "sourceIssue": "Exact university photo now has a primary-source trail but no verified reuse grant. Obtain author/university permission or an original exact cultivar photo; Sugar Baby and generic striped watermelons remain ineligible substitutions.",
+      "media": {
+        "kind": "generated-illustration",
+        "src": "/media/reference/watermelons-mickey-lee.png",
+        "alt": "AI-generated teaching illustration. A rounded mottled green watermelon and a red-fleshed wedge.",
+        "author": "OpenAI image generation",
+        "sourceUrl": "/media/reference/provenance.json",
+        "license": "AI-generated study illustration; no third-party photo license claimed",
+        "claimBoundary": "AI-generated general-form illustration, not a photograph or proof of the exact cultivar, store presentation, sale unit, or checkout code."
+      },
+      "evidenceSources": [
+        {
+          "title": "Workbook transcription and remaining source issue",
+          "url": "https://github.com/Dr-dyrane/PLU/blob/main/data/review-lanes/batch06-final-mapped-media.json"
+        },
+        {
+          "title": "Generated illustration provenance",
+          "url": "/media/reference/provenance.json"
+        }
+      ],
+      "revision": "ref-v1-a0a9364f71b755c5"
+    }
+  ]
+}

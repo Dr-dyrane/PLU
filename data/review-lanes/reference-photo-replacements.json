@@ -1,0 +1,104 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-09-07",
+  "scope": "Reference-study photographs only; no checkout admission, code correction, or cultivar substitution.",
+  "method": "Reuse established product photographs or the prior clipped-celery candidate, refresh exact-file Commons author/license metadata, and inspect downloaded 1280px source pixels without editing them.",
+  "rejected": [
+    {
+      "catalogId": "kohlrabi-note-on-sheet-kohlrabi-1692-handwritten",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kohlrabi.jpg",
+      "author": "Ross Burgess",
+      "license": "CC BY-SA 3.0",
+      "reason": "One bounded alternative was inspected. It shows a potted purple plant with conspicuous stem scarring and damaged leaves, not an appropriate harvested-retail-form reference. Use an explicitly generated study illustration instead."
+    }
+  ],
+  "items": [
+    {
+      "catalogId": "avocado-5ct-bag-handwritten",
+      "reusesReviewedCatalogId": "avocado",
+      "replacesFile": "Avocado with cross section edit.jpg",
+      "replacementReason": "The old candidate is GFDL 1.2-only. The established avocado lesson supplies a CC BY-SA 4.0 photograph with explicit author credit.",
+      "visualCue": "A whole avocado has dark, pebbled skin; the half shows pale green flesh around a large brown stone.",
+      "identityNote": "The five-count bag and handwritten label are workbook transcription claims. The reference photograph teaches avocado structure, not this package or a newly verified store mapping.",
+      "media": {
+        "kind": "reviewed-photo",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/Avocado_Hass_-_single_and_halved.jpg/1280px-Avocado_Hass_-_single_and_halved.jpg",
+        "alt": "Avocado example: a whole dark-skinned fruit beside a cut half with pale green flesh and a large stone; no five-count bag is pictured.",
+        "author": "Ivar Leidus",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Avocado_Hass_-_single_and_halved.jpg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "claimBoundary": "The photographer identifies Hass avocado grown in Colombia. Neither cultivar nor origin transfers to the workbook row. Bag count, sale unit, handwritten reading, and checkout code are not established by this photograph."
+      }
+    },
+    {
+      "catalogId": "onions-1381-label-as-printed",
+      "reusesReviewedCatalogId": "onions-yellow-3lb-bag",
+      "replacesFile": "Onions.jpg",
+      "replacementReason": "The old candidate has GFDL 1.2 metadata without a named Artist field. An already-reviewed CC BY-SA 3.0 onion reference has explicit attribution.",
+      "visualCue": "Whole onion bulbs have papery skins; cut halves expose concentric rings.",
+      "identityNote": "This is a generic onion reference for the label as transcribed. The photographed yellow onion type is not assigned to the source row, and printed number 1381 is not reconciled with recorded value 2525.",
+      "media": {
+        "kind": "reviewed-photo",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/Yellow_onion_with_x-section.jpg/1280px-Yellow_onion_with_x-section.jpg",
+        "alt": "Generic onion reference with whole papery-skinned bulbs and cut halves showing rings; the source row's variety and printed numbers are not identified by the photo.",
+        "author": "Andrew c at English Wikipedia",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Yellow_onion_with_x-section.jpg",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "claimBoundary": "This yellow-onion example supports only general bulb structure. It does not establish the source listing's color or cultivar, the meaning of 1381, or whether 2525 is the current checkout code."
+      }
+    },
+    {
+      "catalogId": "apples-large-extra-fancy-first-word-obscured",
+      "reusesReviewedCatalogId": "apples-honeycrisp",
+      "replacementReason": "A generic apple-form reference is useful in source-reading study without restoring the obscured cultivar or asserting a grade.",
+      "visualCue": "A rounded apple has smooth red-and-yellow skin, a shallow stem hollow, and a short stem.",
+      "identityNote": "The first word in the original source label is obscured. This example does not restore that word, select a cultivar from the shared number 4129, or prove Large or Extra Fancy.",
+      "media": {
+        "kind": "reviewed-photo",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/Honeycrisp-Apple.jpg/1280px-Honeycrisp-Apple.jpg",
+        "alt": "Generic apple-form example with red-and-yellow skin and a short stem; not a reconstruction of the obscured source variety or grade.",
+        "author": "Evan-Amos",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Honeycrisp-Apple.jpg",
+        "license": "CC0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "claimBoundary": "The source identifies this photograph as Honeycrisp. It is used only as a generic apple example, not to claim the obscured workbook listing is Honeycrisp, Fuji, Large, Extra Fancy, or Organic. No code is inferred from the image."
+      }
+    },
+    {
+      "catalogId": "onions-medium-50lb-724-58312",
+      "reusesReviewedCatalogId": "onions-yellow-3lb-bag",
+      "replacementReason": "Use generic bulb structure for source-reading study; neither a loose photo nor generated packaging can validate a 50lb package or competing label numbers.",
+      "visualCue": "Whole onion bulbs have papery skins; a cut cross-section shows concentric layers.",
+      "identityNote": "Medium, 50lb, 724, and 58312 are preserved as source-label text. The photo does not establish those package details or reconcile them with recorded value 63430.",
+      "media": {
+        "kind": "reviewed-photo",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/Yellow_onion_with_x-section.jpg/1280px-Yellow_onion_with_x-section.jpg",
+        "alt": "Generic whole-and-cut onion example; no bag, weight, medium-size standard, or source label is shown.",
+        "author": "Andrew c at English Wikipedia",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Yellow_onion_with_x-section.jpg",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "claimBoundary": "The photograph shows yellow onions, not evidence of the workbook row's color, cultivar, Medium size, 50lb quantity, package form, or the roles of 724, 58312, and 63430."
+      }
+    },
+    {
+      "catalogId": "celery-hearts",
+      "reusesPriorAsset": "data/review-lanes/batch06-final-mapped-media.json#assets.celery-clipped-a",
+      "replacementReason": "The already-inspected clipped celery candidate supports a reference-study form comparison, not exact commercial Hearts admission.",
+      "visualCue": "Parallel green ribbed stalks have cut tops around smaller central leaves; a hand covers the base.",
+      "identityNote": "Hearts is the workbook listing. This clipped-celery example does not establish the exact inner-heart selection, commercial length, trimming standard, or selling unit.",
+      "media": {
+        "kind": "reviewed-photo",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9c/Staudensellerie_IMG_20220501_A.jpg/1280px-Staudensellerie_IMG_20220501_A.jpg",
+        "alt": "Clipped green celery stalks with central leaves held in a hand; no scale or label proves commercial Hearts form.",
+        "author": "IgorCalzone1",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Staudensellerie_IMG_20220501_A.jpg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "claimBoundary": "Only clipped celery structure is visible. The photograph does not prove Hearts, a 7-to-10-inch length, exact inner-stalk selection, package count, sale unit, or a current checkout mapping."
+      }
+    }
+  ]
+}

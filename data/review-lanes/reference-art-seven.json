@@ -1,0 +1,166 @@
+{
+  "schemaVersion": 1,
+  "scope": "Seven original teaching illustrations; not photographic/source-code evidence",
+  "items": [
+    {
+      "catalogId": "melons-goldendew",
+      "media": {
+        "kind": "generated-illustration",
+        "src": "/media/reference/melons-goldendew.png",
+        "alt": "AI-generated teaching illustration. A smooth golden-yellow melon and pale-fleshed wedge.",
+        "author": "OpenAI image generation",
+        "sourceUrl": "/media/reference/provenance.json",
+        "license": "AI-generated study illustration; no third-party photo license claimed",
+        "claimBoundary": "AI-generated general-form illustration, not a photograph or proof of the exact cultivar, store presentation, sale unit, or checkout code."
+      },
+      "visualCue": "Illustrated reference form: A smooth golden-yellow melon and pale-fleshed wedge.",
+      "identityNote": "Use the illustration to study general form. The exact workbook label is preserved, but a generated image cannot confirm its cultivar, missing words, grade, package, or checkout mapping.",
+      "evidenceSources": [
+        {
+          "title": "Fisher Ranch: Golden Dew traits",
+          "url": "https://fisherranch.com/"
+        }
+      ],
+      "prompt": "Use case: scientific-educational. Asset type: single square produce-learning illustration. Create an original, clearly hand-painted gouache botanical teaching illustration on warm ivory paper, visible soft brush texture, centered with generous margins. Subject: one smooth, round-to-oval deep golden-yellow honeydew melon, plus a single wedge showing pale creamy flesh and a small central cavity with tan seeds. Skin is smooth, not striped, not netted, not furrowed. This illustrates general Golden Dew melon traits for reference study; it is NOT a photo, exact specimen, brand or cultivar certification. No text, numbers, logos, stickers, watermarks, price labels, hands, packaging or unrelated props. Natural produce colors, clear legible silhouette, calm premium textbook finish.",
+      "generatedOn": "2026-09-07",
+      "generationMethod": "built-in image_gen; one original raster per subject",
+      "sourceArtifact": "/Users/dyrane/.codex/generated_images/01a06d7e-569c-7271-a825-20afda76ad1e/exec-3eadf27a-c6d6-47b5-9f19-d7b88726f7b7.png",
+      "pixelReview": "Viewed generated output: correct intended general form; clearly illustrated; no labels, numbers, logos, competing codes, or photographic provenance claim."
+    },
+    {
+      "catalogId": "melons-honeykiss",
+      "media": {
+        "kind": "generated-illustration",
+        "src": "/media/reference/melons-honeykiss.png",
+        "alt": "AI-generated teaching illustration. An oblong golden melon with fine pale netting and an orange-fleshed wedge.",
+        "author": "OpenAI image generation",
+        "sourceUrl": "/media/reference/provenance.json",
+        "license": "AI-generated study illustration; no third-party photo license claimed",
+        "claimBoundary": "AI-generated general-form illustration, not a photograph or proof of the exact cultivar, store presentation, sale unit, or checkout code."
+      },
+      "visualCue": "Illustrated reference form: An oblong golden melon with fine pale netting and an orange-fleshed wedge.",
+      "identityNote": "Use the illustration to study general form. The exact workbook label is preserved, but a generated image cannot confirm its cultivar, missing words, grade, package, or checkout mapping.",
+      "evidenceSources": [
+        {
+          "title": "Kiss Melons: Honey Kiss",
+          "url": "https://kissmelons.com/melons/honey-kiss/"
+        }
+      ],
+      "prompt": "Use case: scientific-educational. Single square produce-learning illustration, original clearly hand-painted gouache botanical art on warm ivory textured paper. Centered isolated subject, generous margins, soft brushwork, clear silhouette and natural colors. No text, numbers, logos, stickers, watermarks, packaging, people or unrelated props. Educational reference, not a photograph, exact specimen, cultivar certification or retail evidence. Subject: one oblong yellow-golden melon with fine pale irregular netting over the rind and a small wedge of pale orange flesh with a tan seed cavity beside it. Distinct elongated oval form, not a round green honeydew and not a deeply ribbed cantaloupe. This is an illustration of netted melon traits for a Honey Kiss source-reference lesson, not a rendering of any third-party photo.",
+      "generatedOn": "2026-09-07",
+      "generationMethod": "built-in image_gen; one original raster per subject",
+      "sourceArtifact": "/Users/dyrane/.codex/generated_images/01a06d7e-569c-7271-a825-20afda76ad1e/exec-6a121f16-05d7-4062-af26-adce6fd3e8b0.png",
+      "pixelReview": "Viewed generated output: correct intended general form; clearly illustrated; no labels, numbers, logos, competing codes, or photographic provenance claim."
+    },
+    {
+      "catalogId": "pears-taylor-gold",
+      "media": {
+        "kind": "generated-illustration",
+        "src": "/media/reference/pears-taylor-gold.png",
+        "alt": "AI-generated teaching illustration. A short-necked rounded pear with cinnamon russet skin.",
+        "author": "OpenAI image generation",
+        "sourceUrl": "/media/reference/provenance.json",
+        "license": "AI-generated study illustration; no third-party photo license claimed",
+        "claimBoundary": "AI-generated general-form illustration, not a photograph or proof of the exact cultivar, store presentation, sale unit, or checkout code."
+      },
+      "visualCue": "Illustrated reference form: A short-necked rounded pear with cinnamon russet skin.",
+      "identityNote": "Use the illustration to study general form. The exact workbook label is preserved, but a generated image cannot confirm its cultivar, missing words, grade, package, or checkout mapping.",
+      "evidenceSources": [
+        {
+          "title": "CFIA: Taylors Gold variety description",
+          "url": "https://active.inspection.gc.ca/english/plaveg/pbrpov/cropreport/par/app00001119e.shtml"
+        }
+      ],
+      "prompt": "Use case: scientific-educational. Single square produce-learning illustration, original clearly hand-painted gouache botanical art on warm ivory textured paper. Centered isolated subject, generous margins, soft brushwork, clear silhouette and natural colors. No text, numbers, logos, stickers, watermarks, packaging, people or unrelated props. Educational reference, not a photograph, exact specimen, cultivar certification or retail evidence. Subject: one plump rounded pear with a short thick brown stem, a short broad neck, and russet cinnamon-brown skin with subtle yellow-green patches. The form has a broad rounded belly and concave shoulders, not the long narrow neck of Bosc. Whole uncut pear only. Illustrate general short-necked russet pear traits for a Taylor Gold reference lesson without asserting an exact specimen.",
+      "generatedOn": "2026-09-07",
+      "generationMethod": "built-in image_gen; one original raster per subject",
+      "sourceArtifact": "/Users/dyrane/.codex/generated_images/01a06d7e-569c-7271-a825-20afda76ad1e/exec-78b96328-36e2-4ad2-b7e2-fae29b26234c.png",
+      "pixelReview": "Viewed generated output: correct intended general form; clearly illustrated; no labels, numbers, logos, competing codes, or photographic provenance claim."
+    },
+    {
+      "catalogId": "tangerines-fall-glo",
+      "media": {
+        "kind": "generated-illustration",
+        "src": "/media/reference/tangerines-fall-glo.png",
+        "alt": "AI-generated teaching illustration. A slightly flattened orange mandarin and a peeled segment.",
+        "author": "OpenAI image generation",
+        "sourceUrl": "/media/reference/provenance.json",
+        "license": "AI-generated study illustration; no third-party photo license claimed",
+        "claimBoundary": "AI-generated general-form illustration, not a photograph or proof of the exact cultivar, store presentation, sale unit, or checkout code."
+      },
+      "visualCue": "Illustrated reference form: A slightly flattened orange mandarin and a peeled segment.",
+      "identityNote": "Use the illustration to study general form. The exact workbook label is preserved, but a generated image cannot confirm its cultivar, missing words, grade, package, or checkout mapping.",
+      "evidenceSources": [
+        {
+          "title": "UCR: Fallglo mandarin",
+          "url": "https://citrusvariety.ucr.edu/crc3990"
+        }
+      ],
+      "prompt": "Use case: scientific-educational. Single square produce-learning illustration, original clearly hand-painted gouache botanical art on warm ivory textured paper. Centered isolated subject, generous margins, soft brushwork, clear silhouette and natural colors. No text, numbers, logos, stickers, watermarks, packaging, people or unrelated props. Educational reference, not a photograph, exact specimen, cultivar certification or retail evidence. Subject: one whole slightly flattened round orange mandarin with softly dimpled rind, beside one opened orange segment. Whole fruit wider than tall; tiny natural stem scar, no leafy branch. Illustrates general mandarin traits for a Fallglo reference lesson without asserting an exact cultivar specimen.",
+      "generatedOn": "2026-09-07",
+      "generationMethod": "built-in image_gen; one original raster per subject",
+      "sourceArtifact": "/Users/dyrane/.codex/generated_images/01a06d7e-569c-7271-a825-20afda76ad1e/exec-e88675f7-3625-4112-b36b-74293b4aaea0.png",
+      "pixelReview": "Viewed generated output: correct intended general form; clearly illustrated; no labels, numbers, logos, competing codes, or photographic provenance claim."
+    },
+    {
+      "catalogId": "papayas-meridol",
+      "media": {
+        "kind": "generated-illustration",
+        "src": "/media/reference/papayas-meridol.png",
+        "alt": "AI-generated teaching illustration. An elongated green-orange papaya beside an orange-fleshed half with black seeds.",
+        "author": "OpenAI image generation",
+        "sourceUrl": "/media/reference/provenance.json",
+        "license": "AI-generated study illustration; no third-party photo license claimed",
+        "claimBoundary": "AI-generated general-form illustration, not a photograph or proof of the exact cultivar, store presentation, sale unit, or checkout code."
+      },
+      "visualCue": "Illustrated reference form: An elongated green-orange papaya beside an orange-fleshed half with black seeds.",
+      "identityNote": "Use the illustration to study general form. The exact workbook label is preserved, but a generated image cannot confirm its cultivar, missing words, grade, package, or checkout mapping.",
+      "evidenceSources": [],
+      "prompt": "Use case: scientific-educational. Asset type: one square produce-learning illustration. Original hand-painted gouache botanical teaching art on warm ivory textured paper, gentle visible brushwork, isolated centered subject with generous margins. No text, numbers, labels, stickers, logos, watermark, packages, people or extra props. Clearly illustration, not photorealism, no claim of exact specimen or store identity. Subject: one large elongated oval papaya with green skin transitioning to golden orange, alongside one longitudinal half showing salmon-orange flesh around a cavity of many small round black seeds. Reference to general elongated papaya traits only; intended for a Meridol/Maradol named-record study, not cultivar authentication.",
+      "generatedOn": "2026-09-07",
+      "generationMethod": "built-in image_gen; one original raster per subject",
+      "sourceArtifact": "/Users/dyrane/.codex/generated_images/01a06d7e-569c-7271-a825-20afda76ad1e/exec-bfcdf6fb-71e4-438e-a79a-641c46e3328f.png",
+      "pixelReview": "Viewed generated output: correct intended general form; clearly illustrated; no labels, numbers, logos, competing codes, or photographic provenance claim."
+    },
+    {
+      "catalogId": "watermelons-mickey-lee",
+      "media": {
+        "kind": "generated-illustration",
+        "src": "/media/reference/watermelons-mickey-lee.png",
+        "alt": "AI-generated teaching illustration. A rounded mottled green watermelon and a red-fleshed wedge.",
+        "author": "OpenAI image generation",
+        "sourceUrl": "/media/reference/provenance.json",
+        "license": "AI-generated study illustration; no third-party photo license claimed",
+        "claimBoundary": "AI-generated general-form illustration, not a photograph or proof of the exact cultivar, store presentation, sale unit, or checkout code."
+      },
+      "visualCue": "Illustrated reference form: A rounded mottled green watermelon and a red-fleshed wedge.",
+      "identityNote": "Use the illustration to study general form. The exact workbook label is preserved, but a generated image cannot confirm its cultivar, missing words, grade, package, or checkout mapping.",
+      "evidenceSources": [],
+      "prompt": "Use case: scientific-educational. Asset type: one square produce-learning illustration. Original hand-painted gouache botanical teaching art on warm ivory textured paper, gentle visible brushwork, isolated centered subject with generous margins. No text, numbers, labels, stickers, logos, watermark, packages, people or extra props. Clearly illustration, not photorealism, no claim of exact specimen or store identity. Subject: one rounded green watermelon with pale green rind and irregular subtle darker green mottling, alongside a triangular wedge of red flesh, a thin pale rind layer and a few black seeds. This is a generic watermelon teaching illustration for a Mickey Lee named-record study, explicitly not cultivar authentication. Avoid long oval shape, yellow flesh, deeply ribbed pumpkin shape or glossy plastic rendering.",
+      "generatedOn": "2026-09-07",
+      "generationMethod": "built-in image_gen; one original raster per subject",
+      "sourceArtifact": "/Users/dyrane/.codex/generated_images/01a06d7e-569c-7271-a825-20afda76ad1e/exec-11b5e0b5-5e6f-4c7c-b4e3-2e5f4c9d8640.png",
+      "pixelReview": "Viewed generated output: correct intended general form; clearly illustrated; no labels, numbers, logos, competing codes, or photographic provenance claim."
+    },
+    {
+      "catalogId": "kohlrabi-note-on-sheet-kohlrabi-1692-handwritten",
+      "media": {
+        "kind": "generated-illustration",
+        "src": "/media/reference/kohlrabi-note-on-sheet-kohlrabi-1692-handwritten.png",
+        "alt": "AI-generated teaching illustration. A round pale-green swollen stem with outward leaf stalks.",
+        "author": "OpenAI image generation",
+        "sourceUrl": "/media/reference/provenance.json",
+        "license": "AI-generated study illustration; no third-party photo license claimed",
+        "claimBoundary": "AI-generated general-form illustration, not a photograph or proof of the exact cultivar, store presentation, sale unit, or checkout code."
+      },
+      "visualCue": "Illustrated reference form: A round pale-green swollen stem with outward leaf stalks.",
+      "identityNote": "Use the illustration to study general form. The exact workbook label is preserved, but a generated image cannot confirm its cultivar, missing words, grade, package, or checkout mapping.",
+      "evidenceSources": [],
+      "prompt": "Use case: scientific-educational. Single square produce-learning illustration in original hand-painted gouache on warm ivory textured paper. Centered with generous margins, natural green colors, obvious soft brush strokes. Subject: one whole pale-green kohlrabi swollen round above-ground stem bulb, with several slender stems sprouting upward and outward and a few broad blue-green leaves. Show the characteristic small trimmed stalk scars on the round bulb and short trimmed base, not a layered cabbage head and not a root turnip. Clean harvested reference form, no pot or dirt or damage. This is a generic kohlrabi teaching illustration, not a photo, not confirmation of a handwritten store label or checkout code. No text, numbers, logos, stickers, watermarks, packaging, people or unrelated props.",
+      "generatedOn": "2026-09-07",
+      "generationMethod": "built-in image_gen; one original raster per subject",
+      "sourceArtifact": "/Users/dyrane/.codex/generated_images/01a06d7e-569c-7271-a825-20afda76ad1e/exec-a8c6392e-f500-43de-86b5-e667aa17fbe9.png",
+      "pixelReview": "Viewed generated output: correct intended general form; clearly illustrated; no labels, numbers, logos, competing codes, or photographic provenance claim."
+    }
+  ]
+}

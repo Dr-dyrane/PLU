@@ -32,6 +32,18 @@ The recovery's seventeen new lessons use 23 distinct reviewed photographs with a
 
 Package, Organic, HH, FM, Jr, and similar store-label distinctions use a label-assisted contract. The photograph teaches only the visible produce identity, form, and color. The exact qualifier and code remain explicitly tied to the supplied workbook label; generated alt text and visual cues may not claim that those qualifiers are visible.
 
+## Complete reference-study coverage — 2026-09-07
+
+After the user confirmed there were no additional source materials and authorized sourcing/generating the missing media, the remaining 48 in-scope records received a separate reference-study path. The catalog now offers 396 photo-backed checkout lessons, 19 relationship lessons, and 48 reference studies: all 463 produce records are studyable. The 12 non-produce entries remain catalog-only.
+
+This closes unavailable study routes and visual coverage, not unknown source facts. The 48 studies retain their original canonical statuses and all workbook values. Ten clean singleton source codes can be practiced as recorded label-to-code references, without claiming an exact real-world specimen or live-store mapping. Fourteen missing-code, seventeen conflicting-code, and seven uncertain-code records test source-note recall instead of teaching guessed digits. The earlier nine missing-code next actions used a different priority grouping; they did not mean only nine raw code cells were missing.
+
+All 48 studies have media: 36 reviewed photographs with explicit attribution and 12 original AI-generated illustrations. Generic, hypothetical-form, and cultivar limits are visible beside each study; generated images never enter the existing photographic-admission ledger. Three inherited GFDL-only/photo-attribution candidates received bounded replacements for this new path. Original checkout lessons are unchanged. The 12 generated images are saved unchanged under `public/media/reference/`, with their full prompts and hashes in `public/media/reference/provenance.json`. Source and replacement decisions are in `data/reference-illustrations.json` and the three `reference-art-*` / `reference-photo-replacements` review ledgers.
+
+Reference studies use Inspect → Recall → Checkout boundary → Studied, with wrong-answer feedback, reveal-and-retry, separate revision-aware device progress, media-failure retry, and source credits. Home search and the Reference studies filter expose all 48. A studied reference is never counted as checkout mastery. Original sheets, current store records, or exact photographs could improve confidence later; the app no longer requires them simply to offer a study experience.
+
+Release validation passed the complete data/UI/build gate (474 statically generated pages), all 69 distinct reference photo/source URL checks, and an independent contract review. Codex browser checks exercised mobile dark and desktop light layouts, exact and wrong answers, answer reveal, source-note recall without a numeric input, checkout safeguards, refresh/restoration, independent reset, search/filter persistence, source credits, and blocked-image recovery through Retry. Existing checkout progress remained unchanged by reference completion and reset.
+
 ## Rebuild
 
 ```bash
@@ -41,6 +53,7 @@ npm run compile:batch06-reviews
 npm run generate:batch06
 npm run audit:batch06-media
 npm run prepare:relationships
+npm run prepare:references
 npm run build
 ```
 

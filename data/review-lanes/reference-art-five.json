@@ -1,0 +1,166 @@
+{
+  "schemaVersion": 1,
+  "scope": "Five generated general-form teaching illustrations for separate reference learning; not exact recognition-photo admission and not source/code adjudication.",
+  "claimPolicy": "Keep AI illustration disclosure visible in the consuming interface. None of these assets changes the original catalog code, source flags, missing values, code collisions, exact-cultivar status or checkout readiness. General form may be studied while source-store verification remains unavailable.",
+  "items": [
+    {
+      "catalogId": "bananas-baby-bananas-mini-4186",
+      "media": {
+        "kind": "generated-illustration",
+        "src": "/media/reference/bananas-baby-bananas-mini-4186.png",
+        "alt": "AI-generated teaching illustration of a compact bunch of short yellow bananas; general form only.",
+        "author": "OpenAI image generation",
+        "sourceUrl": "https://openai.com/index/image-generation-api/",
+        "license": "AI-generated teaching illustration",
+        "claimBoundary": "AI-generated general mini-banana form, not evidence of an exact cultivar, store listing, scale, or code. The conflicting source label and recorded code remain unresolved."
+      },
+      "prompt": "Use case: scientific-educational\nAsset type: square botanical teaching illustration for a produce-learning app, not photographic evidence.\nPrimary request: a small bunch of short, plump yellow mini bananas, every fruit intact and attached at a compact stem, shown in a natural slight fan. General product form only, no claim of a specific cultivar, store product, origin or code.\nScene/backdrop: warm ivory paper, otherwise empty.\nStyle/medium: plainly hand-painted gouache botanical illustration with visible brushwork and fine paper texture, softened painted shading; NOT a photograph or photorealistic render.\nComposition/framing: one centered isolated banana bunch, fully visible, generous clear margins on every side, square format. Accurate simple curved banana silhouettes and natural brown stem tips.\nColor palette: warm yellow fruit, muted green/brown stem, warm ivory background.\nConstraints: no words, numbers, labels, stickers, barcodes, brands, signs, border, watermark, hands or added props. No other fruits. No fake documentary or specimen authority. Do not depict long standard supermarket bananas; show short stout mini banana forms.",
+      "generatedOn": "2026-09-07",
+      "generationMethod": "built-in image_gen",
+      "originalOutputPath": "/Users/dyrane/.codex/generated_images/01a07d4a-f5b3-7b63-b4ed-d32fc2b61211/exec-d80563ca-51f3-4fb4-9ea7-ff2b928d82db.png",
+      "sha256": "17d87912700fc6c8c51402f480c5815d042d4520161ef8ed3706a54f439561fb",
+      "width": 1254,
+      "height": 1254,
+      "mimeType": "image/png",
+      "assetTreatment": "Original built-in output copied unchanged into the repository. No crop, retouch, relabeling, format conversion or removal of generation provenance.",
+      "visualReview": {
+        "reviewedOn": "2026-09-07",
+        "decision": "accepted-for-reference-only",
+        "notes": "Clearly painted compact yellow banana hand with short stout fingers and brown tips, attached to one green-brown stem. Warm ivory paper and generous margins. No words, code labels, stickers, brands or other fruits. Shape is schematic and does not identify a mini-banana cultivar."
+      },
+      "identitySources": []
+    },
+    {
+      "catalogId": "cabbage-sour",
+      "media": {
+        "kind": "generated-illustration",
+        "src": "/media/reference/cabbage-sour.png",
+        "alt": "AI-generated teaching illustration of one whole pale-olive sour-cabbage head; one possible form, not confirmed store presentation.",
+        "author": "OpenAI image generation",
+        "sourceUrl": "https://openai.com/index/image-generation-api/",
+        "license": "AI-generated teaching illustration",
+        "claimBoundary": "AI-generated whole-head sour-cabbage teaching form, not a real specimen and not confirmation that the store stocks whole heads rather than another sour-cabbage presentation. No exact product, manufacturer, fermentation status or checkout code is established by the image."
+      },
+      "prompt": "Use case: scientific-educational\nAsset type: square botanical teaching illustration for a produce-learning app, not photographic evidence.\nPrimary request: one whole pale olive sour-cabbage head, a general illustration of whole-head fermented cabbage. Rounded compact head with softened folded leaves, translucent yellow-olive edges and visible branching leaf veins, subtle damp shading. No shredded cabbage or prepared salad. The whole-head form is illustrative, NOT confirmed for a particular store listing.\nScene/backdrop: warm ivory paper, otherwise empty.\nStyle/medium: plainly hand-painted gouache botanical illustration with visible brushwork and fine paper texture, softened painted shading; NOT a photograph or photorealistic render.\nComposition/framing: one centered isolated whole head, fully visible, generous clear margins on every side, square format, slight three-quarter view.\nColor palette: pale yellow-olive, muted cream veins, warm ivory background.\nConstraints: no words, numbers, labels, stickers, barcodes, brands, packaging, signs, border, watermark, hands, bowl, utensils or added props. No other produce. Do not imply a named manufacturer, source-store specimen, or checkout code. No raw bright-green crisp cabbage or plated sauerkraut.",
+      "generatedOn": "2026-09-07",
+      "generationMethod": "built-in image_gen",
+      "originalOutputPath": "/Users/dyrane/.codex/generated_images/01a07d4a-f5b3-7b63-b4ed-d32fc2b61211/exec-2947cf03-0715-4760-a71d-b7b74b95c655.png",
+      "sha256": "7ab7dcce0c4dc28c429b1022b3ff544bfa4be1bf80ccd158e38be3bea146da43",
+      "width": 1254,
+      "height": 1254,
+      "mimeType": "image/png",
+      "assetTreatment": "Original built-in output copied unchanged into the repository. No crop, retouch, relabeling, format conversion or removal of generation provenance.",
+      "visualReview": {
+        "reviewedOn": "2026-09-07",
+        "decision": "accepted-for-reference-only",
+        "notes": "Clearly painted pale olive-yellow rounded cabbage head with softened folded leaves and pale branching veins. No shredded salad or prepared dish. Fully visible against textured ivory paper; no labels, brands or words. Painted softness is a teaching choice, not proof of fermentation."
+      },
+      "identitySources": [
+        {
+          "sourceUrl": "https://stjacobsfoods.com/products/",
+          "sourceType": "primary-producer",
+          "verifiedOn": "2026-09-07",
+          "supports": "Sour cabbage may be sold as an entire brine-fermented head with its core removed, distinct from shredded sauerkraut.",
+          "claimBoundary": "General product-form terminology only. The producer is not linked to the workbook store; no photograph, pack size, manufacturer claim or supplier identity was copied."
+        }
+      ]
+    },
+    {
+      "catalogId": "durian-frozen",
+      "media": {
+        "kind": "generated-illustration",
+        "src": "/media/reference/durian-frozen.png",
+        "alt": "AI-generated teaching illustration of pale durian flesh segments with a hint of frost on a neutral tray; one possible form, not confirmed store presentation.",
+        "author": "OpenAI image generation",
+        "sourceUrl": "https://openai.com/index/image-generation-api/",
+        "license": "AI-generated teaching illustration",
+        "claimBoundary": "AI-generated general durian-flesh illustration, not evidence that the source store's Frozen listing means segments rather than whole fruit. The tray is an illustration device, not confirmed packaging. Frozen status, identity and missing checkout code require store confirmation."
+      },
+      "prompt": "Use case: scientific-educational\nAsset type: square botanical teaching illustration for a produce-learning app, not photographic evidence.\nPrimary request: three irregular pale cream-yellow lobed durian flesh segments on a simple unbranded neutral light-grey shallow tray, with a delicate painted hint of white frost at their edges. General fruit-flesh form only. This is one possible frozen-durian form, NOT proof that an unspecified store listing is segments rather than whole fruit, and NOT proof of its packaging, variety, code, weight or origin.\nScene/backdrop: warm ivory paper, otherwise empty.\nStyle/medium: plainly hand-painted gouache botanical illustration with visible brushwork and fine paper texture, softened painted shading; NOT a photograph or photorealistic render.\nComposition/framing: centered isolated shallow tray with the lobed segments, all fully visible, generous clear margins on every side, square format, slight elevated three-quarter view.\nColor palette: pale cream-yellow flesh, soft grey tray, very subtle cool-white frost, warm ivory background.\nConstraints: no words, numbers, labels, stickers, barcodes, brands, packaging wrapper, signs, border, watermark, hands, utensils or added props. No whole durian husk. No commercial-package appearance or code claims. No ice-cream scoops: organic asymmetrical lobed fruit-flesh shape.",
+      "generatedOn": "2026-09-07",
+      "generationMethod": "built-in image_gen",
+      "originalOutputPath": "/Users/dyrane/.codex/generated_images/01a07d4a-f5b3-7b63-b4ed-d32fc2b61211/exec-6d5899a1-f0fc-4f88-965c-0da1c43d5fe7.png",
+      "sha256": "e07c0b7949ede758cbf84fa1dec4f9cf5159b7ffeb237ee7c9e573b31f7bcbf0",
+      "width": 1254,
+      "height": 1254,
+      "mimeType": "image/png",
+      "assetTreatment": "Original built-in output copied unchanged into the repository. No crop, retouch, relabeling, format conversion or removal of generation provenance.",
+      "visualReview": {
+        "reviewedOn": "2026-09-07",
+        "decision": "accepted-for-reference-only",
+        "notes": "Clearly painted pale yellow irregular lobed flesh pieces on an unmarked shallow grey tray, with delicate white frost. No package wrapper, barcode, label, code or brand. The segments are one hypothetical presentation only; no source-store shape claim is made."
+      },
+      "identitySources": []
+    },
+    {
+      "catalogId": "mangos-spice",
+      "media": {
+        "kind": "generated-illustration",
+        "src": "/media/reference/mangos-spice.png",
+        "alt": "AI-generated generic mango-form illustration with yellow-orange skin and a green patch; not a confirmed Spice cultivar.",
+        "author": "OpenAI image generation",
+        "sourceUrl": "https://openai.com/index/image-generation-api/",
+        "license": "AI-generated teaching illustration",
+        "claimBoundary": "AI-generated generic mango-form reference, not a photograph or evidence of the exact Spice or Buxton Spice cultivar, store listing, origin, supplier or checkout code. Spice remains a source-label distinction, not a generated visual diagnosis."
+      },
+      "prompt": "Use case: scientific-educational\nAsset type: square botanical teaching illustration for a produce-learning app, not photographic evidence.\nPrimary request: a single generic mango showing the familiar asymmetrical oval mango silhouette, gently curved shoulder and small tapered tip, warm yellow-orange skin with restrained green patches, subtle painted speckling. This is ONLY a general mango-form reference for a listing named Spice: DO NOT assert or reproduce an exact Spice or Buxton Spice cultivar specimen. No variety-specific appearance guarantee.\nScene/backdrop: warm ivory paper, otherwise empty.\nStyle/medium: plainly hand-painted gouache botanical illustration with visible brushwork and fine paper texture, softened painted shading; NOT a photograph or photorealistic render.\nComposition/framing: one centered isolated whole mango, fully visible, generous clear margins on every side, square format, slight three-quarter view.\nColor palette: warm yellow-orange skin, muted green patches, warm ivory background.\nConstraints: no words, numbers, labels, stickers, barcodes, brands, packaging, signs, border, watermark, hands, leaves, cut fruit or added props. No other produce. No provenance, exact cultivar, store listing, supplier or code claims.",
+      "generatedOn": "2026-09-07",
+      "generationMethod": "built-in image_gen",
+      "originalOutputPath": "/Users/dyrane/.codex/generated_images/01a07d4a-f5b3-7b63-b4ed-d32fc2b61211/exec-cd6f9eb4-5247-4846-bd3f-f2771aec5595.png",
+      "sha256": "9c9e37468900dc8b1aa4479ec42a5f09f6a66c4d4576e417e8ebb6939ba0e088",
+      "width": 1254,
+      "height": 1254,
+      "mimeType": "image/png",
+      "assetTreatment": "Original built-in output copied unchanged into the repository. No crop, retouch, relabeling, format conversion or removal of generation provenance.",
+      "visualReview": {
+        "reviewedOn": "2026-09-07",
+        "decision": "accepted-for-reference-only",
+        "notes": "Clearly painted single asymmetric oval mango with yellow-orange skin, green patch and subtle speckles on ivory paper. No labels, brands, numbers, leaves or props. It is generic mango anatomy and does not establish a named cultivar."
+      },
+      "identitySources": [
+        {
+          "sourceUrl": "https://www.tropicalacresfarms.com/product-page/buxton-spice",
+          "sourceType": "primary-grower",
+          "verifiedOn": "2026-09-07",
+          "supports": "Buxton Spice is a distinct named mango grown by this nursery; an exact cultivar photograph cannot be replaced by a generated generic mango as evidence.",
+          "claimBoundary": "Used to retain the cultivar-specific uncertainty, not as a copied visual reference. Its content and photographs remain reserved; no nursery photograph was used as input."
+        }
+      ]
+    },
+    {
+      "catalogId": "pumpkins-jamaican",
+      "media": {
+        "kind": "generated-illustration",
+        "src": "/media/reference/pumpkins-jamaican.png",
+        "alt": "AI-generated Calabaza-style pumpkin illustration: a broad ribbed green gourd and one orange-fleshed wedge; general form only.",
+        "author": "OpenAI image generation",
+        "sourceUrl": "https://openai.com/index/image-generation-api/",
+        "license": "AI-generated teaching illustration",
+        "claimBoundary": "AI-generated general Calabaza-style pumpkin form, not evidence of an exact Jamaican cultivar, country of origin, store specimen or checkout code. Jamaican remains source-label wording; the depicted mottling and shape are not guaranteed for all listings."
+      },
+      "prompt": "Use case: scientific-educational\nAsset type: square botanical teaching illustration for a produce-learning app, not photographic evidence.\nPrimary request: a generalized Calabaza-style pumpkin, broad flattened round shape with gentle pronounced ribs, mottled muted dark-green skin and light green/buff streaks, a short woody stem; one cut wedge next to it exposing orange flesh and a small seed cavity. This is a general West Indian/Calabaza pumpkin-form teaching reference, NOT proof of exact Jamaican cultivar, origin, store specimen or checkout code.\nScene/backdrop: warm ivory paper, otherwise empty.\nStyle/medium: plainly hand-painted gouache botanical illustration with visible brushwork and fine paper texture, softened painted shading; NOT a photograph or photorealistic render.\nComposition/framing: centered isolated whole pumpkin and one wedge, fully visible, generous clear margins on every side, square format, slight three-quarter view.\nColor palette: muted dark green, pale green/buff mottling, warm orange flesh, warm ivory background.\nConstraints: no words, numbers, labels, stickers, barcodes, brands, packaging, signs, border, watermark, hands, utensils or added props. Not a butternut: no elongated neck or pear-shaped gourd. No Halloween face or decorative pumpkin. No specific cultivar or origin claim.",
+      "generatedOn": "2026-09-07",
+      "generationMethod": "built-in image_gen",
+      "originalOutputPath": "/Users/dyrane/.codex/generated_images/01a07d4a-f5b3-7b63-b4ed-d32fc2b61211/exec-5d899c31-e8c0-4dce-8e1c-779118273fe0.png",
+      "sha256": "4bf30e5765aeead4ecd4d964b82ba096119b51641a72fbf00f2bff6dd43ba0bd",
+      "width": 1254,
+      "height": 1254,
+      "mimeType": "image/png",
+      "assetTreatment": "Original built-in output copied unchanged into the repository. No crop, retouch, relabeling, format conversion or removal of generation provenance.",
+      "visualReview": {
+        "reviewedOn": "2026-09-07",
+        "decision": "accepted-for-reference-only",
+        "notes": "Clearly painted broad flattened ribbed dark-green pumpkin with pale mottled streaks, short woody stem, and one orange-fleshed seeded wedge. No elongated butternut neck. Fully visible on warm ivory paper, no stickers, brands, numbers or other produce."
+      },
+      "identitySources": [
+        {
+          "sourceUrl": "https://trueloveseeds.com/collections/vegetables-and-grains/products/jamaican-pumpkin",
+          "sourceType": "primary-grower",
+          "verifiedOn": "2026-09-07",
+          "supports": "The grower's Jamaican Pumpkin is a diverse Cucurbita moschata population with orange flesh and green streaked skin, also called West Indian Pumpkin or Calabaza.",
+          "claimBoundary": "Supports a general category-form teaching interpretation only; this does not establish the workbook specimen's population, cultivar, supplier, origin or exact appearance. No source photograph was used as image input."
+        }
+      ]
+    }
+  ]
+}

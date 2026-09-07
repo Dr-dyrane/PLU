@@ -25,6 +25,14 @@ Nineteen explicitly reviewed `mapped` rows also have `/relationships/[catalogId]
 
 `data/batch-06-relationship-decisions.json` is the evidence ledger; `npm run prepare:relationships` materializes reviewed source photographs and immutable mappings into `data/relationship-lessons.json`. The build validates the exact nineteen targets and their neighbors. Home receives lightweight summaries only. Completion uses `plu:relationship:<catalogId>` and is displayed as “Mapping studied,” never mixed with `plu:complete:<storyId>` mastery. The 26 mapped records therefore comprise 19 studyable relationships and 7 awaiting media, not 26 new checkout-ready lessons.
 
+## Reference-study coverage
+
+`data/reference-lessons.json` adds `/reference/[catalogId]/` studies for the 48 in-scope rows outside ready and relationship lessons. It does not change their canonical `mapped`/`queued` status or make them checkout-ready. The user authorized generated teaching media on 2026-09-07 after confirming no more source material was available.
+
+The separate study contract preserves exact source text, missing values, sale-unit nulls, and evidence restrictions. Ten unflagged singleton codes support explicitly labeled source-row recall; the other 38 records recall their unresolved source note, never uncertain digits. A checkout-boundary exercise is required before saving `plu:reference:<catalogId>` progress. Revision signatures invalidate stale study results. No reference completion writes checkout or relationship mastery.
+
+The reference set contains 36 reviewed photographs and 12 AI-generated general-form illustrations, with visible provenance and claim limits. Generated art is not photographic evidence or cultivar/store-code confirmation. `data/reference-illustrations.json` pins replacements and image hashes; `public/media/reference/provenance.json` publishes the generated prompts and provenance. `npm run prepare:references` rebuilds the studies, while the build validates exact coverage and local asset hashes without needing a network refresh. All 463 in-scope records now have a study route; the other 12 stay catalog-only. Complete study coverage is not complete checkout verification.
+
 ## Mnemonic compiler
 
 The deterministic rule is:

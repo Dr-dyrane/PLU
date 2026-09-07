@@ -3,7 +3,8 @@
   "version": "0.8.1",
   "private": true,
   "scripts": {
-    "prepare:data": "node scripts/verify-generated-data.mjs && node scripts/validate-relationship-lessons.mjs",
+    "prepare:data": "node scripts/verify-generated-data.mjs && node scripts/validate-relationship-lessons.mjs && node scripts/validate-reference-lessons.mjs",
+    "prepare:references": "node scripts/prepare-reference-lessons.mjs",
     "prepare:relationships": "node scripts/prepare-relationship-lessons.mjs",
     "prepare:batch05": "node scripts/prepare-batch05-candidates.mjs",
     "prepare:batch06": "node scripts/prepare-batch06-remainder.mjs",
@@ -19,7 +20,7 @@
     "audit:batch05-media": "node scripts/audit-commons-metadata.mjs --batch=05 && node scripts/audit-remote-media.mjs --batch=05 --delay-ms=900 --retries=5",
     "audit:batch06-media": "node scripts/audit-commons-metadata.mjs --batch=06 && node scripts/audit-remote-media.mjs --batch=06 --delay-ms=900 --retries=5",
     "validate:data": "npm run prepare:data && node scripts/validate-data.mjs && node scripts/validate-media.mjs && node scripts/validate-batch.mjs && node scripts/validate-media-semantics.mjs",
-    "validate:ui": "node scripts/validate-ui.mjs && node scripts/validate-progressive-feed.mjs",
+    "validate:ui": "node scripts/validate-ui.mjs && node scripts/validate-progressive-feed.mjs && node scripts/test-reference-study.mjs",
     "build": "npm run validate:data && npm run validate:ui && next build",
     "typecheck": "tsc --noEmit"
   },
