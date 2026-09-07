@@ -1,6 +1,6 @@
 .learningApp { min-height: 100dvh; display: flex; flex-direction: column; }
 .learningHeader { width: min(1080px, 100%); margin: 0 auto; padding: max(18px, env(safe-area-inset-top)) 24px 0; display: flex; align-items: center; justify-content: space-between; gap: 16px; }
-.learningNavigation { display: inline-flex; align-items: center; gap: 4px; padding: 4px; border: 1px solid var(--hairline); background: var(--surface); border-radius: 17px; }
+.learningNavigation { display: inline-flex; align-items: center; gap: 4px; padding: 4px; }
 .learningNavigation a { min-height: 44px; display: inline-flex; align-items: center; justify-content: center; gap: 7px; padding: 0 15px; border-radius: 12px; color: var(--muted); font-size: 13px; font-weight: 700; text-decoration: none; }
 .learningNavigation svg { width: 17px; height: 17px; }
 .learningNavigation a[aria-current="page"] { color: var(--home-accent); background: var(--soft); }
@@ -12,7 +12,7 @@
 @media (max-width: 600px) {
   .learningHeader { padding: max(12px, env(safe-area-inset-top)) 16px 0; gap: 8px; }
   .learningHeader .batchBrand small, .batchLibrary .batchBrand small { display: none; }
-  .learningNavigation { padding: 3px; border-radius: 15px; gap: 2px; }
+  .learningNavigation { padding: 3px; gap: 2px; }
   .learningNavigation a { padding: 0 11px; font-size: 12px; gap: 5px; }
   .learningNavigation svg { width: 15px; height: 15px; }
   .batchLibrary .batchHero { margin: 26px 0 20px; }

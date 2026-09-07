@@ -48,15 +48,13 @@ export function TodayHome({ items, signature }: { items: TodayItem[]; signature:
   return (
     <main className="todayPage">
       <header className="todayIntro">
-        <p className="todayEyebrow">Today</p>
         <h1>A little practice.<br /><span>A sharper eye.</span></h1>
-        <p className="todayDescription">Five familiar products. Look closely, then recall their codes.</p>
+        <p className="todayDescription">Look closely. Recall the code.</p>
       </header>
 
       <section className="todaySession" aria-labelledby="today-session-title">
         <div className="todaySessionHeading">
-          <div><p className="todayEyebrow">Core 25</p><h2 id="today-session-title">Start with the everyday.</h2></div>
-          <span className="todaySessionCount">{items.length} products</span>
+          <div><p className="todayEyebrow">Core 25</p><h2 id="today-session-title">Everyday essentials.</h2></div>
         </div>
 
         <ol className="todayShelf" aria-label="Products in this session">
@@ -83,8 +81,6 @@ export function TodayHome({ items, signature }: { items: TodayItem[]; signature:
         </div>
         {progress.status === "unavailable" && <p className="todayStorageNote" role="status">You can still practise. This browser cannot save your session progress.</p>}
       </section>
-
-      <p className="todayLibraryPrompt">Looking for a particular product? <Link href="/library/">Open the Library <ArrowRight aria-hidden="true" /></Link></p>
     </main>
   );
 }

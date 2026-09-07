@@ -5,6 +5,7 @@ import "./test-lesson-sequence.mjs";
 import "./test-lesson-transition.mjs";
 import "./test-core-session.mjs";
 import "./test-library-navigation.mjs";
+import "./test-dyrane-ui.mjs";
 
 const lesson = await readFile(new URL("../components/canon/PluLesson.tsx", import.meta.url), "utf8");
 const productSheet = await readFile(new URL("../components/canon/ProductSheet.tsx", import.meta.url), "utf8");

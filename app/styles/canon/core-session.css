@@ -9,7 +9,7 @@
 .coreSessionDots { display: flex; gap: 4px; margin: 0; padding: 0; list-style: none; }
 .coreSessionDots li { width: 6px; height: 6px; border-radius: 50%; background: var(--soft-2); }
 .coreSessionDots li[data-state="complete"] { background: var(--accent); }
-.coreSessionDots li[data-state="current"] { box-shadow: 0 0 0 1px var(--accent); }
+.coreSessionDots li[data-state="current"] { background: rgba(var(--accent-rgb), .45); }
 .coreSessionStatus { position: absolute; top: max(75px, calc(env(safe-area-inset-top) + 60px)); left: 20px; right: 20px; z-index: 8; margin: 0; text-align: center; color: var(--muted); font-size: 12px; line-height: 1.5; }
 .coreSession:has(> .coreSessionStatus) .app { padding-top: max(102px, calc(env(safe-area-inset-top) + 90px)); }
 .coreSession .secondaryAction { text-decoration: none; display: inline-flex; align-items: center; justify-content: center; gap: 7px; }
@@ -19,7 +19,7 @@
 .coreSessionSummaryMark svg { width: 30px; height: 30px; }
 .coreSessionSummary h1 { margin: 0 0 28px; max-width: 11ch; font-size: clamp(36px, 7vw, 50px); line-height: 1.05; letter-spacing: -.05em; }
 .coreSessionSummaryList { list-style: none; margin: 0; padding: 0; }
-.coreSessionSummaryList li { display: flex; align-items: center; gap: 12px; padding: 16px 0; border-bottom: 1px solid var(--hairline); font-size: 14px; }
+.coreSessionSummaryList li { display: flex; align-items: center; gap: 12px; padding: 16px 0; font-size: 14px; }
 .coreSessionSummaryList svg { width: 18px; height: 18px; flex-shrink: 0; color: var(--accent); }
 .coreSessionSummaryList code { margin-left: auto; font-size: 16px; font-weight: 700; letter-spacing: .06em; }
 .coreSessionSummaryActions { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 28px; }

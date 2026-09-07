@@ -60,6 +60,18 @@ The React component is reusable. Product-specific facts, images, visual anchors,
 
 Ready lessons show short form, color and unit cues during Look, with a wider phone cue for long exact forms. Code uses a fixed short prompt rather than repeating the product title. Full recognition cues remain in ProductSheet; reviewed-panel credits and reuse limitations are available through its Photo source disclosure.
 
+## Dyrane UI principles
+
+For PLU, follow the user's borderless, show-don't-tell direction:
+
+- Group with spacing, alignment and subtle semantic surface tones. Avoid decorative enclosing borders, inset outline substitutes, repeated badges and unnecessary dividers.
+- Let reviewed product images lead. Show one clear current action, short prompts and useful feedback; don't repeat what the image, selected navigation or progress already communicates.
+- Keep supporting evidence in existing disclosures. Never hide source uncertainty, provenance or recovery feedback merely to reduce copy.
+- Preserve visible keyboard focus, readable contrast, touch targets, reduced-motion support and both themes. Borderless does not mean removing interaction states.
+- Reuse the lesson engine, shared components and theme tokens. Verify rendered appearance as well as behaviour before release.
+
+The Today, shared navigation and session-summary CSS have a focused regression check for decorative borders and missing focus indicators. This is not a claim that every legacy surface has been restyled.
+
 ## Runtime
 
 ### Today and bounded practice

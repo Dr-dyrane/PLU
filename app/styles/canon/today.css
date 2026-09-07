@@ -11,11 +11,10 @@
 .todayIntro h1 { margin: 0; font-size: clamp(36px, 5.5vw, 62px); font-weight: 780; line-height: 1.04; letter-spacing: -.06em; }
 .todayIntro h1 span { color: var(--accent); }
 .todayDescription { max-width: 44ch; margin: 17px 0 0; color: var(--muted); font-size: 16px; line-height: 1.5; }
-.todaySession { padding: 27px; border: 1px solid var(--hairline); border-radius: 27px; background: var(--surface); box-shadow: 0 12px 38px rgba(var(--accent-rgb), .055); }
+.todaySession { padding: 27px; border-radius: 27px; background: var(--surface); }
 .todaySessionHeading { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 23px; }
 .todaySessionHeading .todayEyebrow { margin-bottom: 6px; font-size: 10px; }
 .todaySessionHeading h2 { margin: 0; font-size: 23px; font-weight: 730; line-height: 1.2; letter-spacing: -.04em; }
-.todaySessionCount { flex: 0 0 auto; padding: 8px 11px; border-radius: 10px; color: var(--muted); background: var(--soft); font-size: 12px; font-weight: 650; }
 .todayShelf { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 13px; padding: 0; margin: 0; list-style: none; }
 .todayProduct { min-width: 0; }
 .todayProduct figure { margin: 0; }
@@ -26,7 +25,7 @@
 .todayProductCheck svg { width: 16px; height: 16px; stroke-width: 2.5; }
 .todayPhotoUnavailable { display: flex; height: 100%; padding: 8px; align-items: center; justify-content: center; flex-direction: column; gap: 5px; color: var(--muted); text-align: center; font-size: 10px; line-height: 1.3; }
 .todayPhotoUnavailable svg { width: 22px; height: 22px; }
-.todaySessionBottom { display: flex; align-items: center; justify-content: space-between; gap: 24px; margin-top: 28px; padding-top: 23px; border-top: 1px solid var(--hairline); }
+.todaySessionBottom { display: flex; align-items: center; justify-content: space-between; gap: 24px; margin-top: 32px; }
 .todayProgress { min-width: 0; color: var(--muted); font-size: 13px; line-height: 1.4; }
 .todayProgress strong { color: var(--text); font-weight: 750; font-variant-numeric: tabular-nums; }
 .todayProgressTrack { display: flex; gap: 5px; margin-top: 9px; }
@@ -36,10 +35,7 @@
 .todayStart svg { width: 21px; height: 21px; }
 .todayStart:hover { background: var(--accent-strong); }
 .todayStart:active { transform: scale(.985); }
-.todayStart:focus-visible, .todayLibraryPrompt a:focus-visible { outline: 3px solid rgba(var(--accent-rgb), .45); outline-offset: 4px; }
-.todayLibraryPrompt { margin: 23px 0 0; color: var(--muted); font-size: 13px; line-height: 1.5; }
-.todayLibraryPrompt a { display: inline-flex; align-items: center; gap: 5px; min-height: 44px; color: var(--accent); font-weight: 700; text-underline-offset: 3px; }
-.todayLibraryPrompt svg { width: 15px; height: 15px; }
+.todayStart:focus-visible { outline: 3px solid rgba(var(--accent-rgb), .45); outline-offset: 4px; }
 .todayStorageNote { margin: 16px 0 0; color: var(--muted); font-size: 12px; line-height: 1.5; }
 .todaySrOnly { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; border: 0; }
 
@@ -53,7 +49,6 @@
   .todaySessionHeading { margin-bottom: 18px; gap: 8px; align-items: flex-start; }
   .todaySessionHeading h2 { font-size: 19px; }
   .todaySessionHeading .todayEyebrow { font-size: 9px; }
-  .todaySessionCount { padding: 6px 7px; font-size: 10px; }
   .todayShelf { gap: 7px; }
   .todayProductImage { aspect-ratio: .86; border-radius: 11px; }
   .todayProduct figcaption { margin-top: 7px; font-size: 10px; line-height: 1.35; }
@@ -61,18 +56,16 @@
   .todayProductCheck svg { width: 13px; height: 13px; }
   .todayPhotoUnavailable span { font-size: 8px; }
   .todayPhotoUnavailable svg { width: 18px; height: 18px; }
-  .todaySessionBottom { margin-top: 18px; padding-top: 17px; gap: 16px; }
+  .todaySessionBottom { margin-top: 24px; gap: 16px; }
   .todayProgress { font-size: 11px; }
   .todayProgressTrack { gap: 3px; margin-top: 7px; }
   .todayProgressTrack i { width: 13px; height: 3px; }
   .todayStart { min-width: 170px; min-height: 49px; padding: 12px 13px; gap: 14px; border-radius: 13px; font-size: 13px; }
   .todayStart svg { width: 18px; height: 18px; }
-  .todayLibraryPrompt { margin-top: 16px; font-size: 12px; }
 }
 
 @media (max-width: 360px) {
   .todaySessionBottom { align-items: stretch; flex-direction: column; gap: 12px; }
   .todayProgress { display: flex; justify-content: space-between; align-items: center; }
   .todayProgressTrack { margin-top: 0; }
-  .todaySessionCount { display: none; }
 }
